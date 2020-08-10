@@ -1,0 +1,408 @@
+\chapter{Non-Relativistic Solution of the Hydrogen Molecular Ion in 2 Spatial Dimensions}
+
+\section{Existing solutions}
+
+We apply the method used in the 3D case of the $ H_2^{+} $ ion to find the solution in 2 dimensions. The problem itself is analogous to the 3D problem, but leads to the Mathieu's function as the solution for the radial problem.
+
+There are not too many papers dealing with solving the $ H_2^{+} $ but here is some relevant, and recent work in this problem. In addition to the Bates paper \cite{Bates1}, there are other, more recent papers \cite{H2Plus2d1} \cite{TwoCentersParticle}, \cite{Kolos} which deal with the solution of the Schrodinger equation and spectrum of the $ H_2^{+} $ molecule.  As with other work in this problem, the paper relies on the work done by Bates et all. \cite{Bates1}. The solution in \cite{H2Plus2d1} agrees well with our solution.  One can also apply approximate methods, but they should be considered inferior to the analytical solution, we provide here. 
+
+Analogous to the 3D case, we rely on Born-Oppenheimer (BO) approximation, in order to provide an analytical solution. The same justification for using the BO approximation in 3D molecular systems applies to the 2D problems as well, since the masses of the nuclei and electron(s) remain unchanged.  Following the same BO approximation as in Chapter 1, and using atomic units, the Schrodinger equation for the $ H_2^{+} $ molecules is given by equation \eqref{eqPartial2D} below. 
+
+\begin{equation}\label{eqPartial2D}
+\left(-\frac{1}{2}\nabla^2-\frac{1}{r_a}-\frac{1}{r_b}\right)\psi = E\,\psi
+\end{equation}
+
+The equation \eqref{eqPartial2D} is superficially similar to the equation \eqref{eqPartial3D} and the diagram \ref{h2ion3d}, but in this case, the $ r_a $ and $ r_b $ represent the nuclei coordinates in 2 dimensions.
+
+Following the \cite{2DHAtom}, The electron wavefunction depends on only 3 quantum numbers, principal quantum number $ n $, angular quantum number $ l $ and spin $ s $. Again we ignore the spin degrees of freedom, considering the electron to be the regular 3 dimensional particles, where only its orbit is restricted to 2 dimensions.  Therefore the spin magnetic moment of the electron is not affected by the 2D restriction and the spin vector can point in any direction in 3D space. Also the orbit can have different shapes, thus there remains the need for an orbital quantum number. However, there can be one one orientation of the orbit, thus we do not consider the magnetic quantum number. This reasoning agrees with ~The solution of the electron wavefunction to the hydrogen atom in 2 dimensions \cite{H2atom} where electron wavefunction solution only depends on the principal and orbital quantum numbers.
+
+The geometry of the 2D problem leads to choosing the elliptical coordinates (as in 3D problem), with two coordinates, $ \mu $ and $ \lambda $ denoting the position of the electron in 2D plane. \cite{Arfken}
+
+\section{Exact solution of the electron energies of the $ H_2^+ $ molecule}
+
+The goal is to provide the exact solution to the wavefunction of the $ H_2^{+} $ electron, for a given definition of exact. However even for this, relatively simple problem, it is impossible to find a closed form solution. So the solution is exact, in a sense that it can be done to an arbitrary precision.
+
+\begin{figure}
+  \includegraphics{H2Ion2D.png}
+  \caption{H2 Ion in 2D} \label{h2ion2d}
+\end{figure}
+
+As illustrated by the figure \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have:
+\begin{equation}\label{variables1}
+\begin{split}
+& \lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\[1em]
+& \text{where } \lambda \in \left[1,\infty\right]\,,\,\,\,\,\,\,\,\,\,\mu \in \left[ -1, 1 \right]\,\,\,\,\,\,\,\,\,\text{ and } \\[.8em] 
+& r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+\end{split}
+\end{equation}
+
+Plug the coordinate above we finally get from \ref{AppendixG}.
+
+We assume that the total electronic wavefunction can be written as the product of two functions:
+\begin{equation}\label{variables2}
+\begin{split}
+& \psi(\lambda,\mu) = F(\mu)G(\lambda)
+\end{split}
+\end{equation}
+
+This way the original equation separates into two ODEs:
+
+\begin{equation}\label{L2-1}
+\left(\lambda^2 - 1 \right) \frac{d^2}{ d\lambda^2 }G(\lambda) + \lambda\frac{ d}{d\lambda }G (\lambda)  + \left(A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  \right)G (\lambda) = 0  
+\end{equation}
+
+\begin{equation}
+ \left(1 - \mu^2 \right) \frac{d^2}{ d\mu^2 }F(\mu) - \mu\frac{ d }{d\mu }F(\mu) +  \left(-A -  \frac{E\,R^2}{2}\mu^2  \right)F(\mu) = 0
+\end{equation}
+where
+\begin{equation}\label{eqP}
+p^2 = -\frac{E\,R^2}{2}
+\end{equation}
+Following the derivation in \ref{AppendixG}
+$ A $ is the separation constant.  To eliminate the singularities, and following \cite{H2Plus2d1} we introduce two new functions:
+\begin{equation}\label{eqNew}
+\begin{split}
+& F(\mu) = (1-\mu^2)^{k/2}M(\mu) \\[.8em]
+& G(\lambda) = (\lambda^2-1)^{k/2}L(\lambda)
+\end{split}
+\end{equation}
+to obtain
+\begin{equation}
+\begin{split}
+& (1-\mu^2)\frac{d^2\,M}{d\mu^2} - (2k+1)\mu\frac{d\,M}{d\mu} +   \left[ A -  \frac{E\,R^2}{2}\mu^2  + k(k-1)\frac{\mu^2}{1-\mu^2} - k  \right]M = 0
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  + k + k(k-1)\frac{\lambda^2}{\lambda^2-1} \right]L = 0
+\end{split}
+\end{equation}
+To make both $ M(\mu) $ and $ L(\lambda) $ non singular at $ \mu, \lambda= 1$ we must have the $ k = 0, 1 $. So the equations reduces to:
+\begin{equation}\label{M1}
+\begin{split}
+& (1-\mu^2)\frac{d^2\,M}{d\mu^2}  - (2k+1)\mu\frac{d\,M}{d\mu} +   \left[ A -  \frac{E\,R^2}{2}\mu^2  -  k  \right]M(\mu) = 0 \\[.8em]
+\end{split}
+\end{equation}
+\begin{equation}\label{L1}
+\begin{split}
+& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[\frac{E\,R^2}{2}\lambda^2 + 2R\lambda  + k - A\right]L(\lambda) = 0
+\end{split}
+\end{equation}
+
+Effectively the choice of parameter $ k $ determines the parity of the solution. At this point we set:
+
+\begin{equation}
+p^2 = -\frac{ER^2}{2}
+\end{equation}
+
+And proceed with solving each equation separately:
+
+\subsection{ M Equation }
+
+Using the substitution $ \mu = \cos x $ we get the other form of the equation:
+
+\begin{equation}\label{M2}
+M^{''}(x) - 2k M^{'}(x) +   \left[ A - k + \frac{p^2}{2} + \frac{p^2}{2}\mu^2\cos(2x)  \right]M(x) = 0
+\end{equation}
+
+The equation \eqref{M2} is a form of a angular Mathieu's equation \cite{Mathieu2}. 
+
+\subsection{ L Equation }
+
+\begin{equation}\label{L2-2}
+\begin{split}
+& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  -k \right]L(\lambda) = 0
+\end{split}
+\end{equation}
+
+The equation for the $ L(\lambda) $ looks similar to the radial (modified) Mathieu's equation, but it is not an exact identity. 
+
+\subsection{Solutions}
+
+We observe that both equations for the functions $ M(\mu) $ and $ L(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
+
+\subsubsection{Mostly Algebraic Solution}
+
+Since $ M(\mu) $ is Mathieu's equation, we can exploit the eigenvalue relations for the Mathieu's equation. Following \cite{H2Plus2d2}, the complete solution is described in appendixC. The appendixG also contains a Wolfram Mathematica code used to obtain a values for electronic energy $ E(R) $, total potential $ V(R) $ for the  $ 1s_g^{+} $ and $2p_{s}^{+} $ states. 
+
+afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{Electron Energy, Total Energy}
+  \label{tab:H2Plus2D}
+  \begin{tabular}{ |l|l|l|l|l| }
+      \hline
+      \multicolumn{1}{r}{} &
+      \multicolumn{1}{r}{ $ 1s_g^+ $} &
+      \multicolumn{1}{r}{} &
+      \multicolumn{1}{r}{$ 2p_u^+ $ } \\
+      \hline
+      R & $ E_{ele} $ & $ E_{tot} $ & $ E_{ele} $ & $ E_{tot} $  \\ 
+      0.1 & -7.18911 & 2.81089 & -0.809388 & 9.19061 \\
+      0.2 & -6.38244 & -1.38244 & -0.841312 & 4.15869\\
+      0.3 & -5.73001 & -2.39668 & -0.911853 & 2.42148 \\
+      0.4 & -5.2088 & -2.7088 & -1.03325 &  1.46675\\
+      0.5 & -4.78775 & -2.78775 & -1.20116 & 0.798836 \\
+      0.6 & -4.44255 & -2.77588 & -1.39268 & 0.273983\\
+      0.7 & -4.15558 & -2.72701 & -1.58213 & -0.153558 \\
+      0.8 & -3.91413 & -2.66413 & -1.75267 & -0.502668 \\
+      0.9 & -3.70887 & -2.59776 & -1.89725 & -0.786139\\
+      1.0 & -3.53289 & -2.53289 & -2.0152 & -1.0152 \\
+      1.5 & -2.94401 & -2.27734 & -2.31133 & -1.64467\\
+      2.0 & -2.63299 & -2.1329 & -2.36558 & -1.86558 \\
+      2.5 & -2.4602 & -2.0602 & -0.424676 & -0.024676\\
+      3.0 & -2.35969 & -2.02636 & -2.29828 & -1.96494 \\
+      3.5 & -2.29721 & -2.01149 & -2.24537 & -1.95965 \\
+      4.0 & -2.25515 & -2.00515 & -2.18923 & -1.93923 \\
+      4.5 & -2.22467 & -2.00245 & -2.13117 & -1.90894 \\
+      5.0 & -2.20127 & -2.00127 & -2.261523 & -2.061523 \\
+      \hline 
+  \end{tabular}
+}
+
+\subsubsection{Calculating Energy by using calculating the Eigenvalues for the $ M(\mu) $ and $ L(\lambda) $ equations }
+
+The other approach taken, was to use the series of orthogonal functions to find the eigenvalues of the $ M(\mu) $ and $ L(\lambda) $ equations. The power series method is described in numerous textbooks are papers. It is tacitly assumed that the solution to the differential equation is a 'well behaved' continuous function and that consequently the power series converges.
+
+Thus we look for the solution in the form of:
+\begin{equation}\label{MSol}
+\begin{split}
+& M(\mu) = \sum_{n=1}^{\infty}{a_n\,e^{i2nx}} \\[.8em]
+\end{split}
+\end{equation}
+The solution depends on the chosen boundary conditions. The angular Mathieu's equation admits an even and odd solution, with respect to the origin. The parity of the solution is chosen depending on the boundary conditions for a particular problem. Therefore
+
+\begin{equation}
+\begin{split}
+& \text{ For the even case, the boundary condition is } \\[.8em]
+& M(\mu = 1) = M(\mu = -1) = 1\,;\,\,\Rightarrow  M'(0) = M'\left(\frac{\pi}{2}\right) = 0 \Rightarrow \\[.8em] 
+\end{split}
+\end{equation}
+The solution is then in the form \\[.8em]
+\begin{equation}\label{Meven}
+M(\mu) = \sum_{n=1}^{\infty}{a_n \cos\left(n\,\mu\right)}
+\end{equation}
+
+\begin{equation}\label{Modd1}
+\begin{split}
+& \text{ And for the odd case, take the boundary conditions: } \\[.8em]
+& M(\mu = 1) = 1\,;\,\,M(\mu = -1) = -1\,;\,\,\Rightarrow  M(0) = M'\left(\frac{\pi}{2}\right) = 0 \Rightarrow \\[.8em] 
+\end{split}
+\end{equation}
+\begin{equation}\label{Modd2}
+\begin{split}
+& \text{ The solution is then in the form: } \\[.8em]
+& M(\mu) = \sum_{n=1}^{\infty}{a_n \sin\left[\left(2n+1\right)\,\mu\right]} 
+\end{split}
+\end{equation}
+
+From now on, the solution to the equation for $ M(\mu) $ \eqref{M2} is straightforward. Set the boundary conditions, and express  $ M(\mu) $ in the series of sine or cosine functions.
+
+For the equation \eqref{L2-2} one could proceed by following the radial Mathieu's equations approach. One way to solve the Radial Mathieu's equation is by using the series of hyperbolic functions, obtained from the solution of angular Mathieu's equation using the substitution $ \eta = i\,\xi$.  But that this approach in numerically unstable and hard to compute \cite{Mathieu4}. There is another approach, using the product of Bessel Functions \cite{Mathieu4}
+
+We took a different approach to solving the equation \eqref{L2-2}, namely look for the solution in the form of the series of orthogonal functions. This approach has some challenges, since on a finite interval, there are number of functions orthogonal the interval, and one can choose the one which fits the problem the best. On an infinite interval, such as $ \lambda = [1, \infty] $ the choice is somewhat limited. The Laguerre's polynomial seemed like a suitable choice, as they form an orthogonal set on the infinite interval. So we look for the solution in the form:
+
+\begin{equation}\label{Lsol1}
+\begin{split}
+& L(\lambda) =  e^{-p\lambda}\sum_{n=0}^{\infty}{c_n\,L_n(\lambda)}
+\end{split}
+\end{equation}
+
+Where $ L_n(\lambda) $ are Laguerre polynomials. They have several interesting properties, which can be found in \cite{Laguerre1}.
+
+\subsection{ Towards the solution }
+
+So using the solutions above, the next step is to find the eigenvalues $ A $, $ p $, of the equations \eqref{M1} and \eqref{L2-2} for the values of $ k = 0,1 $. Using the series above, for each equation, we find functions $ A_i(p) $ for which the solution exists. The intersection of the two functions $ A_i(p) $ is the value of $ p $ common for both equations \eqref{M1} \eqref{L2-2}. This procedure translates into the matrix eigenvalues problem, following the steps below.
+
+For the even M equation, we insert the solution \eqref{Meven} in the equation \eqref{MSol}, multiply by $ \cos(2m\,x) $, $ m = 0,1,2,... $ and integrate. Since the basis functions in the series are orthogonal we obtain:
+
+\begin{equation}
+\begin{split}
+& \sum_{m,n=0}^{\infty}c_k \left\{-4n^2\int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 nx)dx} + \left[ \frac{p^2}{2} +k \right]\int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 nx)dx} + \right. \\[.8em]
+& \left. + \left[ \frac{p^2}{2} + k\right] \int_{-\pi/2}^{\pi/2}{\cos(2 x)\cos(2 mx)\cos(2 nx)dx} \right\} = \\[.8em]
+& = A \int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 nx)dx}  \,\Longrightarrow\\[.8em]
+\end{split}
+\end{equation}
+or
+\begin{equation}
+\begin{split}
+& \left[ \frac{p^2}{2} +k\right]\pi\delta_{0,0} + \left[ \frac{p^2}{2} +k\right]\frac{\pi}{2}\delta_{0,0}+ \left[ \frac{p^2}{2} +k\right]\frac{\pi}{2}\delta_{1,0}+ \left[ \frac{p^2}{2} +k\right]\frac{\pi}{2}\delta_{0,1} + \\[.8em] 
+& + \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\left[-4n^2 +\frac{p^2}{2} + k\right]\frac{\pi}{2} \delta_{m,n} + \left[\frac{p^2}{2} + k\right]\frac{\pi}{4} \delta_{m,n} } + \\[.8em]
+& + \left[\frac{p^2}{2}+k\right]\frac{\pi}{8}\delta_{m,n+1} + \left[\frac{p^2}{2}+k\right]\frac{\pi}{8}\delta_{m,n-1}  = A \pi\,\delta_{0,0} + \sum_{m=1}^{\infty}\sum_{n=1}^{\infty}{A\frac{\pi}{2}\delta_{m,n}}
+\end{split}
+\end{equation}\\*
+
+For the odd case, insert the equation \eqref{Modd2} in the equation {eqFinal}, multiply by $ \sin[(2m+1)\,x] $, $ m = 0,1,2,3... $ and integrate (again exploiting the orthogonality of the basis functions):
+\begin{equation}
+\begin{split}
+& \sum_{n=0}^{\infty}c_k -(2n+1)^2\int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 n+1)x]dx} + \left[\frac{p^2}{2} + k \right]\int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 n+1)x]dx} +  \\[.8em]
+& + \left[ \frac{p^2}{2} +k \right] \int_{-\pi/2}^{\pi/2}{\cos(2 x)\sin[(2 m+1)x]\sin[(2 k+1)x]dx}   = A \int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 k+1)x]dx}  \Longrightarrow \\[.8em]
+\end{split}
+\end{equation}\\*
+\begin{equation}
+\begin{split}
+&  \left[ - \frac{\pi}{2} + \frac{\pi}{2}\frac{p^2}{2} - \frac{\pi}{4}\frac{p^2}{2}\right]\delta_{0,0} +  \frac{\pi}{4}\left[\frac{p^2}{2}+k\right]\delta_{0,1} + \left[\frac{\pi}{4}+ k\right]\frac{p^2}{2}\delta_{1,0}  + \\[.8em]
+& +  \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\left[-(2n+1)^2 + \frac{p^2}{2}\right] \frac{\pi}{2}\delta_{m,n} +  \left[\frac{p^2}{2}+k\right]\frac{\pi}{4}\delta_{m,n \pm 1} } = \\[.8em]
+&  = A\frac{\pi}{2}\delta_{0,0}  + A\frac{\pi}{2}  \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\delta_{m,n}} \Longrightarrow
+\\[.8em]
+\end{split}
+\end{equation}\\*
+\begin{equation}
+\begin{split}
+& \left( - 1 + \frac{p^2}{4} \right)\delta_{0,0} + \left[ \frac{p^2}{4} + k \right]\delta_{0,1}  + \left[ \frac{p^2}{4} +k \right]\delta_{1,0}  + \\[.8em]
+& + \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\left(-(2n+1)^2 + \frac{p^2}{2}\right) \delta_{m,n} +  \left[\frac{p^2}{4}+k\right]\delta_{m,n \pm 1} } = \\[.8em]
+&  = A\delta_{0,0}  + A  \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\delta_{m,n}}
+\end{split}
+\end{equation}\\*
+
+For the $ L $ equation, first by shifting the origin $ x = \lambda -1 $ and by using various properties of Laguerre polynomials and its derivatives \cite{Laguerre1} we obtain.
+
+\begin{equation}
+\begin{split}
+&  \sum_{n=0}^{\infty}c_n \left\{ \sum_{i = 0}^{n-1}{L_i(x)}  +  \right. \\[.8em] 
+& + \left[ -2pn(2n+1) -(2p-1)n^2 -4pn +(2R-p)(2n+1) - p^2 -p + 2R \right]L_n + \\[.8em]
+& + \left[2pn(n+1) - (2R-p)(n+1) \right]L_{n+1} + \\[.8em]
+& + \left[2pn^2 + (2p-1)n(2n-1) + (4p-2)n - (2R-p)n \right]L_{n-1} - \\[.8em]
+& \left. - \left[ (2p-1)n(n-1)  \right]L_{n-2}  \right\}
+\end{split}
+\end{equation}\\[1em]
+
+Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials. 
+
+\begin{equation}
+\begin{split}
+& \int_0^{\infty} \sum_{n=0}^{\infty}c_n \sum_{m=0}^{\infty}L_m(x) \left\{ \sum_{i = 0}^{n-1}{L_i(x)}  +  \right. \\[.8em] 
+& + \left[ -2pn(2n+1) -(2p-1)n^2 -4pn +(2R-p)(2n+1) - p^2 -p + 2R \right]L_n + \\[.8em]
+& + \left[2pn(n+1) - (2R-p)(n+1) \right]L_{n+1} + \\[.8em]
+& + \left[2pn^2 + (2p-1)n(2n-1) + (4p-2)n - (2R-p)n \right]L_{n-1} - \\[.8em]
+& \left. - \left[ (2p-1)n(n-1)  \right]L_{n-2}  \right\}
+\end{split}
+\end{equation}\\[1em]
+
+The result is an "almost" lower triangular matrix, called Hessenberg matrix.
+
+The rest of the work is numerical. Since our goal is to obtain the function $ E(R) $ we choose the suitable values of $ R $ as in table \ref{groundEven} . For each value of $ R $ we divide with the interval $ p \in [0,2*R] $ into the $ n $ points. For each value of $ p $ we calculate store the eigenvalues for equation for $ M(\mu) $ and $ L(\lambda) $. Finding matrix eigenvalues is a common operation is a number of fields, and good numerical algorithms and libraries are available, such as \cite{Lapack1}.  Regardless, finding eigenvalues is a relative slow operation, with the complexity $ O(n^\omega), 2 < \omega \le 3 $, \cite{Lapack1} $ n $ being the size of the matrix.  Eigenvalues for matrices up to $ 100 \times 100 $, i.e. limiting the sums above to 100 elements can be found using Wolfram Mathematica, within a reasonable time. However for $ n \ge 100 $ the time needed increases as $ n^3 $ \cite{QRDecomposition1} \cite{LinearAlgebra1} and the Mathematica becomes unusable. For $  n = 1000 $, i.e $ 1000 \times 1000  $ matrices I used the Fortran Gnu compiler and Lapack \cite{Lapack1} libraries. The Lapack libraries are both accurate and fast, and it took about 30 minutes to find an eigenvalue on Apple Macbook Pro, with 16GB ram and Intel I7 processor at 2.2 GHz.
+
+In comparison, the results obtain by using Wolfram Mathematica for $ n = 100 $ and results using Lapack for $ n = 1000 $  agree up to one part in $ 10^{-3} $.
+
+Once the eigenvalues are calculated we have two functions $ A_i(p) $ for each of the equations. Interpolate and find the value of $ p $ for which the curves intersect. From the value of $ p $ we obtain the eigenenergy $ E = E(R) $ using equation \eqref{eqP}.
+
+Appendix D contains the Fortran code for calculating eigenvalues A and small Wolfram Mathematica a program for calculating the energies.
+
+\subsection{Tables of Energies as a function or Internuclear Distance}
+
+Table depicting the calculated energies of the electron for the ground state (even and odd) and first and second excited state:  Also TODO: note that it does not work for small R (needs more points). All numbers are in atomic units.
+
+\afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{ $ 1s_g^{+} $ }
+  \label{groundEven}
+		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+			\hline
+			R & p & A & E & V \\ \hline \hline
+			.2 & -1 & -1 & -1 \\[-1em]
+			.4 & 0.6482991 & 0.215659 & -5.2536 & -2.75365 \\[-1em]
+			.6 & 0.8968546 & 0.422304 & -4.4686 & -2.80193 \\[-1em]
+			.8 & 1.1214876 & 0.677779 & -3.93042 & -2.68042 \\[-1em]
+			1.0 & 1.3311023 & 0.982007 & -3.54367 & -2.54367\\[-1em]
+			1.2 & 1.5312058 & 1.33809 & -3.25638 & -2.42304\\[-1em]
+			1.4 & 1.7254930 & 1.75074 & -3.03809 & -2.3238 \\[-1em]
+			1.6 & 1.9165547 & 2.22543 & -2.86967 & 2.24467\\[-1em]
+			1.8 & 2.1062223 & 2.76777 & -2.73838 & -2.18282 \\[-1em]
+			2.0 & 2.2957553 & 3.38297 & -2.63525 & -2.13525 \\[-1em]
+			2.2 & 2.4859626 & 4.07548 & -2.55372 & -2.09918 \\[-1em]
+			2.4 & 2.6772997 & 4.84875 & -2.48887 & -2.0722 \\[-1em]
+			2.6 & 2.8699576 & 5.70516 & -2.4368 & -2.05227 \\[-1em]
+			2.8 & 3.0639450 & 6.64611 & -2.39484 & -2.03769 \\[-1em]
+			3.0 & 3.2591587 & 7.67222 & -2.36047 & -2.02714 \\[-1em]
+			3.2 & 3.4554388 & 8.78351 & -2.33204 & -2.01954\\[-1em]
+			3.4 & 3.6526076 & 9.97968 & -2.30823 & -2.01411\\[-1em]
+			3.6 & 3.8504933 & 11.2602 & -2.28801 & -2.01023\\[-1em]  
+			3.8 & 4.0489429 & 12.6244 & -2.27063 & -2.00747 \\[-1em]
+			4.0 & 4.2478273 & 14.0717 & -2.2555 & -2.0055 \\[-1em]
+			4.2 & 4.4470414 & 15.6016 & -2.2422 & -2.0041 \\[-1em]
+			4.4 & 4.6465020 & 17.2136 & -2.23037 & -2.0031\\[-1em]
+			4.6 & 4.8461448 & 18.9072 & -2.21977 & -2.00237 \\[-1em]
+			4.8 & 5.0459206 & 20.6821 & -2.21018 & -2.00237\\[-1em]
+			5.0 & 5.2457926 & 22.5380 & -2.20147 & -2.00147 \\[-1em]
+			6.0 & 6.2458515 & 33.0265 & -2.16726 & 2.00059\\[-1em]
+			7.0 & 7.2462380 & 45.5215 & -2.14318 & -2.00033 \\[-1em]
+			8.0 & 8.2466140 & 60.0184 & 2.12521 & -2.00021\\[-1em]
+			9.0 & 9.2469337 & 76.5162 & -2.11125 & -2.00014\\
+			\hline
+		\end{tabular}
+}
+
+\afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{ $ 2p_u^{+} $ } \label{tab:2pu}
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+		\hline
+		    R & p & A & E \\ \hline \hline
+        0.2 & 0.2002000 & -0.989967 & -2.004 & 2.996 \\[-1em]
+        0.4 & 0.2899422 & -0.978928 & -1.05083 & 1.44917 \\[-1em]
+        0.6 & 0.4698674 & -0.944425 & -1.22653 & 0.440137 \\[-1em]
+        0.8 & 0.6583497 & -0.890176 & -1.35445 & -0.104451 \\[-1em]
+        1. & 0.83893725 & -0.820177 & -1.40763 & -0.407631  \\[-1em]
+        1.2 & 1.0072282 & -0.738337 & -1.40904 & -0.575707 \\[-1em]
+        1.4 & 1.1637570 & -0.647105 & -1.38197 & -0.667684 \\[-1em]
+        1.6 & 1.3101216 & -0.547923 & -1.34095 & -0.715952 \\[-1em]
+        1.8 & 1.4478995 & -0.441659 & -1.29408 & -0.738527 \\[-1em]
+        2. & 1.57842277 & -0.328846 & -1.24571 & -0.745709 \\[-1em]
+        2.2 & 1.7027722 & -0.209819 & -1.19811 & -0.743568  \\[-1em]
+        2.4 & 1.8218201 & -0.084788 & -1.15244 & -0.735774 \\[-1em]
+        2.6 & 1.9362735 & 0.0461182 & -1.10922 & -0.724602  \\[-1em]
+        2.8 & 2.0467105 & 0.182823 & -1.06863 & -0.711486 \\[-1em]
+        3. & 2.15360935 & 0.325285 & -1.03067 & -0.697341 \\[-1em]
+        3.2 & 2.2573686 & 0.473487 & -0.995256 & -0.682756 \\[-1em]
+        3.4 & 2.3583242 & 0.627428 & -0.962231 & -0.668113 \\[-1em]
+        3.6 & 2.4567615 & 0.787117 & -0.931432 & -0.653654 \\[-1em]
+        3.8 & 2.5529247 & 0.952568 & -0.90269 & -0.639532  \\[-1em]
+        4. & 2.64702425 & 1.1238 & -0.875842 & -0.625842 \\[-1em]
+        4.2 & 2.7392425 & 1.30082 & -0.850731 & -0.612636 \\[-1em]
+        4.4 & 2.8297387 & 1.48366 & -0.827213 & -0.59994 \\[-1em]
+        4.6 & 2.9186522 & 1.67232 & -0.805154 & -0.587763 \\[-1em]
+        4.8 & 3.0061054 & 1.86681 & -0.784433 & -0.5761 \\[-1em]
+        5. & 3.09220669 & 2.06715 & -0.764939 &- 0.564939 \\[-1em]
+        6. & 3.50544693 & 3.15618 & -0.682675 & -0.516009\\[-1em]
+        7. & 3.89563406 & 4.38877 & -0.619427 & -0.47657 \\[-1em]
+        8. & 4.26798013 & 5.7597 & -0.569239 & -0.444239  \\[-1em]
+        9.0 & 4.62572636 & 7.26153 & -0.528329 &-0.417218 \\
+		\hline
+		\end{tabular}
+	\restoregeometry
+}
+
+\afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{First Excited State, Even Energies} \label{tab:firstEven}
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
+		\hline
+		    R & p & A & E \\ \hline \hline
+		\hline
+		\end{tabular}
+    \\[4.em]
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
+		\hline
+		    R & p & A & E \\ \hline \hline
+		\hline
+		\end{tabular}
+	\restoregeometry
+}
+
+\afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{First Excited State, Odd Energies} \label{tab:firstOdd}
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
+		\hline
+		    R & p & A & E \\ \hline \hline
+		\hline
+		\end{tabular}
+    \\[4.em]
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
+		\hline
+		    R & p & A & E \\ \hline \hline
+		\hline
+		\end{tabular}
+	\restoregeometry
+}
+

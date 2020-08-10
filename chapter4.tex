@@ -1,0 +1,231 @@
+\chapter{Charge Transfer}
+
+\subsection{Electronic translation factor (ETF) \cite{ETF1}\cite{ETF2}\cite{ETF3}}
+
+The molecular approach to atomic collisions require the addition of the Electronic Translation Factor (ETF). Physically the reason for this factor is to ensure a Galilean invariance of the results. Which in turn means that the equations should be invariant to translations. Translation in this case corresponds to the movement of the molecules \cite{ETF2}. It has been shown \cite{ETF2} that an ETF does impact the cross section. 
+The introduction of a switching function into the electron translation factor is relatively simple approach that greatly improves the accuracy of the cross section computation. Even though method of switching function is not a general one \cite{ETF3}, it is well suited to the specially symmetric systems such as $ H_{2}^{+} $.
+
+\subsection{Application of the Born-Oppenheimer (BO) approximation}
+
+As usual, we also employ the Born-Oppenheimer (BO) approximation. We expand the scattering wave function in the terms of BO wave functions, miffed by the electronic translation factor. 
+If we set $ \chi_i^a(\mathbf{R}) $ to the be wave function of the nuclear motion in the electronic state $ i $, we get for the wavefunction:
+\begin{equation}
+\Psi(\mathbf{r},\mathbf{R}) = \sum_i{exp\left[\frac{1}{\mu}\mathbf{S}\cdot\nabla_R \right]\phi(\mathbf{r},\mathbf{R}) }\chi_i^a(\mathbf{R})
+\end{equation}
+
+with $ \mu $ being the reduced mass, and 
+\begin{equation}
+S = \frac{1}{2}f_i(\mathbf{r},\mathbf{R})\mathbf{r}
+\end{equation}
+
+where $ f_i $s are the switching functions that incorporate the molecular character of the ETF.
+The equations for the $ \chi_i^a(\mathbf{R}) $ can be obtained in a matrix form:
+\begin{equation}
+\left\{-\frac{1}{2\mu}\left[\underline{I}\nabla_R - i(\underline{\mathbf{P}} + \underline{\mathbf{rAP}})\right]^2 + \underline{V}\right\}\underline{\chi}^a(\mathbf{R}) = E\underline{\chi}^a(\mathbf{R})
+\end{equation}
+with:
+\begin{equation}\label{matrixFactors1}
+\begin{split}
+& \mathbf{P}_{ij} = \Braket{\phi_i | -i\nabla_R | \phi_j} \\*
+& \mathbf{A}_{ij} = i(E_i - E_j)\Braket{\phi_i | \mathbf{S} | \phi_j} \\*
+& V_{ij}(R) = \delta_{ij}V_i(R)
+\end{split}
+\end{equation}
+where $ E $ is the energy of the nuclear motion in the center of mass frame, and $ \underline{I} $ is the identity matrix. The matrix $ \mathbf{P}_{ij} $ represents the non-adiabatic coupling, the $ \mathbf{A}_{ij} $ is the ETF correction, and the $ V_i(R) $ is the potential energy of the $ i $th Born-Oppenheimer state.
+
+\subsection{ Radiative charge transfer and radiative association}
+
+The radiative charge transfer cross-section can be calculated using the formula \eqref{crs1} for $ \sigma $ with $ M $ calculated using formula \eqref{Mll1}, where the $ k_a $ and $ k_b $ are the wave numbers of the initial and final state. 
+
+The partial waves $ f_j(kR) $ and $ s_j(kR) $ are the regular solutions of the homogeneous radial equations.
+\begin{equation}
+\left\{\frac{d^2}{dR^2} - \frac{J(J+1)}{R^2} - 2\mu\left[V_a(R) - V_b(\infty)\right\} + k^2\right\}s_j(kR) = 0
+\end{equation}
+and
+\begin{equation}
+\left\{\frac{d^2}{dR^2} - \frac{J(J+1)}{R^2} - 2\mu\left[V_b(R) - V_a(\infty)\right\} + k^2\right\}f_j(kR) = 0
+\end{equation}
+
+with $ V_a(R) $ and $ V_b(R) $ being the potential energy curves of the final ground state and the initial excited state, respectively. The $ k $s are the wave numbers, given by:
+\begin{equation}
+\begin{split}
+& k_b = \sqrt{2\mu\left[E - \hbar\omega - V_b(\infty)\right]} \\*
+& k_a = \sqrt{2\mu\left[E - V_a(\infty)\right]} \\*
+\end{split}
+\end{equation}
+where $ \omega$ is the angular frequency of the emitted photon, $ E $ is the total collision energy in the center of mass frame.
+
+Again, we get calculate the total cross section given by the radiative decay as:
+
+One has to be careful though, since it seems that most numerical methods are very sensitive to the choice of initial conditions.  As a second order equation, the solution requires two initial conditions, either in the form of function value at the ends of the interval, or value of the function and its derivative at some point. Now, this partial wave represents an incoming particle (electron) and thus the function  $  f(kR) $  is defined on the infinite interval and it is oscillatory for large values of $ kR $. Because of that, it is impossible to specify a boundary condition for value of $  f(kR) $ at infinity. So the boundary conditions have to be in the form of the value of function at some point and the value of the derivative at the same point. 
+
+In my calculation, I assume that  for $ kR \rightarrow 0 $, the function $  f(kR) $ is finite and 'well  behaving', so the appropriate boundary conditions seem to be: 
+\begin{equation}
+\begin{split}
+& \text{ For }\,kR \rightarrow 0,\,f(kR) = 1\,;\,\,f'(kR)  = 0
+\end{split}
+\end{equation}
+
+The Mathematica code for the $  f(kR) $ is in appendix TODO: add code.
+
+Following the approach in the \cite{ZL} I apply a semi-classical approach to the system of two $ H_2^{+} $ molecules. In this approach, I assume that a photon is emitted with energy equal to the energy difference between two Born-Oppenheimer potential surfaces, at the distance where the transition occurs. This leads to the Local Optical Potential Method, and following the semi-classical approach, the total rate is estimated as a classical integral over all localized transitions. 
+
+The cross section of the spontaneous radiative association is given by \cite{Zygelman1} .  This can also be derived 
+using the Fermi's Golden Rule (which turns out to be published by Dirac's 20 years before Fermi):
+\begin{equation}
+\begin{split}
+& \sigma_{CT}  = \int_0^{\omega_{max}}{d\omega\,\frac{d\sigma}{d\omega}} \\[.8em]
+& \text{ where }: \\[.8em]
+& \sigma_{sp}(k) = \sum_J\sum_n{\frac{64}{3}\frac{\pi^5\nu^3}{c^3k^2}\left[(J+1)M_{J+1,J}^2 + J\,M_{J-1,J}^2 \right] }
+\end{split}
+\end{equation}
+
+The sum extends over the rho-vibrational quantum numbers $ n $ and angular momentum $ J $ of the $ H_2^{+} $ ion. Due to the topological constraints the direction of $ J $ remains fixed, and only its magnitude changes. As expected, for the ground state we have $ J = 0 $. 
+
+The $ M_{J,J'}  $ is an overlap integral defined by:
+\begin{equation}
+\begin{split}
+& M_{J,J'} = \int_0^{\infty}{dR\,f_j(kR)D(R)\phi_{J'}^n(R)}
+\end{split}
+\end{equation}
+
+where $ f_j(kR) $ is a partial wave defined above. 
+
+\subsubsection{Vibrational Levels}
+
+The $ \phi_{J',n}(R) $ represents the vibrational eigenfunction of the ground state   $ X^2\Sigma^{+} $ with the energy $ \epsilon_nJ $. TODO: Show picture.   Given the nature of the problem 2D, the ground state has the $ J = 0 $. So the differential equation for the  $ \phi_{0,n}(R) $ , in the potential well, is:
+\begin{equation}
+\begin{split}
+& \phi_{0,n}^{''}(R) + \left[ E(R) + V(R)  \right]\phi(R)_{0,n} = \epsilon_n \phi(R)_{0,n}
+\end{split}
+\end{equation}
+
+Of course the solution to this equation can only be calculated numerically (appendix TODO: shows the Mathematica code. ).  To solve the equation one must set the boundary conditions to  $ \phi(R)_{0,n} \Rightarrow 0, \phi(R)^{'}_{0,n} \ $ for $ R \Rightarrow 0 $. For actual numerical evaluation, the important boundary condition is the value of  $ \phi(R \approx 0 )_{0,n} $.  With these boundary conditions set, the values of $ \epsilon_n $ must satisfy the boundary condition on the other side of the potential well, namely  that the $ \phi(R)_{0,n} $ remains bounded, which translates into: $ \phi(R)_{0,n} \Rightarrow 0 $ for $ R \Rightarrow \infty $. 
+
+So calculations show (TODO: Verify ) that there are 
+
+\subsubsection{Dipole Transition in 2 Dimension}
+
+The $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A^2\Sigma^{+} $, \begin{equation}
+\begin{split}
+& D(R) = \Braket{\psi_1(R) | r_1 +  r_2 | \psi_0(R) } \,\,\,\,\,\text{ where in our case : } \\[.8em]
+& r_1 + r_2 = \lambda\, R
+\end{split}
+\end{equation}
+
+Now the 2 dimension case comes into effect. I consider the case where the particle (electron in this case) is confined in 2 dimensions, but where the underlying space is still 3 dimensional, Euclidean. Thus while particle's movement is confined in 2D, it can radiate photons in any direction in 3D.
+
+TODO: Add appendix for the radiation in 1D and 2D.
+
+With the separation of variable, the solution is a product of two function. So the integral above come t0o:
+\begin{equation}\label{Dint1}
+\begin{split}
+& D(R) = \int_{-1}^{1}{\int_{1}^{\infty}{ d\mu\, d\lambda\, M_u(\mu)L_u(\lambda)\lambda R M_g(\mu)L_g(\lambda) }}
+\end{split}
+\end{equation}
+where $ M_uL_u $ and $ M_gL_g $ are the odd/even solutions to the original Schrodinger equation \eqref{eqH1}.
+
+Since the functions $ M(\mu)$ and $L(\lambda) $ do not exist in the closed form, the dipole integral \eqref{Dint1}  is numerically calculated using Wolfram Mathematica.  First the two Mathematica modules (functions) are created, which solve the equations $ L(\lambda) $ and $ M(\mu) $, as function of the internuclear distance $ R $ and corresponding variables. Then the second module calculates the integral above,  as the function of $ R $.
+
+The Mathematica code for the dipole is in appendix TODO: add code and indicate that I wrote it. :)
+
+From the table TODO: add reference one could calculate the spectrum of these transitions.  For the electron to transition from $ A^2\Sigma^{+} $ to $ X^2\Sigma^{+} $ level, it needs to emit photon $ \Delta E \approx  -3.2\,au = 0.1176 eV $, so the corresponding wavelength is $ \lambda \approx   380\,nm $  TODO: Verify the numbers.
+TODO: verify the depth of the potential well compared to the paper \cite{H2Plus2d1}
+
+TODO: Possible spectrum of such transitions
+
+\subsubsection{Distorted Wave Approximation}
+
+The distorted wave Born approximation (DWBA) is an extension to the (first) Born approximation in scattering processes. Starting from the Schrodinger equation for the scattering problem, we solve it by method of Green's function
+\begin{equation}
+\begin{split}
+& \left[-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r})\right]\psi_k(\mathbf{r}) = E \psi_k(\mathbf{r}) \\[.8em]
+& \text{ with } V(\mathbf{r}) = 0 \,\,\,\,\text{ except in the target region }  \Longrightarrow
+\end{split}
+\end{equation}
+
+The energy $ E $ is the energy of the incident plane wave, $ E = \hbar^2k^2/2m $.  Applying the Green's function
+\begin{equation}
+\begin{split}
+& \left[\frac{\hbar^2}{2m}\nabla^2 + E \right]G_0(\mathbf{r}, \mathbf{r}^{'} | E) = V(\mathbf{r}) \psi_k(\mathbf{r}) 
+\end{split}
+\end{equation}
+
+we get the integral form of the Schwinger-Lippmann equation:
+\begin{equation}\label{SLip1}
+\begin{split}
+\psi^{'}_k(\mathbf{r}) = \psi_k(\mathbf{r}) + \int{d^3r^{'}\,G_0(\mathbf{r}, \mathbf{r}^{'}| E)V(\mathbf{r}^{'})\psi^{'}_k(\mathbf{r})}
+\end{split}
+\end{equation}
+
+The scattering amplitude is given by \cite{DWBA}
+\begin{equation}\label{fsc1}
+f_k(\mathbf{r}) = -\frac{2m}{\hbar^2}\frac{1}{4\pi}\int{d^3r^{'}\,e^{-i\mathbf{k}\mathbf{r}^{'}}V(\mathbf{r}^{'})\psi^{'}_k(\mathbf{r}^{'})}
+\end{equation}
+
+Since the Schwinger-Lippmann equation \eqref{SLip1} is unsolvable, the first Born approximation assumes that the scattered field is small when compared to the incident field. Therefore it treats the scattered way as a perturbation. As the $ 0 - th $ order the scattered wave is an unperturbed incident plane wave: 
+\begin{equation}
+\begin{split}
+\psi^{'}_0(\mathbf{r}) = e^{i\mathbf{k}\mathbf{r}}
+\end{split}
+\end{equation}
+
+and then the equation \eqref{SLip1} is solved iteratively:
+\begin{equation}\label{SLi1}
+\begin{split}
+\psi^{'}_{n+1}(\mathbf{r}) = e^{i\mathbf{k}\mathbf{r}} + \int{d^3r^{'}\,G_0(\mathbf{r}, \mathbf{r}^{'}| E)V(\mathbf{r}^{'})\psi^{'}_k(\mathbf{r}) }
+\end{split}
+\end{equation}
+
+So if we expand the wave function in the powers of the interaction potential $ V $ we get:
+\begin{equation}\label{SLP1}
+\begin{split}
+& \psi^{'}_k = \psi^{'(0)}_{\mathbf{k}} + \psi^{'(1)}_{\mathbf{k}} +  \psi^{'(2)}_{\mathbf{k}} +\, ...\, \\[.8em]
+& = \psi^{'(0)}_{\mathbf{k}} + G_0V\psi^{'(0)}_{\mathbf{k}} + G_0VG_0V\psi^{'(0)}_{\mathbf{k}} + \,...\, \\[.8em]
+& = (1 + G_0T)\psi^{'(0)}_{\mathbf{k}}\,\,\,\,\,\,\,\text{ with } T = V + G_0V + .... = \frac{1}{1-VG_0}
+\end{split}
+\end{equation}
+
+The equation \eqref{SEP1} represents a scattering process where incident particle undergoes multiple scattering events from the potential. Since this makes the calculations very complicated, only the first iteration of the series is takes into account and the matrix $ T $ is approximated by the potential $ V $. This first order term in which the exact wave function $ \psi^{'}_{\mathbf{k}}(\mathbf{r}) $ is replaced by the plane wave $ e^{i\mathbf{k}\mathbf{r}} $ is the First Born Approximation. It is very useful, however it is not always valid and one way to extend its validity is the DWBA. 
+
+In the DWBA, we do not assume any more that the scattered field is small compared to the incident field. So in this case, it is possible to generalize the Born approximation. The free space zero potential $ V_0(\mathbf{r}) = 0 $ is replaced by the non-trivial reference potential $ V_1(\mathbf{r}) = 0 $. It is assumed that the scattered wave function $ \psi_{\mathbf{k}}^{'1} $ due to this potential is known, either analytically or numerically as a solution to the following Schwinger-Lippmann equation:
+\begin{equation}
+\psi^{'}_{n+1}(\mathbf{r}) = e^{i\mathbf{k}\mathbf{r}} + \int{d^3r^{'}\,G_0(\mathbf{r}, \mathbf{r}^{'} | E)V_1(\mathbf{r}^{'})\psi^{'1}_k(\mathbf{r}) }
+\end{equation}
+
+Then the interaction potential is treated as a perturbation to the reference potential $ V_1 $, i.e:
+\begin{equation}
+V(\mathbf{r}) = V_1(\mathbf{r}) + \delta V(\mathbf{R} \,\,\,\,\,\text{ with }\,\,\,\,\left|\delta V\right| << \left|V_1\right|
+\end{equation}
+
+So in the DWBA the scattering field is determined by applying the Born approximation:
+\begin{equation}
+\psi^{'}(\mathbf{r}) = \psi^{'1}(\mathbf{r}) + \int{d^3r^{'}\,G_0(\mathbf{r}, \mathbf{r}^{'}| E)V_1(\mathbf{r}^{'})\psi^{'1}_k(\mathbf{r}) }
+\end{equation}
+to the scattered wave $ \psi^{'}(\mathbf{r}) $. This distorted wave is the solution of the outgoing-wave Schrodinger equation:
+\begin{equation}
+\left[\frac{\hbar^2}{2m}\nabla^2 - V_1(\mathbf{r}) + E \right]\psi^{'1}(\mathbf{r}) = 0
+\end{equation}
+where we can use the Green's function method.
+
+To satisfy the boundary conditions, the asymptotic form of the $ \psi^{'1}(\mathbf{r}) $ for $ r \rightarrow \infty$  is:
+\begin{equation}
+\psi^{'1}(\mathbf{r}) \rightarrow e^{i\mathbf{k}\mathbf{r}} + \frac{1}{r} e^{ikr}f^1_k(\theta)
+\end{equation}
+where the scattering amplitude is:
+\begin{equation}
+f^1_k(\theta) = -\frac{2m}{\hbar^2}\frac{1}{4\pi}\int{d^3r^{'}\,e^{-i\mathbf{k}\mathbf{r}^{'}}V_1(\mathbf{r}^{'})\psi^{'1}_k(\mathbf{r}^{'})}
+\end{equation}
+This would be the scattering amplitude if the potential $ V_1 $ were the only potential present. The total scattering amplitude is the sum:
+\begin{equation}
+f_k(\theta) = f^1_k(\theta) + \delta f_k(\theta)
+\end{equation}
+and $ \delta f_k(\theta) $ is calculated in the Born approximation:
+\begin{equation}\label{fDW1}
+\delta f_k(\theta) \simeq -\frac{2m}{\hbar^2}\frac{1}{4\pi}\int{d^3r^{'}\,\psi^{'1(-)*}_{k'}(\mathbf{r}^{'})V_1(\mathbf{r}^{'})\psi^{'1}_k(\mathbf{r}^{'})}
+\end{equation}
+
+The $ \psi^{'1(-)*}_{k'} $ is the known incoming wave, corresponding to the reference potential $ V_1 $ (i.e. solution of the Schrodinger equation) .
+
+The condition for the \eqref{fDW1} to be a good approximation is for the $ \delta V(\mathbf{r}) $ to be sufficiently small. What that means is that possible additional scattering does not modify significantly the wave function.
+

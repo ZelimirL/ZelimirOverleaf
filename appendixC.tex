@@ -1,0 +1,159 @@
+\chapter{ Hydrogen Ion in 2 Dimension Equation, Derivation }
+\label{AppendixC}
+
+\begin{equation}\label{eqPartial2DG}
+\left(-\frac{1}{2}\nabla^2-\frac{1}{r_a}-\frac{1}{r_b}\right)\psi = E\,\psi
+\end{equation}
+
+As illustrated by the figure \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have 
+\begin{equation}\label{variables1G}
+\begin{split}
+& \lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\[1em]
+& \lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\[1em]
+& \text{where } \lambda \in \left[1,\infty\right]\,,\,\,\,\,\,\,\,\,\,\mu \in \left[ -1, 1 \right]\,\,\,\,\,\,\,\,\,\text{ and } \\[.8em] 
+& r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+\end{split}
+\end{equation}
+
+Plug the variables $ \lambda $ and $ \mu $ into the equation \eqref{eqPartial2DG} we get by using 3D elliptic cylindrical coordinates \cite{MorseFeshbach} .
+\begin{equation}
+\begin{split}
+& \nabla^2 = \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[ \sqrt{\lambda^2-1}\frac{\partial}{\partial \lambda}\left(\sqrt{\lambda^2-1}\frac{\partial \psi}{\partial \lambda} \right) + 
+\sqrt{1-\mu^2}\frac{\partial}{\partial \mu}\left(\sqrt{1 - \mu^2}\frac{\partial \psi }{\partial \mu }\right) \right] = \\
+& \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + (
+1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right]
+\end{split}
+\end{equation}
+
+So the equation transforms to (with $ \psi = \psi(\lambda, \mu) $:
+\begin{equation}
+-\frac{1}{2}\frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + 
+(1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right] - \frac{2}{R(\lambda+\mu)}\psi - \frac{2}{R(\lambda-\mu)}\psi = E \psi
+\end{equation}
+or
+\begin{equation}\label{SchrFull-1}
+-\frac{1}{2}\frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + 
+(1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right] - \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2}\psi = E \psi
+\end{equation}
+
+We assume that the total electronic wavefunction can be written as the product of two functions:
+\begin{equation}\label{variables2}
+\psi(\lambda,\mu) = M(\mu)L(\lambda)
+\end{equation}
+we obtain from \eqref{SchrFull-1}
+\begin{equation}
+\begin{split}
+& \frac{2}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)M\frac{\partial^2 L}{\partial \lambda^2} + \lambda M\frac{\partial L}{\partial \lambda} + 
+(1 - \mu^2)L\frac{\partial^2 M}{\partial \mu^2} - \mu L\frac{\partial M}{\partial \mu} \right] + \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2} M L + E M L = 0 \Rightarrow \\[.8em]
+& (\lambda^2-1)\frac{1}{L}\frac{\partial^2 L}{\partial \lambda^2} + \frac{\lambda}{L}\frac{\partial L}{\partial \lambda} + 
+(1 - \mu^2)\frac{1}{M}\frac{\partial^2 M}{\partial \mu^2} - \frac{\mu}{M} \frac{\partial M}{\partial \mu} + 2R\lambda + \frac{R^2}{2} E (\lambda^2 - \mu^2) = 0 
+\end{split}
+\end{equation}
+Setting $ p^2 = \frac{R^2}{2}E $ and rearraging:
+\begin{equation}\label{eqLG}
+\begin{split}
+& (\lambda^2-1)\frac{\partial^2 L}{\partial \lambda^2} + \lambda\frac{\partial L}{\partial \lambda} + \left(A + 2R\lambda - p^2 \lambda^2\right) L = 0 \\[.8em]
+& (1 - \mu^2)\frac{\partial^2 M}{\partial \mu^2} - \mu\frac{\partial M}{\partial \mu} - \left(-A + p^2 \mu^2\right) M = 0
+\end{split}
+\end{equation}
+$ A $ is the separation constant.
+
+Now solve each equation.
+
+\section{M Equation}
+Using the substition $ \mu = \cos x $, $ d\mu = -\sin x dx $,  we get the other form of the equation:
+\begin{equation}
+\frac{dM}{d\mu} = -\frac{1}{\sin x}\frac{d F}{d x}
+\end{equation}
+\begin{equation}
+\begin{split}
+& \frac{d^2M}{d\mu^2} = \frac{d}{d x}\left(-\frac{1}{\sin x}\frac{d F}{d x}\right)\frac{d x}{d \mu} = \frac{d}{d x}\left(-\frac{1}{\sin x}\frac{d F}{d x}\right)\left(-\frac{1}{\sin x}\right) = \left[-\frac{\cos x}{\sin^2 x}\frac{d F}{d x} + \frac{1}{\sin x}\frac{d^2 F}{d x^2}\right]\frac{1}{\sin x} \Rightarrow \\[.8em]
+& \frac{d^2 M}{d\mu^2} = \frac{1}{\sin^2 x}\frac{d^2 F}{d x^2} - \frac{\cos x}{\sin^3 x}\frac{d F}{d x}
+\end{split}
+\end{equation}
+Plug in equation for $ M(\mu) $.
+\begin{equation}\label{Feq}
+\begin{split}
+& \frac{d^2 F}{d x^2} - \frac{\cos x}{\sin x}\frac{d F}{d x} + \frac{\cos x}{\sin x}\frac{d F}{d x} + \left(-A + p^2\cos^2 x\right) F = 0 \Rightarrow \\[.8em]
+& \frac{d^2 F}{d x^2} + \left(-A + p^2\cos^2x\right)F = 0
+\end{split}
+\end{equation}
+Using $ \cos(2x) = \cos^2x - \sin^2x = 2\cos^2x - 1 $ we get:
+\begin{equation}\label{Feq2}
+\frac{d^2 F}{d x^2} + \left[-A + \frac{p^2}{2} + \frac{p^2}{2}\cos(2x) \right]F = 0 
+\end{equation}
+The equation \eqref{Feq2} is a Mathieu equation written as:
+\begin{equation}\label{FeqM }
+\frac{d^2 F}{d x^2} + \left[w - 2q\cos(2x)\right]F = 0
+\end{equation}
+where
+\begin{equation}
+\begin{split}
+& w = - A + \frac{p^2}{2} \\[.7em]
+& q = - \frac{p^2}{2}
+\end{split}
+\end{equation}
+
+From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has eigenvalue functions as:
+\begin{equation}
+\begin{split}
+V_0 = \cfrac{2}{V_2 - \cfrac{1}{V_4 - \cfrac{1}{V_6 - ...}}}
+\end{split}
+\quad\leftrightarrow\quad
+\begin{split}
+V_1 - 1 = \cfrac{1}{V_3 - \cfrac{1}{V_5 - \cfrac{1}{V_7 - ...}}}
+\end{split}
+\end{equation}
+where 
+\begin{equation}
+V_m = \frac{w - m^2}{q}
+\end{equation}
+
+\section{L Equation}
+
+Following \cite{Bates1} and \cite{H2Plus2d2} we look for the solution in the form of:
+\begin{equation}\label{eqLsumG}
+L(\lambda) = \left(\lambda +1\right)^\sigma e^{-p\lambda}\sum_{n=0}^{\infty}{a_nx^n}
+\end{equation}
+with
+\begin{equation}
+\begin{split}
+\sigma = \frac{R}{p} - \frac{1}{2}
+\end{split}
+\quad\text{ and }\quad
+\begin{split}
+x = \frac{\lambda-1}{\lambda+1}
+\end{split}
+\end{equation}
+Substituing \eqref{eqLsumG} into \eqref{eqLG} and after some formidable algebra, we get a reccurence relation:
+\begin{equation}
+\alpha_na_{n+1}-\beta_n a_n+\gamma_na_{n-1} = 0\,\,\,\,\,n \ge 0
+\end{equation}
+with
+\begin{equation}
+\begin{split}
+& \alpha_n = \left(n + 1\right)\left(n + \frac{1}{2}\right)\\[.8em]
+& \beta_n = \left[2n^2 + (4p - 2\sigma)n - A + p^2 - 2p\sigma - \frac{\sigma}{2}\right] \\[.8em]
+& \gamma_n = (n-1)\left(n - 2\sigma - \frac{1}{2}\right) + \sigma\left(\sigma - \frac{1}{2}\right)
+\end{split}
+\end{equation}
+and if follows that
+\begin{equation}
+\begin{split}
+\frac{a_n}{a_{n-1}} = F_n
+\end{split}
+\quad\text{ where }\quad
+\begin{split}
+F_n = \cfrac{\gamma_n}{\beta_n - \cfrac{\alpha_n \gamma_{n+1}}{\beta_{n+1}-\cfrac{\alpha_{n+1}\gamma_{n+1}}{\beta_{n+1}-\text{...}}}}
+\end{split}
+\end{equation}
+Since $ a_{-1} = $ we have
+\begin{equation}
+\frac{\beta_0}{\alpha_0} = F_1
+\end{equation}
+Since $ a_{-1} = $ we have
+
+
+
+
+
