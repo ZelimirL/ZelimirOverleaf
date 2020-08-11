@@ -146,7 +146,7 @@ f(\theta) = \sqrt{\frac{1}{2\pi i k}}\sum_{m=0}^{\infty}{\epsilon_m\cos(m\theta)
 \end{split} 
 \end{equation} 
 
-where $ \mu $ is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.  
+where $ \mu $ is the reduced mass, $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.  
 
 \subsection*{Length gauge}
 
@@ -202,6 +202,16 @@ and from the equation \eqref{GreenFkaEq1} we get:
 & F_{k\alpha}(\mathbf{R}) = \int{d^3R'G^{+}(\mathbf{R}, \mathbf{R}')F_{a}(\mathbf{R}')U^{\dagger}_{k\alpha}(\mathbf{R}')   }
 \end{split}
 \end{equation}
+
+\subsubsection{Solution Strategies}
+There are two approaches to solving problems like this . We either expand the wave function in the partial waves basis or use Born approximation.
+
+In the Partial Waves approach, we expand the incoming wave in the basis of sphericalharmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynoials.oThis in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
+In practice looking for a solution using Partial wa
+
+Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is genereally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak. 
+
+\subsubsection{Using Partial Waves}
 
 We can express this function in the partial waves bases. Since $ V_b $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
 \begin{equation}\label{GreenFka2}
@@ -312,7 +322,8 @@ Because the term $ U_{k\alpha}^{\dagger}(\mathbf{R}^{'})U_{k\alpha}(\mathbf{R}) 
 This result is obtained using the spectral representation of the retarded Green's function and the identity $ 1/(x + i\epsilon) \rightarrow P/x - i\pi\delta(x) $ as $ \epsilon \rightarrow 0 $. Using \eqref{OptGreen1} one obtains for the non-local optical potential:
 \begin{equation}\label{optV2}
 \begin{split}
-V(\mathbf{R},\mathbf{R}^{'}) = \frac{i}{2\pi}\sum_{\alpha}\int{d\Omega_k}\int_0^{k_{max}}{\sum_{l=0}^{\infty}{\cos(l\, \theta)\cos(l\,\theta^{'})\times\frac{\omega^3}{c^3}\frac{f_l(kR)f_l(kR')}{R\,R'}D(R)D(R')(\hat{\mathbf{R}}\cdot\epsilon_{k\alpha})(\hat{\mathbf{R}}^{'}\cdot\epsilon_{k\alpha}) } }  
+&V(\mathbf{R},\mathbf{R}^{'}) = \frac{i}{2\pi}\sum_{\alpha}\int{d\Omega_k}\int_0^{k_{max}}\sum_{l=0}^{\infty}\cos(l\, \theta)\cos(l\,\theta^{'}) \\[.8em]
+&\times\frac{\omega^3}{c^3}\frac{f_l(kR)f_l(kR')}{R\,R'}D(R)D(R')(\hat{\mathbf{R}}\cdot\epsilon_{k\alpha})(\hat{\mathbf{R}}^{'}\cdot\epsilon_{k\alpha})
 \end{split}
 \end{equation}
 

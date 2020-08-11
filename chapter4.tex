@@ -1,5 +1,7 @@
 \chapter{Charge Transfer}
 
+In this section we describe the charge transfer in 2 dimension, analogous to the approach we tok in chapter 3.
+
 \subsection{Electronic translation factor (ETF) \cite{ETF1}\cite{ETF2}\cite{ETF3}}
 
 The molecular approach to atomic collisions require the addition of the Electronic Translation Factor (ETF). Physically the reason for this factor is to ensure a Galilean invariance of the results. Which in turn means that the equations should be invariant to translations. Translation in this case corresponds to the movement of the molecules \cite{ETF2}. It has been shown \cite{ETF2} that an ETF does impact the cross section. 
@@ -21,7 +23,7 @@ S = \frac{1}{2}f_i(\mathbf{r},\mathbf{R})\mathbf{r}
 where $ f_i $s are the switching functions that incorporate the molecular character of the ETF.
 The equations for the $ \chi_i^a(\mathbf{R}) $ can be obtained in a matrix form:
 \begin{equation}
-\left\{-\frac{1}{2\mu}\left[\underline{I}\nabla_R - i(\underline{\mathbf{P}} + \underline{\mathbf{rAP}})\right]^2 + \underline{V}\right\}\underline{\chi}^a(\mathbf{R}) = E\underline{\chi}^a(\mathbf{R})
+\left\{-\frac{1}{2\mu}\left[\underline{I}\nabla_R - i(\underline{\mathbf{P}} + \underline{\mathbf{A}})\right]^2 + \underline{V}\right\}\underline{\chi}^a(\mathbf{R}) = E\underline{\chi}^a(\mathbf{R})
 \end{equation}
 with:
 \begin{equation}\label{matrixFactors1}
@@ -33,7 +35,15 @@ with:
 \end{equation}
 where $ E $ is the energy of the nuclear motion in the center of mass frame, and $ \underline{I} $ is the identity matrix. The matrix $ \mathbf{P}_{ij} $ represents the non-adiabatic coupling, the $ \mathbf{A}_{ij} $ is the ETF correction, and the $ V_i(R) $ is the potential energy of the $ i $th Born-Oppenheimer state.
 
-\subsection{ Radiative charge transfer and radiative association}
+\section{ Radiative charge transfer}
+
+We again follow the similar approach as in chapter 3 with the use of partial waves $ f_J(kR) $ and $ s_J(kR) $ which are the solutions of the differential equations:
+\begin{equation}
+\left[\frac{d^2}{dR^2} - 2\mu\left(V_a(R) - V_a(\infty)\right)+k^2\right]s_J(kR) = 0
+\end{equation}
+\begin{equation}
+\left[\frac{d^2}{dR^2} - 2\mu\left(V_b(R) - V_a(\infty)\right)+k^2\right]f_J(kR) = 0
+\end{equation}
 
 The radiative charge transfer cross-section can be calculated using the formula \eqref{crs1} for $ \sigma $ with $ M $ calculated using formula \eqref{Mll1}, where the $ k_a $ and $ k_b $ are the wave numbers of the initial and final state. 
 
