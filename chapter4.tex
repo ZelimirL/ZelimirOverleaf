@@ -9,7 +9,7 @@ The introduction of a switching function into the electron translation factor is
 
 \subsection{Application of the Born-Oppenheimer (BO) approximation}
 
-As usual, we also employ the Born-Oppenheimer (BO) approximation. We expand the scattering wave function in the terms of BO wave functions, miffed by the electronic translation factor. 
++As usual, we also employ the Born-Oppenheimer (BO) approximation. We expand the scattering wave function in the terms of BO wave functions, adding the electronic translation factor. 
 If we set $ \chi_i^a(\mathbf{R}) $ to the be wave function of the nuclear motion in the electronic state $ i $, we get for the wavefunction:
 \begin{equation}
 \Psi(\mathbf{r},\mathbf{R}) = \sum_i{exp\left[\frac{1}{\mu}\mathbf{S}\cdot\nabla_R \right]\phi(\mathbf{r},\mathbf{R}) }\chi_i^a(\mathbf{R})
@@ -78,8 +78,7 @@ The Mathematica code for the $  f(kR) $ is in appendix TODO: add code.
 
 Following the approach in the \cite{ZL} I apply a semi-classical approach to the system of two $ H_2^{+} $ molecules. In this approach, I assume that a photon is emitted with energy equal to the energy difference between two Born-Oppenheimer potential surfaces, at the distance where the transition occurs. This leads to the Local Optical Potential Method, and following the semi-classical approach, the total rate is estimated as a classical integral over all localized transitions. 
 
-The cross section of the spontaneous radiative association is given by \cite{Zygelman1} .  This can also be derived 
-using the Fermi's Golden Rule (which turns out to be published by Dirac's 20 years before Fermi):
+The cross section of the spontaneous radiative association is given by \cite{Zygelman1} .  This can also be derived using the Fermi's Golden Rule (which turns out to be published by Dirac's 20 years before Fermi)\cite{FermiGR}:
 \begin{equation}
 \begin{split}
 & \sigma_{CT}  = \int_0^{\omega_{max}}{d\omega\,\frac{d\sigma}{d\omega}} \\[.8em]
