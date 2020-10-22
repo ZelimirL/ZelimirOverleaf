@@ -59,7 +59,7 @@ The radial equation $ F(r) $ is:
 
 We can identify 2 cases:
 
-\subsubsection*{case 1}
+\subsubsection{case 1}
  For the regions far away from the scattering area where $ V(r) \leftarrow 0 $ we have a free space Schrodinger equation with $ k^2 = -E $;
 \begin{equation}\label{2DS1H}
 \frac{d^2 F(r)}{dr^2} + \frac{1}{r}\frac{d Fr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)F(r) = 0
@@ -76,7 +76,7 @@ For the $ r \leftarrow \infty $ we get approximate behaviour:
 H_m(kr) \xrightarrow{r \leftarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
 
-\subsubsection*{case 2}
+\subsubsection{case 2}
 
 In this case we consider the scattering area, where $ V(r) \neq 0 $. In this case we use the potential function $ V(R) $ obtained in chapter 2 and numerically solve the 2D Schrodinger equation.
 
@@ -161,7 +161,7 @@ In the length gauge, the interaction Hamiltonian is:
 \end{equation}
 where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
 
-\subsection*{ Continuing with the Quenching }
+\subsection{ Continuing with the Quenching }
 
 So if we regard this process as a transition induced by the radiation field from the $ A^{1}\Sigma^{+}_u $ state to of the $ H_2 $ molecule formed by the approaching $ H $ atom, to the $ X^{1}\Sigma^{+}_g $ state in which the atoms separate.
 
@@ -413,7 +413,7 @@ For the $ R\rightarrow\infty $ from the \eqref{asympR} we have an asymptotic sol
 
 Plugging \eqref{Fwd} into \eqref{FabInt} for the $ R \rightarrow\infty $ limit we get:
 \begin{equation}
-sin\,\delta = \sqrt{k}\int_0^{\infty}{dR\,F_a(R)F_b(R)\left(U_a(R) - U_b(R) - \hbar\omega\right)} 
+\sin\,\delta = \sqrt{k}\int_0^{\infty}{dR\,F_a(R)F_b(R)\left(U_a(R) - U_b(R) - \hbar\omega\right)} 
 \end{equation}
 
 Appendix E contains the Mathematica code for calculating the phase shift $ \delta $.

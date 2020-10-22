@@ -213,7 +213,7 @@ So with these assumptions, operators $ D^{1,2} $ can be approximated by the fini
 \subsection{Towards the Solution}
 
 Here we replicate the solution of Bates et. all. \cite{Bates1}\cite{Bates2}, by using a more of a brute force approach. The idea is to numerically calculate the spectrum of a differential operator to a desired precision
-Following Zygelman \cite{Zygelman89}, We expressed equations \eqref{m3d},\eqref{l3d} as a matrix eigenvalue problem. 
+We expressed equations \eqref{m3d},\eqref{l3d} as a matrix eigenvalue problem. 
 The system \eqref{m3d},\eqref{l3d} of the two ODEs then depend on the two parameters, total energy $ E $, and the separation constant $ A $. The problem is reduced to finding those values of $ E $ and $ A $ for which the solution to the differential equation satisfy the requisite boundary conditions. 
 Since it is a  Sturm-Liouville problem, or more precisely a system of two Sturm-Liouville problems, our approach is fundamentally the same approach as taken by Bates. but it is more practical, as it can better accommodate the existing numerical software. There exist excellent numerical packages \cite{Lapack1} for computing the matrix eigenvalues, and they greatly simplify the actual computation.
 
