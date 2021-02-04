@@ -11,26 +11,31 @@ QM has found applications in information theory, material, and the life sciences
 The principles of QM have enabled a novel and powerful information processing platform, quantum computing. The latter's basic component is called a qubit \cite{quits} and is the quantum analog of the bit, the lowest common denominator of classical information. Qubits are fragile in that quantum coherence, which gives the quantum computer its power, requires a noise-free environment that is difficult to establish and maintain in the laboratory. Several platforms for qubit technologies have been explored; and
 include trapped ions and superconducting circuits \cite{qubits2}. At present, it is not known if present-day qubit technologies can be scaled to build a functional and useful quantum computer.
 
-One promising platform, topological quantum computing (references), relies on the unusual quantum properties of 2-dimensional (2D) matter. In the past few decades, there have been great strides in creating 2D materials that promise novel applications.\cite{Nature2D}
+One promising platform, topological quantum computing \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter. In the past few decades, there have been great strides in creating 2D materials that promise novel applications.\cite{Nature2D}
 To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular level. In this thesis, we will explore the interactions of ions with neutral matter in a 2D environment. Specific topics include radiative quenching, non-radiative and radiative charge transfer reactions, and the manipulation and control of atomic matter by external fields. Such processes are important in 3D gases,
-as in astrophysical and laboratory plasma environments, and have attracted much attention
-(references). However, there have been relatively few studies concerning charge transfer processes in 2D.
+as in astrophysical and laboratory plasma environments, and have attracted much attention \cite{plasma}
+(references). 
+However, there have been relatively few studies concerning charge transfer processes in 2D.
 In this thesis, we will calculate the rate of both radiative 
 and non-radiative charge transfer reactions between a positively charged ion and neutral hydrogen at very low collision energies. In our formalism, the particles are constrained to move in a 2D manifold, but the emitted radiation can propagate in 3D. This study will provide insight into how constrained 2D dynamics affect the rate coefficient for radiative charge transfer.
  (TODO: Make this sentence reflect the actual work)
 
 \subsection{Applications}
- While quantum mechanics can be applied to any physical system, in this thesis, we focus on two major applications.
- One is a creation of the novel, 2-dimensional materials 
- The second is the application of the 2D materials to quantum computing 
- There are some unique topological properties of the 2D material which do not exist in the 3D case. The main difference in this context is the emergence of 'anyons'.
-\subsection*{New Materials}
+Quantum Mechanics was developed during first quarter of the 20th century, and its methods have been applied to increasingly complex systems. QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
 
-As Quantum Mechanics was developed during 20th century, its techniques were applied to an increasingly complex systems. This application of QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
+ In this thesis, we focus on two major applications.
+ One is a creation of the novel, 2-dimensional materials.
+ The second is the application of the 2D materials to quantum computing.
+ 
+ \subsection*{New Materials}
 
-  One of which is a deeper understanding of the properties of materials. That understanding has led to the creation of new materials, including so-called 2D materials.
-\textcolor{}{ The above paragraph appears repetitive}
-
+Application of QM to solid state systems has led to a deeper understanding of the properties of materials. That understanding has led to the creation of new materials, including so-called 2 dimensional (2D) materials.
+ 
+2D materials can exhibit unique topological properties that do not exist in the 3D case. An interesting and important feature in this context is the emergence of anyons \cite{anyonsR}. Anyons are neither Fermions nor Bosons. The exchange of two anyons induce  an 
+arbitrary relative phase between the partners, an effect called fractional statistics.
+In 3D space, the relative phase can only take the integer values of $2 \pi $ (Bosons)
+or $ \pi$ (Fermions).
+ 
 \subsubsection{On 2D Material No-Go Theorems and
 Graphene}
 Landau and Pierls\cite{LandauG}\cite{Pierls} initially argued that 2D materials could not exist. That argument posited that the displacement of atoms, at finite temperatures, induce thermal fluctuations that are an order of the atomic distance\cite{LandauG, Pierls} and lead to melting of the 2D material at temperatures higher than $ 0 K $. 
@@ -45,9 +50,19 @@ Despite those arguments, it has been speculated that stable 2D materials are pos
 
 The existence of graphene does not contradict the above-mentioned no-go theorem \cite{Mermin2}, but it does circumvent it \cite{GrapheneRiples}. In graphene, thermal oscillations produce ripples or bending of the graphene sheet. That way, graphene behaves like an elastic membrane that allows phonons to propagate in 2 dimensions and \textcolor{red}{I do not understand this sentence} couple in a plane stretching along the transverse fluctuations out of the plane. This mediates a long-range interaction, thereby circumventing the Mermin-Wagner no-go theorem. 
 
-Interestingly\cite{Graphene0},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the electronic properties of the material. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as
-quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions. Therefore, it might be interesting to redo the same calculation as we did, but solving the Dirac's equation for the system of quasiparticles similar to a hydrogen ion. \textedit{red}{do these quasiparticles behave like charged matter, e.g., excitons?}
-graphene exhibits many other interesting properties\cite{Graphene0}, such as its Quantum Electrodynamics (QED) like electronic spectrum, electron tunneling, and so on. Another interesting consequence of the QED like electron spectrum is the possibility of experimentally studying QED in curved space by controllable bending of a graphene sheet. This may offer a possibility to address a certain class of cosmological problems. 
+
+Interestingly\cite{Graphene0},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the electronic properties of the material. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions. 
+
+\subsubsection{Excitons}
+These excitations represent a wide class of intrinsic electronic excitations (Excitons) \cite{Excitons1, Excitons2} in crystals of semiconductors and dielectrics. In one model, Excitons represent a bound state of an electron and a hole,typically formed when an incident photon is absorbed exciting an electron from the valence to the conduction band. The attractive Coulomb interaction between the excited electron and the hole thus created binds them together to form a bound neutral compound system of the two charge carriers similar to a hydrogen atom. 
+The character of exciton motion depends on the strength of the exciton interaction with phonons. The electron - hole models is common in crystals of insulators and semiconductors.
+Ya I Frenkel (1931) create excitons to explain the light absorption in crystals which does not lead to photoconductivity. In the Frenkel model, the exciton is considered as an electronic excitation of one crystal site with the energy close to, but a bit smaller than that necessary for the excitation of a free electron. Due to the translation symmetry of the crystal, the exciton can move along the lattice sites transferring the energy to the electrically active or luminescence centers.
+Similar excitations occur in 2D systems. \cite{Excitons2D1,Excitons2D3}. The 2D excitons promise to form a building block of the 2D electronics. \cite{Excitons2D2}.  Although exciton-based transistor actions have been demonstrated successfully in bulk semiconductor-based coupled quantum wells, the low temperature required for their operation limits their practical application. The emergence of 2D semiconductors with large exciton binding energies may lead to excitonic devices and circuits that operate at room temperature. \cite{Excitons2D2}.
+
+Therefore, it might be interesting to redo the same calculation as we did, but solving the Dirac's equation for the system of quasiparticles similar to a hydrogen ion. 
+
+\subsubsection{Graphene}
+Graphene exhibits similar properties\cite{Graphene0}, such as its Quantum Electrodynamics (QED) like electronic spectrum, electron tunneling, and so on. Another interesting consequence of the QED like electron spectrum is the possibility of experimentally studying QED in curved space by controllable bending of a graphene sheet. This may offer a possibility to address a certain class of cosmological problems. 
 
 At present, since the discovery of graphene,
 several new 2D materials have
@@ -63,13 +78,14 @@ In 2D semiconductors, the electronic states exist
 on the surface. The more interesting application of 2D electronics is the LED elements in 2D \cite{2DLED}. The electronics research is closely related to the research of new 2D materials. For example, Graphene itself is not compatible with silicon. However, there is a new material, black phosphorus\cite{2DPhos}, which is both compatible with silicon and it holds promise for future electronic\cite{2DPhos3} devices. This fact relies on two key properties; the first is that black phosphorus has higher mobility,
 the speed at which it can carry an electrical charge, than silicon. The other is that it has a finite bandgap, whereas Graphene does not. So, in essence, in the presence of an electric field, black phosphorus can act as a semiconductor\cite{2DPhos2}.
 +++++++++++++++++++++++++++++++++++++++++++++++++
+
 \subsection*{Quantum Computing}
 
 The current computer architecture is based on the so-called 'von Neumann' architecture. The algorithms based on that architecture have some inherent limits, and as it currently stands, the architecture cannot overcome those limits.
 
 There are two main  classes of computer algorithms, P and NP. There are subclasses within those classes, but those two classes capture the essential behavior of classical algorithms. The algorithms belonging to class P are those which are solvable in polynomial time, with regard to the size of the input. Those algorithms belonging to class NP are those which require exponential time to complete\cite{PvsNP}.
 
-Currently, the major unsolved problem in Computer Science is the P vs NP problem\cite{PvsNP}. While the hypothesis that $ P \neq NP $ is generally accepted, no proof has been found. Applying quantum mechanical principles in engineering disciplines, such as computer science\cite{FQC} promises to bring us the much qualitatively more powerful quantum computer. The theoretical basis of quantum computation is described by the Quantum Turing Machine\cite{QuantumTuring}. \textedit{red}{What does this sentence have to do with the preceding one ?}
+Currently, the major unsolved problem in Computer Science is the P vs NP problem\cite{PvsNP}. While the hypothesis that $ P \neq NP $ is generally accepted, no proof has been found. Applying quantum mechanical principles in engineering disciplines, such as computer science\cite{FQC} promises to bring us the much qualitatively more powerful quantum computer. The theoretical basis of quantum computation is described by the Quantum Turing Machine\cite{QuantumTuring}. \textrdit{red}{What does this sentence have to do with the preceding one ?}
 
 Currently, it is not clear whether the quantum computer will be able to solve NP problems\cite{QCvsNP} \textedit{red}{It is well know that they cannot}. Now all problems in the NP class (more precisely NP complete subclass) can be transformed into each other in polynomial time to each other \cite{NPComplete},  therefore finding a polynomial time solution for one of them would amount to having a polynomial time solution to the all problems in NP class. So the goal is rather worthy.
 
@@ -124,4 +140,4 @@ In this thesis we will focus on investigating and solving the Radiative Charge T
 In the following chapter, we re-calculate the electron energies for Hydrogen Molecular Ion in 3D, by using different and arguably simpler approach.
 
 We shall use analytic methods where possible and resort to the numerical approach when there is no hope of finding an analytic solution.
-Quantitative calculations have greatly enabled the advancement of computing technology, as it is now possible to solve partial differential equations relatively quickly using computers that are widely accessible.  However, applying approximate methods and using only numerical methods allow limited insights. While the numerical methods provide results, they do not provide much insight into a quantum system's behavior. Furthermore, unless one is cautious, systemic numerical errors can accumulate and lead to neither insightful nor correct results. Therefore, analytic solutions are almost always desirable. However, for moderately complex systems, closed analytic solutions are usually impossible to obtain. Nevertheless, it is still desirable to find an exact analytic solution,  if possible, and fall back to numerical methods only as a last step. {\bf This paragraph seems like a non-sequitur maybe place it more at the end
+Quantitative calculations have greatly enabled the advancement of computing technology, as it is now possible to solve partial differential equations relatively quickly using computers that are widely accessible.  However, applying approximate methods and using only numerical methods allow limited insights. While the numerical methods provide results, they do not provide much insight into a quantum system's behavior. Furthermore, unless one is cautious, systemic numerical errors can accumulate and lead to neither insightful nor correct results. Therefore, analytic solutions are almost always desirable. However, for moderately complex systems, closed analytic solutions are usually impossible to obtain. Nevertheless, it is still desirable to find an exact analytic solution,  if possible, and fall back to numerical methods only as a last step. \textdit{red}{ This paragraph seems like a non-sequitur maybe place it more at the end}

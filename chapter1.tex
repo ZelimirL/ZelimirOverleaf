@@ -1,15 +1,27 @@
-\chapter{Existing Non-Relativistic Solution of the Hydrogen Molecular Ion in 3 Spatial Dimensions}
+\chapter{Separation of Variables for the Hydrogen Molecular Ion}
 
-In this chapter we review the method of Bates et al \cite{Bates1}, and successfully reproduce the results, by finding the lowest eigenvalue of the $ H_2^{+} $ system. \footnote {In Bates paper energy is in atomic (Hatree) units}
+In this chapter, we review analytic methods\cite{Bates1,Bates2,Slater} used to obtain 
+solutions of the time-independent Schrodinger equation for 
+the hydrogen molecular.
 
-The Hydrogen Molecule Ion, and similar systems, ( such as $ HeH^{+} $) represent the simplest molecular system to which we can apply the full quantum mechanical treatment. It is actually the only molecule for which we can solve the electronic Schrodinger equation exactly, although the solution does not exist in the closed form, but rather as an infinite series. The seminal study on Hydrogen Molecular Ion has been done by Bates et all \cite{Bates1}\cite{Bates2}. It has been studied extensively since then, and its solution is part of the molecular quantum theory textbooks \cite{Slater}.  
+As we will apply a similar method to treat the hydrogen molecular ions in 2D,
+we first review the methodology of Bates used to calculate the lowest electronic eigenstates and eigenvalues for the $ {\rm H}_2^{+} $ system in 3D. \footnote {In this section we
+use atomic (Hatree) units, unless otherwise stated.}
 
-The subsequent studies and textbooks on the $ H_2^{+} $ systems, rely on the Bates results. So any new approach for solving $ H_2^{+} $ should be able to replicate the Bates' results exactly. Wasserman in \cite{ExperimentalBates2} reports that while the existence of $ H_2^{+} $ has been verified, no  discrete spectrum of the  $ H_2^{+} $ has been observed. However in the same thesis Wasserman reports that the ionization potential of $ H_2^{+} $ has been measured and that experimental methods show good agreement with Bates calculations.
+The hydrogen molecular ion, and similar systems ( such as $ {\rm HeH}^{+} $) are one of the few that allow a full analytic quantum mechanical description. Although its
+solutions do not exist in the closed form, they can be expressed as a convergent infinite series.  Wasserman in \cite{ExperimentalBates2} reports that while the existence of $ {\rm H}_2^{+} $ has been verified, no  discrete spectrum of the  $ {\rm H}_2^{+} $ has been observed \textcolor{red}{Really, is this true?}. However, in the same thesis, Wasserman reports that the ionization potential of $ {\rm H}_2^{+} $ has been measured and shows good agreement with the theoretical calculations.
 
-Unfortunately there does not exist a closed form solution to the differential equation obtained after transforming the system to elliptical coordinates. So one must resort to using the numerical calculations to obtain the eigenvalues. 
-The papers by Bates et all \cite{Bates1}\cite{Bates2} do not provide the numerical code used to obtain the solution. The paper states that they used the expanded fractions method, and it appears that they terminated the expansion at some point, after obtaining the desired precision. There are no details in the paper how they determined that the desired precision was achieved, whether the precision (and number of terms in the expansion) depended on the value of parameters, and so on. So the paper does not provide any details as to how the computation was performed. 
+As a three-body problem, containing two protons and an electron, the
+the Schrodinger PDE can be separated by expressing it in an elliptical coordinate
+system. Unfortunately, there does not exist a closed form representation for the eigenvalues and one must resort to numerical methods in their calculation.
+Bates et al. \cite{Bates1}\cite{Bates2} did not provide numerical codes used the
+ evaluation of eigenvalues. Instead, they used an expanded fraction method for calculating the latter with the desired level of precision. The paper\cite{Bates2} does not report on the details of those calculations, and so in this thesis
+ we provide an alternative description. We will compare
+ the results obtained here with those reported in\cite{Bates2}. Harmony with
+ with those reported in\cite{Bates2} will provide 
+ confidence in the fidelity of the analogous calculations in 2D.
 
-As it is customary, from now on we will be using Hartree Atomic Units \eqref{Atomic}, in all equations. In this system the numerical values of the following fundamental constants are 1:
+We use Hartree Atomic Units \eqref{Atomic}, in all equations. In this system the numerical values of the following fundamental constants are 1:
 \setlength{\mathindent}{0pt}
 \begin{equation}\label{Atomic}
 \begin{split}
@@ -25,38 +37,35 @@ In addition, in equations, variables that represent vectors are typeset in \text
 The only place where we specifically will not be using Atomic units will be in the following derivation, where we do transformation of the molecular Hamiltonian into a Jacobian coordinate system. Since some terms will contain reduced mass, we want to keep the units intact.
 
 \section{Description}
-
-Here we describe the behaviour of the Hydrogen molecular ion. The discussion here applies to both 3D and 2D cases.
-
-The starting point is the Schrodinger equation for the hydrogen molecular ion. In this analysis we assume the stationary, non-relativistic case, and we neglect spin degrees of freedom. Following these assumptions the Schrodinger equation for such a system is given by:
+The starting point is the Schrodinger equation for the hydrogen molecular ion in 3D. We 
+seek stationary states for non-relativistic motion, and neglect the spin degrees of freedom. With these assumptions the Schrodinger equation for such a system is given by:
 \begin{equation}\label{sch1}
-\hat{H}^{'}\psi\left(\mathbf{R},\mathbf{x}\right) = E\,\psi\left(\mathbf{R},\mathbf{x}\right)
+\hat{H}^{'}\psi\left(\mathbf{R},\mathbf{x}\right) = E\,\psi\left(\mathbf{R},\mathbf{x}\right).
 \end{equation}
+$ \hat{H} $ represents total Hamiltonian and $ \psi\left(\mathbf{R},\mathbf{x}\right) $ is an eigenstate wavefunction. It is a function of both the collective nuclear coordinates $ \mathbf{R} $,  and electronic coordinates $\mathbf{x} $. Of course, since we are considering the hydrogen molecular ion, $\mathbf{x} $ is the coordinate of a single electron.
 
-$ \hat{H} $ represents total Hamiltonian and $ \psi\left(\mathbf{R},\mathbf{x}\right) $ is the wavefunction describing the motion of the nuclei, with coordinate (vector) $ \mathbf{R} $ and electrons with coordinate $\mathbf{x} $. Of course, since we are considering a molecular ion, the $\mathbf{x} $ is a coordinate of a single electron.
-
-The Hydrogen Molecular Ion $ H_2^{+} $ is composed of 2 protons and a single electron. Thus, because we are neglecting relativistic effects and spin, its Hamiltonian is given as:
+The hydrogen molecular ion $ {\rm H}_2^{+} $ is composed of 2 protons and a single electron. Thus, as we are neglecting relativistic effects and spin, its Hamiltonian is given as:
 \begin{equation}\label{hh}
-\hat{H} = \hat{T}_n + \hat{T}_e + \hat{V}_{en} + \hat{V}_{nn} 
+\hat{H} = \hat{T}_n + \hat{T}_e + \hat{V}_{en} + \hat{V}_{nn}. 
 \end{equation}
 
 The terms in the Hamiltonian are as follows:
 
-Kinetic energy of the 2 protons in the molecule:
+The kinetic energy of the protons:
 \begin{equation}`
 \begin{split}
  \hat{T}_n = - \frac{\hbar^2}{2M}\sum_{i=1}^2{\nabla_{R_i}^2 } = -\frac{1}{2M}\sum_{i=1}^2{\hat{P}_i^2 }
 \end{split}
 \end{equation}
 
-Kinetic energy of the single electron:;
+The kinetic energy of the electron:
 \begin{equation}
 \begin{split}
- \hat{T}_e= -\frac{\hbar^2}{2m}\nabla_{x}^2 = -\frac{1}{2m}\hat{p}^2  \\[.8em]
+ \hat{T}_e= -\frac{\hbar^2}{2m}\nabla_{x}^2 = \frac{1}{2m}\hat{p}^2  \\[.8em]
 \end{split}
 \end{equation}
 
-Potential energy between the electron and the nuclei, i.e. the total Coulomb electron - nuclei attraction:
+The potential energy between the electron and the nuclei, i.e. the total Coulomb electron - nuclei attraction:
 \begin{equation}
 \begin{split}
  \hat{V}_{en} = -\sum_{i=1}^2{\left|\mathbf{R}_i - \mathbf{x}\right| }   
@@ -71,9 +80,9 @@ Potential energy (operators) between the nuclei - the total Coulomb proton - pro
 \end{equation}
 The second term in the equation above represents the operator expression.
 
-In the equations above, the $ \mathbf{R}_i,\,\, i = 1,2 $ and $ M $ represents the coordinates and mass of the nuclei (protons) respectively, and $ \mathbf{x} $ and $ m $ are the coordinates and mass of the electron, respectively. The coordinates are defined with respect to a common origin, in a space fixed frame.
-
-In classical mechanics, it is customary to separate the motion of the center of mass from the motion of the point particles. A similar approach can be applied for the quantum case. We show in appendix A that the motion of the center of mass will be a plane wave, which posses a well defined momentum and which is not square integrable. That makes the position of the center of mass equally probable in the hole space, which agrees with the Heisenberg uncertainty principle.
+In the equations above, $ \mathbf{R}_i,\,\, i = 1,2 $ and $ M $ represents the coordinates and mass of the nuclei (protons) $1,2$ respectively, and $ \mathbf{x} $ and $ m $ are the coordinates and mass of the electron, respectively. Coordinates are defined with respect to a common origin in a space fixed frame.
+-------------------------------------------------
+It is convenient to separate the motion of the center of mass from the motion of the point particles. A similar approach can be applied for the quantum case. We show in Appendix A that the motion of the center of mass will be a plane wave, which possess a well defined momentum and which is not square integrable. That makes the position of the center of mass equally probable in the hole space, which agrees with the Heisenberg uncertainty principle.
 
 In the appendix A we define $ \chi(\mathbf{R}) $ as the wavefunction representing the motion of the nuclei. We then  obtain:
 \begin{equation}
