@@ -11,33 +11,33 @@ QM has increasingly found applications in information theory, material, and the 
 The principles of QM have enabled a novel and powerful information processing platform, quantum computing. The latter's basic component is called a qubit \cite{qubits} and is the quantum analog of the bit, the lowest common denominator of classical information. Qubits are fragile in that quantum coherence, which gives the quantum computer its power, requires a noise-free environment that is difficult to establish and maintain in the laboratory. Several platforms for qubit technologies have been explored, including trapped ions and superconducting circuits \cite{qubits2}. At present, it is not known if present-day qubit technologies can be scaled to build a functional and useful quantum computer.
 
 One promising platform, topological quantum computing \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter. In the past few decades, there have been great strides in creating 2D materials that promise novel applications.\cite{Nature2D}
-To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular level. In this thesis, we will explore the interactions of ions with neutral matter in a 2D environment. Specific topics include radiative quenching, non-radiative and radiative charge transfer reactions, and the manipulation and control of atomic matter by external fields. Such processes are important in 3D gases,
+To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular levels. In this thesis, we will explore ions' interactions with the neutral matter in a 2D environment. Specific topics include radiative quenching, non-radiative and radiative charge transfer reactions, and the manipulation and control of atomic matter by external fields. Such processes are important in 3D gases,
 as in astrophysical and laboratory plasma environments, and have attracted much attention \cite{plasma}
-(references). 
+
 However, there have been relatively few studies concerning charge transfer processes in 2D.
 In this thesis, we will calculate the rate of both radiative 
 and non-radiative charge transfer reactions between a positively charged ion and neutral 2D hydrogen at very low collision energies. In our formalism, the particles are constrained to move in a 2D manifold, but the emitted radiation can propagate in 3D. This study will provide insight into how constrained 2D dynamics affect the rate coefficient for radiative charge transfer.
  (TODO: Make this sentence reflect the actual work)
 
 \section{Applications}
-Quantum Mechanics was developed during first quarter of the 20th century, and its methods have been applied to increasingly complex systems. QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
+Quantum Mechanics was developed during the first quarter of the 20th century, and its methods have been applied to increasingly complex systems. QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
 
- In this introduction, we discuss on two major applications.
+ In this introduction, we discuss two major applications.
  One is a creation of the novel, 2-dimensional materials.
- The second is the application of the 2D materials to quantum computing.
+ The second is the application of 2D materials to quantum computing.
  
- \section{New Materials}
+ \subsection{New Materials}
 
-Application of QM to solid state systems has led to a deeper understanding of the properties of materials. That understanding has led to the creation of new materials, including so-called 2 dimensional (2D) materials.
+The application of QM to solid-state systems has led to a deeper understanding of the properties of materials. That understanding has led to the creation of new materials, including so-called two-dimensional (2D) materials.
  
-2D materials can exhibit unique topological properties that do not exist in the 3D case. An interesting and important feature in this context is the emergence of anyons \cite{anyonsR}. Anyons are neither Fermions nor Bosons. The exchange of two anyons induce  an 
-arbitrary relative phase between the partners, an effect called fractional statistics.
-In 3D space, the relative phase can only take the integer values of $2 \pi $ (Bosons)
-or $ \pi$ (Fermions).
+2D materials can exhibit unique topological properties that do not exist in the 3D case. An exciting and important feature in this context is the emergence of anyons \cite{anyonsR}. Anyons are neither Fermions nor Bosons. The exchange of two anyons induces an arbitrary relative phase between the partners; an effect called fractional statistics.
+In 3D space, the relative phase can only take the integer values of $2 \pi $ (Bosons) or $ \pi$ (Fermions).
  
 \subsection{On 2D Material No-Go Theorems and
 Graphene}
-Landau and Pierls\cite{LandauG}\cite{Pierls} initially argued that 2D materials could not exist. That argument posited that the displacement of atoms, at finite temperatures, induce thermal fluctuations that are an order of the atomic distance\cite{LandauG, Pierls} and lead to melting of the 2D material at temperatures higher than $ 0 K $. 
+Landau and Pierls\cite{LandauG}\cite{Pierls} initially argued that 2D materials could not exist. That argument posited that the displacement of atoms at finite temperatures induces thermal fluctuations that are an order of the atomic distance\cite{LandauG, Pierls} and lead to melting of the 2D material at temperatures higher than $ 0 K $. 
+
+(TODO: Remove) Now I am using Grammarly
 
 There is an even stronger statement against 2D materials, in the form of the Mermin-Wagner-Hohenberg (MWH) theorem \cite{Hohenberg}\cite{Mermin2}. In these papers, the authors show that 2D systems with short-range interactions are unstable and cannot exist.  Using thermodynamics arguments, one can show that a 3D system is stable if its free energy is bounded from below and convex (upwards). In this way, the system can minimize the energy of the ground state. Because higher-order fluctuations are finite, the system is stable.
 The MWH argument posits that, in 2D systems, fluctuations around the ordered state (lattice in the 2D case) decorrelate over large distances, thus destroying the large-scale order. 
@@ -45,8 +45,7 @@ Therefore, it seemed that the possible existence and applications of the 2D mate
 
 Despite those arguments, it has been speculated that stable 2D materials are possible\cite{2DMatter1}. The situation changed dramatically in 2004 when 2D carbon (Graphene) was discovered and created in the laboratory\cite{Graphene0, GrapheneN} at the University of Manchester, Great Britain. 
 
-2D materials have qualitatively different topological properties\cite{2DMatterCurvature}. Moreover, those properties do not depend on the type of microscopic interactions between particles. While this subject is beyond the scope of this thesis, it does show that the field of 2D materials is a fertile ground for both fundamental and applied research. Interestingly, it has been shown \cite{GraphLayers} that it takes 10 layers of Graphene for it to start behaving as a 'regular' 3D material. 
-
+2D materials have qualitatively different topological properties\cite{2DMatterCurvature}. Moreover, those properties do not depend on the type of microscopic interactions between particles. While this subject is beyond the scope of this thesis, it does show that the field of 2D materials is a fertile ground for both fundamental and applied research. Interestingly, it has been shown \cite{GraphLayers} that it takes ten layers of Graphene for it to start behaving like a 'regular' 3D material.  
 The existence of graphene does not contradict the above-mentioned no-go theorem \cite{Mermin2}, but it does circumvent it \cite{GrapheneRiples}. In graphene, thermal oscillations produce ripples or bending of the graphene sheet. That way, graphene behaves like an elastic membrane that allows phonons to propagate in 2 dimensions and \textcolor{red}{I do not understand this sentence} couple in a plane stretching along the transverse fluctuations out of the plane. This mediates a long-range interaction, thereby circumventing the Mermin-Wagner no-go theorem. 
 
 Additionally \cite{Graphene0},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the electronic properties of the material. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions. 
