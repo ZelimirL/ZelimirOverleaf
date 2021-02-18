@@ -5,11 +5,10 @@
 \label{introduction}
  
 \section{Motivation}
-Arguably, quantum mechanics (QM), or the quantum theory, offers the best description of matter's behavior at the atomic, molecular, and subnuclear level. As an established paradigm, it is being applied to increasingly more complex systems where physics and other disciplines intersect.
+Arguably, quantum mechanics (QM), or the quantum theory, offers the best description of matter's behavior at the atomic, molecular, and sub-nuclear levels. As an established paradigm, it is increasingly applied to increasingly more complex systems where physics and other disciplines intersect.
 
-QM has found applications in information theory, material, and the life sciences, that traditionally lie in the domain of classical physics. Within information theory, a new computing paradigm is emerging. It is recognized that features of the quantum theory allow the processing of information \cite{QIP} not available within the classical framework.
-The principles of QM have enabled a novel and powerful information processing platform, quantum computing. The latter's basic component is called a qubit \cite{quits} and is the quantum analog of the bit, the lowest common denominator of classical information. Qubits are fragile in that quantum coherence, which gives the quantum computer its power, requires a noise-free environment that is difficult to establish and maintain in the laboratory. Several platforms for qubit technologies have been explored; and
-include trapped ions and superconducting circuits \cite{qubits2}. At present, it is not known if present-day qubit technologies can be scaled to build a functional and useful quantum computer.
+QM has increasingly found applications in information theory, material, and the life sciences, areas that traditionally used to lie in the domain of classical physics. Within information theory, a new computing paradigm is emerging. It is recognized that the quantum theory allows the processing of information \cite{QIP} not available within the classical framework.
+The principles of QM have enabled a novel and powerful information processing platform, quantum computing. The latter's basic component is called a qubit \cite{qubits} and is the quantum analog of the bit, the lowest common denominator of classical information. Qubits are fragile in that quantum coherence, which gives the quantum computer its power, requires a noise-free environment that is difficult to establish and maintain in the laboratory. Several platforms for qubit technologies have been explored, including trapped ions and superconducting circuits \cite{qubits2}. At present, it is not known if present-day qubit technologies can be scaled to build a functional and useful quantum computer.
 
 One promising platform, topological quantum computing \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter. In the past few decades, there have been great strides in creating 2D materials that promise novel applications.\cite{Nature2D}
 To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular level. In this thesis, we will explore the interactions of ions with neutral matter in a 2D environment. Specific topics include radiative quenching, non-radiative and radiative charge transfer reactions, and the manipulation and control of atomic matter by external fields. Such processes are important in 3D gases,
@@ -17,13 +16,13 @@ as in astrophysical and laboratory plasma environments, and have attracted much 
 (references). 
 However, there have been relatively few studies concerning charge transfer processes in 2D.
 In this thesis, we will calculate the rate of both radiative 
-and non-radiative charge transfer reactions between a positively charged ion and neutral hydrogen at very low collision energies. In our formalism, the particles are constrained to move in a 2D manifold, but the emitted radiation can propagate in 3D. This study will provide insight into how constrained 2D dynamics affect the rate coefficient for radiative charge transfer.
+and non-radiative charge transfer reactions between a positively charged ion and neutral 2D hydrogen at very low collision energies. In our formalism, the particles are constrained to move in a 2D manifold, but the emitted radiation can propagate in 3D. This study will provide insight into how constrained 2D dynamics affect the rate coefficient for radiative charge transfer.
  (TODO: Make this sentence reflect the actual work)
 
 \section{Applications}
 Quantum Mechanics was developed during first quarter of the 20th century, and its methods have been applied to increasingly complex systems. QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
 
- In this thesis, we focus on two major applications.
+ In this introduction, we discuss on two major applications.
  One is a creation of the novel, 2-dimensional materials.
  The second is the application of the 2D materials to quantum computing.
  
@@ -52,6 +51,11 @@ The existence of graphene does not contradict the above-mentioned no-go theorem 
 
 Additionally \cite{Graphene0},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the electronic properties of the material. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions. 
 
+\textcolor{red}{Are you using Grammarly? I put the above paragraph into Grammarly and obtained the following. You should
+try to to use it for the remainder of your introduction.
+\vskip 10 pt
+Additionally [6],2D materials exhibit several other exciting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the material's electronic properties. In graphene, electrons obey the non-relativistic Schrodinger equation. Still, interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions }
+
 \subsection{Excitons}
 These excitations represent a wide class of intrinsic electronic excitations (Excitons) \cite{Excitons1, Excitons2} in crystals of semiconductors and dielectrics. In one model, Excitons represent a bound state of an electron and a hole,typically formed when an incident photon is absorbed exciting an electron from the valence to the conduction band. The attractive Coulomb interaction between the excited electron and the hole thus created binds them together to form a bound neutral compound system of the two charge carriers similar to a hydrogen atom. 
 The character of exciton motion depends on the strength of the exciton interaction with phonons. The electron - hole models is common in crystals of insulators and semiconductors.
@@ -77,8 +81,6 @@ In 2D semiconductors, the electronic states exist
 on the surface. The surface states admit both localized and non-localized, Block bulk states \cite{LocStates}.
 Another interesting application of 2D electronics is the LED elements in 2D \cite{2DLED}. The electronics research is closely related to the research of new 2D materials. For example, Graphene itself is not compatible with silicon. However, there is a new material, black phosphorus\cite{2DPhos}, which is both compatible with silicon and it holds promise for future electronic\cite{2DPhos3} devices. This fact relies on two key properties; the first is that black phosphorus has higher mobility,
 the speed at which it can carry an electrical charge, than silicon. The other is that it has a finite bandgap, whereas Graphene does not. So, in essence, in the presence of an electric field, black phosphorus can act as a semiconductor\cite{2DPhos2}.
-+++++++++++++++++++++++++++++++++++++++++++++++++
-
 \section*{Quantum Computing}
 
 The current computer architecture is based on the so-called 'von Neumann' architecture. The algorithms based on that architecture have some inherent limits, and as it currently stands, the architecture cannot overcome those limits.
@@ -94,17 +96,14 @@ For example, Schor's algorithm \cite{Schor} can provably solve integer factoriza
 
 Interestingly, according to Abrams and Lloyd \cite{Abrams_1998}, \cite{Abrams_1999} if the small nonlinear term is added to Quantum Mechanics quantum computers would be able to solve NP-complete problems in polynomial time.
 
-Even if the NP problems remain intractable, just the possibility that, according to Feynman \cite{FQC}, quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. In addition quantum computers may offer some other benefits in terms of space, energy consumption. \textedit{Red}{??}
+Even if the NP problems remain intractable, just the possibility that, according to Feynman \cite{FQC}, quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. 
 
 \subsection*{Topological Quantum Computing}
 The concept of topological quantum computing \cite{Tqc1}
 depends on the unique properties of 2D materials.  In principle, there are no theoretical objections to building a quantum computer, there are serious technical issues, such as noise
 and scaling limitations, for current qubit technologies
 that need to be overcome\cite{QCProblems}. 
-The topological approach promises 
-
-an actually physically realizable quantum computer\cite{Tqc2,Tqc3}. 
-
+The topological approach promises an actually physically realizable quantum computer\cite{Tqc2,Tqc3}. 
 
 \subsection*{Anyons}
 Anyons are quasi-particles that can arise in 2D systems and whose quantum statistics in neither Fermionic nor Bosonic \cite{Anyons1}.  This fact has been proved\cite{Anyons2}, but
@@ -135,6 +134,9 @@ The similar system is the trion, which consists of either 2 electrons and a hole
 While the applications of the 2D materials above are certainly interesting, creating an exact analytical  model of such material is extremely complex. Even with today's computing machinery, the many-body wave equation is intractable.  
 
 Equations for many bodies systems may formally be created by extending equations for a one or two bodies systems. But as soon as one tries that, one realizes that the complexity of such equations increases enormously, and than assumptions  made for a small systems are not valid any more. In this author's opinion, moving from a simple system to an order of magnitude more complex, requires a completely new mathematical and physical framework. Something analogous between the classical mechanics and thermodynamics.
+
+\textcolor{red}{Grammarly Translation of above paragraph: 
+While the 2D materials' applications above are undoubtedly impressive, creating an exact analytical model of such material is too complicated. Even with today's computing machinery, the many-body wave equation is intractable.  Equations for many-body systems may formally be created by extending equations for one or two-body systems. But as soon as one tries that, one realizes that such equations' complexity increases enormously and then assumptions made for small systems are no longer valid. In this author's opinion, moving from a simple system to an order of magnitude more complex requires an entirely new mathematical and physical framework—something analogous between classical mechanics and thermodynamics.} 
 
 \subsection*{Outline}
 In this thesis we will focus on investigating and solving the Radiative Charge Transfer TODO: (Reflect actual work) for the simplest molecular system, namely Hydrogen Molecular Ion $ {H_2^{+}}  $ in 2 dimensions (2D in the further text), and solving such system in 2D exactly.  In chapter 2 we will show that applying our method to the already solved and well known $ {H_2^{+}} $ in 3D yields the same results. Then in chapter 3 we will follow  the already well established procedure \cite{Bates1} to analytically solve the $ {H_2^{+}} $. After providing an analytical solution, we will fall back to the numerical methods, in order to calculate the energy levels, and obtain the potential curves. In chapter 4  we use the results obtained to calculate the dynamics of such system, namely the Radiate Association process. In chapter 5 we again use the same results to calculate the Radiate Charge Transfer. 
