@@ -54,7 +54,9 @@
 \usepackage{breakcites}
 \usepackage{url}
 \usepackage{cite}
-%\usepackage{natbib}
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+\bibliography{ex}{}
 
 %math
 \usepackage[fleqn]{amsmath}
