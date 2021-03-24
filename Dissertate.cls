@@ -56,7 +56,6 @@
 \usepackage{cite}
 \usepackage{natbib}
 \bibliographystyle{unsrt}
-\bibliography{ex}{}
 
 %math
 \usepackage[fleqn]{amsmath}
