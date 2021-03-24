@@ -55,8 +55,8 @@
 \usepackage{url}
 \usepackage{cite}
 \usepackage{natbib}
+\usepackage{notoccite}
 \bibliographystyle{unsrt}
-\bibliography{ex}{}
 
 %math
 \usepackage[fleqn]{amsmath}
