@@ -1,0 +1,334 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=.5in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{2D H2 Ion}
+\author{Zelimir Lucic}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\section{Begining}
+
+For $ H_2^+ $ the Schrodinger equation is:
+
+\begin{equation}\label{start}
+\left(-\nabla^2-\frac{2}{r_a}-\frac{2}{r_b}\right)\psi = 2E\,\psi
+\end{equation} \\*
+Choosing $ x $ to be along the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. We can now use 2D elliptic coordinates, $ \mu $, $ \nu $ such as 
+\begin{equation}\label{variables}
+\begin{split}
+\lambda = \left(r_a + r_b\right)/R\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\
+r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+\end{split}
+\end{equation}\\*
+So the coordinates $ r_a $ and $ r_b $ are:
+\begin{equation}
+r_a  = \sqrt{x^2 + \left(y + \frac{R}{2}\right)^2 }\,\,\,\,\,\,\,\,\,\,r_b  = \sqrt{x^2 + \left(y - \frac{R}{2}\right)^2 }
+\end{equation}\\*
+Now squaring, adding and substracting the equations above we get:
+\begin{equation}
+\begin{split}
+& x^2 + y ^2 + \frac{R}{4}^2 = \frac{R^2}{4}\left(\lambda^2 + \mu^2\right) \,\text{and},\\
+& Ry = \frac{R^2}{2} \lambda\, \mu
+\end{split}
+\end{equation}\\*
+So finally
+\begin{equation}
+\begin{split}
+& x = \frac{R}{2}\sqrt{\left(\lambda^2 - 1\right)\left(1 - \mu ^2 \right) } \\
+& y = \frac{R}{2}\,\lambda\,\mu
+\end{split}
+\end{equation}\\*
+The area element is:
+\begin{equation}
+\begin{split}
+& dA = dx\, dy = h_1\, h_2 \, d\lambda\,d\mu\,\,\,\,\text{where} \\
+& h_1^2 = \left(\frac{\partial x}{\partial \lambda}\right)^2 + \left(\frac{\partial y}{\partial \lambda}\right)^2  = 
+\left(\frac{R}{2}\right)^2 \frac{ \lambda^2 - \mu ^2}{\lambda^2 - 1} => 
+h_1 =   \left(\frac{R}{2}\right) \sqrt{ \frac{ \lambda^2 - \mu ^2}{\lambda^2 - 1} }\\
+& h_2^2 = \left(\frac{\partial x}{\partial \mu}\right)^2 + \left(\frac{\partial y}{\partial \mu}\right)^2  = 
+\left( \frac{R}{2} \right)^2 \frac{ \lambda^2 - \mu ^2}{1 - \mu ^2 } => 
+h_2  = \left( \frac{R}{2} \right) \sqrt{ \frac{ \lambda^2 - \mu ^2}{1 - \mu ^2 } }
+\end{split}
+\end{equation}\\*
+The Laplacian is in the general case:
+\begin{equation}
+\nabla^2 = \frac{1}{h_1\,h_2}\left[\frac{\partial}{\partial q_1}\left(\frac{h_2}{h_1}\frac{\partial}{\partial q_1} \right) + \frac{\partial}{\partial q_2}
+\left(\frac{h_1}{h_2} \frac{\partial}{\partial q_2} \right) \right]
+\end{equation}\\*
+So for the coordinates above the Laplacian becomes:
+\begin{equation}\label{Laplacian1}
+\nabla^2  = \frac{4}{R^2\left( \lambda ^2 - \mu ^ 2 \right)} \left[ \sqrt{\lambda ^2 -1}\,\frac{\partial }{ \partial \lambda}\left( \sqrt{\lambda ^2 -1}\frac{\partial}{\partial \lambda} \right)  + \sqrt{1 - \mu ^2}\,\frac{\partial }{ \partial \mu}\left( \sqrt{1 - \mu ^2}\frac{\partial}{\partial \mu} \right) \right]
+\end{equation}\\*
+Here comes the tricky part, we hope and assume that the solution can be expressed as: $ \Psi(\lambda, \mu) = L(\lambda)\,M(\mu) $. Plugging that into the equation \eqref{Laplacian1}, for each term on the left we get we get:\\*
+\begin{equation}\label{LL}
+\begin{split}
+& \sqrt{\lambda ^ 2 - 1}\frac{\partial}{\partial \lambda }\left( \sqrt{\lambda^2 - 1}\frac{\partial }{ \partial \lambda}L\,M \right) = 
+\sqrt{\lambda ^ 2 - 1}\frac{\partial}{\partial \lambda}\left(  \sqrt{\lambda^2 - 1}\,L' \, M  \right) = \\
+& \sqrt{\lambda ^ 2 - 1}\left( \frac{\lambda}{ \sqrt{\lambda^2 - 1} }L'\,M +  \sqrt{\lambda^2 - 1}\,L''\,M \right)  = 
+\lambda\,L'\,M + \left(\lambda^2 - 1 \right)\,L''\,M
+\end{split}
+\end{equation}\\* and for $ M $:
+\begin{equation}\label{LM}
+\begin{split}
+& \sqrt{1 - \mu^ 2}\frac{\partial}{\partial \mu}\left( \sqrt{1 - \mu^2 }\frac{\partial }{ \partial \mu}L\,M \right) = 
+\sqrt{1 - \mu ^ 2}\frac{\partial}{\partial \mu}\left(  \sqrt{1 - \mu^2}\,L\, M'  \right) = \\
+& \sqrt{1 - \mu ^ 2}\left( \frac{- \mu}{ \sqrt{1 - \mu^2} }L\,M' +  \sqrt{1-\mu^2 }\,L\,M'' \right)  = 
+- \mu\,L\,M' + \left(1 - \mu^2 \right)\,L\,M''
+\end{split}
+\end{equation}\\*
+Now we plug \eqref{LL} and \eqref{LM} into the \eqref{Laplacian1} and plug all that into the equation \eqref{start} using \eqref{variables}:
+\begin{equation}
+\begin{split}
+ \frac{4}{R^2\left( \lambda ^2 - \mu ^ 2 \right)} \left[ \left(\lambda^2 - 1 \right)\,L''\,M + \lambda\,L'\,M + \left(1 - \mu^2 \right)\,L\,M'' - \mu\,L\,M'\right] +  \frac{8}{R}\frac{\lambda\,L\,M}{\lambda^2 - \mu^2} = -2 E\,L\,M
+\end{split}
+\end{equation}\\* or
+\begin{equation}
+ \left(\lambda^2 - 1 \right) \frac{L''}{L} + \lambda \frac{L'}{L}+ \left(1 - \mu^2 \right) \frac{M''}{M} - \mu\frac{M'}{M} + 2R\,\lambda = \frac{E\, R^2\,\mu^2}{2} - \frac{E\,R^2\,\lambda^2}{2}
+\end{equation}\\*or
+\begin{equation}
+\begin{split}
+& \left(1 - \mu^2 \right)\frac{M''}{M} - \mu\frac{M'}{M} - \frac{E\, R^2\,\mu^2}{2}  = A = \\[.8em]
+& -\left[\left(\lambda^2 - 1 \right) \frac{L''}{L} + \lambda \frac{L'}{L} +2R\,\lambda + \frac{E\,R^2\,\lambda^2}{2}\right]
+\end{split}
+\end{equation}\\*
+ So the equation separates, which is great. Having the both side set equal to the separation constant $ A$ we get two equations:
+\begin{equation}\label{L}
+\left(\lambda^2 - 1 \right) \frac{d^2L}{ d\lambda^2 }+\lambda\frac{ dL }{d\lambda }  + \left(A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  \right)L = 0  
+\end{equation}
+\begin{equation}\label{M}
+ \left(1 - \mu^2 \right) \frac{d^2M}{ d\mu^2 } - \mu\frac{ dM }{d\mu } +  \left(-A -  \frac{E\,R^2}{2}\mu^2  \right)M = 0
+\end{equation}\\*
+Set:
+\begin{equation}
+p^2 = -\frac{E\,R^2}{2}
+\end{equation}
+
+\subsection*{M Equation}
+
+\begin{equation}\label{M}
+\begin{split}
+ & \left(1 - \mu^2 \right) \frac{d^2M}{ d\mu^2 } - \mu\frac{ dM }{d\mu } +  \left(-A  + p^2\mu^2  \right)M = 0\,\,\,\text{ or } \\[.8em]
+ & \left(1 - \mu^2 \right) \frac{d^2M}{ d\mu^2 } - \mu\frac{ dM }{d\mu } +   p^2\mu^2\,M = A\,M
+ \end{split}
+\end{equation}\\*
+
+This looks like the Mathieu's equation.
+
+The various forms of Mathieu's equation:
+\begin{equation}
+\begin{split}
+& (1 - \zeta^2)w^{''} - \zeta\,w^{'} + (a + 2q - 4q\,\zeta^2)w = 0 \\[.8em]
+& w^{''} +\left( a - 2q\cos (2z)\right)w = 0 \\[.8em]
+& \text{ where: }\,\,\zeta = \cos(z)  \\[.8em]
+& q = -\frac{p^2}{4}\,\,\,\,\,\,\,\text{ and  }\,\,\,\,\,\,\,a= \frac{p^2}{2} - A
+\end{split}
+\end{equation}\\*
+Now use this: \verb+https://www.ima.umn.edu/talks/workshops/7-22-8-2-2002/volkmer/slides/sfda1.pdf+ \\[.8em]
+So going back to M, we have:
+\begin{equation}
+\begin{split}
+& M^{''}(x) + \left[ \frac{p^2}{2} + \frac{p^2}{2}\cos (2 x)\right]M(x) = A\,M
+\end{split}
+\end{equation}\\*
+Now the general solution is:
+\begin{equation}
+\begin{split}
+& M(x) = \sum_{k=1}^{\infty}{c_k\,e^{i\,2 k\,x}}  \\[.8em]
+\end{split}
+\end{equation}\\*
+Now for the ground state we can choose either way or odd solution:\\[1.5em]
+\textbf{For the even case we choose the even solution, with the boundary conditions $ M^{'}(0) = M^{'}\left(\frac{\pi}{2}\right) = 0 $} :
+\begin{equation}
+\begin{split}
+& M(x) = \sum_{k=0}^{\infty}{c_k\cos(2 k\,x)}  \\[.8em]
+& M^{''}(x) = -  \sum_{k=0}^{\infty}{c_k\,4 k^2\cos(2 k\,x)}  +   \left[ \frac{p^2}{2} + \frac{p^2}{2}\cos (2 x)\right]\sum_{k=0}^{\infty}{c_k\cos(2 k\,x)}  = \\[.8em] 
+& = A \sum_{k=0}^{\infty}{c_k\cos(2 k\,x)} 
+\end{split}
+\end{equation}\\[1em]
+Plug in, multiply by $ \cos(2m\,x) $, $ m = 0,1,2,... $ and integrate: 
+
+\begin{equation}
+\begin{split}
+& \sum_{k=0}^{\infty}{c_k \left\{-4k^2\int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 kx)dx} + \frac{p^2}{2} \int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 kx)dx} + \frac{p^2}{2} \int_{-\pi/2}^{\pi/2}{\cos(2 x)\cos(2 mx)\cos(2 kx)dx} \right\}} = \\[.8em]
+& = A \int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 kx)dx}  \,\Longrightarrow\\[.8em]
+& \frac{p^2}{2}\pi\,\delta_{0,0}  +   \frac{p^2}{2} \frac{\pi}{2}\delta_{0,1} + \frac{p^2}{2} \frac{\pi}{2}\delta_{1,0} + \sum_{m=1}^{\infty}\sum_{k=1}^{\infty} {\left(-4k^2 +\frac{p^2}{2}\right)\frac{\pi}{2} \delta_{m,k} } + \frac{p^2}{2}\frac{\pi}{4}\delta_{m,k+1} + \frac{p^2}{2}\frac{\pi}{4}\delta_{m,k-1}  = \\[.8em]
+& A \pi\,\delta_{0,0} + \sum_{m=1}^{\infty}\sum_{k=1}^{\infty}{A\frac{\pi}{2}\delta_{m,k}}\,\,\,\Longrightarrow \\[.8em]
+& p^2\delta_{0,0} +  \frac{p^2}{2}\delta_{0,1} +  \frac{p^2}{2}\delta_{1,0} + \sum_{m=1}^{\infty}\sum_{k=1}^{\infty}{\left\{ -4k^2\,\delta_{m,k} + \frac{p^2}{2}\,\delta_{m,k} +  \frac{p^2}{4}\,\delta_{m,k \pm 1} \right\}} = 2\,A+ \sum_{m=1}^{\infty}\sum_{k=1}^{\infty}{A\,\delta_{m,k}}
+\end{split}
+\end{equation}\\*
+So this seems to be the  eigenvalue equation for the even ground state. \\[.8em]
+The boundary conditions for this case are:
+\begin{equation}
+M(\mu=1)  = 1\,\,\,\,\,\,\,\text{ and  }\,\,\,\,\,\,\,M(\mu=-1)  = 1
+\end{equation}\\[2.em]
+
+\textbf{For the odd case:}
+\begin{equation}
+\begin{split}
+& M(x) = \sum_{k=0}^{\infty}{c_k\sin\left[(2 k+1)\,x\right]}  \\[.8em]
+& M^{''}(x) = - (2 k+1)^2 \sum_{k=0}^{\infty}{c_k\sin[(2 k+1)\,x]} \\[.8em]
+&  -(2 k+1)^2 \sum_{k=0}^{\infty}{c_k\sin[(2 k+1)\,x]}  +   \left[ \frac{p^2}{2} + \frac{p^2}{2}\cos (2 x)\right]\sum_{k=0}^{\infty}{c_k\sin[(2 k+1)\,x]}  = A \sum_{k=0}^{\infty}{c_k\sin[(2 k+1)\,x]} 
+\end{split}
+\end{equation}\\[1em]
+Plug in, multiply by $ \sin[(2m+1)\,x] $, $ m = 0,1,2,3... $ and integrate:
+\begin{equation}
+\begin{split}
+& \sum_{k=0}^{\infty}c_k -(2k+1)^2\int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 k+1)x]dx} + \frac{p^2}{2} \int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 k+1)x]dx} +  \\[.8em]
+& +  \frac{p^2}{2} \int_{-\pi/2}^{\pi/2}{\cos(2 x)\sin[(2 m+1)x]\sin[(2 k+1)x]dx}   = A \int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 k+1)x]dx}  \Longrightarrow \\[.8em]
+\end{split}
+\end{equation}\\*
+\begin{equation}
+\begin{split}
+&  \left( - \frac{\pi}{2} + \frac{\pi}{2}\frac{p^2}{2} -   \frac{\pi}{4}\frac{p^2}{2}\right)\delta_{0,0} +  \frac{\pi}{4}\frac{p^2}{2}\delta_{0,1}  + \frac{\pi}{4}\frac{p^2}{2}\delta_{1,0}  +  \sum_{m=1}^{\infty}\sum_{k=1}^{\infty} {\left(-(2k+1)^2 + \frac{p^2}{2}\right) \frac{\pi}{2}\delta_{m,k} +  \frac{p^2}{2}\frac{\pi}{4}\delta_{m,k \pm 1} } = \\[.8em]
+&  = A\frac{\pi}{2}\delta_{0,0}  + A\frac{\pi}{2}  \sum_{m=1}^{\infty}\sum_{k=1}^{\infty} {\delta_{m,k}} \Longrightarrow
+\\[.8em]
+& \left( - 1 + \frac{p^2}{4} \right)\delta_{0,0} + \frac{p^2}{4}\delta_{0,1}  + \frac{p^2}{4}\delta_{1,0}  +  \sum_{m=1}^{\infty}\sum_{k=1}^{\infty} {\left(-(2k+1)^2 + \frac{p^2}{2}\right) \delta_{m,k} +  \frac{p^2}{4}\delta_{m,k \pm 1} } = \\[.8em]
+&  = A\delta_{0,0}  + A  \sum_{m=1}^{\infty}\sum_{k=1}^{\infty} {\delta_{m,k}}
+\end{split}
+\end{equation}\\*
+
+So this seems to be the  eigenvalue equation for the odd ground state.\\*
+The boundary conditions for this case are:
+\begin{equation}
+M(\mu=1)  = 1\,\,\,\,\,\,\,\text{ and  }\,\,\,\,\,\,\,M(\mu=-1)  = -1
+\end{equation}\\[2.em]
+
+
+\subsection*{L Equation}
+\begin{equation}\label{L}
+\left(\lambda^2 - 1 \right) \frac{d^2L}{ d\lambda^2 }+\lambda\frac{ dL }{d\lambda }  + \left(A + 2R\lambda - p^2\lambda^2  \right)L = 0  
+\end{equation}\\[1.em]
+Here is the modified Mathieu's equation:
+\begin{equation}\label{LM}
+\left(\zeta^2-1\right)w^{''} + \zeta\,w^{'} + \left(-a - 2q + 4q\zeta^2\right)w = 0 
+\end{equation}
+
+This looks like the modified Mathieu's equation. But it is not. So assume the solution as the sum of Laguerre polynomials and Algebra:
+\begin{equation}
+\begin{split}
+& L(x) =  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k(x)}\,\,\text{ with: ( the prime is a derivative) } \\[.8em]
+\end{split}
+\end{equation}
+Using identities:
+\begin{equation}
+\begin{split}
+& L_n^{'} = L_{n-1}^{'} - L_{n-1} \\[.8em]
+& x\,L_n^{'} = n\,L_n  - n\,L_{n-1} \\[.8em]
+\end{split}
+\end{equation}\\*
+It follows:
+\begin{equation}
+\begin{split}
+& x\,L_n^{''} = (n-1)L_n^{'} - nL_{n-1}^{'} = (n-1)L_n^{'} - n(L_n^{'} + L_{n-1}) = \\[.8em]
+& = -L_n^{'} - nL_{n-1}
+\end{split}
+\end{equation}\\*
+First, we shift the domain $ \lambda = x + 1 $. The equation is:
+\begin{equation}
+\begin{split}
+x(x +2)\frac{d^2\,L}{d\,x^2} + (x+1)\frac{d\,L}{d\,x} + \left[ -p^2x^2  -2p^2x + 2Rx - p^2 + 2R - A \right] L = 0;
+\end{split}
+\end{equation}\\*
+And the derivatives are:
+\begin{equation}
+\begin{split}
+& L^{'} =  -p\,e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} + e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} \\[.8em]
+& L^{''} = p^2 e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} - 2 p e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} + e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{''}}  
+\end{split} 
+\end{equation}\\*
+Now plug in the L equation:
+\begin{equation}
+\begin{split}
+& x(x +2)p^2 e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} - 2x(x +2)p\,e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} + x(x +2)e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{''}} - \\[.8em]
+& -(x+1)p\,e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} + (x+1)e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} + \\[.8em]
+& + \left[  -p^2x^2 + (-2p^2 + 2R)x - p^2 + 2R \right] e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} = -A  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k}
+\end{split}
+\end{equation}\\*
+Cancel exponential and $ p^2 $ terms:
+\begin{equation}
+\begin{split}
+& - 2(x +2)p\,\sum_{k=0}^{\infty}{c_k\,xL_k^{'}}  + (x +2)\sum_{k=0}^{\infty}{c_k\,xL_k^{''}} - p\,\sum_{k=0}^{\infty}{c_k\,xL_k}  - p\,\sum_{k=0}^{\infty}{c_k\,L_k} + \\[.8em]
+& + \sum_{k=0}^{\infty}{c_k\,xL_k^{'}} +  \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + 2R \sum_{k=0}^{\infty}{c_k\,xL_k} + \left( - p^2 + 2R \right)\sum_{k=0}^{\infty}{c_k\,L_k} = -A  \sum_{k=0}^{\infty}{c_k\,L_k}
+\end{split}
+\end{equation}\\*
+Expand the derivatives
+\begin{equation}
+\begin{split}
+& - 2(x +2)p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k} + 2(x +2)p\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} -(x + 2)\sum_{k=0}^{\infty}{c_k\,L_k^{'}} - (x+2)\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - \\[.8em]
+& - p\,\sum_{k=0}^{\infty}{c_k\,xL_k} - p\,\sum_{k=0}^{\infty}{c_k\,L_k} + \sum_{k=0}^{\infty}{c_k\,k\,L_k} - \sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} + \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + 2R \sum_{k=0}^{\infty}{c_k\,xL_k} + \\[.8em]
+&  \left( - p^2 + 2R  \right)\sum_{k=0}^{\infty}{c_k\,L_k} = -A  \sum_{k=0}^{\infty}{c_k\,L_k}
+\end{split}
+\end{equation}\\*
+Expand again:
+\begin{equation}
+\begin{split}
+& - 2p\,\sum_{k=0}^{\infty}{c_k\,k\,xL_k} - 4p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k} + 2p\,\sum_{k=0}^{\infty}{c_{k-1}\,k,x\,L_{k-1}} + 4p\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - \sum_{k=0}^{\infty}{c_k\,k\,L_k} + \sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} -  \\[.8em]
+& -2\sum_{k=0}^{\infty}{c_k\,L_k^{'}} - \sum_{k=0}^{\infty}{c_{k-1}\,k\,x\,L_{k-1}}  - 2\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - p\,\sum_{k=0}^{\infty}{c_k\,xL_k} - p\,\sum_{k=0}^{\infty}{c_k\,L_k} + \sum_{k=0}^{\infty}{c_k\,k\,L_k} - \sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}}  + \\[.8em]
+& + \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + 2R \sum_{k=0}^{\infty}{c_k\,xL_k} +  \left( - p^2 + 2R  \right)\sum_{k=0}^{\infty}{c_k\,L_k} =  -A  \sum_{k=0}^{\infty}{c_k\,L_k}
+\end{split}
+\end{equation}\\*
+Group by $ x $, $ n $, etc..:
+\begin{equation}
+\begin{split}
+& - 2p\,\sum_{k=0}^{\infty}{c_k\,k\,xL_k} + (2p-1)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,x\,L_{k-1}}  - 4p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k}+ (4p-2)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - \\[.8em]
+& - \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + (2R-p)\,\sum_{k=0}^{\infty}{c_k\,xL_k}  + \left( - p^2 -p + 2R  \right)\sum_{k=0}^{\infty}{c_k\,L_k} = -A  \sum_{k=0}^{\infty}{c_k\,L_k}
+\end{split}
+\end{equation}\\*
+Now use these formulas (from here \verb+http://mathworld.wolfram.com/AssociatedLaguerrePolynomial.html+, lines 14 and 16)
+\begin{equation}
+\begin{split}
+\frac{d}{d\,x}L_k(x) = -\sum_{i = 0}^{k-1}{L_i(x)}
+\end{split}
+\end{equation}\\* 
+we also need this \\*
+ (from: \verb+http://www.maths.uq.edu.au/MASCOS/Orthogonal09/Warnaar.pdf+):
+\begin{equation}
+\begin{split}
+& x\,L_k = (2k+1)L_k - (k+1)L_{k+1} - k\,L_{k-1} \\[.8em]
+& x\,L_{k+1} = (2k+3)L_{k+1} - (k+2)L_{k+2} - (k+1)\,L_{k}\\[.8em]
+& x\,L_{k-1} = (2k-1)L_{k-1} - k\,L_k - (k-1)\,L_{k-2} \\[.8em]
+& x\,L_{k-2} = (2k-3)L_{k-2} - (k-1)\,L_{k-1} - (k-2)\,L_{n-3} \\[.8em]
+\end{split} 
+\end{equation}\\*
+And plug in again 
+\begin{equation}
+\begin{split}
+&  \sum_{k=0}^{\infty}{c_k  \sum_{i = 0}^{k-1}{L_i(x)} } - 2p \sum_{k=0}^{\infty}{ k(2k+1) c_kL_k} + 2p  \sum_{k=0}^{\infty}{ k(k+1) c_{k+1}L_{k+1}} +2p  \sum_{k=0}^{\infty}{ k^2  c_{k-1}L_{k-1}} + \\[.8em]
+& + (2p-1) \sum_{k=0}^{\infty}{c_{k-1}\,k (2n-1)L_{k-1}} - (2p-1) \sum_{k=0}^{\infty}{c_{k}\,k^2 L_{k}} - (2p-1) \sum_{k=0}^{\infty}{c_{k-2}\,k(k-1) L_{k-2}} - \\[.8em]
+& - 4p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k} + (4p-2)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} + (2R-p)\,\sum_{k=0}^{\infty}{c_k\,(2k+1)L_k}  - (2R-p)\,\sum_{k=0}^{\infty}{c_{k+1}\,(k+1)L_{k+1}}  + \\[.8em]
+& - (2R-p)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}}  + \left( - p^2 -p + 2R  \right)\sum_{k=0}^{\infty}{c_{k}\,L_{k}} = -A  \sum_{k=0}^{\infty}{c_{k}\,L_{k}}
+\end{split}
+\end{equation}\\[1em]
+Now group by $ n $ and for clarity remove the sum and  $ c_k $ terms:
+
+\begin{equation}
+\begin{split}
+&  \sum_{k=0}^{\infty}c_k \left\{ \sum_{i = 0}^{k-1}{L_i(x)}  +  \right. \\[.8em] 
+& + \left[ -2pk(2k+1) -(2p-1)k^2 -4pk +(2R-p)(2k+1) - p^2 -p + 2R \right]L_k + \\[.8em]
+& + \left[2pk(k+1) - (2R-p)(k+1) \right]L_{k+1} + \\[.8em]
+& + \left[2pk^2 + (2p-1)k(2k-1) + (4p-2)k - (2R-p)k \right]L_{k-1} - \\[.8em]
+& \left. - \left[ (2p-1)k(k-1)  \right]L_{k-2}  \right\}
+\end{split}
+\end{equation}\\[1em]
+
+Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials. The result is an 'almost' lower triangual matrix, called Hessenberg matrix.
+
+Once the value of $ k $ has been estimated, the vibrational energy levels are:
+\begin{equation}
+E_n = \hbar\left(n + \frac{1}{2}\right)\sqrt{\frac{k}{m}}
+\end{equation}
+
+
+\verb+https://grenoble-sciences.ujf-grenoble.fr/pap-ebook/grivet/sites/grivet/files/exercices/ch12/the_hydrogen_molecular_ion_revisited.pdf+
+
+\verb+http://optica.mty.itesm.mx/pmog/Papers/Mathieu.pdf+
+
+\end{document} 
