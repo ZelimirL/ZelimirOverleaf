@@ -2,7 +2,7 @@
 
 \section{Existing Solution s}
 
-We apply the method used in the 3D case of the $ H_2^{+} $ ion to find the solution in 2 dimensions. The problem itself is analogous to the 3D problem, but leads to the Mathieu's function as the solution for the radial problem.
+We apply similar method used in the 3D case of the $ H_2^{+} $ ion to find the solution in 2 dimensions. The problem itself is analogous to the 3D problem, but leads to the Mathieu's function as the solution for the radial problem.
 
 There are not too many papers dealing with solving the $ H_2^{+} $ but here is some relevant, and recent work in this problem. In addition to the Bates paper \cite{Bates1}, there are other, more recent papers \cite{H2Plus2d1} \cite{TwoCentersParticle}, \cite{Kolos} which deal with the solution of the Schrodinger equation and spectrum of the $ H_2^{+} $ molecule.  As with other work in this problem, the paper relies on the work done by Bates et all. \cite{Bates1}. The solution in \cite{H2Plus2d1} agrees well with our solution.  One can also apply approximate methods, but they should be considered inferior to the analytical solution, we provide here. 
 
@@ -58,53 +58,51 @@ where
 \begin{equation}\label{eqP}
 p^2 = -\frac{E\,R^2}{2}
 \end{equation}
-and $ A $ is the separation constant.  To eliminate the singularities, and following \cite{H2Plus2d1} we introduce two new functions:
-\begin{equation}\label{eqNew}
-\begin{split}
-& F(\mu) = (1-\mu^2)^{k/2}M(\mu) \\[.8em]
-& G(\lambda) = (\lambda^2-1)^{k/2}L(\lambda)
-\end{split}
-\end{equation}
-to obtain
-\begin{equation}
-\begin{split}
-& (1-\mu^2)\frac{d^2\,M}{d\mu^2} - (2k+1)\mu\frac{d\,M}{d\mu} +   \left[ A -  \frac{E\,R^2}{2}\mu^2  + k(k-1)\frac{\mu^2}{1-\mu^2} - k  \right]M = 0
-\end{split}
-\end{equation}
-\begin{equation}
-\begin{split}
-& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  + k + k(k-1)\frac{\lambda^2}{\lambda^2-1} \right]L = 0
-\end{split}
-\end{equation}
-To make both $ M(\mu) $ and $ L(\lambda) $ non singular at $ \mu, \lambda= 1$ we must have the $ k = 0, 1 $. So the equations reduces to:
-\begin{equation}\label{M1}
-\begin{split}
-& (1-\mu^2)\frac{d^2\,M}{d\mu^2}  - (2k+1)\mu\frac{d\,M}{d\mu} +   \left[ A -  \frac{E\,R^2}{2}\mu^2  -  k  \right]M(\mu) = 0 \\[.8em]
-\end{split}
-\end{equation}
-\begin{equation}\label{L1}
-\begin{split}
-& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[\frac{E\,R^2}{2}\lambda^2 + 2R\lambda  + k - A\right]L(\lambda) = 0
-\end{split}
-\end{equation}
-
-Effectively the choice of parameter $ k $ determines the parity of the solution. At this point we set:
-
+and $ A $ is the separation constant. At this point we set:
 \begin{equation}
 p^2 = -\frac{ER^2}{2}
 \end{equation}
 
-And proceed with solving each equation separately:
+We observe that both equations for the functions $ M(\mu) $ and $ L(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
 
 \subsection{ M Equation }
 
-Using the substitution $ \mu = \cos x $ we get the other form of the equation:
+Following the derivation in appendix C we get for the M equation
 
-\begin{equation}\label{M2}
-M^{''}(x) - 2k M^{'}(x) +   \left[ A - k + \frac{p^2}{2} + \frac{p^2}{2}\mu^2\cos(2x)  \right]M(x) = 0
+\begin{equation}\label{Feq2}
+\frac{d^2 M}{d x^2} + \left[-A + \frac{p^2}{2} + \frac{p^2}{2}\cos(2x) \right]M = 0 
 \end{equation}
 
-The equation \eqref{M2} is a form of a angular Mathieu's equation \cite{Mathieu2}. 
+The equation \eqref{M2} is a form of a  Mathieu's equation \cite{Mathieu2}. 
+
+The equation \eqref{Feq2} is a Mathieu equation written as:
+\begin{equation}\label{FeqM }
+\frac{d^2 M}{d x^2} + \left[w - 2q\cos(2x)\right]M = 0
+\end{equation}
+where
+\begin{equation}
+\begin{split}
+& w = - A + \frac{p^2}{2} \\[.7em]
+& q = - \frac{p^2}{2}
+\end{split}
+\end{equation}
+
+From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has eveb and odd eigenvalue functions as:
+\begin{equation}
+\begin{split}
+V_0 = \cfrac{2}{V_2 - \cfrac{1}{V_4 - \cfrac{1}{V_6 - ...}}}
+\end{split}
+\quad\leftrightarrow\quad
+\begin{split}
+V_1 - 1 = \cfrac{1}{V_3 - \cfrac{1}{V_5 - \cfrac{1}{V_7 - ...}}}
+\end{split}
+\end{equation}
+where 
+\begin{equation}
+V_m = \frac{w - m^2}{q}
+\end{equation}
+
+The next step is to solving the appropriate eigenvalue equation.
 
 \subsection{ L Equation }
 
@@ -116,13 +114,84 @@ The equation \eqref{M2} is a form of a angular Mathieu's equation \cite{Mathieu2
 
 The equation for the $ L(\lambda) $ looks similar to the radial (modified) Mathieu's equation, but it is not an exact identity. 
 
+There are actually two ways to try to solve this equation:
+
+\subsubsection{Algebraic}
+
+Following \cite{Bates1} and \cite{H2Plus2d2} we look for the solution in the form of:
+\begin{equation}\label{eqLsumG}
+L(\lambda) = \left(\lambda +1\right)^\sigma e^{-p\lambda}\sum_{n=0}^{\infty}{a_nx^n}
+\end{equation}
+with
+\begin{equation}
+\begin{split}
+\sigma = \frac{R}{p} - \frac{1}{2}
+\end{split}
+\quad\text{ and }\quad
+\begin{split}
+x = \frac{\lambda-1}{\lambda+1}
+\end{split}
+\end{equation}
+Substituing \eqref{eqLsumG} into \eqref{eqLG} and after some formidable algebra, we get a reccurence relation:
+\begin{equation}
+\alpha_na_{n+1}-\beta_n a_n+\gamma_na_{n-1} = 0\,\,\,\,\,n \ge 0
+\end{equation}
+with
+\begin{equation}
+\begin{split}
+& \alpha_n = \left(n + 1\right)\left(n + \frac{1}{2}\right)\\[.8em]
+& \beta_n = \left[2n^2 + (4p - 2\sigma)n - A + p^2 - 2p\sigma - \frac{\sigma}{2}\right] \\[.8em]
+& \gamma_n = (n-1)\left(n - 2\sigma - \frac{1}{2}\right) + \sigma\left(\sigma - \frac{1}{2}\right)
+\end{split}
+\end{equation}
+and if follows that
+\begin{equation}
+\begin{split}
+\frac{a_n}{a_{n-1}} = F_n
+\end{split}
+\quad\text{ where }\quad
+\begin{split}
+F_n = \cfrac{\gamma_n}{\beta_n - \cfrac{\alpha_n \gamma_{n+1}}{\beta_{n+1}-\cfrac{\alpha_{n+1}\gamma_{n+1}}{\beta_{n+1}-\text{...}}}}
+\end{split}
+\end{equation}
+Since $ a_{-1} = 0$ we have
+\begin{equation}
+\frac{\beta_0}{\alpha_0} = F_1
+\end{equation}
+
+This gives us first equation  for the eigenvalues $ p $ and $ A $.
+
+\subsubsection{Laguerre Polynomials}
+
+ So assume the solution as the sum of Laguerre polynomials and Algebra:
+\begin{equation}
+L(x) =  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k(x)\label{L2-3}
+\end{equation}\\[1em]
+
+We insert the equation \ref{L2-3} into \ref{L2-2}, expand, cancel and collect.
+
+The detailed derivation is described in appendix C.
+
+At the end we get a sum:
+\begin{equation}
+\begin{split}
+&  \sum_{k=0}^{\infty}c_k \left\{ \sum_{i = 0}^{k-1}{L_i(x)}  +  \right. \\[.8em] 
+& + \left[ -2pk(2k+1) -(2p-1)k^2 -4pk +(2R-p)(2k+1) - p^2 -p + 2R \right]L_k + \\[.8em]
+& + \left[2pk(k+1) - (2R-p)(k+1) \right]L_{k+1} + \\[.8em]
+& + \left[2pk^2 + (2p-1)k(2k-1) + (4p-2)k - (2R-p)k \right]L_{k-1} - \\[.8em]
+& \left. - \left[ (2p-1)k(k-1)  \right]L_{k-2}  \right\}
+\end{split}
+\end{equation}
+
+Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n x n $ matrix with the parameter $ p $ such as:
+
+
+This gives us the second eigen-equation for the values $ p $ and $ A $.
+
+
 \subsection{Solutions}
 
-We observe that both equations for the functions $ M(\mu) $ and $ L(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
-
-\subsubsection{Mostly Algebraic Solution}
-
-Since $ M(\mu) $ is Mathieu's equation, we can exploit the eigenvalue relations for the Mathieu's equation. Following \cite{H2Plus2d2}, the complete solution is described in appendixC. The appendixE also contains a Wolfram Mathematica code used to obtain a values for electronic energy $ E(R) $, total potential $ V(R) $ for the  $ 1s_g^{+} $ and $2p_{s}^{+} $ states. 
+ The appendixE also contains a Wolfram Mathematica code used to obtain a values for electronic energy $ E(R) $, total potential $ V(R) $ for the  $ 1s_g^{+} $ and $2s_{g}^{+} $ states. 
 
 afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
