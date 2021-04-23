@@ -116,7 +116,7 @@ The equation for the $ L(\lambda) $ looks similar to the radial (modified) Mathi
 
 There are actually two ways to try to solve this equation:
 
-\subsubsection{Algebraic}
+\subsubsection{Algebraic Solution}
 
 Following \cite{Bates1} and \cite{H2Plus2d2} we look for the solution in the form of:
 \begin{equation}\label{eqLsumG}
@@ -161,12 +161,14 @@ Since $ a_{-1} = 0$ we have
 
 This gives us first equation  for the eigenvalues $ p $ and $ A $.
 
-\subsubsection{Laguerre Polynomials}
+\subsubsection{Laguerre Polynomials and the Operator Spectrum}
 
- So assume the solution as the sum of Laguerre polynomials and Algebra:
+Here we use a more of a brute force approach, same as in the previous chaper. The idea is to numerically calculate the spectrum of a differential operator to a desired precision
+
+ So assume the solution as the sum of Laguerre polynomials:
 \begin{equation}
-L(x) =  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k(x)\label{L2-3}
-\end{equation}\\[1em]
+L(x) =  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k(x)}\label{L2-3}
+\end{equation}
 
 We insert the equation \ref{L2-3} into \ref{L2-2}, expand, cancel and collect.
 
@@ -183,15 +185,14 @@ At the end we get a sum:
 \end{split}
 \end{equation}
 
-Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n x n $ matrix with the parameter $ p $ such as:
+Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n $ x $ n $ matrix with the parameter $ p $ .
 
 
 This gives us the second eigen-equation for the values $ p $ and $ A $.
 
+\subsection{Energy}
 
-\subsection{Solutions}
-
- The appendixE also contains a Wolfram Mathematica code used to obtain a values for electronic energy $ E(R) $, total potential $ V(R) $ for the  $ 1s_g^{+} $ and $2s_{g}^{+} $ states. 
+ The appendixD also contains a Wolfram Mathematica code used to obtain a values for electronic energy $ E(R) $, total potential $ V(R) $ for the  $ 1s_g^{+} $ and $2s_{g}^{+} $ states. 
 
 afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
@@ -203,13 +204,13 @@ afterpage{
       \multicolumn{1}{r}{} &
       \multicolumn{1}{r}{ $ 1s_g^+ $} &
       \multicolumn{1}{r}{} &
-      \multicolumn{1}{r}{$ 2p_u^+ $ } \\
+      \multicolumn{1}{r}{$ 2s_g^+ $ } \\
       \hline
-      R & $ E_{ele} $ & $ E_{tot} $ & $ E_{ele} $ & $ E_{tot} $  \\ 
-      0.1 & -7.18911 & 2.81089 & -0.809388 & 9.19061 \\
-      0.2 & -6.38244 & -1.38244 & -0.841312 & 4.15869\\
-      0.3 & -5.73001 & -2.39668 & -0.911853 & 2.42148 \\
-      0.4 & -5.2088 & -2.7088 & -1.03325 &  1.46675\\
+       & $ E_{ele} $ & $ E_{tot} $ & $ E_{ele} $ & $ E_{tot} $  \\ 
+      0.1 & -7.18911 & 2.81089 & 1 & 1 \\
+      0.2 & -6.38244 & -1.38244 & 1 & 1 \\
+      0.3 & -5.73001 & -2.39668 & 1 & 1 \\
+      0.4 & -5.2088 & -2.7088 & 1 & 1 \\
       0.5 & -4.78775 & -2.78775 & -1.20116 & 0.798836 \\
       0.6 & -4.44255 & -2.77588 & -1.39268 & 0.273983\\
       0.7 & -4.15558 & -2.72701 & -1.58213 & -0.153558 \\
