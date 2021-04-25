@@ -168,7 +168,7 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
 
 \afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{ The separation constant A, electronic energy E , total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the internuclear separation R }
+  \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the internuclear separation R \\[1.1em] }
   \label{1sg}
 		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 			\hline
@@ -201,7 +201,7 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
 
 \afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{ The separation constant A, electronic energy E , total energy $ E + \frac{1}{R} $ , for the state $ 2s_g $ for some values of the internuclear separation R }
+  \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 2s_g $ for some values of the internuclear separation R \\[1.1em] } 
   \label{2sg}
 		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 			\hline
@@ -227,7 +227,7 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
       7.0 & 3.3483 & 45.4488 & -0.4575 & -0.3147 \\[-1em]
       8.0 & 3.6890 & 59.7980 & -0.4252 & -0.3002 \\[-1em]
       9.0 & 4.0122 & 75.9727 & -0.3974 & -0.2863 \\[-1em]
-      10.0 & 4.3243 & 93.8641 & -0.3739 & -0.2739 \\[-1em]
+      10.0 & 4.3243 & 93.8641 & -0.3739 & -0.2739 \\
 		\hline
 		\end{tabular}
 }
@@ -268,8 +268,6 @@ At the end we get a sum:
 \end{equation}
 
 Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n $ x $ n $ matrix with the parameter $ p $ .
-
-
 
 \subsubsection{Calculating Energy by using calculating the Eigenvalues for the $ M(\mu) $ and $ L(\lambda) $ equations }
 
@@ -406,75 +404,36 @@ Table depicting the calculated energies of the electron for the ground state (ev
 
 \afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{ $ 2p_u^{+} $ } \label{tab:2pu}
+  \captionof{table}{ $ 2s_g^{+} $ } \label{tab:2pu}
 		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 		\hline
-		    R & p & A & E \\ \hline \hline
-        0.2 & 0.2002000 & -0.989967 & -2.004 & 2.996 \\[-1em]
-        0.4 & 0.2899422 & -0.978928 & -1.05083 & 1.44917 \\[-1em]
-        0.6 & 0.4698674 & -0.944425 & -1.22653 & 0.440137 \\[-1em]
-        0.8 & 0.6583497 & -0.890176 & -1.35445 & -0.104451 \\[-1em]
-        1. & 0.83893725 & -0.820177 & -1.40763 & -0.407631  \\[-1em]
-        1.2 & 1.0072282 & -0.738337 & -1.40904 & -0.575707 \\[-1em]
-        1.4 & 1.1637570 & -0.647105 & -1.38197 & -0.667684 \\[-1em]
-        1.6 & 1.3101216 & -0.547923 & -1.34095 & -0.715952 \\[-1em]
-        1.8 & 1.4478995 & -0.441659 & -1.29408 & -0.738527 \\[-1em]
-        2. & 1.57842277 & -0.328846 & -1.24571 & -0.745709 \\[-1em]
-        2.2 & 1.7027722 & -0.209819 & -1.19811 & -0.743568  \\[-1em]
-        2.4 & 1.8218201 & -0.084788 & -1.15244 & -0.735774 \\[-1em]
-        2.6 & 1.9362735 & 0.0461182 & -1.10922 & -0.724602  \\[-1em]
-        2.8 & 2.0467105 & 0.182823 & -1.06863 & -0.711486 \\[-1em]
-        3. & 2.15360935 & 0.325285 & -1.03067 & -0.697341 \\[-1em]
-        3.2 & 2.2573686 & 0.473487 & -0.995256 & -0.682756 \\[-1em]
-        3.4 & 2.3583242 & 0.627428 & -0.962231 & -0.668113 \\[-1em]
-        3.6 & 2.4567615 & 0.787117 & -0.931432 & -0.653654 \\[-1em]
-        3.8 & 2.5529247 & 0.952568 & -0.90269 & -0.639532  \\[-1em]
-        4. & 2.64702425 & 1.1238 & -0.875842 & -0.625842 \\[-1em]
-        4.2 & 2.7392425 & 1.30082 & -0.850731 & -0.612636 \\[-1em]
-        4.4 & 2.8297387 & 1.48366 & -0.827213 & -0.59994 \\[-1em]
-        4.6 & 2.9186522 & 1.67232 & -0.805154 & -0.587763 \\[-1em]
-        4.8 & 3.0061054 & 1.86681 & -0.784433 & -0.5761 \\[-1em]
-        5. & 3.09220669 & 2.06715 & -0.764939 &- 0.564939 \\[-1em]
-        6. & 3.50544693 & 3.15618 & -0.682675 & -0.516009\\[-1em]
-        7. & 3.89563406 & 4.38877 & -0.619427 & -0.47657 \\[-1em]
-        8. & 4.26798013 & 5.7597 & -0.569239 & -0.444239  \\[-1em]
-        9.0 & 4.62572636 & 7.26153 & -0.528329 &-0.417218 \\
+		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+        0.2 & 0.1988 & 0.0198 & -1.9764 & 3.0235` \\[-1em]
+        0.3 & 0.3290 & 0.0545 & -2.4061 & 0.9272 \\[-1em]
+        0.4 & 0.3284 & 0.0543 & -1.3484 & 1.1515 \\[-1em]
+        0.5 & 0.2995 & 0.0451 & -0.7179 & 1.2820 \\[-1em]
+        0.6 & 0.2801 & 0.0394 & -0.4360 & 1.2306 \\[-1em]
+        0.7 & 0.4074 & 0.0838 & -0.6774 & 0.7510 \\[-1em]
+        0.8 & 0.4583 & 0.1063 & -0.6563 & 0.5936 \\[-1em]
+        0.9 & 0.5080 & 0.1311 & -0.6374 & 0.4736 \\[-1em]
+        1.0 & 0.5574 & 0.1583 & -0.6214 & 0.3785 \\[-1em]
+        1.1 & 0.6047 & 0.1870 & -0.6045 & 0.3044 \\[-1em]
+        1.5 & 0.7887 & 0.3230 & -0.5529 & 0.1137 \\[-1em]
+        2.0 & 1.0048 & 0.5365 & -0.5048 & -0.0040 \\[-1em]
+        2.5 & 1.2100 & 0.7982 & -0.4685 & -0.0680 \\[-1em]
+        3.0 & 1.4072 & 1.1096 & -0.4400 & -0.1067 \\[-1em]
+        3.5 & 1.5984 & 1.4732 & -0.4171 & -0.1314 \\[-1em]
+        4.0 & 1.7690 & 1.7037 & -0.3911 & -0.1411 \\[-1em]
+        4.5 & 1.9109 & 1.6840 & -0.3606 & -0.1384 \\[-1em]
+        5.0 & 1.9374 & 0.3310 & -0.3003 & -0.1003 \\[-1em]
+        6.0 & 1.9970 & -2.2878 & -0.2215 & -0.0549 \\[-1em]
+        7.0 & 2.2709 & -2.0010 & -0.2105 & -0.0676 \\[-1em]
+        8.0 & 2.5364 & -1.6194 & -0.2010 & -0.0760 \\[-1em]
+        9.0 & 2.7887 & -1.2354 & -0.1920 & -0.0809 \\[-1em]
+        10.0 & 11.3799 & 108.2679 & -2.5900 & -2.4900 \\
 		\hline
 		\end{tabular}
 	\restoregeometry
 }
 
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{First Excited State, Even Energies} \label{tab:firstEven}
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-    \\[4.em]
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-	\restoregeometry
-}
-
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{First Excited State, Odd Energies} \label{tab:firstOdd}
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-    \\[4.em]
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-	\restoregeometry
-}
 
