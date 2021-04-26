@@ -173,6 +173,7 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
 		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 			\hline
 			R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+      0.1 & 0.1915 & 7.2704 & -7.3359 & 2.66401 \\[-1em]
       0.2 & 0.3606 & 7.3367 & -6.5033 & -1.5033 \\[-1em]
       0.3 & 0.5117 & 7.4029 & -5.8197 & -2.4864 \\[-1em]
       0.4 & 0.6496 & 7.4684 & -5.2754 & -2.7754 \\[-1em]
@@ -206,6 +207,7 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
 		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 			\hline
 			R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+      0.1 &0.0710 & 15.8560 & -1.0102 & 8.98975 \\[-1em]
       0.2 & 0.1358 & 19.2757 & -0.9225 & 4.0770 \\[-1em]
       0.3 & 0.1967 & 22.4772 & -0.8600 & 2.4730 \\[-1em]
       0.4 & 0.2548 & 25.4103 & -0.8116 & 1.6883 \\[-1em]
@@ -245,12 +247,19 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
 
 \subsubsection{Laguerre Polynomials and the Operator Spectrum}
 
-Here we use a more of a brute force approach, same as in the previous chaper. The idea is to numerically calculate the spectrum of a differential operator to a desired precision.
+Here we use a more of a brute force approach. We keep the equation for $ \mu $ since it is a Mathieu's equation, with a well known solutions. For the $ \lambda $ equation, we  numerically calculate the spectrum of a differential operator to a desired precision
+
+For the equation \eqref{L2-2} one could proceed by following the radial Mathieu's equations approach. One way to solve the Radial Mathieu's equation is by using the series of hyperbolic functions, obtained from the solution of angular Mathieu's equation using the substitution $ \eta = i\,\xi$.  But that this approach in numerically unstable and hard to compute \cite{Mathieu4}. There is another approach, using the product of Bessel Functions \cite{Mathieu4}
+
+We took a different approach to solving the equation \eqref{L2-2}, namely look for the solution in the form of the series of orthogonal functions. This approach has some challenges, since on a finite interval, there are number of functions orthogonal the interval, and one can choose the one which fits the problem the best. On an infinite interval, such as $ \lambda = [1, \infty] $ the choice is somewhat limited. The Laguerre's polynomial seemed like a suitable choice, as they form an orthogonal set on the infinite interval. So we look for the solution in the form:
+
+The power series method is described in numerous textbooks are papers. It is tacitly assumed that the solution to the differential equation is a 'well behaved' continuous function and that consequently the power series converges.
 
 So assume the solution as the sum of Laguerre polynomials:
 \begin{equation}
-L(x) =  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k(x)}\label{L2-3}
+L(\lambda) =  e^{-p\lambda}\sum_{k=0}^{\infty}{c_k\,L_k(\lambda)}\label{L2-3}
 \end{equation}
+Where $ L_n(\lambda) $ are Laguerre polynomials. They have several interesting properties, which can be found in \cite{Laguerre1}.
 
 We insert the equation \ref{L2-3} into \ref{L2-2}, expand, cancel and collect.
 
@@ -267,140 +276,54 @@ At the end we get a sum:
 \end{split}
 \end{equation}
 
-Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n $ x $ n $ matrix with the parameter $ p $ .
+Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n $ x $ n $ matrix with the parameter $ p $ which has eigenvalues $ A $.
 
-\subsubsection{Calculating Energy by using calculating the Eigenvalues for the $ M(\mu) $ and $ L(\lambda) $ equations }
+So using the solutions above, the next step is to find the eigenvalues $ A $, $ p $, of the equations \eqref{M1} and \eqref{L2-2}. Using the series above, for each equation, we find functions $ A_i(p) $ for which the solution exists. The intersection of the two functions $ A_i(p) $ is the value of $ p $ common for both equations \eqref{M1} \eqref{L2-2}. This procedure translates into the matrix eigenvalues problem, following the steps below.
 
-The other approach taken, was to use the series of orthogonal functions to find the eigenvalues of the $ M(\mu) $ and $ L(\lambda) $ equations. The power series method is described in numerous textbooks are papers. It is tacitly assumed that the solution to the differential equation is a 'well behaved' continuous function and that consequently the power series converges.
+The detailed derivation is in appendix C.
 
-Thus we look for the solution in the form of:
-\begin{equation}\label{MSol}
-\begin{split}
-& M(\mu) = \sum_{n=1}^{\infty}{a_n\,e^{i2nx}} \\[.8em]
-\end{split}
-\end{equation}
-The solution depends on the chosen boundary conditions. The angular Mathieu's equation admits an even and odd solution, with respect to the origin. The parity of the solution is chosen depending on the boundary conditions for a particular problem. Therefore
+The rest of the work is numerical. Since our goal is to obtain the function $ E(R) $ we choose the suitable values of $ R $ as in table \ref{groundEven} . For each value of $ R $ we divide with the interval $ p \in [0,2*R] $ into the $ n $ points. For each value of $ p $ we calculate store the eigenvalues for equation for $ M(\mu) $ and $ L(\lambda) $. Finding matrix eigenvalues is a common operation is a number of fields, and good numerical algorithms and libraries are available, such as \cite{Lapack1}. 
 
-\begin{equation}
-\begin{split}
-& \text{ For the even case, the boundary condition is } \\[.8em]
-& M(\mu = 1) = M(\mu = -1) = 1\,;\,\,\Rightarrow  M'(0) = M'\left(\frac{\pi}{2}\right) = 0 \Rightarrow \\[.8em] 
-\end{split}
-\end{equation}
-The solution is then in the form \\[.8em]
-\begin{equation}\label{Meven}
-M(\mu) = \sum_{n=1}^{\infty}{a_n \cos\left(n\,\mu\right)}
-\end{equation}
-
-\begin{equation}\label{Modd1}
-\begin{split}
-& \text{ And for the odd case, take the boundary conditions: } \\[.8em]
-& M(\mu = 1) = 1\,;\,\,M(\mu = -1) = -1\,;\,\,\Rightarrow  M(0) = M'\left(\frac{\pi}{2}\right) = 0 \Rightarrow \\[.8em] 
-\end{split}
-\end{equation}
-\begin{equation}\label{Modd2}
-\begin{split}
-& \text{ The solution is then in the form: } \\[.8em]
-& M(\mu) = \sum_{n=1}^{\infty}{a_n \sin\left[\left(2n+1\right)\,\mu\right]} 
-\end{split}
-\end{equation}
-
-From now on, the solution to the equation for $ M(\mu) $ \eqref{M2} is straightforward. Set the boundary conditions, and express  $ M(\mu) $ in the series of sine or cosine functions.
-
-For the equation \eqref{L2-2} one could proceed by following the radial Mathieu's equations approach. One way to solve the Radial Mathieu's equation is by using the series of hyperbolic functions, obtained from the solution of angular Mathieu's equation using the substitution $ \eta = i\,\xi$.  But that this approach in numerically unstable and hard to compute \cite{Mathieu4}. There is another approach, using the product of Bessel Functions \cite{Mathieu4}
-
-We took a different approach to solving the equation \eqref{L2-2}, namely look for the solution in the form of the series of orthogonal functions. This approach has some challenges, since on a finite interval, there are number of functions orthogonal the interval, and one can choose the one which fits the problem the best. On an infinite interval, such as $ \lambda = [1, \infty] $ the choice is somewhat limited. The Laguerre's polynomial seemed like a suitable choice, as they form an orthogonal set on the infinite interval. So we look for the solution in the form:
-
-\begin{equation}\label{Lsol1}
-\begin{split}
-& L(\lambda) =  e^{-p\lambda}\sum_{n=0}^{\infty}{c_n\,L_n(\lambda)}
-\end{split}
-\end{equation}
-
-Where $ L_n(\lambda) $ are Laguerre polynomials. They have several interesting properties, which can be found in \cite{Laguerre1}.
-
-\subsection{ Towards the solution }
-
-So using the solutions above, the next step is to find the eigenvalues $ A $, $ p $, of the equations \eqref{M1} and \eqref{L2-2} for the values of $ k = 0,1 $. Using the series above, for each equation, we find functions $ A_i(p) $ for which the solution exists. The intersection of the two functions $ A_i(p) $ is the value of $ p $ common for both equations \eqref{M1} \eqref{L2-2}. This procedure translates into the matrix eigenvalues problem, following the steps below.
-
-For the even M equation, we insert the solution \eqref{Meven} in the equation \eqref{MSol}, multiply by $ \cos(2m\,x) $, $ m = 0,1,2,... $ and integrate. Since the basis functions in the series are orthogonal we obtain:
-
-\begin{equation}
-\begin{split}
-& \sum_{m,n=0}^{\infty}c_k \left\{-4n^2\int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 nx)dx} + \left[ \frac{p^2}{2} +k \right]\int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 nx)dx} + \right. \\[.8em]
-& \left. + \left[ \frac{p^2}{2} + k\right] \int_{-\pi/2}^{\pi/2}{\cos(2 x)\cos(2 mx)\cos(2 nx)dx} \right\} = \\[.8em]
-& = A \int_{-\pi/2}^{\pi/2}{\cos(2 mx)\cos(2 nx)dx}  \,\Longrightarrow\\[.8em]
-\end{split}
-\end{equation}
-or
-\begin{equation}
-\begin{split}
-& \left[ \frac{p^2}{2} +k\right]\pi\delta_{0,0} + \left[ \frac{p^2}{2} +k\right]\frac{\pi}{2}\delta_{0,0}+ \left[ \frac{p^2}{2} +k\right]\frac{\pi}{2}\delta_{1,0}+ \left[ \frac{p^2}{2} +k\right]\frac{\pi}{2}\delta_{0,1} + \\[.8em] 
-& + \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\left[-4n^2 +\frac{p^2}{2} + k\right]\frac{\pi}{2} \delta_{m,n} + \left[\frac{p^2}{2} + k\right]\frac{\pi}{4} \delta_{m,n} } + \\[.8em]
-& + \left[\frac{p^2}{2}+k\right]\frac{\pi}{8}\delta_{m,n+1} + \left[\frac{p^2}{2}+k\right]\frac{\pi}{8}\delta_{m,n-1}  = A \pi\,\delta_{0,0} + \sum_{m=1}^{\infty}\sum_{n=1}^{\infty}{A\frac{\pi}{2}\delta_{m,n}}
-\end{split}
-\end{equation}\\*
-
-For the odd case, insert the equation \eqref{Modd2} in the equation {eqFinal}, multiply by $ \sin[(2m+1)\,x] $, $ m = 0,1,2,3... $ and integrate (again exploiting the orthogonality of the basis functions):
-\begin{equation}
-\begin{split}
-& \sum_{n=0}^{\infty}c_k -(2n+1)^2\int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 n+1)x]dx} + \left[\frac{p^2}{2} + k \right]\int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 n+1)x]dx} +  \\[.8em]
-& + \left[ \frac{p^2}{2} +k \right] \int_{-\pi/2}^{\pi/2}{\cos(2 x)\sin[(2 m+1)x]\sin[(2 k+1)x]dx}   = A \int_{-\pi/2}^{\pi/2}{\sin[(2 m+1)x]\sin[(2 k+1)x]dx}  \Longrightarrow \\[.8em]
-\end{split}
-\end{equation}\\*
-\begin{equation}
-\begin{split}
-&  \left[ - \frac{\pi}{2} + \frac{\pi}{2}\frac{p^2}{2} - \frac{\pi}{4}\frac{p^2}{2}\right]\delta_{0,0} +  \frac{\pi}{4}\left[\frac{p^2}{2}+k\right]\delta_{0,1} + \left[\frac{\pi}{4}+ k\right]\frac{p^2}{2}\delta_{1,0}  + \\[.8em]
-& +  \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\left[-(2n+1)^2 + \frac{p^2}{2}\right] \frac{\pi}{2}\delta_{m,n} +  \left[\frac{p^2}{2}+k\right]\frac{\pi}{4}\delta_{m,n \pm 1} } = \\[.8em]
-&  = A\frac{\pi}{2}\delta_{0,0}  + A\frac{\pi}{2}  \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\delta_{m,n}} \Longrightarrow
-\\[.8em]
-\end{split}
-\end{equation}\\*
-\begin{equation}
-\begin{split}
-& \left( - 1 + \frac{p^2}{4} \right)\delta_{0,0} + \left[ \frac{p^2}{4} + k \right]\delta_{0,1}  + \left[ \frac{p^2}{4} +k \right]\delta_{1,0}  + \\[.8em]
-& + \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\left(-(2n+1)^2 + \frac{p^2}{2}\right) \delta_{m,n} +  \left[\frac{p^2}{4}+k\right]\delta_{m,n \pm 1} } = \\[.8em]
-&  = A\delta_{0,0}  + A  \sum_{m=1}^{\infty}\sum_{n=1}^{\infty} {\delta_{m,n}}
-\end{split}
-\end{equation}\\*
-
-For the $ L $ equation, first by shifting the origin $ x = \lambda -1 $ and by using various properties of Laguerre polynomials and its derivatives \cite{Laguerre1} we obtain.
-
-\begin{equation}
-\begin{split}
-&  \sum_{n=0}^{\infty}c_n \left\{ \sum_{i = 0}^{n-1}{L_i(x)}  +  \right. \\[.8em] 
-& + \left[ -2pn(2n+1) -(2p-1)n^2 -4pn +(2R-p)(2n+1) - p^2 -p + 2R \right]L_n + \\[.8em]
-& + \left[2pn(n+1) - (2R-p)(n+1) \right]L_{n+1} + \\[.8em]
-& + \left[2pn^2 + (2p-1)n(2n-1) + (4p-2)n - (2R-p)n \right]L_{n-1} - \\[.8em]
-& \left. - \left[ (2p-1)n(n-1)  \right]L_{n-2}  \right\}
-\end{split}
-\end{equation}\\[1em]
-
-Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials. 
-
-\begin{equation}
-\begin{split}
-& \int_0^{\infty} \sum_{n=0}^{\infty}c_n \sum_{m=0}^{\infty}L_m(x) \left\{ \sum_{i = 0}^{n-1}{L_i(x)}  +  \right. \\[.8em] 
-& + \left[ -2pn(2n+1) -(2p-1)n^2 -4pn +(2R-p)(2n+1) - p^2 -p + 2R \right]L_n + \\[.8em]
-& + \left[2pn(n+1) - (2R-p)(n+1) \right]L_{n+1} + \\[.8em]
-& + \left[2pn^2 + (2p-1)n(2n-1) + (4p-2)n - (2R-p)n \right]L_{n-1} - \\[.8em]
-& \left. - \left[ (2p-1)n(n-1)  \right]L_{n-2}  \right\}
-\end{split}
-\end{equation}\\[1em]
-
-The result is an "almost" lower triangular matrix, called Hessenberg matrix.
-
-The rest of the work is numerical. Since our goal is to obtain the function $ E(R) $ we choose the suitable values of $ R $ as in table \ref{groundEven} . For each value of $ R $ we divide with the interval $ p \in [0,2*R] $ into the $ n $ points. For each value of $ p $ we calculate store the eigenvalues for equation for $ M(\mu) $ and $ L(\lambda) $. Finding matrix eigenvalues is a common operation is a number of fields, and good numerical algorithms and libraries are available, such as \cite{Lapack1}.  Regardless, finding eigenvalues is a relative slow operation, with the complexity $ O(n^\omega), 2 < \omega \le 3 $, \cite{Lapack1} $ n $ being the size of the matrix.  Eigenvalues for matrices up to $ 100 \times 100 $, i.e. limiting the sums above to 100 elements can be found using Wolfram Mathematica, within a reasonable time. However for $ n \ge 100 $ the time needed increases as $ n^3 $ \cite{QRDecomposition1} \cite{LinearAlgebra1} and the Mathematica becomes unusable. For $  n = 1000 $, i.e $ 1000 \times 1000  $ matrices I used the Fortran Gnu compiler and Lapack \cite{Lapack1} libraries. The Lapack libraries are both accurate and fast, and it took about 30 minutes to find an eigenvalue on Apple Macbook Pro, with 16GB ram and Intel I7 processor at 2.2 GHz.
-
-In comparison, the results obtain by using Wolfram Mathematica for $ n = 100 $ and results using Lapack for $ n = 1000 $  agree up to one part in $ 10^{-3} $.
+I have used Wolfram Mathematica, to all numerical work. It is easier to use and obtain results, as well as process them in tables and graphs. `
 
 Once the eigenvalues are calculated we have two functions $ A_i(p) $ for each of the equations. Interpolate and find the value of $ p $ for which the curves intersect. From the value of $ p $ we obtain the eigenenergy $ E = E(R) $ using equation \eqref{eqP}.
 
-Appendix D contains the Fortran code for calculating eigenvalues A and small Wolfram Mathematica a program for calculating the energies.
+Appendix D  Wolfram Mathematica a program for calculating the energies.
 
-\subsection{Tables of Energies as a function or Internuclear Distance}
+However it appears that the brute force approach yields somewhat worse results.
 
-Table depicting the calculated energies of the electron for the ground state (even and odd) and first and second excited state:  Also TODO: note that it does not work for small R (needs more points). All numbers are in atomic units.
+\afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{ $ 1s_g^{+} $ } \label{tab:2pu}
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+		\hline
+		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+        0.2 & 0.2031 & 0.0206 & -2.0636 & 2.9363 \\[-1em]
+        0.3 & 0.2874 & 0.0415 & -1.8358 & 1.4975 \\[-1em]
+        0.4 & 0.6483 & 0.2156 & -5.2538 & -2.7538 \\[-1em]
+        0.5 & 0.7763 & 0.3126 & -4.8216 & -2.8216 \\[-1em]
+        0.6 & 0.8968 & 0.4223 & -4.4686 & -2.8019 \\[-1em]
+        0.7 & 1.0115 & 0.5440 & -4.1760 & -2.7474 \\[-1em]
+        0.8 & 1.1214 & 0.6777 & -3.9304 & -2.6804 \\[-1em]
+        0.9 & 1.2277 & 0.8236 & -3.7220 & -2.6109 \\[-1em]
+        1.0 & 1.3311 & 0.9820 & -3.5436 & -2.5436 \\[-1em]
+        1.5 & 1.7848 & 1.8037 & -2.8318 & -2.1651 \\[-1em]
+        2.0 & 1.9182 & 1.3252 & -1.8398 & -1.3398 \\[-1em]
+        2.5 & 1.9383 & 0.2865 & -1.2022 & -0.8022 \\[-1em]
+        3.0 & 1.9588 & -0.7551 & -0.8526 & -0.5193 \\[-1em]
+        3.5 & 2.1000 & -2.2367 & -0.7200 & -0.4342 \\[-1em]
+        4.0 & 2.1121 & -2.2039 & -0.5576 & -0.3076 \\[-1em]
+        4.5 & 2.3541 & -1.8836 & -0.5473 & -0.3251 \\[-1em]
+        5.0 & 2.5797 & -1.5553 & -0.5323 & -0.3323 \\[-1em]
+        6.0 & 2.9869 & -0.9144 & -0.4956 & -0.3290 \\[-1em]
+        7.0 & 3.3539 & -0.2604 & -0.4591 & -0.3162 \\[-1em]
+        8.0 & 3.6945 & 0.4400 & -0.4265 & -0.3015 \\[-1em]
+        9.0 & 4.0177 & 1.2162 & -0.3985 & -0.2874 \\[-1em]
+        10.0 & 10.6696 & 78.8425 & -2.2768 & -2.1768 \\
+      \hline
+      \end{tabular}
+	\restoregeometry
+}
 
 \afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
