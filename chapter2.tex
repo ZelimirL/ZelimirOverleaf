@@ -75,7 +75,21 @@ Following the derivation in appendix C we get for the M equation
 
 The equation \eqref{M2} is a form of a  Mathieu's equation \cite{Mathieu2}. 
 
-The equation \eqref{Feq2} is a Mathieu equation written as:
+\subsection{ L Equation }
+
+Following the derivation in appendix C we get for the L equation
+
+\begin{equation}\label{L2-2}
+\begin{split}
+& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  -k \right]L(\lambda) = 0
+\end{split}
+\end{equation}
+
+The equation for the $ L(\lambda) $ looks similar to the radial (modified) Mathieu's equation, but it is not an exact identity. 
+
+\subsubsection{Algebraic Solution}
+
+The equation \eqref{Feq2} can be written as:
 \begin{equation}\label{FeqM }
 \frac{d^2 M}{d x^2} + \left[w - 2q\cos(2x)\right]M = 0
 \end{equation}
@@ -90,11 +104,12 @@ where
 From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has eveb and odd eigenvalue functions as:
 \begin{equation}
 \begin{split}
-V_0 = \cfrac{2}{V_2 - \cfrac{1}{V_4 - \cfrac{1}{V_6 - ...}}}
+V_0 = \cfrac{2}{V_2 - \cfrac{1}{V_4 - \cfrac{1}{V_6 - ...}}}\label{V-1-1}
 \end{split}
-\quad\leftrightarrow\quad
+\end{equation}
+\begin{equation}
 \begin{split}
-V_1 - 1 = \cfrac{1}{V_3 - \cfrac{1}{V_5 - \cfrac{1}{V_7 - ...}}}
+V_1 - 1 = \cfrac{1}{V_3 - \cfrac{1}{V_5 - \cfrac{1}{V_7 - ...}}}\label{V-1-2}
 \end{split}
 \end{equation}
 where 
@@ -102,21 +117,9 @@ where
 V_m = \frac{w - m^2}{q}
 \end{equation}
 
-The next step is to solving the appropriate eigenvalue equation.
-
-\subsection{ L Equation }
-
-\begin{equation}\label{L2-2}
-\begin{split}
-& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  -k \right]L(\lambda) = 0
-\end{split}
-\end{equation}
-
-The equation for the $ L(\lambda) $ looks similar to the radial (modified) Mathieu's equation, but it is not an exact identity. 
+The equations \ref{V-1-1} and \ref{V-1-2} provide the first eigen equation for the even and odd solution recpectively.
 
 There are actually two ways to try to solve this equation:
-
-\subsubsection{Algebraic Solution}
 
 Following \cite{Bates1} and \cite{H2Plus2d2} we look for the solution in the form of:
 \begin{equation}\label{eqLsumG}
@@ -159,83 +162,152 @@ Since $ a_{-1} = 0$ we have
 \frac{\beta_0}{\alpha_0} = F_1
 \end{equation}
 
-This gives us first equation  for the eigenvalues $ p $ and $ A $.
+The Mathematica code is in appendix D. The energies calculated and the plot of the potential for the states $1s_g^{+}$ and $ 2s_g^{+} $ are in the tables below.
+
+\afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the internuclear separation R \\[1.1em] }
+  \label{1sg}
+		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+			\hline
+			R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+      0.1 & 0.1915 & 7.2704 & -7.3359 & 2.66401 \\[-1em]
+      0.2 & 0.3606 & 7.3367 & -6.5033 & -1.5033 \\[-1em]
+      0.3 & 0.5117 & 7.4029 & -5.8197 & -2.4864 \\[-1em]
+      0.4 & 0.6496 & 7.4684 & -5.2754 & -2.7754 \\[-1em]
+      0.5 & 0.7776 & 7.5332 & -4.8382 & -2.8382 \\[-1em]
+      0.6 & 0.8981 & 7.5974 & -4.4814 & -2.8148 \\[-1em]
+      0.7 & 1.0127 & 7.6608 & -4.1861 & -2.7575 \\[-1em]
+      0.8 & 1.1226 & 7.7235 & -3.9385 & -2.6885 \\[-1em]
+      0.9 & 1.2288 & 7.7856 & -3.7286 & -2.6174 \\[-1em]
+      1.0 & 1.3321 & 7.8469 & -3.5490 & -2.5490 \\[-1em]
+      1.5 & 1.8219 & 8.1444 & -2.9508 & -2.2841 \\[-1em]
+      2.0 & 2.2962 & 8.4273 & -2.6363 & -2.1363 \\[-1em]
+      2.5 & 2.7738 & 8.6973 & -2.4620 & -2.0620 \\[-1em]
+      3.0 & 3.2594 & 8.9556 & -2.3608 & -2.0275 \\[-1em]
+      3.5 & 3.7516 & 10.6100 & -2.2979 & -2.0122 \\[-1em]
+      4.0 & 4.2479 & 14.0730 & -2.2556 & -2.0056 \\[-1em]
+      4.5 & 4.7464 & 18.0513 & -2.2250 & -2.0028 \\[-1em]
+      5.0 & 5.2459 & 22.5391 & -2.2015 & -2.0015 \\[-1em]
+      6.0 & 6.2459 & 33.0272 & -2.1673 & -2.0006 \\[-1em]
+      7.0 & 7.2462 & 45.5209 & -2.1431 & -2.0003 \\[-1em]
+      8.0 & 8.2463 & 60.0130 & -2.1250 & -2.0000 \\[-1em]
+      9.0 & 9.2458 & 76.4955 & -2.1107 & -1.9996 \\[-1em]
+      10.0 & 10.2444 & 94.9542 & -2.0989 & -1.9989 \\
+			\hline
+		\end{tabular}
+}
+
+\afterpage{
+  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
+  \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 2s_g $ for some values of the internuclear separation R \\[1.1em] } 
+  \label{2sg}
+		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+			\hline
+			R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+      0.1 &0.0710 & 15.8560 & -1.0102 & 8.98975 \\[-1em]
+      0.2 & 0.1358 & 19.2757 & -0.9225 & 4.0770 \\[-1em]
+      0.3 & 0.1967 & 22.4772 & -0.8600 & 2.4730 \\[-1em]
+      0.4 & 0.2548 & 25.4103 & -0.8116 & 1.6883 \\[-1em]
+      0.5 & 0.3106 & 28.1052 & -0.7722 & 1.2277 \\[-1em]
+      0.6 & 0.3647 & 30.6031 & -0.7390 & 0.9275 \\[-1em]
+      0.7 & 0.4172 & 32.9399 & -0.7105 & 0.7179 \\[-1em]
+      0.8 & 0.4684 & 35.1437 & -0.6856 & 0.5643 \\[-1em]
+      0.9 & 0.5183 & 4.9531 & -0.6634 & 0.4476 \\[-1em]
+      1.0 & 0.5672 & 5.1105 & -0.6436 & 0.3563 \\[-1em]
+      1.5 & 0.7991 & 48.1936 & -0.5676 & 0.0989 \\[-1em]
+      2.0 & 1.0152 & 6.6787 & -0.5153 & -0.0153 \\[-1em]
+      2.5 & 1.2202 & 7.4617 & -0.4765 & -0.0765 \\[-1em]
+      3.0 & 1.5192 & 8.2456 & -0.5129 & -0.1795 \\[-1em]
+      3.5 & 1.8256 & 10.6103 & -0.5441 & -0.2584 \\[-1em]
+      4.0 & 2.0993 & 14.0727 & -0.5509 & -0.3009 \\[-1em]
+      4.5 & 2.3464 & 18.0503 & -0.5437 & -0.3215 \\[-1em]
+      5.0 & 2.5728 & 22.5360 & -0.5295 & -0.3295 \\[-1em]
+      6.0 & 2.9809 & 33.0090 & -0.4936 & -0.3269 \\[-1em]
+      7.0 & 3.3483 & 45.4488 & -0.4575 & -0.3147 \\[-1em]
+      8.0 & 3.6890 & 59.7980 & -0.4252 & -0.3002 \\[-1em]
+      9.0 & 4.0122 & 75.9727 & -0.3974 & -0.2863 \\[-1em]
+      10.0 & 4.3243 & 93.8641 & -0.3739 & -0.2739 \\
+		\hline
+		\end{tabular}
+}
+
+\begin{figure}
+  \includegraphics{H2_1Sg-Potential.png}
+  \caption{$ H_2^{+} $ Energy and Potential curves for the $ 1s_g^{+} $ state}
+\end{figure}
+
+\begin{figure}
+  \includegraphics{H2_2Sg-Potential.png}
+  \caption{$ H_2^{+} $ Energy and Potential curves for the $ 2s_g^{+} $ state}
+\end{figure}
+
 
 \subsubsection{Laguerre Polynomials and the Operator Spectrum}
 
-Here we use a more of a brute force approach, same as in the previous chaper. The idea is to numerically calculate the spectrum of a differential operator to a desired precision
-We use the series of orthogonal functions to find the eigenvalues of the $ M(\mu) $ and $ L(\lambda) $ equations. The power series method is described in numerous textbooks are papers. It is tacitly assumed that the solution to the differential equation is a 'well behaved' continuous function and that consequently the power series converges.
+Here we use a more of a brute force approach. We keep the equation for $ \mu $ since it is a Mathieu's equation, with a well known solutions. For the $ \lambda $ equation, we  numerically calculate the spectrum of a differential operator to a desired precision
 
- So assume the solution as the sum of Laguerre polynomials:
+For the equation \eqref{L2-2} one could proceed by following the radial Mathieu's equations approach. One way to solve the Radial Mathieu's equation is by using the series of hyperbolic functions, obtained from the solution of angular Mathieu's equation using the substitution $ \eta = i\,\xi$.  But that this approach in numerically unstable and hard to compute \cite{Mathieu4}. There is another approach, using the product of Bessel Functions \cite{Mathieu4}
+
+We took a different approach to solving the equation \eqref{L2-2}, namely look for the solution in the form of the series of orthogonal functions. This approach has some challenges, since on a finite interval, there are number of functions orthogonal the interval, and one can choose the one which fits the problem the best. On an infinite interval, such as $ \lambda = [1, \infty] $ the choice is somewhat limited. The Laguerre's polynomial seemed like a suitable choice, as they form an orthogonal set on the infinite interval. So we look for the solution in the form:
+
+The power series method is described in numerous textbooks are papers. It is tacitly assumed that the solution to the differential equation is a 'well behaved' continuous function and that consequently the power series converges.
+
+So assume the solution as the sum of Laguerre polynomials:
 \begin{equation}
-L(x) =  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k(x)}\label{L2-3}
+L(\lambda) =  e^{-p\lambda}\sum_{k=0}^{\infty}{c_k\,L_k(\lambda)}\label{L2-3}
 \end{equation}
+Where $ L_n(\lambda) $ are Laguerre polynomials. They have several interesting properties, which can be found in \cite{Laguerre1}.
 
 We insert the equation \ref{L2-3} into \ref{L2-2}, expand, cancel and collect.
 
 The detailed derivation is described in appendix C.
 
-At the end we get a sum:
-\begin{equation}
-\begin{split}
-&  \sum_{k=0}^{\infty}c_k \left\{ \sum_{i = 0}^{k-1}{L_i(x)}  +  \right. \\[.8em] 
-& + \left[ -2pk(2k+1) -(2p-1)k^2 -4pk +(2R-p)(2k+1) - p^2 -p + 2R \right]L_k + \\[.8em]
-& + \left[2pk(k+1) - (2R-p)(k+1) \right]L_{k+1} + \\[.8em]
-& + \left[2pk^2 + (2p-1)k(2k-1) + (4p-2)k - (2R-p)k \right]L_{k-1} - \\[.8em]
-& \left. - \left[ (2p-1)k(k-1)  \right]L_{k-2}  \right\}
-\end{split}
-\end{equation}
+Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n $ x $ n $ matrix with the parameter $ p $ which has eigenvalues $ A $.
 
-Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n $ x $ n $ matrix with the parameter $ p $ .
+So using the solutions above, the next step is to find the eigenvalues $ A $, $ p $, of the equations \eqref{M1} and \eqref{L2-2}. Using the series above, for each equation, we find functions $ A_i(p) $ for which the solution exists. The intersection of the two functions $ A_i(p) $ is the value of $ p $ common for both equations \eqref{M1} \eqref{L2-2}. This procedure translates into the matrix eigenvalues problem, following the steps below.
 
-The result is an "almost" lower triangular matrix, called Hessenberg matrix.
+The detailed derivation is in appendix C.
 
-The rest of the work is numerical. We have use Mathematica to calculate the eigenvalues.
+The rest of the work is numerical. Since our goal is to obtain the function $ E(R) $ we choose the suitable values of $ R $ as in table \ref{groundEven} . For each value of $ R $ we divide with the interval $ p \in [0,2*R] $ into the $ n $ points. For each value of $ p $ we calculate store the eigenvalues for equation for $ M(\mu) $ and $ L(\lambda) $. Finding matrix eigenvalues is a common operation is a number of fields, and good numerical algorithms and libraries are available, such as \cite{Lapack1}. 
 
-Once the eigenvalues are calculated we have two functions $ A_i(p) $ for each of the equations. Interpolate and find the value of $ p $ for which the curves intersect. From the value of $ p $ we obtain the eigenenergy $ E = E(R) $ using equation \eqref{eqP}.
+I have used Wolfram Mathematica, to all numerical work. It is easier to use and obtain results, as well as process them in tables and graphs. `
 
-Appendix D contains the Fortran code for calculating eigenvalues A and small Wolfram Mathematica a program for calculating the energies.
+The results of the brute force approach are in the table below. When compared to the algebraic results above, the brute force results are less accurate, and much worse for the small values or R.  It is probably due to the numerical instabillity of the eigenvalue equation. Also the infinite series solution in the algebraic method is more 'precise' than the general solution series in the brute force method.
 
-\subsection{Tables of Energies as a function or Internuclear Distance}
-
-Table depicting the calculated energies of the electron for the ground state (even and odd) and first and second excited state:  Also TODO: note that it does not work for small R (needs more points). All numbers are in atomic units.
+So in the subsequent chapters, we shall use the results from the algebraic approach.
 
 \afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{ $ 1s_g^{+} $ }
-  \label{groundEven}
-		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
-			\hline
-			R & p & A & E & $ E + \frac{1}{R} $  \\ \hline \hline
-			0.1 & -1 & -1 & -1 \\[-1em]
-			0.2 & 0.39629 & 0.0792935 & -7.85229 & -2.85229 \\[-1em]
- 			0.3 & 0.510485 & 0.132419 & -5.791 & -2.45767 \\[-1em]
-			0.4 & 0.648313 & 0.215669 & -5.25387 & -2.75387 \\[-1em]
-			0.5 & 0.776339 & 0.312675 & -4.82162 & -2.82162 \\[-1em]
-			0.6 & 0.896855 & 0.422304 & -4.4686 & -2.80194 & \\[-1em]
-			0.7 & 1.0115 & 0.544044 & -4.17602 & -2.74745 \\[-1em]
-			0.8 & 1.12149 & 0.677779 & -3.93042 & -2.68042 \\[-1em]
-             		0.9 & 1.22777 & 0.823656 & -3.72204 & -2.61093 \\[-1em]
-			1.0 & 1.3311 & 0.982008 & -3.54367 & -2.54367 \\[-1em]
-			1.5 & 1.78488 & 1.80371 & -2.8318 & -2.16514 \\[-1em]
-   			2.0 & 1.91825 & 1.32528 & -1.83985 & -1.33985 \\[-1em]
-  			2.5 & 1.93833 & 0.286546 & -1.20228 & -0.802277 \\[-1em]
-			3.0 & 1.95881 & -0.75515 & -0.852649 & -0.519316 \\[-1em]
-			3.5 & 2.1000 & -2.23679 & -0.7200 & -0.434286 \\[-1em]
-			4.0 & 2.11216 & -2.20392 & -0.557651 & -0.307651 \\[-1em]
-			4.5 & 2.35417 & -1.88366 & -0.547368 & -0.325146 \\[-1em]
-			5.0 & 2.57972 & -1.55531 & -0.532396 & -0.332396 \\[-1em]
-			5.5 & 2.78956 & -1.23414 & -0.514488 & -0.33267 \\[-1em]
-			6.0 & 2.98699 & -0.914458 & -0.495672 & -0.329005 \\[-1em]
-			6.5 & 3.1745 & -0.591327 & -0.477038 & -0.323192 \\[-1em]
-			7.0 & 3.35399 & -0.260394 & -0.459153 & -0.316296 \\[-1em]
-			7.5 & 3.52696 & 0.0822723 & -0.442292 & -0.308959 \\[-1em]
-			8.0 & 3.69462 & 0.440356 & -0.426569 & -0.301569 \\[-1em]
-			8.5 & 3.85796 & 0.81744 & -0.41201 & -0.294363 \\[-1em]
-			9.0 & 4.01783 & 1.2171 & -0.398591 & -0.28748 \\[-1em]
-			10.0 & 4.32999  & 2.09884 & -0.374976 & - 0.274976 \\[-1em]
-			\hline
-		\end{tabular}
+  \captionof{table}{ $ 1s_g^{+} $ } \label{tab:2pu}
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+		\hline
+		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+        0.2 & 0.2031 & 0.0206 & -2.0636 & 2.9363 \\[-1em]
+        0.3 & 0.2874 & 0.0415 & -1.8358 & 1.4975 \\[-1em]
+        0.4 & 0.6483 & 0.2156 & -5.2538 & -2.7538 \\[-1em]
+        0.5 & 0.7763 & 0.3126 & -4.8216 & -2.8216 \\[-1em]
+        0.6 & 0.8968 & 0.4223 & -4.4686 & -2.8019 \\[-1em]
+        0.7 & 1.0115 & 0.5440 & -4.1760 & -2.7474 \\[-1em]
+        0.8 & 1.1214 & 0.6777 & -3.9304 & -2.6804 \\[-1em]
+        0.9 & 1.2277 & 0.8236 & -3.7220 & -2.6109 \\[-1em]
+        1.0 & 1.3311 & 0.9820 & -3.5436 & -2.5436 \\[-1em]
+        1.5 & 1.7848 & 1.8037 & -2.8318 & -2.1651 \\[-1em]
+        2.0 & 1.9182 & 1.3252 & -1.8398 & -1.3398 \\[-1em]
+        2.5 & 1.9383 & 0.2865 & -1.2022 & -0.8022 \\[-1em]
+        3.0 & 1.9588 & -0.7551 & -0.8526 & -0.5193 \\[-1em]
+        3.5 & 2.1000 & -2.2367 & -0.7200 & -0.4342 \\[-1em]
+        4.0 & 2.1121 & -2.2039 & -0.5576 & -0.3076 \\[-1em]
+        4.5 & 2.3541 & -1.8836 & -0.5473 & -0.3251 \\[-1em]
+        5.0 & 2.5797 & -1.5553 & -0.5323 & -0.3323 \\[-1em]
+        6.0 & 2.9869 & -0.9144 & -0.4956 & -0.3290 \\[-1em]
+        7.0 & 3.3539 & -0.2604 & -0.4591 & -0.3162 \\[-1em]
+        8.0 & 3.6945 & 0.4400 & -0.4265 & -0.3015 \\[-1em]
+        9.0 & 4.0177 & 1.2162 & -0.3985 & -0.2874 \\[-1em]
+        10.0 & 10.6696 & 78.8425 & -2.2768 & -2.1768 \\
+      \hline
+      \end{tabular}
+	\restoregeometry
 }
 
 \afterpage{
@@ -243,72 +315,33 @@ Table depicting the calculated energies of the electron for the ground state (ev
   \captionof{table}{ $ 2s_g^{+} $ } \label{tab:2pu}
 		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 		\hline
-		    R & p & A & E & $ E + \frac{1}{R}  \\ \hline \hline
-        0.2 & 0.2002000 & -0.989967 & -2.004 & 2.996 \\[-1em]
-        0.4 & 0.2899422 & -0.978928 & -1.05083 & 1.44917 \\[-1em]
-        0.6 & 0.4698674 & -0.944425 & -1.22653 & 0.440137 \\[-1em]
-        0.8 & 0.6583497 & -0.890176 & -1.35445 & -0.104451 \\[-1em]
-        1. & 0.83893725 & -0.820177 & -1.40763 & -0.407631  \\[-1em]
-        1.2 & 1.0072282 & -0.738337 & -1.40904 & -0.575707 \\[-1em]
-        1.4 & 1.1637570 & -0.647105 & -1.38197 & -0.667684 \\[-1em]
-        1.6 & 1.3101216 & -0.547923 & -1.34095 & -0.715952 \\[-1em]
-        1.8 & 1.4478995 & -0.441659 & -1.29408 & -0.738527 \\[-1em]
-        2. & 1.57842277 & -0.328846 & -1.24571 & -0.745709 \\[-1em]
-        2.2 & 1.7027722 & -0.209819 & -1.19811 & -0.743568  \\[-1em]
-        2.4 & 1.8218201 & -0.084788 & -1.15244 & -0.735774 \\[-1em]
-        2.6 & 1.9362735 & 0.0461182 & -1.10922 & -0.724602  \\[-1em]
-        2.8 & 2.0467105 & 0.182823 & -1.06863 & -0.711486 \\[-1em]
-        3. & 2.15360935 & 0.325285 & -1.03067 & -0.697341 \\[-1em]
-        3.2 & 2.2573686 & 0.473487 & -0.995256 & -0.682756 \\[-1em]
-        3.4 & 2.3583242 & 0.627428 & -0.962231 & -0.668113 \\[-1em]
-        3.6 & 2.4567615 & 0.787117 & -0.931432 & -0.653654 \\[-1em]
-        3.8 & 2.5529247 & 0.952568 & -0.90269 & -0.639532  \\[-1em]
-        4. & 2.64702425 & 1.1238 & -0.875842 & -0.625842 \\[-1em]
-        4.2 & 2.7392425 & 1.30082 & -0.850731 & -0.612636 \\[-1em]
-        4.4 & 2.8297387 & 1.48366 & -0.827213 & -0.59994 \\[-1em]
-        4.6 & 2.9186522 & 1.67232 & -0.805154 & -0.587763 \\[-1em]
-        4.8 & 3.0061054 & 1.86681 & -0.784433 & -0.5761 \\[-1em]
-        5. & 3.09220669 & 2.06715 & -0.764939 &- 0.564939 \\[-1em]
-        6. & 3.50544693 & 3.15618 & -0.682675 & -0.516009\\[-1em]
-        7. & 3.89563406 & 4.38877 & -0.619427 & -0.47657 \\[-1em]
-        8. & 4.26798013 & 5.7597 & -0.569239 & -0.444239  \\[-1em]
-        9.0 & 4.62572636 & 7.26153 & -0.528329 &-0.417218 \\
+		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
+        0.2 & 0.1988 & 0.0198 & -1.9764 & 3.0235` \\[-1em]
+        0.3 & 0.3290 & 0.0545 & -2.4061 & 0.9272 \\[-1em]
+        0.4 & 0.3284 & 0.0543 & -1.3484 & 1.1515 \\[-1em]
+        0.5 & 0.2995 & 0.0451 & -0.7179 & 1.2820 \\[-1em]
+        0.6 & 0.2801 & 0.0394 & -0.4360 & 1.2306 \\[-1em]
+        0.7 & 0.4074 & 0.0838 & -0.6774 & 0.7510 \\[-1em]
+        0.8 & 0.4583 & 0.1063 & -0.6563 & 0.5936 \\[-1em]
+        0.9 & 0.5080 & 0.1311 & -0.6374 & 0.4736 \\[-1em]
+        1.0 & 0.5574 & 0.1583 & -0.6214 & 0.3785 \\[-1em]
+        1.1 & 0.6047 & 0.1870 & -0.6045 & 0.3044 \\[-1em]
+        1.5 & 0.7887 & 0.3230 & -0.5529 & 0.1137 \\[-1em]
+        2.0 & 1.0048 & 0.5365 & -0.5048 & -0.0040 \\[-1em]
+        2.5 & 1.2100 & 0.7982 & -0.4685 & -0.0680 \\[-1em]
+        3.0 & 1.4072 & 1.1096 & -0.4400 & -0.1067 \\[-1em]
+        3.5 & 1.5984 & 1.4732 & -0.4171 & -0.1314 \\[-1em]
+        4.0 & 1.7690 & 1.7037 & -0.3911 & -0.1411 \\[-1em]
+        4.5 & 1.9109 & 1.6840 & -0.3606 & -0.1384 \\[-1em]
+        5.0 & 1.9374 & 0.3310 & -0.3003 & -0.1003 \\[-1em]
+        6.0 & 1.9970 & -2.2878 & -0.2215 & -0.0549 \\[-1em]
+        7.0 & 2.2709 & -2.0010 & -0.2105 & -0.0676 \\[-1em]
+        8.0 & 2.5364 & -1.6194 & -0.2010 & -0.0760 \\[-1em]
+        9.0 & 2.7887 & -1.2354 & -0.1920 & -0.0809 \\[-1em]
+        10.0 & 11.3799 & 108.2679 & -2.5900 & -2.4900 \\
 		\hline
 		\end{tabular}
 	\restoregeometry
 }
 
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{First Excited State, Even Energies} \label{tab:firstEven}
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-    \\[4.em]
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-	\restoregeometry
-}
-
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{First Excited State, Odd Energies} \label{tab:firstOdd}
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-    \\[4.em]
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} }
-		\hline
-		    R & p & A & E \\ \hline \hline
-		\hline
-		\end{tabular}
-	\restoregeometry
-}
 
