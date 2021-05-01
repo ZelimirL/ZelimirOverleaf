@@ -58,9 +58,9 @@ The radial equation $ F(r) $ is:
 \frac{d^2 F}{dr^2} + \frac{1}{r}\frac{dF}{dr} + \left(k^2 - 2V(r) - \frac{m^2}{r^2}\right)F = 0
 \end{equation}
 
-We can identify 2 cases:
+We can identify 2 regions:
 
-\subsubsection{case 1}
+\subsubsection{Far away region}
  For the regions far away from the scattering area where $ V(r) \leftarrow 0 $ we have a free space Schrodinger equation with $ k^2 = -E $;
 \begin{equation}\label{2DS1H}
 \frac{d^2 F(r)}{dr^2} + \frac{1}{r}\frac{d Fr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)F(r) = 0
@@ -77,9 +77,9 @@ For the $ r \leftarrow \infty $ we get approximate behaviour:
 H_m(kr) \xrightarrow{r \leftarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
 
-\subsubsection{case 2}
+\subsubsection{Scattering region 2}
 
-In this case we consider the scattering area, where $ V(r) \neq 0 $. In this case we use the potential function $ V(R) $ obtained in chapter 2 and numerically solve the 2D Schrodinger equation.
+In this case we consider the scattering area, where $ V(r) \neq 0 $. In this case we use the potential function $ V(R) $ obtained in chapter 2 and numerically solve the 2D Schrodinger equation. To obtain the phase shift we match the wave function in the scattering region to the wavefunction in the far away region and use the optical theorem.
 
 \subsubsection{Scattering Process}
 
@@ -207,7 +207,7 @@ and from the equation \eqref{GreenFkaEq1} we get:
 \subsubsection{Solution Strategies}
 The main approaches to solving problems is to expand the wave function in the partial waves basis and use Born approximation.
 
-Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
+Using partial waves  we expand the incoming wavev in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
 
 Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak. 
 
