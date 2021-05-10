@@ -5,7 +5,6 @@
 Typically for the scattering processes at this level, we can distinguish between the radiative and non-radiative processes. 
 
 Radiative processes involve emission of a photon and they typically mean radiative charge transfer. \\
-
 $ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S) + B + \hbar\omega $ \\
 and radiative association \\
 $ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S)B + \hbar\omega $ .\\
@@ -101,7 +100,7 @@ So the wave function looks like:
  \Psi(r,\theta) = \sum_m^{\infty}{\epsilon_m i^m \cos(m\theta)J_m(kr)}
 \end{equation}
 Now using asymptotic expressions for $ r \rightarrow \infty $:
-\begin{equation}\label{asymp2}
+\begin{equation}\label{}
 \begin{split}
 & J_m(kr) \xrightarrow{r \leftarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\cos\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right) \\[.7em]
 & N_m(kr) \xrightarrow{r \leftarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\sin\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right)
@@ -363,58 +362,9 @@ Also because the right hand of \eqref{optV2} is small, we can use the distorted 
 \eta_j = \frac{\pi\mu}{2k_a}\int_0^{\infty}{dR\,\left|s_J\left(k_aR\right)\right|^2A(R) }
 \end{equation}
 
-\subsection{Single Channel Calculation}
+\subsection{Calculation}
 
-For the calculation of the phase shift $\delta $ for the single channel we could use another approach, following \cite{ScatterIntro}. In the equation below $ F(R) $ is the amplitude of the  relative nuclear motion.
-In the equation \eqref{2DS1H} we introduce change of variables $ \hat{F}(R) = \sqrt{R}\,F(R) $. 
-Then we have for the amplitudes of the nuclear motions for  the potentials $ V_a(R) $ and $ V_b(R) $ as:
-\begin{equation}\label{Fa}
-\frac{d^2}{d R^2}\hat{F}_a(R) + \left(k^2 - U_a(R) - \frac{m^2}{R^2}\right)\hat{F}_a(R) = 0
-\end{equation}
-\begin{equation}\label{Fb}
-\frac{d^2}{d R^2}\hat{F}_b(R) + \left(k^2 - U_b(R) - \hbar\omega - \frac{m^2}{R^2}\right)\hat{F}_b(R) = 0
-\end{equation}
-where
-\begin{equation}
-k^2 = \frac{2\mu\,E}{\hbar^2}\,\,\,\,\text{ and }\,\,\,\, U_{a,b}=\frac{2\mu\,V_{a,b}}{\hbar^2}
-\end{equation}
-$ V_a(R) $ and $ V_b(R) $ are potential energies of the $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ states respectively, $ E $ is the initial energy of the motion and $ \omega $ is the frequency of the emitted photon.
 
-Multiplying \eqref{Fa} with $ \hat{F}_b(R) $ and \eqref{Fb} with $ \hat{F}_a(R) $ we get:
-\begin{equation}
-\hat{F}_b(R)\left[\frac{d^2}{d R^2}\hat{F}_a(R) + \left(k^2 - U_a(R) - \frac{m^2}{R^2}\right)\hat{F}_a(R)\right] = 0
-\end{equation}
-\begin{equation}
-\hat{F}_a(R)\left[\frac{d^2}{d R^2}\hat{F}_b(R) + \left(k^2 - U_b(R) -\hbar\omega - \frac{m^2}{R^2}\right)\hat{F}_b(R)\right] = 0
-\end{equation}
-Now take a difference between these two equations:
-\begin{equation}
--\hat{F}_a(R)\hat{F}_b(R)\left[U_a(R) - U_b(R) - \hbar\omega\right] = \hat{F}_b(R)\frac{d^2}{d R^2}\hat{F}_a(R) - \hat{F}_a(R)\frac{d^2}{d R^2}\hat{F}_b(R)   
-\end{equation}
-or
-\begin{equation}
--\hat{F}_a(R)\hat{F}_b(R)\left[U_a(R) - U_b(R) - \hbar\omega\right] = \frac{d}{dR}\left[\hat{F}_b(R)\frac{d}{d R}\hat{F}_a(R) - \hat{F}_a(R)\frac{d}{d R}\hat{F}_b(R) \right] 
-\end{equation}
-Now integrate 
-\begin{equation}\label{FabInt}
-\int_0^{\infty}{dR\,F_a(R)F_b(R)\left(U_a(R) - U_b(R) - \hbar\omega\right)} = 
-\left[\hat{F}_b(R)\frac{d}{d R}\hat{F}_a(R) - \hat{F}_a(R)\frac{d}{d R}\hat{F}_b(R) \right]\Biggr|_0^{\infty} 
-\end{equation}
+We follow the standard approach for calculating the phase shift $ \eta $, by matching the wave function in the regions $ V \ne 0 $ and $ V = 0 $. We find the solution of the equation \eqref{optApprox1} and match it to the solution of the equation in \eqref{asymp2} in  $ V = 0 $ region. Then use the logarithmic derivatite and to find the $ \eta $.
 
-Due to the physical constraints we must have $ \hat{F}_a(0) = \hat{F}_b(0) = 0 $.
-
-For the $ R\rightarrow\infty $ from the \eqref{asympR} we have an asymptotic solutions, replacing $ R(r) $ with $ F(R) $ and using $ \hat{F}(R) = \sqrt{R}\,F(R) $:
-\begin{equation}\label{Fwd}
-\begin{split}
-& \hat{F}_a(R) = \frac{1}{\sqrt{k}}\cos\left[kR-\pi\frac{m + 1/2}{2}\right] \\[.8em]
-& \hat{F}_b(R) = \frac{1}{\sqrt{k}}\cos\left[kR-\pi\frac{m + 1/2}{2} + \delta_m\right]
-\end{split}
-\end{equation}
-
-Plugging \eqref{Fwd} into \eqref{FabInt} for the $ R \rightarrow\infty $ limit we get:
-\begin{equation}
-\sin\,\delta = \sqrt{k}\int_0^{\infty}{dR\,F_a(R)F_b(R)\left(U_a(R) - U_b(R) - \hbar\omega\right)} 
-\end{equation}
-
-Appendix E contains the Mathematica code for calculating the phase shift $ \delta $.
 
