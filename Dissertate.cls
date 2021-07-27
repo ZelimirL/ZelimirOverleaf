@@ -18,7 +18,6 @@
 \usepackage{ragged2e}
 \RaggedRight
 \RequirePackage{graphicx}
-\usepackage{fixltx2e}
 \parindent 12pt
 \RequirePackage{lettrine}
 \RequirePackage{setspace}
