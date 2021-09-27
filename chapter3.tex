@@ -368,11 +368,12 @@ We Wolfram Mathematica for calculating the phase shift $ \eta $, from the equati
 
 One has to pay attention when calculating the $ D(R) $. Following \cite{DRZygelman} we have:
 \begin{equation}
-D(R) = \Braket{\psi{r}|i\mid e \mid\,z_e | psi{r}} - |e|R
+D(R) = \Braket{\psi(\vec{r}) | -\mid e \mid\,\vec{r} | \psi(\vec{r})} - |e|R
 \end{equation}
-Using $ z_e = R/2 \mu $ and \eqref{variables1}, \eqref{variables2} and appendix C we have:
+Where the $ \psi(\vec{r}) $ is the electron eigenstate and $ \vec{r} $ is the electron coordinate.
+Using the elliptical coordinates $ \lambda $ and $ \mu $ from \eqref{variables1}, \eqref{variables2}, appendix C and figure ~\ref{fig:electronCoordinates} we have:
 \begin{equation}
-1
+\vec{r}= \frac{\vec{r}_a + \vec{r}_b}{2} = 
 \end{equation}
 
 The Mathematica code is in appendix E.
