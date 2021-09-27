@@ -244,7 +244,7 @@ and $  \delta_m $ is a phase shift.
 
 The total wave function \eqref{ansatzWave1} must be symmetric under the interchange of the $ H $ nuclei, so that $ F_a(\mathbf{R}) = -F_a(-\mathbf{R}) $ and $ F_{k\alpha}(\mathbf{R}) =  F_{k\alpha}(-\mathbf{R}) $. Now we solve equations \eqref{Fk} and \eqref{Fka} in the distorted wave approximation. Then $ F_a(\mathbf{R}) $ is the solution of the \eqref{Fk} with the coupling term set to be zero and it can be expressed in the form:
 \begin{equation}\label{Flong1}
-F_a(\mathbf{R}) = \sum_{m=1}^{\infty}{P_m(\cos(\theta)(2m+1)i^{l}\sqrt{\pi}\times \exp[i\delta_m]\frac{s_m(k_a\mathbf{R})}{k_a\mathbf{R} } } 
+F_a(\mathbf{R}) = \sum_{m=1}^{\infty}{P_m(\cos\theta)(2m+1)i^{l}\sqrt{\pi}\times \exp[i\delta_m]\frac{s_m(k_a\mathbf{R})}{k_a\mathbf{R} } } 
 \end{equation}
 
 The asymptotic form for \eqref{Flong1} is:
@@ -353,7 +353,7 @@ and equation \eqref{optV2} becomes:
 
 The cross section for the radiative quenching is given by:
 \begin{equation}
-\sigma = \frac{\pi}{k_a^2}\sum_{J=0}^{\infty}{(2m+1)\left(1-e^{-4\eta_j}\right) }
+\sigma = \frac{\pi}{k_a^2}\sum_{m=0}^{\infty}{(2m+1)\left(1-e^{-4\eta_j}\right) }
 \end{equation}
 
 where $ eta_j $ is the imaginary component of the phase shift of the $ Jth $ partial wave of the solution \eqref{optV2}. The sum on $ J $ is restricted to the odd integers. 
@@ -364,7 +364,7 @@ Also because the right hand of \eqref{optV2} is small, we can use the distorted 
 
 \subsection{Calculation}
 
-We follow the standard approach for calculating the phase shift $ \eta $, by matching the wave function in the regions $ V \ne 0 $ and $ V = 0 $. We find the solution of the equation \eqref{optApprox1} and match it to the solution of the equation in \eqref{asymp2} in  $ V = 0 $ region. Then use the logarithmic derivatite and to find the $ \eta $.
+We Wolfram Mathematica for calculating the phase shift $ \eta $, from the equation \eqref{eta1}.
 
 One has to pay attention when calculating the $ D(R) $. Following \cite{DRZygelman} we have:
 \begin{equation}
@@ -374,7 +374,5 @@ Using $ z_e = R/2 \mu $ and \eqref{variables1}, \eqref{variables2} and appendix 
 \begin{equation}
 1
 \end{equation}
-
-
 
 The Mathematica code is in appendix E.
