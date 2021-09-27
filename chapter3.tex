@@ -223,24 +223,24 @@ where $ P_l(\cos\theta) $ are Legendre polynomials, also $ \theta = 0 $ part of 
 The $ f_l(R) $ is a regular solution of the homogeneous Schrodinger radial  equation for the 2D case: \cite{H2atom}:
 \begin{equation}\label{eqRadial1}
 \begin{split}
-& \frac{1}{R}\frac{d}{dR}\left(r \frac{df}{dr}\right) + \left\{k^2 - \frac{m^2}{R^2} - 2\mu\left[V_b(R) - V_b(\infty)\right] \right\}f_l(R) = 0 \\[.8em]
+& \frac{1}{R}\frac{d}{dR}\left(r \frac{d\,f_m(R)}{dR}\right) + \left\{k^2 - \frac{m^2}{R^2} - 2\mu\left[V_b(R) - V_b(\infty)\right] \right\}f_m(R) = 0 \\[.8em]
 & k \equiv \sqrt{2\mu[E - \hbar\omega - V_b(\infty)}
 \end{split}
 \end{equation}
 where:
+The solution of the equation \eqref{eqRadial1} are Bessel functions $ J_m(kR) $ and $ N_m(kR) $ with the asymptotic behaviour:
 \begin{equation}
 \begin{split}
-f_{l} \sim \sqrt{\frac{2}{\pi}}\sin\left[kR - \frac{l\pi}{2} + \delta_l(b)\right]
+f_{m}(kR) \sim \sqrt{\frac{2}{\pi}}\cos\left[kR - \pi\frac{m+1/2}{2} \right]
 \end{split}
 \end{equation}
-
 and $ g^{+}_l(kR) $ is irregular solution with the boundary condition at large $ R $.
 \begin{equation}
 \begin{split}
-g^{+}_{l} \sim \sqrt{\frac{2}{\pi}}\exp i\left[kR - \frac{l\pi}{2} + \delta_l(b)\right]
+g^{+}_{m}(kR) \sim \sqrt{\frac{2}{\pi}}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right]
 \end{split}
 \end{equation}
-and $  \delta_l(b) $ is a phase shift. 
+and $  \delta_m $ is a phase shift. 
 
 The total wave function \eqref{ansatzWave1} must be symmetric under the interchange of the $ H $ nuclei, so that $ F_a(\mathbf{R}) = -F_a(-\mathbf{R}) $ and $ F_{k\alpha}(\mathbf{R}) =  F_{k\alpha}(-\mathbf{R}) $. Now we solve equations \eqref{Fk} and \eqref{Fka} in the distorted wave approximation. Then $ F_a(\mathbf{R}) $ is the solution of the \eqref{Fk} with the coupling term set to be zero and it can be expressed in the form:
 \begin{equation}\label{Flong1}
