@@ -206,7 +206,7 @@ and from the equation \eqref{GreenFkaEq1} we get:
 \subsubsection{Solution Strategies}
 The main approaches to solving problems is to expand the wave function in the partial waves basis and use Born approximation.
 
-Using partial waves  we expand the incoming wavev in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
+Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
 
 Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak. 
 
@@ -215,15 +215,15 @@ Born approximation \cite{GQuantum} treats a scattering potential as a perturbati
 We can express this function in the partial waves bases. Since $ V_b $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
 \begin{equation}\label{GreenFka2}
 \begin{split}
-G^{+}(\mathbf{R}, \mathbf{R}') =  \frac{\pi\mu}{k_b}\sum_{l=0}^{\infty}{\sqrt{\frac{1}{2\pi}}\cos(l\,\theta)\cos(l\,\theta^{'})}\times \frac{f_l(k_bR_{<})g^{+}_l(k_bR_{>})}{RR'}
+G^{+}(\mathbf{R}, \mathbf{R}') =  \frac{\pi\mu}{k_b}\sum_{l=0}^{\infty}{\sqrt{\frac{1}{2\pi}} P_l(\cos\theta) P_l^{*}(\cos\theta^{'})}\times \frac{f_l(k_bR_{<})g^{+}_l(k_bR_{>})}{RR'}
 \end{split}
 \end{equation}
-where $ P_l(\cos\theta) $ are Legendre polynomials, also $ m = 0 $ part of the spherical harmonics:  $ P_l(\cos\theta) = Y_{l0}{\theta,\phi} $. 
+where $ P_l(\cos\theta) $ are Legendre polynomials, also $ \theta = 0 $ part of the spherical harmonics:  $ P_l(\cos\theta) = Y_{l0}{\theta,0} $. 
 
-The $ f_l(k R) $ is a regular solution of the homogeneous Schrodinger radial  equation for the 2D case: \cite{H2atom}:
+The $ f_l(R) $ is a regular solution of the homogeneous Schrodinger radial  equation for the 2D case: \cite{H2atom}:
 \begin{equation}\label{eqRadial1}
 \begin{split}
-& \left\{\frac{d^2}{dR^2} - \frac{l(l+1)}{R^2} - 2\mu\left[V_b(R) - V_b(\infty)\right] + k^2\right\}f_l(kR) = 0 \\[.8em]
+& \frac{1}{R}\frac{d}{dR}\left(r \frac{df}{dr}\right) + \left\{k^2 - \frac{m^2}{R^2} - 2\mu\left[V_b(R) - V_b(\infty)\right] \right\}f_l(R) = 0 \\[.8em]
 & k \equiv \sqrt{2\mu[E - \hbar\omega - V_b(\infty)}
 \end{split}
 \end{equation}
