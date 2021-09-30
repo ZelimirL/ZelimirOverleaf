@@ -381,11 +381,13 @@ So to solve the integral \eqref{zz} we start from the original definition on the
 \begin{equation}
 x = \frac{R}{2}\cosh\eta\cos\nu\,\,\,\, y = \frac{R}{2}\sinh\eta\sin\nu  \Rightarrow\,\,\,\,\lambda = \cosh\eta;\,\,\,\mu=\cos\nu
 \end{equation}
-and divide the $ z $ axis into 4 regions:
+and divide the $ z $ axis into 4 regions (avoiding the singularities at $ -1 $ and $ 1 $ ).
 \begin{equation}
 \begin{split}
-&-\infty < z < -1:\,\eta > 0,\nu = \pi \Rightarrow \lambda > 1, \mu = -1 \\[.8em]
-& 1
+&1:-\infty < z \le -1:\,\eta > 0,\nu = \pi: \Rightarrow \lambda > 1, \mu = -1 \\[.5em]
+&2:-1 < z \le 0:\,\eta = 0,\nu = [\pi/2,\pi]: \Rightarrow \lambda = 1, \mu = [-1,0] \\[.5em]
+&3: 0 \le z < 1:\,\eta = 0,\nu = [0,\pi/2]: \Rightarrow \lambda = 1, \mu = [0,1] \\[.5em]
+&4:1 < z < \infty:\,\eta > 0,\nu = 0: \Rightarrow \lambda > 1, \mu = 1 
 \end{split}
 \end{equation}
 The Mathematica code is in appendix E.
