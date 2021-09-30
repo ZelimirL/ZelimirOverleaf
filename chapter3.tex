@@ -379,15 +379,22 @@ D(R) = \Braket{\psi(\vec{r}) | -\mid e \mid\,z | \psi(\vec{r})} - |e|R
 We use the elliptical coordinates $ \lambda $ and $ \mu $ from \eqref{variables1}, \eqref{variables2}, appendix C and figure ~\ref{fig:electronCoordinates}.
 So to solve the integral \eqref{zz} we start from the original definition on the elliptic coordinates
 \begin{equation}
-x = \frac{R}{2}\cosh\eta\cos\nu\,\,\,\, y = \frac{R}{2}\sinh\eta\sin\nu  \Rightarrow\,\,\,\,\lambda = \cosh\eta;\,\,\,\mu=\cos\nu  \Rightarrow z=-\frac{R}{2}\lambda\mu
+z = \frac{R}{2}\cosh\eta\cos\nu\,\,\,\, y = \frac{R}{2}\sinh\eta\sin\nu  \Rightarrow\,\,\,\,\lambda = \cosh\eta;\,\,\,\mu=\cos\nu  \Rightarrow z=-\frac{R}{2}\lambda\mu
 \end{equation}
-and divide the $ z $ axis into 4 regions (avoiding the singularities at $ -1 $ and $ 1 $ ).
+and divide the $ z $ axis into 3 regions (avoiding the singularities at $ -1 $ and $ 1 $ ).
 \begin{equation}
 \begin{split}
-&1:-\infty < z \le -1:\,\eta > 0,\nu = \pi: \Rightarrow \lambda > 1, \mu = -1 \\[.5em]
-&2:-1 < z \le 0:\,\eta = 0,\nu = [\pi/2,\pi]: \Rightarrow \lambda = 1, \mu = [-1,0] \\[.5em]
-&3: 0 \le z < 1:\,\eta = 0,\nu = [0,\pi/2]: \Rightarrow \lambda = 1, \mu = [0,1] \\[.5em]
-&4:1 < z < \infty:\,\eta > 0,\nu = 0: \Rightarrow \lambda > 1, \mu = 1 
+&1:-\infty < z \le -1:\,\eta > 0,\nu = \pi: \Rightarrow \lambda > 1, \mu = -1 \\[.3em]
+&2:-1 < z \le 0:\,\eta = 0,\nu = [0,\pi]: \Rightarrow \lambda = 1, \mu = [-1,1] \\[.3em]
+&3:1 < z < \infty:\,\eta > 0,\nu = 0: \Rightarrow \lambda > 1, \mu = 1 
+\end{split}
+\end{equation}
+So finally for the $ D(R) $ we have 3 integrals:
+\begin{equation}
+\begin{split}
+& \int_{-\infty}^{-1}{d\lambda\,[L(\lambda)M(\mu=-1)]^{*}\left(-\frac{R}{2}\right)\lambda\mu L(\lambda)M(\mu=-1)} \\[.5em]
+& \int_{-1}^{1}{d\mu\,[L(\lambda=1)M(\mu)]^{*}\left(-\frac{R}{2}\right)\lambda\mu L(\lambda=1)M(\mu)} \\[.5em]
+& \int_{1}^{\infty}{d\lambda\,[L(\lambda)M(\mu=1)]^{*}\left(-\frac{R}{2}\right)\lambda\mu L(\lambda)M(\mu=1)}
 \end{split}
 \end{equation}
 The Mathematica code is in appendix E.
