@@ -53,7 +53,7 @@
 \usepackage{breakcites}
 \usepackage{url}
 \usepackage{cite}
-\usepackage{natbib}
+\usepackage[super]{natbib}
 \usepackage{notoccite}
 \bibliographystyle{unsrt}
 
