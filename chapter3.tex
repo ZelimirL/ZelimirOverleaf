@@ -1,5 +1,7 @@
 \chapter{The Radiative Quenching \texorpdfstring{$ H_2^+ $}{$H_2^+$}  Ion Atom Collisions in 2D Space} 
 
+The analysis of the radiative processes is related to the analysis of the general scattering process. So we beging with those.
+
 \section{2D Scattering Processes}
 
 Typically for the scattering processes at this level, we can distinguish between the radiative and non-radiative processes. 
@@ -368,13 +370,13 @@ We Wolfram Mathematica for calculating the phase shift $ \eta $, from the equati
 
 One has to pay attention when calculating the $ D(R) $. Following \cite{DRZygelman} we have:
 \begin{equation}
-D(\vec{R}) = \Braket{\psi(\vec{r}) | -\mid e \mid\,\vec{r} | \psi(\vec{r})} - |e|\vec{R}
+D(\vec{R}) = \Braket{\psi(\vec{r}) | (-1)\mid e \mid\,\vec{r} | \psi(\vec{r})} - |e|\vec{R}
 \end{equation}
 Where the $ \psi(\vec{r}) $ is the electron eigenstate and $ \vec{r} $ is the electron coordinate. 
 From the symmetry argument we can deduce \cite{DRZygelman} that the components of $ D(\vec{R}) $ along the $ x $ axis vanis ~\ref{fig:electronCoordinates}. So the remaining components is along the
 $ z $ axis, connecting the two nuclei. So we get:
 \begin{equation}\label{zz}
-D(R) = \Braket{\psi(\vec{r}) | -\mid e \mid\,z | \psi(\vec{r})} - |e|R
+D(R) = \Braket{\psi(\vec{r}) | (-1)\mid e \mid\,z | \psi(\vec{r})} - |e|R
 \end{equation}
 We use the elliptical coordinates $ \lambda $ and $ \mu $ from \eqref{variables1}, \eqref{variables2}, appendix C and figure ~\ref{fig:electronCoordinates}.
 So to solve the integral \eqref{zz} we start from the original definition on the elliptic coordinates
