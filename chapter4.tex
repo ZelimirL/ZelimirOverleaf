@@ -35,26 +35,18 @@ where $ E $ is the energy of the nuclear motion in the center of mass frame, and
 
 \section{ Radiative charge transfer}
 
-Following the similar approach as in chapter 4 we use partial waves expansion $ f_J(kR) $ and $ s_J(kR) $ which are the solutions of the differential equations:
-\begin{equation}
-\left[\frac{d^2}{dR^2} - 2\mu\left(V_a(R) - V_a(\infty)\right)+k^2\right]s_J(kR) = 0
-\end{equation}
-\begin{equation}
-\left[\frac{d^2}{dR^2} - 2\mu\left(V_b(R) - V_a(\infty)\right)+k^2\right]f_J(kR) = 0
-\end{equation}
-
-The radiative charge transfer cross-section can be calculated using the formula \eqref{crs1} for $ \sigma $ with $ M $ calculated using formula \eqref{Mll1}, where the $ k_a $ and $ k_b $ are the wave numbers of the initial and final state. 
+Following the similar approach as in chapter 4 the radiative charge transfer cross-section can be calculated using the formula \eqref{crs1} for $ \sigma $ with $ M $ calculated using formula \eqref{Mll1}, where the $ k_a $ and $ k_b $ are the wave numbers of the initial and final state. 
 
 The partial waves $ f_j(kR) $ and $ s_j(kR) $ are the regular solutions of the homogeneous radial equations.
 \begin{equation}
-\left\{\frac{d^2}{dR^2} - \frac{J(J+1)}{R^2} - 2\mu\left[V_a(R) - V_b(\infty)\right\} + k^2\right\}s_j(kR) = 0
+\left\{\frac{d^2}{dR^2} - \frac{J(J+1)}{R^2} - 2\mu\left[V_a(R) - V_b(\infty)\right\} + k_a^2\right\}s_j(k_aR) = 0
 \end{equation}
 and
 \begin{equation}
-\left\{\frac{d^2}{dR^2} - \frac{J(J+1)}{R^2} - 2\mu\left[V_b(R) - V_a(\infty)\right\} + k^2\right\}f_j(kR) = 0
+\left\{\frac{d^2}{dR^2} - \frac{J(J+1)}{R^2} - 2\mu\left[V_b(R) - V_a(\infty)\right\} + k_b^2\right\}f_j(k_bR) = 0
 \end{equation}
 
-with $ V_a(R) $ and $ V_b(R) $ being the potential energy curves of the final ground state and the initial excited state, respectively. The $ k $s are the wave numbers, given by:
+with $ V_a(R) $ and $ V_b(R) $ being the potential energy curves of the final ground state and the initial excited state, respectively. The $ k_a $ and $ k_b $  are the wave numbers, given by:
 \begin{equation}
 \begin{split}
 & k_b = \sqrt{2\mu\left[E - \hbar\omega - V_b(\infty)\right]} \\*
@@ -63,9 +55,7 @@ with $ V_a(R) $ and $ V_b(R) $ being the potential energy curves of the final gr
 \end{equation}
 where $ \omega$ is the angular frequency of the emitted photon, $ E $ is the total collision energy in the center of mass frame.
 
-Again, we get calculate the total cross section given by the radiative decay as:
-
-One has to be careful though, since some numerical methods are very sensitive to the choice of initial conditions.  As a second order equation, the solution requires two initial conditions, either in the form of function value at the ends of the interval, or value of the function and its derivative at some point. Now, this partial wave represents an incoming particle (electron) and thus the function  $  f(kR) $  is defined on the infinite interval and it is oscillatory for large values of $ kR $. Because of that, it is impossible to specify a boundary condition for value of $  f(kR) $ at infinity. So the boundary conditions have to be in the form of the value of function at some point and the value of the derivative at the same point. 
+As a second order equation, the solution requires two initial conditions, either in the form of function value at the ends of the interval, or value of the function and its derivative at some point. Now, this partial wave represents an incoming particle (electron) and thus the function  $  f(kR) $  is defined on the infinite interval and it is oscillatory for large values of $ kR $. Because of that, it is impossible to specify a boundary condition for value of $  f(kR) $ at infinity. So the boundary conditions have to be in the form of the value of function at some point and the value of the derivative at the same point. 
 
 In my calculation, I assume that  for $ kR \rightarrow 0 $, the function $  f(kR) $ is finite and 'well  behaving', so the appropriate boundary conditions seem to be: 
 \begin{equation}
