@@ -336,7 +336,7 @@ Equations \eqref{bandL} and \eqref{bandM} constitute the couple system of linear
 
  In next step, for each value of $ R $, we calculate the eigenvalues, sort them, and pick the lowest (or the i-th one from the bottom), and view them as functions $ A = A(p) $. So for each of the equations \eqref{bandL} and \eqref{bandM}, we choose the interval $\left[0, 2 * R \right] $ and divide it into $ N $ points $ p_{i}, i = 1..N $. For each point, we calculate, sort and pick desired the eigenvalue of the matrix $ M $ ( $ L $ ). That way we obtain two  functions $ A_{M} = A_{M}(p) $ and $ A_{L} = A_{L}(p) $, evaluated at points $ p_i $. We interpolate these two functions, using Wolfram's Mathematica 3-rd order Spline interpolation. 
 As a side note, for a small subset of values $ R $ we used the higher order Spline interpolation but we were unable to observe the difference in the results obtained.
- The intersection of these two curves in the value of $ p $ for which both $ M(\mu) $ and $ L(\lambda) $ equations have results satisfying the boundary conditions. Now repeat for the next value of $ R $.
+ The intersection of these two curves in the value of $ p $ for which both $ M(\mu) $ and $ L(\lambda) $ equations have results satisfying the boundary conditions. Now we repeat the calculation for the next value of $ R $.
 
 After all this exercise, we get the function $ E = E(R) $, from \eqref{u} which is the electron energy in the BO approximation. Adding the potential energy between nuclei is $ V(R) = 1/R $, we obtain the potential energy curve. The paper by Bates does not explicitly use this curve to calculate the vibrational energies, but we will, in our 2D case.
 
@@ -358,7 +358,7 @@ Electron energy as an eigenvalue of the equations \eqref{bandL} and \eqref{bandM
 
 Table comparing the electron  energies obtain using our method vs method applied by Bates et al. We chose a subset of values to indicate the overall trend.
 
-afterpage{
+\afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
   \captionsetup{type=figure}
   \captionof{table}{Electron Energy, \texorpdfstring{$ 1s\sigma_g $}{sigma g} state}
@@ -389,7 +389,7 @@ afterpage{
       4.4 & 1.52685 & 1.5268516 \\[-1em]
       4.6 & 1.49844 & 1.4984480 \\[-1em]
       4.8 & 1.47252 & 1.472523 \\[-1em]
-      5.0 & 1.44884 & 1.448840 \\[-1em]
-    \hline
+      5.0 & 1.44884 & 1.448840 \\[.5em]
+      \hline
     \end{tabular}
 }

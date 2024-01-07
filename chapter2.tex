@@ -1,6 +1,6 @@
 \chapter{Non-Relativistic Solution of the Hydrogen Molecular Ion in 2 Spatial Dimensions}
 
-\section{Existing Solution s}
+\section{Existing Solutions}
 
 We apply similar method used in the 3D case of the $ H_2^{+} $ ion to find the solution in 2 dimensions. The problem itself is analogous to the 3D problem, but leads to the Mathieu's function as the solution for the radial problem.
 
@@ -14,20 +14,13 @@ Analogous to the 3D case, we rely on Born-Oppenheimer (BO) approximation, in ord
 
 The equation \eqref{eqPartial2D} is superficially similar to the equation \eqref{eqPartial3D} and the diagram \ref{h2ion3d}, but in this case, the $ r_a $ and $ r_b $ represent the nuclei coordinates in 2 dimensions.
 
-Following the \cite{2DHAtom}, The electron wavefunction depends on only 3 quantum numbers, principal quantum number $ n $, angular quantum number $ l $ and spin $ s $. Again we ignore the spin degrees of freedom, considering the electron to be the regular 3 dimensional particles, where only its orbit is restricted to 2 dimensions.  Therefore the spin magnetic moment of the electron is not affected by the 2D restriction and the spin vector can point in any direction in 3D space. Also the orbit can have different shapes, thus there remains the need for an orbital quantum number. However, there can be one one orientation of the orbit, thus we do not consider the magnetic quantum number. This reasoning agrees with ~The solution of the electron wavefunction to the hydrogen atom in 2 dimensions \cite{H2atom} where electron wavefunction solution only depends on the principal and orbital quantum numbers.
+Following the \cite{2DHAtom}, The electron wavefunction depends on only 3 quantum numbers, principal quantum number $ n $, angular quantum number $ l $ and spin $ s $. Again we ignore the spin degrees of freedom, considering the electron to be the regular 3 dimensional particles, where only its orbit is restricted to 2 dimensions.  Therefore the spin magnetic moment of the electron is not affected by the 2D restriction and the spin vector can point in any direction in 3D space. Also the orbit can have different shapes, thus there remains the need for an orbital quantum number. However, there can be one one orientation of the orbit, thus we do not consider the magnetic quantum number. This reasoning agrees with the solution of the electron wavefunction to the hydrogen atom in 2 dimensions \cite{H2atom} where electron wavefunction solution only depends on the principal and orbital quantum numbers.
 
 The geometry of the 2D problem leads to choosing the elliptical coordinates (as in 3D problem), with two coordinates, $ \mu $ and $ \lambda $ denoting the position of the electron in 2D plane. \cite{Arfken}
 
 \section{Exact solution of the electron energies of the \texorpdfstring{$ H_2^+ $}{$H_2^+$} molecule}
 
-The goal is to provide the exact solution to the wavefunction of the $ H_2^{+} $ electron, for a given definition of exact. However even for this, relatively simple problem, it is impossible to find a closed form solution. So the solution is exact, in a sense that it can be done to an arbitrary precision.
-
-\begin{figure}
- \captionsetup{type=figure}
-  \includegraphics{H2Ion2D.png}
-  \caption{Hydrogen Ion in 2 dimension} 
-  \label{h2ion2d}
-\end{figure}
+The goal is to provide the exact solution to the wavefunction of the $ H_2^{+} $ electron, for a given definition of exact. However even for this, relatively simple problem, it is impossible to find a closed form solution. So the solution is exact, in the sense that it can be done to an arbitrary precision.
 
 As illustrated by the figure  \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have:
 \begin{equation}\label{variables1}
@@ -37,6 +30,7 @@ As illustrated by the figure  \ref{h2ion2d}, we express equation \eqref{eqPartia
 & r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
 \end{split}
 \end{equation}
+\newpage
 
 We assume that the total electronic wavefunction can be written as the product of two functions:
 \begin{equation}\label{variables2}
@@ -44,6 +38,14 @@ We assume that the total electronic wavefunction can be written as the product o
 & \psi(\lambda,\mu) = F(\mu)G(\lambda)
 \end{split}
 \end{equation}
+
+\begin{figure}
+ \captionsetup{type=figure}
+  \includegraphics{H2Ion2D.png}
+  \caption{Hydrogen Ion in 2 dimension} 
+  \label{h2ion2d}
+\end{figure}
+
 
 This way the original equation separates into two ODEs:
 
@@ -58,6 +60,7 @@ and $ A $ is the separation constant. At this point we set:
 \begin{equation}
 p^2 = -\frac{ER^2}{2}
 \end{equation}
+
 
 We observe that both equations for the functions $ M(\mu) $ and $ L(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
 
@@ -97,7 +100,7 @@ where
 \end{split}
 \end{equation}
 
-From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has eveb and odd eigenvalue functions as:
+From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has even and odd eigenvalue functions as:
 \begin{equation}
 \begin{split}
 V_0 = \cfrac{2}{V_2 - \cfrac{1}{V_4 - \cfrac{1}{V_6 - ...}}}\label{V-1-1}
@@ -113,7 +116,7 @@ where
 V_m = \frac{w - m^2}{q}
 \end{equation}
 
-The equations \ref{V-1-1} and \ref{V-1-2} provide the first eigen equation for the even and odd solution recpectively.
+The equations \ref{V-1-1} and \ref{V-1-2} provide the first gen equation for the even and odd solution respectively.
 
 There are actually two ways to try to solve this equation:
 
@@ -131,7 +134,7 @@ with
 x = \frac{\lambda-1}{\lambda+1}
 \end{split}
 \end{equation}
-Substituing \eqref{eqLsumG} into \eqref{eqLG} and after some formidable algebra, we get a reccurence relation:
+Substituting \eqref{eqLsumG} into \eqref{eqLG} and after some formidable algebra, we get a recurrence relation:
 \begin{equation}
 \alpha_na_{n+1}-\beta_n a_n+\gamma_na_{n-1} = 0\,\,\,\,\,n \ge 0
 \end{equation}
@@ -271,7 +274,7 @@ The rest of the work is numerical. Since our goal is to obtain the function $ E(
 
 I have used Wolfram Mathematica, to all numerical work. It is easier to use and obtain results, as well as process them in tables and graphs. `
 
-The results of the brute force approach are in the table below. When compared to the algebraic results above, the brute force results are less accurate, and much worse for the small values or R.  It is probably due to the numerical instabillity of the eigenvalue equation. Also the infinite series solution in the algebraic method is more 'precise' than the general solution series in the brute force method.
+The results of the brute force approach are in the table below. When compared to the algebraic results above, the brute force results are less accurate, and much worse for the small values or R.  It is probably due to the numerical instability of the eigenvalue equation. Also the infinite series solution in the algebraic method is more 'precise' than the general solution series in the brute force method.
 
 So in the subsequent chapters, we shall use the results from the algebraic approach.
 
