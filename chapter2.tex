@@ -8,6 +8,7 @@ There are not too many papers dealing with solving the $ H_2^{+} $ but here is s
 
 Analogous to the 3D case, we rely on Born-Oppenheimer (BO) approximation, in order to provide an analytical solution. The same justification for using the BO approximation in 3D molecular systems applies to the 2D problems as well, since the masses of the nuclei and electron(s) remain unchanged.  Following the same BO approximation as in Chapter 1, and using atomic units, the Schrodinger equation for the $ H_2^{+} $ molecules is given by equation \eqref{eqPartial2D} below. 
 
+
 \begin{equation}\label{eqPartial2D}
 \left(-\frac{1}{2}\nabla^2-\frac{1}{r_a}-\frac{1}{r_b}\right)\psi = E\,\psi
 \end{equation}
@@ -161,8 +162,10 @@ Since $ a_{-1} = 0$ we have
 \frac{\beta_0}{\alpha_0} = F_1
 \end{equation}
 
+
 The Mathematica code is in appendix D. The energies calculated and the plot of the potential for the states $1s_g^{+}$ and $ 2s_g^{+} $ are in the tables below.
 
+\begin{comment}
 \afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
   \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the internuclear separation R \\[1.1em] }
@@ -197,6 +200,7 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
 		\end{tabular}
 \restoregeometry
 }
+
 
 \afterpage{
   \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
@@ -233,6 +237,8 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
 \restoregeometry
 }
 
+\end{comment}
+
 \begin{figure}
   \includegraphics{H2_1Sg-Potential.png}
   \caption{$ H_2^{+} $ Energy and Potential curves for the $ 1s_g^{+} $ state}
@@ -242,7 +248,6 @@ The Mathematica code is in appendix D. The energies calculated and the plot of t
   \includegraphics{H2_2Sg-Potential.png}
   \caption{$ H_2^{+} $ Energy and Potential curves for the $ 2s_g^{+} $ state}
 \end{figure}
-
 
 \subsubsection{Laguerre Polynomials and the Operator Spectrum}
 
@@ -274,13 +279,15 @@ The rest of the work is numerical. Since our goal is to obtain the function $ E(
 
 I have used Wolfram Mathematica, to all numerical work. It is easier to use and obtain results, as well as process them in tables and graphs. `
 
+
 The results of the brute force approach are in the table below. When compared to the algebraic results above, the brute force results are less accurate, and much worse for the small values or R.  It is probably due to the numerical instability of the eigenvalue equation. Also the infinite series solution in the algebraic method is more 'precise' than the general solution series in the brute force method.
 
 So in the subsequent chapters, we shall use the results from the algebraic approach.
 
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
- \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the internuclear separation R \\[1.1em] }
+  %\newgeometry{left=3em,right=3em,top=3em,bottom=3em}
+  \begin{table}[ht]
+      \caption{ The separation constant A, electronic energy E}{ total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $}{ for some values of the internuclear separation R}
+\centering
 		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 		\hline
 		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
@@ -308,10 +315,12 @@ So in the subsequent chapters, we shall use the results from the algebraic appro
         10.0 & 10.6696 & 78.8425 & -2.2768 & -2.1768 \\
       \hline
       \end{tabular}
+    \end{table}
 
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-   \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ s_g $ some values of the internuclear separation R \\[1.1em] }
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+  \begin{table}[ht]
+      \caption{ The separation constant A, electronic energy E}{ total energy $ E + \frac{1}{R} $ , for the state $ s_g $ some values of the internuclear separation R }
+      \centering
+        \begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 		\hline
 		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
         0.2 & 0.1988 & 0.0198 & -1.9764 & 3.0235 \\
@@ -339,6 +348,5 @@ So in the subsequent chapters, we shall use the results from the algebraic appro
         10.0 & 11.3799 & 108.2679 & -2.5900 & -2.4900 \\
 		\hline
 		\end{tabular}
-\restoregeometry
-}
+        \end{table}
 
