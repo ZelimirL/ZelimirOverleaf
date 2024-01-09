@@ -24,7 +24,8 @@
 
 % include each chapter...
 \renewcommand{\thechapter}{\arabic{chapter}}
-\renewcommand{\thepage}{\arabic{chapter}}
+%\renewcommand{\thepage}{\arabic{chapter}}
+\pagenumbering{arabic}
 \setcounter{chapter}{-1}  % start chapter numbering at 0
 \include{introduction}
 \include{chapter1}
@@ -33,7 +34,7 @@
 \include{chapter4}
 %\include{chapter5}
 \include{conclusion}
--\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thechapter}{\Roman{chapter}}
 \begin{appendices}
     \include{appendixA}
     \include{appendixB}
