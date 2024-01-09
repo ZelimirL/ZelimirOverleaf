@@ -75,6 +75,7 @@
 \usepackage{afterpage}
 \usepackage{caption}
 \usepackage{geometry}
+\usepackage{float}
 
 % Add source code
 \usepackage{listings}
