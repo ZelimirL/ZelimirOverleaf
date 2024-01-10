@@ -1,22 +1,22 @@
 \chapter{The Radiative Quenching \texorpdfstring{$ H_2^+ $}{$H_2^+$}  Ion Atom Collisions in 2D Space} 
 
-The analysis of the radiative processes is related to the analysis of the general scattering process. So we begin with those.
-
-\section{2D Scattering Processes}
+The analysis of the radiative processes is related to the analysis of the general scattering process. So we list those.
 
 Typically for the scattering processes at this level, we can distinguish between the radiative and non-radiative processes. 
 
-Radiative processes involve emission of a photon and they typically mean radiative charge transfer. \\
+Radiative processes involve emission of a photon and they typically mean Radiative Charge Transfer: \\
 $ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S) + B + \hbar\omega $ \\
-and radiative association \\
+and Radiative Association: \\
 $ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S)B + \hbar\omega $ .\\
-While the non-radiative process is a charge transfer, with no photon emission \\
+For example, the simplest case of the radiative process is the collision of the two hydrogen atoms, in the process $ H + H^+ \rightarrow H^+ + H + \hbar\omega $.\\
+
+While the non-radiative process, with no photon emission, is a Charge Transfer: \\
 $ A(n+1\prescript{1}{}S) + B(n\prescript{1}{}S) \longleftrightarrow  A(n\prescript{1}{}S) + B(n+1\prescript{1}{}S) $ .\\
+
+\section{Radiative Quenching}
 
 Radiative Quenching is an interaction between two atoms (or molecules), one being in excited state and the other in 'normal' ground state. During this process the excited atom emits a photon and drops to a ground state.
 The simplest such case is the collision of the two hydrogen molecules, in the process $ H_2(2\,{}^2\!S) + H_2(1\,{}^2\!S) \rightarrow H_2(1\,{}^2\!S) + H_2(1\,{}^2\!S) + \hbar\omega $.
-
-The simplest case of the radiative process is the collision of the two hydrogen atoms, in the process $ H + H^+ \rightarrow H^+ + H + \hbar\omega $.
 
 There are several theoretical approaches to this problem. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}. While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
 
@@ -28,7 +28,7 @@ We will model this as a scattering problem, using a Born-Oppenheimer approximati
 
 \subsection{2D Scattering}
 
-The quantum scattering in 3 dimension is described in numerous textbooks and papers, so choosing one of those is left as an exercise to the reader.
+The quantum scattering in 3 dimension is described in numerous textbooks and papers, so we ommit explicitly referencing them here.
 
 Scattering in 2 dimensions follows the same approach as in 3D, with some subtle differences.
 We start with the Schrodinger equation in 2 dimensions:
@@ -55,25 +55,27 @@ T(\phi) = \frac{1}{\sqrt{\pi 2}}\cos{m\phi}
 where m is an integer.
 
 The radial equation $ F(r) $ is:
-\begin{equation}
+\begin{equation}\label{frr}
 \frac{d^2 F}{dr^2} + \frac{1}{r}\frac{dF}{dr} + \left(k^2 - 2V(r) - \frac{m^2}{r^2}\right)F = 0
 \end{equation}
 
-We can identify 2 regions:
+By examining the domain of the equation \eqref{frr},  we can identify 2 regions:
 
-\subsubsection{Far away region}
- For the regions far away from the scattering area where $ V(r) \leftarrow 0 $ we have a free space Schrodinger equation with $ k^2 = -E $;
+\subsubsection{\textbf{Far away region}}
+ For the regions far away from the scattering area where $ V(r) \rightarrow 0 $ we have a free space Schrodinger equation with $ k^2 = -E $;
 \begin{equation}\label{2DS1H}
 \frac{d^2 F(r)}{dr^2} + \frac{1}{r}\frac{d Fr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)F(r) = 0
 \end{equation}
 
-Following \cite{2DScatterLessons} we are interested in outgoing wave only, so we choose the $ + $ and we get the solution of the outgoing wave to be:
+This is a second order wave equation whose general solution looks like the combination of the incoming and outgoing wave, i.e. $ \psi(r) = R(r)e^{\pm ikr} $.
 
-This is a 2D Helmholtz equation whose solution can be expressed as:
+Following \cite{2DScatterLessons} we are interested in outgoing wave only, so we choose the $ + $ sign in the exponent.
+
+We can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solution can be expressed as:
 \begin{equation}\label{2DS2H}
 \psi(\mathbf{r}) = \sum_{m}{C_mH_m^+(kr)e^{im\phi}}
 \end{equation}
-For the $ r \leftarrow \infty $ we get approximate behaviour:
+And for the $ r \rightarrow \infty $ we get approximate behaviour:
 \begin{equation}\label{2DS2}
 H_m(kr) \xrightarrow{r \leftarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
