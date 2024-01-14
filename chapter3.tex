@@ -1,32 +1,6 @@
-\chapter{The Radiative Quenching \texorpdfstring{$ H_2^+ $}{$H_2^+$}  Ion Atom Collisions in 2D Space} 
+\chapter{2D Scattering}
 
-The analysis of the radiative processes is related to the analysis of the general scattering process. So we list those.
-
-Typically for the scattering processes at this level, we can distinguish between the radiative and non-radiative processes. 
-
-Radiative processes involve emission of a photon and they typically mean Radiative Charge Transfer: \\
-$ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S) + B + \hbar\omega $ \\
-and Radiative Association: \\
-$ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S)B + \hbar\omega $ .\\
-For example, the simplest case of the radiative process is the collision of the two hydrogen atoms, in the process $ H + H^+ \rightarrow H^+ + H + \hbar\omega $.\\
-
-While the non-radiative process, with no photon emission, is a Charge Transfer: \\
-$ A(n+1\prescript{1}{}S) + B(n\prescript{1}{}S) \longleftrightarrow  A(n\prescript{1}{}S) + B(n+1\prescript{1}{}S) $ .\\
-
-\section{Radiative Quenching}
-
-Radiative Quenching is an interaction between two atoms (or molecules), one being in excited state and the other in 'normal' ground state. During this process the excited atom emits a photon and drops to a ground state.
-The simplest such case is the collision of the two hydrogen molecules, in the process $ H_2(2\,{}^2\!S) + H_2(1\,{}^2\!S) \rightarrow H_2(1\,{}^2\!S) + H_2(1\,{}^2\!S) + \hbar\omega $.
-
-There are several theoretical approaches to this problem. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}. While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
-
-Here we shall investigate the low energy collision process between the hydrogen atom and the hydrogen ion, in 2 dimension. We use fully quantum mechanical approach to calculate the cross section and the emission spectra of the reaction $ H(2\prescript{2}{}S) + H(1\prescript{1}{}S)\rightarrow H(1\prescript{1}{}S) + H(1\prescript{1}{}S) + \hbar\omega $, formed by the quenching of the excited $ H $ atom by the approaching $ H $ atom, in 2D dimensions. To my knowledge, there is no experimental results related to the 2D problem. There are results for the 3D case, listed in \cite{Zygelman88} and references there.
-
-In this calculation, the atoms are confined in 2 dimensions, while the radiation is emitted or absorbed in all 3D space. Therefore the photon can be emitted in any direction and the potential felt by the incoming ion is the standard 3D Coulomb potential.
-
-We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
-
-\subsection{2D Scattering}
+Here we briefly address the scatering in 2 dimensions.
 
 The quantum scattering in 3 dimension is described in numerous textbooks and papers, so we ommit explicitly referencing them here.
 
@@ -77,10 +51,10 @@ We can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solut
 \end{equation}
 And for the $ r \rightarrow \infty $ we get approximate behaviour:
 \begin{equation}\label{2DS2}
-H_m(kr) \xrightarrow{r \leftarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}}
+H_m(kr) \xrightarrow{r \rightarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
 
-\subsubsection{Scattering region 2}
+\subsubsection{\textbf{Scattering region}}
 
 In this case we consider the scattering area, where $ V(r) \neq 0 $. In this case we use the potential function $ V(R) $ obtained in chapter 2 and numerically solve the 2D Schrodinger equation. To obtain the phase shift we match the wave function in the scattering region to the wavefunction in the far away region and use the optical theorem.
 
@@ -144,15 +118,31 @@ f(\theta) = \sqrt{\frac{1}{2\pi i k}}\sum_{m=0}^{\infty}{\epsilon_m\cos(m\theta)
 
 So far, this is a general formula applicable to any kind of process.
 
-\subsection{Radiative Quenching Analytical Analysis}
+\chapter{The Radiative Quenching \texorpdfstring{$ H_2^+ $}{$H_2^+$}  Ion Atom Collisions in 2D Space} 
 
-\begin{equation}\label{eqH1} 
-\begin{split} 
-& H = -\frac{1}{2\mu}\nabla^2_{\mathbf{R}} + H_{el}(\mathbf{R},\mathbf{r}) + H_{rad} + H_{int} 
-\end{split} 
-\end{equation} 
+The analysis of the radiative processes is related to the analysis of the general scattering process. So we list those.
 
-where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.  
+Typically for the scattering processes at this level, we can distinguish between the radiative and non-radiative processes. 
+
+Radiative processes involve emission of a photon and they typically mean Radiative Charge Transfer: \\
+$ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S) + B + \hbar\omega $ \\
+and Radiative Association: \\
+$ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S)B + \hbar\omega $ .\\
+For example, the simplest case of the radiative process is the collision of the two hydrogen atoms, in the process $ H + H^+ \rightarrow H^+ + H + \hbar\omega $.\\
+
+While the non-radiative process, with no photon emission, is a Charge Transfer: \\
+$ A(n+1\prescript{1}{}S) + B(n\prescript{1}{}S) \longleftrightarrow  A(n\prescript{1}{}S) + B(n+1\prescript{1}{}S) $ .\\
+
+Radiative Quenching is an interaction between two atoms (or molecules), one being in excited state and the other in 'normal' ground state. During this process the excited atom emits a photon and drops to a ground state.
+The simplest such case is the collision of the two hydrogen molecules, in the process $ H_2(2\,{}^2\!S) + H_2(1\,{}^2\!S) \rightarrow H_2(1\,{}^2\!S) + H_2(1\,{}^2\!S) + \hbar\omega $.
+
+There are several theoretical approaches to this problem. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}. While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
+
+Here we shall investigate the low energy collision process between the hydrogen atom and the hydrogen ion, in 2 dimension. We use fully quantum mechanical approach to calculate the cross section and the emission spectra of the reaction $ H(2\prescript{2}{}S) + H(1\prescript{1}{}S)\rightarrow H(1\prescript{1}{}S) + H(1\prescript{1}{}S) + \hbar\omega $, formed by the quenching of the excited $ H $ atom by the approaching $ H $ atom, in 2D dimensions. To my knowledge, there is no experimental results related to the 2D problem. There are results for the 3D case, listed in \cite{Zygelman88} and references there.
+
+In this calculation, the atoms are confined in 2 dimensions, while the radiation is emitted or absorbed in all 3D space. Therefore the photon can be emitted in any direction and the potential felt by the incoming ion is the standard 3D Coulomb potential.
+
+We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
 
 \subsection*{Length gauge}
 
@@ -167,7 +157,17 @@ In the length gauge, the interaction Hamiltonian is:
 \end{equation}
 where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
 
-\subsection{Radiative  Quenching }
+\section{Radiative Quenching Analytical Analysis}
+
+We start with the following Hamiltonian.
+
+\begin{equation}\label{eqH1} 
+\begin{split} 
+& H = -\frac{1}{2\mu}\nabla^2_{\mathbf{R}} + H_{el}(\mathbf{R},\mathbf{r}) + H_{rad} + H_{int} 
+\end{split} 
+\end{equation} 
+
+where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.  
 
 So if we regard this process as a transition induced by the radiation field from the $ A^{1}\Sigma^{+}_u $ state to of the $ H_2 $ molecule formed by the approaching $ H $ atom, to the $ X^{1}\Sigma^{+}_g $ state in which the atoms separate.
 
@@ -207,14 +207,14 @@ and from the equation \eqref{GreenFkaEq1} we get:
 \end{split}
 \end{equation}
 
-\subsubsection{Solution Strategies}
+\section{Solution Strategies}
 The main approaches to solving problems is to expand the wave function in the partial waves basis and use Born approximation.
 
 Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
 
 Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak. 
 
-\subsubsection{Using Partial Waves}
+\subsection{Using Partial Waves}
 
 We can express this function in the partial waves bases. Since $ V_b $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
 \begin{equation}\label{GreenFka2}
