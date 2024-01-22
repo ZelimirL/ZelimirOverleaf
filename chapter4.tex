@@ -246,15 +246,15 @@ The cross section for the radiative quenching is given by:
 \sigma = \frac{\pi}{k_a^2}\sum_{m=0}^{\infty}{(2m+1)\left(1-e^{-4\eta_j}\right) }
 \end{equation}
 
-where $ eta_j $ is the imaginary component of the phase shift of the $ Jth $ partial wave of the solution \eqref{optV2}. The sum on $ J $ is restricted to the odd integers. 
-Also because the right hand of \eqref{optV2} is small, we can use the distorted wave approximation to obtain the expression for the phase shift $ eta_j $
+where $ \eta_j $ is the imaginary component of the phase shift of the $ Jth $ partial wave of the solution \eqref{optV2}. The sum on $ J $ is restricted to the odd integers. 
+Also because the right hand of \eqref{optV2} is small, we can use the distorted wave approximation to obtain the expression for the phase shift $ \eta_j $
 \begin{equation}\label{eta1}
 \eta_j = \frac{\pi\mu}{2k_a}\int_0^{\infty}{dR\,\left|s_J\left(k_aR\right)\right|^2A(R) }
 \end{equation}
 
 \subsection{Calculation} \label{QuenchingCalculation}
 
-We Wolfram Mathematica for calculating the phase shift $ \eta $, from the equation \eqref{eta1}.
+We use the code in appendixE for calculating the phase shift $ \eta $, from the equation \eqref{eta1}.
 
 One has to pay attention when calculating the $ D(R) $. Following \cite{DRZygelman} we have:
 \begin{equation}
@@ -292,7 +292,7 @@ Here is the graph of the Transition Dipole Moment between the states $ 1s^{+} $ 
 
 \includegraphics{DR.png}
 
-WE then use transition dipole values to compute the cross section. 
+We then use transition dipole values to compute the cross section. 
 
 
 The Mathematica code used for calculation is shown n appendix E.
