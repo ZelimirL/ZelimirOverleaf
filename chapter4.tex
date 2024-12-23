@@ -121,13 +121,13 @@ where:
 The solution of the equation \eqref{eqRadial1} are Bessel functions $ J_m(kR) $ and $ N_m(kR) $ with the asymptotic behaviour:
 \begin{equation}
 \begin{split}
-f_{m}(kR) \sim \sqrt{\frac{2}{\pi}}\cos\left[kR - \pi\frac{m+1/2}{2} \right]
+f_{m}(kR)\sim \sqrt{\frac{2}{\pi kR}}\cos\left[kR - \pi\frac{m+1/2}{2} \right],\,\,{R \rightarrow \infty}
 \end{split}
 \end{equation}
 and $ g^{+}_l(kR) $ is irregular solution with the boundary condition at large $ R $.
 \begin{equation}
 \begin{split}
-g^{+}_{m}(kR) \sim \sqrt{\frac{2}{\pi}}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right]
+g^{+}_{m}{(kR)} \sim \sqrt{\frac{2}{\pi kR}}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right],\,\,{R \rightarrow \infty}
 \end{split}
 \end{equation}
 and $  \delta_m $ is a phase shift. 
@@ -249,7 +249,7 @@ The cross section for the radiative quenching is given by:
 where $ \eta_j $ is the imaginary component of the phase shift of the $ Jth $ partial wave of the solution \eqref{optV2}. The sum on $ J $ is restricted to the odd integers. 
 Also because the right hand of \eqref{optV2} is small, we can use the distorted wave approximation to obtain the expression for the phase shift $ \eta_j $
 \begin{equation}\label{eta1}
-\eta_j = \frac{\pi\mu}{2k_a}\int_0^{\infty}{dR\,\left|s_J\left(k_aR\right)\right|^2A(R) }
+\eta_j = \frac{\pi\mu}{2k_a}\int_0^{\infty}{dR\,\left|g_m^{+}\left(k_aR\right)\right|^2A(R) }
 \end{equation}
 
 \subsection{Calculation} \label{QuenchingCalculation}
@@ -300,3 +300,4 @@ The Mathematica code used for calculation is shown n appendix E.
 \subsection{Result and discussion}
 
 In fig  we plot the calculated cross section for process. The cross section is obtained using the calculation in section \ref{QuenchingCalculation}. The energy range is in 
+TODO: plot grapsh
