@@ -5,7 +5,7 @@ solutions of the time-independent Schrodinger equation for
 the hydrogen molecular.
 
 As we will apply a similar method to treat the hydrogen molecular ions in 2D,
-we first review the methodology of Bates used to calculate the lowest electronic eigenstates and eigenvalues for the $ {\rm H}_2^{+} $ system in 3D. \footnote {In this section we
+we first review the methodology of Bates \cite{Bates1}\cite{Bates2} used to calculate the lowest electronic eigenstates and eigenvalues for the $ {\rm H}_2^{+} $ system in 3D. \footnote {In this section we
 use atomic (Hatree) units, unless otherwise stated.}
 
 The hydrogen molecular ion, and similar systems ( such as $ {\rm HeH}^{+} $) are one of the few that allow a full analytic quantum mechanical description. Although its
@@ -50,7 +50,7 @@ The terms in the Hamiltonian are as follows:
 The kinetic energy of the protons:
 \begin{equation}`
 \begin{split}
- \hat{T}_n = - \frac{\hbar^2}{2M}\sum_{i=1}^2{\nabla_{R_i}^2 } = -\frac{1}{2M}\sum_{i=1}^2{\hat{P}_i^2 }
+ \hat{T}_n = - \frac{\hbar^2}{2M}\sum_{i=1}^2{\nabla_{R_i}^2 } = \frac{1}{2M}\sum_{i=1}^2{\hat{P}_i^2 }
 \end{split}
 \end{equation}
 
@@ -84,8 +84,9 @@ In the appendix A we define $ \chi(\mathbf{R}) $ as the wavefunction representin
 \begin{equation}
 \chi(\mathbf{R}) = \frac{1}{(2\pi\hbar)^{3/2}}e^{\frac{i}{\hbar}\sqrt{2ME_{CM}}\mathbf{R}}
 \end{equation}
+where $ E_{CM} $ is the energy of the center of the mass.
 
-Therefore, we proceed to transform the Hamiltonian into a Jacobian coordinate system, following \cite{ZygelmanDalgarno1}. The outcome of this procedure will be the transformation of the wave function as $\psi(\mathbf{R}_i, \mathbf{r}) \rightarrow \psi(\mathbf{R}_{CM}, \mathbf{R}, \mathbf{r}) $ where the $ \mathbf{R}_{CM} $ is the coordinate of the center of the mass, $ R $ is the distance between nuclei and $ \mathbf{r} $ is an electron coordinate.
+Therefore, we proceed to transform the Hamiltonian into a Jacobian coordinate system, following reference \cite{ZygelmanDalgarno1}. The outcome of this procedure will be the transformation of the wave function as $\psi(\mathbf{R}_i, \mathbf{r}) \rightarrow \psi(\mathbf{R}_{CM}, \mathbf{R}, \mathbf{r}) $ where the $ \mathbf{R}_{CM} $ is the coordinate of the center of the mass, $ R $ is the distance between nuclei and $ \mathbf{r} $ is an electron coordinate.
 We choose the coordinates as:
 
 \begin{equation}
@@ -97,8 +98,8 @@ We choose the coordinates as:
 \end{equation}
 
 \begin{figure}
-  \includegraphics{H2Ion3D.png}
-  \caption{$ H_2 $ Ion}\label{h2ion3d}
+    \noindent\includegraphics[width=\textwidth]{H2Ion3D-3.png}
+    \caption{$ H_2^{+} $ Ion}\label{h2ion3d}
   \label{fig:electronCoordinates}
 \end{figure}
 
