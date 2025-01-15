@@ -6,7 +6,7 @@
  
 \section{Motivation}
 For a long time humanity asked itself about the origin of the universe, its final destiny, origin and possible evolution of its laws and humanity place in the universe.
-Not being able to answer any of those questions, this thesis focuses on the significantly modest goal.
+Not being able to answer any of those questions, this thesis focuses on the significantly more modest goal, by examining the Hydrogen Molecular Ion in 2 dimensions (2D).
 
 Arguably, quantum mechanics (QM), or the quantum theory, offers the best description of matter's behavior at the atomic, molecular, and sub-nuclear levels. As an established paradigm, it is increasingly applied to increasingly more complex systems where physics and other disciplines intersect.
 
@@ -83,12 +83,12 @@ Currently, the major unsolved problem in Computer Science is the P vs. NP proble
 
  Now all problems in the NP class (more precisely, NP-complete subclass) can be transformed into each other in polynomial time to each other \cite{NPComplete},  therefore finding a polynomial-time solution for one of them would amount to having a polynomial-time solution to all problems in NP class. So the goal is rather worthy. 
 
+Currently, it is known that the quantum computer will not be able to solve NP problems. They could solve the class of the bounded-error, quantum, polynomial time (BQP) problems \cite{BQP}. 
+Even if the NP problems remain intractable, just the possibility that according to Feynman \cite{FQC}, a quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. 
+
 For example, Schor's algorithm \cite{Schor} can provably solve integer factorization in a polynomial time, as opposed to the best classical algorithm (quadratic sieve), which works in sub-exponential time \cite{Pomerance}. Unfortunately, the integer factorization problem, as well as other BQP problems, do not belong to the class of NP-complete problems. 
 
 Interestingly, according to Abrams and Lloyd \cite{Abrams_1998}, \cite{Abrams_1999} if the small nonlinear term is added to Quantum Mechanics, quantum computers would be able to solve NP-complete problems in polynomial time.
-
-Currently, it is known that the quantum computer will not be able to solve NP problems. They could solve the class of the bounded-error, quantum, polynomial time (BQP) problems \cite{BQP}. 
-Even if the NP problems remain intractable, just the possibility that according to Feynman \cite{FQC}, a quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. 
 
 \subsection*{Topological Quantum Computing}
 The concept of topological quantum computing \cite{Tqc1}
@@ -103,7 +103,7 @@ In general, there are two kinds of Anyons, Abelian and non-Abelian. Abelian Anyo
 There are several possibilities for realizing non-abelian statistics experimentally: 1. a two-dimensional electron gas in a large magnetic field (the fractional quantum Hall effect); 2. rapidly rotating Bose-Einstein condensates\cite{RrBeC} 3. frustrated magnets \cite{FrMag}.
 4.
 One of the anyons candidates the Majorana fermion \cite{Majorana}. Majorana fermion (particle) the particle that is its own antiparticle. A pair of localized Majorana states has been predicted to reside at the ends of a specially designed superconducting wire.  Very recently (2020) \cite{Manna8775}
-there is a strong evidence that Majorana particles has been observed for the first time. The other property of the Majorana fermion is that it is a non-Abelian anyon.
+there is a possibility that Majorana particles has been observed for the first time. The other property of the Majorana fermion is that it is a non-Abelian anyon.
 This present the possibility for the realization of fault-tolerant topological quantum computing\cite{AnyonsTqc}. 
 
 \subsection*{Excitons and Trions}
@@ -121,7 +121,7 @@ well as 2D excitons in 3D materials. The promise here is that these kinds of qua
 
 Since the exciton system resembles either the hydrogen atom or the hydrogen molecule, and it seems conceivable that the dynamics of  $ H_2^{+} $ molecule is qualitatively similar and could be applied to the excitons systems as well.
 
-The similar system is the trion, which consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecule. 
+The similar system is the trion, a bound state of three charged particles. It consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecular ion. 
 
 \subsection*{Future Applications and Speculations}
 
@@ -129,14 +129,12 @@ While the applications of the 2D materials above are certainly interesting, crea
 
 Equations for many bodies systems may formally be created by extending equations for a one or two bodies systems. But as soon as one tries that, one realizes that the complexity of such equations increases enormously, and than assumptions  made for a small systems are not valid any more. In this author's opinion, moving from a simple system to an order of magnitude more complex, requires a completely new mathematical and physical framework. Something analogous between the classical mechanics and thermodynamics.
 
-While the 2D materials' applications above are undoubtedly impressive, creating an exact analytical model of such material is too complicated. Even with today's computing machinery, the many-body wave equation is intractable.  Equations for many-body systems may formally be created by extending equations for one or two-body systems. But as soon as one tries that, one realizes that such equations' complexity increases enormously and then assumptions made for small systems are no longer valid. In this author's opinion, moving from a simple system to an order of magnitude more complex requires an entirely new mathematical and physical framework—something analogous between classical mechanics and thermodynamics.
-
 \subsection*{Outline}
-In this thesis, we will focus on investigating and solving the radiative charge transfer TODO: (Reflect actual work) for the most straightforward molecular system, namely hydrogen molecular ion $ {H_2^{+}}  $ in 2 dimensions (2D in the further text), and solving such system in 2D exactly.  Chapter 2 will show that applying our method to the already solved and well-known $ {H_2^{+}} $ in 3D yields the same results. Then in chapter 3, we will follow the already well-established procedure \cite{Bates1} to analytically solve the $ {H_2^{+}} $. After providing an analytical solution, we will fall back to the numerical methods to calculate the energy levels and obtain the potential curves. In chapter 4, we use the results obtained to calculate such a system's dynamics, namely the Radiate Association process. In chapter 5, we again use the same results to calculate the radiate charge transfer. 
+In this thesis, we will focus on investigating and solving the radiative charge transfer TODO: (Reflect actual work) for the most straightforward molecular system, namely hydrogen molecular ion $ {H_2^{+}}  $ in 2 dimensions (2D in the further text), and solving such system in 2D exactly.  Chapter 2 we will compare results applying our method to the already solved and well-known $ {H_2^{+}} $ results in 3D. Then in chapter 3, we will introduce the procedure to analytically solve the $ {H_2^{+}} $ in 2D. After providing an analytical solution, we will fall back to the numerical methods to calculate the energy levels and obtain the potential curves. In chapter 4, we use the results obtained to calculate such a system's dynamics, namely the Radiate Association process. In chapter 5, we again use the same results to calculate the radiate charge transfer. 
 
 In the following chapter, we re-calculate the electron energies for hydrogen molecular ion in 3D by using a different and arguably simpler approach.
 
 We shall use analytic methods where possible and resort to the numerical approach when there is no hope of finding an analytic solution.
 Quantitative calculations have greatly enabled the advancement of computing technology, as it is now possible to solve partial differential equations relatively quickly using computers that are widely accessible.  However, applying approximate methods and using only numerical methods allow limited insights. While the numerical methods provide results, they do not provide much insight into a quantum system's behavior. Furthermore, unless one is cautious, systemic numerical errors can accumulate and lead to neither insightful nor correct results. Therefore, analytic solutions are almost always desirable. However, for moderately complex systems, closed analytic solutions are usually impossible to obtain. Nevertheless, it is still desirable to find an exact analytic solution,  if possible, and fall back to numerical methods only as a last step. 
 
-Finally, while 2D atoms and molecules do not exist, excitons are proven to exist. So we explore the $ H_2 $ molecule so that we gain insights that can be translated into excitons.
+Finally, while naturally occuring 2D atoms and molecules do not exist, excitons are proven to exist, and they are analogous to the 2D atoms. So we explore the $ H_2 $ molecule so that we gain insights that can be translated into excitons.
