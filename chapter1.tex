@@ -98,7 +98,7 @@ We choose the coordinates as:
 \end{equation}
 
 \begin{figure}
-    \noindent\includegraphics[width=\textwidth]{H2Ion3D-3.png}
+    \noindent\includegraphics[width=\textwidth]{H2Ion3D-2.png}
     \caption{$ H_2^{+} $ Ion}\label{h2ion3d}
   \label{fig:electronCoordinates}
 \end{figure}
@@ -147,7 +147,7 @@ So at this step, we neglect the nuclear kinetic energy, effectively rendering th
 \left[ -\frac{1}{2}\nabla_r^2 + V(\mathbf{R};\mathbf{r}) \right] u( \mathbf{R}; \mathbf{r} ) = E( \mathbf{R} ) u( \mathbf{R}; \mathbf{r} ) 
 \end{equation}
 
-Now the equation \eqref{u} is the Schrodinger equation for the electron with its coordinate $ \textbf{r} $ and parameter $ \textbf{R} $. Electron is moving in the potential $ V(\mathbf{R};\mathbf{r})$ with the coordinate $ \mathbf{r} $ .  The electron's wavefunction $ u( \mathbf{R},\mathbf{r} ) $ and the energy $ E(\mathbf{R} $ both depend on the position of the nuclei $ \mathbf{R} $ as a parameter. The last step in Born-Oppenheimer approximation is to solve the Schrodinger equation for the nuclei, using the above calculated $ E(\mathbf{R}) $ as a potential energy, which leads to a following equation.
+Now the equation \eqref{u} is the Schrodinger equation where $ u( \mathbf{R}; \mathbf{r} ) $ is the wavefunction for the electron with its coordinate $ \textbf{r} $ and parameter $ \textbf{R} $. Electron is moving in the potential $ V(\mathbf{R};\mathbf{r})$ with the coordinate $ \mathbf{r} $ .  The electron's wavefunction $ u( \mathbf{R},\mathbf{r} ) $ and the energy $ E(\mathbf{R}) $ both depend on the position of the nuclei $ \mathbf{R} $ as a parameter. The last step in Born-Oppenheimer approximation is to solve the Schrodinger equation for the nuclei, using the above calculated $ E(\mathbf{R}) $ as a potential energy, which leads to a following equation.
 
 \begin{equation}\label{v}
 \left[ -\frac{1}{2}\nabla_R^2 + E(\mathbf{R}) \right] v( \mathbf{R} ) = \epsilon  v( \mathbf{R} )
@@ -160,9 +160,9 @@ Once these operations are carried, the Born-Oppenheimer approximation states tha
 \psi(\mathbf{R},\mathbf{r}) =  u(\mathbf{R};\mathbf{r})  v( \mathbf{R} )
 \end{equation}
 
-In addition, each electronic eigenvalue $ E_n(R) $ will give a rise to the electronic surface, known as Born-Oppenheimer surfaces. Therefore the full internuclear potential will be given as $ V_{NN}(R) + E_n(R) $. 
+In addition, each electronic eigenvalue $ E_n(R) $ will give a rise to the electronic surface, known as Born-Oppenheimer surfaces. 
 
-One could proceed further for the complete treatment of the Born-Oppenheimer approximation, for example dealing with the Born-Oppenheimer diagonal correction \cite{BOApprox2}, but it will go beyond the scope of this thesis . 
+One could proceed further for the complete treatment of the Born-Oppenheimer approximation, for example dealing with the Born-Oppenheimer off-diagonal correction \cite{BOApprox2}, but it will go beyond the scope of this thesis . 
 
 At this moment, using BO approximation we have a Schrodinger equation for the electron, orbiting the two nuclei (each consisting of a single proton). Note that in the further text the $ \psi $ will denote the function $  u(\mathbf{R}; \mathbf{r} ) $, since it is customary to denote the wave function as $ \psi $. 
 
@@ -186,7 +186,10 @@ r_a = \frac{R}{2}(\lambda + \mu)\,,\,\,\,\,\,\,\,r_a = \frac{R}{2}(\lambda - \mu
 After applying the coordinate transformations \eqref{coordTrans1} into the equation \eqref {eqPartial3D}, we obtain another partial differential equations \cite{Bates1}:
 
 \begin{equation}\label{bigdiff}
-\frac{d}{d\lambda}\left\{(\lambda^2-1)\frac{d\psi}{d\lambda}\right\} +\frac{d}{d\mu}\left\{(1-\mu^2)\frac{d\psi}{d\mu}\right\} + \left\{\frac{1}{\lambda^2-1} + \frac{1}{1-\mu^2} \right\}\frac{d^2\psi}{d\phi^2}+ \left\{\frac{1}{4}R^2E(\lambda^2 - \mu^2) + 2R\lambda \right\}\psi = 0
+\begin{split}
+    & \frac{d}{d\lambda}\left\{(\lambda^2-1)\frac{d\psi}{d\lambda}\right\} +\frac{d}{d\mu}\left\{(1-\mu^2)\frac{d\psi}{d\mu}\right\} + \left\{\frac{1}{\lambda^2-1} + \frac{1}{1-\mu^2} \right\}\frac{d^2\psi}{d\phi^2}+ \\[0.5em]
+    & + \left\{\frac{1}{4}R^2E(\lambda^2 - \mu^2) + 2R\lambda \right\}\psi = 0
+\end{split}
 \end{equation}
 
 We assume that the solution can be separated, in the product of the two functions of the single variable, $\lambda,\mu, \phi $. Under this assumption the solution can written as:
