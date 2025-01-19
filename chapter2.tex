@@ -79,41 +79,24 @@ We can conclude that both equations for $ \lambda $ and $ \mu $ must be equal to
 \begin{equation}\label{eqLG3}
 \begin{split}
 & (\lambda^2-1)\frac{\partial^2 L}{\partial \lambda^2} + \lambda\frac{\partial L}{\partial \lambda} + \left(2R\lambda -  \frac{R^2}{2} E\lambda^2\right) L = AL \\[.8em]
-& (1 - \mu^2)\frac{\partial^2 F}{\partial \mu^2} - \mu\frac{\partial F}{\partial \mu} - \left(\frac{R^2}{2} E \mu^2\right) F = -AF
+& (1 - \mu^2)\frac{\partial^2 F}{\partial \mu^2} - \mu\frac{\partial F}{\partial \mu} - \frac{R^2}{2} E \mu^2 F = -AF
 \end{split}
 \end{equation}
 where $ A $ is the separation constant.
 
+\subsection{Algebraic Solution}
 
-\subsection{ M Equation }
+\subsubsection{ M Equation }
 
-Following the derivation in appendix C we get for the M equation
+Using the substition $ \mu  = \cos x$ and $ F(\mu) = M(x) $ we get a new equation:
 
 \begin{equation}\label{M2}
 \frac{d^2 M}{d x^2} + \left[-A + \frac{p^2}{2} + \frac{p^2}{2}\cos(2x) \right]M = 0 
 \end{equation}
 
-The equation \eqref{M2} is a form of a  Mathieu's equation \cite{Mathieu2}. 
+The equation \eqref{M2} can be written as:
 
-\subsection{ L Equation }
-
-Following the derivation in appendix C we get for the L equation
-
-\begin{equation}\label{L2-2}
-\begin{split}
-& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  -k \right]L(\lambda) = 0
-\end{split}
-\end{equation}
-
-The equation for the $ L(\lambda) $ looks similar to the radial (modified) Mathieu's equation, but it is not an exact identity. 
-
-We observe that both equations for the functions $ M(\mu) $ and $ L(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
-
-
-\subsubsection{Algebraic Solution}
-
-The equation \eqref{Feq2} can be written as:
-\begin{equation}\label{FeqM }
+\begin{equation}\label{M2a}
 \frac{d^2 M}{d x^2} + \left[w - 2q\cos(2x)\right]M = 0
 \end{equation}
 where
@@ -123,6 +106,8 @@ where
 & q = - \frac{p^2}{2}
 \end{split}
 \end{equation}
+
+The equation \eqref{M2a} is a form of a  Mathieu's equation \cite{Mathieu2}. 
 
 From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has even and odd eigenvalue functions as:
 \begin{equation}
@@ -141,6 +126,14 @@ V_m = \frac{w - m^2}{q}
 \end{equation}
 
 The equations \ref{V-1-1} and \ref{V-1-2} provide the first gen equation for the even and odd solution respectively.
+
+\subsubsection{ F Equation }
+
+\begin{equation}\label{eqLG3}
+(\lambda^2-1)\frac{\partial^2 F}{\partial \lambda^2} + \lambda\frac{\partial F}{\partial \lambda} + \left(2R\lambda -  \frac{R^2}{2} E\lambda^2\right) F = -AF
+\end{equation}
+
+We observe that both equations for the functions $ M(\mu) $ and $ F(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
 
 There are actually two ways to try to solve this equation:
 
