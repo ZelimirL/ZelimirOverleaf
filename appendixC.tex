@@ -1,8 +1,102 @@
 \chapter{ Hydrogen Ion in 2 Dimension Equation, Mathematica Code }
 \label{AppendixC}
 
-Here we solve the equations \eqref{eqLG3} and \eqref{M2a}
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
 
+\begin{doublespace}
+\noindent\(\pmb{\text{(*}\text{Using} \text{Zhu}, \text{Xiong} \text{paper}\text{*)}}\newline
+\pmb{\text{(* Distance between nuclei*)}}\newline
+\pmb{}\newline
+\pmb{\text{(*}\text{*)}}\newline
+\pmb{}\newline
+\pmb{\text{(* L equation and coefficients *)}}\newline
+\pmb{\sigma [\text{r$\_$}]\text{:=}\frac{r}{p}-\frac{1}{2};}\newline
+\pmb{\alpha [\text{n$\_$}]\text{:=}(n+1)\left(n+\frac{1}{2}\right);}\newline
+\pmb{\beta [\text{n$\_$},\text{r$\_$}]\text{:=}2n^2+(4p-2\sigma [r])n-A +p^2-2p \sigma [r]-\frac{\sigma [r]}{2};}\newline
+\pmb{\gamma [\text{n$\_$},\text{r$\_$}]\text{:=}(n-1)\left(n-2\sigma [r]-\frac{1}{2}\right)+\sigma [r]\left(\sigma [r]-\frac{1}{2}\right);}\newline
+\pmb{}\newline
+\pmb{\text{(* Create a continued fraction equation for the coefficients of L equation *)}}\newline
+\pmb{}\newline
+\pmb{\text{lCoeff2}[\text{n$\_$},\text{r$\_$}]\text{:=}\frac{\beta [0,r]}{\alpha [0]}+\text{Simplify}[\text{ContinuedFractionK}[-\alpha [i-1]\gamma
+[i,r],\beta [i,r],\{i,1,n\}]] ;}\newline
+\pmb{}\newline
+\pmb{\text{(* M equation and coefficients *)}}\newline
+\pmb{}\newline
+\pmb{w=-A +\frac{p^2}{2};\text{      }q= \frac{-p^2}{4};}\newline
+\pmb{v[\text{n$\_$}]\text{:=}\frac{w-n^2}{q};}\newline
+\pmb{\text{(* Evaluate as a continued fraction *)}}\newline
+\pmb{\text{mCoeffV0}[\text{n$\_$}]\text{:=}v[0]+2\text{Simplify}[\text{ContinuedFractionK}[-1,v[2i],\{i,1,n\}]];}\newline
+\pmb{}\newline
+\pmb{\text{mCoeffV1}[\text{n$\_$}]\text{:=}v[1]-1+\text{Simplify}[\text{ContinuedFractionK}[-1,v[2i+1],\{i,1,n\}]];}\newline
+\pmb{}\newline
+\pmb{\text{(*} \text{Parameters}:}\newline
+\pmb{n: \text{Depth} \text{of} \text{the} \text{continued} \text{fraction},}\newline
+\pmb{ R: \text{Internuclear} \text{distance},}\newline
+\pmb{ \text{gerade}: \text{flag} \text{indicating} \text{whether} \text{we} \text{are} \text{calculating} \text{gerade} \text{or} \text{ungerade}
+\text{states}}\newline
+\pmb{\text{output}:}\newline
+\pmb{R , \text{electron} \text{energy}, \text{total} \text{energy}, \text{separation} \text{constant}, \text{and} p \text{value} }\newline
+\pmb{\text{*)}}\newline
+\pmb{\text{energySingleR}[\text{n$\_$},\text{R$\_$}, \text{gerade$\_$}]\text{:=}}\newline
+\pmb{\text{Module}[\{\text{asAndps},\text{pe},\text{energy},\text{aa}\},}\newline
+\pmb{\text{(*Now find p and A *)}}\newline
+\pmb{\text{If}[\text{gerade}\text{==}1, }\newline
+\pmb{\text{asAndps}= \text{NSolve}[\{\text{lCoeff2}[n,R]==0,}\newline
+\pmb{\text{mCoeffV0}[n]==0\},\{A,p\},\text{Reals}],}\newline
+\pmb{\text{asAndps}= \text{NSolve}[\{\text{lCoeff2}[n,R]==0,}\newline
+\pmb{\text{mCoeffV1}[n]==0\},\{A,p\},\text{Reals}]];}\newline
+\pmb{\text{aa}=\text{Sort}[\text{asAndps}[[\text{All},1,2]], \text{Greater}][[1]];}\newline
+\pmb{\text{pe}=\text{Sort}[\text{asAndps}[[\text{All},2,2]], \text{Greater}][[1]];}\newline
+\pmb{\text{energy} = \frac{(-2)}{R^2}\text{pe}^2;}\newline
+\pmb{\left\{R,\text{energy}, \text{energy} + \frac{1}{R},\text{aa},\text{pe}\right\}}\newline
+\pmb{]}\)
+\end{doublespace}
 
+\begin{doublespace}
+\noindent\(\pmb{\text{allRs} = \text{Table}[0.2+i*0.1,\{i,0,9\}];}\newline
+\pmb{\text{allRs} = \text{Join}[\text{allRs}, \text{Table}[1+.5*i,\{i,1,8\}]];}\newline
+\pmb{\text{allRs} = \text{Join}[\text{allRs}, \text{Table}[5+i,\{i,1,5\}]];}\newline
+\pmb{}\newline
+\pmb{\text{energiesGerade} = \text{Map}[\text{energySingleR}[3,\text{$\#$1},1] \&, \text{allRs}];}\newline
+\pmb{\text{energiesUngerade} = \text{Map}[\text{energySingleR}[3,\text{$\#$1},2] \&, \text{allRs}];}\)
+\end{doublespace}
 
+\begin{doublespace}
+\noindent\(\pmb{\text{Prepend}\left[\text{energiesGerade}, \left\{\text{R}, \text{E}, \text{$\texttt{"}$E+}\frac{1}{r}\texttt{"}, \text{A}, \text{p}\right\}\right]\text{
+ }\text{//}\text{MatrixForm}}\newline
+\pmb{\text{Prepend}\left[\text{energiesUngerade}, \left\{\text{R}, \text{E},\text{$\texttt{"}$E+}\frac{1}{r}\texttt{"}, \text{A}, \text{p}\right\}\right]\text{
+ }\text{//}\text{MatrixForm}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\newline
+\pmb{\text{eG} = \text{Interpolation}[\text{Transpose}[\{\text{energiesGerade}[[\text{All},1]],\text{energiesGerade}[[\text{All},2]]\}]];}\newline
+\pmb{\text{eGTotal} = \text{Interpolation}[\text{Transpose}[\{\text{energiesGerade}[[\text{All},1]],\text{energiesGerade}[[\text{All},3]]\}]];}\newline
+\pmb{\text{Plot}[\{\text{eG}[x],\text{eGTotal}[x]\},\{x,0.2,10\}, \text{PlotStyle}\text{-$>$}\{\text{Red},\text{Green}\}, \text{AxesLabel}\to \{\text{R},
+\text{{``}(E),V(R){''}}\}, }\newline
+\pmb{\text{AxesOrigin}\to \{0,0\},\text{PlotLabel}\text{-$>$}\{\text{{``}Electron vs Total potential for 1sG (Gerade) state{''}}\}, }\newline
+\pmb{\text{PlotLabels}\text{-$>$}\text{Placed}[\{\text{{``}E(R){''}},\text{{``}E(R)+V(R){''}}\},\{\text{Left}\}], \text{PlotRange}\text{-$>$}\text{Automatic}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{eU} = \text{Interpolation}[\text{Transpose}[\{\text{energiesUngerade}[[\text{All},1]],\text{energiesGerade}[[\text{All},2]]\}]];}\newline
+\pmb{\text{eUTotal} = \text{Interpolation}[\text{Transpose}[\{\text{energiesUngerade}[[\text{All},1]],\text{energiesUngerade}[[\text{All},3]]\}]];}\newline
+\pmb{\text{Plot}[\{\text{eU}[x],\text{eUTotal}[x]\},\{x,0.2,10\}, \text{PlotStyle}\text{-$>$}\{\text{Red},\text{Green}\}, \text{AxesLabel}\to \{\text{R},
+\text{{``}(E),V(R){''}}\}, }\newline
+\pmb{\text{AxesOrigin}\to \{0,0\},\text{PlotLabel}\text{-$>$}\{\text{{``}Electron vs Total potential for 2pU (Ungerade) state{''}}\}, }\newline
+\pmb{\text{PlotLabels}\text{-$>$}\text{Placed}[\{\text{{``}E(R){''}},\text{{``}E(R)+V(R){''}}\},\{\text{Left}\}], \text{PlotRange}\text{-$>$}\text{Automatic}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Plot}[\{\text{eGTotal}[x],\text{eUTotal}[x]\},\{x,0.2,10\}, \text{PlotStyle}\text{-$>$}\{\text{Red},\text{Green}\}, \text{AxesLabel}\to
+\{\text{R}, \text{{``}E(R)+V(R){''}}\}, }\newline
+\pmb{\text{AxesOrigin}\to \{0,0\},\text{PlotLabel}\text{-$>$}\{\text{{``}Gerade 1sg and Ungerade 2pu total potential curves{''}}\}, }\newline
+\pmb{\text{PlotLabels}\text{-$>$}\text{Placed}[\{\text{{``}1sG{''}},\text{{``}2pU{''}}\},\{\text{Above},\text{Left}\}], \text{PlotRange}\text{-$>$}\text{Full}]}\newline
+\pmb{}\)
+\end{doublespace}
 
