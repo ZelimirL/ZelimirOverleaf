@@ -23,20 +23,39 @@ The geometry of the 2D problem leads to choosing the elliptical coordinates (as 
 
 The goal is to provide the exact solution to the wavefunction of the $ H_2^{+} $ electron, for a given definition of exact. However even for this, relatively simple problem, it is impossible to find a closed form solution. So the solution is exact, in the sense that it can be done to an arbitrary precision.
 
-As illustrated by the figure  \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have:
+As illustrated by the figure  \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the internuclear axis, we have the nuclei at: $ z = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have:
+
 \begin{equation}\label{variables1}
+r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+\end{equation}
+so
+\begin{equation}\label{variables1a}
+\lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R
+\end{equation}
+\begin{equation}
+\text{where } \lambda \in \left[1,\infty\right]\,,\,\,\,\,\,\,\,\,\,\mu \in \left[ -1, 1 \right]
+\end{equation}
+
+Now if we plug in the \eqref{variables1} into \eqref{eqPartial2D} we get by using $ \nabla $ in 2D elliptic cylindrical coordinates \cite{MorseFeshbach} .
+\begin{equation}
 \begin{split}
-& \lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\[1em]
-& \text{where } \lambda \in \left[1,\infty\right]\,,\,\,\,\,\,\,\,\,\,\mu \in \left[ -1, 1 \right]\,\,\,\,\,\,\,\,\,\text{ and } \\[.8em] 
-& r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+& \nabla^2 = \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[ \sqrt{\lambda^2-1}\frac{\partial}{\partial \lambda}\left(\sqrt{\lambda^2-1}\frac{\partial \psi}{\partial \lambda} \right) +
+\sqrt{1-\mu^2}\frac{\partial}{\partial \mu}\left(\sqrt{1 - \mu^2}\frac{\partial \psi }{\partial \mu }\right) \right] = \\
+& \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + (
+1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right]
 \end{split}
 \end{equation}
-\newpage
+
+So the equation transforms to (with $ \psi = \psi(\lambda, \mu) $:
+\begin{equation}\label{SchrFull-1}
+-\frac{1}{2}\frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} +
+(1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right] - \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2}\psi = E \psi
+\end{equation}
 
 We assume that the total electronic wavefunction can be written as the product of two functions:
 \begin{equation}\label{variables2}
 \begin{split}
-& \psi(\lambda,\mu) = F(\mu)G(\lambda)
+& \psi(\lambda,\mu) = F(\mu)L(\lambda)
 \end{split}
 \end{equation}
 
@@ -46,23 +65,25 @@ We assume that the total electronic wavefunction can be written as the product o
   \caption{Hydrogen Ion in 2 dimension} 
   \label{h2ion2d}
 \end{figure}
-
-
-This way the original equation separates into two ODEs:
-
-\begin{equation}\label{L2-1}
-\left(\lambda^2 - 1 \right) \frac{d^2}{ d\lambda^2 }G(\lambda) + \lambda\frac{ d}{d\lambda }G (\lambda)  + \left(A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  \right)G (\lambda) = 0  
-\end{equation}
-
+it follows:
 \begin{equation}
- \left(1 - \mu^2 \right) \frac{d^2}{ d\mu^2 }F(\mu) - \mu\frac{ d }{d\mu }F(\mu) +  \left(-A -  \frac{E\,R^2}{2}\mu^2  \right)F(\mu) = 0
-\end{equation}
-and $ A $ is the separation constant. At this point we set:
-\begin{equation}
-p^2 = -\frac{ER^2}{2}
+\begin{split}
+& \frac{2}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)F\frac{\partial^2 L}{\partial \lambda^2} + \lambda F\frac{\partial L}{\partial \lambda} +
+(1 - \mu^2)L\frac{\partial^2 F}{\partial \mu^2} - \mu L\frac{\partial F}{\partial \mu} \right] + \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2} F L + E F L = 0 \Rightarrow \\[.8em]
+& (\lambda^2-1)\frac{1}{L}\frac{\partial^2 L}{\partial \lambda^2} + \frac{\lambda}{L}\frac{\partial L}{\partial \lambda} +
+(1 - \mu^2)\frac{1}{F}\frac{\partial^2 F}{\partial \mu^2} - \frac{\mu}{F} \frac{\partial M}{\partial \mu} + 2R\lambda + \frac{R^2}{2} E (\lambda^2 - \mu^2) = 0
+\end{split}
 \end{equation}
 
-The rest of the derivation is in the appendix C.
+We can conclude that both equations for $ \lambda $ and $ \mu $ must be equal to the separation constant $ A $. 
+\begin{equation}\label{eqLG3}
+\begin{split}
+& (\lambda^2-1)\frac{\partial^2 L}{\partial \lambda^2} + \lambda\frac{\partial L}{\partial \lambda} + \left(2R\lambda -  \frac{R^2}{2} E\lambda^2\right) L = AL \\[.8em]
+& (1 - \mu^2)\frac{\partial^2 F}{\partial \mu^2} - \mu\frac{\partial F}{\partial \mu} - \left(\frac{R^2}{2} E \mu^2\right) F = -AF
+\end{split}
+\end{equation}
+where $ A $ is the separation constant.
+
 
 \subsection{ M Equation }
 
