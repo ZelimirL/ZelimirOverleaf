@@ -41,7 +41,7 @@ By examining the domain of the equation \eqref{frr},  we can identify 2 regions:
 \frac{d^2 F(r)}{dr^2} + \frac{1}{r}\frac{d Fr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)F(r) = 0
 \end{equation}
 
-This is a second order wave equation whose general solution looks like the combination of the incoming and outgoing wave, i.e. $ \psi(r) = R(r)e^{\pm ikr} $.
+This is a second order wave equation whose general solution looks like the combination of the incoming and outgoing wave, i.e. $ \F(r) = R(r)e^{\pm ikr} $.
 
 Following \cite{2DScatterLessons} we are interested in outgoing wave only, so we choose the $ + $ sign in the exponent.
 
@@ -49,6 +49,7 @@ We can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solut
 \begin{equation}\label{2DS2H}
 \psi(\mathbf{r}) = \sum_{m}{C_mH_m^+(kr)e^{im\phi}}
 \end{equation}
+where $ H_m^+(kr) $ is the Hankel Function .
 And for the $ r \rightarrow \infty $ we get approximate behaviour:
 \begin{equation}\label{2DS2}
 H_m(kr) \xrightarrow{r \rightarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}}
