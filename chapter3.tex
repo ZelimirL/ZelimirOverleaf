@@ -54,8 +54,15 @@ We can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solut
 where $ H_m^+(kr) $ is the Hankel Function .
 And for the $ r \rightarrow \infty $ we get approximate behaviour:
 \begin{equation}\label{2DS2}
-    H_m(kr) \xrightarrow{r \rightarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}} + f(\theta) \frac{e^{ikr}}{\sqrt{r}}
+    H_m(kr) \xrightarrow{r \rightarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}} + f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
+where the term $ f(\theta) $ is the amplitude of the scattered wave relative to the incident wave. 
+The scattering amplitude $ f_m $ is in the most general case, related to the phase shift $ \delta_m $ as $ f(\theta) \sim e^{i\delta(\theta)} - 1 $. \\
+In the often used partial wave expansion the scattering amplitude and the phase shift are related as:
+\begin{equation}
+    f_m = \frac{e^{2i \delta_m}}{2ik} = \frac{e^{i\delta_m}\sin(\delta_m)}{k}
+\end{equation}
+In general the shape of the $ f(\theta) $ will depend on the symmetry of the system.
 
 \subsubsection{\textbf{Scattering region}}
 
