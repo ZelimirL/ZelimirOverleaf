@@ -54,9 +54,15 @@ We can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solut
 where $ H_m^+(kr) $ is the Hankel Function .
 And for the $ r \rightarrow \infty $ we get approximate behaviour:
 \begin{equation}\label{2DS2}
-    H_m(kr) \xrightarrow{r \rightarrow \infty}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}} + f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
+    H_m(kr) \xrightarrow[r \rightarrow \infty]{}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}} + f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
 where the term $ f(\theta) $ is the amplitude of the scattered wave relative to the incident wave. 
+So in the remote region we have an incident plane wave propagating along the axis plus the scattered outgoing wave and the wave function have the form:
+\begin{equation}
+    \psi(r,\theta) \xrightarrow[x \to \infty]{} \frac{e^{ikr}}{\sqrt{r}} + f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
+\end{equation}
+
+
 The scattering amplitude $ f_m $ is in the most general case, related to the phase shift $ \delta_m $ as $ f(\theta) \sim e^{i\delta(\theta)} - 1 $. \\
 In the often used partial wave expansion the scattering amplitude and the phase shift are related as:
 \begin{equation}
@@ -85,7 +91,7 @@ In the 3D case, the solution is the sum of the spherical Bessel functions.
 
 So the wave function looks like:
 \begin{equation}
- \Psi(r,\theta) = \sum_m^{\infty}{\epsilon_m i^m \cos(m\theta)J_m(kr)}
+    \Psi(r,\theta) = \sum_m^{\infty}{\epsilon_m i^m e^{m\theta)J_m(kr)}}
 \end{equation}
 Now using asymptotic expressions for $ r \rightarrow \infty $:
 \begin{equation}\label{}
