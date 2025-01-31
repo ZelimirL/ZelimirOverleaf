@@ -9,8 +9,9 @@ We start with the Schrodinger equation in 2 dimensions, using atomic units:
 \begin{equation}\label{2DS1}
     \left(-\frac{1}{2}\nabla^2 + V(\mathbf{r})\right)\psi(\mathbf{r}) = E\psi(\mathbf{r})
 \end{equation}
+where $ \nabla $ is the 2D Laplacian: $ \nabla^2 = \frac{\partial^2 x}{\partial x^2} + \frac{\partial^2 y}{\partial y^2} $
 
-In polar coordinates:
+Switching to polar coordinates and using polar cordinated 2D Laplacian:
 \begin{equation}
     \left[-\frac{\partial^2}{\partial r^2} - \frac{1}{r}\frac{\partial}{\partial r} - \frac{1}{r^2}\frac{\partial^2}{\partial\phi^2} + V(r)\right]\psi(r,\phi) = 2E\ \psi(r,\phi)
 \end{equation}
@@ -59,7 +60,7 @@ And for the $ r \rightarrow \infty $ we get approximate behaviour:
 where the term $ f(\theta) $ is the amplitude of the scattered wave relative to the incident wave. 
 So in the remote region we have an incident plane wave propagating along the axis plus the scattered outgoing wave and the wave function have the form:
 \begin{equation}
-    \psi(r,\theta) \xrightarrow[x \to \infty]{} \frac{e^{ikr}}{\sqrt{r}} + f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
+    \psi(r,\theta) \xrightarrow[x \to \infty]{} e^{ikr} + \sqrt{\frac{i}{k}}f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
 
 
@@ -69,6 +70,11 @@ In the often used partial wave expansion the scattering amplitude and the phase 
     f_m = \frac{e^{2i \delta_m}}{2ik} = \frac{e^{i\delta_m}\sin(\delta_m)}{k}
 \end{equation}
 In general the shape of the $ f(\theta) $ will depend on the symmetry of the system.
+
+The actual $ f(\theta) $ is not observable however it is used to compute differential cross section
+\begin{equation}
+    \frac{d\sigma}{d\theta} = \frac{1}{k}\left|f(\theta)\right|^2
+\end{equation}
 
 \subsubsection{\textbf{Scattering region}}
 
@@ -91,7 +97,7 @@ In the 3D case, the solution is the sum of the spherical Bessel functions.
 
 So the wave function looks like:
 \begin{equation}
-    \Psi(r,\theta) = \sum_m^{\infty}{\epsilon_m i^m e^{m\theta)J_m(kr)}}
+    \Psi(r,\theta) = \sum_m^{\infty}{\epsilon_m i^m e^{m\theta}J_m(kr)}
 \end{equation}
 Now using asymptotic expressions for $ r \rightarrow \infty $:
 \begin{equation}\label{}
