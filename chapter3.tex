@@ -1,33 +1,33 @@
 \chapter{2D Scattering}
 
-Here we briefly address the scatering in 2 dimensions.
+  Here we briefly address the scatering in two dimensions.
 
-The quantum scattering in 3 dimension is described in numerous textbooks and papers, so we ommit explicitly referencing them here.
+  The quantum scattering in 3 dimension is described in numerous textbooks and papers, so we ommit explicitly referencing them here.
 
-Scattering in 2 dimensions follows the same approach as in 3D, with some subtle differences.
-We start with the Schrodinger equation in 2 dimensions, using atomic units:
-\begin{equation}\label{2DS1}
-    \left(-\frac{1}{2}\nabla^2 + V(\mathbf{r})\right)\psi(\mathbf{r}) = E\psi(\mathbf{r})
-\end{equation}
-where $ \nabla $ is the 2D Laplacian: $ \nabla^2 = \frac{\partial^2 x}{\partial x^2} + \frac{\partial^2 y}{\partial y^2} $
+  Scattering in 2 dimensions follows the same approach as in 3D, with some subtle differences.
+  We start with the Schrodinger equation in 2 dimensions, using atomic units:
+  \begin{equation}\label{2DS1}
+      \left(-\frac{1}{2}\nabla^2 + V(\mathbf{r})\right)\psi(\mathbf{r}) = E\psi(\mathbf{r})
+  \end{equation}
+  where $ \nabla $ is the 2D Laplacian: $ \nabla^2 = \frac{\partial^2 x}{\partial x^2} + \frac{\partial^2 y}{\partial y^2} $
 
-Switching to polar coordinates and using polar cordinated 2D Laplacian:
-\begin{equation}
-    \left[-\frac{\partial^2}{\partial r^2} - \frac{1}{r}\frac{\partial}{\partial r} - \frac{1}{r^2}\frac{\partial^2}{\partial\phi^2} + V(r)\right]\psi(r,\phi) = 2E\ \psi(r,\phi)
-\end{equation}
-Using separation of variables: $ \psi(r,\phi) = F(r)T(\phi) $, we end up with 2 ordinary differential equations. We set $ k^2 = 2E $
-\begin{equation}
-\begin{split}
- & \frac{d^2F(r)}{d r^2} +\frac{1}{r}\frac{d F(r)}{d r} +(k^2 -  2V(r) - \frac{m^2}{r^2})F(r) = 0\\[.8em]
- & \frac{d^2 T(\phi)}{d \phi^2} + m^2 T(\phi) = 0
-\end{split}
-\end{equation}
+  Switching to polar coordinates and using polar cordinated 2D Laplacian:
+  \begin{equation}
+      \left[-\frac{\partial^2}{\partial r^2} - \frac{1}{r}\frac{\partial}{\partial r} - \frac{1}{r^2}\frac{\partial^2}{\partial\phi^2} + V(r)\right]\psi(r,\phi) = 2E\ \psi(r,\phi)
+  \end{equation}
+  Using separation of variables: $ \psi(r,\phi) = F(r)T(\phi) $, we end up with 2 ordinary differential equations. We set $ k^2 = 2E $
+  \begin{equation}
+  \begin{split}
+   & \frac{d^2F(r)}{d r^2} +\frac{1}{r}\frac{d F(r)}{d r} +(k^2 -  2V(r) - \frac{m^2}{r^2})F(r) = 0\\[.8em]
+   & \frac{d^2 T(\phi)}{d \phi^2} + m^2 T(\phi) = 0
+  \end{split}
+  \end{equation}
 
-Note that the $ m $ is a quantum number, not the mass. 
+  Note that the $ m $ is a quantum number, not the mass. 
 
-The function $ T(\phi) $ must be single valued and symmetric around the incident beam, taken to be around $ x $. In that case, m must be an integer, and normalized angular function is:
-\begin{equation}
-T(\phi) = \frac{1}{\sqrt{\pi 2}}e^{m\phi}
+  The function $ T(\phi) $ must be single valued and symmetric around the incident beam, taken to be around $ x $. In that case, m must be an integer, and normalized angular function is:
+  \begin{equation}
+T(\phi) = \frac{1}{\sqrt{\pi 2}}e^{i m\phi}
 \end{equation}
 where m is an integer.
 
