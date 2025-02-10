@@ -25,9 +25,9 @@
 
   Note that the $ m $ is a quantum number, not the mass. 
 
-  The function $ T(\phi) $ must be single valued and symmetric around the incident beam, taken to be around $ x $. In that case, m must be an integer, and normalized angular function is:
+  The function $ T(\phi) $ must be single valued and symmetric around the incident beam, taken to be around $ x $. In that case, m must be an integer, and solution must be symmetric along the x axis. Ergo the normalized angular function is:
   \begin{equation}
-T(\phi) = \frac{1}{\sqrt{\pi 2}}e^{i m\phi}
+T(\phi) = \frac{1}{\sqrt{\pi}}e^{i m\phi}
 \end{equation}
 where m is an integer.
 
@@ -36,15 +36,27 @@ The radial equation $ F(r) $ is:
 \frac{d^2 F}{dr^2} + \frac{1}{r}\frac{dF}{dr} + \left(k^2 - 2V(r) - \frac{m^2}{r^2}\right)F = 0
 \end{equation}
 
-By examining the domain of the equation \eqref{frr},  we can identify 2 regions:
+Since scattering is a localized procss so from the physics of the process and by examining the equation \eqref{frr},  we can identify 3 regions:
 
-\subsubsection{\textbf{Far away region}}
- For the regions far away from the scattering area where $ V(r) \rightarrow 0 $ we have a free space Schrodinger equation with $ k^2 = E $;
+\subsubsection{\textbf{Far away region, Incoming particle}}
+
+For the regions far away from the scattering area where $ V(r) \rightarrow 0 $ we have a free space Schrodinger equation with $ k^2 = E $;
 \begin{equation}\label{2DS1H}
 \frac{d^2 F(r)}{dr^2} + \frac{1}{r}\frac{d Fr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)F(r) = 0
 \end{equation}
+ 
+Here we have an incoming particle (or particle beam) with the uniform momentum $ \vec{p} $. So the general solution of the equation \eqref{frr} in the incoming plane wave:
+\begin{equation}\label{free2D}
+F(r) = \exp(i\frac{\vec{p}\cdot\vec{r}}{\hbar})
+\end{equation}
 
-This is a second order wave equation whose general solution looks like the combination of the incoming and outgoing wave, i.e. $ F(r) = R(r)e^{\pm ikr} $.
+We will subsequently expand this solution into the sum of partial waves and also into the  sum of the Bessel functions.
+
+\subsubsection{\textbf{Far away region, Scattered particle}}
+
+order wave equation whose general solution ooks like the combination of the incoming and outgoing wave, i.e. $ F(r) = R(r)e^{\pm ikr} $.
+
+Since this is the far away region the $ V(r) \rightarrow 0 $. However now the particle is scattered, so the the so
 
 Following \cite{2DScatterLessons} we are interested in outgoing wave only, so we choose the $ + $ sign in the exponent.
 
