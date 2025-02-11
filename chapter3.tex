@@ -47,20 +47,22 @@ For the regions far away from the scattering area where $ V(r) \rightarrow 0 $ w
  
 Here we have an incoming particle (or particle beam) with the uniform momentum $ \vec{p} $. So the general solution of the equation \eqref{frr} in the incoming plane wave:
 \begin{equation}\label{free2D}
-F(r) = \exp(i\frac{\vec{p}\cdot\vec{r}}{\hbar})
+    F(r) = \exp(i\frac{p\ x}{\hbar}) = \exp(k\ x) \text{  where } p = \hbar \ k
 \end{equation}
 
 We will subsequently expand this solution into the sum of partial waves and also into the  sum of the Bessel functions.
 
 \subsubsection{\textbf{Far away region, Scattered particle}}
 
-order wave equation whose general solution ooks like the combination of the incoming and outgoing wave, i.e. $ F(r) = R(r)e^{\pm ikr} $.
+Here is still have the $ V(r) \rightarrow 0 $
 
-Since this is the far away region the $ V(r) \rightarrow 0 $. However now the particle is scattered, so the the so
+In this region, the solution to the wave equation \eqref{frr} looks like the combination of the incoming plus the scattered outgoing wave.
 
-Following \cite{2DScatterLessons} we are interested in outgoing wave only, so we choose the $ + $ sign in the exponent.
+\begin{equation}\label{free2D}
+    F(r,\theta) = e^{ikx} + f(\theta)\frac{e^{ikr}}{\sqrt{r}}
+\end{equation}
 
-We can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solution can be expressed as:
+Now we can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solution can be expressed as:
 \begin{equation}\label{2DS2H}
 \psi(\mathbf{r}) = \sum_{m}{C_mH_m^+(kr)e^{im\phi}}
 \end{equation}
@@ -94,11 +96,7 @@ In this case we consider the scattering area, where $ V(r) \neq 0 $. In this cas
 
 \subsubsection{Scattering Process}
 
-For the scattering process we have a wave function outside the scattering potential as:
-\begin{equation}\label{sctPhi}
- \Psi(r,\theta) = e^{ikx} + f(\theta)\frac{e^{ikr}}{\sqrt{r}}
-\end{equation}
-Now we expand:
+ow we expand:
 \begin{equation}\label{expE}
 e^{ikx} = e^{ikr\cos\theta} = \sum_m{\epsilon_m i^m \cos(m\theta)J_m(kr)}
 \end{equation}
