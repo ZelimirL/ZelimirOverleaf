@@ -42,12 +42,12 @@ Since scattering is a localized procss so from the physics of the process and by
 
 For the regions far away from the scattering area where $ V(r) \rightarrow 0 $ we have a free space Schrodinger equation with $ k^2 = E $;
 \begin{equation}\label{2DS1H}
-\frac{d^2 F(r)}{dr^2} + \frac{1}{r}\frac{d Fr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)F(r) = 0
+\frac{d^2 R(r)}{dr^2} + \frac{1}{r}\frac{d Rr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)R(r) = 0
 \end{equation}
  
 Here we have an incoming particle (or particle beam) with the uniform momentum $ \vec{p} $. So the general solution of the equation \eqref{frr} in the incoming plane wave:
 \begin{equation}\label{free2D}
-    F(r) = \exp(i\frac{p\ x}{\hbar}) = \exp(k\ x) \text{  where } p = \hbar \ k
+    R(x) = \exp(i\frac{p\ x}{\hbar}) = \exp(k\ x) \text{  where } p = \hbar \ k
 \end{equation}
 
 We will subsequently expand this solution into the sum of partial waves and also into the  sum of the Bessel functions.
@@ -57,9 +57,8 @@ We will subsequently expand this solution into the sum of partial waves and also
 Here is still have the $ V(r) \rightarrow 0 $
 
 In this region, the solution to the wave equation \eqref{frr} looks like the combination of the incoming plus the scattered outgoing wave.
-
 \begin{equation}\label{free2D}
-    F(r,\theta) = e^{ikx} + f(\theta)\frac{e^{ikr}}{\sqrt{r}}
+    R(r,\theta) = e^{ikx} + f(\theta)\frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
 
 Now we can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose solution can be expressed as:
@@ -69,14 +68,10 @@ Now we can recognize the equation \eqref{frr} aa a 2D Helmholtz equation whose s
 where $ H_m^+(kr) $ is the Hankel Function .
 And for the $ r \rightarrow \infty $ we get approximate behaviour:
 \begin{equation}\label{2DS2}
-    H_m(kr) \xrightarrow[r \rightarrow \infty]{}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim \frac{e^{ikr}}{\sqrt{r}} + f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
+    H_m(kr) \xrightarrow[r \rightarrow \infty]{}\sqrt{\frac{2}{\pi k r}}exp\left[i\left(kr - \frac{(m + 1/2)\pi}{2}\right)\right] \sim e^{ikx} + f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
 \end{equation}
 where the term $ f(\theta) $ is the amplitude of the scattered wave relative to the incident wave. 
-So in the remote region we have an incident plane wave propagating along the axis plus the scattered outgoing wave and the wave function have the form:
-\begin{equation}
-    \psi(r,\theta) \xrightarrow[x \to \infty]{} e^{ikr} + \sqrt{\frac{i}{k}}f_m(\theta) \frac{e^{ikr}}{\sqrt{r}}
-\end{equation}
-
+So in the remote region we have an incident plane wave propagating along the axis plus the scattered outgoing wave.
 
 The scattering amplitude $ f_m $ is in the most general case, related to the phase shift $ \delta_m $ as $ f(\theta) \sim e^{i\delta(\theta)} - 1 $. \\
 In the often used partial wave expansion the scattering amplitude and the phase shift are related as:
@@ -96,7 +91,7 @@ In this case we consider the scattering area, where $ V(r) \neq 0 $. In this cas
 
 \subsubsection{Scattering Process}
 
-ow we expand:
+Now we expand:
 \begin{equation}\label{expE}
 e^{ikx} = e^{ikr\cos\theta} = \sum_m{\epsilon_m i^m \cos(m\theta)J_m(kr)}
 \end{equation}
@@ -105,15 +100,11 @@ where $\epsilon_m = 2 $ for $ m \neq 0 $ and $ \epsilon_0 = 1 $.
 Note: This looks very similar to the 3D case. The main difference is that in 2D case, the solution is a sum of cylindrical Bessel functions $ J_m(kr) $ and $ N_m(kr) $.
 In the 3D case, the solution is the sum of the spherical Bessel functions.
 
-So the wave function looks like:
-\begin{equation}
-    \Psi(r,\theta) = \sum_m^{\infty}{\epsilon_m i^m e^{m\theta}J_m(kr)}
-\end{equation}
-Now using asymptotic expressions for $ r \rightarrow \infty $:
+Using asymptotic expressions for $ r \rightarrow \infty 0$:
 \begin{equation}\label{}
 \begin{split}
-& J_m(kr) \xrightarrow{r \leftarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\cos\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right) \\[.7em]
-& N_m(kr) \xrightarrow{r \leftarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\sin\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right)
+& J_m(kr) \xrightarrow{r \rightarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\cos\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right) \\[.7em]
+& N_m(kr) \xrightarrow{r \rightarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\sin\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right)
 \end{split}
 \end{equation}
 The most general solution of the radial part is in the absence of potential is:
@@ -124,7 +115,7 @@ For $ r \rightarrow\infty $ the \eqref{bigRBsl} has asymptotic form
 \begin{equation}\label{asympR}
 R(r) = A_m\frac{1}{\sqrt{kr}}\cos\left[kr-\pi\frac{m + 1/2}{2} + \delta_m\right]
 \end{equation}
-Now equating equations \eqref{asympR} and \eqref{sctPhi} and using \eqref{expE},\eqref{asymp2} we obtain:
+Now equating equations \eqref{asympR} and and using \eqref{expE},\eqref{asymp2} we obtain:
 \begin{equation}\label{asymR2}
 \begin{split}
 & \sum_m{\epsilon_m i^m\sqrt{\frac{2}{\pi kr}}\cos(m\theta)\cos\left[kr-\pi\frac{m + 1/2}{2}\right]} + f(\theta)\frac{e^{ikr}}{\sqrt{r}} = \\[.7em]
