@@ -38,15 +38,9 @@ In the length gauge, the interaction Hamiltonian is:
 \end{equation}
 where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
 
-\section{Electronic translation factor (ETF) \cite{ETF1}\cite{ETF2}\cite{ETF3}}
-
-The molecular approach to atomic collisions require the addition of the Electronic Translation Factor (ETF). Physically the reason for this factor is to ensure a Galilean invariance of the results. Which in turn means that the equations should be invariant to translations. Translation in this case corresponds to the movement of the molecules \cite{ETF2}. It has been shown \cite{ETF2} that an ETF does impact the cross section.
-The introduction of a switching function into the electron translation factor is relatively simple approach that greatly improves the accuracy of the cross section computation. Even though method of switching function is not a general one \cite{ETF3}, it is well suited to the specially symmetric systems such as $ H_{2}^{+} $.
-
 \section{Radiative Quenching Analytical Analysis}
 
 We start with the following Hamiltonian.
-
 \begin{equation}\label{eqH1} 
 \begin{split} 
 & H = -\frac{1}{2\mu}\nabla^2_{\mathbf{R}} + H_{el}(\mathbf{R},\mathbf{r}) + H_{rad} + H_{int} 
@@ -56,6 +50,40 @@ We start with the following Hamiltonian.
 where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.  
 
 So if we regard this process as a transition induced by the radiation field from the $ A^{1}\Sigma^{+}_u $ state to of the $ H_2 $ molecule formed by the approaching $ H $ atom, to the $ X^{1}\Sigma^{+}_g $ state in which the atoms separate.
+
+Now given the Hamiltonian for the homonuclear diatom with one electron:
+\begin{equation}\label{hdia}
+  H = -\frac{1}{2}\vec{\nabla}^2 + V_a(\vec{r} - \frac{\vec{R}}{2}) + V_b(\vec{r} + \frac{\vec{R}}{2}) + V(|\vec{R}|) 
+\end{equation}
+where $ V_a, V_b $ are the electron nucleus Coulomb interaction for the nuclei A and B respectively. The $ \vec{r} $ is the position of the electron and $ \vec{R} $ is the distance between the nuclei.
+
+Asymptoticaly, for large $ |R| $ we have for the Hamiltonian and eigenstates:
+\begin{equation}
+\begin{split} 
+  & H_a = -\frac{1}{2}\vec{\nabla}^2 + V_a(\vec{r} - \frac{\vec{R}}{2}) \text{ with the eigenstate: } \Phi_a(\vec{r} - \frac{\vec{R}}{2}) F_a(R) \\
+  & \text{and} \\
+  & H_b = -\frac{1}{2}\vec{\nabla}^2 + V_b(\vec{r} + \frac{\vec{R}}{2}) \text{ with the eigenstate: } \Phi_b(\vec{r} + \frac{\vec{R}}{2}) F_b(R) \\
+\end{split} 
+\end{equation}
+
+From the physics of the system, we have two classes of solution, Gerade and Ungerade. Those correspond to the parity of the electron's wavefunction.
+
+So following the \cite{Dalgarno1953} we have the $ |R| \leftarrow \infty $ asymptotical eigenstates of equation \eqref{hdia}, both gerade and ungerade:
+\begin{equation}
+\begin{split}
+  & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
+  & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) - \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) 
+\end{split}
+\end{equation}
+
+So we now apply the scattering analys for 2D, from the previous chapter, and assume that $ F_g(r) $ at asymptotic distances obeys the 2D conditions:
+\begin{equation}
+  F_g(R) \underset{R \rightarrow +\infty}{\sim} e^{ik\ x} + f_g(\theta)\frac{e^{ik\ x}}{\sqrt{R}} 
+\end{equation}
+Now we use the 2D scatering amplitude from the previous chapter:
+\begin{equation}
+  f_g(\theta) = \frac{1}{\sqrt{2Pi i k}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m}\sin\delta_m}
+\end{equation}
 
 Now we write the system wave function:
 \begin{equation}\label{ansatzWave1}
