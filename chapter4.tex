@@ -81,8 +81,37 @@ So we now apply the scattering analys for 2D, from the previous chapter, and ass
   F_g(R) \underset{R \rightarrow +\infty}{\sim} e^{ik\ x} + f_g(\theta)\frac{e^{ik\ x}}{\sqrt{R}} 
 \end{equation}
 Now we use the 2D scatering amplitude from the previous chapter:
+\begin{equation}\label{fgampl}
+  f_g(\lambda) = \sqrt{\frac{2}{Pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\lambda)e^{i\delta_m^g}\sin\delta_m}
+\end{equation}
+As the $ f(\theta) $ is not directly observable, we look for the cross section. And we get for the differential cross section, in 2D, we have:
 \begin{equation}
-  f_g(\theta) = \frac{1}{\sqrt{2Pi i k}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m}\sin\delta_m}
+  \lambda(\theta) = |\sqrt{i}{k}f_g(\theta)|^2 = \frac{1}{k}|f_g(\theta)|^2 
+\end{equation}
+and the total cross section
+\begin{equation}
+\begin{split}
+  & \lambda_g = \int_{0}^{2Pi}{d\lambda f_g(\lambda)} = \frac{2}{Pi}\sum_{m,m'}\int_{0}^{2Pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
+  & = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
+\end{split}
+\end{equation}
+The same dicusion applies for the ungerade solution so we :
+\begin{equation}
+  \lambda_u = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
+\end{equation}
+
+In our case we are not interested in the elastic scattering of the gerade and uungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
+
+Instead we seek the asymptotic form for the difference
+\begin{equation}
+  \frac{1}{2}\left(F_g(R) - F_u(R)\right) \sim \frac{\left|f_g(\theta) - f_u(\theta)\right|}{4Pi}
+\end{equation}
+Using expression \eqref{fgampl} we get:
+\begin{equation}
+\begin{split}
+  & lambda = \frac{1}{4}\int_{0}^{2Pi}d\lambda\frac{\left|f_g(\lambda) - f_u(\lambda)\right|^2}{4Pi} \Rightarrow \\ 
+  &  lambda = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
+\end{split}
 \end{equation}
 
 Now we write the system wave function:
