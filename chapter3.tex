@@ -29,28 +29,35 @@
   \begin{equation}
 T(\phi) = \frac{1}{\sqrt{\pi}}e^{i m\phi}
 \end{equation}
-where m is an integer.
+where m is an integer and we are using atomic units.
 
 The radial equation $ F(r) $ is:
 \begin{equation}\label{frr}
 \frac{d^2 F}{dr^2} + \frac{1}{r}\frac{dF}{dr} + \left(k^2 - 2V(r) - \frac{m^2}{r^2}\right)F = 0
 \end{equation}
 
-Since scattering is a localized process so from the physics of the process and by examining the equation \eqref{frr},  we can identify 3 regions:
+Since scattering is a localized process so from the physics of the process and by examining the equation \eqref{frr},  we can identify 2 regions, the far away region and the scattering region.
+
 
 \subsubsection{\textbf{Far away region, Incoming particle}}
 
 For the regions far away from the scattering area where $ V(r) \rightarrow 0 $ we have a free space Schrodinger equation with $ k^2 = E $;
 \begin{equation}\label{2DS1H}
-\frac{d^2 R(r)}{dr^2} + \frac{1}{r}\frac{d Rr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)R(r) = 0
+\frac{d^2 F(r)}{dr^2} + \frac{1}{r}\frac{d Fr(r)}{dr} + \left(k^2 - \frac{m^2}{r^2}\right)F(r) = 0
 \end{equation}
  
-Here we have an incoming particle (or particle beam) with the uniform momentum $ \vec{p} $. So the general solution of the equation \eqref{frr} in the incoming plane wave:
-\begin{equation}\label{free2D}
-    R(x) = \exp(i\frac{p\ x}{\hbar}) = \exp(k\ x) \text{  where } p = \hbar \ k
+Here we have an incoming particle (or particle beam) with the uniform momentum $ \vec{p} $. So the general solution of the equation \eqref{frr} in the incoming plane wave: $  F(x) = e^{i\ kx} $, where $ k = \hbar\ p $.
+
+The way to solve the equation \eqref{2DS1H} is to expand the incident wave in terms of Bessel function. This is the Partial-Wave Expansion method. We get:
+\begin{equation}
+    e^{i\ kx} = e^{i\ kr\cos\theta} = sum_{m=0}^{\infty}{\epsilon_m\i^m\cos(m\theta)R_m(kr)}
+\end{equation}
+where the most general form of $ R_m(kr) $ is the combination of cylindrical Bessel functions:
+\begin{equation}\label{bss}
+    R_m(kr) = A_mJ_m(kr) + B_mN_m(kr)
 \end{equation}
 
-We will subsequently expand this solution into the sum of partial waves and also into the  sum of the Bessel functions.
+We shall subsequently show the asymptotic form of the Bessel functions.
 
 \subsubsection{\textbf{Far away region, Scattered particle}}
 
