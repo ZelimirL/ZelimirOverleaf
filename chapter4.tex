@@ -232,29 +232,22 @@ where
 
 $ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max} $ is the maximum frequency of the emitted photon. Expression \eqref{crs1} is an equivalent expression to the Fermi's Golden Rule. Equation \eqref{diffcrs1} provides the spectrum of the emitted radiation, in addition to the scattering cross section. 
 
-\subsection{Calculation}
+\subsection{Calculation, Phae Shift}
 
-In actual calculation we first start by computing the phase shift $ \delta $ from equation \eqref{remoteWave} which we repeat here.
+In the actual calculation we first start from the form of the radial wave function for the scattered free particle
 \begin{equation}\label{remoteWave2}
-  g^{+}_{m}{(kR)} \sim A_m(kR)^{-1/2}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right],\,\,{R \rightarrow \infty}
+  R_m(r) = C_m\left[\cos \delta_l J_l(kr) + \sin \delta_l N_l(kr)\right]
 \end{equation}
-$ A_m $ is a constant.
 
 Now we need to match the solution in the scattering region, which is obtain numerically with the analytical solution above for the remote region. We also need to match the derivatives. The practical way to do it is to use the logarithmic derivative. We increase the value of R until we observer the convergence of $ \delta $ to some final value.
 
-The logarithmic derivative of \eqref{remoteWave}:
-\begin{equation}
-\begin{split}
-  & \frac{d}{dR}\ln(g^{+}_{m}(kR)) = \\[.8em]
-  & = \frac{-(1/2)k^{(-1/2)}A_m R^{-3/2}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right]-kA_m(kR)^{-1/2}\sin\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right]}{A_m(kR)^{-1/2}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right]}
-\end{split}
-\end{equation}
+The logarithmic derivative of \eqref{remoteWave2}:
 
 \begin{equation}
-  \frac{d}{dR}\ln(g^{+}_{m}(kR)) =  -\frac{1}{2R} - k\tan(kR - \pi\frac{m+1/2}{2} + \delta_m) 
+  \frac{d}{dR}\log(R_m(r) = \frac{\cos \delta_l J_l^{'}(kr) + \sin \delta_l N_l^{'}(kr)}{\cos \delta_l J_l(kr) + \sin \delta_l N_l(kr)}
 \end{equation}
 
-Now this is going yo be matched by the logarithmic derivative of the wavefunction inside the scattering region. Since that function cannot be obtained analytically we need to use numerical methods. So using Mathematica we solve the wave equation \eqref{frrSr} in the scattering potential and perform numberical logarithmic derivative.
+Now this is going to be matched by the logarithmic derivative of the wavefunction inside the scattering region. Since that function cannot be obtained analytically we need to use numerical methods. So using Mathematica we solve the wave equation \eqref{frrSr} in the scattering potential and perform numberical logarithmic derivative.
 
 TODO: add appendix
 The Mathematica code is in Appendix
