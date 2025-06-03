@@ -232,25 +232,25 @@ where
 
 $ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max} $ is the maximum frequency of the emitted photon. Expression \eqref{crs1} is an equivalent expression to the Fermi's Golden Rule. Equation \eqref{diffcrs1} provides the spectrum of the emitted radiation, in addition to the scattering cross section. 
 
-\subsection{Calculation, Phae Shift}
+\subsection{Calculation, Phase Shift}
 
 In the actual calculation we first start from the form of the radial wave function for the scattered free particle
 \begin{equation}\label{remoteWave2}
-  R_m(r) = C_m\left[\cos \delta_l J_l(kr) + \sin \delta_l N_l(kr)\right]
+    R_m(r) = \cos \delta_m(kr) J_m(kr) + \sin \delta_m(kr) N_m(kr)
 \end{equation}
 
 Now we need to match the solution in the scattering region, which is obtain numerically with the analytical solution above for the remote region. We also need to match the derivatives. The practical way to do it is to use the logarithmic derivative. We increase the value of R until we observer the convergence of $ \delta $ to some final value.
 
-The logarithmic derivative of \eqref{remoteWave2}:
-
-\begin{equation}
-  \frac{d}{dR}\log(R_m(r) = \frac{\cos \delta_l J_l^{'}(kr) + \sin \delta_l N_l^{'}(kr)}{\cos \delta_l J_l(kr) + \sin \delta_l N_l(kr)}
+The other practical method and arguably more practical is to follow the Calogero's approach \cite{Calogero}.
+From the equation \eqref{remoteWave2}, the $ \delta_m(r) $ satisfies an differential equation:
+\begin{equation}\label{delta_eq}
+    \frac{d\delta_m}{dr} = -\frac{V(r)}{k}\left[\cos \delta_m(kr) J_m(kr) + \sin \delta_m(kr) N_m(kr)\right]^2
 \end{equation}
 
-Now this is going to be matched by the logarithmic derivative of the wavefunction inside the scattering region. Since that function cannot be obtained analytically we need to use numerical methods. So using Mathematica we solve the wave equation \eqref{frrSr} in the scattering potential and perform numberical logarithmic derivative.
-
-TODO: add appendix
-The Mathematica code is in Appendix
+Now to find the value of $ \delta $ we integrate from some starting point $ r $ to obtain:
+\begin{equation}\label{delta_r}
+    \delta_m = \lim_{r \rightarrow \infty}\delta_m(r)
+\end{equation}
 
 \subsection{Optical Potential Method}
 
