@@ -161,25 +161,25 @@ Born approximation \cite{GQuantum} treats a scattering potential as a perturbati
 
 Again we write the time independent Schroedinger equation in 2D:
 \begin{equation}
-  \left(-\frac{1}{2}\nabla^2\psi + V\psi = E\,\psi
+  -\frac{1}{2}\nabla^2\psi + V\psi = E\,\psi
 \end{equation}
 
-where m is the reduced mass, V is a short-range local poten tial, E is the relative energy.
+where m is the reduced mass, V is a short-range local potential, E is the relative energy.
 
 Using polar coordinates, setting $ k^2 = 2mE $ , we have the equation
-\begin
-\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial\psi(r\theta)}{\partial r}\right)
-\end
+\begin{equation}
+    \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial\psi(r\theta)}{\partial r}\right) + \frac{1}{r^2}
+\end{equation}
 
 We expand the incoming wave in the partial wave basis as:
 \begin{equation}
-e^{ikx} = e^{ikr\cos\theta} = \sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)J_m(kr)
+    e^{ikx} = e^{ikr\cos\theta} = \sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)J_m(kr)}
 \end{equation}
 where $\epsilon_m = 2 $ for $ m \ne 0 $ and $\epsilon_0 = 12 $.
 
 
 We define a scattering length in 2 dimensions,, analogous to the scattering cross section in 3D, as:
-\begin{equation}\label(scatterL}
+\begin{equation}\label{scatterL}
   \lambda(\theta) = |\sqrt{\frac{i}{k}}f_f(\theta)|^2
 \end{equation}
 
@@ -286,7 +286,7 @@ Following the \cite{Dalgarno1953} we then proceed to compute the scattering leng
 
 \begin{equation}
 \begin{split}
-  \lambda = \frac{4}{k}\sum_{m=0}^{\infty}{sin^2(\delta_m^{+}-\delta_m^{i}^{i})}
+  \lambda = \frac{4}{k}\sum_{m=0}^{\infty}{sin^2(\delta_m^{+}-\delta_m^{-})}
 \end{split}
 \end{equation}
 
