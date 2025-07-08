@@ -1,0 +1,116 @@
+%% AMS-LaTeX Created with the Wolfram Language : www.wolfram.com
+
+\documentclass{report}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\begin{document}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\\
+\pmb{\text{(* All atomic units *)}}\\
+\pmb{\mu =1835;\text{   }}\\
+\pmb{\text{mP}=1836;\text{   }\text{(* Proton mass *)}}\\
+\pmb{\text{hbar}= 1;\text{  }}\\
+\pmb{c=137 ;\text{(*}\text{SpeedOfLight}, \text{atomic} \text{units}\text{*)}}\\
+\pmb{\text{(*} 1 \text{kelvin}[K]=8.61732814974056E-05 \text{electron}-\text{volt}[\text{eV}]\text{*)}}\\
+\pmb{\text{(*} 1 \text{Hartree} = 27.2114\text{eV} \text{*)}}\\
+\pmb{\text{R0} = 0.01; \text{(*} \text{Min} \text{distance} \text{between} \text{nuclei}, \text{atomic} \text{units}\text{*)}}\\
+\pmb{ }\\
+\pmb{\text{(* Potential tables for the gerade and ungerade case *)}}\\
+\pmb{\text{vSg1Data}\text{  }= \text{Import}[\text{{``}$\sim $/Work/Physics-Thesis/thesis-2/ZelimirOverleaf/MathematicaCodeFinal/gerade1sV2.mx{''}}];}\\
+\pmb{\text{vSu1Data} = \text{Import}[\text{{``}$\sim $/Work/Physics-Thesis/thesis-2/ZelimirOverleaf/MathematicaCodeFinal/ungerade1sV2.mx{''}}];}\\
+\pmb{}\\
+\pmb{\text{(* Max value of R for calculation *)}}\\
+\pmb{\text{maxR} = 50;}\\
+\pmb{}\\
+\pmb{}\\
+\pmb{\text{(*}\text{vSg1Data} = \text{Prepend}\left[\text{vSg1Data},\left\{0,-8.0, 10^{100},25.8,0,.11\right\}\right];}\\
+\pmb{\text{vSu1Data}=\text{Prepend}\left[\text{vSu1Data},\left\{0,-0.889,\text{  }10^{100},25.81,0.041\right\}\right];\text{*)}}\\
+\pmb{}\\
+\pmb{\text{(* Interpolatte the potential *)}}\\
+\pmb{\text{vGerade}\text{:=}\text{Interpolation}[\text{Transpose}[\{\text{vSg1Data}[[\text{All},1]],\text{vSg1Data}[[\text{All},3]]\}]];}\\
+\pmb{\text{vUngerade} \text{:=}\text{Interpolation}[\text{Transpose}[\{\text{vSu1Data}[[\text{All},1]],\text{vSu1Data}[[\text{All},3]]\}]];}\\
+\pmb{}\\
+\pmb{\text{(*} \text{Calogero}'s \text{differential} \text{equation} \text{to} \text{compute} \text{the} \text{phase} \text{shift} \text{delta} \text{*)}}\\
+\pmb{\text{deltaPrime}[\text{vPotential$\_$},\text{r$\_$},\text{k$\_$},\text{m$\_$},\text{delta$\_$}]\text{:=}\text{Module}[\{\text{Jm},\text{Ym},\text{psi}\},}\\
+\pmb{\text{Jm}=\text{BesselJ}[m,k*r];}\\
+\pmb{\text{Ym}=\text{BesselY}[m,k*r];}\\
+\pmb{\text{psi}=\text{Jm}*\text{Cos}[\text{delta}]-\text{Ym}*\text{Sin}[\text{delta}];}\\
+\pmb{-\text{vPotential}[r]*\text{psi}{}^{\wedge}2/k}\\
+\pmb{];}\\
+\pmb{}\\
+\pmb{\text{(*} \text{Calogero}'s \text{method} \text{to} \text{compute} \text{the} \text{phase} \text{shift} \text{delta} \text{*)}}\\
+\pmb{\text{delta}[\text{deltaPrime$\_$},\text{vPotential$\_$},\text{k$\_$},\text{m$\_$}]\text{:=}\text{Module}[\{\text{solDelta},\text{deltaEq},\text{deltaFinal}\},}\\
+\pmb{\text{(*} \text{Calogero} \text{*)}}\\
+\pmb{\text{solDelta}=\text{NDSolve}[\{\text{deltaEq}'[r]\text{==}\text{deltaPrime}[\text{vPotential},r,k-\text{vPotential}[50],m,\text{deltaEq}[r]],\text{deltaEq}[0.01]\text{==}0\},}\\
+\pmb{\text{deltaEq},\{r,20,50\}];}\\
+\pmb{}\\
+\pmb{\text{deltaFinal}=\text{deltaEq}[50]\text{/.} \text{solDelta}[[1]]\text{//}N;}\\
+\pmb{}\\
+\pmb{\text{deltaFinal}}\\
+\pmb{];}\\
+\pmb{}\\
+\pmb{\text{(* some constants for reference *)}}\\
+\pmb{\text{(*} 1\text{Kelvin} = \text{7.733675709525194$\grave{ }$*${}^{\wedge}$-7} \text{Hartree} \text{*)}}\\
+\pmb{\text{(*} 1 a_0 \left(\text{Bohr} \text{radius} = 5.29177210544*10^{-11}m\right.}\\
+\pmb{1 \text{barn} = 10^{-28 }}\\
+\pmb{1 a^2{}_0=\text{5.29177210544$\grave{ }$*${}^{\wedge}$-22} = \text{{``}5.29177{''}}\times 10^{\text{{``}6{''}}} \text{barn}}\\
+\pmb{ \text{*)}}\\
+\pmb{\text{(*} \text{Scattering} \text{at} \text{around} \text{room} \text{temperature}, 270-310K \text{*)}}\\
+\pmb{\text{(*} k_B = 3.167*10{}^{\wedge}-6\text{  }\left.E_H\right/T (\text{Boltzman}) \text{*)} }\\
+\pmb{\text{(*} k = \sqrt{\frac{2\text{mE}}{\hbar }}\text{*)}}\\
+\pmb{\text{(*} 1 E_H=3.1577464 x 10{}^{\wedge}5 K \text{*)}}\\
+\pmb{\text{(*} 270K = 0.000855 E_H => k = 0.0413531175145633 \text{*)}}\\
+\pmb{\text{(*}300K = 0.00095 E_{H }=> k = 0.0435900132315404 \text{*)}}\\
+\pmb{\vdots }\\
+\pmb{}\\
+\pmb{\text{(* Compute deltas for the gerade and ungerade case *)}}\\
+\pmb{ \text{deltaGer}[\text{k$\_$},\text{m$\_$}]\text{:=} \text{delta}[\text{deltaPrime},\text{vGerade},k,m];}\\
+\pmb{\text{deltaUng}[\text{k$\_$},\text{m$\_$}]\text{:=} \text{delta}[\text{deltaPrime},\text{vUngerade},k,m];}\\
+\pmb{}\\
+\pmb{\text{diff}[\text{k$\_$},\text{m$\_$}]\text{:=}\text{deltaGer}[k,m]-\text{deltaUng}[k,m];}\\
+\pmb{}\\
+\pmb{\text{Plot}\left[\text{diff}\left[\left(k^2\right)*\text{3.1577464*${}^{\wedge}$5} /2, 0\right],\{k,270,300\},\text{AxesLabel}\text{-$>$}\{\text{{``}T
+Temperature (K){''}},\text{{``}Phase Shift Ger, Ung{''}}\},\right.}\\
+\pmb{\text{PlotLabel}\text{-$>$}\text{{``}Phase Shift Gerade $\&$ Ungerade vs Temperature (K){''}}]}\\
+\pmb{}\\
+\pmb{}\\
+\pmb{\text{eps}[\text{m$\_$}]\text{:=}\text{If}[ m\text{==}0,1,2];}\\
+\pmb{}\\
+\pmb{m = 0;}\\
+\pmb{\text{(* Scattering length *)}}\\
+\pmb{\lambda [\text{k$\_$},\text{m$\_$}]\text{:=} \frac{4}{k}\text{Sum}\left[\text{eps}[i](\text{Sin}[\text{deltaGer}[k,i]-\text{deltaUng}[k,i]])^2,\{i,0,m\}\right];}\\
+\pmb{}\\
+\pmb{\text{allLambda}[\text{m$\_$}] \text{:=} \text{Table}[\{k,\lambda [k,m]\} ,\{k,0.0413,0.04359,0.0001\}];}\\
+\pmb{}\\
+\pmb{\text{(* Cross section in atomic units *)}}\\
+\pmb{ \text{crossSections}\text{:=}\text{allLambda}[m] ;}\\
+\pmb{}\\
+\pmb{\text{(* temp in Kelvins *)}}\\
+\pmb{\text{crossSectionsK} \text{:=}\text{Transpose}[\{(\text{crossSections}[[\text{All},1]]{}^{\wedge}2)*\text{3.1577464*${}^{\wedge}$5} /2,\text{crossSections}[[\text{All},2]]\}];}\\
+\pmb{}\\
+\pmb{f=\text{Interpolation}[\text{crossSectionsK},\text{InterpolationOrder}\text{-$>$}2];}\\
+\pmb{f[0.415]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\\
+\pmb{}\\
+\pmb{\text{Plot}[f[x],\{x,\text{crossSectionsK}[[1,1]],\text{crossSectionsK}[[\text{Length}[\text{crossSections}],1]]\},\text{Epilog}\text{-$>$}\text{Point}[\text{crossSections}],}\\
+\pmb{\text{AxesLabel}\text{-$>$}\{\text{{``}T Temperature (K){''}},\text{{``}$\lambda $ (a.u.){''}}\},}\\
+\pmb{\text{PlotLabel}\text{-$>$}\text{{``}Scattering Length (a.u.) vs Temperature (K){''}}]}\\
+\pmb{}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\end{document}
