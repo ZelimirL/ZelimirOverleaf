@@ -136,6 +136,9 @@ The equations \ref{V-1-1} and \ref{V-1-2} provide the first gen equation for the
 We observe that both equations for the functions $ M(\mu) $ and $ F(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
 
 There are actually two ways to try to solve this equation. One would be a brute force, by using some orthogonal polynomial (Laguerre) and looking for the eigenvalues.
+
+The Laguerre approach seems to be numerically unstable. The algorithm is fast but the results are only good to the order of magnitude. 
+
 The second is a bit more algebraic, and likely more accurate.
 
 Following \cite{Bates1} and \cite{H2Plus2d2} we could look for the solution in the form of:
