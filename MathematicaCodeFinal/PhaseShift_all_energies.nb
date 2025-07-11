@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     24493,        576]
-NotebookOptionsPosition[     23800,        557]
-NotebookOutlinePosition[     24247,        575]
-CellTagsIndexPosition[     24204,        572]
+NotebookDataLength[     24548,        575]
+NotebookOptionsPosition[     23855,        556]
+NotebookOutlinePosition[     24302,        574]
+CellTagsIndexPosition[     24259,        571]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -384,8 +384,8 @@ MathematicaCodeFinal/ungerade1sV2.mx\>\"", "]"}]}], ";"}], "\n",
    3.9609730096735353`*^9, 3.960973042862411*^9}, {3.960973133308722*^9, 
    3.960973152464518*^9}, 3.960974095479299*^9, {3.9609741265984917`*^9, 
    3.960974163656726*^9}, {3.9609742737555027`*^9, 3.96097429183387*^9}, 
-   3.960974470373311*^9},ExpressionUUID->"aee9f968-b31e-4b1f-923b-\
-c71e0aa720ec"],
+   3.960974470373311*^9},
+ CellLabel->"In[14]:=",ExpressionUUID->"aee9f968-b31e-4b1f-923b-c71e0aa720ec"],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
@@ -438,52 +438,50 @@ Cell[BoxData[
     RowBox[{"Cross", " ", "section", " ", "in", " ", "atomic", " ", "units"}],
      " ", "*)"}], "\[IndentingNewLine]", " ", 
    RowBox[{
-    RowBox[{"crossSections", ":=", 
+    RowBox[{"scatteringLength", ":=", 
      RowBox[{"allLambda", "[", "m", "]"}]}], " ", ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{"temp", " ", "in", " ", "Kelvins"}], " ", "*)"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"crossSectionsK", " ", ":=", 
+    RowBox[{"scatteringLengthK", " ", ":=", 
      RowBox[{"Transpose", "[", 
       RowBox[{"{", 
        RowBox[{
         RowBox[{
          RowBox[{"(", 
           RowBox[{
-           RowBox[{"crossSections", "[", 
+           RowBox[{"scatteringLength", "[", 
             RowBox[{"[", 
              RowBox[{"All", ",", "1"}], "]"}], "]"}], "^", "2"}], ")"}], "*", 
          
          RowBox[{"3.1577464*^5", " ", "/", "2"}]}], ",", 
-        RowBox[{"crossSections", "[", 
+        RowBox[{"scatteringLength", "[", 
          RowBox[{"[", 
           RowBox[{"All", ",", "2"}], "]"}], "]"}]}], "}"}], "]"}]}], ";"}], 
-   "\n", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{"f", "=", 
      RowBox[{"Interpolation", "[", 
-      RowBox[{"crossSectionsK", ",", 
-       RowBox[{"InterpolationOrder", "->", "2"}]}], "]"}]}], ";"}], 
+      RowBox[{"scatteringLengthK", ",", 
+       RowBox[{"InterpolationOrder", "->", "2"}]}], "]"}]}], ";"}], "\n", 
    "\[IndentingNewLine]", 
-   RowBox[{"f", "[", "0.415", "]"}], "\[IndentingNewLine]", "\n", 
-   "\[IndentingNewLine]", "\n", 
    RowBox[{"Plot", "[", 
     RowBox[{
      RowBox[{"f", "[", "x", "]"}], ",", 
      RowBox[{"{", 
       RowBox[{"x", ",", 
-       RowBox[{"crossSectionsK", "[", 
+       RowBox[{"scatteringLengthK", "[", 
         RowBox[{"[", 
          RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
-       RowBox[{"crossSectionsK", "[", 
+       RowBox[{"scatteringLengthK", "[", 
         RowBox[{"[", 
          RowBox[{
-          RowBox[{"Length", "[", "crossSections", "]"}], ",", "1"}], "]"}], 
-        "]"}]}], "}"}], ",", 
+          RowBox[{"Length", "[", "scatteringLength", "]"}], ",", "1"}], "]"}],
+         "]"}]}], "}"}], ",", 
      RowBox[{"Epilog", "->", 
-      RowBox[{"Point", "[", "crossSections", "]"}]}], ",", 
+      RowBox[{"Point", "[", "scatteringLength", "]"}]}], ",", 
      RowBox[{"AxesLabel", "->", 
       RowBox[{"{", 
        RowBox[{"\"\<T Temperature (K)\>\"", ",", "\"\<\[Lambda] (a.u.)\>\""}],
@@ -541,8 +539,9 @@ Cell[BoxData[
    3.9609730096735353`*^9, 3.960973042862411*^9}, {3.960973133308722*^9, 
    3.960973152464518*^9}, 3.960974095479299*^9, {3.9609741265984917`*^9, 
    3.960974163656726*^9}, {3.9609742737555027`*^9, 3.96097429183387*^9}, {
-   3.960974470373311*^9, 
-   3.9609744904400473`*^9}},ExpressionUUID->"89bb6b61-2a6f-446e-9f34-\
+   3.960974470373311*^9, 3.9609744904400473`*^9}, {3.961104652979247*^9, 
+   3.9611047126714697`*^9}, {3.9611823598001347`*^9, 
+   3.961182363325548*^9}},ExpressionUUID->"89bb6b61-2a6f-446e-9f34-\
 1fddd1070b22"],
 
 Cell[BoxData[""], "Input",
@@ -574,10 +573,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[554, 20, 15442, 367, 1503, "Input",ExpressionUUID->"aee9f968-b31e-4b1f-923b-c71e0aa720ec"],
-Cell[15999, 389, 7486, 156, 556, "Input",ExpressionUUID->"89bb6b61-2a6f-446e-9f34-1fddd1070b22"],
-Cell[23488, 547, 151, 3, 29, "Input",ExpressionUUID->"dd08f5cb-1c32-4dc1-b622-5f7db71f1996"],
-Cell[23642, 552, 154, 3, 29, "Input",ExpressionUUID->"10986f87-68ee-495d-86e5-cf418cacbb33"]
+Cell[554, 20, 15464, 367, 1503, "Input",ExpressionUUID->"aee9f968-b31e-4b1f-923b-c71e0aa720ec"],
+Cell[16021, 389, 7519, 155, 495, "Input",ExpressionUUID->"89bb6b61-2a6f-446e-9f34-1fddd1070b22"],
+Cell[23543, 546, 151, 3, 29, "Input",ExpressionUUID->"dd08f5cb-1c32-4dc1-b622-5f7db71f1996"],
+Cell[23697, 551, 154, 3, 29, "Input",ExpressionUUID->"10986f87-68ee-495d-86e5-cf418cacbb33"]
 }
 ]
 *)
