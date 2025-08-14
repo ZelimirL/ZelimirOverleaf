@@ -84,11 +84,11 @@ Now we use the 2D scatering amplitude from the previous chapter:
 \begin{equation}\label{fgampl}
   f_g(\theta) = \sqrt{\frac{2}{Pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
 \end{equation}
-As the $ f(\theta) $ is not directly observable, we look for the cross section. And we get for the differential cross section, in 2D, we have:
+As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering length. And we get for the differential scattering length, in 2D, we have:
 \begin{equation}
   \theta(\theta) = |\sqrt{i}{k}f_g(\theta)|^2 = \frac{1}{k}|f_g(\theta)|^2 
 \end{equation}
-and the total cross section
+and the total scattering length
 \begin{equation}
 \begin{split}
   & \theta_g = \int_{0}^{2Pi}{d\theta f_g(\theta)} = \frac{2}{Pi}\sum_{m,m'}\int_{0}^{2Pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
@@ -243,15 +243,13 @@ The cross section of the collision induced transition between the $ H $ atom and
 
 The $ H\left(2 \leftidx{^1}{}S\right) \rightarrow H\left(1 \leftidx{^1}{}S\right) $ is a linear combination of $ A \leftidx{1}{}\sigma_u^{+} $ and $ X \leftidx{1}{}\sigma_g^{+} $ states. Since the excited gerade state is not allowed to make a radiative transition to a gerade ground state, the flux in the incident channel is twice the flux in the $ A \leftidx{1}{\sigma_u^{+}} $ channel.
 
-So for the cross section we get:
+So for the scattering length we get:
 \begin{equation}\label{crs1}
 \begin{split}
 & \sigma = \int_0^{\omega_{max}}{d\omega\frac{d\sigma}{d\omega}} = \\[.8em]
 & = \sum_{\alpha}{\int{\frac{d^2k}{(2\pi)^2}\frac{A}{2\mu k_a}\int{d^2k_b\delta\left[\frac{k_b^2}{2\mu} - \frac{k_a^2}{2\mu} + \Delta E - \hbar\omega \right]\left|f_{k\alpha}(\theta) \right| } } }
 \end{split}
 \end{equation}
-
-
 
 where
 \begin{equation}\label{diffcrs1}
@@ -260,7 +258,7 @@ where
 
 $ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max} $ is the maximum frequency of the emitted photon. Expression \eqref{crs1} is an equivalent expression to the Fermi's Golden Rule. Equation \eqref{diffcrs1} provides the spectrum of the emitted radiation, in addition to the scattering cross section. 
 
-\subsection{Calculation, Phase Shift}
+\subsection{Phase Shift Calculation}
 
 \begin{equation}
 \begin{split}
@@ -268,14 +266,13 @@ $ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max
 \end{split}
 \end{equation}
 
-It is now fairly straightforward to compute the scattering cross section. We compute the cross section in the same Mathematica code listed in appendix.
-
+It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Mathematica code listed in appendix E.
 
 The following is the plot of the scattering length in a.u. vs temperature in Kelvin.
 
 \includegraphics{CrossSection1.png}
 
-\subsection{Optical Potential Method}
+\subsection{Optical Potential Method, Dipole Moment and Einstein A Coefficient}
 
 The approximation that does not require the integration over the total spectrum is the optical potential method. 
 
