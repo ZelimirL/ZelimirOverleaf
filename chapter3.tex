@@ -1,8 +1,8 @@
 \chapter{2D Scattering}
 
-  Here we address the scatering in two dimensions and compute the scattering length.
+  Here we address the scattering in two dimensions and compute the scattering length.
 
-  The quantum scattering in 3 dimension is described in numerous textbooks and papers, so we ommit explicitly referencing them here.
+  The quantum scattering in 3 dimension is described in numerous textbooks and papers, so we omit explicitly referencing them here.
 
   Scattering in 2 dimensions follows the same approach as in 3D, with some subtle differences.
   We start with the Schrodinger equation in 2 dimensions, using atomic units:
@@ -11,7 +11,7 @@
   \end{equation}
   where $ \nabla $ is the 2D Laplacian: $ \nabla^2 = \frac{\partial^2 x}{\partial x^2} + \frac{\partial^2 y}{\partial y^2} $
 
-  Switching to polar coordinates and using polar cordinated 2D Laplacian:
+  Switching to polar coordinates and using polar coordinates 2D Laplacian:
   \begin{equation}
       \left[-\frac{\partial^2}{\partial r^2} - \frac{1}{r}\frac{\partial}{\partial r} - \frac{1}{r^2}\frac{\partial^2}{\partial\phi^2} + V(r)\right]\psi(r,\phi) = 2E\ \psi(r,\phi)
   \end{equation}
@@ -96,7 +96,7 @@ The actual $ f(\theta) $ is not observable however it is used to compute differe
 
 In this case we consider the scattering area, where $ V(r) \neq 0 $. In this case we use the potential function $ V(R) $ obtained in chapter 2 and numerically solve the 2D Schrodinger equation. To obtain the phase shift we match the wave function in the scattering region to the wavefunction in the far away region and use the optical theorem.
 
-In this regions the radia Schroeding equation $ F(r) $ has the form:
+In this regions the radial Schrodinger equation $ F(r) $ has the form:
 \begin{equation}\label{frrSr}
 \frac{d^2 F}{dr^2} + \frac{1}{r}\frac{dF}{dr} + \left(k^2 - 2V(r) - \frac{m^2}{r^2}\right)F = 0
 \end{equation}
