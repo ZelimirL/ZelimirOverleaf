@@ -27,6 +27,9 @@ We will model this as a scattering problem, using a Born-Oppenheimer approximati
 
 \subsection*{Length gauge}
 
+
+This is an interesting approach, which could potentially be used in calculation. In this thesis we would nit be using it.
+
 The length gauge is a gauge transformation that replaces the vector potential for the field by the scalar potential for the quasi-static electric field \cite{LengthGauge3}.  In this gauge we take the Hamiltonian as: $ H = \mathbf{p}^2/2m + V(\mathbf{r})  + e\mathbf{E}\mathbf{r} $. The length gauge is convenient since both the Coulomb and the external fields are represented by the scalar potentials, which are additive. In the presence of the radiation field, the length gauge is obtained by the gauge transformation of the vector potential $ \mathbf{A} $, such that $ \mathbf{A} \rightarrow \mathbf{A} + \nabla \chi $ where $ \chi = - \mathbf{r} \cdot \mathbf{A} $. 
 
 In the length gauge, the interaction Hamiltonian is:
@@ -57,7 +60,7 @@ Now given the Hamiltonian for the homonuclear diatom with one electron:
 \end{equation}
 where $ V_a, V_b $ are the electron nucleus Coulomb interaction for the nuclei A and B respectively. The $ \vec{r} $ is the position of the electron and $ \vec{R} $ is the distance between the nuclei.
 
-Asymptoticaly, for large $ |R| $ we have for the Hamiltonian and eigenstates:
+Asymptotically, for large $ |R| $ we have for the Hamiltonian and eigenstates:
 \begin{equation}
 \begin{split} 
   & H_a = -\frac{1}{2}\vec{\nabla}^2 + V_a(\vec{r} - \frac{\vec{R}}{2}) \text{ with the eigenstate: } \Phi_a(\vec{r} - \frac{\vec{R}}{2}) F_a(R) \\
@@ -68,7 +71,7 @@ Asymptoticaly, for large $ |R| $ we have for the Hamiltonian and eigenstates:
 
 From the physics of the system, we have two classes of solution, Gerade and Ungerade. Those correspond to the parity of the electron's wavefunction.
 
-So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotical eigenstates of equation \eqref{hdia}, both gerade and ungerade:
+So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of equation \eqref{hdia}, both gerade and ungerade:
 \begin{equation}
 \begin{split}
   & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
@@ -76,11 +79,11 @@ So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asym
 \end{split}
 \end{equation}
 
-So we now apply the scattering analys for 2D, from the previous chapter, and assume that $ F_g(r) $ at asymptotic distances obeys the 2D conditions:
+So we now apply the scattering analysis for 2D, from the previous chapter, and assume that $ F_g(r) $ at asymptotic distances obeys the 2D conditions:
 \begin{equation}
   F_g(R) \underset{R \rightarrow +\infty}{\sim} e^{ik\ x} + f_g(\theta)\frac{e^{ik\ x}}{\sqrt{R}} 
 \end{equation}
-Now we use the 2D scatering amplitude from the previous chapter:
+Now we use the 2D scattering amplitude from the previous chapter:
 \begin{equation}\label{fgampl}
   f_g(\theta) = \sqrt{\frac{2}{Pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
 \end{equation}
@@ -95,12 +98,12 @@ and the total scattering length
   & = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
 \end{split}
 \end{equation}
-The same dicusion applies for the ungerade solution so we :
+The same discussion applies for the ungerade solution so we :
 \begin{equation}
   \theta_u = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
 \end{equation}
 
-In our case we are not interested in the elastic scattering of the gerade and uungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
+In our case we are not interested in the elastic scattering of the gerade and ungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
 
 Instead we seek the asymptotic form for the difference
 \begin{equation}
@@ -183,7 +186,7 @@ We define a scattering length in 2 dimensions,, analogous to the scattering cros
   \lambda(\theta) = |\sqrt{\frac{i}{k}}f_f(\theta)|^2
 \end{equation}
 
-The equation \eqref{scstterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per seoond per unit incident flux.
+The equation \eqref{scstterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
 
 We can express this function in the partial waves bases. Since $ V_b $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
 \begin{equation}\label{GreenFka2}
@@ -266,7 +269,7 @@ $ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max
 \end{split}
 \end{equation}
 
-It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Mathematica code listed in appendix E.
+It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Wolfram Mathematica code listed in appendix E.
 
 The following is the plot of the scattering length in a.u. vs temperature in Kelvin.
 
@@ -403,10 +406,10 @@ Graph of the Einstein-A coefficient as function of R.
 
 The paper by Dalgarno and  M R C McDowell \cite{DalgarnoMcDowel} reports that the charge transfer cross sections decrease from $ 2\times 10^{-14} cm^2 $ at an impact energy of 1 eV to $ 0.3\times 10^{-14} cm^2 $ at 1000 eV and the diffusion cross sections lead to values of the mobility of H- ions in atomic hydrogen decreasing from $ 3.5\,cm^2\,volt^{-1}\,sec^{-1} $ at 100°K to i$ 1.8\,cm^2\,volt^{-1}\,sec^{-1} $ at 600°K.
 
-Also the paper by B. Zygelman et all \cite{ZL} in the ultracold limit shows values of $ A(R)$ in the order of $ 10^6\,s^{-1} $.
+Also the paper by B. Zygelman et all \cite{ZL} in the ultra-cold limit shows values of $ A(R)$ in the order of $ 10^6\,s^{-1} $.
 
 In our case, we observer significantly larger values $ A(R) $. This is due to two factors.
 
-1. In 2D, the difference in potential between the gerate and ungerated states $ X^2\Sigma^+ $, $ A^2\Sigma^+ $ respectively is smaller than in the 3D case, so the probability of a transition is greater.
+1. In 2D, the difference in potential between the gerade and ungerade states $ X^2\Sigma^+ $, $ A^2\Sigma^+ $ respectively is smaller than in the 3D case, so the probability of a transition is greater.
 
-2. The temperature is higher in our calculation. Zygelman et all \cite{ZL} are showing that in the ultracod limit the Einstein coefficients $ A(R) $ are in the order of $ 10^6\, sec^{-1} $.
+2. The temperature is higher in our calculation. Zygelman et all \cite{ZL} are showing that in the trickled limit the Einstein coefficients $ A(R) $ are in the order of $ 10^6\, sec^{-1} $.
