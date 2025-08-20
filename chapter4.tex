@@ -87,11 +87,7 @@ Now we use the 2D scattering amplitude from the previous chapter:
 \begin{equation}\label{fgampl}
   f_g(\theta) = \sqrt{\frac{2}{Pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
 \end{equation}
-As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering length. And we get for the differential scattering length, in 2D, we have:
-\begin{equation}
-  \theta(\theta) = |\sqrt{i}{k}f_g(\theta)|^2 = \frac{1}{k}|f_g(\theta)|^2 
-\end{equation}
-and the total scattering length
+As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering length. And we get for the scattering length, in 2D:
 \begin{equation}
 \begin{split}
   & \theta_g = \int_{0}^{2Pi}{d\theta f_g(\theta)} = \frac{2}{Pi}\sum_{m,m'}\int_{0}^{2Pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
@@ -100,7 +96,7 @@ and the total scattering length
 \end{equation}
 The same discussion applies for the ungerade solution so we :
 \begin{equation}
-  \theta_u = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
+  \theta_u = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^u}
 \end{equation}
 
 In our case we are not interested in the elastic scattering of the gerade and ungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
@@ -358,33 +354,58 @@ We use the code in appendixE for calculating the phase shift $ \eta $, from the 
 
 One has to pay attention when calculating the $ D(R) $. Following \cite{DRZygelman} we have:
 \begin{equation}
-D(\vec{R}) = \Braket{\psi(\vec{r}) | (-1)\mid e \mid\,\vec{r} | \psi(\vec{r})} - |e|\vec{R}
+D(\vec{R}) = \Braket{\psi_u(\vec{r}) | (-1)\mid e \mid\,\vec{r} | \psi_g(\vec{r})} - |e|\vec{R}
 \end{equation}
-Where the $ \psi(\vec{r}) $ is the electron eigenstate and $ \vec{r} $ is the electron coordinate. 
-From the symmetry argument we can deduce \cite{DRZygelman} that the components of $ D(\vec{R}) $ along the $ x $ axis vanis ~\ref{fig:electronCoordinates}. So the remaining components is along the
+Where the $ \psi_g(\vec{r}) $ and $ \psi_u(\vec{r}) $ are the electron gerade and ungerade eigenstates respectively and $ \vec{r} $ is the electron coordinate. 
+Because of the symmetry of the $ H_2^+ $ ion we can deduce that the dipole moment vanishes for the $ g \leftrightarrow g $ and $ u \leftrightarrow u $ transitions. This is consistent with the dipole selection rule, where allowed dipole transitions are those between states of opposite parity.
+
+Einstein A-coefficients define the probability per unit time of spontaneous emission (radiative decay) from state $ b $ to a lower state $ A $
+
+The lifetime $ \tau$ of an excited state is the inverse of the total A-coefficient summed over all possible downward transitions
+Knowing the dipole transition moment $ D(R) $ we can compute the Einstein $ A $ coefficient for the lowest ungerade and gerade state:
+\begin{equation}
+  A(R) = \frac{4}{3\hbar}D^2(R)\frac{\left|V_u(R) - V_g(R)\rightr|^3}{c^3}
+\end{equation}
+
+
+Using the optical theorem we solve for the partial wave $ f_m $ which is the solution of the 2D radial homogenous equation:
+\begin{equation}
+  \{\frac{d^2}{dR^2} + \frac{1}{R}\frac{d}{dR} - \frac{m^2}{R^2} + 2\mu\left[V_i(R) - V_i(\infty)\right] + k_i^2\} f_i(R) = 0
+\end{equation}
+where $ \mu $ is the collision system reduced mass, and $ k_a $ and $ k_b $  are enter and exit momenta respectivelu given by:
+\begin{equation}
+k_a = \sqrt{2\mu(E - V_a(\infty)}
+\end{equation}
+\begin{equation}
+k_b = \sqrt{2\mu(E - `V_b(\infty) - \hbar\omega}
+\end{equation}
+
+
+
+From the symmetry argument we can deduce \cite{DRZygelman} that the components of $ D(\vec{R}) $ along the $ x $ axis vanish ~\ref{fig:electronCoordinates}. So the remaining components is along the
 $ z $ axis, connecting the two nuclei. So we get:
 \begin{equation}\label{zz}
-D(R) = \Braket{\psi(\vec{r}) | (-1)\mid e \mid\,z | \psi(\vec{r})} - |e|R
+D(R) = \Braket{\psi(\vec{r}) | (-1)\mid e \mid\,z | \psi(\vec{r})} - |e|R/
 \end{equation}
-We use the elliptical coordinates $ \theta $ and $ \mu $ from \eqref{variables1}, \eqref{variables2}, appendix C and figure ~\ref{fig:electronCoordinates}.
-So to solve the integral \eqref{zz} we start from the original definition on the elliptic coordinates
+We use the elliptical coordinates $ \xi $ and $ \mu $ from \eqref{variables1}, \eqref{variables2}, appendix C and figure ~\ref{fig:electronCoordinates}.
+So to solve the integral \eqref{zz} we start from the original definition on the geometric elliptic coordinates
 \begin{equation}
-z = \frac{R}{2}\cosh\eta\cos\nu\,\,\,\, y = \frac{R}{2}\sinh\eta\sin\nu  \Rightarrow\,\,\,\,\theta = \cosh\eta;\,\,\,\mu=\cos\nu  \Rightarrow z=-\frac{R}{2}\theta\mu
+z = \frac{R}{2}\cosh\eta\cos\nu\,\,\,\, y = \frac{R}{2}\sinh\eta\sin\nu  \Rightarrow\,\,\,\,\xi = \cosh\eta;\,\,\,\mu=\cos\nu  \Rightarrow z=-\frac{R}{2}\xi\mu
 \end{equation}
 and divide the $ z $ axis into 3 regions (avoiding the singularities at $ -1 $ and $ 1 $ ).
 \begin{equation}
 \begin{split}
-&1:-\infty < z \le -1:\,\eta > 0,\nu = \pi: \Rightarrow \theta > 1, \mu = -1 \\[.3em]
-&2:-1 < z \le 0:\,\eta = 0,\nu = [0,\pi]: \Rightarrow \theta = 1, \mu = [-1,1] \\[.3em]
-&3:1 < z < \infty:\,\eta > 0,\nu = 0: \Rightarrow \theta > 1, \mu = 1 
+&1:-\infty < z \le -1:\,\eta > 0,\nu = \pi: \Rightarrow \xi > 1, \mu = -1 \\[.3em]
+&2:-1 < z \le 0:\,\eta = 0,\nu = [0,\pi]: \Rightarrow \xi = 1, \mu = [-1,1] \\[.3em]
+&3:1 < z < \infty:\,\eta > 0,\nu = 0: \Rightarrow \xi > 1, \mu = 1 
 \end{split}
 \end{equation}
 So finally for the $ D(R) $ we have 3 integrals:
 \begin{equation}
 \begin{split}
-& \int_{-\infty}^{-1}{d\theta\,\left[L(\theta)M(\mu=-1)\right]^{*}\left(-\frac{R}{2}\right)\theta\, L(\theta)M(\mu=-1)} \\[.5em]
-& \int_{-1}^{1}{d\mu\,\left[L(\theta=1)M(\mu)\right]^{*}\left(-\frac{R}{2}\right)\mu\, L(\theta=1)M(\mu)} \\[.5em]
-& \int_{1}^{\infty}{d\theta\,\left[L(\theta)M(\mu=1)\right]^{*}\left(-\frac{R}{2}\right)\theta\, L(\theta)M(\mu=1)}
+& \int_{-\infty}^{-1}{d\xi\,\left[L(\xi)M(\mu=-1)\right]^{*}\left(-\frac{R}{2}\right)\xi\, L(\xi)M(\mu=-1)} \\[.5em]
+& \int_{-1}^{1}{d\mu\,\left[L(\xi=1)M(\mu)\right]^{*}\left(-\frac{R}{2}\right)\mu\, L(\xi=1)M(\mu)} \\[.5em]
+& \int_{1}^{\infty}{d\xi\,\left[L(\xi)M(\mu=1)\right]^{*}\left(-\frac{R}{2}\right)\xi\, L(\xi)M(\mu=1)}
 \end{split}
 \end{equation}
 
