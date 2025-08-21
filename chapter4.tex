@@ -361,55 +361,13 @@ Because of the symmetry of the $ H_2^+ $ ion we can deduce that the dipole momen
 
 Einstein A-coefficients define the probability per unit time of spontaneous emission (radiative decay) from state $ b $ to a lower state $ A $
 
-The lifetime $ \tau$ of an excited state is the inverse of the total A-coefficient summed over all possible downward transitions
+The lifetime $ \tau = \frac{1}{A(R)} $ of an excited state is the inverse of the total A-coefficient summed over all possible downward transitions.
 Knowing the dipole transition moment $ D(R) $ we can compute the Einstein $ A $ coefficient for the lowest ungerade and gerade state:
 \begin{equation}
   A(R) = \frac{\pi}{\hbar\epsilon_0}D^2(R)\frac{\left|V_u(R) - V_g(R)\right|^2}{c^2}
 \end{equation}
 
-
-Using the optical theorem we solve for the partial wave $ f_m $ which is the solution of the 2D radial homogenous equation:
-\begin{equation}
-  \{\frac{d^2}{dR^2} + \frac{1}{R}\frac{d}{dR} - \frac{m^2}{R^2} + 2\mu\left[V_i(R) - V_i(\infty)\right] + k_i^2\} f_i(R) = 0
-\end{equation}
-where $ \mu $ is the collision system reduced mass, and $ k_a $ and $ k_b $  are enter and exit momenta respectivelu given by:
-\begin{equation}
-k_a = \sqrt{2\mu(E - V_a(\infty)}
-\end{equation}
-\begin{equation}
-k_b = \sqrt{2\mu(E - `V_b(\infty) - \hbar\omega}
-\end{equation}
-
-
-
-From the symmetry argument we can deduce \cite{DRZygelman} that the components of $ D(\vec{R}) $ along the $ x $ axis vanish ~\ref{fig:electronCoordinates}. So the remaining components is along the
-$ z $ axis, connecting the two nuclei. So we get:
-\begin{equation}\label{zz}
-D(R) = \Braket{\psi(\vec{r}) | (-1)\mid e \mid\,z | \psi(\vec{r})} - |e|R/
-\end{equation}
-We use the elliptical coordinates $ \xi $ and $ \mu $ from \eqref{variables1}, \eqref{variables2}, appendix C and figure ~\ref{fig:electronCoordinates}.
-So to solve the integral \eqref{zz} we start from the original definition on the geometric elliptic coordinates
-\begin{equation}
-z = \frac{R}{2}\cosh\eta\cos\nu\,\,\,\, y = \frac{R}{2}\sinh\eta\sin\nu  \Rightarrow\,\,\,\,\xi = \cosh\eta;\,\,\,\mu=\cos\nu  \Rightarrow z=-\frac{R}{2}\xi\mu
-\end{equation}
-and divide the $ z $ axis into 3 regions (avoiding the singularities at $ -1 $ and $ 1 $ ).
-\begin{equation}
-\begin{split}
-&1:-\infty < z \le -1:\,\eta > 0,\nu = \pi: \Rightarrow \xi > 1, \mu = -1 \\[.3em]
-&2:-1 < z \le 0:\,\eta = 0,\nu = [0,\pi]: \Rightarrow \xi = 1, \mu = [-1,1] \\[.3em]
-&3:1 < z < \infty:\,\eta > 0,\nu = 0: \Rightarrow \xi > 1, \mu = 1 
-\end{split}
-\end{equation}
-So finally for the $ D(R) $ we have 3 integrals:
-\begin{equation}
-\begin{split}
-& \int_{-\infty}^{-1}{d\xi\,\left[L(\xi)M(\mu=-1)\right]^{*}\left(-\frac{R}{2}\right)\xi\, L(\xi)M(\mu=-1)} \\[.5em]
-& \int_{-1}^{1}{d\mu\,\left[L(\xi=1)M(\mu)\right]^{*}\left(-\frac{R}{2}\right)\mu\, L(\xi=1)M(\mu)} \\[.5em]
-& \int_{1}^{\infty}{d\xi\,\left[L(\xi)M(\mu=1)\right]^{*}\left(-\frac{R}{2}\right)\xi\, L(\xi)M(\mu=1)}
-\end{split}
-\end{equation}
-
-Here is the graph of the Transition Dipole Moment between the states $ 1s^{+} $ and $ 2p^{+} $.
+The graph of the Transition Dipole Moment between the states $ 1s^{+} $ and $ 2p^{+} $.
 
 \includegraphics{DR-SI.png}
 
