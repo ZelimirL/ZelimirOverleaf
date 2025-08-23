@@ -351,13 +351,19 @@ Also because the right hand of \eqref{optV2} is small, we can use the distorted 
 \subsection{Calculation} \label{QuenchingCalculation}
 
 We use the code in appendixE for calculating the phase shift $ \eta $, from the equation \eqref{eta1}.
-
-One has to pay attention when calculating the $ D(R) $. Following \cite{DRZygelman} we have:
+First we calculate the $ D(R) $. Following \cite{DRZygelman} we have:
 \begin{equation}
 D(\vec{R}) = \Braket{\psi_u(\vec{r}) | (-1)\mid e \mid\,\vec{r} | \psi_g(\vec{r})} - |e|\vec{R}
 \end{equation}
 Where the $ \psi_g(\vec{r}) $ and $ \psi_u(\vec{r}) $ are the electron gerade and ungerade eigenstates respectively and $ \vec{r} $ is the electron coordinate. 
 Because of the symmetry of the $ H_2^+ $ ion we can deduce that the dipole moment vanishes for the $ g \leftrightarrow g $ and $ u \leftrightarrow u $ transitions. This is consistent with the dipole selection rule, where allowed dipole transitions are those between states of opposite parity.
+
+In our case, the dipole integral is:
+\begin{equation}
+  \int{d\xi d\eta\,L_u^*(\xi)M_u^*(\eta)\xi \eta L_g(\xi)M_g(\eta)\frac{\xi^2-\eta^2}{sqrt{\xi^2-1}\sqrt{1-\eta^2}}}
+\end{equation}
+
+Using the dipole moment we compute the Einsten A-coefficient.
 
 Einstein A-coefficients define the probability per unit time of spontaneous emission (radiative decay) from state $ b $ to a lower state $ A $
 
