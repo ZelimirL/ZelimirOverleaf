@@ -78,7 +78,7 @@ The second term in the equation above represents the operator expression.
 
 In the equations above, $ \mathbf{R}_i,\,\, i = 1,2 $ and $ M $ represents the coordinates and mass of the nuclei (protons) $1,2$ respectively, and $ \mathbf{x} $ and $ m $ are the coordinates and mass of the electron, respectively. Coordinates are defined with respect to a common origin in a space fixed frame.
 
-It is convenient to separate the motion of the center of mass from the motion of the point particles. A similar approach can be applied for the quantum case. We show in Appendix A that the motion of the center of mass will be a plane wave, which possess a well defined momentum and which is not square integrable. That makes the position of the center of mass equally probable in the hole space, which agrees with the Heisenberg uncertainty principle.
+It is convenient to separate the motion of the center of mass from the motion of the point particles. A similar approach can be applied for the quantum case. We show in Appendix A that the motion of the center of mass will be a plane wave, which possess a well defined momentum and which is not square integrable. That makes the position of the center of mass equally probable in the all space, and confirms with the Heisenberg uncertainty principle.
 
 In the appendix A we define $ \chi(\mathbf{R}) $ as the wavefunction representing the motion of the nuclei. We then  obtain:
 \begin{equation}
@@ -150,8 +150,10 @@ So at this step, we neglect the nuclear kinetic energy, effectively rendering th
 Now the equation \eqref{u} is the Schrodinger equation where $ u( \mathbf{R}; \mathbf{r} ) $ is the wavefunction for the electron with its coordinate $ \textbf{r} $ and parameter $ \textbf{R} $. Electron is moving in the potential $ V(\mathbf{R};\mathbf{r})$ with the coordinate $ \mathbf{r} $ .  The electron's wavefunction $ u( \mathbf{R},\mathbf{r} ) $ and the energy $ E(\mathbf{R}) $ both depend on the position of the nuclei $ \mathbf{R} $ as a parameter. The last step in Born-Oppenheimer approximation is to solve the Schrodinger equation for the nuclei, using the above calculated $ E(\mathbf{R}) $ as a potential energy, which leads to a following equation.
 
 \begin{equation}\label{v}
-\left[ -\frac{1}{2}\nabla_R^2 + E(\mathbf{R}) \right] v( \mathbf{R} ) = \epsilon  v( \mathbf{R} )
+\left[ -\frac{1}{2}\nabla_R^2 + E(\mathbf{R}) \right] v( \mathbf{R} ) = \epsilon\,v( \mathbf{R} )
 \end{equation}
+
+where $ R $ is the internuclear distance.
 
 Once these operations are carried, the Born-Oppenheimer approximation states that the energy $ \epsilon $ is a good approximation of the energy levels of the exact Schrodinger equation \eqref{sch1}
  As a result, the total molecular wave function is separated into the electronic and the nuclear wavefunction.
@@ -208,7 +210,7 @@ an
 \frac{d}{d\lambda}\left\{(\lambda^2-1)\frac{dL}{d\lambda}\right\} + \left\{A + 2R\lambda - p^2\lambda^2 -\frac{m^2}{\lambda^2-1} \right\}L = 0 
 \end{equation}
 
-In \cite{Bates1}, Bates et al. state that they used the method of successive approximation to found the coefficients in the series. It was tacitly assumed that the successive approximation themselves converge. The approximation is terminated either when the desired precision is achieved of when the certain number of approximation is met. However the details of the numerical calculation are not provided in the paper.
+In \cite{Bates1}, Bates et al. state that they used the method of successive approximation to find the coefficients in the series. It was tacitly assumed that the successive approximation themselves converge. The approximation is terminated either when the desired precision is achieved of when the certain number of approximation is met. However the details of the numerical calculation are not provided in the paper.
 
 \subsection{Differential Operator Spectrum}
 
@@ -225,7 +227,7 @@ So with these assumptions, operators $ D^{1,2} $ can be approximated by the fini
 Here we replicate the solution of Bates et. all. \cite{Bates1}\cite{Bates2}, by using a more of a brute force approach. The idea is to numerically calculate the spectrum of a differential operator to a desired precision
 We expressed equations \eqref{m3d},\eqref{l3d} as a matrix eigenvalue problem. 
 The system \eqref{m3d},\eqref{l3d} of the two ODEs then depend on the two parameters, total energy $ E $, and the separation constant $ A $. The problem is reduced to finding those values of $ E $ and $ A $ for which the solution to the differential equation satisfy the requisite boundary conditions. 
-Since it is a  Sturm-Liouville problem, or more precisely a system of two Sturm-Liouville problems, our approach is fundamentally the same approach as taken by Bates. but it is more practical, as it can better accommodate the existing numerical software. There exist excellent numerical packages \cite{Lapack1} for computing the matrix eigenvalues, and they greatly simplify the actual computation.
+Since it is a  Sturm-Liouville problem, or more precisely a system of two Sturm-Liouville problems, our approach is fundamentally the same approach as taken by Bates. but it is more practical, as it can better accommodate the existing numerical software. There exist excellent numerical packages (Lapack) \cite{Lapack1} for computing the matrix eigenvalues, and they greatly simplify the actual computation. The Fortran code in appendix D uses Lapack library to compute eigenvalues.
 
 We express both function $ M(\mu) $ and $ L(\lambda) $ using the set of orthogonal functions which satisfy the boundary conditions. We then follow the method of Frobenius. Once we replace the assumed solution into the equation and after some algebra, we obtain effectively two uncoupled, infinite systems of equations, where the unknowns are the coefficients in the solution series. The solution vector depends on the two parameters, $ p $, which is the function of energy and $ A $ which is the separation constant. 
 
@@ -295,7 +297,7 @@ This expression \eqref{bandL} is  a system of linear equations, where the unknow
 
 \subsection{M  Equation}
 
-We the same approach for the M equation.
+We use the same approach for the M equation.
 
 \begin{equation}\label{M1-2}
 \begin{split}
