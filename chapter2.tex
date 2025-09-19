@@ -4,7 +4,7 @@
 
 We apply similar method used in the 3D case of the $ H_2^{+} $ ion to find the solution in 2 dimensions. The problem itself is analogous to the 3D problem, but leads to the Mathieu's function as the solution for the radial problem.
 
-There are not too many papers dealing with solving the $ H_2^{+} $ but here is some relevant, and recent work in this problem. In addition to the Bates paper \cite{Bates1}, there are other, more recent papers \cite{H2Plus2d1} \cite{TwoCentersParticle}, \cite{Kolos} which deal with the solution of the Schrodinger equation and spectrum of the $ H_2^{+} $ molecule.  As with other work in this problem, the paper relies on the work done by Bates et all. \cite{Bates1}. The solution in \cite{H2Plus2d1} agrees well with our solution.  One can also apply approximate methods, but they should be considered inferior to the analytical solution, we provide here. 
+There are not too many papers dealing with solving the $ H_2^{+} $ but here is some relevant, and recent work in this problem. In addition to the Bates paper \cite{Bates1}, there are other, more recent papers \cite{H2Plus2d1} \cite{TwoCentersParticle}, \cite{Kolos} which deal with the solution of the Schrodinger equation and spectrum of the $ H_2^{+} $ molecule in 3 dimensions.  As with other work in this problem, the paper relies on the work done by Bates et all. \cite{Bates1}. The solution in \cite{H2Plus2d1} agrees well with our solution.  One can also apply approximate methods, but they should be considered inferior to the analytical solution, we provide here. 
 
 Analogous to the 3D case, we rely on Born-Oppenheimer (BO) approximation, in order to provide an analytical solution. The same justification for using the BO approximation in 3D molecular systems applies to the 2D problems as well, since the masses of the nuclei and electron(s) remain unchanged.  Following the same BO approximation as in Chapter 1, and using atomic units, the Schrodinger equation for the $ H_2^{+} $ molecules is given by equation \eqref{eqPartial2D} below. 
 
@@ -145,8 +145,8 @@ Following \cite{Bates1} and \cite{H2Plus2d2} we could look for the solution in t
 \begin{equation}\label{eqLsumG}
 L(\lambda) = \left(\lambda +1\right)^\sigma e^{-p\lambda}\sum_{n=0}^{\infty}{a_nx^n}
 \end{equation}
-with
-\begin{equation}
+where we use the substitution
+\begin{equation}\label{eqLG}
 \begin{split}
 \sigma = \frac{R}{p} - \frac{1}{2}
 \end{split}
@@ -155,7 +155,7 @@ with
 x = \frac{\lambda-1}{\lambda+1}
 \end{split}
 \end{equation}
-Substituting \eqref{eqLsumG} into \eqref{eqLG} and after some formidable algebra, we get a recurrence relation:
+Substituting \eqref{eqLG} into \eqref{eqLsumG} and after some formidable algebra, we get a recurrence relation:
 \begin{equation}
 \alpha_na_{n+1}-\beta_n a_n+\gamma_na_{n-1} = 0\,\,\,\,\,n \ge 0
 \end{equation}
@@ -182,7 +182,9 @@ Since $ a_{-1} = 0$ we have
 \frac{\beta_0}{\alpha_0} = F_1
 \end{equation}
 
-The Mathematica code is in appendix C. The energies calculated and the plot of the potential for the states $1s_g^{+}$ and $ 2s_g^{+} $ are in the tables below.
+The Mathematica code is in appendix C. The energies calculated and the plot of the potential for the states $1s_g^{+}$ and $ 2p_u^{+} $ are in the tables below.
+
+The states  $ 1s_g $ and $ 2p_u^{+} $ represent the Gerade ground state and the Ungerade state respectively.
 
     \begin{table}[h!]
   \caption{ The separation constant A, electronic energy E}{total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the inter-nuclear separation R }
@@ -219,7 +221,7 @@ The Mathematica code is in appendix C. The energies calculated and the plot of t
     \end{table}
 
 \begin{table}[h!]
-  \caption{ The separation constant A, electronic energy E}{ total energy $ E + \frac{1}{R} $ , for the state $ 1p_g $ for some values of the inter-nuclear separation R } 
+  \caption{ The separation constant A, electronic energy E}{ total energy $ E + \frac{1}{R} $ , for the state $ 2p_u^{+} $ for some values of the inter-nuclear separation R } 
   \centering
   \label{2sg}
 		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
@@ -265,5 +267,5 @@ The Mathematica code is in appendix C. The energies calculated and the plot of t
 
 \begin{figure}
   \includegraphics{	H2_sGpU-Potential.png}
-  \caption{$ H_2^{+} $ Potential curves for the $1s_g^{+} \text{and} 2p_u^{+} $ states}
+  \caption{$ H_2^{+} $ Potential curves for the $ 1s_g^{+}\,\, \text{and}\,\, 2p_u^{+} $ states}
 \end{figure}
