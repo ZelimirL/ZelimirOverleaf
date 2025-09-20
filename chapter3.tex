@@ -6,6 +6,7 @@
 
   Scattering in 2 dimensions follows the same approach as in 3D, with some subtle differences.
   We start with the Schrodinger equation in 2 dimensions, using atomic units:
+
   \begin{equation}\label{2DS1}
       \left(-\frac{1}{2}\nabla^2 + V(\mathbf{r})\right)\psi(\mathbf{r}) = E\psi(\mathbf{r})
   \end{equation}
@@ -174,7 +175,7 @@ Now to find the value of $ \delta $ we integrate from some starting point $ r $ 
     \delta_m = \lim_{r \rightarrow \infty}\delta_m(r) 
 \end{equation}
 
-Following the \cite{Dalgarno1953} we then proceed to compute the scattering length. We choose the 'room' temperature range.
+Following the \cite{Dalgarno1953} we then proceed to compute the scattering length. We compute the scattering length in the limit of $ T \rightarrow 0 $.
 
 The Mathematica code that computes the phase shift and the cross section  is in appendix E.
 
