@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    197264,       3798]
-NotebookOptionsPosition[    196125,       3772]
-NotebookOutlinePosition[    196536,       3789]
-CellTagsIndexPosition[    196493,       3786]
+NotebookDataLength[    197313,       3799]
+NotebookOptionsPosition[    196174,       3773]
+NotebookOutlinePosition[    196585,       3790]
+CellTagsIndexPosition[    196542,       3787]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1207,8 +1207,8 @@ Cell[BoxData[
        RowBox[{"0", ",", "0"}], "}"}]}], ",", 
      RowBox[{"PlotLabel", "->", 
       RowBox[{
-      "{", "\"\<Electron vs Total potential for 1sG (Gerade) state\>\"", 
-       "}"}]}], ",", " ", 
+      "{", "\"\<Electron vs Total potential for 1sG (Gerade) state, in a.u.\>\
+\"", "}"}]}], ",", " ", 
      RowBox[{"PlotLabels", "->", 
       RowBox[{"Placed", "[", 
        RowBox[{
@@ -1266,8 +1266,8 @@ Cell[BoxData[
        RowBox[{"0", ",", "0"}], "}"}]}], ",", 
      RowBox[{"PlotLabel", "->", 
       RowBox[{
-      "{", "\"\<Electron vs Total potential for 2pU (Ungerade) state\>\"", 
-       "}"}]}], ",", " ", 
+      "{", "\"\<Electron vs Total potential for 2pU (Ungerade) state, in a.u.\
+\>\"", "}"}]}], ",", " ", 
      RowBox[{"PlotLegends", "->", 
       RowBox[{"{", 
        RowBox[{"\"\<E(R)\>\"", ",", "\"\<E(R)+1/R\>\""}], "}"}]}]}], "]"}], 
@@ -1292,8 +1292,8 @@ Cell[BoxData[
        RowBox[{"0", ",", "0"}], "}"}]}], ",", 
      RowBox[{"PlotLabel", "->", 
       RowBox[{
-      "{", "\"\<Total potential for Gerade and Ungerade states\>\"", "}"}]}], 
-     ",", " ", 
+      "{", "\"\<Total potential for Gerade and Ungerade states, in a.u.\>\"", 
+       "}"}]}], ",", " ", 
      RowBox[{"PlotLegends", "->", 
       RowBox[{"{", 
        RowBox[{
@@ -1417,8 +1417,9 @@ Cell[BoxData[
    3.950494080027671*^9, 3.950494110923711*^9}, 3.9504942017512703`*^9, {
    3.950531762267521*^9, 3.950531826179147*^9}, {3.950531871476673*^9, 
    3.950531895033677*^9}, {3.966379624783777*^9, 3.966379637680624*^9}, {
-   3.9663826993343697`*^9, 3.966383024816207*^9}},
- CellLabel->"In[66]:=",ExpressionUUID->"1246f9c8-47da-49b6-bc58-d73fb936c68c"],
+   3.9663826993343697`*^9, 3.966383024816207*^9}, {3.9673195318641663`*^9, 
+   3.9673195457351513`*^9}},ExpressionUUID->"1246f9c8-47da-49b6-bc58-\
+d73fb936c68c"],
 
 Cell[BoxData[
  GraphicsBox[{{{}, {}, 
@@ -3771,7 +3772,7 @@ wif5O+XsMmUGpCpuFJLrz4rOTHmY4zdBUaQfszzxlP8HNq1AXQ==
 }, Open  ]]
 },
 Evaluator->"Test",
-WindowSize->{851, 737},
+WindowSize->{926, 761},
 WindowMargins->{{Automatic, 46}, {Automatic, 0}},
 FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
@@ -3789,16 +3790,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 23104, 476, 1410, "Input",ExpressionUUID->"dfaf1b06-d62c-4c57-9a04-0fc1c7d28a36"],
+Cell[580, 22, 23104, 476, 1430, "Input",ExpressionUUID->"dfaf1b06-d62c-4c57-9a04-0fc1c7d28a36"],
 Cell[23687, 500, 10487, 271, 1131, "Output",ExpressionUUID->"e8bcbb3c-6d87-44b2-801b-111870ccfb40"],
 Cell[34177, 773, 10404, 266, 1131, "Output",ExpressionUUID->"94efd060-92a9-4018-9ce6-f13bb304ba64"]
 }, Open  ]],
 Cell[44596, 1042, 9266, 141, 111, "Input",ExpressionUUID->"5ded515d-1d7b-4cac-83d5-b3e855c078a4"],
 Cell[CellGroupData[{
-Cell[53887, 1187, 12686, 233, 397, "Input",ExpressionUUID->"1246f9c8-47da-49b6-bc58-d73fb936c68c"],
-Cell[66576, 1422, 18817, 347, 254, "Output",ExpressionUUID->"0b8bc036-8dcf-4bf7-aa14-83c572e3e9f3"],
-Cell[85396, 1771, 52934, 958, 259, "Output",ExpressionUUID->"37d94582-bc16-4b24-a81c-2d4ac94feda8"],
-Cell[138333, 2731, 57776, 1038, 252, "Output",ExpressionUUID->"13e2797f-8c35-43ad-ae8c-df2a4dbb9007"]
+Cell[53887, 1187, 12735, 234, 397, "Input",ExpressionUUID->"1246f9c8-47da-49b6-bc58-d73fb936c68c"],
+Cell[66625, 1423, 18817, 347, 254, "Output",ExpressionUUID->"0b8bc036-8dcf-4bf7-aa14-83c572e3e9f3"],
+Cell[85445, 1772, 52934, 958, 259, "Output",ExpressionUUID->"37d94582-bc16-4b24-a81c-2d4ac94feda8"],
+Cell[138382, 2732, 57776, 1038, 252, "Output",ExpressionUUID->"13e2797f-8c35-43ad-ae8c-df2a4dbb9007"]
 }, Open  ]]
 }
 ]
