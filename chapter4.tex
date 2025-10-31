@@ -83,7 +83,37 @@ with:
 \end{equation}
 where $ E $ is the energy of the nuclear motion in the center of mass frame, and $ \underline{I} $ is the identity matrix. The matrix $ \mathbf{P}_{ij} $ represents the non-adiabatic coupling, the $ \mathbf{A}_{ij} $ is the ETF correction, and the $ V_i(R) $ is the potential energy of the $ i $th Born-Oppenheimer state.
 
+In all the Charge Transfer Calculation the common step is to first compute the Dipole transition moment. We do it here, but in 2 dimensions.
 
+\subsubsection{Dipole Transition in 2 Dimension}
+
+The $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A^2\Sigma^{+} $, \begin{equation}
+\begin{split}
+& D(R) = \Braket{\psi_1(R) | r_1 +  r_2 | \psi_0(R) } \,\,\,\,\,\text{ where in our case : } \\[.8em] 
+& r_1 + r_2 = \lambda\, R
+\end{split}
+\end{equation}
+
+Now the 2 dimension case comes into effect. I consider the case where the particle (electron in this case) is confined in 2 dimensions, but where the underlying space is still 3 dimensional, Euclidean. Thus while particle's movement is confined in 2D, it can radiate photons in any direction in 3D.
+
+TODO: Add appendix for the radiation in 1D and 2D.
+
+With the separation of variable, the solution is a product of two function. So the integral above come t0o:
+\begin{equation}\label{Dint1}
+\begin{split}
+& D(R) = \int_{-1}^{1}{\int_{1}^{\infty}{ d\mu\, d\lambda\, M_u(\mu)L_u(\lambda)\lambda R M_g(\mu)L_g(\lambda) }}
+\end{split}
+\end{equation}
+where $ M_uL_u $ and $ M_gL_g $ are the odd/even solutions to the original Schrodinger equation \eqref{eqH1}. 
+
+Since the functions $ M(\mu)$ and $L(\lambda) $ do not exist in the closed form, the dipole integral \eqref{Dint1}  is numerically calculated using Wolfram Mathematica.  First the two Mathematica modules (functions) are created, which solve the equations $ L(\lambda) $ and $ M(\mu) $, as function of the internuclear distance $ R $ and corresponding variables. Then the second module calculates the integral above,  as the function of $ R $.
+ 
+The Mathematica code for the dipole is in appendix TODO: add code and indicate that I wrote it. :)
+
+From the table TODO: add reference one could calculate the spectrum of these transitions.  For the electron to transition from $ A^2\Sigma^{+} $ to $ X^2\Sigma^{+} $ level, it needs to emit photon $ \Delta E \approx  -3.2\,au = 0.1176 eV $, so the corresponding wavelength is $ \lambda \approx   380\,nm $  TODO: Verify the numbers.
+TODO: verify the depth of the potential well compared to the paper \cite{H2Plus2d1}
+
+TODO: Possible spectrum of such transitions
 
 Here is the Mathematica plot of the potential curves from the 2 nuclei. This is 
 
