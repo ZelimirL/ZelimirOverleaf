@@ -96,17 +96,17 @@ The $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A
 
 Now the 2 dimension case comes into effect. I consider the case where the particle (electron in this case) is confined in 2 dimensions, but where the underlying space is still 3 dimensional, Euclidean. Thus while particle's movement is confined in 2D, it can radiate photons in any direction in 3D.
 
-TODO: Add appendix for the radiation in 1D and 2D.
-
-With the separation of variable, the solution is a product of two function. So the integral above come t0o:
-\begin{equation}\label{Dint1}
-\begin{split}
-& D(R) = \int_{-1}^{1}{\int_{1}^{\infty}{ d\mu\, d\lambda\, M_u(\mu)L_u(\lambda)\lambda R M_g(\mu)L_g(\lambda) }}
-\end{split}
+Following \cite{DRZygelman} we have:
+\begin{equation}
+D(\vec{R}) = \Braket{\psi_u(\vec{r}) | (-1)\mid e \mid\,\vec{r} | \psi_g(\vec{r})} - |e|\vec{R}
 \end{equation}
-where $ M_uL_u $ and $ M_gL_g $ are the odd/even solutions to the original Schrodinger equation \eqref{eqH1}. 
+Where the $ \psi_g(\vec{r}) $ and $ \psi_u(\vec{r}) $ are the electron gerade and ungerade eigenstates respectively and $ \vec{r} $ is the electron coordinate.
+Because of the symmetry of the $ H_2^+ $ ion we can deduce that the dipole moment vanishes for the $ g \leftrightarrow g $ and $ u \leftrightarrow u $ transitions. This is consistent with the dipole selection rule, where allowed dipole transitions are those between states of opposite parity.
 
-Since the functions $ M(\mu)$ and $L(\lambda) $ do not exist in the closed form, the dipole integral \eqref{Dint1}  is numerically calculated using Wolfram Mathematica.  First the two Mathematica modules (functions) are created, which solve the equations $ L(\lambda) $ and $ M(\mu) $, as function of the internuclear distance $ R $ and corresponding variables. Then the second module calculates the integral above,  as the function of $ R $.
+In our 2D case, the dipole integral is:
+\begin{equation}
+  \int{d\xi d\eta\,L_u^*(\xi)M_u^*(\eta)\xi \eta L_g(\xi)M_g(\eta)\frac{\xi^2-\eta^2}{sqrt{\xi^2-1}\sqrt{1-\eta^2}}}
+\end{equation}
  
 The Mathematica code for the dipole is in appendix TODO: add code and indicate that I wrote it. :)
 
@@ -432,19 +432,6 @@ Also because the right hand of \eqref{optV2} is small, we can use the distorted 
 \subsection{Calculation} \label{QuenchingCalculation}
 
 We use the code in appendixE for calculating the phase shift $ \eta $, from the equation \eqref{eta1}.
-First we calculate the $ D(R) $. Following \cite{DRZygelman} we have:
-\begin{equation}
-D(\vec{R}) = \Braket{\psi_u(\vec{r}) | (-1)\mid e \mid\,\vec{r} | \psi_g(\vec{r})} - |e|\vec{R}
-\end{equation}
-Where the $ \psi_g(\vec{r}) $ and $ \psi_u(\vec{r}) $ are the electron gerade and ungerade eigenstates respectively and $ \vec{r} $ is the electron coordinate. 
-Because of the symmetry of the $ H_2^+ $ ion we can deduce that the dipole moment vanishes for the $ g \leftrightarrow g $ and $ u \leftrightarrow u $ transitions. This is consistent with the dipole selection rule, where allowed dipole transitions are those between states of opposite parity.
-
-In our case, the dipole integral is:
-\begin{equation}
-  \int{d\xi d\eta\,L_u^*(\xi)M_u^*(\eta)\xi \eta L_g(\xi)M_g(\eta)\frac{\xi^2-\eta^2}{sqrt{\xi^2-1}\sqrt{1-\eta^2}}}
-\end{equation}
-
-Using the dipole moment we compute the Einsten A-coefficient.
 
 Einstein A-coefficients define the probability per unit time of spontaneous emission (radiative decay) from state $ b $ to a lower state $ A $
 
