@@ -54,6 +54,37 @@ In the length gauge, the interaction Hamiltonian is:
 \end{equation}
 where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
 
+
+In our calcution we use the Born-Oppenheimer approximation to compute the charge transfers
+
+\subsection{Application of the Born-Oppenheimer (BO) approximation}
+
+Following \cite{Zygelman89}  employ the Born-Oppenheimer (BO) approximation. We expand the scattering wave function in the terms of BO wave functions, adding the electronic translation factor.
+If we set $ \chi_i^a(\mathbf{R}) $ to the be wave function of the nuclear motion in the electronic state $ i $, we get for the wavefunction:
+\begin{equation}
+\Psi(\mathbf{r},\mathbf{R}) = \sum_i{exp\left[\frac{1}{\mu}\mathbf{S}\cdot\nabla_R \right]\phi(\mathbf{r},\mathbf{R}) }\chi_i^a(\mathbf{R})
+\end{equation}
+with $ \mu $ being the reduced mass, and
+\begin{equation}
+S = \frac{1}{2}f_i(\mathbf{r},\mathbf{R})\mathbf{r}
+\end{equation}
+where $ f_i $s are the switching functions that incorporate the molecular character of the ETF.
+The equations for the $ \chi_i^a(\mathbf{R}) $ can be obtained in a matrix form:
+\begin{equation}
+\left\{-\frac{1}{2\mu}\left[\underline{I}\nabla_R - i(\underline{\mathbf{P}} + \underline{\mathbf{A}})\right]^2 + \underline{V}\right\}\underline{\chi}^a(\mathbf{R}) = E\underline{\chi}^a(\mathbf{R})
+\end{equation}
+with:
+\begin{equation}\label{matrixFactors1}
+\begin{split}
+& \mathbf{P}_{ij} = \Braket{\phi_i | -i\nabla_R | \phi_j} \\*
+& \mathbf{A}_{ij} = i(E_i - E_j)\Braket{\phi_i | \mathbf{S} | \phi_j} \\*
+& V_{ij}(R) = \delta_{ij}V_i(R)
+\end{split}
+\end{equation}
+where $ E $ is the energy of the nuclear motion in the center of mass frame, and $ \underline{I} $ is the identity matrix. The matrix $ \mathbf{P}_{ij} $ represents the non-adiabatic coupling, the $ \mathbf{A}_{ij} $ is the ETF correction, and the $ V_i(R) $ is the potential energy of the $ i $th Born-Oppenheimer state.
+
+
+
 Here is the Mathematica plot of the potential curves from the 2 nuclei. This is 
 
 \includepdf[pages=-]{Vgraph.pdf}
