@@ -122,9 +122,37 @@ In the same manner, we obtain the BO energy for the ungerade BO state,
 \psi_{u}({\bf r},{\bf R}) =\frac{1}{\sqrt{2 (1- S(R) )}}\int d^2 {\bf r} \, \Bigl ( \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) \Bigr ).
 \end{equation}
 
+\subsubsection{Long Range Behavior of $E(R)$ }
+
+Although the LCAO approximation given above correctly predicts the asymptotic energy
+$ E(R) \rightarrow -2  $ as $ R \rightarrow \infty $, it does not accurately predic the long range behavior of $E(R).$ To that end we note that as $ R \rightarrow \infty $,
+\begin{equation}
+V({\bf r},{\bf R}) + 1/R \rightarrow -\frac{1}{r}-\frac{z}{R^2} + \frac{x^2-2 z^2}{2 R^3} + \dots
+\end{equation}
+where $z$ is the electronic coordinate along the direction ${\bf R}$, and we ignored terms that contain higner inverse powers of $R$. Thus the Hamiltonian
+\begin{equation}
+H \approx H_{0} -\frac{z}{R^2} + \frac{x^2-2 z^2}{2 R^3} + \dots
+\end{equation}
+where $H_{0}$ is the hamiltonion for the 2D hydrogen atom. Making use of perturbation theory,
+\begin{equation}
+E(R) \approx E_{0} + E^{(1)}(R) + E^{(2)}(R) + \cdots
+\end{equation}
+and
+\begin{equation}
+E^{(1)} = - \frac{\langle \psi_{1s} |z| \psi_{1s} \rangle }{R^2}
++  \frac{\langle \psi_{1s} |(x^2-2 z^2)| \psi_{1s} \rangle }{2 R^3}  =0
+\end{equation}
+The lowest non-vanishing contribution arises from second-order perturbation theory
+\begin{equation}
+  \begin{split}
+& E^{(2)} = -\frac{C_{4}}{R^4}  \nonumber \\
+& C_{4} = \sum_{n} \frac{|\langle \psi_{1s} |z | \psi_{n} \rangle |^{2} }{E_{1s} - E_{n} }
+  \end{split}
+\end{equation}
+The polarization constant $C_{4} =0.082 $ was given in Ref. (Yang. et al. Eq. 2.42; 2.43)
 
 
-
+HEREHERE
 
 Here is the Mathematica plot of the potential curves from the 2 nuclei. This is 
 
