@@ -153,138 +153,140 @@ The polarization constant $C_{4} =0.082 $ was given in Ref. (Yang. et al. Eq. 2.
 
 \section{Elastic Scattering}
 In the PSS (perturbed stationary state) approximation, and after factoring out the center of mass coordinates, the system wave amplitude is given by the expression
-\beq
+\begin{equation}
 \psi_{g}({\bf R}) \phi_{g}({\bf R},{\bf r}) + \psi_{u}({\bf R}) \phi_{u}({\bf R},{\bf r})
 \label{0.00}
-\eeq
+\end{equation}
 where $ \phi_{u,g}({\bf R},{\bf r}) $ are, respectively, the gerade and ungerade electronic ground BO eigenstates
 and $\psi_{g}({\bf R}), \psi_{u}({\bf R}) $ are the gerade and
 un-gerade amplitudes for the relative motion of the atom and projectile. The amplitudes satisfy the following
-\beq
+\begin{equation}
 -\frac{1}{2 \mu} {\bf \nabla^2} \psi_{u,g}({\bf R}) + V_{u,g}(R)
 \psi_{u,g}({\bf R}) = E \, \psi_{u,g}({\bf R})
 \label{0.01}
-\eeq
+\end{equation}
 where $ E = k^2/2\mu $ is the collision energy, and $ V_{u,g} $
 are the Born-Oppenheimer potentials for the gerade and ungerade
 electronic states respectively. Here $ {\bf \nabla}^2 $ is the two-dimensional Laplacian, and because $ V_{g,u}(R) $ are rotationally invariant, we can express the amplitudes as a partial wave expansion
-\beq
+\begin{equation}
 \psi_{g,u}({\bf R}) = \sum_{m=-\infty}^{m=\infty} \, \exp(i m \phi) F^{\, g,u}_{m}(R)
-\eeq
+\end{equation}
 where the radial functions $F_{m}(R)$ obey
-\beq
+\begin{equation}
 F_{m}''(R) + \frac{F'_{m}}{R} - \frac{m^2}{R^2} F_{m}(R) + (k^2 - 2 \mu V_{g,u}(R)) F_{m}(R) =0
-\eeq
+\end{equation}
 where we suppressed the $g,u$ superscripts in the radial functions, and the prime notation denotes derivatives with respect to $R$.
 
 In the asymptotic region as $ R \rightarrow \infty $ and $ V_{g,u} \rightarrow 0$,
 Eq. (xx) tends to the Bessel equation for integer order, and the radial solutions tend to
-\beq
+\begin{equation}
 F_{m}(R)\rightarrow a_{m} \, J_{|m|}(k R) +
 b_{m} H^{(1)}_{|m|}(k R)
-\eeq
+\end{equation}
 where $J_{m}(k R)$ is the regular Bessel function
 and $ H^{1}_{m}(k R) $ is a Hankel function of the first kind,
 and $a_{m},b_{m} $ are constants. We impose the boundary condition
-\beq
+\begin{equation}
 \psi({\bf R}) \rightarrow \exp(i \, k R \, \cos\phi)
 + f(\phi) \, \frac{\exp(i \, k  R)}{\sqrt{R}} .
-\eeq
+\end{equation}
 Using the identity (check this),
-\beq
+\begin{equation}
 \exp(i k R \cos\phi) = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) \exp(i m \phi)
-\eeq
-\beq
+\end{equation}
+\begin{equation}
 \exp(i k R \cos\phi) = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) \exp(i m \phi)
-\eeq
+\end{equation}
 we set $ a_{m} = -i^{-|m|}$ and inserting into (xx)
 we get
-\beq
-&& \psi({\bf R}) \rightarrow \exp(i \, k R \, \cos\phi)+ \nonumber \\
-&& \frac{\exp( i k R)}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
+\begin{equation}
+  \begin{split}
+ \psi({\bf R}) \rightarrow \exp(i \, k R \, \cos\phi)+ \nonumber \\
+ \frac{\exp( i k R)}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
 (-1)^{(m+1)} \exp(- i \frac{\pi}{4}) \exp(i m \phi) \,b_{m}
-\eeq
+  \end{split}
+\end{equation}
 where we used the asymptotic form
-\beq
+\begin{equation}
 H^{(1)}_{m} \rightarrow \sqrt{\frac{2}{\pi k R}} \,
 \exp\left (i \, (k \, R -\frac{m \pi}{2} -\frac{\pi}{4}) \right ).
-\eeq
+\end{equation}
 We can solve for the coefficients $b_{|m|}$ by matching the radial logarithmic derivative
-\beq
+\begin{equation}
 y_{m} \equiv \frac{F'_{m}}{F_{m}}
-\eeq
+\end{equation}
 evaluated at a cutof distance $R_{c}$ so that the ratio
-\beq
+\begin{equation}
 i^{-|m|} \, \frac{J'_{|m|} - y_{m} \, J_{|m|} }{ \, H'^{(1)}_{|m|} - y_{m} \, H^{(1)}_{|m|} }
-\eeq
+\end{equation}
 tends to a constant value $b_{|m|} $ at $ R>R_{c}.$
 
 Using the expression
-\beq
+\begin{equation}
 {\bf j} = Re \Bigl [-i/\mu \, \psi^{*}({\bf R}){\nabla }\psi^{*}({\bf R})  \Bigr ]
-\eeq
+\end{equation}
 where ${\bf \nabla}$ is the two-dimensional gradient operator for the probability current, we obtain for the incident current
 along the $z-$ direction
-\beq
+\begin{equation}
 j_{inc} = \frac{ k}{\mu}
-\eeq
+\end{equation}
 and
 for the leading order term of outgoing radial current
-\beq
+\begin{equation}
 j_{r} = \frac{k}{R \mu } f^{*}(\phi)f(\phi)
-\eeq
-\beq
+\end{equation}
+\begin{equation}
 j_{r} = \frac{k}{R \mu } f^{*}(\phi)f(\phi)
-\eeq
+\end{equation}
 Defining the cross section as the ratio of particle flux scattered into the region $ R \, d \phi $ centered at angle $\phi$ with the incident current $j_{inc}$, we get
-\beq
+\begin{equation}
 d\sigma   \equiv   |f(\phi)|^2 \, d\phi
-\eeq
+\end{equation}
 Comparing (xx) with (xx)  we find that
-\beq
+\begin{equation}
 f(\phi) =
 \sqrt{\frac{2}{\pi k}} \sum_{m}
 (-1)^{(m+1)} \exp(- i \frac{\pi}{4}) \exp(i m \phi) \,b_{|m|}
-\eeq
+\end{equation}
 Thus
-\beq
+\begin{equation}
 \sigma= \int_{0}^{2\pi} d\phi \, \frac{d\sigma}{d \phi} =
 \int_{0}^{2\pi} d\phi |f(\phi)|^2 =
 \frac{4}{k} \sum_{m} |b_{|m|}|^2
-\eeq
+\end{equation}
 Alternatively, the constant $ b_{m} $ is sometimes expressed as a phase shift.
 
 \subsection{Resonant Charge Transfer Cross
 Sections }
 Consider the amplitude given by expression (xx)
-\beq
+\begin{equation}
 F({\bf R},{\bf r}) = \psi_{g}({\bf R}) \phi_{g}({\bf R},{\bf r}) + \psi_{u}({\bf R}) \phi_{u}({\bf R},{\bf r})
-\eeq
+\end{equation}
 In the limit as $ R \rightarrow \infty$,
-\beq
+\begin{equation}
 F \rightarrow \psi_{g}({\bf R}) \frac{1}{\sqrt{2}} (\phi_{a} + \phi_{b} ) +
 \psi_{u}({\bf R}) \frac{1}{\sqrt{2}} (\phi_{a} - \phi_{b} )
-\eeq
+\end{equation}
 where
-\beq
+\begin{equation}
 \phi_{a} \equiv \psi_{1s}({\bf r}-{\bf R}/2)
 \quad \phi_{b} \equiv \psi_{1s}({\bf r}+{\bf R}/2)
-\eeq
+\end{equation}
 Now imposing the boundary conditions
-\beq
+\begin{equation}
 \psi_{g,u}({\bf R}) \rightarrow
 \exp(i k R \cos\phi) + f_{g,u}(\phi) \frac{\exp(i k R)}{\sqrt{R}}
-\eeq
+\end{equation} 
 we get
 we get
-\beq
+\begin{equation}
 F \rightarrow \sqrt{2}\exp(i k R \cos\phi)\phi_{a}
 + \frac{1}{\sqrt{2}} (f_{g}(\phi)+f_{u}(\phi))  \phi_{a}  + \frac{1}{\sqrt{2}} (f_{g}(\phi)-f_{u}(\phi))  \phi_{b}
-\eeq
+\end{equation} 
 So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $\phi_{b} $ channel (i.e. resonant charge transfer) is given by
-\beq
+\begin{equation}
 \sigma_{RCT}= \frac{1}{4} \, \int_{0}^{2 \pi} |f_{g}(\phi)-f_{u}(\phi) |^2 = \frac{1}{k} \sum_{m} \Bigl |b^{(g)}_{|m|} - b^{(u)}_{|m|} \Bigr |^2
-\eeq
+\end{equation}
 where $ b^{(g,u)}_{|m|} $ are the elastic
 scattering coefficients for the gerade and ungerade potentials, respectively. (please check if correct e.g. see paper by Dalgarno and Yadav) (Algorithm for producing them is given in the enclosed Mathematica code, g-phase.nb (for gerade potential) )
 
