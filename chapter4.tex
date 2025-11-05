@@ -90,7 +90,7 @@ where $C(R)$ is a normalization factor so that
 \end{equation}
 or,
 \begin{equation}
-C(R) = \frac{1}{\sqrt{2 (1+ S(R) )}} \quad S(R) \equiv \int d^2 {\bf r} \, \psi_{1s}({\bf r}) \psi_{1s}({\bf r}+{\bf R})
+C(R) = \frac{1}{\sqrt{2 (1+ S(R) )}} \quad S(R) \equiv \int d^2 {\bf r} \, \psi_{1s}({\bf r}) \psi_{1s}({\bf r}+{\bf R}) \label{eq:soverlap}
 \end{equation}
 We now evaluate the expectation values $ \langle V \rangle $ of
 the potential
@@ -214,7 +214,10 @@ Graphical comparison of the accurate vs LCAO potential for the ungerade state.
 \includegraphics{"Vg-Vs-LCAO-good.png"}
 
 Unlike for the gerade state, in the ungerade case the LCAO is quite a good approximation to the accurate potential.
+The reason is the symmetries of the gerade and ungerade states and the overlap integral \eqref{eq:soverlap}. In the ungerade case we have $ \psi_{u}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $ which makes $ 1 - S \approx 1 $.\\
+It follows that the orbital are close to being orthogonal, which makes LCAO approximation more accurate.\\
 
+In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}+{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $
 
 \subsubsection{Long Range Behavior of $E(R)$ }
 
@@ -384,11 +387,13 @@ So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $
 where $ b^{(g,u)}_{|m|} $ are the elastic
 scattering coefficients for the gerade and ungerade potentials, respectively. (please check if correct e.g. see paper by Dalgarno and Yadav) (Algorithm for producing them is given in the enclosed Mathematica code, g-phase.nb (for gerade potential) )
 
+In figures Figure~\ref{fig:prob_lcao} we illustrate the gerade and ungerade probability densities as a function of internuclear separation0.
 
-
-HEREHERE
-
-Here is the Mathematica plot of the potential curves from the 2 nuclei. This is 
+begin{figure}[h!]
+  \includegraphics[scale=1.7]{birds.jpg}
+  \caption{The birds}
+  \label{fig:birds}
+\end{figure}
 
 \includepdf[pages=-]{Vgraph.pdf}
 
