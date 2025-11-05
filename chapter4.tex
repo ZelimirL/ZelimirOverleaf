@@ -122,6 +122,100 @@ In the same manner, we obtain the BO energy for the ungerade BO state,
 \psi_{u}({\bf r},{\bf R}) =\frac{1}{\sqrt{2 (1- S(R) )}}\int d^2 {\bf r} \, \Bigl ( \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) \Bigr ).
 \end{equation}
 
+In Table \ref{tab:lcaotab} we show the accurate vs LCAO values for the gerada state.
+
+\begin{table}[ht]
+  \caption{Accurate LCAO Energy as Function or R (internuclear distance) for the gerade state}
+  \centering
+  \label{tab:lcaotab}
+  \begin{tabular}{ m{4em} m{4em} m{4em} }
+    \hline
+    R & E(R) + V(R) accurate  &  E(R) + V(R) LCAO \\ \hline \hline
+    0.2 & -1.50328 & 1.11882 \\
+ 0.3 & -2.48639 & -0.436367 \\
+ 0.4 & -2.77548 & -1.14571 \\
+ 0.5 & -2.8382 & -1.51849 \\
+ 0.6 & -2.81481 & -1.72704 \\
+ 0.7 & -2.75759 & -1.84613 \\
+ 0.8 & -2.68852  & -1.91333 \\
+ 0.9 & -2.61749 -1.94936 \\
+ 1. & -2.54904 & -1.96642 \\
+ 1.1 & -2.4852 & -1.97198 \\
+ 1.5 & -2.28416 & -1.95159 \\
+ 2. & -2.13638 & -1.9237 \\
+ 2.5 & -2.0621 & -1.91727 \\
+ 3. & -2.02753 & -1.9224 \\
+ 3.5 & -2.01226 & -1.93066 \\
+ 4. & -2.00568  & -1.93856 \\
+ 4.5 & -2.00284 & -1.94523 \\
+ 5. & -2.00156 & -1.95066 \\
+ 6 & -2.00065 & -1.95882 \\
+ 7 & -2.00036 & -1.96462 \\
+ 8 & -2.00023 & -1.96898 \\
+ 9 & -2.00016 & -1.97238 \\
+    10 & -2.00012 &  -1.97512 \\
+    11 & -2.00009  & -1.97736 \\
+    12 & -2.00006 & -1.97924 \\
+  \hline
+   \end{tabular}
+\end{table}
+
+Graphical comparison of the accurate vs LCAO potential for the gerade state.
+
+\includegraphics{"Vg-Vs-LCAO-good.png"}
+
+This can be easier observed in the enchanced plot:
+
+\includegraphics{"Vg-Vs-LCAO-2.png"}
+
+Above graphs shows accurate gerade potentials (red dots), versus the ones obtained with the simplistic LCAO method described above.
+We can observe that for $ R > 10 $ there is fair agreement; not so good for $ R < 10 $. This is a reasonable result as the LCAO including only the ground state orbital is a poor description in the molecular region.
+
+We now show the same comparison for the ungeradate state in Table \ref{tab:lcaoutab} we show the accurate vs LCAO values for the ungerada state.
+
+\begin{table}[ht]
+  \caption{Accurate and LCAO Energy as Function or R (internuclear distance) for the ungerade state}
+  \centering
+  \label{tab:lcaotab}
+  \begin{tabular}{ m{4em} m{4em} m{4em} }
+    \hline
+    R & E(R) + V(R) accurate  &  E(R) + V(R) LCAO \\ \hline \hline
+    0.2 & 4.15868  & 2.01244 \\
+ 0.3 & 2.42148 & 0.534181 \\
+    0.4 & 1.46676  & -0.186921 \\
+ 0.5 & 0.798837 & -0.617186 \\
+ 0.6 & 0.273983 & -0.905274 \\
+ 0.7 & -0.153558 & -1.11241 \\
+ 0.8 & -0.502669 & -1.26834 \\
+ 0.9 & -0.786143 & -1.38934 \\
+ 1. & -1.01521 & -1.48521 \\
+ 1.1 & -1.1999 & -1.56225 \\
+ 1.5 & -1.64494 & -1.75286 \\
+ 2. & -1.86744 & -1.85654 \\
+ 2.5 & -1.95029 & -1.90027 \\
+ 3. & -1.98193 & -1.92094 \\
+ 3.5 & -1.99399 & -1.93255 \\
+ 4. & -1.99845 & -1.94038 \\
+ 4.5 & -2. & -1.94638 \\
+ 5. & -2.00046 & -1.95129 \\
+ 6 & -2.00049 & -1.95897 \\
+ 7 & -2.00034 & -1.96465 \\
+ 8 & -2.00023  & -1.96899 \\
+ 9 & -2.00016 & -1.97239 \\
+ 10 & -2.00012 & -1.97512 \\
+ 11 & -2.00009 & -1.97736 \\
+ 12 & -2.00007  & -1.97923 \\
+  \hline
+   \end{tabular}
+\end{table}
+
+Graphical comparison of the accurate vs LCAO potential for the ungerade state.
+
+\includegraphics{"Vg-Vs-LCAO-good.png"}
+
+Unlike for the gerade state, in the ungerade case the LCAO is quite a good approximation to the accurate potential.
+
+
 \subsubsection{Long Range Behavior of $E(R)$ }
 
 Although the LCAO approximation given above correctly predicts the asymptotic energy
