@@ -217,7 +217,32 @@ Unlike for the gerade state, in the ungerade case the LCAO is quite a good appro
 The reason is the symmetries of the gerade and ungerade states and the overlap integral \eqref{eq:soverlap}. In the ungerade case we have $ \psi_{u}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $ which makes $ 1 - S \approx 1 $.\\
 It follows that the orbital are close to being orthogonal, which makes LCAO approximation more accurate.\\
 
-In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}+{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $
+In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}+{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $. In this case we have $ 1 + S > S $. In this case the LCAO orbits are much less orthogonal, so the overlapp error becomes much greater.
+
+In the following figures we show the atomic orbitals for the gerade and ugerade case as a function of the internuclear distance R.
+
+%\includepdf[pages=-,pagecommand=\subsubsection{Gerade potentials as function of the internuclear distance R},offset=0 -1.5cm]{Ger-Lcao-Graphs.pdf}
+
+\begin{figure}[hbtp]
+  \centering
+  \text{Gerade}
+  \includegraphics[width=1.2\textwidth]{Ger-Lcao-Graphs.pdf}
+\end{figure}
+\begin{figure}[hbtp]
+  \text{Gerade in 3D}
+  \includegraphics[width=1\textwidth]{Ger-Lcao-3D-Graphs.pdf}
+\end{figure}
+\vspace*{-1\baselineskip}
+\begin{figure}[hbtp]
+  \centering
+  \text{Ungerade}
+  \includegraphics[width=1.2\textwidth]{UnGer-Lcao-Graphs.pdf}
+\end{figure}
+\begin{figure}[hbtp]
+  \includegraphics[width=1.2\textwidth]{UnGer-Lcao-3D-Graphs.pdf}
+\end{figure}
+
+%\includepdf[pages=-,pagecommand=\subsubsection{Ungerade potentials as function of the internuclear distance R}, offset=0 -1.5cm]{UnGer-Lcao-Graphs.pdf}
 
 \subsubsection{Long Range Behavior of $E(R)$ }
 
@@ -386,10 +411,6 @@ So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $
 \end{equation}
 where $ b^{(g,u)}_{|m|} $ are the elastic
 scattering coefficients for the gerade and ungerade potentials, respectively. (please check if correct e.g. see paper by Dalgarno and Yadav) (Algorithm for producing them is given in the enclosed Mathematica code, g-phase.nb (for gerade potential) )
-
-In figures Figure~\ref{fig:prob_lcao} we illustrate the gerade and ungerade probability densities as a function of internuclear separation0.
-
-\includepdf[pages=-]{Vgraph.pdf}\label{fig:prob_lcao}
 
 \chapter{The Radiative Quenching \texorpdfstring{$ H_2^+ $}{$H_2^+$}  Ion Atom Collisions in 2D Space} 
 \label{chp:quenching}
