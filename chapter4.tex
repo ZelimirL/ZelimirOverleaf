@@ -77,7 +77,7 @@ Orbital interactions: orbitals can only mix (form nonzero overlap/hybridize) if 
 \subsubsection{LCAO}
 The ground state pression gives amplitude for the 2-dimensional hydrogen atom \cite{YangXL}
 \begin{equation}
-\psi_{1s}({\bf r}) =\frac{4}{\sqrt{2 \pi}}\exp(-2 \, r)
+\psi_{1s}({\bf r}) =\frac{4}{\sqrt{2 \pi}}e^{-2 \, r}
 \end{equation}
 where $ r = |{\bf r}|$. In the LCAO method, an approximate description of the 2D gerade molecule $H_{2}i $, for internuclear separation ${\bf R}$ is given by
 \begin{equation}
@@ -287,7 +287,7 @@ where $ E = k^2/2\mu $ is the collision energy, and $ V_{u,g} $
 are the Born-Oppenheimer potentials for the gerade and ungerade
 electronic states respectively. Here $ {\bf \nabla}^2 $ is the two-dimensional Laplacian, and because $ V_{g,u}(R) $ are rotationally invariant, we can express the amplitudes as a partial wave expansion
 \begin{equation}
-\psi_{g,u}({\bf R}) = \sum_{m=-\infty}^{m=\infty} \, \exp(i m \phi) F^{\, g,u}_{m}(R)
+\psi_{g,u}({\bf R}) = \sum_{m=-\infty}^{m=\infty} \, e^{i m \phi} F^{\, g,u}_{m}(R)
 \end{equation}
 where the radial functions $F_{m}(R)$ obey
 \begin{equation}
@@ -305,29 +305,29 @@ where $J_{m}(k R)$ is the regular Bessel function
 and $ H^{1}_{m}(k R) $ is a Hankel function of the first kind,
 and $a_{m},b_{m} $ are constants. We impose the boundary condition
 \begin{equation}
-\psi({\bf R}) \rightarrow \exp(i \, k R \, \cos\phi)
-+ f(\phi) \, \frac{\exp(i \, k  R)}{\sqrt{R}} .
+\psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}
++ f(\phi) \, \frac{e^{i \, k  R}}{\sqrt{R}} .
 \end{equation}
 Using the identity ,
 \begin{equation}
-\exp(i k R \cos\phi) = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) \exp(i m \phi)
+e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
 \end{equation}
 \begin{equation}
-\exp(i k R \cos\phi) = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) \exp(i m \phi)
+e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
 \end{equation}
 we set $ a_{m} = -i^{-|m|}$ and inserting into (xx)
 we get
 \begin{equation}
   \begin{split}
- \psi({\bf R}) \rightarrow \exp(i \, k R \, \cos\phi)+ \nonumber \\
- \frac{\exp( i k R)}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
-(-1)^{(m+1)} \exp(- i \frac{\pi}{4}) \exp(i m \phi) \,b_{m}
+    \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \\
+ \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
+(-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
   \end{split}
 \end{equation}
 where we used the asymptotic form
 \begin{equation}
 H^{(1)}_{m} \rightarrow \sqrt{\frac{2}{\pi k R}} \,
-\exp\left (i \, (k \, R -\frac{m \pi}{2} -\frac{\pi}{4}) \right ).
+  e^{\left (i \, (k \, R -\frac{m \pi}{2} -\frac{\pi}{4}) \right )}.
 \end{equation}
 We can solve for the coefficients $b_{|m|}$ by matching the radial logarithmic derivative
 \begin{equation}
@@ -364,7 +364,7 @@ Comparing (xx) with (xx)  we find that
 \begin{equation}
 f(\phi) =
 \sqrt{\frac{2}{\pi k}} \sum_{m}
-(-1)^{(m+1)} \exp(- i \frac{\pi}{4}) \exp(i m \phi) \,b_{|m|}
+(-1)^{(m+1)} e^{- i \frac{\pi}{4}}\,e^{i m \phi} \,b_{|m|}
 \end{equation}
 Thus
 \begin{equation}
@@ -393,12 +393,12 @@ where
 Now imposing the boundary conditions
 \begin{equation}
 \psi_{g,u}({\bf R}) \rightarrow
-\exp(i k R \cos\phi) + f_{g,u}(\phi) \frac{\exp(i k R)}{\sqrt{R}}
+e^{i k R \cos\phi} + f_{g,u}(\phi) \frac{e^{i k R}}{\sqrt{R}}
 \end{equation} 
 we get
 we get
 \begin{equation}
-F \rightarrow \sqrt{2}\exp(i k R \cos\phi)\phi_{a}
+F \rightarrow \sqrt{2}e^{i k R \cos\phi}\phi_{a}
 + \frac{1}{\sqrt{2}} (f_{g}(\phi)+f_{u}(\phi))  \phi_{a}  + \frac{1}{\sqrt{2}} (f_{g}(\phi)-f_{u}(\phi))  \phi_{b}
 \end{equation} 
 So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $\phi_{b} $ channel (i.e. resonant charge transfer) is given by
@@ -586,7 +586,7 @@ and $  \delta_m $ is a phase shift.
 
 The total wave function \eqref{ansatzWave1} must be symmetric under the interchange of the $ H $ nuclei, so that $ F_a(\mathbf{R}) = -F_a(-\mathbf{R}) $ and $ F_{k\alpha}(\mathbf{R}) =  F_{k\alpha}(-\mathbf{R}) $. Now we solve equations \eqref{Fk} and \eqref{Fka} in the distorted wave approximation. Then $ F_a(\mathbf{R}) $ is the solution of the \eqref{Fk} with the coupling term set to be zero and it can be expressed in the form:
 \begin{equation}\label{Flong1}
-F_a(\mathbf{R}) = \sum_{m=1}^{\infty}{P_m(\cos\theta)(2m+1)i^{l}\sqrt{\pi}\times \exp[i\delta_m]\frac{s_m(k_a\mathbf{R})}{k_a\mathbf{R} } } 
+F_a(\mathbf{R}) = \sum_{m=1}^{\infty}{P_m(\cos\theta)(2m+1)i^{l}\sqrt{\pi}\times e^{i\delta_m}\frac{s_m(k_a\mathbf{R})}{k_a\mathbf{R} } } 
 \end{equation}
 
 The asymptotic form for \eqref{Flong1} is:
