@@ -1,5 +1,5 @@
 \chapter{Radiative Processes}
-\subsection{Decription}
+\section{Decription}
 
 The analysis of the radiative processes is related to the analysis of the general scattering process. So we have briefly touched scattering in the previous section.l
 
@@ -32,7 +32,7 @@ In this calculation, the atoms are confined in 2 dimensions, while the radiation
 
 We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
 
-\subsubsection{Applications}
+\subsection{Applications}
 
 These type of reactions often occur in the astrophysical processes. They are generators of X-rays in in astrophysical processes. They also generate X-rays in stellar environments, atmospheric environments and the interstellar mediums. Spectroscopic analysis of the spectral lines allows us to probe such environments. \\
 The other application of the charge transfer is examining the behaviour of low-temperature edge plasmas in laboratory fusion device.
@@ -53,33 +53,33 @@ In the length gauge, the interaction Hamiltonian is:
 \end{equation}
 where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
 
-\subsection{Approximation}
+\section{Approximation}
 
 Here we briefly derive the approximate solution, in order to get a 'feel' of what we are looking into.  We want the show the molecular potential of the $ H_2^+ $ ion.
 We use the LCAO method and examine the Gerade and Ungerade potentials.
 
-\subsubsection{Gerade and Ungergade Molecular Potentials}
+\subsection{Gerade and Ungergade Molecular Potentials}
 In diatomic molecules terms Gerade (German for even) and Ungerade (German for odd)describe how the electronic wavefunction behaves under inversion symmetry, i.e. symmetry of the molecular orbital with respect to the inversio center.
 If the place the internuclear axis passing through the center of the molecule, the inversion manifests with every coordinate point $ r $ with $ -r $ .
 These terms re meaningful only for molecules or systems that possess a center of inversion, points such that $ r\,\rightarrow -r $ maps the molecule onto itself.
 The definition:
 \begin{itemize}
-  \item Gerade(g): an orbital wavefunction $ Psi(r) $ is gerade if it is unchanged by inversion: $ \Psi(-r) = \Psi(r) $. It has even parity. Example: $ 1s\sigma_g $
+  \item Gerade(g): an orbital wavefunction $ \Psi(r) $ is gerade if it is unchanged by inversion: $ \Psi(-r) = \Psi(r) $. It has even parity. Example: $ 1s\sigma_g $
 
-  \item Ungerade(u): an orbital wavefunction $ Psi(r) $ is ungerade if it changes sign under inversion: $ \Psi(-r) = -\Psi(r)  $. It has odd parity. Example $ 2p\sigma_u $.
+  \item Ungerade(u): an orbital wavefunction $ \Psi(r) $ is ungerade if it changes sign under inversion: $ \Psi(-r) = -\Psi(r)  $. It has odd parity. Example $ 2p\sigma_u $.
 \end{itemize}
 
-Selection rules and consequences\\
+\subsection{Selection rules and consequences}
 Electric dipole transitions: transitions between electronic states follow parity selection rule. Electric dipole operator is odd (Ungerade). Therefore allowed transitions must change parity: $ g \rightarrow u $. Transitions $ g \rightarrow g $ or $ u \rightarrow u $ are electric dipole forbidden (though allowed by higher multipoles or vibronic coupling).
 \\
 Orbital interactions: orbitals can only mix (form nonzero overlap/hybridize) if they belong to the same symmetry species, including parity. Thus g orbitals do not mix with u orbitals.
 
-\subsubsection{LCAO}
-The ground state pression gives amplitude for the 2-dimensional hydrogen atom \cite{YangXL}
+\subsection{LCAO}
+The ground state expression gives amplitude for the 2-dimensional hydrogen atom \cite{YangXL}
 \begin{equation}
 \psi_{1s}({\bf r}) =\frac{4}{\sqrt{2 \pi}}e^{-2 \, r}
 \end{equation}
-where $ r = |{\bf r}|$. In the LCAO method, an approximate description of the 2D gerade molecule $H_{2}i $, for internuclear separation ${\bf R}$ is given by
+where $ r = |{\bf r}|$. In the LCAO method, an approximate description of the 2D gerade molecule $H_{2} $, for internuclear separation ${\bf R}$ is given by
 \begin{equation}
 \psi_{g}({\bf r},{\bf R}) = C(R) \Bigl ( \psi_{1s}({\bf r}-{\bf R}/2 ) + \psi_{1s}({\bf r}+{\bf R}/2 ) \Bigr )
 \end{equation}
@@ -160,18 +160,18 @@ In Table \ref{tab:lcaotab} we show the accurate vs LCAO values for the gerada st
    \end{tabular}
 \end{table}
 
-Graphical comparison of the accurate vs LCAO potential for the gerade state.
+Graphical comparison of the accurate vs LCAO potential for the gerade state. The accurate potential is in Red and the approximation is in blue.
 
 \includegraphics{"Vg-Vs-LCAO-good.png"}
 
-This can be easier observed in the enchanced plot:
+This can be easier observed in the enchanced plot. 
 
 \includegraphics{"Vg-Vs-LCAO-2.png"}
 
 Above graphs shows accurate gerade potentials (red dots), versus the ones obtained with the simplistic LCAO method described above.
 We can observe that for $ R > 10 $ there is fair agreement; not so good for $ R < 10 $. This is a reasonable result as the LCAO including only the ground state orbital is a poor description in the molecular region.
 
-We now show the same comparison for the ungeradate state in Table \ref{tab:lcaoutab} we show the accurate vs LCAO values for the ungerada state.
+We now show the same comparison for the ungeradate state in Table \ref{tab:lcaotab} we show the accurate vs LCAO values for the ungerada state.
 
 \begin{table}[ht]
   \caption{Accurate and LCAO Energy as Function or R (internuclear distance) for the ungerade state}
@@ -214,7 +214,8 @@ Graphical comparison of the accurate vs LCAO potential for the ungerade state.
 \includegraphics{"Vg-Vs-LCAO-good.png"}
 
 Unlike for the gerade state, in the ungerade case the LCAO is quite a good approximation to the accurate potential.
-The reason is the symmetries of the gerade and ungerade states and the overlap integral \eqref{eq:soverlap}. In the ungerade case we have $ \psi_{u}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $ which makes $ 1 - S \approx 1 $.\\
+The reason is the symmetries of the gerade and ungerade states and the overlap integral \eqref{eq:soverlap}. In the ungerade case we have:\\ 
+$ \psi_{u}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $ which makes $ 1 - S \approx 1 $.\\
 It follows that the orbital are close to being orthogonal, which makes LCAO approximation more accurate.\\
 
 In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}+{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $. In this case we have $ 1 + S > S $. In this case the LCAO orbits are much less orthogonal, so the overlapp error becomes much greater.
@@ -240,15 +241,14 @@ Ungerade 3D:
 
 %\includepdf[pages=-,pagecommand=\subsubsection{Ungerade potentials as function of the internuclear distance R}, offset=0 -1.5cm]{UnGer-Lcao-Graphs.pdf}
 
-% HERW
-\subsection{Accurate Solution Approach}
+\section{Accurate Solution Approach}
 The main approaches to solving these class of problems is to expand the wave function in the partial waves basis and use Born approximation.
 
-Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
+\subsection{Using Partial Waves}
+
+Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
 
 Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak.
-
-\subsection{Using Partial Waves}
 
 Again we write the time independent Schroedinger equation in 2D:
 \begin{equation}
@@ -274,7 +274,7 @@ We define a scattering length in 2 dimensions,, analogous to the scattering cros
   \lambda(\theta) = |\sqrt{\frac{i}{k}}f_f(\theta)|^2
 \end{equation}
 
-The equation \eqref{scstterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
+The equation \eqref{scatterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
 
 We can express this function in the partial waves bases. Since $ V_b $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
 \begin{equation}\label{GreenFka2}
@@ -321,7 +321,7 @@ $ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max
 
 % HERE \subsection{Phase Shift Calculation}
 
-\subsubsection{Long Range Behavior of $E(R)$ }
+\subsection{Long Range Behavior of $E(R)$ }
 
 Although the LCAO approximation given above correctly predicts the asymptotic energy
 $ E(R) \rightarrow -2  $ as $ R \rightarrow \infty $, it does not accurately predic the long range behavior of $E(R).$ To that end we note that as $ R \rightarrow \infty $,
@@ -332,7 +332,7 @@ where $z$ is the electronic coordinate along the direction ${\bf R}$, and we ign
 \begin{equation}
 H \approx H_{0} -\frac{z}{R^2} + \frac{x^2-2 z^2}{2 R^3} + \dots
 \end{equation}
-where $H_{0}$ is the hamiltonion for the 2D hydrogen atom. Making use of perturbation theory,
+where $H_{0}$ is the hamiltonian for the 2D hydrogen atom. Making use of perturbation theory,
 \begin{equation}
 E(R) \approx E_{0} + E^{(1)}(R) + E^{(2)}(R) + \cdots
 \end{equation}
@@ -385,7 +385,7 @@ b_{m} H^{(1)}_{|m|}(k R)
 where $J_{m}(k R)$ is the regular Bessel function
 and $ H^{1}_{m}(k R) $ is a Hankel function of the first kind,
 and $a_{m},b_{m} $ are constants. We impose the boundary condition
-\begin{equation}
+\begin{equation}\label{psiLR}
 \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}
 + f(\phi) \, \frac{e^{i \, k  R}}{\sqrt{R}} .
 \end{equation}
@@ -396,12 +396,10 @@ e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i
 \begin{equation}
 e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
 \end{equation}
-we set $ a_{m} = -i^{-|m|}$ and inserting into (xx)
-we get
+we set $ a_{m} = -i^{-|m|}$ and inserting into \eqref{psiLR} we get
 \begin{equation}
   \begin{split}
-    \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \\
- \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
+    \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
 (-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
   \end{split}
 \end{equation}
@@ -422,7 +420,7 @@ tends to a constant value $b_{|m|} $ at $ R>R_{c}.$
 
 Using the expression
 \begin{equation}
-{\bf j} = Re \Bigl [-i/\mu \, \psi^{*}({\bf R}){\nabla }\psi^{*}({\bf R})  \Bigr ]
+  {\bf j} = Re \Bigl [\frac{-i}{\mu} \, \psi^{*}({\bf R}){\nabla }\psi^{*}({\bf R})  \Bigr ]
 \end{equation}
 where ${\bf \nabla}$ is the two-dimensional gradient operator for the probability current, we obtain for the incident current
 along the $z-$ direction
@@ -455,7 +453,7 @@ Thus
 \end{equation}
 Alternatively, the constant $ b_{m} $ is sometimes expressed as a phase shift.
 
-\subsection{Resonant Charge Transfer Cross
+\section{Resonant Charge Transfer Cross
 Sections }
 Consider the amplitude given by expression (xx)
 \begin{equation}
@@ -487,123 +485,10 @@ So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $
 \sigma_{RCT}= \frac{1}{4} \, \int_{0}^{2 \pi} |f_{g}(\phi)-f_{u}(\phi) |^2 = \frac{1}{k} \sum_{m} \Bigl |b^{(g)}_{|m|} - b^{(u)}_{|m|} \Bigr |^2
 \end{equation}
 where $ b^{(g,u)}_{|m|} $ are the elastic
-scattering coefficients for the gerade and ungerade potentials, respectively. (please check if correct e.g. see paper by Dalgarno and Yadav) (Algorithm for producing them is given in the enclosed Mathematica code, g-phase.nb (for gerade potential) )
+scattering coefficients for the gerade and ungerade potentials, respectively.
 
+HERE
 
-HERE 
-
-
-
-\chapter{The Radiative Quenching \texorpdfstring{$ H_2^+ $}{$H_2^+$}  Ion Atom Collisions in 2D Space} 
-\label{chp:quenching}
-
-\section{Radiative Quenching Analytical Analysis}
-
-We start with the following Hamiltonian.
-\begin{equation}\label{eqH1} 
-\begin{split} 
-& H = -\frac{1}{2\mu}\nabla^2_{\mathbf{R}} + H_{el}(\mathbf{R},\mathbf{r}) + H_{rad} + H_{int} 
-\end{split} 
-\end{equation} 
-
-where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.  
-
-So if we regard this process as a transition induced by the radiation field from the $ A^{1}\Sigma^{+}_u $ state to of the $ H_2 $ molecule formed by the approaching $ H $ atom, to the $ X^{1}\Sigma^{+}_g $ state in which the atoms separate.
-
-Now given the Hamiltonian for the homonuclear diatom with one electron:
-\begin{equation}\label{hdia}
-  H = -\frac{1}{2}\vec{\nabla}^2 + V_a(\vec{r} - \frac{\vec{R}}{2}) + V_b(\vec{r} + \frac{\vec{R}}{2}) + V(|\vec{R}|) 
-\end{equation}
-where $ V_a, V_b $ are the electron nucleus Coulomb interaction for the nuclei A and B respectively. The $ \vec{r} $ is the position of the electron and $ \vec{R} $ is the distance between the nuclei.
-
-Asymptotically, for large $ |R| $ we have for the Hamiltonian and eigenstates:
-\begin{equation}
-\begin{split} 
-  & H_a = -\frac{1}{2}\vec{\nabla}^2 + V_a(\vec{r} - \frac{\vec{R}}{2}) \text{ with the eigenstate: } \Phi_a(\vec{r} - \frac{\vec{R}}{2}) F_a(R) \\
-  & \text{and} \\
-  & H_b = -\frac{1}{2}\vec{\nabla}^2 + V_b(\vec{r} + \frac{\vec{R}}{2}) \text{ with the eigenstate: } \Phi_b(\vec{r} + \frac{\vec{R}}{2}) F_b(R) \\
-\end{split} 
-\end{equation}
-
-From the physics of the system, we have two classes of solution, Gerade and Ungerade. Those correspond to the parity of the electron's wavefunction.
-
-So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of equation \eqref{hdia}, both gerade and ungerade:
-\begin{equation}
-\begin{split}
-  & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
-  & \Phi_u = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) - \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) 
-\end{split}
-\end{equation}
-
-So we now apply the scattering analysis for 2D, from the previous chapter, and assume that $ F_g(r) $ at asymptotic distances obeys the 2D conditions:
-\begin{equation}
-  F_g(R) \underset{R \rightarrow +\infty}{\sim} e^{ik\ x} + f_g(\theta)\frac{e^{ik\ x}}{\sqrt{R}} 
-\end{equation}
-Now we use the 2D scattering amplitude from the previous chapter:
-\begin{equation}\label{fgampl}
-  f_g(\theta) = \sqrt{\frac{2}{Pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
-\end{equation}
-As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering length. And we get for the scattering length, in 2D:
-\begin{equation}
-\begin{split}
-  & \theta_g = \int_{0}^{2Pi}{d\theta f_g(\theta)} = \frac{2}{Pi}\sum_{m,m'}\int_{0}^{2Pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
-  & = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
-\end{split}
-\end{equation}
-The same discussion applies for the ungerade solution so we :
-\begin{equation}
-  \theta_u = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^u}
-\end{equation}
-
-In our case we are not interested in the elastic scattering of the gerade and ungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
-
-Instead we seek the asymptotic form for the difference
-\begin{equation}
-  \frac{1}{2}\left(F_g(R) - F_u(R)\right) \sim \frac{\left|f_g(\theta) - f_u(\theta)\right|}{4Pi}
-\end{equation}
-Using expression \eqref{fgampl} we get:
-\begin{equation}
-\begin{split}
-  & theta = \frac{1}{4}\int_{0}^{2Pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4Pi} \Rightarrow \\ 
-  &  theta = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
-\end{split}
-\end{equation}
-
-Now we write the system wave function:
-\begin{equation}\label{ansatzWave1}
-\Ket{\Psi} = F_a(\mathbf{R})\chi_a(\mathbf{R},\mathbf{r})\Ket{0} + \sum_{k\alpha}{F_{k\alpha}(\mathbf{R})\chi_b(\mathbf{R},\mathbf{r})\Ket{k\alpha}}
-\end{equation}
-
-where $ \chi_a(\mathbf{R},\mathbf{r}) $ and $ \chi_b(\mathbf{R},\mathbf{r}) $ are the eigenstates of the fixed position nuclei Hamiltonian $ H_{el} $ corresponding to the $ A^{1}\Sigma^{+}_u $  and $ X^{1}\Sigma^{+}_g $ state in body fixed frame respectively. The $ F_a(\mathbf{R}) $ and $ F_{k\alpha}(\mathbf{R}) $ are the amplitudes for the relative nuclear motion and $ \Ket{0} $ and $ \Ket{k\alpha} $ are the kets for the photon vacuum and single photon states. The ansatz \eqref{ansatzWave1} is valid at low speed collisions, where the other channels are inaccessible. In the adiabatic approximation (i.e. ignoring the non-adiabatic effects) the amplitudes $ F_a(\mathbf{R}) $ and $ F_{k\alpha}(\mathbf{R}) $ obey the set of coupled equations:
-\begin{equation}\label{Fk}
-\begin{split}
-& \left[-\frac{1}{2\mu}\nabla^2_{R} + V_a(R) - E\right]F_a(\mathbf{R}) = \sum_{k\alpha}{F_{k\alpha}(\mathbf{R})U_{k\alpha}(\mathbf{R}) } \\[.8em]
-\end{split}
-\end{equation}
-\begin{equation}\label{Fka}
-\begin{split}
-& \left[-\frac{1}{2\mu}\nabla^2_{R} + V_b(R) + \hbar\omega - E\right]F_{k\alpha}(\mathbf{R}) = F_a(\mathbf{R})U^{\dagger}_{k\alpha}(\mathbf{R}) 
-\end{split}
-\end{equation}
-where
-\begin{equation}
-\begin{split}
-U_{k\alpha}(\mathbf{R}) = -i\left[\frac{2\pi c k}{V}\right]^{1/2}D(R)\hat{\mathbf{R}}\cdot\hat{\mathbf{\epsilon}}_{k\alpha}
-\end{split}
-\end{equation}
-and $ V_a(R), V_b(R) $ are the potential energy curves for the $ A^{1}\Sigma^{+}_u $ and $ X^{1}\Sigma^{+}_g $ states respectively.   $ D(R) $ is the radial transitional dipole moment between them. $ E $ is the initial energy of the relative motions and $ \omega $ is the angular frequency of the emitted photon. 
-Now the next step is to solve this. We find the Green function for the equation \eqref{Fka} which satisfies the retarded boundary conditions so that $ F_{k\alpha} $ contains only outgoing waves in the limit $ R \rightarrow \infty $:
-\begin{equation}\label{GreenFkaEq1}
-\begin{split}
-& \left[-\frac{1}{2\mu}\nabla^2_{R} + V_b(R) + \hbar\omega - E\right]G^{+}(\mathbf{R}, \mathbf{R}') =  \delta^3(\mathbf{R}, \mathbf{R}')
-\end{split}
-\end{equation}
-and from the equation \eqref{GreenFkaEq1} we get:
-\begin{equation}\label{FkaInt1}
-\begin{split}
-& F_{k\alpha}(\mathbf{R}) = \int{d^3R'G^{+}(\mathbf{R}, \mathbf{R}')F_{a}(\mathbf{R}')U^{\dagger}_{k\alpha}(\mathbf{R}')   }
-\end{split}
-\end{equation}
 
 \section{Solution Strategies}
 The main approaches to solving problems is to expand the wave function in the partial waves basis and use Born approximation.
@@ -612,108 +497,9 @@ Using partial waves  we expand the incoming wave in the basis of spherical harmo
 
 Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak. 
 
-\subsection{Using Partial Waves}
+\section{Phase Shift Calculation}
 
-Again we write the time independent Schroedinger equation in 2D:
-\begin{equation}
-  -\frac{1}{2}\nabla^2\psi + V\psi = E\,\psi
-\end{equation}
-
-where m is the reduced mass, V is a short-range local potential, E is the relative energy.
-
-Using polar coordinates, setting $ k^2 = 2mE $ , we have the equation
-\begin{equation}
-    \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial\psi(r\theta)}{\partial r}\right) + \frac{1}{r^2}
-\end{equation}
-
-We expand the incoming wave in the partial wave basis as:
-\begin{equation}
-    e^{ikx} = e^{ikr\cos\theta} = \sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)J_m(kr)}
-\end{equation}
-where $\epsilon_m = 2 $ for $ m \ne 0 $ and $\epsilon_0 = 12 $.
-
-
-We define a scattering length in 2 dimensions,, analogous to the scattering cross section in 3D, as:
-\begin{equation}\label{scatterL}
-  \lambda(\theta) = |\sqrt{\frac{i}{k}}f_f(\theta)|^2
-\end{equation}
-
-The equation \eqref{scstterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
-
-We can express this function in the partial waves bases. Since $ V_b $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
-\begin{equation}\label{GreenFka2}
-\begin{split}
-G^{+}(\mathbf{R}, \mathbf{R}') =  \frac{\pi\mu}{k_b}\sum_{l=0}^{\infty}{\sqrt{\frac{1}{2\pi}} P_l(\cos\theta) P_l^{*}(\cos\theta^{'})}\times \frac{f_l(k_bR_{<})g^{+}_l(k_bR_{>})}{RR'}
-\end{split}
-\end{equation}
-where $ P_l(\cos\theta) $ are Legendre polynomials, also $ \theta = 0 $ part of the spherical harmonics:  $ P_l(\cos\theta) = Y_{l0}{\theta,0} $. 
-
-The $ f_l(R) $ is a regular solution of the homogeneous Schrodinger radial  equation for the 2D case: \cite{H2atom}:
-\begin{equation}\label{eqRadial1}
-\begin{split}
-  & \frac{1}{R}\frac{d}{dR}\left(R \frac{d}{dR}\,f_m(R)\right) + \left\{k^2 - \frac{m^2}{R^2} - 2\mu\left[V_b(R) - V_b(\infty)\right] \right\}f_m(R) = 0 \\[.8em]
-& k \equiv \sqrt{2\mu[E - \hbar\omega - V_b(\infty)}
-\end{split}
-\end{equation}
-where:
-The solution of the equation \eqref{eqRadial1} are Bessel functions $ J_m(kR) $ and $ N_m(kR) $ with the asymptotic behaviour:
-\begin{equation}
-\begin{split}
-f_{m}(kR)\sim \sqrt{\frac{2}{\pi kR}}\cos\left[kR - \pi\frac{m+1/2}{2} \right],\,\,{R \rightarrow \infty}
-\end{split}
-\end{equation}
-and $ g^{+}_l(kR) $ is irregular solution with the boundary condition at large $ R $.
-\begin{equation}\label{remoteWave}
-\begin{split}
-g^{+}_{m}{(kR)} \sim \sqrt{\frac{2}{\pi kR}}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right],\,\,{R \rightarrow \infty}
-\end{split}
-\end{equation}
-and $  \delta_m $ is a phase shift. 
-
-The total wave function \eqref{ansatzWave1} must be symmetric under the interchange of the $ H $ nuclei, so that $ F_a(\mathbf{R}) = -F_a(-\mathbf{R}) $ and $ F_{k\alpha}(\mathbf{R}) =  F_{k\alpha}(-\mathbf{R}) $. Now we solve equations \eqref{Fk} and \eqref{Fka} in the distorted wave approximation. Then $ F_a(\mathbf{R}) $ is the solution of the \eqref{Fk} with the coupling term set to be zero and it can be expressed in the form:
-\begin{equation}\label{Flong1}
-F_a(\mathbf{R}) = \sum_{m=1}^{\infty}{P_m(\cos\theta)(2m+1)i^{l}\sqrt{\pi}\times e^{i\delta_m}\frac{s_m(k_a\mathbf{R})}{k_a\mathbf{R} } } 
-\end{equation}
-
-The asymptotic form for \eqref{Flong1} is:
-\begin{equation}\label{FlongA}
-F_a(\mathbf{R}) \sim \frac{1}{\sqrt{2}}\left[e^{ik_az}-e^{-ik_az} + [f(\theta,\phi) - f(\theta-\pi,\phi+\pi)]\frac{e^{ik_aR}}{R}\right]
-\end{equation}
-
-By inserting \eqref{Flong1} and \eqref{GreenFka2} into \eqref{FkaInt1} we get the asymptotic form for the  \eqref{FkaInt1}:
-\begin{equation}\label{FlongAA1}
-F_{k\alpha}(\mathbf{R}) \sim \frac{e^{ik_aR}}{R}f_{k\alpha}(\theta)
-\end{equation}
-where:
-\begin{equation}\label{fkaa1}
-f_{k\alpha}(\theta) = \sum_{m}{\cos(l\,\theta)\left[\sum_{m=1}^{\infty}{\frac{2\pi\mu}{k_ak_b}(2m+1)\left(\frac{\pi k c}{A}\right)^{1/2}e^{i\delta_j(b)}e^{i\delta_j(a)}i^{J+l-1} }\right]\sqrt{2l+1)2\pi}}
-\end{equation}
-
-In this summation, the $ j $ is restricted to the odd integers, and 
-\begin{equation}\label{Mll1}
-M_{m,m'}(k_a,k_b) = \frac{1}{\sqrt{k_a,k_b}}\int_0^{\infty}{dRs_m(k_a,R)D(R)f_{m'}(k_b,R)} 
-\end{equation}
-
-The cross section of the collision induced transition between the $ H $ atom and the $ H^{+} $ ion is obtained by summing $ \left|f_{k\alpha}(\theta)\right|^2 $ over all final states that conserve energy with an initial state, and dividing the result with the flux of the incident channel.
-
-The $ H\left(2 \leftidx{^1}{}S\right) \rightarrow H\left(1 \leftidx{^1}{}S\right) $ is a linear combination of $ A \leftidx{1}{}\sigma_u^{+} $ and $ X \leftidx{1}{}\sigma_g^{+} $ states. Since the excited gerade state is not allowed to make a radiative transition to a gerade ground state, the flux in the incident channel is twice the flux in the $ A \leftidx{1}{\sigma_u^{+}} $ channel.
-
-So for the scattering length we get:
-\begin{equation}\label{crs1}
-\begin{split}
-& \sigma = \int_0^{\omega_{max}}{d\omega\frac{d\sigma}{d\omega}} = \\[.8em]
-& = \sum_{\alpha}{\int{\frac{d^2k}{(2\pi)^2}\frac{A}{2\mu k_a}\int{d^2k_b\delta\left[\frac{k_b^2}{2\mu} - \frac{k_a^2}{2\mu} + \Delta E - \hbar\omega \right]\left|f_{k\alpha}(\theta) \right| } } }
-\end{split}
-\end{equation}
-
-where
-\begin{equation}\label{diffcrs1}
-\frac{d\sigma}{d\omega} = \frac{8}{3}\left[\frac{\pi \mu}{k_a}\right]^2 \frac{1}{c^3}\omega^3 \sum_{J}{\left[J M_{J,J-1}^2(k_a,k_b) + (J+1)M_{J,J+1}(k_a,k_b)\right] }
-\end{equation}
-
-$ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max} $ is the maximum frequency of the emitted photon. Expression \eqref{crs1} is an equivalent expression to the Fermi's Golden Rule. Equation \eqref{diffcrs1} provides the spectrum of the emitted radiation, in addition to the scattering cross section. 
-
-\subsection{Phase Shift Calculation}
+We follow the approach in \cite{Dalgarno1953} and in the following expression for the scattering length we compute phase shifts for both gerade and ungerade potentials.
 
 \begin{equation}
 \begin{split}
@@ -721,7 +507,7 @@ $ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max
 \end{split}
 \end{equation}
 
-It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Wolfram Mathematica code listed in appendix E.
+It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Wolfram Mathematica code listed in \cite{AppendixE}.
 
 The following is the plot of the scattering length in a.u. vs temperature in Kelvin.
 
