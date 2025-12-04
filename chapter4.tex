@@ -501,6 +501,7 @@ Born approximation \cite{GQuantum} treats a scattering potential as a perturbati
 
 We follow the approach in \cite{Dalgarno1953} and in the following expression for the scattering length we compute phase shifts for both gerade and ungerade potentials.
 
+So for the purely elastic single-channel 2D cross section, we have:
 \begin{equation}
 \begin{split}
   \lambda = \frac{4}{k}\sum_{m=0}^{\infty}{sin^2(\delta_m^{+}-\delta_m^{-})}
@@ -546,97 +547,3 @@ Because the term $ U_{k\alpha}^{\dagger}(\mathbf{R}^{'})U_{k\alpha}(\mathbf{R}) 
 \end{split}
 \end{equation}
 
-This result is obtained using the spectral representation of the retarded Green's function and the identity $ 1/(x + i\epsilon) \rightarrow P/x - i\pi\delta(x) $ as $ \epsilon \rightarrow 0 $. Using \eqref{OptGreen1} one obtains for the non-local optical potential:
-\begin{equation}\label{optV2}
-\begin{split}
-&V(\mathbf{R},\mathbf{R}^{'}) = \frac{i}{2\pi}\sum_{\alpha}\int{d\Omega_k}\int_0^{k_{max}}\sum_{l=0}^{\infty}\cos(l\, \theta)\cos(l\,\theta^{'}) \\[.8em]
-&\times\frac{\omega^3}{c^3}\frac{f_l(kR)f_l(kR')}{R\,R'}D(R)D(R')(\hat{\mathbf{R}}\cdot\epsilon_{k\alpha})(\hat{\mathbf{R}}^{'}\cdot\epsilon_{k\alpha})
-\end{split}
-\end{equation}
-
-where $ \omega(k) = k_{\alpha}/2\mu + \Delta E - k^2/\mu $.  Now for the optical-potential approximation we make the semi-classical approximation that the values of $ k $ that give the largest contribution are given by:
-\begin{equation}
-\frac{k^2}{2\mu} \simeq = \Delta E + \frac{k_{\alpha}^2}{2\mu} + V_b(r) - V_a(r)
-\end{equation}
-
-Now the frequency term $ \omega^3 = \left|\Delta E(R)\right|^3 $ can now be taken outside the integral.
-
-Using the delta function expansion in 2 dimensions: 
-\begin{equation}
-\delta^{(2)}\left(\mathbf{R},\mathbf{R}^{'}\right) = \sum_{l=0}^{\infty}{\cos(l\,\theta)\cos(l\,\theta')\frac{\delta(R - R')}{R\,R'}}
-\end{equation}
-
-we get:
-\begin{equation}
-\begin{split}
-    & V_{opt}(\mathbf{R},\mathbf{R}) \approx = \frac{i}{2}\delta^{(2)}\left(\mathbf{R},\mathbf{R}^{'}\right)A(R), \\[.8em]
-& A(R) = \frac{4}{3}D^2(R)\frac{\left|\Delta E(R)\right|^3}{c^3}
-\end{split}
-\end{equation}
-
-and equation \eqref{optV2} becomes:
-\begin{equation}\label{optApprox1}
-\left[-\frac{1}{2\mu}\nabla_R^2 + V_a(R) - E\right]F_{\alpha}(\mathbf{R}) = \frac{i}{2}A(R)F_{\alpha}(\mathbf{R})
-\end{equation}
-
-The cross section for the radiative quenching is given by:
-\begin{equation}
-\sigma = \frac{\pi}{k_a^2}\sum_{m=0}^{\infty}{(2m+1)\left(1-e^{-4\eta_j}\right) }
-\end{equation}
-
-where $ \eta_j $ is the imaginary component of the phase shift of the $ Jth $ partial wave of the solution \eqref{optV2}. The sum on $ J $ is restricted to the odd integers. 
-Also because the right hand of \eqref{optV2} is small, we can use the distorted wave approximation to obtain the expression for the phase shift $ \eta_j $
-\begin{equation}\label{eta1}
-\eta_j = \frac{\pi\mu}{2k_a}\int_0^{\infty}{dR\,\left|g_m^{+}\left(k_aR\right)\right|^2A(R) }
-\end{equation}
-
-\subsection{Calculation} \label{QuenchingCalculation}
-
-We use the code in appendixE for calculating the phase shift $ \eta $, from the equation \eqref{eta1}.
-First we calculate the $ D(R) $. Following \cite{DRZygelman} we have:
-\begin{equation}
-D(\vec{R}) = \Braket{\psi_u(\vec{r}) | (-1)\mid e \mid\,\vec{r} | \psi_g(\vec{r})} - |e|\vec{R}
-\end{equation}
-Where the $ \psi_g(\vec{r}) $ and $ \psi_u(\vec{r}) $ are the electron gerade and ungerade eigenstates respectively and $ \vec{r} $ is the electron coordinate. 
-Because of the symmetry of the $ H_2^+ $ ion we can deduce that the dipole moment vanishes for the $ g \leftrightarrow g $ and $ u \leftrightarrow u $ transitions. This is consistent with the dipole selection rule, where allowed dipole transitions are those between states of opposite parity.
-
-In our case, the dipole integral is:
-\begin{equation}
-  \int{d\xi d\eta\,L_u^*(\xi)M_u^*(\eta)\xi \eta L_g(\xi)M_g(\eta)\frac{\xi^2-\eta^2}{sqrt{\xi^2-1}\sqrt{1-\eta^2}}}
-\end{equation}
-
-Using the dipole moment we compute the Einsten A-coefficient.
-
-Einstein A-coefficients define the probability per unit time of spontaneous emission (radiative decay) from state $ b $ to a lower state $ A $
-
-The lifetime $ \tau = \frac{1}{A(R)} $ of an excited state is the inverse of the total A-coefficient summed over all possible downward transitions.
-Knowing the dipole transition moment $ D(R) $ we can compute the Einstein $ A $ coefficient for the lowest ungerade and gerade state:
-\begin{equation}
-  A(R) = \frac{\pi}{\hbar\epsilon_0}D^2(R)\frac{\left|V_u(R) - V_g(R)\right|^2}{c^2}
-\end{equation}
-
-The graph of the Transition Dipole Moment between the states $ 1s^{+} $ and $ 2p^{+} $.
-
-\includegraphics{DR-SI.png}
-
-We then use transition dipole values to compute the cross section. 
-
-The Mathematica code used for calculating the transition dipole moment  $ D(R) $ and R-dependent Einstein-A coeﬃcient is shown n appendix F.
-
-\subsection{Result and discussion}
-
-Graph of the Einstein-A coefficient as function of R.
-
-\includegraphics{AR-SI.png}
-
-\subsubsection{Comparison with 3D case}
-
-The paper by Dalgarno and  M R C McDowell \cite{DalgarnoMcDowel} reports that the charge transfer cross sections decrease from $ 2\times 10^{-14} cm^2 $ at an impact energy of 1 eV to $ 0.3\times 10^{-14} cm^2 $ at 1000 eV and the diffusion cross sections lead to values of the mobility of H- ions in atomic hydrogen decreasing from $ 3.5\,cm^2\,volt^{-1}\,sec^{-1} $ at 100°K to i$ 1.8\,cm^2\,volt^{-1}\,sec^{-1} $ at 600°K.
-
-Also the paper by B. Zygelman et all \cite{ZL} in the ultra-cold limit shows values of $ A(R)$ in the order of $ 10^6\,s^{-1} $.
-
-In our case, we observer significantly larger values $ A(R) $. This is due to two factors.
-
-1. In 2D, the difference in potential between the gerade and ungerade states $ X^2\Sigma^+ $, $ A^2\Sigma^+ $ respectively is smaller than in the 3D case, so the probability of a transition is greater.
-
-2. The temperature is higher in our calculation. Zygelman et all \cite{ZL} are showing that in the trickled limit the Einstein coefficients $ A(R) $ are in the order of $ 10^6\, sec^{-1} $.
