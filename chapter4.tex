@@ -535,11 +535,13 @@ Using partial waves  we expand the incoming wave in the basis of spherical harmo
 
 Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak. 
 
+The next step is to calculate the phase shift and from the phase shift obtain the scattering length.
+
 \section{Phase Shift Calculation}
 
-We follow the approach in \cite{Dalgarno1953} and in the following expression for the scattering length we compute phase shifts for both gerade and ungerade potentials.
+We follow the approach in \cite{Dalgarno1953} and in the following expression for the scattering length we compute phase shifts for both gerade and ungerade potentials. The $ \delta_m+ $ and the $ \delta_m^- $ are the phase shift for the gerade and ungerade potential respectively.
 
-So for the purely elastic single-channel 2D cross section, we have:
+So for the purely elastic single-channel 2D cross section, we have Scattering length $\lambda $:
 \begin{equation}
 \begin{split}
   \lambda = \frac{4}{k}\sum_{m=0}^{\infty}{sin^2(\delta_m^{+}-\delta_m^{-})}
@@ -551,6 +553,9 @@ It is now fairly straightforward to compute the scattering length. We compute th
 The following is the plot of the scattering length in a.u. vs temperature in Kelvin.
 
 \includegraphics{CrossSection1.png}
+
+The Mathemnatica code is in appendix \ref{AppendixF}
+
 
 \subsection{Optical Potential Method, Dipole Moment and Einstein A Coefficient}
 
