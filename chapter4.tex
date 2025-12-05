@@ -90,7 +90,7 @@ where $C(R)$ is a normalization factor so that
 \end{equation}
 or,
 \begin{equation}
-C(R) = \frac{1}{\sqrt{2 (1+ S(R) )}} \quad S(R) \equiv \int d^2 {\bf r} \, \psi_{1s}({\bf r}) \psi_{1s}({\bf r}+{\bf R}) \label{eq:soverlap}
+  C(R) = \frac{1}{\sqrt{2 (1+ S(R) )}} \text{   and} \quad S(R) \equiv \int d^2 {\bf r} \, \psi_{1s}({\bf r}) \psi_{1s}({\bf r}+{\bf R}) \label{eq:soverlap}
 \end{equation}
 We now evaluate the expectation values $ \langle V \rangle $ of
 the potential
@@ -213,8 +213,9 @@ Graphical comparison of the accurate vs LCAO potential for the ungerade state.
 
 \includegraphics{"Vu-Vs-LCAO-good.png"}
 
-Unlike for the gerade state, in the ungerade case the LCAO is quite a good approximation to the accurate potential.
-The reason is the symmetries of the gerade and ungerade states and the overlap integral \eqref{eq:soverlap}. In the ungerade case we have:\\ 
+Unlike for the gerade state, in the ungerade case the LCAO is quite a good approximation to the accurate potential. \\
+The reason is the symmetries of the gerade and ungerade states and the overlap integral \eqref{eq:soverlap}.  
+In the ungerade case we have:\\ 
 $ \psi_{u}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $ which makes $ 1 - S \approx 1 $.\\
 It follows that the orbital are close to being orthogonal, which makes LCAO approximation more accurate.\\
 
@@ -242,6 +243,43 @@ Ungerade 3D:
 %\includepdf[pages=-,pagecommand=\subsubsection{Ungerade potentials as function of the internuclear distance R}, offset=0 -1.5cm]{UnGer-Lcao-Graphs.pdf}
 
 \section{Accurate Solution Approach}
+
+We start with the following Hamiltonians:
+\begin{equation}\label{eqH1} 
+\begin{split} 
+  & H = -\frac{1}{2\mu}\nabla^2_{\mathbf{R}} + V_{g,u}(R)
+\end{split} 
+\end{equation}
+where $ V_{g,u}(R) $ represents potential for the gerade (g) and ungerade state (u)
+
+where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.
+
+From the physics of the system, we have two classes of solution, Gerade and Ungerade. Those correspond to the parity of the electron's wavefunction.
+
+So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of equation \eqref{hdia}, both gerade and ungerade:
+\begin{equation}
+\begin{split}
+  & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
+  & \Phi_u = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) - \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right)
+\end{split}
+\end{equation}
+
+So we now apply the scattering analysis for 2D, from the previous chapter, and assume that $ F_g(r) $ at asymptotic distances obeys the 2D conditions:
+\begin{equation}
+  F_g(R) \underset{R \rightarrow +\infty}{\sim} e^{ik\ x} + f_g(\theta)\frac{e^{ik\ x}}{\sqrt{R}}
+\end{equation}
+Now we use the 2D scattering amplitude from the previous chapter:
+\begin{equation}\label{fgampl}
+  f_g(\theta) = \sqrt{\frac{2}{Pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
+\end{equation}
+As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering length. And we get for the scattering length, in 2D:
+\begin{equation}
+\begin{split}
+  & \theta_g = \int_{0}^{2Pi}{d\theta f_g(\theta)} = \frac{2}{Pi}\sum_{m,m'}\int_{0}^{2Pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
+  & = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
+\end{split}
+\end{equation}
+
 The main approaches to solving these class of problems is to expand the wave function in the partial waves basis and use Born approximation.
 
 \subsection{Using Partial Waves}
@@ -259,24 +297,24 @@ where m is the reduced mass, V is a short-range local potential, E is the relati
 
 Using polar coordinates, setting $ k^2 = 2mE $ , we have the equation
 \begin{equation}
-    \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial\psi(r\theta)}{\partial r}\right) + \frac{1}{r^2}
+  \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial\psi(r,\theta)}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2\psi(r,\theta)}{\partial \theta^2} + V(r,\theta) = E \psi(r,\theta)
 \end{equation}
 
 We expand the incoming wave in the partial wave basis as:
 \begin{equation}
     e^{ikx} = e^{ikr\cos\theta} = \sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)J_m(kr)}
 \end{equation}
-where $\epsilon_m = 2 $ for $ m \ne 0 $ and $\epsilon_0 = 12 $.
+where $\epsilon_m = 2 $ for $ m \ne 0 $ and $\epsilon_0 = 1 $.
 
 
 We define a scattering length in 2 dimensions,, analogous to the scattering cross section in 3D, as:
 \begin{equation}\label{scatterL}
-  \lambda(\theta) = |\sqrt{\frac{i}{k}}f_f(\theta)|^2
+  \lambda(\theta) = |\sqrt{\frac{i}{k}}f_m(\theta)|^2
 \end{equation}
 
 The equation \eqref{scatterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
 
-We can express this function in the partial waves bases. Since $ V_b $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
+We can express this function in the partial waves bases. Since $ V(r,\theta) $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
 \begin{equation}\label{GreenFka2}
 \begin{split}
 G^{+}(\mathbf{R}, \mathbf{R}') =  \frac{\pi\mu}{k_b}\sum_{l=0}^{\infty}{\sqrt{\frac{1}{2\pi}} P_l(\cos\theta) P_l^{*}(\cos\theta^{'})}\times \frac{f_l(k_bR_{<})g^{+}_l(k_bR_{>})}{RR'}
@@ -453,8 +491,8 @@ Thus
 \end{equation}
 Alternatively, the constant $ b_{m} $ is sometimes expressed as a phase shift.
 
-\section{Resonant Charge Transfer Cross
-Sections }
+\section{Resonant Charge Transfer Cross Sections}
+
 Consider the amplitude given by expression (xx)
 \begin{equation}
 F({\bf R},{\bf r}) = \psi_{g}({\bf R}) \phi_{g}({\bf R},{\bf r}) + \psi_{u}({\bf R}) \phi_{u}({\bf R},{\bf r})
