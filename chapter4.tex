@@ -1,4 +1,4 @@
-\chapter{Radiative Processes}
+a\chapter{Radiative Processes}
 \section{Decription}
 
 The analysis of the radiative processes is related to the analysis of the general scattering process. So we have briefly touched scattering in the previous section.l
@@ -518,6 +518,7 @@ we get
 F \rightarrow \sqrt{2}e^{i k R \cos\phi}\phi_{a}
 + \frac{1}{\sqrt{2}} (f_{g}(\phi)+f_{u}(\phi))  \phi_{a}  + \frac{1}{\sqrt{2}} (f_{g}(\phi)-f_{u}(\phi))  \phi_{b}
 \end{equation} 
+Due to the H nuclei being equal, the charge-transfer probability is governed by the phase difference. 
 So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $\phi_{b} $ channel (i.e. resonant charge transfer) is given by
 \begin{equation}
 \sigma_{RCT}= \frac{1}{4} \, \int_{0}^{2 \pi} |f_{g}(\phi)-f_{u}(\phi) |^2 = \frac{1}{k} \sum_{m} \Bigl |b^{(g)}_{|m|} - b^{(u)}_{|m|} \Bigr |^2
@@ -525,41 +526,24 @@ So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $
 where $ b^{(g,u)}_{|m|} $ are the elastic
 scattering coefficients for the gerade and ungerade potentials, respectively.
 
-HERE
-
-
-\section{Solution Strategies}
-The main approaches to solving problems is to expand the wave function in the partial waves basis and use Born approximation.
-
-Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre Polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
-
-Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak. 
-
-The next step is to calculate the phase shift and from the phase shift obtain the scattering length.
-
-\section{Phase Shift Calculation}
-
-We follow the approach in \cite{Dalgarno1953} and in the following expression for the scattering length we compute phase shifts for both gerade and ungerade potentials. The $ \delta_m+ $ and the $ \delta_m^- $ are the phase shift for the gerade and ungerade potential respectively.
-
-So for the purely elastic single-channel 2D cross section, we have Scattering length $\lambda $:
-\begin{equation}
-\begin{split}
-  \lambda = \frac{4}{k}\sum_{m=0}^{\infty}{sin^2(\delta_m^{+}-\delta_m^{-})}
-\end{split}
-\end{equation}
 
 It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Wolfram Mathematica code listed in \cite{AppendixE}.
 
-The following is the plot of the scattering length in a.u. vs temperature in Kelvin.
+The following is the plot of the scattering length in a.u. vs energy. We did a calculation for the range of  $ 10meV $ to $ 1 eV $
+
+HEREZ
 
 \includegraphics{CrossSection1.png}
 
 The Mathemnatica code is in appendix \ref{AppendixF}
 
 
-\subsection{Optical Potential Method, Dipole Moment and Einstein A Coefficient}
+\subsection*{Electric Dipole Transition, Einstein A Coefficient: Ground Gerade $\to$ First Ungerade in 2D H$_2^+$\\
 
-The approximation that does not require the integration over the total spectrum is the optical potential method. 
+Since all the computing machinery was already established we computed the Einstein A Coefficient for the same energy range,
+We used the optical potential method since it does not require an integration over the total spectrum.
+
+We assume that the system is confined to 2 dimensions while photon are in 3 dimensions, as usual.
 
 Again it is assumed that the scattering takes place at low energies, so that the system can be described by a wave function $ \Psi(x,t) $ which is itself a solution of a Schrodinger equation $ H\ket{\Psi(t)} = i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} $ where $ H $ is a Hamiltonian $ H = T + V $ .
 Then we borrow a concept from the optics, where there is a concept of a Complex Refractive Index $ n $. The real part of $ n $ describes how the light is transmitted and the imaginary part describes how the light is absorbed. So it the imaginary part that describes the effect of the scattering. We then express the potential $ V = U + iW $  and the Schrodinger equation becomes $ \left[H + U + iW\right]\ket{\Psi(t)} = i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} $. From this one gets the scattering cross section:
@@ -567,26 +551,162 @@ Then we borrow a concept from the optics, where there is a concept of a Complex 
 \sigma = \frac{k}{E}\int{d^3R\left[-W(R)\right]\left| \psi(R) \right|}
 \end{equation}
 
-To derive it here we insert the equation \eqref{FkaInt1} for the amplitude $ F_{k\alpha}(\mathbf{R}) $ into the equation \eqref{Fk} to obtain the equation for the amplitude $ F_a(\mathbf{R}) $
-\begin{equation}\label{opt1}
-\begin{split}
-\left[-\frac{1}{2\mu}\nabla_R^2 + V_a(R) - E \right]F_a(\mathbf{R}) = \sum_{k\alpha}{d^2R'G^{+}(\mathbf{R},\mathbf{R}^{'})U_{k\alpha}^{\dagger}(\mathbf{R}^{'})U_{k\alpha}(\mathbf{R})F_a(\mathbf{R}^{'})}
-\end{split}
-\end{equation}
+Using the same prolate elliptical coordinates, the 2D area element becomes
+\[
+d^2 r
+=
+\frac{R^2}{4}
+\frac{\sigma^2-\tau^2}{\sqrt{\sigma^2-1}\sqrt{1-\tau^2}}
+\,d\sigma\,d\tau.
+\]
 
-The right hand of \eqref{opt1} contains a complex, non-local potential
-\begin{equation}\label{optV1}
-V(\mathbf{R},\mathbf{R}^{'}) = \sum_{k\alpha}{G^{+}(\mathbf{R},\mathbf{R}^{'})U_{k\alpha}^{\dagger}(\mathbf{R}^{'})U_{k\alpha}(\mathbf{R}) }
-\end{equation}
+The dipole operator (atomic units) is
+\[
+\hat{\mathbf{d}} = -\mathbf{r}
+=
+-\left(
+a\sigma\tau\,\hat{\mathbf{x}}
++
+a\sqrt{(\sigma^2-1)(1-\tau^2)}\,\hat{\mathbf{y}}
+\right).
+\]
 
-that arises because of the interaction of the electron with the vacuum. Now the real part of this potential induces the shift in the eigenvalue $ V_a(R) $. Since the coupling on an electron with the radiation is weak, we can ignore it and consider only the imaginary part. 
+\subsubsection*{General dipole matrix elements}
 
-The imaginary part of $ V(\mathbf{R},\mathbf{R}^{'}) $ is an absorptive potential, representing a process where electron in excited state emits a photon and decays to a ground state. This potential is non-local, as we take is for $ R = \infty $. In the optical potential approximation, we take replace potential by the local one, whose range is limited to the scattering area. This potential is essentially classical.
+The transition dipole components between gerade and ungerade states,$\psi_g$ and $\psi_u$ are
+\[
+d_x = -\!\!\int\!\!\int 
+\psi_u^*(\sigma,\tau)\,x\,\psi_g(\sigma,\tau)\,d^2 r,
+\]
+\[
+d_y = -\!\!\int\!\!\int 
+\psi_u^*(\sigma,\tau)\,y\,\psi_g(\sigma,\tau)\,d^2 r.
+\]
 
-Because the term $ U_{k\alpha}^{\dagger}(\mathbf{R}^{'})U_{k\alpha}(\mathbf{R}) $ appearing in equation \eqref{optV1} is real, the optical potential is proportional to the imaginary part of the retarded Green's function, which is expressed as:
-\begin{equation}\label{OptGreen1}
-\begin{split}
-\text{Im} G^{+}(\mathbf{R},\mathbf{R}) = \pi\sum_{l=0}^{\infty}{\cos(l\, \theta)\cos(l\,\theta^{'})\int_0^{\infty}{dk\,\delta\left[\frac{k^2}{2\mu} - \frac{k^2_a}{2\mu} + \hbar\omega - \Delta E \right]\frac{f_l(kR)f_l(kR^{'})}{R\,R^{'}} }  }
-\end{split}
-\end{equation}
+Substituting $x,y,$ and $d^2 r$ gives
+\[
+d_x = 
+-\frac{R^3}{8}
+\int_{1}^{\infty}\!\!\int_{-1}^{1}
+\psi_u^*(\sigma,\tau)\psi_g(\sigma,\tau)\,
+\frac{\sigma\tau(\sigma^2-\tau^2)}
+{\sqrt{\sigma^2-1}\sqrt{1-\tau^2}}
+\,d\tau\,d\sigma,
+\]
+\[
+d_y = 
+-\frac{R^3}{8}
+\int_{1}^{\infty}\!\!\int_{-1}^{1}
+\psi_u^*(\sigma,\tau)\psi_g(\sigma,\tau)\,
+(\sigma^2-\tau^2)\,d\tau\,d\sigma.
+\]
+
+\subsubsection*{Parity and separated form}
+
+Inversion $(x,y)\to(-x,-y)$ corresponds to $\tau\to-\tau$, hence
+\[
+\psi_g(\sigma,-\tau)=+\psi_g(\sigma,\tau), \qquad
+\psi_u(\sigma,-\tau)=-\psi_u(\sigma,\tau).
+\]
+
+Assume separable wavefunctions
+\[
+\psi(\sigma,\tau) = F(\sigma)\,G(\tau).
+\]
+
+A minimal symmetry-adapted choice for the lowest $\Sigma$ states is:
+\[
+\psi_g(\sigma,\tau) = F_g(\sigma)\,G_g(\tau),
+\qquad
+G_g(\tau) = \frac{1}{\sqrt{2}},
+\]
+\[
+\psi_u(\sigma,\tau) = F_u(\sigma)\,G_u(\tau),
+\qquad
+G_u(\tau) = \sqrt{\frac{3}{2}}\,\tau.
+\]
+
+\subsection*{4. Dipole component $d_y$}
+
+Because $G_u(\tau)G_g(\tau)(\sigma^2-\tau^2) \propto \tau(\sigma^2-\tau^2)$
+is odd in $\tau$,  
+\[
+d_y = 0.
+\]
+
+Thus the $\Sigma_g \to \Sigma_u$ transition couples only to polarization
+along the molecular axis.
+
+\subsection*{5. Dipole component $d_x$}
+
+Insert the separated forms:
+\[
+d_x = 
+-\frac{R^3}{8}
+\int_{1}^{\infty} F_u^*(\sigma)F_g(\sigma)\,
+\frac{\sigma}{\sqrt{\sigma^2-1}}
+\,I(\sigma)\,d\sigma,
+\]
+where the angular integral is
+\[
+I(\sigma)=
+\int_{-1}^{1}
+G_u(\tau)G_g(\tau)\,
+\frac{\tau(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}\,d\tau.
+\]
+
+Using 
+\[
+G_u(\tau)G_g(\tau)
+= \sqrt{\frac{3}{4}}\,\tau,
+\]
+we obtain
+\[
+I(\sigma)
+=
+\sqrt{\frac{3}{4}}
+\int_{-1}^{1}
+\frac{\tau^2(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}
+\,d\tau.
+\]
+
+The integral evaluates to
+\[
+\int_{-1}^{1}
+\frac{\tau^2(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}
+\,d\tau
+=
+\frac{\pi}{2}\sigma^2 - \frac{3\pi}{8},
+\]
+thus
+\[
+I(\sigma)
+=
+\frac{\sqrt{3}\,\pi}{16}\,(4\sigma^2 - 3).
+\]
+
+\subsection*{6. Final expression}
+
+Therefore the transition dipole between the ground gerade and first ungerade states is
+\[
+\boxed{
+d_x^{(g\to u)} =
+-\frac{\sqrt{3}\,\pi R^3}{128}
+\int_{1}^{\infty}
+F_u^*(\sigma)\,F_g(\sigma)\,
+\frac{\sigma(4\sigma^2 - 3)}{\sqrt{\sigma^2-1}}
+\,d\sigma,
+}
+\]
+\[
+\boxed{
+d_y^{(g\to u)} = 0.
+}
+\]
+
+This is the explicit one-dimensional integral for the electric dipole
+transition in 2D H$_2^+$ using the alternative elliptic coordinates
+$(\sigma,\tau)$.
+
+The follwing groph shows the Einsten A coefficient as function or the internuclear distance $ R $.
 
