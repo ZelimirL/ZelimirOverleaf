@@ -122,12 +122,12 @@ In the same manner, we obtain the BO energy for the ungerade BO state,
 \psi_{u}({\bf r},{\bf R}) =\frac{1}{\sqrt{2 (1- S(R) )}}\int d^2 {\bf r} \, \Bigl ( \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) \Bigr ).
 \end{equation}
 
-In Table \ref{tab:lcaotab} we show the accurate vs LCAO values for the gerada state.
+In Table \ref{tab:lcaotabG} we show the accurate vs LCAO values for the gerada state.
 
 \begin{table}[ht]
   \caption{Accurate LCAO Energy as Function or R (internuclear distance) for the gerade state}
   \centering
-  \label{tab:lcaotab}
+  \label{tab:lcaotabG}
   \begin{tabular}{ m{4em} m{4em} m{4em} }
     \hline
     R & E(R) + V(R) accurate  &  E(R) + V(R) LCAO \\ \hline \hline
@@ -160,6 +160,8 @@ In Table \ref{tab:lcaotab} we show the accurate vs LCAO values for the gerada st
    \end{tabular}
 \end{table}
 
+\afterpage{\clearpage}
+
 Graphical comparison of the accurate vs LCAO potential for the gerade state. The accurate potential is in Red and the approximation is in blue.
 
 \includegraphics{"Vg-Vs-LCAO-good.png"}
@@ -171,12 +173,12 @@ This can be easier observed in the enchanced plot.
 Above graphs shows accurate gerade potentials (red dots), versus the ones obtained with the simplistic LCAO method described above.
 We can observe that for $ R > 10 $ there is fair agreement; not so good for $ R < 10 $. This is a reasonable result as the LCAO including only the ground state orbital is a poor description in the molecular region.
 
-We now show the same comparison for the ungeradate state in Table \ref{tab:lcaotab} we show the accurate vs LCAO values for the ungerada state.
+We now show the same comparison for the ungeradate state in Table \ref{tab:lcaotabU} we show the accurate vs LCAO values for the ungerada state.
 
 \begin{table}[ht]
   \caption{Accurate and LCAO Energy as Function or R (internuclear distance) for the ungerade state}
   \centering
-  \label{tab:lcaotab}
+  \label{tab:lcaotabU}
   \begin{tabular}{ m{4em} m{4em} m{4em} }
     \hline
     R & E(R) + V(R) accurate  &  E(R) + V(R) LCAO \\ \hline \hline
@@ -256,7 +258,13 @@ where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\math
 
 From the physics of the system, we have two classes of solution, Gerade and Ungerade. Those correspond to the parity of the electron's wavefunction.
 
-So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of equation \eqref{hdia}, both gerade and ungerade:
+Now given the Hamiltonian for the homonuclear diatom with one electron:
+\begin{equation}\label{hdia}
+  H = -\frac{1}{2}\vec{\nabla}^2 + V_a(\vec{r} - \frac{\vec{R}}{2}) + V_b(\vec{r} + \frac{\vec{R}}{2}) + V(|\vec{R}|)
+\end{equation}
+where $ V_a, V_b $ are the electron nucleus Coulomb interaction for the nuclei A and B respectively. The $ \vec{r} $ is the position of the electron and $ \vec{R} $ is the distance between the nuclei.
+
+So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of Schrodinger equation with Hamiltonian \eqref{hdia}, both gerade and ungerade:
 \begin{equation}
 \begin{split}
   & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
@@ -277,6 +285,25 @@ As the $ f(\theta) $ is not directly observable, in 2D we look for the scatterin
 \begin{split}
   & \theta_g = \int_{0}^{2Pi}{d\theta f_g(\theta)} = \frac{2}{Pi}\sum_{m,m'}\int_{0}^{2Pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
   & = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
+\end{split}
+\end{equation}
+
+The same discussion applies for the ungerade solution so we :
+\begin{equation}
+  \theta_u = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^u}
+\end{equation}
+
+In our case we are not interested in the elastic scattering of the gerade and ungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
+
+Instead we seek the asymptotic form for the difference
+\begin{equation}
+  \frac{1}{2}\left(F_g(R) - F_u(R)\right) \sim \frac{\left|f_g(\theta) - f_u(\theta)\right|}{4Pi}
+\end{equation}
+Using expression \eqref{fgampl} we get:
+\begin{equation}
+\begin{split}
+  & \lambda = \frac{1}{4}\int_{0}^{2Pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4Pi} \Rightarrow \\
+  & \lambda = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
 \end{split}
 \end{equation}
 
@@ -313,51 +340,6 @@ We define a scattering length in 2 dimensions,, analogous to the scattering cros
 \end{equation}
 
 The equation \eqref{scatterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
-
-We can express this function in the partial waves bases. Since $ V(r,\theta) $ contains no bound states we get for $ \mathbf{R} = \mathbf{R}(R,\theta) $:
-\begin{equation}\label{GreenFka2}
-\begin{split}
-G^{+}(\mathbf{R}, \mathbf{R}') =  \frac{\pi\mu}{k_b}\sum_{l=0}^{\infty}{\sqrt{\frac{1}{2\pi}} P_l(\cos\theta) P_l^{*}(\cos\theta^{'})}\times \frac{f_l(k_bR_{<})g^{+}_l(k_bR_{>})}{RR'}
-\end{split}
-\end{equation}
-
-where $ P_l(\cos\theta) $ are Legendre polynomials, also $ \theta = 0 $ part of the spherical harmonics:  $ P_l(\cos\theta) = Y_{l0}{\theta,0} $.
-
-The $ f_l(R) $ is a regular solution of the homogeneous Schrodinger radial  equation for the 2D case: \cite{H2atom}:
-\begin{equation}\label{eqRadial1}
-\begin{split}
-  & \frac{1}{R}\frac{d}{dR}\left(R \frac{d}{dR}\,f_m(R)\right) + \left\{k^2 - \frac{m^2}{R^2} - 2\mu\left[V_b(R) - V_b(\infty)\right] \right\}f_m(R) = 0 \\[.8em]
-& k \equiv \sqrt{2\mu[E - \hbar\omega - V_b(\infty)}
-\end{split}
-\end{equation}
-where:
-The solution of the equation \eqref{eqRadial1} are Bessel functions $ J_m(kR) $ and $ N_m(kR) $ with the asymptotic behaviour:
-\begin{equation}
-\begin{split}
-f_{m}(kR)\sim \sqrt{\frac{2}{\pi kR}}\cos\left[kR - \pi\frac{m+1/2}{2} \right],\,\,{R \rightarrow \infty}
-\end{split}
-\end{equation}
-and $ g^{+}_l(kR) $ is irregular solution with the boundary condition at large $ R $.
-\begin{equation}\label{remoteWave}
-\begin{split}
-g^{+}_{m}{(kR)} \sim \sqrt{\frac{2}{\pi kR}}\cos\left[kR - \pi\frac{m+1/2}{2} + \delta_m\right],\,\,{R \rightarrow \infty}
-\end{split}
-\end{equation}
-and $  \delta_m $ is a phase shift.
-
-The total wave function \eqref{ansatzWave1} must be symmetric under the interchange of the $ H $ nuclei, so that $ F_a(\mathbf{R}) = -F_a(-\mathbf{R}) $ and $ F_{k\alpha}(\mathbf{R}) =  F_{k\alpha}(-\mathbf{R}) $. Now we solve equations \eqref{Fk} and \eqref{Fka} in the distorted wave approximation. Then $ F_a(\mathbf{R}) $ is the solution of the \eqref{Fk} with the coupling term set to be zero and it can be expressed in the form:
-\begin{equation}\label{Flong1}
-F_a(\mathbf{R}) = \sum_{m=1}^{\infty}{P_m(\cos\theta)(2m+1)i^{l}\sqrt{\pi}\times \exp[i\delta_m]\frac{s_m(k_a\mathbf{R})}{k_a\mathbf{R} } }
-\end{equation}
-
-where
-\begin{equation}\label{diffcrs1}
-\frac{d\sigma}{d\omega} = \frac{8}{3}\left[\frac{\pi \mu}{k_a}\right]^2 \frac{1}{c^3}\omega^3 \sum_{J}{\left[J M_{J,J-1}^2(k_a,k_b) + (J+1)M_{J,J+1}(k_a,k_b)\right] }
-\end{equation}
-
-$ \Delta E $ is the energy of the transition at $ R = \infty $ and $ \omega_{max} $ is the maximum frequency of the emitted photon. Expression \eqref{crs1} is an equivalent expression to the Fermi's Golden Rule. Equation \eqref{diffcrs1} provides the spectrum of the emitted radiation, in addition to the scattering cross section.
-
-% HERE \subsection{Phase Shift Calculation}
 
 \subsection{Long Range Behavior of $E(R)$ }
 
@@ -527,16 +509,13 @@ where $ b^{(g,u)}_{|m|} $ are the elastic
 scattering coefficients for the gerade and ungerade potentials, respectively.
 
 
-It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Wolfram Mathematica code listed in \cite{AppendixE}.
+It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Wolfram Mathematica code listed in \ref{AppendixE}.
 
 The following is the plot of the scattering length in a.u. vs energy. We did a calculation for the range of  $ 10meV $ to $ 1 eV $
-
-HEREZ
 
 \includegraphics{CrossSection1.png}
 
 The Mathemnatica code is in appendix \ref{AppendixF}
-
 
 \subsection*{Electric Dipole Transition, Einstein A Coefficient: Ground Gerade $\to$ First Ungerade in 2D H$_2^+$}
 
@@ -712,3 +691,19 @@ The following groph shows the Einsten A coefficient as function or the internucl
 \includegraphics{"Einstein.png"}
 
 The relevant code is in \ref{AppendixG}
+
+\section{Anyons}
+
+Here we briefly discuss the anyon case, i.e since the two $ H_2^{+} $ nuclei are confined in 2D, they obey neither Fermi-Dirac nor Bose-Einstein statistics.
+
+The preceding form of the 2D Schrodinger equation and its solution in 2D remain the same.
+
+Finally the total cross section changes:
+\begin{equation}
+  \sigma^{anyon} = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\sin^2(\delta_{m+\beta})}
+\end{equation}
+
+The charge transfer cross section becomes:
+\begin{equation}
+  \sigma^{anyon} = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\left|\delta_{m+\beta}^{+}-\delta_{m+\beta}^{-}\right|}
+\end{equation}
