@@ -508,14 +508,13 @@ So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $
 where $ b^{(g,u)}_{|m|} $ are the elastic
 scattering coefficients for the gerade and ungerade potentials, respectively.
 
+It is now fairly straightforward to compute the charge transfer cross section. We compute it in the Wolfram Mathematica code listed in \ref{AppendixE}.
 
-It is now fairly straightforward to compute the scattering length. We compute the scattering length in the Wolfram Mathematica code listed in \ref{AppendixE}.
+The following is the plot of the charge transfer cross section in a.u. vs energy. We did a calculation for the range of  $ 10meV $ to $ 1 eV $
 
-The following is the plot of the scattering length in a.u. vs energy. We did a calculation for the range of  $ 10meV $ to $ 1 eV $
+\includegraphics{CTCrossSection1.png}
 
-\includegraphics{CrossSection1.png}
-
-The Mathemnatica code is in appendix \ref{AppendixF}
+The Mathematica code is in appendix \ref{AppendixF}
 
 \subsection*{Electric Dipole Transition, Einstein A Coefficient: Ground Gerade $\to$ First Ungerade in 2D H$_2^+$}
 
@@ -696,14 +695,32 @@ The relevant code is in \ref{AppendixG}
 
 Here we briefly discuss the anyon case, i.e since the two $ H_2^{+} $ nuclei are confined in 2D, they obey neither Fermi-Dirac nor Bose-Einstein statistics.
 
-The preceding form of the 2D Schrodinger equation and its solution in 2D remain the same.
-
-Finally the total cross section changes:
+The preceding form of the 2D Schrodinger equation and its solution in 2D remain the same. For two identical particles, in polar coordinates  we impose:
 \begin{equation}
-  \sigma^{anyon} = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\sin^2(\delta_{m+\beta})}
+  \Psi(r,\theta + 2\pi) = e^{i2\pi\alpha}\Psi(r,\theta) 
+  \end{equation}
+  where we have for $ \alpha = 0 $ - bosons, $ \alpha = 1/2 $ - fermions, $ \alpha = \text{any other value} $ - anyons.
+
+In the anyon case, the partial waves becomes fractional, i.e. the phase shift and scattering matrix elements become: 
+\begin{equation}
+  \delta_m(k), S_m(k) \rightarrow  \delta_{m+\alpha}(k), S_{m+\alpha}(k)
+\end{equation}
+and the scattering amplitude becomes fractional
+\begin{equation}
+  f_{\alpha}(\theta) = \frac{1}{\sqrt{2\pi k}}\sum_{m=-\infty}^{\infty}{\left(S_{m+\alpha}-1\right)e^{i m \theta}}
+\end{equation}
+
+Finally the scatterting cross section changes to:
+\begin{equation}
+  \sigma(k;\alhpa) = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\sin^2(\delta_{m+\beta})}
 \end{equation}
 
 The charge transfer cross section becomes:
 \begin{equation}
-  \sigma^{anyon} = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\left|\delta_{m+\beta}^{+}-\delta_{m+\beta}^{-}\right|}
+  \sigma_{CT}(k;\alpha) = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\left|\delta_{m+\beta}^{+}-\delta_{m+\beta}^{-}\right|}
 \end{equation}
+
+Note that protons are not anyons in 3D. To make them behave as anyons we need 2D topological medium or quantum Hall effect. 
+
+The rest of the computation would be same, taking into account
+
