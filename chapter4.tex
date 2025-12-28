@@ -86,7 +86,21 @@ This is a more advanced method which takes into account quantum nature of the pa
 \subsection{Quantum Mechanical Treatment, MOCC Approach}
 
 The Molecular Orbital Approach (MOCC) assumes that the total system amplitude is expressed as a sum of electronic
-eigenstates, whose expansion coefficients describe the motion of the nuclear coordinate R. The quantum version of this theory treats both the nuclear motion and the electronic degrees of freedom quan tum mechanically. It was developed by David Bates and coworkers in the 1950s. It was not much used since it required a sizeable computing power. So only in the 80s the fully quantum MOCC computation becomes available. \cite{ZygelmanCT}.
+eigenstates, whose expansion coefficients describe the motion of the nuclear coordinate R. There are two versions of
+this theory. In the first, the nuclear motion is treated classically, but the electronic degrees of freedom are treated quantum mechanically. This approach, the method of perturbed stationary states (PSS), was first advocated by Massey and Smith in 1932.
+The quantum version of this theory treats both the nuclear motion and the electronic degrees of freedom quan tum mechanically. It was developed by David Bates and coworkers in the 1950s. It was not much used since it required a sizeable computing power. So only in the 80s the fully quantum MOCC computation becomes available. \cite{ZygelmanCT}.
+
+In the fully quantum expressions of the PSS equations we get for the wavefunction
+
+\begin{equation}
+  \Psi(\mathbf{r},\mathbf{R}) = \sum_n^N{\phi_n(\mathbf{r},\mathbf{R})F_n(R)}
+\end{equation}
+where $ F_n(R) $ are quantal amplitudes that predict the prob- ability for the system to occupy the n-th electronic states
+at R. Index $ N $ basically includes all the states that are energetically open.
+The states $ \phi_n $ form a complete set 
+\begin{equation}
+  \sum_n{\phi_n^{\dag}(\mathbf{r},\mathbf{R})F_n(R)\phi_n(\mathbf{r'},\mathbf{R})F_n(R)} = \delta(\mathbf{r} - \mathbf{r'})
+\end{equation}
 
 While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
 
@@ -338,7 +352,7 @@ Now we use the 2D scattering amplitude from the previous chapter:
 \begin{equation}\label{fgampl}
   f_g(\theta) = \sqrt{\frac{2}{\pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
 \end{equation}
-As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering length. And we get for the scattering length, in 2D:
+As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering cross section. And we get for the scattering cross section, in 2D:
 \begin{equation}
 \begin{split}
   & \theta_g = \int_{0}^{2\pi}{d\theta f_g(\theta)} = \frac{2}{\pi}\sum_{m,m'}\int_{0}^{2\pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
@@ -360,8 +374,8 @@ Instead we seek the asymptotic form for the difference
 Using expression \eqref{fgampl} we get:
 \begin{equation}
 \begin{split}
-  & \lambda = \frac{1}{4}\int_{0}^{2\pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4\pi} \Rightarrow \\
-  & \lambda = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
+  & \sigma = \frac{1}{4}\int_{0}^{2\pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4\pi} \Rightarrow \\
+  & \sigma = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
 \end{split}
 \end{equation}
 
@@ -392,9 +406,9 @@ We expand the incoming wave in the partial wave basis as:
 where $\epsilon_m = 2 $ for $ m \ne 0 $ and $\epsilon_0 = 1 $.
 
 
-We define a scattering length in 2 dimensions,, analogous to the scattering cross section in 3D, as:
+We define a scattering cross section in 2 dimensions,, analogous to the scattering cross section in 3D, as:
 \begin{equation}\label{scatterL}
-  \lambda(\theta) = |\sqrt{\frac{i}{k}}f_m(\theta)|^2
+  \sigma(\theta) = |\sqrt{\frac{i}{k}}f_m(\theta)|^2
 \end{equation}
 
 The equation \eqref{scatterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
@@ -735,19 +749,15 @@ I(\sigma)
 
 Therefore the transition dipole between the ground gerade and first ungerade states is
 \[
-\boxed{
 d_x^{(g\to u)} =
 -\frac{\sqrt{3}\,\pi R^3}{128}
 \int_{1}^{\infty}
 F_u^*(\sigma)\,F_g(\sigma)\,
 \frac{\sigma(4\sigma^2 - 3)}{\sqrt{\sigma^2-1}}
 \,d\sigma,
-}
 \]
 \[
-\boxed{
 d_y^{(g\to u)} = 0.
-}
 \]
 
 This is the explicit one-dimensional integral for the electric dipole
@@ -757,7 +767,7 @@ $(\sigma,\tau)$.
 The following graph shows the Einstein A coefficient as function or the internuclear distance $ R $.
 \includegraphics{"Einstein.png"}
 
-The relevant code is in \ref{AppendixF}
+The relevant code is in appendix \ref{AppendixF}
 
 \section{Anyons}
 

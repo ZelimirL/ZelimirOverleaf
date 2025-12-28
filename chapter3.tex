@@ -1,6 +1,6 @@
 \chapter{2D Scattering}
 
-  Here we address the scattering in two dimensions and compute the scattering length.
+  Here we address the scattering in two dimensions and compute the scattering cross section.
 
   The quantum scattering in 3 dimension is described in numerous textbooks and papers, so we omit explicitly referencing them here.
 
@@ -155,7 +155,7 @@ f(\theta) = \sqrt{\frac{1}{2\pi i k}}\sum_{m=0}^{\infty}{\epsilon_m\cos(m\theta)
 
 So far, this is a general formula applicable to any kind of process.
 
-\subsubsection{Scattering Length for the Hydrogen Molecular Ion in 2D}
+\subsubsection{Scattering Cross Section for the Hydrogen Molecular Ion in 2D}
 
 For the actual calculation we first start from the form of the radial wave function for the scattered free particle
 \begin{equation}\label{remoteWave2}
@@ -175,11 +175,11 @@ Now to find the value of $ \delta $ we integrate from some starting point $ r $ 
     \delta_m = \lim_{r \rightarrow \infty}\delta_m(r) 
 \end{equation}
 
-Following the \cite{Dalgarno1953} we then proceed to compute the scattering length. We compute the scattering length in the limit of $ T \rightarrow 0 $.
+Following the \cite{Dalgarno1953} we then proceed to compute the scattering cross section. We compute the scattering cross section in the limit of $ T \rightarrow 0 $.
 
 The Mathematica code that computes the phase shift and the cross section  is in \ref{AppendixE}.
 
-The following graphs show the phase shift and the scattering length for the 2D H2 ion at 'room' temperatures.
+The following graphs show the phase shift and the scattering cross section for the 2D H2 ion at 'room' temperatures.
 
 \begin{figure}
  \captionsetup{type=figure}
@@ -192,6 +192,6 @@ The following graphs show the phase shift and the scattering length for the 2D H
 \begin{figure}
  \captionsetup{type=figure}
     \includegraphics{Scatterring-length.png}
-  \caption{Scattering Length}
+  \caption{Scattering Cross Section }
     \label{scatterLen}
 \end{figure}
