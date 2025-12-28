@@ -1,5 +1,11 @@
-a\chapter{Radiative Processes}
+\chapter{Radiative Processes}
+\label{chap:RRP}
 \section{Description}
+
+As stated we will focus on a charge transfer processes in low energies, i.e. low temperatures. We consider a positively charged ion that approaches a neutral atom. As the internuclear distance R becomes smaller, there exist a non-zero probability that the el
+electron will escape the atom and attach itself to the incoming ion. In this manner a charge transfer happens.
+
+There are two classes of Charge Transfers,
 
 The analysis of the radiative processes is related to the analysis of the general scattering process. So we have briefly touched scattering in the previous section.l
 
@@ -24,7 +30,37 @@ $ A(n+1\prescript{1}{}S) + B(n\prescript{1}{}S) \longleftrightarrow  A(n\prescri
 Radiative Quenching is an interaction between two atoms (or molecules), one being in excited state and the other in 'normal' ground state. During this process the excited atom emits a photon and drops to a ground state.
 The simplest such case is the collision of the two hydrogen molecules, in the process $ H(2\,{}^2\!S) + H(1\,{}^2\!S) \rightarrow H(1\,{}^2\!S) + H(1\,{}^2\!S) + \hbar\omega $.
 
-There are several theoretical approaches to this problem. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}. While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
+There are several theoretical approaches and treatments of this problem. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}. 
+\subsubsection{Classical Treatments}
+
+The classical 'over the barrier model' \cite{BransdenMcDowell1992} treats an electron as being inside a potential well. The well's potential is described by the function
+\begin{equation}
+  V(r) = -\frac{q}{x} - \frac{1}{\lvert R - r \rvert}
+\end{equation}
+where $ r $ is the distance of the bound electron from the incoming nucleus. $ R $ is the distance between the nuclei, and $ q $ is the charge of the ion. 
+
+Potential has it maximum as $ V_{max} = -\left(\sqrt{q} + 1\right)^2/R $. The electron attaches itself to an incoming ion if its binding energy, perturbed by the electron–ion Coulomb energy $ -1/2 - q/R $ becomes greater that $ V_{max} $.
+
+Assuming that the electron's binding energy is $ E_n = -q^2/2n^2 $ where $ n $ is a principal quantum number, energy conservationrequires that 
+\begin{equation}
+  -\frac{1}{2} - \frac{q}{R} = E_n - \frac{1}{R}
+\end{equation}
+Together these relations predict the largest value of $ R $ where the electron is transfered to an incoming ion with an energy $ E_n $ to be:
+\begin{equation}\label{COBRT}
+  R_n = \frac{2(q-1)}{q^2/n^2-1}
+\end{equation}
+Assuming the transfer probability of $ 1/2 $ this model predict the total charge transfer cross section to be:
+\begin{equation}
+  \sigma_{CT} = \frac{\pi}{2}R_{n^*}^2
+\end{equation}
+where $ n^* $ is the value of $ n $ in equation \eqref{COBRT} where the equality holds. We shall compare this value with the value obtained by our method. But generally speaking this method fails to give the correct values for the very low energy processes \cite{osti_6533174}.
+
+\subsubsection{LangevinOrbiting}
+
+
+
+
+While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
 
 Here we shall investigate the low energy collision process between the hydrogen atom and the hydrogen ion, in 2 dimension. We use fully quantum mechanical approach to calculate the cross section and the emission spectra of the reaction $ H(2\prescript{2}{}S) + H(1\prescript{1}{}S)\rightarrow H(1\prescript{1}{}S) + H(1\prescript{1}{}S) + \hbar\omega $, formed by the quenching of the excited $ H $ atom by the approaching $ H $ atom, in 2D dimensions. To my knowledge, there is no experimental results related to the 2D problem. There are results for the 3D case, listed in \cite{Zygelman88} and references there.
 
