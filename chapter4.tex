@@ -33,6 +33,7 @@ The simplest such case is the collision of the two hydrogen molecules, in the pr
 There are several theoretical approaches and treatments of this problem. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}. 
 \subsubsection{Classical Treatments}
 
+\subsubsection{COB model}
 The classical 'over the barrier model' \cite{BransdenMcDowell1992} treats an electron as being inside a potential well. The well's potential is described by the function
 \begin{equation}
   V(r) = -\frac{q}{x} - \frac{1}{\lvert R - r \rvert}
@@ -49,16 +50,43 @@ Together these relations predict the largest value of $ R $ where the electron i
 \begin{equation}\label{COBRT}
   R_n = \frac{2(q-1)}{q^2/n^2-1}
 \end{equation}
-Assuming the transfer probability of $ 1/2 $ this model predict the total charge transfer cross section to be:
+Assuming the transfer probability of $ 1/2 $ this model predicts the total charge transfer cross section to be:
 \begin{equation}
   \sigma_{CT} = \frac{\pi}{2}R_{n^*}^2
 \end{equation}
 where $ n^* $ is the value of $ n $ in equation \eqref{COBRT} where the equality holds. We shall compare this value with the value obtained by our method. But generally speaking this method fails to give the correct values for the very low energy processes \cite{osti_6533174}.
 
-\subsubsection{LangevinOrbiting}
+\subsubsection{Langevin Orbiting}
+Since the preceeding model fails to give the correct prediction a new, still classical model was suggested by P. Langevin. In this model, the incoming ion introduces the energy shift of the electron's ground state by 
+\begin{equation}
+  \Delta E = -\frac{1}{2}\alpha|E|^2  
+ \end{equation}
+ where $ \alpha $ is called the polarizability of the atom and $ E = q/R^2 $. The mutually atractive potential has the form :
+\begin{equation}
+  V_{pol}(R) = -\frac{C_4}{R^4}\,\,\,\,\,C_4 = \frac{\alpha}{2}q^2
+\end{equation}
+in addition to the centripetal potential
+\begin{equation}
+  V_L(R) = \frac{L(L+1)}{2\mu R^2}
+\end{equation}
+where $ L = \mu v b $ is an angular momentum and $ b $ is an impact paratemeter. For a given $ b $, the effective potential, the sum of $ V_{pol} $ and $ V_L $ possesses a local maximum $ V_{max}(b) $ at critical value $ R_c $. 
+At the end this model predicts the total charge transfer cross section to be:
+\begin{equation}
+  \sigma_{CT} = 2\pi \int_0^{b_c}{db\, b} = \pi b_c^2 = \frac{\pi}{v}\sqrt{\frac{8 C_4}{\mu}} = \frac{2\pi q}{v}\sqrt{\frac{\alpha}{\mu}}
+\end{equation}
+\subsubsection{Landau–Zener–RosenTheories}
+This is a more advanced method which takes into account quantum nature of the particles. We shall skip the explanation, just to nite that this model predicts the cross section to be:
+\begin{equation}
+\begin{split}
+  & \sigma_{CT} = 2\pi \int_0^{R_c}{b P(b) db} \\[.8em]
+  & P(b) = \frac{1}{2}sech^2\left(\frac{\pi \Delta E(R_c)}{2\lambda v(b)}\right)
+\end{split}
+\end{equation}
 
+\subsection{Quantum Mechanical Treatment, MOCC Approach}
 
-
+The Molecular Orbital Approach (MOCC) assumes that the total system amplitude is expressed as a sum of electronic
+eigenstates, whose expansion coefficients describe the motion of the nuclear coordinate R. The quantum version of this theory treats both the nuclear motion and the electronic degrees of freedom quan tum mechanically. It was developed by David Bates and coworkers in the 1950s. It was not much used since it required a sizeable computing power. So only in the 80s the fully quantum MOCC computation becomes available. \cite{ZygelmanCT}.
 
 While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
 
@@ -68,15 +96,9 @@ In this calculation, the atoms are confined in 2 dimensions, while the radiation
 
 We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
 
-\subsection{Applications}
-
-These type of reactions often occur in the astrophysical processes. They are generators of X-rays in in astrophysical processes. They also generate X-rays in stellar environments, atmospheric environments and the interstellar mediums. Spectroscopic analysis of the spectral lines allows us to probe such environments. \\
-The other application of the charge transfer is examining the behaviour of low-temperature edge plasmas in laboratory fusion device.
-
-
 \subsection*{Length gauge}
 
-This is an interesting approach, which could potentially be used in calculation. In this thesis we would nit be using it.
+This is an interesting approach, which could potentially be used in calculation. In this thesis we would not be using it.
 
 The length gauge is a gauge transformation that replaces the vector potential for the field by the scalar potential for the quasi-static electric field \cite{LengthGauge3}.  In this gauge we take the Hamiltonian as: $ H = \mathbf{p}^2/2m + V(\mathbf{r})  + e\mathbf{E}\mathbf{r} $. The length gauge is convenient since both the Coulomb and the external fields are represented by the scalar potentials, which are additive. In the presence of the radiation field, the length gauge is obtained by the gauge transformation of the vector potential $ \mathbf{A} $, such that $ \mathbf{A} \rightarrow \mathbf{A} + \nabla \chi $ where $ \chi = - \mathbf{r} \cdot \mathbf{A} $. 
 
@@ -314,31 +336,31 @@ So we now apply the scattering analysis for 2D, from the previous chapter, and a
 \end{equation}
 Now we use the 2D scattering amplitude from the previous chapter:
 \begin{equation}\label{fgampl}
-  f_g(\theta) = \sqrt{\frac{2}{Pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
+  f_g(\theta) = \sqrt{\frac{2}{\pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
 \end{equation}
 As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering length. And we get for the scattering length, in 2D:
 \begin{equation}
 \begin{split}
-  & \theta_g = \int_{0}^{2Pi}{d\theta f_g(\theta)} = \frac{2}{Pi}\sum_{m,m'}\int_{0}^{2Pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
-  & = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
+  & \theta_g = \int_{0}^{2\pi}{d\theta f_g(\theta)} = \frac{2}{\pi}\sum_{m,m'}\int_{0}^{2\pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
+  & = \frac{2}{\pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
 \end{split}
 \end{equation}
 
 The same discussion applies for the ungerade solution so we :
 \begin{equation}
-  \theta_u = \frac{2}{Pi}\sum_{m}{\epsilon_m\sin^2\delta_m^u}
+  \theta_u = \frac{2}{\pi}\sum_{m}{\epsilon_m\sin^2\delta_m^u}
 \end{equation}
 
 In our case we are not interested in the elastic scattering of the gerade and ungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
 
 Instead we seek the asymptotic form for the difference
 \begin{equation}
-  \frac{1}{2}\left(F_g(R) - F_u(R)\right) \sim \frac{\left|f_g(\theta) - f_u(\theta)\right|}{4Pi}
+  \frac{1}{2}\left(F_g(R) - F_u(R)\right) \sim \frac{\left|f_g(\theta) - f_u(\theta)\right|}{4\pi}
 \end{equation}
 Using expression \eqref{fgampl} we get:
 \begin{equation}
 \begin{split}
-  & \lambda = \frac{1}{4}\int_{0}^{2Pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4Pi} \Rightarrow \\
+  & \lambda = \frac{1}{4}\int_{0}^{2\pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4\pi} \Rightarrow \\
   & \lambda = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
 \end{split}
 \end{equation}
@@ -427,14 +449,14 @@ electronic states respectively. Here $ {\bf \nabla}^2 $ is the two-dimensional L
 \psi_{g,u}({\bf R}) = \sum_{m=-\infty}^{m=\infty} \, e^{i m \phi} F^{\, g,u}_{m}(R)
 \end{equation}
 where the radial functions $F_{m}(R)$ obey
-\begin{equation}
+\begin{equation}\label{FZg}
 F_{m}''(R) + \frac{F'_{m}}{R} - \frac{m^2}{R^2} F_{m}(R) + (k^2 - 2 \mu V_{g,u}(R)) F_{m}(R) =0
 \end{equation}
 where we suppressed the $g,u$ superscripts in the radial functions, and the prime notation denotes derivatives with respect to $R$.
 
 In the asymptotic region as $ R \rightarrow \infty $ and $ V_{g,u} \rightarrow 0$,
-Eq. (xx) tends to the Bessel equation for integer order, and the radial solutions tend to
-\begin{equation}
+Eq. \eqref{FZg} tends to the Bessel equation for integer order, and the radial solutions tend to
+\begin{equation}\label{FAmpl}
 F_{m}(R)\rightarrow a_{m} \, J_{|m|}(k R) +
 b_{m} H^{(1)}_{|m|}(k R)
 \end{equation}
@@ -453,12 +475,12 @@ e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i
 e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
 \end{equation}
 we set $ a_{m} = -i^{-|m|}$ and inserting into \eqref{psiLR} we get
-\begin{equation}
-  \begin{split}
-    \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
+
+\begin{equation}\label{LRpsi}
+ \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
 (-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
-  \end{split}
 \end{equation}
+
 where we used the asymptotic form
 \begin{equation}
 H^{(1)}_{m} \rightarrow \sqrt{\frac{2}{\pi k R}} \,
@@ -495,7 +517,7 @@ Defining the cross section as the ratio of particle flux scattered into the regi
 \begin{equation}
 d\sigma   \equiv   |f(\phi)|^2 \, d\phi
 \end{equation}
-Comparing (xx) with (xx)  we find that
+Comparing \eqref{psiLR} with \eqref{LRpsi} we find that
 \begin{equation}
 f(\phi) =
 \sqrt{\frac{2}{\pi k}} \sum_{m}
@@ -511,7 +533,7 @@ Alternatively, the constant $ b_{m} $ is sometimes expressed as a phase shift.
 
 \section{Resonant Charge Transfer Cross Sections}
 
-Consider the amplitude given by expression (xx)
+Consider the amplitude given by expression \eqref{FAmpl}
 \begin{equation}
 F({\bf R},{\bf r}) = \psi_{g}({\bf R}) \phi_{g}({\bf R},{\bf r}) + \psi_{u}({\bf R}) \phi_{u}({\bf R},{\bf r})
 \end{equation}
