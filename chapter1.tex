@@ -8,16 +8,16 @@ As we will apply a similar method to treat the hydrogen molecular ions in 2D,
 we first review the methodology of Bates \cite{Bates1}\cite{Bates2} used to calculate the lowest electronic eigenstates and eigenvalues for the $ {\rm H}_2^{+} $ system in 3D. \footnote {In this section we
 use atomic (Hartree) units, unless otherwise stated.}
 
-The hydrogen molecular ion, and similar systems ( such as $ {\rm HeH}^{+} $) are one of the few that allow a full analytic quantum mechanical description. Although its
+The hydrogen molecular ion, and similar systems ( such as $ {\rm HeH}^{+} $), are one of the few that allow a full analytic quantum mechanical description. Although its
 solutions do not exist in the closed form, they can be expressed as a convergent infinite series.  Wasserman in his thesis \cite{ExperimentalBates2} in 1963 reports that while the existence of $ {\rm H}_2^{+} $ has been verified, no  discrete spectrum of the  $ {\rm H}_2^{+} $ has been observed  In the same thesis, Wasserman reports that the ionization potential of $ {\rm H}_2^{+} $ has been measured and shows good agreement with the theoretical calculations. However, in 1989 Carrington, McNab and Montgomerie report \cite{ExperimentalBates3} that the radio frequency hyperfine transitions of the $ {\rm H}_2^{+} $ have been measured. They note that the $ {\rm H}_2^{+} $  is highly reactive and therefore hard to keep in the lab.
 
 As a three-body problem, containing two protons and an electron,
-the Schrodinger PDE can be separated by expressing it in an elliptical coordinate system. Unfortunately, there does not exist a closed form representation for the eigenvalues and one must resort to numerical methods in their calculation.
-Bates et al. \cite{Bates1}\cite{Bates2} did not provide numerical codes used the evaluation of eigenvalues. Instead, they used an expanded fraction method for calculating the latter with the desired level of precision. The paper\cite{Bates2} does not report on the details of those calculations, and so in this thesis we provide an alternative description. We will compare
- the results obtained here with those reported in\cite{Bates2}. Harmony with with those reported in\cite{Bates2} will provide 
+the Schrodinger PDE can be separated by expressing it in an elliptical coordinate system. Unfortunately, there does not exist a closed-form representation for the eigenvalues, and one must resort to numerical methods in their calculation.
+Bates et al. \cite{Bates1}\cite{Bates2} did not provide numerical codes used in the evaluation of eigenvalues. Instead, they used an expanded fraction method for calculating the latter with the desired level of precision. The paper\cite{Bates2} does not report on the details of those calculations, and so in this thesis we provide an alternative description. We will compare
+ the results obtained here with those reported in\cite{Bates2}. Harmony with those reported in\cite{Bates2} will provide 
  confidence in the fidelity of the analogous calculations in 2D.
 
-We use Hartree Atomic Units \eqref{Atomic}, in all equations. In this system the numerical values of the following fundamental constants are 1:
+We use Hartree Atomic Units \eqref{Atomic}, in all equations. In this system, the numerical values of the following fundamental constants are 1:
 \setlength{\mathindent}{0pt}
 \begin{equation}\label{Atomic}
 \begin{split}
@@ -30,7 +30,7 @@ We use Hartree Atomic Units \eqref{Atomic}, in all equations. In this system the
 
 In addition, in equations, variables that represent vectors are typeset either in \textbf{bold} or with an arrow above the symbol, $ \vec{r} $. A caret $(\,\hat{}\ ) $  above a symbol indicates that the symbol is an operator.
 
-The only place where we specifically will not be using Atomic units will be in the following derivation, where we do transformation of the molecular Hamiltonian into a Jacobian coordinate system. Since some terms will contain reduced mass, we want to keep the units intact.
+The only instance in which we will avoid using atomic units is during the derivation that involves transforming the molecular Hamiltonian into a Jacobian coordinate system. Since certain terms will include the reduced mass, we aim to maintain the integrity of the units throughout this process.
 
 \section{Description}
 The starting point is the Schrodinger equation for the hydrogen molecular ion in 3D. We 
