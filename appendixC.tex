@@ -1,203 +1,102 @@
-\chapter{ Hydrogen Ion in 2 Dimension Equation, Derivation }
+\chapter{ Hydrogen Ion in 2 Dimension Equation, Mathematica Code }
 \label{AppendixC}
 
-\begin{equation}\label{eqPartial2DG}
-\left(-\frac{1}{2}\nabla^2-\frac{1}{r_a}-\frac{1}{r_b}\right)\psi = E\,\psi
-\end{equation}
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
 
-As illustrated by the figure \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have 
-\begin{equation}\label{variables1G}
-\begin{split}
-& \lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\[1em]
-& \lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\[1em]
-& \text{where } \lambda \in \left[1,\infty\right]\,,\,\,\,\,\,\,\,\,\,\mu \in \left[ -1, 1 \right]\,\,\,\,\,\,\,\,\,\text{ and } \\[.8em] 
-& r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
-\end{split}
-\end{equation}
+\begin{doublespace}
+\noindent\(\pmb{\text{(*}\text{Using} \text{Zhu}, \text{Xiong} \text{paper}\text{*)}}\newline
+\pmb{\text{(* Distance between nuclei*)}}\newline
+\pmb{}\newline
+\pmb{\text{(*}\text{*)}}\newline
+\pmb{}\newline
+\pmb{\text{(* L equation and coefficients *)}}\newline
+\pmb{\sigma [\text{r$\_$}]\text{:=}\frac{r}{p}-\frac{1}{2};}\newline
+\pmb{\alpha [\text{n$\_$}]\text{:=}(n+1)\left(n+\frac{1}{2}\right);}\newline
+\pmb{\beta [\text{n$\_$},\text{r$\_$}]\text{:=}2n^2+(4p-2\sigma [r])n-A +p^2-2p \sigma [r]-\frac{\sigma [r]}{2};}\newline
+\pmb{\gamma [\text{n$\_$},\text{r$\_$}]\text{:=}(n-1)\left(n-2\sigma [r]-\frac{1}{2}\right)+\sigma [r]\left(\sigma [r]-\frac{1}{2}\right);}\newline
+\pmb{}\newline
+\pmb{\text{(* Create a continued fraction equation for the coefficients of L equation *)}}\newline
+\pmb{}\newline
+\pmb{\text{lCoeff2}[\text{n$\_$},\text{r$\_$}]\text{:=}\frac{\beta [0,r]}{\alpha [0]}+\text{Simplify}[\text{ContinuedFractionK}[-\alpha [i-1]\gamma
+[i,r],\beta [i,r],\{i,1,n\}]] ;}\newline
+\pmb{}\newline
+\pmb{\text{(* M equation and coefficients *)}}\newline
+\pmb{}\newline
+\pmb{w=-A +\frac{p^2}{2};\text{      }q= \frac{-p^2}{4};}\newline
+\pmb{v[\text{n$\_$}]\text{:=}\frac{w-n^2}{q};}\newline
+\pmb{\text{(* Evaluate as a continued fraction *)}}\newline
+\pmb{\text{mCoeffV0}[\text{n$\_$}]\text{:=}v[0]+2\text{Simplify}[\text{ContinuedFractionK}[-1,v[2i],\{i,1,n\}]];}\newline
+\pmb{}\newline
+\pmb{\text{mCoeffV1}[\text{n$\_$}]\text{:=}v[1]-1+\text{Simplify}[\text{ContinuedFractionK}[-1,v[2i+1],\{i,1,n\}]];}\newline
+\pmb{}\newline
+\pmb{\text{(*} \text{Parameters}:}\newline
+\pmb{n: \text{Depth} \text{of} \text{the} \text{continued} \text{fraction},}\newline
+\pmb{ R: \text{Internuclear} \text{distance},}\newline
+\pmb{ \text{gerade}: \text{flag} \text{indicating} \text{whether} \text{we} \text{are} \text{calculating} \text{gerade} \text{or} \text{ungerade}
+\text{states}}\newline
+\pmb{\text{output}:}\newline
+\pmb{R , \text{electron} \text{energy}, \text{total} \text{energy}, \text{separation} \text{constant}, \text{and} p \text{value} }\newline
+\pmb{\text{*)}}\newline
+\pmb{\text{energySingleR}[\text{n$\_$},\text{R$\_$}, \text{gerade$\_$}]\text{:=}}\newline
+\pmb{\text{Module}[\{\text{asAndps},\text{pe},\text{energy},\text{aa}\},}\newline
+\pmb{\text{(*Now find p and A *)}}\newline
+\pmb{\text{If}[\text{gerade}\text{==}1, }\newline
+\pmb{\text{asAndps}= \text{NSolve}[\{\text{lCoeff2}[n,R]==0,}\newline
+\pmb{\text{mCoeffV0}[n]==0\},\{A,p\},\text{Reals}],}\newline
+\pmb{\text{asAndps}= \text{NSolve}[\{\text{lCoeff2}[n,R]==0,}\newline
+\pmb{\text{mCoeffV1}[n]==0\},\{A,p\},\text{Reals}]];}\newline
+\pmb{\text{aa}=\text{Sort}[\text{asAndps}[[\text{All},1,2]], \text{Greater}][[1]];}\newline
+\pmb{\text{pe}=\text{Sort}[\text{asAndps}[[\text{All},2,2]], \text{Greater}][[1]];}\newline
+\pmb{\text{energy} = \frac{(-2)}{R^2}\text{pe}^2;}\newline
+\pmb{\left\{R,\text{energy}, \text{energy} + \frac{1}{R},\text{aa},\text{pe}\right\}}\newline
+\pmb{]}\)
+\end{doublespace}
 
-Plug the variables $ \lambda $ and $ \mu $ into the equation \eqref{eqPartial2DG} we get by using 3D elliptic cylindrical coordinates \cite{MorseFeshbach} .
-\begin{equation}
-\begin{split}
-& \nabla^2 = \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[ \sqrt{\lambda^2-1}\frac{\partial}{\partial \lambda}\left(\sqrt{\lambda^2-1}\frac{\partial \psi}{\partial \lambda} \right) + 
-\sqrt{1-\mu^2}\frac{\partial}{\partial \mu}\left(\sqrt{1 - \mu^2}\frac{\partial \psi }{\partial \mu }\right) \right] = \\
-& \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + (
-1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right]
-\end{split}
-\end{equation}
+\begin{doublespace}
+\noindent\(\pmb{\text{allRs} = \text{Table}[0.2+i*0.1,\{i,0,9\}];}\newline
+\pmb{\text{allRs} = \text{Join}[\text{allRs}, \text{Table}[1+.5*i,\{i,1,8\}]];}\newline
+\pmb{\text{allRs} = \text{Join}[\text{allRs}, \text{Table}[5+i,\{i,1,5\}]];}\newline
+\pmb{}\newline
+\pmb{\text{energiesGerade} = \text{Map}[\text{energySingleR}[3,\text{$\#$1},1] \&, \text{allRs}];}\newline
+\pmb{\text{energiesUngerade} = \text{Map}[\text{energySingleR}[3,\text{$\#$1},2] \&, \text{allRs}];}\)
+\end{doublespace}
 
-So the equation transforms to (with $ \psi = \psi(\lambda, \mu) $:
-\begin{equation}
--\frac{1}{2}\frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + 
-(1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right] - \frac{2}{R(\lambda+\mu)}\psi - \frac{2}{R(\lambda-\mu)}\psi = E \psi
-\end{equation}
-or
-\begin{equation}\label{SchrFull-1}
--\frac{1}{2}\frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + 
-(1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right] - \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2}\psi = E \psi
-\end{equation}
+\begin{doublespace}
+\noindent\(\pmb{\text{Prepend}\left[\text{energiesGerade}, \left\{\text{R}, \text{E}, \text{$\texttt{"}$E+}\frac{1}{r}\texttt{"}, \text{A}, \text{p}\right\}\right]\text{
+ }\text{//}\text{MatrixForm}}\newline
+\pmb{\text{Prepend}\left[\text{energiesUngerade}, \left\{\text{R}, \text{E},\text{$\texttt{"}$E+}\frac{1}{r}\texttt{"}, \text{A}, \text{p}\right\}\right]\text{
+ }\text{//}\text{MatrixForm}}\)
+\end{doublespace}
 
-We assume that the total electronic wavefunction can be written as the product of two functions:
-\begin{equation}\label{variables2C}
-\psi(\lambda,\mu) = F(\mu)L(\lambda)
-\end{equation}
-we obtain from \eqref{SchrFull-1}
-\begin{equation}
-\begin{split}
-& \frac{2}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)F\frac{\partial^2 L}{\partial \lambda^2} + \lambda F\frac{\partial L}{\partial \lambda} + 
-(1 - \mu^2)L\frac{\partial^2 F}{\partial \mu^2} - \mu L\frac{\partial F}{\partial \mu} \right] + \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2} F L + E F L = 0 \Rightarrow \\[.8em]
-& (\lambda^2-1)\frac{1}{L}\frac{\partial^2 L}{\partial \lambda^2} + \frac{\lambda}{L}\frac{\partial L}{\partial \lambda} + 
-(1 - \mu^2)\frac{1}{F}\frac{\partial^2 F}{\partial \mu^2} - \frac{\mu}{F} \frac{\partial M}{\partial \mu} + 2R\lambda + \frac{R^2}{2} E (\lambda^2 - \mu^2) = 0 
-\end{split}
-\end{equation}
-Setting $ p^2 = \frac{R^2}{2}E $ and rearraging: \\[1.em]
-\begin{equation}\label{eqLG}
-\begin{split}
-& (\lambda^2-1)\frac{1}{L}\frac{\partial^2 L}{\partial \lambda^2} + \frac{\lambda}{L}\frac{\partial L}{\partial \lambda} + 2R\lambda + \frac{R^2}{2} E \lambda^2 + \\[.8em]
-& (1 - \mu^2)\frac{1}{F}\frac{\partial^2 F}{\partial \mu^2} - \frac{\mu}{F} \frac{\partial M}{\partial \mu} - \frac{R^2}{2} E - \mu^2 = 0
-\end{split}
-\end{equation}
-We can conclude that both equations for $ \lambda $ and $ \mu $ must be equal to the separation constant $ A $. So it follows that
-\begin{equation}\label{eqLG}
-\begin{split}
-& (\lambda^2-1)\frac{\partial^2 L}{\partial \lambda^2} + \lambda\frac{\partial L}{\partial \lambda} + \left(A + 2R\lambda - p^2 \lambda^2\right) L = 0 \\[.8em]
-& (1 - \mu^2)\frac{\partial^2 F}{\partial \mu^2} - \mu\frac{\partial F}{\partial \mu} - \left(-A + p^2 \mu^2\right) F = 0
-\end{split}
-\end{equation}
-where $ A $ is the separation constant.
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\newline
+\pmb{\text{eG} = \text{Interpolation}[\text{Transpose}[\{\text{energiesGerade}[[\text{All},1]],\text{energiesGerade}[[\text{All},2]]\}]];}\newline
+\pmb{\text{eGTotal} = \text{Interpolation}[\text{Transpose}[\{\text{energiesGerade}[[\text{All},1]],\text{energiesGerade}[[\text{All},3]]\}]];}\newline
+\pmb{\text{Plot}[\{\text{eG}[x],\text{eGTotal}[x]\},\{x,0.2,10\}, \text{PlotStyle}\text{-$>$}\{\text{Red},\text{Green}\}, \text{AxesLabel}\to \{\text{R},
+\text{{``}(E),V(R){''}}\}, }\newline
+\pmb{\text{AxesOrigin}\to \{0,0\},\text{PlotLabel}\text{-$>$}\{\text{{``}Electron vs Total potential for 1sG (Gerade) state{''}}\}, }\newline
+\pmb{\text{PlotLabels}\text{-$>$}\text{Placed}[\{\text{{``}E(R){''}},\text{{``}E(R)+V(R){''}}\},\{\text{Left}\}], \text{PlotRange}\text{-$>$}\text{Automatic}]}\)
+\end{doublespace}
 
-Now solve each equation.
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
 
-\section{$ \mu $ Equation}
-Using the substition $ \mu = \cos x $, $ d\mu = -\sin x dx $,  we get the other form of the equation:
-\begin{equation}
-\frac{dF}{d\mu} = -\frac{1}{\sin x}\frac{d M}{d x}
-\end{equation}
-\begin{equation}
-\begin{split}
-& \frac{d^2F}{d\mu^2} = \frac{d}{d x}\left(-\frac{1}{\sin x}\frac{d M}{d x}\right)\frac{d x}{d \mu} = \frac{d}{d x}\left(-\frac{1}{\sin x}\frac{d M}{d x}\right)\left(-\frac{1}{\sin x}\right) = \left[-\frac{\cos x}{\sin^2 x}\frac{d M}{d x} + \frac{1}{\sin x}\frac{d^2 M}{d x^2}\right]\frac{1}{\sin x} \Rightarrow \\[.8em]
-& \frac{d^2 F}{d\mu^2} = \frac{1}{\sin^2 x}\frac{d^2 M}{d x^2} - \frac{\cos x}{\sin^3 x}\frac{d M}{d x}
-\end{split}
-\end{equation}
-Plug in equation for $ F(\mu) $.
-\begin{equation}\label{Feq}
-\begin{split}
-& \frac{d^2 M}{d x^2} - \frac{\cos x}{\sin x}\frac{d M}{d x} + \frac{\cos x}{\sin x}\frac{d M}{d x} + \left(-A + p^2\cos^2 x\right) M = 0 \Rightarrow \\[.8em]
-& \frac{d^2 M}{d x^2} + \left(-A + p^2\cos^2x\right)M = 0
-\end{split}
-\end{equation}
-Using $ \cos(2x) = \cos^2x - \sin^2x = 2\cos^2x - 1 $ we get:
-\begin{equation}\label{Feq2}
-\frac{d^2 M}{d x^2} + \left[-A + \frac{p^2}{2} + \frac{p^2}{2}\cos(2x) \right]M = 0 
-\end{equation}
+\begin{doublespace}
+\noindent\(\pmb{\text{eU} = \text{Interpolation}[\text{Transpose}[\{\text{energiesUngerade}[[\text{All},1]],\text{energiesGerade}[[\text{All},2]]\}]];}\newline
+\pmb{\text{eUTotal} = \text{Interpolation}[\text{Transpose}[\{\text{energiesUngerade}[[\text{All},1]],\text{energiesUngerade}[[\text{All},3]]\}]];}\newline
+\pmb{\text{Plot}[\{\text{eU}[x],\text{eUTotal}[x]\},\{x,0.2,10\}, \text{PlotStyle}\text{-$>$}\{\text{Red},\text{Green}\}, \text{AxesLabel}\to \{\text{R},
+\text{{``}(E),V(R){''}}\}, }\newline
+\pmb{\text{AxesOrigin}\to \{0,0\},\text{PlotLabel}\text{-$>$}\{\text{{``}Electron vs Total potential for 2pU (Ungerade) state{''}}\}, }\newline
+\pmb{\text{PlotLabels}\text{-$>$}\text{Placed}[\{\text{{``}E(R){''}},\text{{``}E(R)+V(R){''}}\},\{\text{Left}\}], \text{PlotRange}\text{-$>$}\text{Automatic}]}\)
+\end{doublespace}
 
-\section{$ \lambda $ Equation}
-
- So assume the solution as the sum of Laguerre polynomials and Algebra:
-\begin{equation}
-\begin{split}
-& L(x) =  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k(x)}\,\,\text{ with: ( the prime is a derivative) } \\[.8em]
-& x\,L_k^{'}(x) = k\,L_k(x)  - k\,L_{k-1}(x) \\[.8em]
-& x\,L_k^{''}(x) = (x-1)L_k^{'}(x) - k\,L_k(x) = xL_k^{'}(x)-L_k^{'}(x) - n=k\,L_k(x) = \\[.8em] 
-& = k\,L_k(x)  - k\,L_{k-1}(x) - L_k^{'}(x) - k\,L_k(x) = - L_k^{'}(x) - k\,L_{k-1}(x)\\[.8em]
-\end{split}
-\end{equation}\\*
-First, we shift the domain $ \lambda = x + 1 $. The equation is:
-\begin{equation}
-\begin{split}
-x(x +2)\frac{d^2\,L}{d\,x^2} + (x+1)\frac{d\,L}{d\,x} + \left[ -p^2x^2  -2p^2x + 2Rx - p^2 + 2R - A \right] L = 0;
-\end{split}
-\end{equation}\\*
-And the derivatives are:
-\begin{equation}
-\begin{split}
-& L^{'} =  -p\,e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} + e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} \\[.8em]
-& L^{''} = p^2 e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} - 2 p e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} + e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{''}}  
-\end{split} 
-\end{equation}\\*
-Now plug in the L equation:
-\begin{equation}
-\begin{split}
-& x(x +2)p^2 e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} - 2x(x +2)p\,e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} + x(x +2)e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{''}} - \\[.8em]
-& -(x+1)p\,e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} + (x+1)e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} + \\[.8em]
-& + \left[  -p^2x^2 + (-2p^2 + 2R)x - p^2 + 2R \right] e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} = -A  e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k}
-\end{split}
-\end{equation}\\*
-Cancel exponential and $ p^2 $ terms:
-\begin{equation}
-\begin{split}
-& - 2(x +2)p\,\sum_{k=0}^{\infty}{c_k\,xL_k^{'}}  + (x +2)\sum_{k=0}^{\infty}{c_k\,xL_k^{''}} - p\,\sum_{k=0}^{\infty}{c_k\,xL_k}  - p\,\sum_{k=0}^{\infty}{c_k\,L_k} + \\[.8em]
-& + \sum_{k=0}^{\infty}{c_k\,xL_k^{'}} +  \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + 2R \sum_{k=0}^{\infty}{c_k\,xL_k} + \left( - p^2 + 2R \right)\sum_{k=0}^{\infty}{c_k\,L_k} = -A  \sum_{k=0}^{\infty}{c_k\,L_k}
-\end{split}
-\end{equation}\\*
-Expand the derivatives
-\begin{equation}
-\begin{split}
-& - 2(x +2)p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k} + 2(x +2)p\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} -(x + 2)\sum_{k=0}^{\infty}{c_k\,L_k^{'}} - (x+2)\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - \\[.8em]
-& - p\,\sum_{k=0}^{\infty}{c_k\,xL_k} - p\,\sum_{k=0}^{\infty}{c_k\,L_k} + \sum_{k=0}^{\infty}{c_k\,k\,L_k} - \sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} + \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + 2R \sum_{k=0}^{\infty}{c_k\,xL_k} + \\[.8em]
-&  \left( - p^2 + 2R  \right)\sum_{k=0}^{\infty}{c_k\,L_k} = -A  \sum_{k=0}^{\infty}{c_k\,L_k}
-\end{split}
-\end{equation}\\*
-Expand again:
-\begin{equation}
-\begin{split}
-& - 2p\,\sum_{k=0}^{\infty}{c_k\,k\,xL_k} - 4p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k} + 2p\,\sum_{k=0}^{\infty}{c_{k-1}\,k,x\,L_{k-1}} + 4p\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - \sum_{k=0}^{\infty}{c_k\,k\,L_k} + \sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} -  \\[.8em]
-& -2\sum_{k=0}^{\infty}{c_k\,L_k^{'}} - \sum_{k=0}^{\infty}{c_{k-1}\,k\,x\,L_{k-1}}  - 2\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - p\,\sum_{k=0}^{\infty}{c_k\,xL_k} - p\,\sum_{k=0}^{\infty}{c_k\,L_k} + \sum_{k=0}^{\infty}{c_k\,k\,L_k} - \sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}}  + \\[.8em]
-& + \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + 2R \sum_{k=0}^{\infty}{c_k\,xL_k} +  \left( - p^2 + 2R  \right)\sum_{k=0}^{\infty}{c_k\,L_k} =  -A  \sum_{k=0}^{\infty}{c_k\,L_k}
-\end{split}
-\end{equation}\\*
-Group by $ x $, $ n $, etc..:
-\begin{equation}
-\begin{split}
-& - 2p\,\sum_{k=0}^{\infty}{c_k\,k\,xL_k} + (2p-1)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,x\,L_{k-1}}  - 4p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k}+ (4p-2)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} - \\[.8em]
-& - \sum_{k=0}^{\infty}{c_k\,L_k^{'}} + (2R-p)\,\sum_{k=0}^{\infty}{c_k\,xL_k}  + \left( - p^2 -p + 2R  \right)\sum_{k=0}^{\infty}{c_k\,L_k} = -A  \sum_{k=0}^{\infty}{c_k\,L_k}
-\end{split}
-\end{equation}\\*
-Now use these formulas (from here \verb+http://mathworld.wolfram.com/AssociatedLaguerrePolynomial.html+, lines 14 and 16)
-\begin{equation}
-\begin{split}
-\frac{d}{d\,x}L_k(x) = -\sum_{i = 0}^{k-1}{L_i(x)}
-\end{split}
-\end{equation}\\* 
-we also need this \\*
- (from: \verb+http://www.maths.uq.edu.au/MASCOS/Orthogonal09/Warnaar.pdf+):
-\begin{equation}
-\begin{split}
-& x\,L_k = (2k+1)L_k - (k+1)L_{k+1} - k\,L_{k-1} \\[.8em]
-& x\,L_{k+1} = (2k+3)L_{k+1} - (k+2)L_{k+2} - (k+1)\,L_{k}\\[.8em]
-& x\,L_{k-1} = (2k-1)L_{k-1} - k\,L_k - (k-1)\,L_{k-2} \\[.8em]
-& x\,L_{k-2} = (2k-3)L_{k-2} - (k-1)\,L_{k-1} - (k-2)\,L_{n-3} \\[.8em]
-\end{split} 
-\end{equation}\\*
-And plug in again 
-\begin{equation}
-\begin{split}
-&  \sum_{k=0}^{\infty}{c_k  \sum_{i = 0}^{k-1}{L_i(x)} } - 2p \sum_{k=0}^{\infty}{ k(2k+1) c_kL_k} + 2p  \sum_{k=0}^{\infty}{ k(k+1) c_{k+1}L_{k+1}} +2p  \sum_{k=0}^{\infty}{ k^2  c_{k-1}L_{k-1}} + \\[.8em]
-& + (2p-1) \sum_{k=0}^{\infty}{c_{k-1}\,k (2n-1)L_{k-1}} - (2p-1) \sum_{k=0}^{\infty}{c_{k}\,k^2 L_{k}} - (2p-1) \sum_{k=0}^{\infty}{c_{k-2}\,k(k-1) L_{k-2}} - \\[.8em]
-& - 4p\,\sum_{k=0}^{\infty}{c_k\,k\,L_k} + (4p-2)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}} + (2R-p)\,\sum_{k=0}^{\infty}{c_k\,(2k+1)L_k}  - (2R-p)\,\sum_{k=0}^{\infty}{c_{k+1}\,(k+1)L_{k+1}}  + \\[.8em]
-& - (2R-p)\,\sum_{k=0}^{\infty}{c_{k-1}\,k\,L_{k-1}}  + \left( - p^2 -p + 2R  \right)\sum_{k=0}^{\infty}{c_{k}\,L_{k}} = -A  \sum_{k=0}^{\infty}{c_{k}\,L_{k}}
-\end{split}
-\end{equation}\\[1em]
-Now group by $ n $ and for clarity remove the sum and  $ c_k $ terms:
-
-\begin{equation}
-\begin{split}
-&  \sum_{k=0}^{\infty}c_k \left\{ \sum_{i = 0}^{k-1}{L_i(x)}  +  \right. \\[.8em] 
-& + \left[ -2pk(2k+1) -(2p-1)k^2 -4pk +(2R-p)(2k+1) - p^2 -p + 2R \right]L_k + \\[.8em]
-& + \left[2pk(k+1) - (2R-p)(k+1) \right]L_{k+1} + \\[.8em]
-& + \left[2pk^2 + (2p-1)k(2k-1) + (4p-2)k - (2R-p)k \right]L_{k-1} - \\[.8em]
-& \left. - \left[ (2p-1)k(k-1)  \right]L_{k-2}  \right\}
-\end{split}
-\end{equation}\\[1em]
-
-Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials. The result is an 'almost' lower triangual matrix, called Hessenberg matrix.
-
-
-//TODO:Remove
-Once the value of $ k $ has been estimated, the vibrational energy levels are:
-\begin{equation}
-E_n = \hbar\left(n + \frac{1}{2}\right)\sqrt{\frac{k}{m}}
-\end{equation}
-
-
-
+\begin{doublespace}
+\noindent\(\pmb{\text{Plot}[\{\text{eGTotal}[x],\text{eUTotal}[x]\},\{x,0.2,10\}, \text{PlotStyle}\text{-$>$}\{\text{Red},\text{Green}\}, \text{AxesLabel}\to
+\{\text{R}, \text{{``}E(R)+V(R){''}}\}, }\newline
+\pmb{\text{AxesOrigin}\to \{0,0\},\text{PlotLabel}\text{-$>$}\{\text{{``}Gerade 1sg and Ungerade 2pu total potential curves{''}}\}, }\newline
+\pmb{\text{PlotLabels}\text{-$>$}\text{Placed}[\{\text{{``}1sG{''}},\text{{``}2pU{''}}\},\{\text{Above},\text{Left}\}], \text{PlotRange}\text{-$>$}\text{Full}]}\newline
+\pmb{}\)
+\end{doublespace}
 

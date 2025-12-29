@@ -1,0 +1,23 @@
+#pdflatex command
+
+Repository:
+https://ZelimirUnlv@bitbucket.org/ZelimirUnlv/thesis-1.git
+
+pdflatex dissertation.tex
+bibtex dissertation
+pdflatex dissertation.tex
+
+#spell checker
+aspell check chapter2.tex  
+
+# To read, use evince, or okular
+
+# Overleaf
+https://www.overleaf.com/project/5eed7ea020b8600001759214
+
+#Github linked to Overleaf
+https://github.com/ZelimirL/ZelimirOverleaf
+
+Github usernam
+ZelimirL
+

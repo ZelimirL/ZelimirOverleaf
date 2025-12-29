@@ -1,12 +1,13 @@
 \chapter{Non-Relativistic Solution of the Hydrogen Molecular Ion in 2 Spatial Dimensions}
 
-\section{Existing Solution s}
+\section{Existing Solutions}
 
 We apply similar method used in the 3D case of the $ H_2^{+} $ ion to find the solution in 2 dimensions. The problem itself is analogous to the 3D problem, but leads to the Mathieu's function as the solution for the radial problem.
 
-There are not too many papers dealing with solving the $ H_2^{+} $ but here is some relevant, and recent work in this problem. In addition to the Bates paper \cite{Bates1}, there are other, more recent papers \cite{H2Plus2d1} \cite{TwoCentersParticle}, \cite{Kolos} which deal with the solution of the Schrodinger equation and spectrum of the $ H_2^{+} $ molecule.  As with other work in this problem, the paper relies on the work done by Bates et all. \cite{Bates1}. The solution in \cite{H2Plus2d1} agrees well with our solution.  One can also apply approximate methods, but they should be considered inferior to the analytical solution, we provide here. 
+There are not too many papers dealing with solving the $ H_2^{+} $ but here is some relevant, and recent work in this problem. In addition to the Bates paper \cite{Bates1}, there are other, more recent papers \cite{H2Plus2d1} \cite{TwoCentersParticle}, \cite{Kolos} which deal with the solution of the Schrodinger equation and spectrum of the $ H_2^{+} $ molecule in 3 dimensions.  As with other work in this problem, the paper relies on the work done by Bates et all. \cite{Bates1}. The solution in \cite{H2Plus2d1} agrees well with our solution.  One can also apply approximate methods, but they should be considered inferior to the analytical solution, we provide here. 
 
 Analogous to the 3D case, we rely on Born-Oppenheimer (BO) approximation, in order to provide an analytical solution. The same justification for using the BO approximation in 3D molecular systems applies to the 2D problems as well, since the masses of the nuclei and electron(s) remain unchanged.  Following the same BO approximation as in Chapter 1, and using atomic units, the Schrodinger equation for the $ H_2^{+} $ molecules is given by equation \eqref{eqPartial2D} below. 
+
 
 \begin{equation}\label{eqPartial2D}
 \left(-\frac{1}{2}\nabla^2-\frac{1}{r_a}-\frac{1}{r_b}\right)\psi = E\,\psi
@@ -14,79 +15,88 @@ Analogous to the 3D case, we rely on Born-Oppenheimer (BO) approximation, in ord
 
 The equation \eqref{eqPartial2D} is superficially similar to the equation \eqref{eqPartial3D} and the diagram \ref{h2ion3d}, but in this case, the $ r_a $ and $ r_b $ represent the nuclei coordinates in 2 dimensions.
 
-Following the \cite{2DHAtom}, The electron wavefunction depends on only 3 quantum numbers, principal quantum number $ n $, angular quantum number $ l $ and spin $ s $. Again we ignore the spin degrees of freedom, considering the electron to be the regular 3 dimensional particles, where only its orbit is restricted to 2 dimensions.  Therefore the spin magnetic moment of the electron is not affected by the 2D restriction and the spin vector can point in any direction in 3D space. Also the orbit can have different shapes, thus there remains the need for an orbital quantum number. However, there can be one one orientation of the orbit, thus we do not consider the magnetic quantum number. This reasoning agrees with ~The solution of the electron wavefunction to the hydrogen atom in 2 dimensions \cite{H2atom} where electron wavefunction solution only depends on the principal and orbital quantum numbers.
+Following the \cite{2DHAtom}, The electron wavefunction depends on only 3 quantum numbers, principal quantum number $ n $, angular quantum number $ l $ and spin $ s $. Again we ignore the spin degrees of freedom, considering the electron to be the regular 3 dimensional particles, where only its orbit is restricted to 2 dimensions.  Therefore the spin magnetic moment of the electron is not affected by the 2D restriction and the spin vector can point in any direction in 3D space. Also the orbit can have different shapes, thus there remains the need for an orbital quantum number. However, there can be one one orientation of the orbit, thus we do not consider the magnetic quantum number. This reasoning agrees with the solution of the electron wavefunction to the hydrogen atom in 2 dimensions \cite{H2atom} where electron wavefunction solution only depends on the principal and orbital quantum numbers.
 
 The geometry of the 2D problem leads to choosing the elliptical coordinates (as in 3D problem), with two coordinates, $ \mu $ and $ \lambda $ denoting the position of the electron in 2D plane. \cite{Arfken}
 
 \section{Exact solution of the electron energies of the \texorpdfstring{$ H_2^+ $}{$H_2^+$} molecule}
 
-The goal is to provide the exact solution to the wavefunction of the $ H_2^{+} $ electron, for a given definition of exact. However even for this, relatively simple problem, it is impossible to find a closed form solution. So the solution is exact, in a sense that it can be done to an arbitrary precision.
+The goal is to provide the exact solution to the wavefunction of the $ H_2^{+} $ electron, for a given definition of exact. However even for this, relatively simple problem, it is impossible to find a closed form solution. So the solution is exact, in the sense that it can be done to an arbitrary precision.
 
-\begin{figure}
- \captionsetup{type=figure}
-  \includegraphics{H2Ion2D.png}
-  \caption{Hydrogen Ion in 2 dimension} 
-  \label{h2ion2d}
-\end{figure}
+As illustrated by the figure  \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the inter-nuclear axis, we have the nuclei at: $ z = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have:
 
-As illustrated by the figure  \ref{h2ion2d}, we express equation \eqref{eqPartial2D} in the elliptical coordinates, and by setting the $ x $ axis to be perpendicular to the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. So in  2D elliptic coordinates, $ \lambda $, $ \mu $ we have:
 \begin{equation}\label{variables1}
+r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+\end{equation}
+so
+\begin{equation}\label{variables1a}
+\lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R
+\end{equation}
+\begin{equation}
+\text{where } \lambda \in \left[1,\infty\right]\,,\,\,\,\,\,\,\,\,\,\mu \in \left[ -1, 1 \right]
+\end{equation}
+
+Now if we plug in the \eqref{variables1} into \eqref{eqPartial2D} we get by using $ \nabla $ in 2D elliptic cylindrical coordinates \cite{MorseFeshbach} .
+\begin{equation}
 \begin{split}
-& \lambda = \left(r_a + r_b\right)/R;\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\[1em]
-& \text{where } \lambda \in \left[1,\infty\right]\,,\,\,\,\,\,\,\,\,\,\mu \in \left[ -1, 1 \right]\,\,\,\,\,\,\,\,\,\text{ and } \\[.8em] 
-& r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+& \nabla^2 = \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[ \sqrt{\lambda^2-1}\frac{\partial}{\partial \lambda}\left(\sqrt{\lambda^2-1}\frac{\partial \psi}{\partial \lambda} \right) +
+\sqrt{1-\mu^2}\frac{\partial}{\partial \mu}\left(\sqrt{1 - \mu^2}\frac{\partial \psi }{\partial \mu }\right) \right] = \\
+& \frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} + (
+1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right]
 \end{split}
+\end{equation}
+
+So the equation transforms to (with $ \psi = \psi(\lambda, \mu) $:
+\begin{equation}\label{SchrFull-1}
+-\frac{1}{2}\frac{4}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)\frac{\partial^2 \psi}{\partial \lambda^2} + \lambda\frac{\partial \psi}{\partial \lambda} +
+(1 - \mu^2)\frac{\partial^2 \psi}{\partial \mu^2} - \mu\frac{\partial \psi}{\partial \mu} \right] - \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2}\psi = E \psi
 \end{equation}
 
 We assume that the total electronic wavefunction can be written as the product of two functions:
 \begin{equation}\label{variables2}
 \begin{split}
-& \psi(\lambda,\mu) = F(\mu)G(\lambda)
+& \psi(\lambda,\mu) = F(\mu)L(\lambda)
 \end{split}
 \end{equation}
 
-This way the original equation separates into two ODEs:
-
-\begin{equation}\label{L2-1}
-\left(\lambda^2 - 1 \right) \frac{d^2}{ d\lambda^2 }G(\lambda) + \lambda\frac{ d}{d\lambda }G (\lambda)  + \left(A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  \right)G (\lambda) = 0  
-\end{equation}
-
+\begin{figure}
+ \captionsetup{type=figure}
+  \includegraphics{H2Ion3D-2.png}
+  \caption{Hydrogen Ion in 2 dimension} 
+  \label{h2ion2d}
+\end{figure}
+it follows:
 \begin{equation}
- \left(1 - \mu^2 \right) \frac{d^2}{ d\mu^2 }F(\mu) - \mu\frac{ d }{d\mu }F(\mu) +  \left(-A -  \frac{E\,R^2}{2}\mu^2  \right)F(\mu) = 0
+\begin{split}
+& \frac{2}{ R^2 (\lambda^2-\mu^2) }\left[(\lambda^2-1)F\frac{\partial^2 L}{\partial \lambda^2} + \lambda F\frac{\partial L}{\partial \lambda} +
+(1 - \mu^2)L\frac{\partial^2 F}{\partial \mu^2} - \mu L\frac{\partial F}{\partial \mu} \right] + \frac{4}{R}\frac{\lambda}{\lambda^2-\mu^2} F L + E F L = 0 \Rightarrow \\[.8em]
+& (\lambda^2-1)\frac{1}{L}\frac{\partial^2 L}{\partial \lambda^2} + \frac{\lambda}{L}\frac{\partial L}{\partial \lambda} +
+(1 - \mu^2)\frac{1}{F}\frac{\partial^2 F}{\partial \mu^2} - \frac{\mu}{F} \frac{\partial M}{\partial \mu} + 2R\lambda + \frac{R^2}{2} E (\lambda^2 - \mu^2) = 0
+\end{split}
 \end{equation}
-and $ A $ is the separation constant. At this point we set:
-\begin{equation}
-p^2 = -\frac{ER^2}{2}
+
+We can conclude that both equations for $ \lambda $ and $ \mu $ must be equal to the separation constant $ A $. 
+\begin{equation}\label{eqLG3}
+\begin{split}
+& (\lambda^2-1)\frac{\partial^2 L}{\partial \lambda^2} + \lambda\frac{\partial L}{\partial \lambda} + \left(2R\lambda -  \frac{R^2}{2} E\lambda^2\right) L = AL \\[.8em]
+& (1 - \mu^2)\frac{\partial^2 F}{\partial \mu^2} - \mu\frac{\partial F}{\partial \mu} - \frac{R^2}{2} E \mu^2 F = -AF
+\end{split}
 \end{equation}
+where $ A $ is the separation constant.
 
-We observe that both equations for the functions $ M(\mu) $ and $ L(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
+\subsection{Algebraic Solution}
 
-\subsection{ M Equation }
+\subsubsection{ M Equation }
 
-Following the derivation in appendix C we get for the M equation
+Using the substitution $ \mu  = \cos x$ and $ F(\mu) = M(x) $ we get a new equation:
 
-\begin{equation}\label{Feq2}
+\begin{equation}\label{M2}
 \frac{d^2 M}{d x^2} + \left[-A + \frac{p^2}{2} + \frac{p^2}{2}\cos(2x) \right]M = 0 
 \end{equation}
 
-The equation \eqref{M2} is a form of a  Mathieu's equation \cite{Mathieu2}. 
+The equation \eqref{M2} can be written as:
 
-\subsection{ L Equation }
-
-Following the derivation in appendix C we get for the L equation
-
-\begin{equation}\label{L2-2}
-\begin{split}
-& (\lambda^2-1)\frac{d^2\,L}{d\lambda^2} + (2k+1)\lambda \frac{d\,L}{d\lambda} +  \left[A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  -k \right]L(\lambda) = 0
-\end{split}
-\end{equation}
-
-The equation for the $ L(\lambda) $ looks similar to the radial (modified) Mathieu's equation, but it is not an exact identity. 
-
-\subsubsection{Algebraic Solution}
-
-The equation \eqref{Feq2} can be written as:
-\begin{equation}\label{FeqM }
+\begin{equation}\label{M2a}
 \frac{d^2 M}{d x^2} + \left[w - 2q\cos(2x)\right]M = 0
 \end{equation}
 where
@@ -97,7 +107,9 @@ where
 \end{split}
 \end{equation}
 
-From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has eveb and odd eigenvalue functions as:
+The equation \eqref{M2a} is a form of a  Mathieu's equation \cite{Mathieu2}. 
+
+From the geometry of the problem we conclude that $ M(\mu) $ must be an even function.  Following \cite{Mathieu4} we look for the solution as class I and class II, which has even and odd eigenvalue functions as:
 \begin{equation}
 \begin{split}
 V_0 = \cfrac{2}{V_2 - \cfrac{1}{V_4 - \cfrac{1}{V_6 - ...}}}\label{V-1-1}
@@ -113,16 +125,28 @@ where
 V_m = \frac{w - m^2}{q}
 \end{equation}
 
-The equations \ref{V-1-1} and \ref{V-1-2} provide the first eigen equation for the even and odd solution recpectively.
+The equations \ref{V-1-1} and \ref{V-1-2} provide the first gen equation for the even and odd solution respectively.
 
-There are actually two ways to try to solve this equation:
+\subsubsection{ F Equation }
 
-Following \cite{Bates1} and \cite{H2Plus2d2} we look for the solution in the form of:
+\begin{equation}\label{eqLG3}
+(\lambda^2-1)\frac{\partial^2 F}{\partial \lambda^2} + \lambda\frac{\partial F}{\partial \lambda} + \left(2R\lambda -  \frac{R^2}{2} E\lambda^2\right) F = -AF
+\end{equation}
+
+We observe that both equations for the functions $ M(\mu) $ and $ F(\lambda) $ are either exact match or related to the Mathieu's equations. In general the Mathieu's equation represents the standing wave on an elliptical drum, (2D space), and the solution for the time independent Schrodinger equation is in general a standing wave, in 2D in this case. So it is plausible that these types of solutions are similar.
+
+There are actually two ways to try to solve this equation. One would be a brute force, by using some orthogonal polynomial (Laguerre) and looking for the eigenvalues.
+
+The Laguerre approach seems to be numerically unstable. The algorithm is fast but the results are only good to the order of magnitude. 
+
+The second is a bit more algebraic, and likely more accurate.
+
+Following \cite{Bates1} and \cite{H2Plus2d2} we could look for the solution in the form of:
 \begin{equation}\label{eqLsumG}
 L(\lambda) = \left(\lambda +1\right)^\sigma e^{-p\lambda}\sum_{n=0}^{\infty}{a_nx^n}
 \end{equation}
-with
-\begin{equation}
+where we use the substitution
+\begin{equation}\label{eqLG}
 \begin{split}
 \sigma = \frac{R}{p} - \frac{1}{2}
 \end{split}
@@ -131,7 +155,7 @@ with
 x = \frac{\lambda-1}{\lambda+1}
 \end{split}
 \end{equation}
-Substituing \eqref{eqLsumG} into \eqref{eqLG} and after some formidable algebra, we get a reccurence relation:
+Substituting \eqref{eqLG} into \eqref{eqLsumG} and after some formidable algebra, we get a recurrence relation:
 \begin{equation}
 \alpha_na_{n+1}-\beta_n a_n+\gamma_na_{n-1} = 0\,\,\,\,\,n \ge 0
 \end{equation}
@@ -158,184 +182,94 @@ Since $ a_{-1} = 0$ we have
 \frac{\beta_0}{\alpha_0} = F_1
 \end{equation}
 
-The Mathematica code is in appendix D. The energies calculated and the plot of the potential for the states $1s_g^{+}$ and $ 2s_g^{+} $ are in the tables below.
+The Mathematica code is in appendix C. The energies calculated and the plot of the potential for the states $1s_g^{+}$ and $ 2p_u^{+} $ are in the tables below.
 
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the internuclear separation R \\[1.1em] }
+The states  $ 1s_g $ and $ 2p_u^{+} $ represent the Gerade ground state and the Ungerade state respectively.
+
+    \begin{table}[h!]
+  \caption{ The separation constant A, electronic energy E}{total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the inter-nuclear separation R }
+  \centering
   \label{1sg}
-		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 			\hline
-			R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
-      0.1 & 0.1915 & 7.2704 & -7.3359 & 2.6640 \\[-1em]
-      0.2 & 0.3606 & 7.3367 & -6.5033 & -1.5033 \\[-1em]
-      0.3 & 0.5117 & 7.4029 & -5.8197 & -2.4864 \\[-1em]
-      0.4 & 0.6496 & 7.4684 & -5.2754 & -2.7754 \\[-1em]
-      0.5 & 0.7776 & 7.5332 & -4.8382 & -2.8382 \\[-1em]
-      0.6 & 0.8981 & 7.5974 & -4.4814 & -2.8148 \\[-1em]
-      0.7 & 1.0127 & 7.6608 & -4.1861 & -2.7575 \\[-1em]
-      0.8 & 1.1226 & 7.7235 & -3.9385 & -2.6885 \\[-1em]
-      0.9 & 1.2288 & 7.7856 & -3.7286 & -2.6174 \\[-1em]
-      1.0 & 1.3321 & 7.8469 & -3.5490 & -2.5490 \\[-1em]
-      1.5 & 1.8219 & 8.1444 & -2.9508 & -2.2841 \\[-1em]
-      2.0 & 2.2962 & 8.4273 & -2.6363 & -2.1363 \\[-1em]
-      2.5 & 2.7738 & 8.6973 & -2.4620 & -2.0620 \\[-1em]
-      3.0 & 3.2594 & 8.9556 & -2.3608 & -2.0275 \\[-1em]
-      3.5 & 3.7516 & 10.6100 & -2.2979 & -2.0122 \\[-1em]
-      4.0 & 4.2479 & 14.0730 & -2.2556 & -2.0056 \\[-1em]
-      4.5 & 4.7464 & 18.0513 & -2.2250 & -2.0028 \\[-1em]
-      5.0 & 5.2459 & 22.5391 & -2.2015 & -2.0015 \\[-1em]
-      6.0 & 6.2459 & 33.0272 & -2.1673 & -2.0006 \\[-1em]
-      7.0 & 7.2462 & 45.5209 & -2.1431 & -2.0003 \\[-1em]
-      8.0 & 8.2463 & 60.0130 & -2.1250 & -2.0000 \\[-1em]
-      9.0 & 9.2458 & 76.4955 & -2.1107 & -1.9996 \\[-1em]
-      10.0 & 10.2444 & 94.9542 & -2.0989 & -1.9989 \\
-			\hline
+			R & E & $ E + \frac{1}{R} $ & A & p \\ \hline \hline
+ 0.2 & -6.50361 & -1.50361 & 19.2757 & 0.360655\\
+ 0.3 & -5.81983 & -2.48649 & 175.774 & 0.511754\\
+ 0.4 & -5.27552 & -2.77552 & 198.466 & 0.649647\\
+ 0.5 & -4.83822 & -2.83822 & 218.834 & 0.777674\\
+ 0.6 & -4.48148 & -2.81482 & 30.6031 & 0.898146\\
+ 0.7 & -4.18616 & -2.75759 & 255.124 & 1.01272\\
+ 0.8 & -3.93852 & -2.68852 & 271.721 & 1.12264\\
+ 0.9 & -3.72861 & -2.6175 & 287.554 & 1.22886\\
+ 1. & -3.54905 & -2.54905 & 302.754 & 1.33211\\
+ 1.1 & -3.39429 & -2.4852 & 317.417 & 1.43302\\
+ 1.5 & -2.95083 & -2.28416 & 371.99 & 1.822\\
+ 2. & -2.63638 & -2.13638 & 433.864 & 2.29625\\
+ 2.5 & -2.4621 & -2.0621 & 491.12 & 2.77382\\
+ 3. & -2.36086 & -2.02752 & 545.139 & 3.25943\\
+ 3.5 & -2.29797 & -2.01225 & 596.728 & 3.75167\\
+ 4. & -2.25565 & -2.00565 & 646.407 & 4.24796\\
+ 4.5 & -2.22496 & -2.00274 & 694.536 & 4.74634\\
+ 5. & -2.20134 & -2.00134 & 741.373 & 5.24564\\
+ 6 & -2.16637 & -1.9997 & 16608. & 6.24457\\
+ 7 & -2.14043 & -1.99757 & 919.107 & 7.24158\\
+ 8 & -2.11874 & -1.99374 & 1003.68 & 8.23405\\
+ 9 & -2.09856 & -1.98745 & 1086.12 & 9.21909\\
+ 10 & -2.07822 & -1.97822 & 1166.79 & 10.1937 \\
+          \hline
 		\end{tabular}
-\restoregeometry
-}
+    \end{table}
 
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-  \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 2s_g $ for some values of the internuclear separation R \\[1.1em] } 
+\begin{table}[h!]
+  \caption{ The separation constant A, electronic energy E}{ total energy $ E + \frac{1}{R} $ , for the state $ 2p_u^{+} $ for some values of the inter-nuclear separation R } 
+  \centering
   \label{2sg}
-		\begin{tabular}{ >{\bfseries}m{6em} m{6em}  m{6em}  m{6em} m{6em} }
+		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
 			\hline
-			R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
-      0.1 &0.0710 & 15.8560 & -1.0102 & 8.9897 \\[-1em]
-      0.2 & 0.1358 & 19.2757 & -0.9225 & 4.0770 \\[-1em]
-      0.3 & 0.1967 & 22.4772 & -0.8600 & 2.4730 \\[-1em]
-      0.4 & 0.2548 & 25.4103 & -0.8116 & 1.6883 \\[-1em]
-      0.5 & 0.3106 & 28.1052 & -0.7722 & 1.2277 \\[-1em]
-      0.6 & 0.3647 & 30.6031 & -0.7390 & 0.9275 \\[-1em]
-      0.7 & 0.4172 & 32.9399 & -0.7105 & 0.7179 \\[-1em]
-      0.8 & 0.4684 & 35.1437 & -0.6856 & 0.5643 \\[-1em]
-      0.9 & 0.5183 & 4.9531 & -0.6634 & 0.4476 \\[-1em]
-      1.0 & 0.5672 & 5.1105 & -0.6436 & 0.3563 \\[-1em]
-      1.5 & 0.7991 & 48.1936 & -0.5676 & 0.0989 \\[-1em]
-      2.0 & 1.0152 & 6.6787 & -0.5153 & -0.0153 \\[-1em]
-      2.5 & 1.2202 & 7.4617 & -0.4765 & -0.0765 \\[-1em]
-      3.0 & 1.5192 & 8.2456 & -0.5129 & -0.1795 \\[-1em]
-      3.5 & 1.8256 & 10.6103 & -0.5441 & -0.2584 \\[-1em]
-      4.0 & 2.0993 & 14.0727 & -0.5509 & -0.3009 \\[-1em]
-      4.5 & 2.3464 & 18.0503 & -0.5437 & -0.3215 \\[-1em]
-      5.0 & 2.5728 & 22.5360 & -0.5295 & -0.3295 \\[-1em]
-      6.0 & 2.9809 & 33.0090 & -0.4936 & -0.3269 \\[-1em]
-      7.0 & 3.3483 & 45.4488 & -0.4575 & -0.3147 \\[-1em]
-      8.0 & 3.6890 & 59.7980 & -0.4252 & -0.3002 \\[-1em]
-      9.0 & 4.0122 & 75.9727 & -0.3974 & -0.2863 \\[-1em]
-      10.0 & 4.3243 & 93.8641 & -0.3739 & -0.2739 \\
+			R & E & $ E + \frac{1}{R} $ & A & p  \\ \hline \hline
+  0.2 & -0.841481 & 4.15852 & 33.4451 & 0.129729\\
+  0.3 & -0.911818 & 2.42152 & 39.6245 & 0.202563\\
+  0.4 & -1.03317 & 1.46683 & 44.6816 & 0.287495\\
+  0.5 & -1.20111 & 0.798885 & 49.0907 & 0.387478\\
+  0.6 & -1.39266 & 0.274004 & 53.0632 & 0.500679\\
+  0.7 & -1.58212 & -0.153551 & 56.7159 & 0.622591\\
+  0.8 & -1.75267 & -0.502667 & 395.73 & 0.748901\\
+  0.9 & -1.89725 & -0.786142 & 417.783 & 0.876577\\
+  1. & -2.01521 & -1.01521 & 66.3746 & 1.0038\\
+  1.1 & -2.10899 & -1.1999 & 459.254 & 1.12957\\
+  1.5 & -2.31161 & -1.64494 & 534.677 & 1.61262\\
+  2. & -2.36744 & -1.86744 & 619.719 & 2.17598\\
+  2.5 & -2.35029 & -1.95029 & 698.046 & 2.7101\\
+  3. & -2.31526 & -1.98193 & 111.724 & 3.2278\\
+  3.5 & -2.2797 & -1.99399 & 841.77 & 3.73673\\
+  4. & -2.24845 & -1.99845 & 909.103 & 4.24118\\
+  4.5 & -2.22222 & -2. & 974.188 & 4.74341\\
+  5. & -2.20044 & -2.00044 & 1037.4 & 5.24457\\
+  6 & -2.16704 & -2.00038 & 1159.29 & 6.24554\\
+  7 & -2.14278 & -1.99992 & 1276.36 & 7.24556\\
+  8 & -2.12404 & -1.99904 & 1389.63 & 8.24435\\
+  9 & -2.10851 & -1.9974 & 1499.83 & 9.24093\\
+  10 & -2.09461 & -1.99461 & 1607.45 & 10.2338\\
 		\hline
 		\end{tabular}
-\restoregeometry
-}
+\end{table}
 
 \begin{figure}
-  \includegraphics{H2_1Sg-Potential.png}
+  \includegraphics{H2_1sG-Potential.png}
   \caption{$ H_2^{+} $ Energy and Potential curves for the $ 1s_g^{+} $ state}
 \end{figure}
 
 \begin{figure}
-  \includegraphics{H2_2Sg-Potential.png}
-  \caption{$ H_2^{+} $ Energy and Potential curves for the $ 2s_g^{+} $ state}
+  \includegraphics{H2_2pU-Potential.png}
+  \caption{$ H_2^{+} $ Energy and Potential curves for the $ 2p_u^{+} $ state}
 \end{figure}
 
 
-\subsubsection{Laguerre Polynomials and the Operator Spectrum}
+\begin{figure}
+  \includegraphics{	H2_sGpU-Potential.png}
+  \caption{$ H_2^{+} $ Potential curves for the $ 1s_g^{+}\,\, \text{and}\,\, 2p_u^{+} $ states}
+\end{figure}
 
-Here we use a more of a brute force approach. We keep the equation for $ \mu $ since it is a Mathieu's equation, with a well known solutions. For the $ \lambda $ equation, we  numerically calculate the spectrum of a differential operator to a desired precision
-
-For the equation \eqref{L2-2} one could proceed by following the radial Mathieu's equations approach. One way to solve the Radial Mathieu's equation is by using the series of hyperbolic functions, obtained from the solution of angular Mathieu's equation using the substitution $ \eta = i\,\xi$.  But that this approach in numerically unstable and hard to compute \cite{Mathieu4}. There is another approach, using the product of Bessel Functions \cite{Mathieu4}
-
-We took a different approach to solving the equation \eqref{L2-2}, namely look for the solution in the form of the series of orthogonal functions. This approach has some challenges, since on a finite interval, there are number of functions orthogonal the interval, and one can choose the one which fits the problem the best. On an infinite interval, such as $ \lambda = [1, \infty] $ the choice is somewhat limited. The Laguerre's polynomial seemed like a suitable choice, as they form an orthogonal set on the infinite interval. So we look for the solution in the form:
-
-The power series method is described in numerous textbooks are papers. It is tacitly assumed that the solution to the differential equation is a 'well behaved' continuous function and that consequently the power series converges.
-
-So assume the solution as the sum of Laguerre polynomials:
-\begin{equation}
-L(\lambda) =  e^{-p\lambda}\sum_{k=0}^{\infty}{c_k\,L_k(\lambda)}\label{L2-3}
-\end{equation}
-Where $ L_n(\lambda) $ are Laguerre polynomials. They have several interesting properties, which can be found in \cite{Laguerre1}.
-
-We insert the equation \ref{L2-3} into \ref{L2-2}, expand, cancel and collect.
-
-The detailed derivation is described in appendix C.
-
-Now multiply by $ L_m(x) $ and use the orthogonality of Laguerre's polynomials to obtain the $ n $ x $ n $ matrix with the parameter $ p $ which has eigenvalues $ A $.
-
-So using the solutions above, the next step is to find the eigenvalues $ A $, $ p $, of the equations \eqref{M1} and \eqref{L2-2}. Using the series above, for each equation, we find functions $ A_i(p) $ for which the solution exists. The intersection of the two functions $ A_i(p) $ is the value of $ p $ common for both equations \eqref{M1} \eqref{L2-2}. This procedure translates into the matrix eigenvalues problem, following the steps below.
-
-The detailed derivation is in appendix C.
-
-The rest of the work is numerical. Since our goal is to obtain the function $ E(R) $ we choose the suitable values of $ R $ as in table \ref{groundEven} . For each value of $ R $ we divide with the interval $ p \in [0,2*R] $ into the $ n $ points. For each value of $ p $ we calculate store the eigenvalues for equation for $ M(\mu) $ and $ L(\lambda) $. Finding matrix eigenvalues is a common operation is a number of fields, and good numerical algorithms and libraries are available, such as \cite{Lapack1}. 
-
-I have used Wolfram Mathematica, to all numerical work. It is easier to use and obtain results, as well as process them in tables and graphs. `
-
-The results of the brute force approach are in the table below. When compared to the algebraic results above, the brute force results are less accurate, and much worse for the small values or R.  It is probably due to the numerical instabillity of the eigenvalue equation. Also the infinite series solution in the algebraic method is more 'precise' than the general solution series in the brute force method.
-
-So in the subsequent chapters, we shall use the results from the algebraic approach.
-
-\afterpage{
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
- \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ 1s_g $ some values of the internuclear separation R \\[1.1em] }
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
-		\hline
-		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
-        0.2 & 0.2031 & 0.0206 & -2.0636 & 2.9363 \\
-        0.3 & 0.2874 & 0.0415 & -1.8358 & 1.4975 \\
-        0.4 & 0.6483 & 0.2156 & -5.2538 & -2.7538 \\
-        0.5 & 0.7763 & 0.3126 & -4.8216 & -2.8216 \\
-        0.6 & 0.8968 & 0.4223 & -4.4686 & -2.8019 \\
-        0.7 & 1.0115 & 0.5440 & -4.1760 & -2.7474 \\
-        0.8 & 1.1214 & 0.6777 & -3.9304 & -2.6804 \\
-        0.9 & 1.2277 & 0.8236 & -3.7220 & -2.6109 \\
-        1.0 & 1.3311 & 0.9820 & -3.5436 & -2.5436 \\
-        1.5 & 1.7848 & 1.8037 & -2.8318 & -2.1651 \\
-        2.0 & 1.9182 & 1.3252 & -1.8398 & -1.3398 \\
-        2.5 & 1.9383 & 0.2865 & -1.2022 & -0.8022 \\
-        3.0 & 1.9588 & -0.7551 & -0.8526 & -0.5193 \\
-        3.5 & 2.1000 & -2.2367 & -0.7200 & -0.4342 \\
-        4.0 & 2.1121 & -2.2039 & -0.5576 & -0.3076 \\
-        4.5 & 2.3541 & -1.8836 & -0.5473 & -0.3251 \\
-        5.0 & 2.5797 & -1.5553 & -0.5323 & -0.3323 \\
-        6.0 & 2.9869 & -0.9144 & -0.4956 & -0.3290 \\
-        7.0 & 3.3539 & -0.2604 & -0.4591 & -0.3162 \\
-        8.0 & 3.6945 & 0.4400 & -0.4265 & -0.3015 \\
-        9.0 & 4.0177 & 1.2162 & -0.3985 & -0.2874 \\
-        10.0 & 10.6696 & 78.8425 & -2.2768 & -2.1768 \\
-      \hline
-      \end{tabular}
-
-  \newgeometry{left=4em,right=3em,top=5em,bottom=5em}
-   \captionof{table}{ The separation constant A, electronic energy E \\ total energy $ E + \frac{1}{R} $ , for the state $ s_g $ some values of the internuclear separation R \\[1.1em] }
-		\begin{tabular}{ m{6em} m{6em}  m{6em}  m{6em} m{6em} }
-		\hline
-		    R & p & A & E & $ E + \frac{1}{R} $ \\ \hline \hline
-        0.2 & 0.1988 & 0.0198 & -1.9764 & 3.0235 \\
-        0.3 & 0.3290 & 0.0545 & -2.4061 & 0.9272 \\
-        0.4 & 0.3284 & 0.0543 & -1.3484 & 1.1515 \\
-        0.5 & 0.2995 & 0.0451 & -0.7179 & 1.2820 \\
-        0.6 & 0.2801 & 0.0394 & -0.4360 & 1.2306 \\
-        0.7 & 0.4074 & 0.0838 & -0.6774 & 0.7510 \\
-        0.8 & 0.4583 & 0.1063 & -0.6563 & 0.5936 \\
-        0.9 & 0.5080 & 0.1311 & -0.6374 & 0.4736 \\
-        1.0 & 0.5574 & 0.1583 & -0.6214 & 0.3785 \\
-        1.1 & 0.6047 & 0.1870 & -0.6045 & 0.3044 \\
-        1.5 & 0.7887 & 0.3230 & -0.5529 & 0.1137 \\
-        2.0 & 1.0048 & 0.5365 & -0.5048 & -0.0040 \\
-        2.5 & 1.2100 & 0.7982 & -0.4685 & -0.0680 \\
-        3.0 & 1.4072 & 1.1096 & -0.4400 & -0.1067 \\
-        3.5 & 1.5984 & 1.4732 & -0.4171 & -0.1314 \\
-        4.0 & 1.7690 & 1.7037 & -0.3911 & -0.1411 \\
-        4.5 & 1.9109 & 1.6840 & -0.3606 & -0.1384 \\
-        5.0 & 1.9374 & 0.3310 & -0.3003 & -0.1003 \\
-        6.0 & 1.9970 & -2.2878 & -0.2215 & -0.0549 \\
-        7.0 & 2.2709 & -2.0010 & -0.2105 & -0.0676 \\
-        8.0 & 2.5364 & -1.6194 & -0.2010 & -0.0760 \\
-        9.0 & 2.7887 & -1.2354 & -0.1920 & -0.0809 \\
-        10.0 & 11.3799 & 108.2679 & -2.5900 & -2.4900 \\
-		\hline
-		\end{tabular}
-\restoregeometry
-}
-
+For comparison we used paper by Patil \cite{H2Plus2d1}. Our result are very close to the results obtained by Patil.
+Also one can observe that in 2 dimensions the max depth of the potential well of the $ H_2^{+} $ ground state is approx $ V(R=0.5) = -2.83822 $ a.u. compared to the $ V(R=0.4) = -3.63220 $ in the 3D case, which we showed in table \ref{tab:UsVsBates1s}
+Also the shape of the potential well is more compact in the 2D case, for the ground $ 1s_g^{+} $ gerade state. For the ungerade $ 2p_u^{+} $ state the situation is even more different. The potential curve of the  $ 2p_u^{+} $ state does not really have a minimum for and does not allow a bound state.

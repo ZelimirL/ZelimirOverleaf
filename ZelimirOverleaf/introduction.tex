@@ -5,8 +5,8 @@
 \label{introduction}
  
 \section{Motivation}
-For a long time humanity asked itself about the origin of the universe, its final destiny, origin and possible evolution of its laws and humanity place in the universe.
-Not being able to answer any of those questions, this thesis focuses on the significantly more modest goal, by examining the Hydrogen Molecular Ion in 2 dimensions (2D).
+For a long time humanity asked itself about the origin of the universe, its final destiny, origin and possible evolution of its laws and humanity place in all of those. 
+Not being able to answer any of those questions, 
 
 Arguably, quantum mechanics (QM), or the quantum theory, offers the best description of matter's behavior at the atomic, molecular, and sub-nuclear levels. As an established paradigm, it is increasingly applied to increasingly more complex systems where physics and other disciplines intersect.
 
@@ -14,9 +14,12 @@ QM has increasingly found applications in information theory, material, and the 
 The principles of QM have enabled a novel and powerful information processing platform, quantum computing. The latter's basic component is called a qubit \cite{qubits} and is the quantum analog of the bit, the lowest common denominator of classical information. Qubits are fragile in that quantum coherence, which gives the quantum computer its power, requires a noise-free environment that is difficult to establish and maintain in the laboratory. Several platforms for qubit technologies have been explored, including trapped ions and superconducting circuits \cite{qubits2}. At present, it is not known if present-day qubit technologies can be scaled to build a functional and useful quantum computer.
 
 One promising platform, topological quantum computing \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter. In the past few decades, there have been great strides in creating 2D materials that promise novel applications.\cite{Nature2D}
-To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular levels. In this thesis, we will explore ions' interactions with the neutral matter in a 2D environment. Specific topics include non-radiative and radiative charge transfer reactions. Such processes are important in 3D gases, as in astrophysical and laboratory plasma environments, and have attracted much attention \cite{plasma}
+To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular levels. In this thesis, we will explore ions' interactions with the neutral matter in a 2D environment. Specific topics include radiative quenching, non-radiative and radiative charge transfer reactions, and the manipulation and control of atomic matter by external fields. Such processes are important in 3D gases, as in astrophysical and laboratory plasma environments, and have attracted much attention \cite{plasma}
+
+However, there have been relatively few studies concerning charge transfer processes in 2D.
 
 In this thesis, we will calculate the rate of the radiative and charge transfer reactions between a positively charged ion and neutral 2D hydrogen at very low collision energies. In our formalism, the particles are constrained to move in a 2D manifold, but the emitted radiation can propagate in 3D. This study will provide insight into how constrained 2D dynamics affect the rate coefficient for radiative charge transfer.
+ (TODO: Make this sentence reflect the actual work)
 
 \section{Some Applications of the 2D Quantum Mechanics}
 Quantum Mechanics was developed during the first quarter of the 20th century, and its methods have been applied to increasingly complex systems. QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
@@ -38,21 +41,25 @@ Landau and Pierls\cite{LandauG}\cite{Pierls} initially argued that 2D materials 
 
 There is an even stronger statement against 2D materials, in the form of the Mermin-Wagner-Hohenberg (MWH) theorem \cite{Hohenberg}\cite{Mermin2}. In these papers, the authors show that 2D systems with short-range interactions are unstable and cannot exist.  Using thermodynamics arguments, one can show that a 3D system is stable if its free energy is bounded from below and convex (upwards). In this way, the system can minimize the energy of the ground state. Because higher-order fluctuations are finite, the system is stable.
 The MWH argument posits that, in 2D systems, fluctuations around the ordered state (lattice in the 2D case) decorrelate over large distances, thus destroying the large-scale order. 
-Therefore, it seemed that the possible existence and applications of the 2D materials were quite limited. The only 2D materials considered stable were thin molecular films, which could form on a solids' surface. Dash\cite{2DMatter1} predicted that 2D materials exist as a thin film either on the surface of the boundaries of 3D materials.
+Therefore, it seemed that the possible existence and applications of the 2D materials were quite limited. The only 2D materials considered stable were thin molecular films, which could form on a solids' surface. Dash\cite{2DMatter1} predicts that 2D materials exist as a thin film either on the surface of the boundaries of 3D materials.
 
-Despite those arguments, it has been speculated that stable 2D materials are possible\cite{2DMatter1}. The situation changed dramatically in 2004 when 2D carbon (graphene) was discovered and created in the laboratory\cite{Graphene0, GrapheneN} at the University of Manchester, Great Britain. 
+Despite those arguments, it has been speculated that stable 2D materials are possible\cite{2DMatter1}. The situation changed dramatically in 2004 when 2D carbon (Graphene) was discovered and created in the laboratory\cite{Graphene0, GrapheneN} at the University of Manchester, Great Britain. 
 
-2D materials have qualitatively different topological properties\cite{2DMatterCurvature}. Moreover, those properties do not depend on the type of microscopic interactions between particles. While this subject is beyond the scope of this thesis, it does show that the field of 2D materials is a fertile ground for both fundamental and applied research. Interestingly, it has been shown \cite{GraphLayers} that it takes ten layers of graphene for it to start behaving like a 'regular' 3D material.  
+2D materials have qualitatively different topological properties\cite{2DMatterCurvature}. Moreover, those properties do not depend on the type of microscopic interactions between particles. While this subject is beyond the scope of this thesis, it does show that the field of 2D materials is a fertile ground for both fundamental and applied research. Interestingly, it has been shown \cite{GraphLayers} that it takes ten layers of Graphene for it to start behaving like a 'regular' 3D material.  
 The existence of graphene does not contradict the above-mentioned no-go theorem \cite{Mermin2}, but it does circumvent it \cite{GrapheneRiples}. In graphene, thermal oscillations produce ripples or bending of the graphene sheet. That way, graphene behaves like an elastic membrane that allows phonons to propagate in 2 dimensions and couple in a plane stretching along the transverse fluctuations out of the plane. These phonons mediate a long-range interaction, thereby circumventing the Mermin-Wagner no-go theorem. 
 
-Additionally \cite{Graphene0} \cite{Dirac2}\cite{Dirac3},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the material's electronic properties. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions.  
+Additionally \cite{Graphene0},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the material's electronic properties. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions.  
+
+Additionally \cite{Dirac2}\cite{Dirac3} ,2D materials exhibit several other exciting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the material's electronic properties. In graphene, electrons obey the non-relativistic Schrodinger equation. Still, interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions.\cite{Dirac3}
 
 \subsection{Excitons}
 These excitations represent a wide class of intrinsic electronic excitations (Excitons) \cite{Excitons1, Excitons2} in crystals of semiconductors and dielectrics. In one model, Excitons represent a bound state of an electron and a hole, typically formed when an incident photon is absorbed, exciting an electron from the valence to the conduction band. The attractive Coulomb interaction between the excited electron and the newly created hole binds them together to form a bound neutral compound system of the two charge carriers similar to a hydrogen atom. 
 The character of exciton motion depends on the strength of the exciton interaction with phonons. The electron-hole model is common in crystals of insulators and semiconductors.
-Ya. I. Frenkel (1931) introduced excitons to explain the light absorption in crystals, which does not lead to photoconductivity. In the Frenkel model, the exciton is considered as an electronic excitation of one crystal site with the energy close to, but a bit smaller than that necessary for the excitation of a free electron. Due to the crystal's translation symmetry, the exciton can move along the lattice sites transferring the energy to the electrically active or luminescence centers.
+Ya. I. Frenkel (1931) create excitons to explain the light absorption in crystals, which does not lead to photoconductivity. In the Frenkel model, the exciton is considered as an electronic excitation of one crystal site with the energy close to, but a bit smaller than that necessary for the excitation of a free electron. Due to the crystal's translation symmetry, the exciton can move along the lattice sites transferring the energy to the electrically active or luminescence centers.
 
-Similar excitations occur in 2D systems. \cite{Excitons2D1,Excitons2D3}. 2D excitons promise to form a building block of the 2D electronics. \cite{Excitons2D2}.  Although exciton-based transistor actions have been demonstrated successfully in bulk semiconductor-based coupled quantum wells, the low temperature required for their operation limits their practical application. The emergence of 2D semiconductors with large exciton binding energies may lead to excitonic devices and circuits that operate at room temperature. \cite{Excitons2D2}.
+Similar excitations occur in 2D systems. \cite{Excitons2D1,Excitons2D3}. The 2D excitons promise to form a building block of the 2D electronics. \cite{Excitons2D2}.  Although exciton-based transistor actions have been demonstrated successfully in bulk semiconductor-based coupled quantum wells, the low temperature required for their operation limits their practical application. The emergence of 2D semiconductors with large exciton binding energies may lead to excitonic devices and circuits that operate at room temperature. \cite{Excitons2D2}.
+
+Therefore, it might be interesting to redo the same calculation as we did but solving Dirac's equation for the system of quasiparticles similar to a hydrogen ion. 
 
 \subsection{Graphene}
 Graphene exhibits similar properties\cite{Graphene0}, such as its Quantum Electrodynamics (QED) like electronic spectrum, electron tunneling. Another interesting consequence of the QED like electron spectrum is the possibility of experimentally studying QED in curved space by controllable bending of a graphene sheet. Such study may offer a possibility to address a certain class of cosmological problems. 
@@ -64,11 +71,11 @@ Nanotubes are rolled-up graphene sheets, and depending on the application, graph
 
 \subsection*{2D Electronics}
 Driven by a demand for higher performance and lower consumption in electronic devices, 2D materials have found application in that arena\cite{2DEJour1},\cite{2DEJour2}. 
-There is the hope that graphene can be used to build active electronic components, such as diodes, transistors (FET), and other electronic components. Alternatively, graphene may also be used as a conductor in electronic components and batteries due to its conductivity. graphene itself is a zero-gap semiconductor. There is another unique opportunity in 2D semiconductors. In a 3D semiconductor, electronic states are buried deep inside the material. Unlike the surface state, electron states inside the material are localized, i.e., the wave function has an exponentially decaying tail.
+There is the hope that Graphene can be used to build active electronic components, such as diodes, transistors (FET), and other electronic components. Alternatively, Graphene may also be used as a conductor in electronic components and batteries due to its conductivity. Graphene itself is a zero-gap semiconductor. There is another unique opportunity in 2D semiconductors. In a 3D semiconductor, electronic states are buried deep inside the material. Unlike the surface state, electron states inside the material are localized, i.e., the wave function has an exponentially decaying tail.
 
 In 2D semiconductors, the electronic states exist
 on the surface. The surface states admit both localized and non-localized, Block bulk states \cite{LocStates}.
-Another interesting application of 2D electronics is the LED elements in 2D \cite{2DLED}. The electronics research is closely related to the research of new 2D materials. For example, graphene itself is not compatible with silicon. However, there is a new material, black phosphorus\cite{2DPhos}, which is both compatible with silicon and it holds promise for future electronic\cite{2DPhos3} devices. This fact relies on two key properties; the first is that black phosphorus has higher mobility, the speed at which it can carry an electrical charge, than silicon. The other is that it has a finite bandgap, whereas graphene does not. So, in essence, in the presence of an electric field, black phosphorus can act as a semiconductor\cite{2DPhos2}.
+Another interesting application of 2D electronics is the LED elements in 2D \cite{2DLED}. The electronics research is closely related to the research of new 2D materials. For example, Graphene itself is not compatible with silicon. However, there is a new material, black phosphorus\cite{2DPhos}, which is both compatible with silicon and it holds promise for future electronic\cite{2DPhos3} devices. This fact relies on two key properties; the first is that black phosphorus has higher mobility, the speed at which it can carry an electrical charge, than silicon. The other is that it has a finite bandgap, whereas Graphene does not. So, in essence, in the presence of an electric field, black phosphorus can act as a semiconductor\cite{2DPhos2}.
 
 \subsection*{Quantum Computing}
 
@@ -80,12 +87,12 @@ Currently, the major unsolved problem in Computer Science is the P vs. NP proble
 
  Now all problems in the NP class (more precisely, NP-complete subclass) can be transformed into each other in polynomial time to each other \cite{NPComplete},  therefore finding a polynomial-time solution for one of them would amount to having a polynomial-time solution to all problems in NP class. So the goal is rather worthy. 
 
-Currently, it is known that the quantum computer will not be able to solve NP problems. They could solve the class of the bounded-error, quantum, polynomial time (BQP) problems \cite{BQP}. 
-Even if the NP problems remain intractable, just the possibility that according to Feynman \cite{FQC}, a quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. 
-
 For example, Schor's algorithm \cite{Schor} can provably solve integer factorization in a polynomial time, as opposed to the best classical algorithm (quadratic sieve), which works in sub-exponential time \cite{Pomerance}. Unfortunately, the integer factorization problem, as well as other BQP problems, do not belong to the class of NP-complete problems. 
 
 Interestingly, according to Abrams and Lloyd \cite{Abrams_1998}, \cite{Abrams_1999} if the small nonlinear term is added to Quantum Mechanics, quantum computers would be able to solve NP-complete problems in polynomial time.
+
+Currently, it is known that the quantum computer will not be able to solve NP problems. They could solve the class of the bounded-error, quantum, polynomial time (BQP) problems \cite{BQP}. 
+Even if the NP problems remain intractable, just the possibility that according to Feynman \cite{FQC}, a quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. 
 
 \subsection*{Topological Quantum Computing}
 The concept of topological quantum computing \cite{Tqc1}
@@ -100,7 +107,7 @@ In general, there are two kinds of Anyons, Abelian and non-Abelian. Abelian Anyo
 There are several possibilities for realizing non-abelian statistics experimentally: 1. a two-dimensional electron gas in a large magnetic field (the fractional quantum Hall effect); 2. rapidly rotating Bose-Einstein condensates\cite{RrBeC} 3. frustrated magnets \cite{FrMag}.
 4.
 One of the anyons candidates the Majorana fermion \cite{Majorana}. Majorana fermion (particle) the particle that is its own antiparticle. A pair of localized Majorana states has been predicted to reside at the ends of a specially designed superconducting wire.  Very recently (2020) \cite{Manna8775}
-there is a possibility that Majorana particles has been observed for the first time. The other property of the Majorana fermion is that it is a non-Abelian anyon.
+there is a strong evidence that Majorana particles has been observed for the first time. The other property of the Majorana fermion is that it is a non-Abelian anyon.
 This present the possibility for the realization of fault-tolerant topological quantum computing\cite{AnyonsTqc}. 
 
 \subsection*{Excitons and Trions}
@@ -118,30 +125,7 @@ well as 2D excitons in 3D materials. The promise here is that these kinds of qua
 
 Since the exciton system resembles either the hydrogen atom or the hydrogen molecule, and it seems conceivable that the dynamics of  $ H_2^{+} $ molecule is qualitatively similar and could be applied to the excitons systems as well.
 
-The similar system is the trion, a bound state of three charged particles. It consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecular ion. 
-
-\section{Ion - Atom Charge Transfer}
-
-Charge transfer refers to the movement of electrons or ions from one species (atom, molecule or ion) to another. This transfer can occur through various mechanisms, including chemical reactions, electrochemical processes and interactions with electromagnetic fields. The charge transfer can occur through several mechanisms, such as Chemical reactions, Electrochemical processes, Photo induced charge transfer, Ionization processes.
-
-\begin{itemize}
-\item{Chemical reactions}
-  Charge transfer occurs when electrons are exchanged between the reactants.
-\item{Electrochemical processes}
-  Electrochemical reactions involve the transfer of electrons between electrodes and electrolytes. This is the main process in batteries, where transfer of electrons create an electric current.
-\item{Photo induced charge transfer}
-  In this scenario the charge transfer is induced by light. It the process in photosynthesis, photovoltaic cells and optical devices.
-\item{Ionization processes}
-  These process often occur in plasmas or atmospheric chemistry. The charge transfer in these environment leads to the formations of ions. The large part of visible universe is plasma, including stars, nebulae interstellar space, and intergalactic space. Understanding charge transfer leads to better understanding of the formation of these cosmic bodies.
-\end{itemize}
-
-The charge transfer is a major part of these processes: Chemical reactivity, Energy conversion and storage, Biological processes, Creating electronic devices.
-
-In this thesis we shall consider a non-relativistic charge transfer that occurs at low energies in 2 dimensions (2D). 
-
-Given that the universe is 3 dimensional, obviously most of the processes and application listed above are not applicable in 2D. But we have already seen that there exist a 2D materials. Thus the 2D charge transfer calculations can be applied to those kind of materials. Those 2D materials also offer promises of a new electronic devices, whose behaviour is governed by the charge transfer.
-
-We address the charge transfer processes in more details in \autoref{chap:RRF}
+The similar system is the trion, which consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecule. 
 
 \subsection*{Future Applications and Speculations}
 
@@ -149,12 +133,14 @@ While the applications of the 2D materials above are certainly interesting, crea
 
 Equations for many bodies systems may formally be created by extending equations for a one or two bodies systems. But as soon as one tries that, one realizes that the complexity of such equations increases enormously, and than assumptions  made for a small systems are not valid any more. In this author's opinion, moving from a simple system to an order of magnitude more complex, requires a completely new mathematical and physical framework. Something analogous between the classical mechanics and thermodynamics.
 
+While the 2D materials' applications above are undoubtedly impressive, creating an exact analytical model of such material is too complicated. Even with today's computing machinery, the many-body wave equation is intractable.  Equations for many-body systems may formally be created by extending equations for one or two-body systems. But as soon as one tries that, one realizes that such equations' complexity increases enormously and then assumptions made for small systems are no longer valid. In this author's opinion, moving from a simple system to an order of magnitude more complex requires an entirely new mathematical and physical framework—something analogous between classical mechanics and thermodynamics.
+
 \subsection*{Outline}
-In this thesis, we will focus on investigating and solving the radiative charge transfer for the most straightforward molecular system, namely hydrogen molecular ion $ {H_2^{+}}  $ in 2 dimensions (2D in the further text), and solving such system in 2D exactly.  Chapter 2 we will compare results applying our method to the already solved and known $ {H_2^{+}} $ results in 3D. Then in chapter 3, we will introduce the procedure to analytically solve the $ {H_2^{+}} $ in 2D. After providing an analytical solution, we will fall back to the numerical methods to calculate the energy levels and obtain the potential curves. In chapter 4, we use the results obtained to calculate the dipole moment and the cross section for the radiative charge transfer process.
+In this thesis, we will focus on investigating and solving the radiative charge transfer TODO: (Reflect actual work) for the most straightforward molecular system, namely hydrogen molecular ion $ {H_2^{+}}  $ in 2 dimensions (2D in the further text), and solving such system in 2D exactly.  Chapter 2 will show that applying our method to the already solved and well-known $ {H_2^{+}} $ in 3D yields the same results. Then in chapter 3, we will follow the already well-established procedure \cite{Bates1} to analytically solve the $ {H_2^{+}} $. After providing an analytical solution, we will fall back to the numerical methods to calculate the energy levels and obtain the potential curves. In chapter 4, we use the results obtained to calculate such a system's dynamics, namely the Radiate Association process. In chapter 5, we again use the same results to calculate the radiate charge transfer. 
 
 In the following chapter, we re-calculate the electron energies for hydrogen molecular ion in 3D by using a different and arguably simpler approach.
 
 We shall use analytic methods where possible and resort to the numerical approach when there is no hope of finding an analytic solution.
 Quantitative calculations have greatly enabled the advancement of computing technology, as it is now possible to solve partial differential equations relatively quickly using computers that are widely accessible.  However, applying approximate methods and using only numerical methods allow limited insights. While the numerical methods provide results, they do not provide much insight into a quantum system's behavior. Furthermore, unless one is cautious, systemic numerical errors can accumulate and lead to neither insightful nor correct results. Therefore, analytic solutions are almost always desirable. However, for moderately complex systems, closed analytic solutions are usually impossible to obtain. Nevertheless, it is still desirable to find an exact analytic solution,  if possible, and fall back to numerical methods only as a last step. 
 
-Finally, while naturally occurring 2D atoms and molecules do not exist, excitons are proven to exist, and they are analogous to the 2D atoms. So we explore the $ H_2 $ molecule so that we gain insights that can be translated into excitons.
+Finally, while 2D atoms and molecules do not exist, excitons are proven to exist. So we explore the $ H_2 $ molecule so that we gain insights that can be translated into excitons.

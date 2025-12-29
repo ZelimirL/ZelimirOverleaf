@@ -5,19 +5,19 @@ solutions of the time-independent Schrodinger equation for
 the hydrogen molecular.
 
 As we will apply a similar method to treat the hydrogen molecular ions in 2D,
-we first review the methodology of Bates \cite{Bates1}\cite{Bates2} used to calculate the lowest electronic eigenstates and eigenvalues for the $ {\rm H}_2^{+} $ system in 3D. \footnote {In this section, we
-use atomic (Hartree) units, unless otherwise stated.}
+we first review the methodology of Bates used to calculate the lowest electronic eigenstates and eigenvalues for the $ {\rm H}_2^{+} $ system in 3D. \footnote {In this section we
+use atomic (Hatree) units, unless otherwise stated.}
 
-The hydrogen molecular ion, and similar systems ( such as $ {\rm HeH}^{+} $), are one of the few that allow a full analytic quantum mechanical description. Although its
+The hydrogen molecular ion, and similar systems ( such as $ {\rm HeH}^{+} $) are one of the few that allow a full analytic quantum mechanical description. Although its
 solutions do not exist in the closed form, they can be expressed as a convergent infinite series.  Wasserman in his thesis \cite{ExperimentalBates2} in 1963 reports that while the existence of $ {\rm H}_2^{+} $ has been verified, no  discrete spectrum of the  $ {\rm H}_2^{+} $ has been observed  In the same thesis, Wasserman reports that the ionization potential of $ {\rm H}_2^{+} $ has been measured and shows good agreement with the theoretical calculations. However, in 1989 Carrington, McNab and Montgomerie report \cite{ExperimentalBates3} that the radio frequency hyperfine transitions of the $ {\rm H}_2^{+} $ have been measured. They note that the $ {\rm H}_2^{+} $  is highly reactive and therefore hard to keep in the lab.
 
 As a three-body problem, containing two protons and an electron,
-the Schrodinger PDE can be separated by expressing it in an elliptical coordinate system. Unfortunately, there does not exist a closed-form representation for the eigenvalues, and one must resort to numerical methods in their calculation.
-Bates et al. \cite{Bates1}\cite{Bates2} did not provide numerical codes used in the evaluation of eigenvalues. Instead, they used an expanded fraction method for calculating the latter with the desired level of precision. The paper\cite{Bates2} does not report on the details of those calculations, and so in this thesis we provide an alternative description. We will compare
- the results obtained here with those reported in\cite{Bates2}. Harmony with those reported in\cite{Bates2} will provide 
+the Schrodinger PDE can be separated by expressing it in an elliptical coordinate system. Unfortunately, there does not exist a closed form representation for the eigenvalues and one must resort to numerical methods in their calculation.
+Bates et al. \cite{Bates1}\cite{Bates2} did not provide numerical codes used the evaluation of eigenvalues. Instead, they used an expanded fraction method for calculating the latter with the desired level of precision. The paper\cite{Bates2} does not report on the details of those calculations, and so in this thesis we provide an alternative description. We will compare
+ the results obtained here with those reported in\cite{Bates2}. Harmony with with those reported in\cite{Bates2} will provide 
  confidence in the fidelity of the analogous calculations in 2D.
 
-We use Hartree Atomic Units \eqref{Atomic}, in all equations. In this system, the numerical values of the following fundamental constants are 1:
+We use Hartree Atomic Units \eqref{Atomic}, in all equations. In this system the numerical values of the following fundamental constants are 1:
 \setlength{\mathindent}{0pt}
 \begin{equation}\label{Atomic}
 \begin{split}
@@ -30,7 +30,7 @@ We use Hartree Atomic Units \eqref{Atomic}, in all equations. In this system, th
 
 In addition, in equations, variables that represent vectors are typeset either in \textbf{bold} or with an arrow above the symbol, $ \vec{r} $. A caret $(\,\hat{}\ ) $  above a symbol indicates that the symbol is an operator.
 
-The only instance in which we will avoid using atomic units is during the derivation that involves transforming the molecular Hamiltonian into a Jacobian coordinate system. Since certain terms will include the reduced mass, we aim to maintain the integrity of the units throughout this process.
+The only place where we specifically will not be using Atomic units will be in the following derivation, where we do transformation of the molecular Hamiltonian into a Jacobian coordinate system. Since some terms will contain reduced mass, we want to keep the units intact.
 
 \section{Description}
 The starting point is the Schrodinger equation for the hydrogen molecular ion in 3D. We 
@@ -50,7 +50,7 @@ The terms in the Hamiltonian are as follows:
 The kinetic energy of the protons:
 \begin{equation}`
 \begin{split}
- \hat{T}_n = - \frac{\hbar^2}{2M}\sum_{i=1}^2{\nabla_{R_i}^2 } = \frac{1}{2M}\sum_{i=1}^2{\hat{P}_i^2 }
+ \hat{T}_n = - \frac{\hbar^2}{2M}\sum_{i=1}^2{\nabla_{R_i}^2 } = -\frac{1}{2M}\sum_{i=1}^2{\hat{P}_i^2 }
 \end{split}
 \end{equation}
 
@@ -78,15 +78,14 @@ The second term in the equation above represents the operator expression.
 
 In the equations above, $ \mathbf{R}_i,\,\, i = 1,2 $ and $ M $ represents the coordinates and mass of the nuclei (protons) $1,2$ respectively, and $ \mathbf{x} $ and $ m $ are the coordinates and mass of the electron, respectively. Coordinates are defined with respect to a common origin in a space fixed frame.
 
-It is convenient to separate the motion of the center of mass from the motion of the point particles. A similar approach can be applied for the quantum case. We show in Appendix A that the motion of the center of mass will be a plane wave, which possess a well defined momentum and which is not square integrable. That makes the position of the center of mass equally probable in the all space, and confirms with the Heisenberg uncertainty principle.
+It is convenient to separate the motion of the center of mass from the motion of the point particles. A similar approach can be applied for the quantum case. We show in Appendix A that the motion of the center of mass will be a plane wave, which possess a well defined momentum and which is not square integrable. That makes the position of the center of mass equally probable in the hole space, which agrees with the Heisenberg uncertainty principle.
 
 In the appendix A we define $ \chi(\mathbf{R}) $ as the wavefunction representing the motion of the nuclei. We then  obtain:
 \begin{equation}
 \chi(\mathbf{R}) = \frac{1}{(2\pi\hbar)^{3/2}}e^{\frac{i}{\hbar}\sqrt{2ME_{CM}}\mathbf{R}}
 \end{equation}
-where $ E_{CM} $ is the energy of the center of the mass.
 
-Therefore, we proceed to transform the Hamiltonian into a Jacobian coordinate system, following reference \cite{ZygelmanDalgarno1}. The outcome of this procedure will be the transformation of the wave function as $\psi(\mathbf{R}_i, \mathbf{r}) \rightarrow \psi(\mathbf{R}_{CM}, \mathbf{R}, \mathbf{r}) $ where the $ \mathbf{R}_{CM} $ is the coordinate of the center of the mass, $ R $ is the distance between nuclei and $ \mathbf{r} $ is an electron coordinate.
+Therefore, we proceed to transform the Hamiltonian into a Jacobian coordinate system, following \cite{ZygelmanDalgarno1}. The outcome of this procedure will be the transformation of the wave function as $\psi(\mathbf{R}_i, \mathbf{r}) \rightarrow \psi(\mathbf{R}_{CM}, \mathbf{R}, \mathbf{r}) $ where the $ \mathbf{R}_{CM} $ is the coordinate of the center of the mass, $ R $ is the distance between nuclei and $ \mathbf{r} $ is an electron coordinate.
 We choose the coordinates as:
 
 \begin{equation}
@@ -98,8 +97,8 @@ We choose the coordinates as:
 \end{equation}
 
 \begin{figure}
-    \noindent\includegraphics[width=\textwidth]{H2Ion3D-2.png}
-    \caption{$ H_2^{+} $ Ion}\label{h2ion3d}
+  \includegraphics{H2Ion3D.png}
+  \caption{$ H_2 $ Ion}\label{h2ion3d}
   \label{fig:electronCoordinates}
 \end{figure}
 
@@ -147,13 +146,11 @@ So at this step, we neglect the nuclear kinetic energy, effectively rendering th
 \left[ -\frac{1}{2}\nabla_r^2 + V(\mathbf{R};\mathbf{r}) \right] u( \mathbf{R}; \mathbf{r} ) = E( \mathbf{R} ) u( \mathbf{R}; \mathbf{r} ) 
 \end{equation}
 
-Now the equation \eqref{u} is the Schrodinger equation where $ u( \mathbf{R}; \mathbf{r} ) $ is the wavefunction for the electron with its coordinate $ \textbf{r} $ and parameter $ \textbf{R} $. Electron is moving in the potential $ V(\mathbf{R};\mathbf{r})$ with the coordinate $ \mathbf{r} $ .  The electron's wavefunction $ u( \mathbf{R},\mathbf{r} ) $ and the energy $ E(\mathbf{R}) $ both depend on the position of the nuclei $ \mathbf{R} $ as a parameter. The last step in Born-Oppenheimer approximation is to solve the Schrodinger equation for the nuclei, using the above calculated $ E(\mathbf{R}) $ as a potential energy, which leads to a following equation.
+Now the equation \eqref{u} is the Schrodinger equation for the electron with its coordinate $ \textbf{r} $ and parameter $ \textbf{R} $. Electron is moving in the potential $ V(\mathbf{R};\mathbf{r})$ with the coordinate $ \mathbf{r} $ .  The electron's wavefunction $ u( \mathbf{R},\mathbf{r} ) $ and the energy $ E(\mathbf{R} $ both depend on the position of the nuclei $ \mathbf{R} $ as a parameter. The last step in Born-Oppenheimer approximation is to solve the Schrodinger equation for the nuclei, using the above calculated $ E(\mathbf{R}) $ as a potential energy, which leads to a following equation.
 
 \begin{equation}\label{v}
-\left[ -\frac{1}{2}\nabla_R^2 + E(\mathbf{R}) \right] v( \mathbf{R} ) = \epsilon\,v( \mathbf{R} )
+\left[ -\frac{1}{2}\nabla_R^2 + E(\mathbf{R}) \right] v( \mathbf{R} ) = \epsilon  v( \mathbf{R} )
 \end{equation}
-
-where $ R $ is the internuclear distance.
 
 Once these operations are carried, the Born-Oppenheimer approximation states that the energy $ \epsilon $ is a good approximation of the energy levels of the exact Schrodinger equation \eqref{sch1}
  As a result, the total molecular wave function is separated into the electronic and the nuclear wavefunction.
@@ -162,9 +159,9 @@ Once these operations are carried, the Born-Oppenheimer approximation states tha
 \psi(\mathbf{R},\mathbf{r}) =  u(\mathbf{R};\mathbf{r})  v( \mathbf{R} )
 \end{equation}
 
-In addition, each electronic eigenvalue $ E_n(R) $ will give a rise to the electronic surface, known as Born-Oppenheimer surfaces. 
+In addition, each electronic eigenvalue $ E_n(R) $ will give a rise to the electronic surface, known as Born-Oppenheimer surfaces. Therefore the full internuclear potential will be given as $ V_{NN}(R) + E_n(R) $. 
 
-One could proceed further for the complete treatment of the Born-Oppenheimer approximation, for example dealing with the Born-Oppenheimer off-diagonal correction \cite{BOApprox2}, but it will go beyond the scope of this thesis . 
+One could proceed further for the complete treatment of the Born-Oppenheimer approximation, for example dealing with the Born-Oppenheimer diagonal correction \cite{BOApprox2}, but it will go beyond the scope of this thesis . 
 
 At this moment, using BO approximation we have a Schrodinger equation for the electron, orbiting the two nuclei (each consisting of a single proton). Note that in the further text the $ \psi $ will denote the function $  u(\mathbf{R}; \mathbf{r} ) $, since it is customary to denote the wave function as $ \psi $. 
 
@@ -188,13 +185,10 @@ r_a = \frac{R}{2}(\lambda + \mu)\,,\,\,\,\,\,\,\,r_a = \frac{R}{2}(\lambda - \mu
 After applying the coordinate transformations \eqref{coordTrans1} into the equation \eqref {eqPartial3D}, we obtain another partial differential equations \cite{Bates1}:
 
 \begin{equation}\label{bigdiff}
-\begin{split}
-    & \frac{d}{d\lambda}\left\{(\lambda^2-1)\frac{d\psi}{d\lambda}\right\} +\frac{d}{d\mu}\left\{(1-\mu^2)\frac{d\psi}{d\mu}\right\} + \left\{\frac{1}{\lambda^2-1} + \frac{1}{1-\mu^2} \right\}\frac{d^2\psi}{d\phi^2}+ \\[0.5em]
-    & + \left\{\frac{1}{4}R^2E(\lambda^2 - \mu^2) + 2R\lambda \right\}\psi = 0
-\end{split}
+\frac{d}{d\lambda}\left\{(\lambda^2-1)\frac{d\psi}{d\lambda}\right\} +\frac{d}{d\mu}\left\{(1-\mu^2)\frac{d\psi}{d\mu}\right\} + \left\{\frac{1}{\lambda^2-1} + \frac{1}{1-\mu^2} \right\}\frac{d^2\psi}{d\phi^2}+ \left\{\frac{1}{4}R^2E(\lambda^2 - \mu^2) + 2R\lambda \right\}\psi = 0
 \end{equation}
 
-We assume that the solution can be separated, in the product of the three functions of the single variable, $\lambda,\mu, \phi $. Under this assumption the solution can written as:
+We assume that the solution can be separated, in the product of the two functions of the single variable, $\lambda,\mu, \phi $. Under this assumption the solution can written as:
 
 \begin{equation}\label{sol1}
 \psi(\lambda, \mu, \phi) = L(\lambda)M(\mu)e^{im\phi}\,\,\,\,\,\,\text{ where is }\,\,\,p^2 = -\frac{1}{4}R^2E
@@ -210,7 +204,7 @@ an
 \frac{d}{d\lambda}\left\{(\lambda^2-1)\frac{dL}{d\lambda}\right\} + \left\{A + 2R\lambda - p^2\lambda^2 -\frac{m^2}{\lambda^2-1} \right\}L = 0 
 \end{equation}
 
-In \cite{Bates1}, Bates et al. state that they used the method of successive approximation to find the coefficients in the series. It was tacitly assumed that the successive approximation themselves converge. The approximation is terminated either when the desired precision is achieved of when the certain number of approximation is met. However the details of the numerical calculation are not provided in the paper.
+In \cite{Bates1}, Bates et al. state that they used the method of successive approximation to found the coefficients in the series. It was tacitly assumed that the successive approximation themselves converge. The approximation is terminated either when the desired precision is achieved of when the certain number of approximation is met. However the details of the numerical calculation are not provided in the paper.
 
 \subsection{Differential Operator Spectrum}
 
@@ -227,7 +221,7 @@ So with these assumptions, operators $ D^{1,2} $ can be approximated by the fini
 Here we replicate the solution of Bates et. all. \cite{Bates1}\cite{Bates2}, by using a more of a brute force approach. The idea is to numerically calculate the spectrum of a differential operator to a desired precision
 We expressed equations \eqref{m3d},\eqref{l3d} as a matrix eigenvalue problem. 
 The system \eqref{m3d},\eqref{l3d} of the two ODEs then depend on the two parameters, total energy $ E $, and the separation constant $ A $. The problem is reduced to finding those values of $ E $ and $ A $ for which the solution to the differential equation satisfy the requisite boundary conditions. 
-Since it is a  Sturm-Liouville problem, or more precisely a system of two Sturm-Liouville problems, our approach is fundamentally the same approach as taken by Bates. but it is more practical, as it can better accommodate the existing numerical software. There exist excellent numerical packages (Lapack) \cite{Lapack1} for computing the matrix eigenvalues, and they greatly simplify the actual computation. The Fortran code in appendix D uses Lapack library to compute eigenvalues.
+Since it is a  Sturm-Liouville problem, or more precisely a system of two Sturm-Liouville problems, our approach is fundamentally the same approach as taken by Bates. but it is more practical, as it can better accommodate the existing numerical software. There exist excellent numerical packages \cite{Lapack1} for computing the matrix eigenvalues, and they greatly simplify the actual computation.
 
 We express both function $ M(\mu) $ and $ L(\lambda) $ using the set of orthogonal functions which satisfy the boundary conditions. We then follow the method of Frobenius. Once we replace the assumed solution into the equation and after some algebra, we obtain effectively two uncoupled, infinite systems of equations, where the unknowns are the coefficients in the solution series. The solution vector depends on the two parameters, $ p $, which is the function of energy and $ A $ which is the separation constant. 
 
@@ -297,7 +291,7 @@ This expression \eqref{bandL} is  a system of linear equations, where the unknow
 
 \subsection{M  Equation}
 
-We use the same approach for the M equation.
+We the same approach for the M equation.
 
 \begin{equation}\label{M1-2}
 \begin{split}
@@ -334,7 +328,7 @@ Taking advantage of the orthogonality of Legendre Polynomials \eqref{LInt}, we o
 \end{split}
 \end{equation}
 
-In appendix B we present the Mathematica code for calculating electron energies of the molecular $ H_2^{+} $ ion in 3 dimensions using Mathematica eigenvalue solver.
+In appendix B we present the Mathematica code for calculating electron energies of the molecular $ H^2 $ ion in 3 dimensions using Mathematica eigenvalue solver.
 
 \subsection{Numerical Calculation}
 
@@ -362,78 +356,39 @@ Electron energy as an eigenvalue of the equations \eqref{bandL} and \eqref{bandM
   \includegraphics{Bates3DEofRPlusVofR-2.png}
 \end{figure}
 
-Table comparing the electron  energies obtain using our method vs method applied by Bates et al. We chose a subset of values to indicate the overall trend. The $ 1s\sigma_g $ and $ 2p\sigma_u $ represent the ground Gerade and Ungerade state respectively. 
-In the table below we used atomic units for both $ R $  and $ E(R) $ .
+Table comparing the electron  energies obtain using our method vs method applied by Bates et al. We chose a subset of values to indicate the overall trend.
 
   \begin{table}[ht]
-    \caption{Electron Energy, $ 1s\sigma_g $ state, \label{groundEven}}
+  \caption{Electron Energy, $ 1s\sigma_g $ state}
   \centering
-  \label{tab:UsVsBates1s}
+  \label{tab:UsVsBates}
     \begin{tabular}{ m{4em} m{4em}  m{4em}  m{4em} }
       \hline
-      R & -E(R) (Our Method) & -E(R) (Bates)  \\ \hline \hline
-      0.4 & 3.63220 & 3.601570 \\
-      0.6 & 3.34296 & 3.34301 \\
-      0.8 & 3.10895 & 3.10895 \\
-      1.0 & 2.90357 & 2.90356 \\
-      1.2 & 2.7246154 & 2.72461 \\
-      1.4 & 2.5685373 & 2.56853 \\
-      1.6 & 2.4318740 & 2.43186 \\
-      1.8 & 2.3116176 & 2.31162 \\
-      2.0 & 2.2052681 & 2.20525 \\
-      2.2 & 2.1107695 & 2.11076 \\ 
-      2.4 & 2.0264405 & 2.02642 \\
-      2.6 & 1.9508966 & 1.95090 \\
-      2.8 & 1.88299 & 1.88299 \\
-      3.0 & 1.82179 & 1.82178 \\
-      3.2 & 1.76648 & 1.76647 \\
-      3.4 & 1.71640 & 1.71639 \\
-      3.6 & 1.67097 & 1.67097  \\
-      3.8 & 1.62970 & 1.62971  \\
-      4.0 & 1.59216 & 1.59216  \\
-      4.2 & 1.55799 & 1.557998 \\
-      4.4 & 1.52685 & 1.52685 \\
-      4.6 & 1.49844 & 1.49844 \\
-      4.8 & 1.47252 & 1.47252 \\
-      5.0 & 1.44884 & 1.44884 \\
+      R & -E(R) (Bates) & -E(R) (our method)  \\ \hline \hline
+      0.4 & 3.60157 & 3.632200 \\
+      0.6 & 3.34301 & 3.3429676 \\
+      0.8 & 3.10895 & 3.1089586 \\
+      1.0 & 2.90356 & 2.9035720 \\
+      1.2 & 2.72461 & 2.7246154 \\
+      1.4 & 2.56853 & 2.5685373 \\
+      1.6 & 2.43186 & 2.4318740 \\
+      1.8 & 2.31162 & 2.3116176 \\
+      2.0 & 2.20525 & 2.2052681 \\
+      2.2 & 2.11076 & 2.1107695 \\ 
+      2.4 & 2.02642 & 2.0264405 \\
+      2.6 & 1.95090 & 1.9508966 \\
+      2.8 & 1.88299 & 1.8829977 \\
+      3.0 & 1.82178 & 1.8217919 \\
+      3.2 & 1.76647 & 1.7664850 \\
+      3.4 & 1.71639 & 1.7164029 \\
+      3.6 & 1.67097 & 1.6709739 \\
+      3.8 & 1.62971 & 1.6297050 \\
+      4.0 & 1.59216 & 1.5921695 \\
+      4.2 & 1.55799 & 1.5579948 \\
+      4.4 & 1.52685 & 1.5268516 \\
+      4.6 & 1.49844 & 1.4984480 \\
+      4.8 & 1.47252 & 1.472523 \\
+      5.0 & 1.44884 & 1.448840 \\
       \hline
     \end{tabular}
   \end{table}
-
-  \begin{table}[ht]
-    \caption{Electron Energy, $ 2p\sigma_u $ state}
-    \centering
-  \label{tab:UsVsBates2p}
-    \begin{tabular}{ m{4em}  m{4em}  m{4em} }
-     \hline
-     R & -E(R) (Our Method) & -E(R) (Bates)  \\ \hline \hline
-     0.4 & -1.3456 & 1.02158 \\
-     0.6 & -1.0487 & 1.04861 \\
-     0.8 & -1.08552 & 1.08548 \\
-     1.0 & -1.12961 & 1.12962 \\
-     1.2 & -1.17719 & 1.1772 \\
-     1.4 & -1.22415 & 1.22415 \\
-     1.6 & -1.26723 & 1.26721 \\
-     1.8 & -1.30446 & 1.30446 \\
-     2.0 & -1.33507 & 1.13507 \\
-     2.2 & -1.35912 & 1.35912 \\
-     2.4 & -1.37715 & 1.37715 \\
-     2.6 & -1.38992 & 1.38991 \\
-     2.8 & -1.39823 & 1.39822 \\
-     3.0 & -1.40284 & 1.40285 \\
-     3.2 & -1.40443 & 1.40443 \\
-     3.4 & -1.40359 & 1.40358 \\
-     3.6 & -1.40082 & 1.40082 \\
-     3.8 & -1.39655 & 1.39654 \\
-     4.0 & -1.3911 & 1.39110 \\
-     4.2 & -1.38477 & 1.38478 \\
-     4.4 & -1.37778 & 1.37779 \\
-     4.6 & -1.37033 & 1.36255 \\
-     4.8 & -1.36255 & 1.36255 \\
-      5.0 & -1.35458 & 1.35458 \\
-     \hline
-    \end{tabular}
-  \end{table}
-
-
-For reference we use the values obtained by Bates \cite{Bates1}\cite{Bates2}. Valued obtained by our method are is good alignment with the referent values.

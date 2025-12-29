@@ -1,0 +1,193 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=.5in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{2D H2 Ion}
+\author{Zelimir Lucic}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\section{Begining}
+
+For $ H_2^+ $ the Schrodinger equation is:
+
+\begin{equation}\label{start}
+\left(-\nabla^2-\frac{2}{r_a}-\frac{2}{r_b}\right)\psi = 2E\,\psi
+\end{equation} \\*
+Choosing $ x $ to be along the internuclear axis, we have the nuclei at: $ y = \pm \frac{R}{2}  $, R being the distance between nuclei. We can now use 2D elliptic coordinates, $ \mu $, $ \nu $ such as 
+\begin{equation}\label{variables}
+\begin{split}
+\lambda = \left(r_a + r_b\right)/R\,\,\,\,\,\,\,\mu =  \left(r_a - r_b\right)/R  \\
+r_a = \frac{R}{2}\left(\lambda + \mu \right)\,\,\,\,\,\,\, r_b = \frac{R}{2}\left(\lambda - \mu \right)
+\end{split}
+\end{equation}\\*
+So the coordinates $ r_a $ and $ r_b $ are:
+\begin{equation}
+r_a  = \sqrt{x^2 + \left(y + \frac{R}{2}\right)^2 }\,\,\,\,\,\,\,\,\,\,r_b  = \sqrt{x^2 + \left(y - \frac{R}{2}\right)^2 }
+\end{equation}\\*
+Now squaring, adding and substracting the equations above we get:
+\begin{equation}
+\begin{split}
+& x^2 + y ^2 + \frac{R}{4}^2 = \frac{R^2}{4}\left(\lambda^2 + \mu^2\right) \,\text{and},\\
+& Ry = \frac{R^2}{2} \lambda\, \mu \\[.8em]
+& \text{where:   } -1 < \mu < 1, \lambda > 1
+\end{split}
+\end{equation}\\*
+So finally
+\begin{equation}
+\begin{split}
+& x = \frac{R}{2}\sqrt{\left(\lambda^2 - 1\right)\left(1 - \mu ^2 \right) } \\
+& y = \frac{R}{2}\,\lambda\,\mu
+\end{split}
+\end{equation}\\*
+The area element is:
+\begin{equation}
+\begin{split}
+& dA = dx\, dy = h_1\, h_2 \, d\lambda\,d\mu\,\,\,\,\text{where} \\
+& h_1^2 = \left(\frac{\partial x}{\partial \lambda}\right)^2 + \left(\frac{\partial y}{\partial \lambda}\right)^2  = 
+\left(\frac{R}{2}\right)^2 \frac{ \lambda^2 - \mu ^2}{\lambda^2 - 1} => 
+h_1 =   \left(\frac{R}{2}\right) \sqrt{ \frac{ \lambda^2 - \mu ^2}{\lambda^2 - 1} }\\
+& h_2^2 = \left(\frac{\partial x}{\partial \mu}\right)^2 + \left(\frac{\partial y}{\partial \mu}\right)^2  = 
+\left( \frac{R}{2} \right)^2 \frac{ \lambda^2 - \mu ^2}{1 - \mu ^2 } => 
+h_2  = \left( \frac{R}{2} \right) \sqrt{ \frac{ \lambda^2 - \mu ^2}{1 - \mu ^2 } }
+\end{split}
+\end{equation}\\*
+The Laplacian is in the general case:
+\begin{equation}
+\nabla^2 = \frac{1}{h_1\,h_2}\left[\frac{\partial}{\partial q_1}\left(\frac{h_2}{h_1}\frac{\partial}{\partial q_1} \right) + \frac{\partial}{\partial q_2}
+\left(\frac{h_1}{h_2} \frac{\partial}{\partial q_2} \right) \right]
+\end{equation}\\*
+So for the coordinates above the Laplacian becomes:
+\begin{equation}\label{Laplacian1}
+\nabla^2  = \frac{4}{R^2\left( \lambda ^2 - \mu ^ 2 \right)} \left[ \sqrt{\lambda ^2 -1}\,\frac{\partial }{ \partial \lambda}\left( \sqrt{\lambda ^2 -1}\frac{\partial}{\partial \lambda} \right)  + \sqrt{1 - \mu ^2}\,\frac{\partial }{ \partial \mu}\left( \sqrt{1 - \mu ^2}\frac{\partial}{\partial \mu} \right) \right]
+\end{equation}\\*
+Here comes the tricky part, we hope and assume that the solution can be expressed as: $ \Psi(\lambda, \mu) = L(\lambda)\,M(\mu) $. Plugging that into the equation \eqref{Laplacian1}, for each term on the left we get we get:\\*
+\begin{equation}\label{LL}
+\begin{split}
+& \sqrt{\lambda ^ 2 - 1}\frac{\partial}{\partial \lambda }\left( \sqrt{\lambda^2 - 1}\frac{\partial }{ \partial \lambda}L\,M \right) = 
+\sqrt{\lambda ^ 2 - 1}\frac{\partial}{\partial \lambda}\left(  \sqrt{\lambda^2 - 1}\,L' \, M  \right) = \\
+& \sqrt{\lambda ^ 2 - 1}\left( \frac{\lambda}{ \sqrt{\lambda^2 - 1} }L'\,M +  \sqrt{\lambda^2 - 1}\,L''\,M \right)  = 
+\lambda\,L'\,M + \left(\lambda^2 - 1 \right)\,L''\,M
+\end{split}
+\end{equation}\\* and for $ M $:
+\begin{equation}\label{LM}
+\begin{split}
+& \sqrt{1 - \mu^ 2}\frac{\partial}{\partial \mu}\left( \sqrt{1 - \mu^2 }\frac{\partial }{ \partial \mu}L\,M \right) = 
+\sqrt{1 - \mu ^ 2}\frac{\partial}{\partial \mu}\left(  \sqrt{1 - \mu^2}\,L\, M'  \right) = \\
+& \sqrt{1 - \mu ^ 2}\left( \frac{- \mu}{ \sqrt{1 - \mu^2} }L\,M' +  \sqrt{1-\mu^2 }\,L\,M'' \right)  = 
+- \mu\,L\,M' + \left(1 - \mu^2 \right)\,L\,M''
+\end{split}
+\end{equation}\\*
+Now we plug \eqref{LL} and \eqref{LM} into the \eqref{Laplacian1} and plug all that into the equation \eqref{start} using \eqref{variables}:
+\begin{equation}
+\begin{split}
+ \frac{4}{R^2\left( \lambda ^2 - \mu ^ 2 \right)} \left[ \left(\lambda^2 - 1 \right)\,L''\,M + \lambda\,L'\,M + \left(1 - \mu^2 \right)\,L\,M'' - \mu\,L\,M'\right] +  \frac{8}{R}\frac{\lambda\,L\,M}{\lambda^2 - \mu^2} = -2 E\,L\,M
+\end{split}
+\end{equation}\\* or
+\begin{equation}
+ \left(\lambda^2 - 1 \right) \frac{L''}{L} + \lambda \frac{L'}{L}+ \left(1 - \mu^2 \right) \frac{M''}{M} - \mu\frac{M'}{M} + 2R\,\lambda = \frac{E\, R^2\,\mu^2}{2} - \frac{E\,R^2\,\lambda^2}{2}
+\end{equation}\\*or
+\begin{equation}
+\begin{split}
+& \left(1 - \mu^2 \right)\frac{M''}{M} - \mu\frac{M'}{M} - \frac{E\, R^2\,\mu^2}{2}  = A = \\[.8em]
+& -\left[\left(\lambda^2 - 1 \right) \frac{L''}{L} + \lambda \frac{L'}{L} +2R\,\lambda + \frac{E\,R^2\,\lambda^2}{2}\right]
+\end{split}
+\end{equation}\\*
+ So the equation separates, which is great. Having the both side set equal to the separation constant $ A$ we get two equations:
+\begin{equation}\label{L}
+\left(\lambda^2 - 1 \right) \frac{d^2L}{ d\lambda^2 }+\lambda\frac{ dL }{d\lambda }  + \left(A + \frac{E\,R^2}{2}\lambda^2 + 2R\lambda  \right)L = 0  
+\end{equation}
+\begin{equation}\label{M}
+ \left(1 - \mu^2 \right) \frac{d^2M}{ d\mu^2 } - \mu\frac{ dM }{d\mu } +  \left(-A -  \frac{E\,R^2}{2}\mu^2  \right)M = 0
+\end{equation}\\*
+Set:
+\begin{equation}
+p^2 = -\frac{E\,R^2}{2}
+\end{equation}
+
+\subsection*{M Equation}
+
+\begin{equation}\label{M}
+\begin{split}
+ & \left(1 - \mu^2 \right) \frac{d^2M}{ d\mu^2 } - \mu\frac{ dM }{d\mu } +  \left(-A  + p^2\mu^2  \right)M = 0\,\,\,\text{ or } \\[.8em]
+ & \left(1 - \mu^2 \right) \frac{d^2M}{ d\mu^2 } - \mu\frac{ dM }{d\mu } +   p^2\mu^2\,M = A\,M
+ \end{split}
+\end{equation}\\*
+
+This looks like the Mathieu's equation.
+
+The various forms of Mathieu's equation:
+\begin{equation}
+\begin{split}
+& (1 - \zeta^2)w^{''} - \zeta\,w^{'} + (a + 2q - 4q\,\zeta^2)w = 0 \\[.8em]
+& w^{''} +\left( a - 2q\cos (2z)\right)w = 0 \\[.8em]
+& \text{ where: }\,\,\zeta = \cos(z)  \\[.8em]
+& q = -\frac{p^2}{4}\,\,\,\,\,\,\,\text{ and  }\,\,\,\,\,\,\,a= \frac{p^2}{2} - A
+\end{split}
+\end{equation}\\*
+Now use this: \verb+https://www.ima.umn.edu/talks/workshops/7-22-8-2-2002/volkmer/slides/sfda1.pdf+ \\[.8em]
+So looking at the M  equation, since the 2D HMI states are described by even and odd functions of p, respectively,the $ M(x) $  are even solutions of period $ \pi $. and $ 2\pi $ respectively. So we have for the eigenvalues equations \cite{Laguerre1}:
+Even case:
+\begin{equation}
+V_0 - \cfrac{2}{V_2-\cfrac{1}{V_4-\cfrac{1}{V_6 - \dots}}} = 0
+\end{equation}
+Odd case:
+\begin{equation}
+V_1 - 1 -\cfrac{1}{V_3-\cfrac{1}{V_5-\cfrac{1}{V_7 - \dots}}} = 0
+\end{equation}
+where $ V_m = (w - m^2)/q $.
+
+\subsection*{L Equation}
+\begin{equation}
+\left(\lambda^2 - 1 \right) \frac{d^2L}{ d\lambda^2 }+\lambda\frac{ dL }{d\lambda }  + \left(A + 2R\lambda - p^2\lambda^2  \right)L = 0  \label{23}
+\end{equation}\\[1.em]
+Here is the modified Mathieu's equation:
+\begin{equation}\label{LM}
+\left(\zeta^2-1\right)w^{''} + \zeta\,w^{'} + \left(-a - 2q + 4q\zeta^2\right)w = 0 
+\end{equation}
+
+This looks like the modified Mathieu's equation. But it is not. So assume the solution as the sum of Laguerre polynomials and Algebra:
+\begin{equation}
+L(x) =  e^{-px}\sum_{k=0}^{\infty}{ c_k\,L_k(x) } \label{22}
+\end{equation}
+Using these identities
+\begin{equation}
+\begin{split}
+& L^{'}(x) =  -p\,e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k} + e^{-px}\sum_{k=0}^{\infty}{c_k\,L_k^{'}} \\[.8em]  \label{24}
+& xL_n^{'}(x) = n L_n(x) - n L_{n-1}(x) 
+\end{split} 
+\end{equation}\\*
+Now for $ \lambda = 1 $ we have:
+\begin{equation}
+\left.\frac{d\,L}{d\,\lambda}\right|_{\lambda=1} + \left[ A - p^2 + 2R  \right] L = 0;
+\end{equation}\\*
+Using equations \eqref{23},\eqref{24} in equation \eqref{22} we get:
+\begin{equation}
+\begin{split}
+& \sum_{k=0}^{\infty}\left.{- p\,c_k L_k  + c_k  L_k^{'} + \left[ A - p^2 + 2R  \right] c_kL_k  }\right|_{\lambda =1} = 0  \Rightarrow \\[.7em]
+&  \sum_{k=0}^{\infty}\left.{- p\,c_k L_k  +  c_k k L_k  +  \left[ A - p^2 + 2R  \right] c_kL_k  } -  \sum_{k=1}^{\infty} c_kk L_{k-1}\right|_{\lambda =1} = 0   \Rightarrow \\[.7em]
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+& \sum_{k=0}^{\infty}\left.{ c_k L_k \left( -p + k + A - p^2 + 2R \right) + c_{k+1}(k+1) }\right|_{\lambda =1} = 0  \Rightarrow \\[.8em]
+& \frac{c_k}{c_{k+1}} = \frac{k + 1}{p - k - A + p^2  - 2R }
+\end{split}
+\end{equation}
+For $ k \rightarrow \infty $ : $ c_k = c_{k+1} $ we get a eigenvalue equation:
+\begin{equation}
+ \sum_{k=0}^{\infty}{c_k( -p + 2k + A - p^2 + 2R + 1 ) } = 0
+\end{equation}
+
+\verb+https://grenoble-sciences.ujf-grenoble.fr/pap-ebook/grivet/sites/grivet/files/exercices/ch12/the_hydrogen_molecular_ion_revisited.pdf+
+
+\verb+http://optica.mty.itesm.mx/pmog/Papers/Mathieu.pdf+
+
+\end{document} 
