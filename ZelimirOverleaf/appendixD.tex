@@ -1,0 +1,277 @@
+\chapter{Fortran code for Calculating Energies for the 2D problem}
+\label{AppendixD}
+
+To run the numerical calculations I used gfortan 5.2.0, running on 2.2 GHz, Intel Code 7, Macbook Pro 15" Laptop (mid 2014). The numerial library used was Lapack, version 3.6.0, compiled on the same machine using the gfortran above.
+
+This is Fortran 90 code for calculating even and odd eigenvalues and consequently the energies.
+
+\begin{verbatim}
+! To Compile 
+! gfortran -O4 -o h2Plus h2plus.f90 hpsort.f90 -L ./ -l lapacke -l lapack -l blas -l install
+program main
+
+implicit none
+
+interface 
+
+	subroutine M_Matrix(mMatrix,max,p)
+		integer :: max
+		double precision :: p
+		double precision,dimension(:,:) :: mMatrix
+	end subroutine
+
+	subroutine L_Matrix(lMatrix,max,R,p)
+		integer :: max
+		double precision :: R,p
+		double precision,dimension(:,:) :: lMatrix
+	end subroutine
+
+	subroutine CalculateEigenvalues(c,matrix,max,wr,wi)
+		character*1 :: c
+		double precision,dimension(:,:) :: matrix
+		integer :: max,np,count
+		double precision,dimension(:) :: wr,wi
+	end subroutine 
+
+	subroutine hpsort(n,rra)
+		integer :: n
+		double precision, dimension(:) :: rra
+	end subroutine 
+
+end interface
+
+! Declare local variables
+integer,parameter :: max = 500   ! matrix dimesions
+integer,parameter :: np = 1000  ! number of p points 
+integer,parameter :: state = 0   ! 0=ground state, 1=1st excited, etc.. 
+integer,parameter :: numRadii = 1
+double precision,dimension(numRadii) :: Radii
+double precision,dimension(max,max) :: mMatrix,lMatrix
+double precision,dimension(np) :: pGrid
+double precision :: R  ! Nuclei distance
+double precision,dimension(max,np) :: mEig, lEig 
+double precision,dimension(max) :: wr,wi
+double precision :: pStep, pMin, pMax
+integer :: count,i,j, index
+double precision :: p,rr
+character(len=6) :: fmt
+character(len=16) :: rOut
+
+i = 1;
+rr = 20.0d0
+do while( (rr <= 5.0d0) .and. (i <= numRadii))
+	Radii(i) = rr
+  rr = rr + 0.2d0
+	i = i + 1
+end do
+
+do while(i <= numRadii)
+  Radii(i) = rr
+	rr = rr + 0.5d0
+  i = i + 1
+end do
+
+do j = 1, numRadii
+	R = Radii(j)
+
+	print *,"R = ", R
+
+	pMin = 0
+	pMax = 2.d0*R + 1.d0
+	pStep = (pMax - pMin) / dble(np)
+
+	count = 1;
+	p = pMin
+	do while( count <= np )
+		! Initialize M  matrix
+		call M_Matrix(mMatrix,max,p)
+
+		!Calculate eigenvalues for M matrirx
+		call CalculateEigenvalues('m',mMatrix,max,wr,wi)
+  	!	 sort
+		do i = 1,max
+			if( wi(i) /= 0) then
+				wr(i) = -1.0d99
+			end if
+		end do
+					
+		call hpsort(max,wr)
+		do i = 1,max
+				mEig(i,count) = wr(max-i+1)
+		end do
+
+		! And L Matrix
+		call L_Matrix(lMatrix,max,R,p)
+		call CalculateEigenvalues('l',lMatrix,max,wr,wi)
+		do i = 1,max
+			if( wi(i) /= 0) then
+				wr(i) = 1.0d99
+			end if
+		end do
+		call hpsort(max,wr)
+  	! wr contains eigenvalues from largest to smallest
+		do i = 1,max
+			lEig(i,count) = wr(i)
+		end do
+	
+		pGrid(count) = p
+		p = p + pStep
+		count = count + 1
+	end do
+
+	! Now write the eigenvalues to file 
+	if( R < 10.0d0 ) then
+		fmt = "(F3.1)"
+	else
+		fmt = "(F4.1)"
+	end if
+	write(rOut, fmt) R
+	open(unit=11,file="Eigenvalues-Even-M-R="//trim(rOut)//".dat")
+	open(unit=12,file="Eigenvalues-Even-L-R="//trim(rOut)//".dat")
+	!	 Todo: Excited states
+	index = 1
+	do i=1,np
+		write(11,*) pGrid(i), mEig(1,i),mEig(2,i), mEig(3,i), mEig(4,i), mEig(5,i)
+		write(12,*) pGrid(i), lEig(1,i),lEig(2,i), lEig(3,i), lEig(4,i), lEig(5,i)
+	end do
+	close(11)
+	close(12)
+end do
+
+end  ! main
+
+subroutine CalculateEigenvalues(id,matrix,max,wr,wi)
+! Calculate and return the eigenvalues 
+implicit none
+
+character*1 ::id
+double precision,dimension(:,:) :: matrix
+integer :: max
+double precision,dimension(:) :: wr,wi
+!local
+double precision,dimension(max,max) :: z 
+double precision,dimension(:), allocatable :: work
+integer :: info,i
+double precision,dimension(1,1) :: dummy
+integer :: lda,lwork
+double precision :: temp
+
+lda = max
+lwork = max * 11
+
+allocate( work(lwork) )
+
+call DGEEV('N','N',max,matrix,lda,wr,wi,dummy,1,dummy,1,work,lwork,info)
+
+deallocate(work)
+
+if( info /= 0 ) then
+	print *, "Error in info , info = ", info
+	call exit(1)
+end if
+
+end subroutine
+
+subroutine M_Matrix(mMatrix,max,p)
+! create the M matrix
+	implicit none
+interface
+   function Delta(m,k)
+     double precision :: Delta
+     integer, intent(in) :: m,k
+   end function Delta
+end interface
+
+	integer :: max
+	double precision :: p, val
+  double precision,dimension(:,:) :: mMatrix
+	integer :: m,k
+
+	do m = 0,max-1
+ 		do k = 0,max-1
+!     Even state
+			val = ( (-1)*((2.0d0 * k)**2) + ( (p**2.0)/2.0d0) ) * Delta(m,k) + & 
+!     For the Odd state use
+!     val = ( (-1)*((2.0d0 * k + 1)**2) + ( (p**2.0)/4.0d0) ) * Delta(m,k) + &
+      ( (p**2)/4.0d0 ) * ( Delta(m,k+1) + Delta(m,k-1) )
+			mMatrix(m+1,k+1) = val
+		end do
+	end do
+	
+!     Even state
+	mMatrix(1,2) = 2 * mMatrix(1,2)
+!     For the Odd state use
+! mMatrix(1,1) = -1 + (p**2.)/4.0d0
+	
+end subroutine
+
+subroutine L_Matrix(lMatrix,max,R,p)
+! create the L matrix
+	implicit none
+interface
+   function Delta(m,k)
+     double precision :: Delta
+     integer, intent(in) :: m,k
+   end function Delta
+
+  function SubSum(m,k)
+      double precision :: SubSum
+      integer, intent(in) :: m,k
+   end function SubSum
+end interface
+
+	integer :: max
+	double precision :: p,R,val
+	double precision, parameter :: PI = 3.141592653589793238462643d0
+  double precision,dimension(:,:) :: lMatrix
+	integer :: m,k
+
+	do m = 0,max-1
+		do k = 0,max-1
+      val = ((-2.d0)*p*k*(2*k+1) - (2*p-1)*(k**2) - 4*p*k + &
+			(2*R-p)*(2*k+1)-p -(p**2)+2*R) * Delta(m,k) + &
+      (2*p*k*(k+1) - (2*R-p)*(k+1))*Delta(m,k+1) + &
+      (2.0d0*p*(k**2) + (2.0d0*p - 1)*k*(2.0d0*k - 1) +(4.0d0*p - 2)*k-&
+			(2*R - p)*k)*Delta(m,k-1) - &
+      (2.0d0*p - 1)*k*(k - 1)*Delta(m,k-2) + SubSum(m,k)
+			lMatrix(m+1,k+1) = (-1)*val
+		end do
+	end do
+	
+end subroutine
+
+function SubSum(m,k)
+implicit none
+interface
+   function Delta(m,k)
+     double precision :: Delta
+     integer, intent(in) :: m,k
+   end function Delta
+end interface
+
+double precision :: SubSum
+integer, intent(in) :: m,k
+integer :: i
+
+SubSum = 0.0d0
+
+do i = 0,k-1
+   SubSum = SubSum + Delta(m,i)
+end do
+
+end function SubSum
+
+function Delta(m,n)
+implicit none
+double precision :: Delta
+integer, intent(in) :: m,n
+
+if (m == n) then
+    Delta = 1.d0
+else
+   	Delta = 0.d0
+end if
+end function Delta
+
+\end{verbatim}
+

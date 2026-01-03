@@ -1,0 +1,64 @@
+\chapter{Center of Mass as a Plane Wave}
+\label{AppendixA}
+
+Take the isolated system of 2 interacting spinless particles. The particles are of masses $ m_1 $ and $ m_2 $ and are located at positions $ \mathbf{r}_1 $ and $ \mathbf{r}_2 $. The potential energy of the particles depends only on their relative position $ \mathbf{r}_1 - \mathbf{r}_2 $. The Langrangian of this system can be written as:
+\begin{equation}
+    L = T - V = \frac{1}{2}m_1\cdot{r}_1^2 + \frac{1}{2}m_2\cdot{r}_2^2 + V(\mathbf{r}_1 - \mathbf{r_2}) = \frac{1}{2}M\cdot{R}^2 + \frac{1}{2}\mu\cdot{r}^2 + V(\mathbf{r})
+ \end{equation}
+where
+\begin{equation}
+\begin{split}
+& M = m_1 + m_2 \text{ is a total mass of the system}\\[.8em]
+& \mu = \frac{m_1m_2}{m_1 + m_2} \text{ is a reduced mass of the system} \\[.8em]
+& \mathbf{R} = \frac{m_1\mathbf{r}_1 + m_2\mathbf{r}_2}{m_1 + m_2} \text{ are the coordinates of the center of the mass of the system, and} \\[.8em]
+& \mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2 \text{ are the relative coordinates.}
+\end{split}
+\end{equation}
+
+with:
+\begin{equation}
+\begin{split}
+& p_i = \frac{\partial\,L}{\partial\,q_i}\,\text{ we define } \\[.8em]
+& \mathbf{P} = M\mathbf{\cdot{R}}\,\,\,\text{  and  } \mathbf{p} = \mu\cdot\mathbf{r} \,\text{ and we obtain } \\[.8em]& \mathbf{\cdot{P}} = 0\,\,\,\,\mathbf{\cdot{p}} = -\nabla V{\mathbf{r}}
+\end{split}
+\end{equation}
+
+Now using the variables $ \mathbf{P}, \mathbf{R}, \mathbf{p}, \mathbf{r} $ we get for the Hamiltonian:
+\begin{equation}
+H = \frac{P^2}{2M} + \frac{p^2}{2\mu} + V(\mathbf{R}) = H_{CM} + H_r
+\end{equation}
+
+The first term represents the motion of the center of the mass, which is a uniform inertial motion, since $ \mathbf{\cdot{P}} = 0 $. The other terms represent the energy associated with the motion relative to the center of the mass. Now if we choose the inertial frame in which the center of the mass is at rest, we get the Hamiltonian to reduce to $ H_r $, representing the motion of a single, fictitious particle in an external potential.
+
+Now transitioning to a quantum case. The variables $ H, \mathbf{P}, \mathbf{R}, \mathbf{p}, \mathbf{r} $ become operators, with the usual commutation relations:
+\begin{equation}
+\begin{split}
+& [R_i, P_j] = [r_i,p_j] = i\delta_{ij}\,\text{ and }\,[R_i, p_j] = [r_i,P_j] = 0 \,\Longrightarrow \\[.8em]
+& [H_{cm},H_r] = 0,\,[H_r,H] = 0\,[H_{CM},H] = 0
+\end{split}
+\end{equation}
+
+Since all the Hamiltonians commute, there exists a common eigenbasis in some state space $ E $ of $ H,H_{CM}, H_r $. We can express the space $ E $ as a tensor product of spaces $ E_R $ and $ E_{cm} $ with $ E = E_{CM} \otimes E_r $. The operators $ \mathbf{P}, \mathbf{R} $ operate in space $ E_{CM} $ and operators $ \mathbf{p}, \mathbf{r} $ operate in $ E_r $ space. From the Lagrangian and the Hamiltonian above we observe that the motion of the center of mass and the relative motion are completely independent of each other.
+
+\begin{equation}
+\begin{split}
+& H_{CM}\Ket{\chi} = E_{CM}Ket{\chi}\,\,\,\,H_{r}\Ket{\omega} = E_{r}Ket{\omega}\\[.8em]
+& H\Ket{\phi} = (H_{CM} + H_{r})(\Ket{\chi} \otimes Ket{\omega}) = H_{CM}(\Ket{\chi} \otimes Ket{\omega}) + H_{r}(\Ket{\chi} \otimes Ket{\omega}) = (E_{CM} + E_{r})(\Ket{\chi} \otimes Ket{\omega})
+\end{split}
+\end{equation}
+
+Expressing the expressions above in coordinate representation, we have:
+\begin{equation}
+\begin{split}
+& \phi(\mathbf{R},\mathbf{r}) = \chi(\mathbf{R})\omega(\mathbf{r}) \\[.8em]
+& H_{CM}\chi(\mathbf{R}) = E_{CM}\chi(\mathbf{R})\,\,\,\,\,\,H_r\omega(\mathbf{r}) = E_r\omega(\mathbf{r}) \\[.8em]
+& -\frac{\hbar_R^2}{2M}\nabla^2\chi(\mathbf{R}) =  E_{CM}\chi(\mathbf{R})\,\,\,\,\,-\frac{\hbar^2}{2M}\nabla_r^2\omega(\mathbf{r}) =  E_{r}\omega(\mathbf{r})
+\end{split}
+\end{equation}
+
+So we can solve for $ \chi(\mathbf{R}) $ to obtain:
+\begin{equation}
+\chi(\mathbf{R}) = \frac{1}{(2\pi\hbar)^{3/2}}e^{\frac{i}{\hbar}\sqrt{2ME_{CM}}\mathbf{R}}
+\end{equation}
+
+
