@@ -24,9 +24,9 @@ During the collision, the nuclear motion accumulates different phase shifts on t
 When the nuclei separate again, the superposition is no longer symmetric, so the electron localizes on either nucleus with some probability.\\
 This produces charge exchange without radiation, and the process is controlled by the phase shift difference between the gerade and ungerade states.
 
-In the Radiative Charge Transfer there is an emission of a photon. It is governed by the dipole matrix element $ D(R) = \mel{\psi_g}{r}{\psi_u} $ where $ \ket{\psi_g} $ and $ \ket{\psi_u} $ are the wavefunctions associated with the gerade and ungerade potentials and $ r $ is the location of the electron. 
+In the Radiative Charge Transfer there is an emission of a photon. It is governed by the dipole matrix element $ D(R) = \matrixelement{\psi_g}{r}{\psi_u} $ where $ \ket{\psi_g} $ and $ \ket{\psi_u} $ are the wavefunctions associated with the gerade and ungerade potentials and $ r $ is the location of the electron. 
 
-The proces  is The proces is $ H^+ + H \rightarrow H + H^+ + \gamme $. \\
+The proces  is The proces is $ H^+ + H \rightarrow H + H^+ + \gamma $. \\
 
 ONow the electron jumps from the upper adiabatic curve to the lower one by emitting a photon.
 
@@ -161,4 +161,93 @@ In the length gauge, the interaction Hamiltonian is:
 \end{equation}
 where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
 
+
+\section{Resonant Charge Transfer}
+\label{chap:RxRP}
+
+\chapter{Radiative Charge Transfer}
+
+Considering the radiative charge transfer process
+\begin{equation}
+  H(1S) + H^+ = H^+ H(1S) + \hbar\omega
+\end{equation}
+where $ \hbar\omega $ is the energy of the emitted photon given by the expression \eqref{hbaromega2}.
+\begin{equation}\label{sumZZ}
+\begin{split}
+& sigma_{CT} = \int_0^{\omega_max}{d\omega\,\frac{d\sigma}{d\omega}},\\[.8em]
+& \frac{d\sigma}{d\omega} = \sum_J{\frac{8}{3}\frac{\pi^2\omega_{nJ}^3}{c^3k^2}\left[(J+1)M_{J+1,J}^2(k,k')+J\,M_{J-1,J}^2(k,k')\right] }
+\end{split}
+\end{equation}
+where
+\begin{equation}\label{mjjz}
+  M_{J,J'}(k,n) = \int_{0}^{\infty}{dR\,f_J(kR)D(R)f_J'(k'R }
+\end{equation}
+Here $ f_J(kR) $ is a solution to \eqref{diffR} and $ f_J^{'}(k^{'}R) $ obeys the corresponding equation for the $ X^2\Sigma^+ $ exit channel with wavenumber and partial wave $ k' $, $ J'$ respectively.
+The radial wavefunctions are normalized as in \eqref{fjRZ} and
+\begin{equation}\label{hbaromega2}
+\begin{split}
+  & \hbar\omega = \frac{\hbar k^2}{2\mu} - \frac{\hbar k^{'2}}{2\mu} + \Delta E \\[.8em]
+  & \Delta E = V_A(\infty) - V_X(\infty)
+\end{split}
+\end{equation}
+From the \eqref{hbaromega2} the maximum angular frequency $ \omega_max $ is
+\begin{equation}
+\hbar\omega_{max} = \frac{\hbar k^2}{2\mu} +  \Delta E
+\end{equation}
+We avoid evaluating the sum \eqref{sumZZ}. Instead we choose to compute an upper bound on the charge transfer cross section.
+From the equation above we get for the frequency of the emitted photon, during an RCT transition, to be
+\begin{equation}
+\hbar\omega = \frac{\hbar k^2}{2\mu} - \frac{\hbar k^{'2}}{2\mu} + V_A(\infty) - V_X(\infty) = \frac{\hbar k^2}{2\mu} - E' + V_A(\infty) - V_X(\infty)
+\end{equation}
+Now from the equation above we can see that to achieve the maximum energy of the emitted photon, $ \hbar\omega_{max} $ we need to have $ E' = 0 $.
+The maximum value of $ E' $ is achieved when $ \hbar\omega = 0 $ therefore:
+\begin{equation}
+  E_max^{'} = \frac{\hbar k^2}{2\mu} + V_A(\infty) - V_X(\infty)
+\end{equation}
+Now the \eqref{sumZZ} can be written as:
+\begin{equation}
+  \sigma = \frac{8}{3}\frac{\pi^2}{c^3k^2}\int_0^{E_{max}^{'}}{dE'\,\omega^3(E')\left[(J+1)M_{J,J+1}^2(k,E')+J\,M_{J,J-1}^2(k,E')\right]}
+\end{equation}
+where we have the inequality
+\begin{equation}\label{sigmalessthan}
+  \sigma_{CT} < \frac{8}{3}\frac{\pi^2\omega^3(E')_{max}}{c^3k^2}\int_0^{E_{max}^{'}}{dE'\,\left[(J+1)M_{J,J+1}^2(k,E')+J\,M_{J,J-1}^2(k,E')\right]}
+\end{equation}
+Now we can replace the expression for $ M_{J+1,J}^2(k,E') $ in \eqref{sigmalessthan} with the expression in \eqref{mjjz} and squaring it,  we get the integral
+\begin{equation}
+  \int_0^{\infty}{dE'\,JM_{J,J-1}^2(k,E')} = \int_0^{\infty}{dE'\int_{0}^{\infty}{dR\,f_J(kR)D(R)f_{J-1}(k'R}\int_{0}^{\infty}{dR'\,f_J(kR')D(R)f_{J-1}(k'R' }   }
+\end{equation}
+so the inequality becomes
+\begin{equation}
+  \int_0^{\infty}{dE'\,JM_{J,J-1}^2(k,E')} < \sum_{E'}{JM_{J,J-1}^2(k,E')} = J\int_{0}^{\infty}{dR\,f_J^2(kR)D^2(R)}
+\end{equation}
+and we get for the upper bound
+\begin{equation}
+  \sigma_{CT} < \frac{8}{3}\frac{\pi^2\omega^3(E')_{max}}{c^3k^2}\sum_{J}{(2J+1)\int_{0}^{\infty}{dR\,f_J^2(kR)D^2(R)}}
+\end{equation}
+
+\subsection{Optical Potential Approach}
+
+The alternative way to compute the cross section is to use the local optical potential method \eqref{Zygelman88}.  The loss of flux from the entrance channel equals the radiative probability, which is convert to a radiative cross section.
+In this method the collision system in the incoming $ A^2\Sigma^{+} $ state experiences imaginary (absorptive) potential $ iA(R)/2 $ added to the entrance-channel BO potential.
+So we define a complex potential 
+\begin{equation}
+\begin{split}
+  & V(R) = V_{BO}(R) + V_{OPT}(R) = V_{BO}(R) + i\frac{A(R)}{2} \\[.8em]
+  & A(R) = \frac{4}{3c^2}D^(R)[V_A(R) - V_X(R)]
+\end{split}
+\end{equation}
+$ A(R) $ is the Einstein-A coefficient. We shall use a 2D version of the optical theorem to compute the radiative charge transfer in 2D case in the next chapter.
+The next step is to solve the usual radial scattering equation, but with $ V(R) $ complex. The resulting S matrix becomes non-unitary, $ |S| < 1 $ and the “missing probability” is the radiative loss.
+
+The cross section for radiative quenching is given by
+\begin{equation}
+  \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j }}
+\end{equation}
+
+Local Optical Potential is generally applicable when the following cases are satisfied, which aligns well with our case.
+\begin{itemize}
+  \item Transition happens over a region small compared to relevant wavelengths
+  \item Emission is relatively weak compared to the collision energies
+  \item It is accurate enough for the computation of total probability
+\end{itemize}
 

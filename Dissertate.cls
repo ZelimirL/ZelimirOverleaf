@@ -24,6 +24,10 @@
 \RequirePackage{setspace}
 \RequirePackage{verbatim}
 
+\RequirePackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{physics}
+
 % No ident for new paragraph
 \usepackage[parfill]{parskip}
 
@@ -37,7 +41,6 @@
 \RequirePackage{color}
 %\RequirePackage{hyperref}
 \RequirePackage{url}
-\RequirePackage{amssymb}
 \widowpenalty=300
 \clubpenalty=300
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -59,7 +62,6 @@
 \bibliographystyle{unsrt}
 
 %math
-\usepackage[fleqn]{amsmath}
 \usepackage{amssymb}
 \usepackage{braket}
 \usepackage{mathtools}
