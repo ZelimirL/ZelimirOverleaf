@@ -1,41 +1,45 @@
-\chapter{Radiative Processes}
+\chapter{Charge Transfer Processes}
 \label{chap:RRP}
 \section{Description}
 
-As stated we will focus on a charge transfer processes in low energies, i.e. low temperatures. We consider a positively charged ion that approaches a neutral atom. As the internuclear distance R becomes smaller, there exist a non-zero probability that the electron will escape the atom and attach itself to the incoming ion. In this manner a charge transfer happens.
- 
-The analysis of the radiative processes is related to the analysis of the general scattering process. So we will briefly touch scattering in the subsequent section.
+
+The analysis of the radiative and charge transfer processes is related to the analysis of the general scattering process. So we will briefly touch scattering in the subsequent section.
 
 Typically for the scattering processes at this level, we can distinguish between the radiative and non-radiative processes, i.e. Radiative and Resonant charge transfer.\\
 
-Following \cite{ZygelmanCT} we consider a positively charged Hydrogen ion approaching a neutral Hydrogen atom. As the values or R (internuclear distance) becomes smaller, there increases a probability that the electron will escape one atom and attach itself to another. 
+As stated we will focus on a charge transfer processes in low energies, i.e. ultra-cold temperatures. Recently the advances in ultra-cold atom processing technologies have made is feasible to explore the behaviour of ultra-cold atoms and ions in laboratory. Researches are able to explore the interactions between coole ions and neutral atom, including non-radiative and radiative charge transfer as well as radiative association, in which ions and atoms re-combine and re-arrange at cold temperatures. The applications of cold atom chemysty are in astrophysical application, and buffer gas cooling of single ion clocks. The most recent and quite interesting application is the quantum computing. The approach is to  start from identical atoms, cool them to nanokelvin temperatures, and control them with lasers and magnetic fields. However the entaglement is only stable at ultra cold temperatures (milli and nano Kelvins).
 
-In the Resonant Charge Transfer, there is no emission of the photon. The electron tunnels through the molecular barri.er between two protons. Since no energy is lost the process is elastic.
-
-The proces is $ H^+ + H \rightarrow H + H^+ $.
-
-Because the two protons are identical, the molecular ion, $ H_2^+ $ in our case,  has two adiabatic electronic states:
+The work we do here maps well to the cold atom quantum computing, for example
 \begin{itemize}
-  \item{gerade $ g $}
-  \item{ungerade $ u $ }
+\item two atom/ion scattering $ \longleftrightarrow $ Collisional gates,
+\item Phase shifts $ \longleftrightarrow $  Entaglement phases
+\item Dipole transitions $ \longleftrightarrow $ Rydberg gates
+\item Optical theorem $ \longleftrightarrow $ Loss and decoherence
+\item 2D anyons $ \longleftrightarrow $ Optical lattices 
 \end{itemize}
 
-During the collision, the nuclear motion accumulates different phase shifts on the gerade and ungerade potentials.
-When the nuclei separate again, the superposition is no longer symmetric, so the electron localizes on either nucleus with some probability.\\
-This produces charge exchange without radiation, and the process is controlled by the phase shift difference between the gerade and ungerade states.
+We shall here briefly describe resonant and radiative charge transfer processes as well as the radiative association processes.
 
-In the Radiative Charge Transfer there is an emission of a photon. It is governed by the dipole matrix element $ D(R) = \matrixelement{\psi_g}{r}{\psi_u} $ where $ \ket{\psi_g} $ and $ \ket{\psi_u} $ are the wavefunctions associated with the gerade and ungerade potentials and $ r $ is the location of the electron. 
+We consider \cite{ZygelmanCT} a positively charged Hydrogen $ H_2^+$ ion that approaches a neutral $ H $ atom. As the internuclear distance $ R $ becomes smaller, there exist a non-zero probability that the electron will escape the atom and attach itself to the incoming ion. In this manner a charge transfer happens. \\
 
-The proces  is The proces is $ H^+ + H \rightarrow H + H^+ + \gamma $. \\
+Now there are several possible reactions in this case: Radiative Charge Transfer, Resonant Charge Transfer, Radiative Association.
 
-ONow the electron jumps from the upper adiabatic curve to the lower one by emitting a photon.
+\section{Radiative Charge Transfer}
 
-The nuclei continue moving while the electron radiates and drops to the lower curve, after which the electron localizes on one proton.
+Radiative charge transfer (abbreviated RCT) is an inelastic, irreversible quantum collision process in which an electron is transferred and a photon is emitted.
+
+In general the process looks like: 
+$ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S) + B + \hbar\omega $ \\
+
+It is governed by the dipole matrix element $ D(R) = \matrixelement{\psi_g}{r}{\psi_u} $ where $ \ket{\psi_g} $ and $ \ket{\psi_u} $ are the wavefunctions associated with the gerade and ungerade potentials and $ r $ is the location of the electron. 
+
+In our case proces is $ H^+ + H \rightarrow H + H^+ + \gamma $. \\
+
+Now the electron jumps from the upper adiabatic curve to the lower one by emitting a photon.  The nuclei continue moving while the electron radiates and drops to the lower curve, after which the electron localizes on one proton.
 
 This is a true inelastic process, controlled by the dipole elements between gerade and ungerade state.
 
-The electric dipole transitions are governed by the selection rules: transitions between electronic states follow parity selection rule. Electric dipole operator is odd (Ungerade). Therefore allowed transitions must change parity: $ g \rightarrow u $. Transitions $ g \rightarrow g $ or $ u \rightarrow u $ are electric dipole forbidden (though allowed by higher multipoles or vibronic coupling).
-\\
+The electric dipole transitions are governed by the selection rules: transitions between electronic states follow parity selection rule. Electric dipole operator is odd (Ungerade). Therefore allowed transitions must change parity: $ g \rightarrow u $. Transitions $ g \rightarrow g $ or $ u \rightarrow u $ are electric dipole forbidden (though allowed by higher multipoles or vibronic coupling).  \\
 Orbital interactions: orbitals can only mix (form nonzero overlap/hybridize) if they belong to the same symmetry species, including parity. Thus g orbitals do not mix with u orbitals.
 
 We can consider these charge transfer from the energy point and see that there are, endoergic and exothermic cases.\\
@@ -44,24 +48,21 @@ If the energy is equal, the reaction is called resonant charge transfer.\\
 if not the reaction will processed with the possibility of the emission of a photon.
 If radiation is emitted, we call the reaction radiative charge transfer/association and, if not, direct charge transfer.
 
-To summarize:\\
+\subsection{Radiative Association}
 
-Radiative processes involve emission of a photon and they typically mean Radiative Charge Transfer: \\
-$ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S) + B + \hbar\omega $ \\
-and Radiative Association: \\
+Somewhat related radiative process is Radiative association:
+
 $ A(n+1\prescript{1}{}S) + B \longleftrightarrow A(n\prescript{1}{}S)B + \hbar\omega $ .\\
-hile the non-radiative process, with no photon emission, is a Charge Transfer: \\
-$ A(n+1\prescript{1}{}S) + B(n\prescript{1}{}S) \longleftrightarrow  A(n\prescript{1}{}S) 
-) + B(n+1\prescript{1}{}S) $ .\\
 
-Radiative Quenching is an interaction between two atoms (or molecules), one being in excited state and the other in 'normal' ground state. During this process the excited atom emits a photon and drops to a ground state.
-The simplest such case is the collision of the two hydrogen molecules, in the process $ H(2\,{}^2\!S) + H(1\,{}^2\!S) \rightarrow H(1\,{}^2\!S) + H(1\,{}^2\!S) + \hbar\omega $.
+There is also emission of a photon, but as a result a molecule is formed. In this case a photon removes excess electronic energy and the relative kinetic energy. So in this case, from a  wavefunction point of view, there is a transition from a continuoum state to a bound vibrational–rotational state.
 
-There are several theoretical approaches and treatments of this problem. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}.
+This proces is dominant at very low collision energies. This is a key mechanism for molecule formation in the interstellar medium.
 
-\subsubsection{Classical Treatments}
+There are several theoretical approaches and treatments of these classes of problems. \cite{RadQuench1}, \cite{RadQuench2}, \cite{Zygelman88}.
 
-subsubsection{COB model}
+\subsection{Classical Treatments}
+
+\subsubsection{COB model}
 The classical 'over the barrier model' \cite{BransdenMcDowell1992} treats an electron as being inside a potential well. The well's potential is described by the function
 \begin{equation}
   V(r) = -\frac{q}{x} - \frac{1}{\lvert R - r \rvert}
@@ -102,6 +103,7 @@ At the end this model predicts the total charge transfer cross section to be:
 \begin{equation}
   \sigma_{CT} = 2\pi \int_0^{b_c}{db\, b} = \pi b_c^2 = \frac{\pi}{v}\sqrt{\frac{8 C_4}{\mu}} = \frac{2\pi q}{v}\sqrt{\frac{\alpha}{\mu}}
 \end{equation}
+
 \subsubsection{Landau–Zener–Rosen Theories}
 This is a more advanced method which takes into account quantum nature of the particles. We shall skip the explanation, just to note that this model predicts the cross section to be:
 \begin{equation}
@@ -132,20 +134,6 @@ The states $ \phi_n $ form a complete set
 
 While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
 
-Here we shall investigate the low energy collision process between the hydrogen atom and the hydrogen ion, in 2 dimension. We use fully quantum mechanical approach to calculate the cross section and the emission spectra of the reaction $ H(2\prescript{2}{}S) + H(1\prescript{1}{}S)\rightarrow H(1\prescript{1}{}S) + H(1\prescript{1}{}S) + \hbar\omega $, formed by the quenching of the excited $ H $ atom by the approaching $ H $ atom, in 2D dimensions. To my knowledge, there is no experimental results related to the 2D problem. There are results for the 3D case, listed in \cite{Zygelman88} and references there.
-
-In this calculation, the atoms are confined in 2 dimensions, while the radiation is emitted or absorbed in all 3D space. Therefore the photon can be emitted in any direction and the potential felt by the incoming ion is the standard 3D Coulomb potential.
-
-We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
-
-While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
-
-Here we shall investigate the low temperature collision process between the hydrogen atom and the hydrogen ion, in 2 dimension. We use fully quantum mechanical approach to calculate the cross section and the emission spectra of the reaction $ H(2\prescript{2}{}S) + H(1\prescript{1}{}S)\rightarrow H(1\prescript{1}{}S) + H(1\prescript{1}{}S) + \hbar\omega $, formed by the quenching of the excited $ H $ atom by the approaching $ H $ atom, in 2D dimensions. To my knowledge, there is no experimental results related to the 2D problem. There are results for the 3D case, listed in \cite{Zygelman88} and references there.
-
-n this calculation, the atoms are confined in 2 dimensions, while the radiation is emitted or absorbed in all 3D space. Therefore the photon can be emitted in any direction and the potential felt by the incoming ion is the standard 3D Coulomb potential.
-
-We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
-
 \subsection*{Length gauge}
 
 This is an interesting approach, which could potentially be used in calculation. In this thesis we would not be using it.
@@ -161,17 +149,67 @@ In the length gauge, the interaction Hamiltonian is:
 \end{equation}
 where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
 
+\section{Theory}
 
-\section{Resonant Charge Transfer}
+Following the approach in the \cite{ZL} we apply a semi-classical approach to the system of two $ H_2^{+} $ molecules. In this approach, we assume that a photon is emitted with energy equal to the energy difference between two Born-Oppenheimer potential surfaces, at the distance where the transition occurs. This leads to the Local Optical Potential Method, and following the semi-classical approach, the total rate is estimated as a classical integral over all localized transitions.
+
+\section{Radiative Association Theory}
 \label{chap:RxRP}
 
-\chapter{Radiative Charge Transfer}
+Here we follow the discussion in \cite{ZL}, and apply the theory to the 3D Hydrogen atom.
+The cross section of the spontaneous radiative association is given by \cite{Zygelman1} .  This can also be derived using the Fermi's Golden Rule (which is actually published by Dirac 20 years before Fermi)\cite{FermiGR}:
+Considering the radiative association process:
+\begin{equation}
+  H(1S) + H^+ = H_2^+ + \hbar\omega
+\end{equation}
+where $\hbar\omega $ is the energy of the emitted photon. The cross section for the radiative association process is given by:
+\begin{equation}
+\begin{split}
+  &  \sigma_{RA} = \sum_J{\sum_n{\frac{8}{3}\frac{\pi^2\omega_{nJ}^2}{c^3k^2} \left[(J+1)M_{J+1,J}^2(k,k')+J\,M_{J-1,J}^2(k,k')\right]}} \\[.8em]
+  & M_{J,J'}(k,n) = \int_{0}^{\infty}{dR\,f_J(kR)D(R)\phi_{J'n}(R) }
+\end{split}
+\end{equation}
+where $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A^2\Sigma^{+} $ states of the $ H_2^+ $ molecular ion. $ \phi_{J'n}(R) $ is a rho-vibrational eigenstate of the $ X^2\Sigma^{+} $ ground state, with energy eigenvalue $ \epsilon_{nJ} $. The $ J $ and $ n $ represent the angular and vibrational momentum quantum numbers respectively. $ f_J(kR) $ is s the wavefunction that satisfies the
+radial Schrodinger equation
+\begin{equation}\label{eq4}
+  f_{J}''(kR) - \frac{J(J+1)}{R^2}f_J(kR) + 2\mu V_{A}(R))f_{J}(kR) + k^2 f_{J}(kR) = 0
+\end{equation}
+where $ V_{A}(R) $ is the Born-Openheimer energy of the excited $ A^2\Sigma^{+} $ state, $ \mu $ is the reduced mass of the collision system and $ k $ s the wavenumber for the incident collision partners in that channel.
+The asymptotic solution of the $ f_J(kR) $ has the form:
+\begin{equation}
+f_{J}(kR) \longleftarrow \sqrt{\frac{2\mu}{\pi k}}\sin(kR - \frac{J\pi}{2} + \delta_J)
+\end{equation}
+where $ \delta_J $ is a phaseshift, as $ R \rightarrow \infty $.
+The energy of the emitted photon is given by
+\begin{equation}
+\hbar\omega = \frac{\hbar k^2}{2\mu} + V_A(\infty) - \epsilon_{nJ} - V_X(\infty) 
+\end{equation}
 
-Considering the radiative charge transfer process
+This proces is governed by the selection rules, 
+\begin{itemize}
+\item Rotational: $ \Delta J = \pm 1 $
+\item Electric Dipole: $ \mel{f}{D}{i} $ 
+\item Parity: $ g \leftrightarrow u $
+\item Electronic angular momentum: $ \Delta \Lambda = 0, \pm 1 $
+  \begin{itemize}
+    \item where $ \Lambda = 0,1,2 $ corresponds to $ \Sigma, \Pi, \Delta $ states
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+  \includegraphics{RadAssocPotentials.png}
+\end{figure}
+
+\section{Radiative Charge Transfer theory}
+\label{chap:RxCP}
+
+Here we consider  radiative charge transfer process
 \begin{equation}
   H(1S) + H^+ = H^+ H(1S) + \hbar\omega
 \end{equation}
 where $ \hbar\omega $ is the energy of the emitted photon given by the expression \eqref{hbaromega2}.
+The cross section for the radiative charge transfer process is given by
 \begin{equation}\label{sumZZ}
 \begin{split}
 & sigma_{CT} = \int_0^{\omega_max}{d\omega\,\frac{d\sigma}{d\omega}},\\[.8em]
@@ -241,7 +279,7 @@ The next step is to solve the usual radial scattering equation, but with $ V(R) 
 
 The cross section for radiative quenching is given by
 \begin{equation}
-  \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j }}
+  \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j}}
 \end{equation}
 
 Local Optical Potential is generally applicable when the following cases are satisfied, which aligns well with our case.
@@ -250,4 +288,53 @@ Local Optical Potential is generally applicable when the following cases are sat
   \item Emission is relatively weak compared to the collision energies
   \item It is accurate enough for the computation of total probability
 \end{itemize}
+
+\subsection {Ultra Cold Limit}
+
+In the limit of ultra cold temperatures, only $ s $ wave participates in the process, so the total cross section takes arguably simpler form.
+\begin{equation}\label{coldInt}
+  \sigma = \sum_{n}{\frac{16\mu \pi \omega_n^3}{3 c^3 k}\left|\int_0^{R_0}{dR\,\phi(R)D(R)\phi_{J=1}^{n}(R)} \right|^2 }
+\end{equation}
+
+where $ \phi(R) $ is the s-wave solution to \eqref{eq4}. 
+The boundary condition for $ \phi(R) $
+\begin{equation}
+\frac{d\phi(R)}{dR}|_{R_0} = 1
+\end{equation}
+is valid for a sufficiently large radius $ R $ and $ \phi_{J=1}^{n}(R) $ are $ J = 0 $ rho-vibrational states of the $ X^2\Sigma^+ $ potential.
+Because there is only s-wave, the integral \eqref{coldInt} does not depend on the incoming wave number $ k $. Therefore the equation \eqref{coldInt} predicts that the association cross section, in the ultra cold regime scales as the inverse of the incoming velocity, i.e. the rate tends to constant.
+
+We shall show in the subsequent chapter the method used to compute the phase shift.But basically the idea is to match the numerical solution for the $ f_J(kR) $ with the asymptotic form, for the large values of $ R $.
+
+
+\section{Resonant Charge Transfer}
+ 
+In the Resonant Charge Transfer, the electron tunnels through the molecular barrier between two protons. There is no emission of the photon. Since no energy is lost, $ E_{initial} = E_{final} $ the process is elastic.
+
+The proces is $ H^+ + H \rightarrow H + H^+ $.
+
+Because the two protons are identical, the molecular ion, $ H_2^+ $ in our case,  has two adiabatic electronic states:
+\begin{itemize}
+  \item{gerade $ g $}
+  \item{ungerade $ u $ }
+\end{itemize}
+
+During the collision, the nuclear motion accumulates different phase shifts on the gerade and ungerade potentials.
+When the nuclei separate again, the superposition is no longer symmetric, so the electron localizes on either nucleus with some probability.\\
+This produces charge exchange without radiation, and the process is controlled by the phase shift difference between the gerade and ungerade states.
+
+Here we shall investigate the low energy collision process between the hydrogen atom and the hydrogen ion, in 2 dimension. We use fully quantum mechanical approach to calculate the cross section and the emission spectra of the reaction $ H(2\prescript{2}{}S) + H(1\prescript{1}{}S)\rightarrow H(1\prescript{1}{}S) + H(1\prescript{1}{}S) + \hbar\omega $, formed by the quenching of the excited $ H $ atom by the approaching $ H $ atom, in 2D dimensions. To my knowledge, there is no experimental results related to the 2D problem. There are results for the 3D case, listed in \cite{Zygelman88} and references there.
+
+In this calculation, the atoms are confined in 2 dimensions, while the radiation is emitted or absorbed in all 3D space. Therefore the photon can be emitted in any direction and the potential felt by the incoming ion is the standard 3D Coulomb potential.
+
+We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
+
+While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
+
+Here we shall investigate the low temperature collision process between the hydrogen atom and the hydrogen ion, in 2 dimension. We use fully quantum mechanical approach to calculate the cross section and the emission spectra of the reaction $ H(2\prescript{2}{}S) + H(1\prescript{1}{}S)\rightarrow H(1\prescript{1}{}S) + H(1\prescript{1}{}S) + \hbar\omega $, formed by the quenching of the excited $ H $ atom by the approaching $ H $ atom, in 2D dimensions. To my knowledge, there is no experimental results related to the 2D problem. There are results for the 3D case, listed in \cite{Zygelman88} and references there.
+
+n this calculation, the atoms are confined in 2 dimensions, while the radiation is emitted or absorbed in all 3D space. Therefore the photon can be emitted in any direction and the potential felt by the incoming ion is the standard 3D Coulomb potential.
+
+We will model this as a scattering problem, using a Born-Oppenheimer approximation and optical theorem. The Hamiltonian in this case will contain another term, namely the interaction of the radiation field with the electron
+
 
