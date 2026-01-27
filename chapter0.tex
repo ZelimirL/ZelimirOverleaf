@@ -344,13 +344,27 @@ The following graph \ref{compComp2} shows the results of the calculation.
 \end{figure}
 
 
-We have made the calculations two ways. First stsrting from the equation \eqref{eq4} we compututed the cross section using equation \eqref{sumZZ}. In the figure \ref{compFig3} symbol $ X $ represents the upper limit for total radiative relaxation, which is obtained by adding the association cross sections \eqref{sumZZ} with those given by expression \eqref{sigmaUpper}.\\
+We have made the calculations two ways. First starting from the equation \eqref{eq4} we compututed the cross section using equation \eqref{sumZZ}. In the figure \ref{compFig3} symbol $ X $ represents the upper limit for total radiative relaxation, which is obtained by adding the association cross sections \eqref{sumZZ} with those given by expression \eqref{sigmaUpper}.\\
 The square icons represent the cross sections predicted by expression \eqref{quenchR},i.e. by the optical potential method.\\
-So from figure, for values $ J < 10 $ we see a very good agreements between the 
+So from figure \ref{compFig3} for values $ J < 10 $ we see that an optical potential method provides a very good approximation to the total cross section.\\
+However this approximation is good only for values $ J < J_{max} $ \cite{ZygelmanHunt2012}.
+\begin{equation}
+  J_{max} = \sqrt[4]{8\mu k^3 C_4^A} = \sqrt[4]{24 \mu^2 k_B T C_4^A} \approx 12
+\end{equation}
+The collision energy of the collision system is given as $ 3/2 k_B\, T $ where $ k_B $ is the Boltzman constant and $ T $ is the temperature in Kelvin \\
+Value $ J_{max} $ is the critical angular momentum for which the collision system has sufficient collision energy  whe to overcome the centrifugal potential barrier \cite{ZygelmanHunt2012}. For larger $ J $ tunneling resonances can access the inner region where the transition dipole moment is non-negligible and induce a radiative transition.
 
+In Table I in the \ref{ZL} we can see tabulated the various cross sections at several representative collision temperatures. The second column contains the association cross section obtained using the FGR method described above. For the radiative charge transfer cross sections, itemized in the third column, we used \eqref{sigmaUpper}. Thus the upper bound for the total radiative relaxation cross sections are given in column 4. The last column gives the results obtained using the local optical potential method. The table shows that, over the temperature range considered, the local optical potential method predicts cross sections that are less than the upper bound itemized in column 4. Secondly, the differences between the predictions of the two theories are small. The optical potential cross section differs by less than 4\%  from the upper limit values over the entire temperature range, including the ultra-cold region.\\
+One can also note that the optical potential method predicts cross sections that are larger than the radiative association cross sections. At the same time the optical potential method provides a reliable upper bound for the total (RR) cross section.\\
 
+In Figure  we plot the total radiative relaxation cross section, obtained using the optical potential method, for the gas temperature range $ 1mK < T < 1K $.
 
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{RadAssocPotentials-4.png}
 
+\end{figure}
+
+\section{Resonant Charge Transfer}
  
 In the Resonant Charge Transfer, the electron tunnels through the molecular barrier between two protons. There is no emission of the photon. Since no energy is lost, $ E_{initial} = E_{final} $ the process is elastic.
 
