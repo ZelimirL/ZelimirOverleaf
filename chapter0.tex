@@ -262,8 +262,8 @@ so the inequality becomes
   \int_0^{\infty}{dE'\,JM_{J,J-1}^2(k,E')} < \sum_{E'}{JM_{J,J-1}^2(k,E')} = J\int_{0}^{\infty}{dR\,f_J^2(kR)D^2(R)}
 \end{equation}
 and we get for the upper bound
-\begin{equation}
-  \sigma_{CT} < \frac{8}{3}\frac{\pi^2\omega^3(E')_{max}}{c^3k^2}\sum_{J}{(2J+1)\int_{0}^{\infty}{dR\,f_J^2(kR)D^2(R)}}
+\begin{equation}\label{sigmaUpper}
+  \sigma_{CT} < \tilde{\sigma}_{CT}\frac{8}{3}\frac{\pi^2\omega^3(E')_{max}}{c^3k^2}\sum_{J}{(2J+1)\int_{0}^{\infty}{dR\,f_J^2(kR)D^2(R)}}
 \end{equation}
 
 \subsection{Optical Potential Approach}
@@ -281,7 +281,7 @@ $ A(R) $ is the Einstein-A coefficient. We shall use a 2D version of the optical
 The next step is to solve the usual radial scattering equation, but with $ V(R) $ complex. The resulting S matrix becomes non-unitary, $ |S| < 1 $ and the “missing probability” is the radiative loss.
 
 The cross section for radiative quenching is given by
-\begin{equation}
+\begin{equation}\label{quenchR}
   \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j}}
 \end{equation}
 
@@ -333,11 +333,24 @@ states  supported by the $ X^2\Sigma^+ $ channel. The total number of bound stat
 \end{equation}
 where $ R_c $ is a classical turning point Floor[x] is the integer lower bound of $ x $.\\
 Here we have a large reduced mass $ \mu $, i.e. the participants mass is large which in turns produces a very large number of the bound states. For a lighter participants the number of rho-vibrational states is typically in the order of a few hundred \cite{Zygelman1}.\\
-Here we have another factor to consider. In the ultra-cold temperatures the participant have lower energies so the centrifugal repulsion in the entrance channel limits the number of partial waves that participate. And since the selection rules $ J \pm 1 $ still applies, it constratis the  possible rho-vibrational levels. For example, at a collision energy corresponding to a temperature of $ 1 mK $, only levels with $ J $ up to the value $ \approx 15 $ contribute to the association rate 
+Here we have another factor to consider. In the ultra-cold temperatures the participant have lower energies so the centrifugal repulsion in the entrance channel limits the number of partial waves that participate. And since the selection rules $ J \pm 1 $ still applies, it constratis the  possible rho-vibrational levels. For example, at a collision energy corresponding to a temperature of $ 1 mK $, only levels with $ J $ up to the value $ \approx 15 $ contribute to the association rate.\\
+
+The following graph \ref{compComp2} shows the results of the calculation.
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{ResultsYbCa.png }
+  \caption{Plot of various cross sections as a function of incoming partial wave $ J $. Circles represent data for the radiative association cross sections, X’s represent and upper bound for the total (association + radiative charge transfer), and squares represent the data for the total radiative relaxation obtained using the optical potential method.  
+  \label{compFig3}
+\end{figure}
+
+
+We have made the calculations two ways. First stsrting from the equation \eqref{eq4} we compututed the cross section using equation \eqref{sumZZ}. In the figure \ref{compFig3} symbol $ X $ represents the upper limit for total radiative relaxation, which is obtained by adding the association cross sections \eqref{sumZZ} with those given by expression \eqref{sigmaUpper}.\\
+The square icons represent the cross sections predicted by expression \eqref{quenchR},i.e. by the optical potential method.\\
+So from figure, for values $ J < 10 $ we see a very good agreements between the 
 
 
 
-\section{Resonant Charge Transfer}
+
  
 In the Resonant Charge Transfer, the electron tunnels through the molecular barrier between two protons. There is no emission of the photon. Since no energy is lost, $ E_{initial} = E_{final} $ the process is elastic.
 
