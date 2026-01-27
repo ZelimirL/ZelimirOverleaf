@@ -18,7 +18,7 @@ The work we do here maps well to the cold atom quantum computing, for example
 \item 2D anyons $ \longleftrightarrow $ Optical lattices 
 \end{itemize}
 
-We shall here briefly describe resonant and radiative charge transfer processes as well as the radiative association processes.
+We shall here describe resonant and radiative charge transfer processes as well as the radiative association processes.
 
 We consider \cite{ZygelmanCT} a positively charged Hydrogen $ H_2^+$ ion that approaches a neutral $ H $ atom. As the internuclear distance $ R $ becomes smaller, there exist a non-zero probability that the electron will escape the atom and attach itself to the incoming ion. In this manner a charge transfer happens. \\
 
@@ -151,16 +151,16 @@ where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation
 
 \section{Theory}
 
-Following the approach in the \cite{ZL} we apply a semi-classical approach to the system of two $ H_2^{+} $ molecules. In this approach, we assume that a photon is emitted with energy equal to the energy difference between two Born-Oppenheimer potential surfaces, at the distance where the transition occurs. This leads to the Local Optical Potential Method, and following the semi-classical approach, the total rate is estimated as a classical integral over all localized transitions.
+Following the approach in the \cite{ZL} we apply a semi-classical approach to the system of YbCa molecules. In this approach, we assume that a photon is emitted with energy equal to the energy difference between two Born-Oppenheimer potential surfaces, at the distance where the transition occurs. This leads to the Local Optical Potential Method, and following the semi-classical approach, the total rate is estimated as a classical integral over all localized transitions.
 
 \section{Radiative Association Theory}
 \label{chap:RxRP}
 
-Here we follow the discussion in \cite{ZL}, and apply the theory to the 3D Hydrogen atom.
+Here we follow the discussion in \cite{ZL}, and apply the theory to the 3D YbCa molecule.
 The cross section of the spontaneous radiative association is given by \cite{Zygelman1} .  This can also be derived using the Fermi's Golden Rule (which is actually published by Dirac 20 years before Fermi)\cite{FermiGR}:
 Considering the radiative association process:
 \begin{equation}
-  H(1S) + H^+ = H_2^+ + \hbar\omega
+  Yb^+ + Ca \rightarrow YbCa^+ + \hbar\omega
 \end{equation}
 where $\hbar\omega $ is the energy of the emitted photon. The cross section for the radiative association process is given by:
 \begin{equation}
@@ -169,7 +169,7 @@ where $\hbar\omega $ is the energy of the emitted photon. The cross section for 
   & M_{J,J'}(k,n) = \int_{0}^{\infty}{dR\,f_J(kR)D(R)\phi_{J'n}(R) }
 \end{split}
 \end{equation}
-where $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A^2\Sigma^{+} $ states of the $ H_2^+ $ molecular ion. $ \phi_{J'n}(R) $ is a rho-vibrational eigenstate of the $ X^2\Sigma^{+} $ ground state, with energy eigenvalue $ \epsilon_{nJ} $. The $ J $ and $ n $ represent the angular and vibrational momentum quantum numbers respectively. $ f_J(kR) $ is s the wavefunction that satisfies the
+where $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A^2\Sigma^{+} $ states of the $ YbCa^+  $ molecular ion. $ \phi_{J'n}(R) $ is a rho-vibrational eigenstate of the $ X^2\Sigma^{+} $ ground state, with energy eigenvalue $ \epsilon_{nJ} $. The $ J $ and $ n $ represent the angular and vibrational momentum quantum numbers respectively. $ f_J(kR) $ is s the wavefunction that satisfies the
 radial Schrodinger equation
 \begin{equation}\label{eq4}
   f_{J}''(kR) - \frac{J(J+1)}{R^2}f_J(kR) + 2\mu V_{A}(R))f_{J}(kR) + k^2 f_{J}(kR) = 0
@@ -205,7 +205,7 @@ This process is governed by the selection rules,
 
 Here we consider  radiative charge transfer process
 \begin{equation}
-  H(1S) + H^+ = H^+ H(1S) + \hbar\omega
+  Yb^+ + Ca = Yb + Ca^+ \hbar\omega
 \end{equation}
 where $ \hbar\omega $ is the energy of the emitted photon given by the expression \eqref{hbaromega2}.
 The cross section for the radiative charge transfer process is given by
@@ -231,7 +231,9 @@ From the \eqref{hbaromega2} the maximum angular frequency $ \omega_max $ is
 \begin{equation}
 \hbar\omega_{max} = \frac{\hbar k^2}{2\mu} +  \Delta E
 \end{equation}
-We avoid evaluating the sum \eqref{sumZZ}. Instead we choose to compute an upper bound on the charge transfer cross section.
+We avoid evaluating the sum \eqref{sumZZ}. \\
+
+Instead we will compute an upper bound on the charge transfer cross section.
 From the equation above we get for the frequency of the emitted photon, during an RCT transition, to be
 \begin{equation}
 \hbar\omega = \frac{\hbar k^2}{2\mu} - \frac{\hbar k^{'2}}{2\mu} + V_A(\infty) - V_X(\infty) = \frac{\hbar k^2}{2\mu} - E' + V_A(\infty) - V_X(\infty)
@@ -304,6 +306,13 @@ is valid for a sufficiently large radius $ R $ and $ \phi_{J=1}^{n}(R) $ are $ J
 Because there is only s-wave, the integral \eqref{coldInt} does not depend on the incoming wave number $ k $. Therefore the equation \eqref{coldInt} predicts that the association cross section, in the ultra cold regime scales as the inverse of the incoming velocity, i.e. the rate tends to constant.
 
 We shall show in the subsequent chapter the method used to compute the phase shift.But basically the idea is to match the numerical solution for the $ f_J(kR) $ with the asymptotic form, for the large values of $ R $.
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{EnsteinA3D.png}
+  \caption{R-dependent Einstein A coeﬃcient as a function of internuclear distance}
+\end{figure}
+
+\section{Results}
 
 
 \section{Resonant Charge Transfer}
