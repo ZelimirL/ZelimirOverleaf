@@ -282,7 +282,12 @@ The next step is to solve the usual radial scattering equation, but with $ V(R) 
 
 The cross section for radiative quenching is given by
 \begin{equation}\label{quenchR}
-  \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j}}
+  \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j)}}
+\end{equation}
+
+where $ \eta_j $ is the imaginary part of the J'th partial wave phase shift $\delta_j $ for the radial wave $ f_J(kR) $ that satisfies
+\begin{equation}\label{PartW3D}
+  f_J^{''}(kR) - \frac{J(J+1)}{R^2}f_J(kR) + 2\mu (V_A(R) + V_{opt}(R))f_J(kR) + k^2f_J(kR) = 0
 \end{equation}
 
 Local Optical Potential is generally applicable when the following cases are satisfied, which aligns well with our case.
@@ -360,9 +365,34 @@ One can also note that the optical potential method predicts cross sections that
 In Figure  we plot the total radiative relaxation cross section, obtained using the optical potential method, for the gas temperature range $ 1mK < T < 1K $.
 
 \begin{figure}[H]
-  \includegraphics[width=1.0\textwidth]{RadAssocPotentials-4.png}
-
+  \includegraphics[width=1.0\textwidth]{CrossSection3D.png}
+  \caption{Total radiative relaxation cross section as a function of collision energy expressed as $ E = 3/2\,k_B T $, where T is the temperature in Kelvin}
+  \label{Fig4}
 \end{figure}
+
+hough the optical potential method provides a good approximation for the total radiative relaxation rate, calculation of the photon emission spectrum requires the use of the FGR method. use of the FGR method. In \ref{Fig5} we illustrate the association cross sections $ \sigma_{n\,J} $ at $ T = 1mK $ for the individual rho-vibrational levels as function of the frequency of the emitted photon. The structure of the emission pattern is the result of the oscilation in the incoming wave as shown in \ref{RadAssoc4}
+
+\begin{figure}[H]
+  \includegraphics[width=1.0\textwidth]{Spectrum3D.png}
+  \caption{mission spectrum for the radiative association process at a gas temperature of 1mK.}
+  \label{Fig5}
+\end{figure}
+
+In the limit $ T \rightarrow 0 $ we define a complex scattering length for the s--wave solution to \eqref{PartW3D}
+\begin{equation}
+  a \equiv - \frac{1}{k}\tan \delta(k) = 10785 - i0.008842;\,\,\,\,\text{as}\,\,\,k \rightarrow 0
+\end{equation}
+Therefore, the total RR cross section, according to the optical potential method, has the limiting value
+\begin{equation}
+  \sigma = \frac{4\pi}{k} 8.842 \times 10^{-3}  
+\end{equation}
+Defining the rate coefficient 
+\begin{equation}
+  k_{RR} \equiv \langle \nu \sigma \rangle
+\end{equation}
+we use the results from \cite{ZL} to show the values of $ k_{RR} \approx 1.15 \times 10^{-14} $.\\
+By looking at \ref{Fig4} we observe that $ k_{RR} $ varies slow, from $ 1.6 \times 10^{-15}cm^3 s^{-1} $ at 1mK to $ 2 \times 10^{-15} cm^3 s^{-1} $ at 1K.
+
 
 \section{Resonant Charge Transfer}
  
