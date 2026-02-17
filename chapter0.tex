@@ -190,15 +190,14 @@ where $\hbar\omega $ is the energy of the emitted photon. The cross section for 
   & M_{J,J'}(k,n) = \int_{0}^{\infty}{dR\,f_J(kR)D(R)\phi_{J'n}(R) }
 \end{split}
 \end{equation}
-where $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A^2\Sigma^{+} $ states of the $ YbCa^+  $ molecular ion. $ \phi_{J'n}(R) $ is a rho-vibrational eigenstate of the $ X^2\Sigma^{+} $ ground state, with energy eigenvalue $ \epsilon_{nJ} $. The $ J $ and $ n $ represent the angular and vibrational momentum quantum numbers respectively. $ f_J(kR) $ is s the wavefunction that satisfies the
-radial Schrodinger equation
+where $ D(R) $ is the transition dipole moment  between $ X^2\Sigma^{+} $  and $ A^2\Sigma^{+} $ states of the $ YbCa^+  $ molecular ion. $ \phi_{J'n}(R) $ is a rho-vibrational eigenstate of the $ X^2\Sigma^{+} $ ground state, with energy eigenvalue $ \epsilon_{nJ} $. The $ J $ and $ n $ represent the angular and vibrational momentum quantum numbers respectively. $ f_J(kR) $ is s the wavefunction that satisfies the radial Schrodinger equation
 \begin{equation}\label{eq4}
   f_{J}''(kR) - \frac{J(J+1)}{R^2}f_J(kR) + 2\mu V_{A}(R))f_{J}(kR) + k^2 f_{J}(kR) = 0
 \end{equation}
 where $ V_{A}(R) $ is the Born-Openheimer energy of the excited $ A^2\Sigma^{+} $ state, $ \mu $ is the reduced mass of the collision system and $ k $ s the wavenumber for the incident collision partners in that channel.
 The asymptotic solution of the $ f_J(kR) $ has the form:
-\begin{equation}
-f_{J}(kR) \longleftarrow \sqrt{\frac{2\mu}{\pi k}}\sin(kR - \frac{J\pi}{2} + \delta_J)
+\begin{equation}\label{fjRZ}
+f_{J}(kR) \longrightarrow \sqrt{\frac{2\mu}{\pi k}}\sin(kR - \frac{J\pi}{2} + \delta_J)
 \end{equation}
 where $ \delta_J $ is a phaseshift, as $ R \rightarrow \infty $.
 The energy of the emitted photon is given by
@@ -242,7 +241,7 @@ where
 \begin{equation}\label{mjjz}
   M_{J,J'}(k,n) = \int_{0}^{\infty}{dR\,f_J(kR)D(R)f_J'(k'R }
 \end{equation}
-Here $ f_J(kR) $ is a solution to \eqref{diffR} and $ f_J^{'}(k^{'}R) $ obeys the corresponding equation for the $ X^2\Sigma^+ $ exit channel with wavenumber and partial wave $ k' $, $ J'$ respectively.
+Here $ f_J(kR) $ is a solution to \eqref{eq4} and $ f_J^{'}(k^{'}R) $ obeys the corresponding equation for the $ X^2\Sigma^+ $ exit channel with wavenumber and partial wave $ k' $, $ J'$ respectively.
 The radial wavefunctions are normalized as in \eqref{fjRZ} and
 \begin{equation}\label{hbaromega2}
 \begin{split}
@@ -342,7 +341,7 @@ We shall show in the subsequent chapter the method used to compute the phase shi
 
 \section{Results}
 
-Figure \ref{RadAssoc4} illustrates the mechanism for radiative association for the $ Yb^+ $ ion and $ Ca $ atom that approach in the $ A^+\Sigma^2 $  electronic BO state. The BO energies where taken from the data of the ab-initio calculations reported in i\ref{Ref4}. At large internuclear distances this potential has the form
+Figure \ref{RadAssoc4} illustrates the mechanism for radiative association for the $ Yb^+ $ ion and $ Ca $ atom that approach in the $ A^+\Sigma^2 $  electronic BO state. The BO energies where taken from the data of the ab-initio calculations reported in \ref{Ref4}. At large internuclear distances this potential has the form
 \begin{equation}
   V_A(R) \rightarrow \frac{C_4^A}{R^4}\,\,\,\,\,C_4^A = 78.5
 \end{equation}
@@ -361,7 +360,7 @@ where $ R_c $ is a classical turning point Floor[x] is the integer lower bound o
 Here we have a large reduced mass $ \mu $, i.e. the participants mass is large which in turns produces a very large number of the bound states. For a lighter participants the number of rho-vibrational states is typically in the order of a few hundred \cite{Zygelman1}.\\
 Here we have another factor to consider. In the ultra-cold temperatures the participant have lower energies so the centrifugal repulsion in the entrance channel limits the number of partial waves that participate. And since the selection rules $ J \pm 1 $ still applies, it constrains the  possible rho-vibrational levels. For example, at a collision energy corresponding to a temperature of $ 1 mK $, only levels with $ J $ up to the value $ \approx 15 $ contribute to the association rate.\\
 
-The following graph \ref{compComp2} shows the results of the calculation.
+The following graph \ref{compFig3} shows the results of the calculation.
 
 \begin{figure}[H]
   \includegraphics[width=1.0\textwidth]{ResultsYbCa}
