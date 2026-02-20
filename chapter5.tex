@@ -1,8 +1,8 @@
-\chapter{Radiative Processes 2 Dimensions}
+\chapter{Resonant Charge Transfer Two Dimensions}
 \label{chap:RRP2}
-\section{Calculation}
 
-\section{Accurate Solution Approach}
+\section{Theory}
+\subsection{Elastic Scattering}
 
 We start with the following Hamiltonian's:
 \begin{equation}\label{eqH1} 
@@ -10,7 +10,7 @@ We start with the following Hamiltonian's:
   & H = -\frac{1}{2\mu}\nabla^2_{\mathbf{R}} + V_{g,u}(R)
 \end{split} 
 \end{equation}
-where $ V_{g,u}(R) $ represents potential for the gerade (g) and ungerade state (u)
+where $ V_{g,u}(R) $ represents the potential for the gerade (g) and ungerade state (u)
 
 where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.
 
@@ -18,117 +18,10 @@ From the physics of the system, we have two classes of solution, Gerade and Unge
 
 Now given the Hamiltonian for the homonuclear diatom with one electron:
 \begin{equation}\label{hdia}
-  H = -\frac{1}{2}\vec{\nabla}^2 + V_a(\vec{r} - \frac{\vec{R}}{2}) + V_b(\vec{r} + \frac{\vec{R}}{2}) + V(|\vec{R}|)
+  H = -\frac{1}{2}\vec{\nabla}^2 + V_a(|\vec{r} - \frac{\vec{R}}{2}|) + V_b(|\vec{r} + \frac{\vec{R}}{2}|) + V(|\vec{R}|)
 \end{equation}
 where $ V_a, V_b $ are the electron nucleus Coulomb interaction for the nuclei A and B respectively. The $ \vec{r} $ is the position of the electron and $ \vec{R} $ is the distance between the nuclei.
 
-So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of Schrodinger equation with Hamiltonian \eqref{hdia}, both gerade and ungerade:
-\begin{equation}
-\begin{split}
-  & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
-  & \Phi_u = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) - \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right)
-\end{split}
-\end{equation}
-
-So we now apply the scattering analysis for 2D, from the previous chapter, and assume that $ F_g(r) $ at asymptotic distances obeys the 2D conditions:
-\begin{equation}
-  F_g(R) \underset{R \rightarrow +\infty}{\sim} e^{ik\ x} + f_g(\theta)\frac{e^{ik\ x}}{\sqrt{R}}
-\end{equation}
-Now we use the 2D scattering amplitude from the previous chapter:
-\begin{equation}\label{fgampl}
-  f_g(\theta) = \sqrt{\frac{2}{\pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
-\end{equation}
-As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering cross section. And we get for the scattering cross section, in 2D:
-\begin{equation}
-\begin{split}
-  & \theta_g = \int_{0}^{2\pi}{d\theta f_g(\theta)} = \frac{2}{\pi}\sum_{m,m'}\int_{0}^{2\pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
-  & = \frac{2}{\pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
-\end{split}
-\end{equation}
-
-The same discussion applies for the ungerade solution so we :
-\begin{equation}
-  \theta_u = \frac{2}{\pi}\sum_{m}{\epsilon_m\sin^2\delta_m^u}
-\end{equation}
-
-In our case we are not interested in the elastic scattering of the gerade and ungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
-
-Instead we seek the asymptotic form for the difference
-\begin{equation}
-  \frac{1}{2}\left(F_g(R) - F_u(R)\right) \sim \frac{\left|f_g(\theta) - f_u(\theta)\right|}{4\pi}
-\end{equation}
-Using expression \eqref{fgampl} we get:
-\begin{equation}
-\begin{split}
-  & \sigma = \frac{1}{4}\int_{0}^{2\pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4\pi} \Rightarrow \\
-  & \sigma = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
-\end{split}
-\end{equation}
-
-The main approaches to solving these class of problems is to expand the wave function in the partial waves basis and use Born approximation.
-
-\subsection{Using Partial Waves}
-
-Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
-
-Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak.
-
-Again we write the time independent Schroedinger equation in 2D:
-\begin{equation}
-  -\frac{1}{2}\nabla^2\psi + V\psi = E\,\psi
-\end{equation}
-
-where m is the reduced mass, V is a short-range local potential, E is the relative energy.
-
-Using polar coordinates, setting $ k^2 = 2mE $ , we have the equation
-\begin{equation}
-  \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial\psi(r,\theta)}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2\psi(r,\theta)}{\partial \theta^2} + V(r,\theta) = E \psi(r,\theta)
-\end{equation}
-
-We expand the incoming wave in the partial wave basis as:
-\begin{equation}
-    e^{ikx} = e^{ikr\cos\theta} = \sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)J_m(kr)}
-\end{equation}
-where $\epsilon_m = 2 $ for $ m \ne 0 $ and $\epsilon_0 = 1 $.
-
-
-We define a scattering cross section in 2 dimensions,, analogous to the scattering cross section in 3D, as:
-\begin{equation}\label{scatterL}
-  \sigma(\theta) = |\sqrt{\frac{i}{k}}f_m(\theta)|^2
-\end{equation}
-
-The equation \eqref{scatterL} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
-
-\subsection{Long Range Behavior of $E(R)$ }
-
-Although the LCAO approximation given above correctly predicts the asymptotic energy
-$ E(R) \rightarrow -2  $ as $ R \rightarrow \infty $, it does not accurately predict the long range behavior of $E(R).$ To that end we note that as $ R \rightarrow \infty $,
-\begin{equation}
-V({\bf r},{\bf R}) + 1/R \rightarrow -\frac{1}{r}-\frac{z}{R^2} + \frac{x^2-2 z^2}{2 R^3} + \dots
-\end{equation}
-where $z$ is the electronic coordinate along the direction ${\bf R}$, and we ignored terms that contain higher inverse powers of $R$. Thus the Hamiltonian
-\begin{equation}
-H \approx H_{0} -\frac{z}{R^2} + \frac{x^2-2 z^2}{2 R^3} + \dots
-\end{equation}
-where $H_{0}$ is the Hamiltonian for the 2D hydrogen atom. Making use of perturbation theory,
-\begin{equation}
-E(R) \approx E_{0} + E^{(1)}(R) + E^{(2)}(R) + \cdots
-\end{equation}
-and
-\begin{equation}
-E^{(1)} = - \frac{\langle \psi_{1s} |z| \psi_{1s} \rangle }{R^2}
-+  \frac{\langle \psi_{1s} |(x^2-2 z^2)| \psi_{1s} \rangle }{2 R^3}  =0
-\end{equation}
-The lowest non-vanishing contribution arises from second-order perturbation theory
-\begin{equation}
-  \begin{split}
-& E^{(2)} = -\frac{C_{4}}{R^4}  \nonumber \\
-& C_{4} = \sum_{n} \frac{|\langle \psi_{1s} |z | \psi_{n} \rangle |^{2} }{E_{1s} - E_{n} }
-  \end{split}
-\end{equation}
-The polarization constant $C_{4} =0.082 $ was given in cite{YangXL}.
-
-\section{Elastic Scattering}
 In the PSS (perturbed stationary state) approximation, and after factoring out the center of mass coordinates, the system wave amplitude is given by the expression
 \begin{equation}
 \psi_{g}({\bf R}) \phi_{g}({\bf R},{\bf r}) + \psi_{u}({\bf R}) \phi_{u}({\bf R},{\bf r})
@@ -171,11 +64,14 @@ Using the identity ,
 \begin{equation}
 e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
 \end{equation}
-we set $ a_{m} = -i^{-|m|} $ and inserting into \eqref{psiLR} we get
+\begin{equation}
+e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
+\end{equation}
+we set $ a_{m} = -i^{-|m|}$ and inserting into \eqref{psiLR} we get
 
-\begin{equation}\label{psiLR2}
+\begin{equation}\label{LRpsi}
  \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
-  (-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
+(-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
 \end{equation}
 
 where we used the asymptotic form
@@ -214,7 +110,7 @@ Defining the cross section as the ratio of particle flux scattered into the regi
 \begin{equation}
 d\sigma   \equiv   |f(\phi)|^2 \, d\phi
 \end{equation}
-Comparing \eqref{psiLR} with equation \eqref{psiLR2} we find that
+Comparing \eqref{psiLR} with \eqref{LRpsi} we find that
 \begin{equation}
 f(\phi) =
 \sqrt{\frac{2}{\pi k}} \sum_{m}
@@ -227,6 +123,119 @@ Thus
 \frac{4}{k} \sum_{m} |b_{|m|}|^2
 \end{equation}
 Alternatively, the constant $ b_{m} $ is sometimes expressed as a phase shift.
+
+
+% So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of Schrodinger equation with Hamiltonian \eqref{hdia}, both gerade and ungerade:
+% \begin{equation}
+% \begin{split}
+%   & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
+%   & \Phi_u = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) - \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right)
+% \end{split}
+% \end{equation}
+
+% So we now apply the scattering analysis for 2D, from the previous chapter, and assume that $ F_g(r) $ at asymptotic distances obeys the 2D conditions:
+% \begin{equation}
+%   F_g(R) \underset{R \rightarrow +\infty}{\sim} e^{ik\ x} + f_g(\theta)\frac{e^{ik\ x}}{\sqrt{R}}
+% \end{equation}
+% Now we use the 2D scattering amplitude from the previous chapter:
+% \begin{equation}\label{fgampl}
+%   f_g(\theta) = \sqrt{\frac{2}{\pi}}\sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)e^{i\delta_m^g}\sin\delta_m}
+% \end{equation}
+% As the $ f(\theta) $ is not directly observable, in 2D we look for the scattering cross section. And we get for the scattering cross section, in 2D:
+% \begin{equation}
+% \begin{split}
+%   & \theta_g = \int_{0}^{2\pi}{d\theta f_g(\theta)} = \frac{2}{\pi}\sum_{m,m'}\int_{0}^{2\pi}{\epsilon_m\epsilon_m' \cos(m\theta)\cos(m'\theta)e^{i\delta_{m}^g}e^{i\delta_{m'}^g}\sin\delta_m^g\delta_{m'}^g} = \\
+%   & = \frac{2}{\pi}\sum_{m}{\epsilon_m\sin^2\delta_m^g}
+% \end{split}
+% \end{equation}
+
+% The same discussion applies for the ungerade solution so we :
+% \begin{equation}
+%   \theta_u = \frac{2}{\pi}\sum_{m}{\epsilon_m\sin^2\delta_m^u}
+% \end{equation}
+
+% In our case we are not interested in the elastic scattering of the gerade and ungerade states,as they form the linear combination of the asymptotic orbitals for the atom A and B, respectively.
+
+% Instead we seek the asymptotic form for the difference
+% \begin{equation}
+%   \frac{1}{2}\left(F_g(R) - F_u(R)\right) \sim \frac{\left|f_g(\theta) - f_u(\theta)\right|}{4\pi}
+% \end{equation}
+% Using expression \eqref{fgampl} we get:
+% \begin{equation}
+% \begin{split}
+%   & \sigma = \frac{1}{4}\int_{0}^{2\pi}d\theta\frac{\left|f_g(\theta) - f_u(\theta)\right|^2}{4\pi} \Rightarrow \\
+%   & \sigma = \frac{1}{k}\sum_{m}\epsilon_m\sin^2(\delta_u-\delta_g)
+% \end{split}
+% \end{equation}
+
+% The main approaches to solving these class of problems is to expand the wave function in the partial waves basis and use Born approximation.
+
+% \subsection{Using Partial Waves}
+
+% Using partial waves  we expand the incoming wave in the basis of spherical harmonics, and in the case of azimuthal symmetry to the basis of Legendre polynomials. This in effect mean that we decompose each wave into its constituent angular momentum components and solving using boundary conditions.
+
+% Born approximation \cite{GQuantum} treats a scattering potential as a perturbation to the incoming wave. In this case many partial waves contribute to scattering, so it is preferable to avoid angular momentum decomposition. The Born approximation is generally applicable either when the energy of the incoming particle(s) is high or when the scattering potential is very weak.
+
+% Again we write the time independent Schroedinger equation in 2D:
+% \begin{equation}
+%   -\frac{1}{2}\nabla^2\psi + V\psi = E\,\psi
+% \end{equation}
+
+% where m is the reduced mass, V is a short-range local potential, E is the relative energy.
+
+% Using polar coordinates, setting $ k^2 = 2mE $ , we have the equation
+% \begin{equation}
+%   \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial\psi(r,\theta)}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2\psi(r,\theta)}{\partial \theta^2} + V(r,\theta) = E \psi(r,\theta)
+% \end{equation}
+
+% We expand the incoming wave in the partial wave basis as:
+% \begin{equation}
+%     e^{ikx} = e^{ikr\cos\theta} = \sum_{m=0}^{\infty}{\epsilon_m \cos(m\theta)J_m(kr)}
+% \end{equation}
+% where $\epsilon_m = 2 $ for $ m \ne 0 $ and $\epsilon_0 = 1 $.
+
+
+% % We define a scattering cross section in 2 dimensions,, analogous to the scattering cross section in 3D, as:
+% % \begin{equation}\label{scatterL}
+% %   \sigma(\theta) = |\sqrt{\frac{i}{k}}f_m(\theta)|^2
+% % \end{equation}
+
+% % The equation \eqref{squatters} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
+
+\subsection{Long Range Behavior of $E(R)$ }
+In the calculation for the phase shifts, or $b_{m}$, we use the accurate $g,u$ potential curves calculated using the method outlined in Chap. (xx)
+However, for large internuclear separations $ R \approx > 13 a_{0} $, that numerical method becomes 
+unstable. Instead, we match those calculated curves with the analytic asymptotic form described
+below.
+
+Although the LCAO approximation given above correctly predicts the asymptotic energy
+$ E(R) \rightarrow -2  $ as $ R \rightarrow \infty $, it does not accurately predict the long range behavior of $E(R).$ To that end we note that as $ R \rightarrow \infty $,
+\begin{equation}
+V({\bf r},{\bf R}) + 1/R \rightarrow -\frac{1}{r}-\frac{z}{R^2} + \frac{x^2-2 z^2}{2 R^3} + \dots
+\end{equation}
+where $z$ is the electronic coordinate along the direction ${\bf R}$, and we ignored terms that contain higher inverse powers of $R$. Thus the Hamiltonian
+\begin{equation}
+H \approx H_{0} -\frac{z}{R^2} + \frac{x^2-2 z^2}{2 R^3} + \dots
+\end{equation}
+where $H_{0}$ is the Hamiltonian for the 2D hydrogen atom. Making use of perturbation theory,
+\begin{equation}
+E(R) \approx E_{0} + E^{(1)}(R) + E^{(2)}(R) + \cdots
+\end{equation}
+and
+\begin{equation}
+E^{(1)} = - \frac{\langle \psi_{1s} |z| \psi_{1s} \rangle }{R^2}
++  \frac{\langle \psi_{1s} |(x^2-2 z^2)| \psi_{1s} \rangle }{2 R^3}  =0
+\end{equation}
+The lowest non-vanishing contribution arises from second-order perturbation theory
+\begin{equation}
+  \begin{split}
+& E^{(2)} = -\frac{C_{4}}{R^4}  \nonumber \\
+& C_{4} = \sum_{n} \frac{|\langle \psi_{1s} |z | \psi_{n} \rangle |^{2} }{E_{1s} - E_{n} }
+  \end{split}
+\end{equation}
+The polarization constant $C_{4} =0.082 $ was given in cite{YangXL}.
+
+
 
 \section{Resonant Charge Transfer Cross Sections}
 
@@ -263,194 +272,195 @@ So the ratio of flux coming into the $\phi_{a}$ channel to that going into the $
 where $ b^{(g,u)}_{|m|} $ are the elastic
 scattering coefficients for the gerade and ungerade potentials, respectively.
 
-It is now fairly straightforward to compute the charge transfer cross section. We compute it in the Wolfram Mathematica code listed in \ref{AppendixE}.
+ charge transfer cross section. We compute it in the Wolfram Mathematica code listed in \ref{AppendixE}.
 
-The following is the plot of the charge transfer cross section in a.u. vs energy. We did a calculation for the range of  $ 10meV $ to $ 1 eV $
+% The following is the plot of the charge transfer cross section in a.u. vs energy. We did a calculation for the range of  $ 10meV $ to $ 1 eV $
 
-\begin{figure}[h]
-  \centering
-  \includegraphics{CTCrossSection1}
-  \caption{Resonant Charge Transfer Cross Section, $ \sigma $ as a function of energy in eV}
-  \label{fig:CTCS}
-\end{figure}
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics{CTCrossSection1}
+%   \caption{Charge Transfer Cross Section}
+%   \label{fig:CTCS}
+% \end{figure}
 
-The Mathematica code is in appendix \ref{AppendixE}
+% The Mathematica code is in appendix \ref{AppendixE}
 
-\subsection*{Electric Dipole Transition, Einstein A Coefficient: Ground Gerade $\to$ First Ungerade in 2D H$_2^+$}
+% \subsection*{Electric Dipole Transition, Einstein A Coefficient: Ground Gerade $\to$ First Ungerade in 2D H$_2^+$}
 
-Since all the computing machinery was already established we computed the Einstein A Coefficient for the same energy range,
-We used the optical potential method since it does not require an integration over the total spectrum.
+% Since all the computing machinery was already established we computed the Einstein A Coefficient for the same energy range,
+% We used the optical potential method since it does not require an integration over the total spectrum.
 
-We assume that the system is confined to 2 dimensions while photon are in 3 dimensions, as usual.
+% We assume that the system is confined to 2 dimensions while photon are in 3 dimensions, as usual.
 
-Again it is assumed that the scattering takes place at low energies, so that the system can be described by a wave function $ \Psi(x,t) $ which is itself a solution of a Schrodinger equation $ H\ket{\Psi(t)} = i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} $ where $ H $ is a Hamiltonian $ H = T + V $ .
+% Again it is assumed that the scattering takes place at low energies, so that the system can be described by a wave function $ \Psi(x,t) $ which is itself a solution of a Schrodinger equation $ H\ket{\Psi(t)} = i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} $ where $ H $ is a Hamiltonian $ H = T + V $ .
 
-Then we borrow a concept from the optics, where there is a concept of a Complex Refractive Index $ n $. The real part of $ n $ describes how the light is transmitted and the imaginary part describes how the light is absorbed. So it the imaginary part that describes the effect of the scattering. 
+% Then we borrow a concept from the optics, where there is a concept of a Complex Refractive Index $ n $. The real part of $ n $ describes how the light is transmitted and the imaginary part describes how the light is absorbed. So it the imaginary part that describes the effect of the scattering. 
 
-We then express the potential $ V = U + iW $  and the Schrodinger equation becomes $ \left[H + U + iW\right]\ket{\Psi(t)} = i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} $. 
+% We then express the potential $ V = U + iW $  and the Schrodinger equation becomes $ \left[H + U + iW\right]\ket{\Psi(t)} = i\hbar\frac{\partial}{\partial t}\ket{\Psi(t)} $. 
 
-From this one gets the scattering cross section:
-\begin{equation}
-\sigma = \frac{k}{E}\int{d^3R\left[-W(R)\right]\left| \psi(R) \right|}
-\end{equation}
+% From this one gets the scattering cross section:
+% \begin{equation}
+% \sigma = \frac{k}{E}\int{d^3R\left[-W(R)\right]\left| \psi(R) \right|}
+% \end{equation}
 
-Using the same prolate elliptical coordinates, the 2D area element becomes
-\[
-d^2 r
-=
-\frac{R^2}{4}
-\frac{\sigma^2-\tau^2}{\sqrt{\sigma^2-1}\sqrt{1-\tau^2}}
-\,d\sigma\,d\tau.
-\]
+% Using the same prolate elliptical coordinates, the 2D area element becomes
+% \[
+% d^2 r
+% =
+% \frac{R^2}{4}
+% \frac{\sigma^2-\tau^2}{\sqrt{\sigma^2-1}\sqrt{1-\tau^2}}
+% \,d\sigma\,d\tau.
+% \]
 
-The dipole operator (atomic units) is
-\[
-\hat{\mathbf{d}} = -\mathbf{r}
-=
--\left(
-a\sigma\tau\,\hat{\mathbf{x}}
-+
-a\sqrt{(\sigma^2-1)(1-\tau^2)}\,\hat{\mathbf{y}}
-\right).
-\]
+% The dipole operator (atomic units) is
+% \[
+% \hat{\mathbf{d}} = -\mathbf{r}
+% =
+% -\left(
+% a\sigma\tau\,\hat{\mathbf{x}}
+% +
+% a\sqrt{(\sigma^2-1)(1-\tau^2)}\,\hat{\mathbf{y}}
+% \right).
+% \]
 
-\subsubsection*{General dipole matrix elements}
+% \subsubsection*{General dipole matrix elements}
 
-The transition dipole components between gerade and ungerade states,$\psi_g$ and $\psi_u$ are
-\[
-d_x = -\!\!\int\!\!\int 
-\psi_u^*(\sigma,\tau)\,x\,\psi_g(\sigma,\tau)\,d^2 r,
-\]
-\[
-d_y = -\!\!\int\!\!\int 
-\psi_u^*(\sigma,\tau)\,y\,\psi_g(\sigma,\tau)\,d^2 r.
-\]
+% The transition dipole components between gerade and ungerade states,$\psi_g$ and $\psi_u$ are
+% \[
+% d_x = -\!\!\int\!\!\int 
+% \psi_u^*(\sigma,\tau)\,x\,\psi_g(\sigma,\tau)\,d^2 r,
+% \]
+% \[
+% d_y = -\!\!\int\!\!\int 
+% \psi_u^*(\sigma,\tau)\,y\,\psi_g(\sigma,\tau)\,d^2 r.
+% \]
 
-Substituting $x,y,$ and $d^2 r$ gives
-\[
-d_x = 
--\frac{R^3}{8}
-\int_{1}^{\infty}\!\!\int_{-1}^{1}
-\psi_u^*(\sigma,\tau)\psi_g(\sigma,\tau)\,
-\frac{\sigma\tau(\sigma^2-\tau^2)}
-{\sqrt{\sigma^2-1}\sqrt{1-\tau^2}}
-\,d\tau\,d\sigma,
-\]
-\[
-d_y = 
--\frac{R^3}{8}
-\int_{1}^{\infty}\!\!\int_{-1}^{1}
-\psi_u^*(\sigma,\tau)\psi_g(\sigma,\tau)\,
-(\sigma^2-\tau^2)\,d\tau\,d\sigma.
-\]
+% Substituting $x,y,$ and $d^2 r$ gives
+% \[
+% d_x = 
+% -\frac{R^3}{8}
+% \int_{1}^{\infty}\!\!\int_{-1}^{1}
+% \psi_u^*(\sigma,\tau)\psi_g(\sigma,\tau)\,
+% \frac{\sigma\tau(\sigma^2-\tau^2)}
+% {\sqrt{\sigma^2-1}\sqrt{1-\tau^2}}
+% \,d\tau\,d\sigma,
+% \]
+% \[
+% d_y = 
+% -\frac{R^3}{8}
+% \int_{1}^{\infty}\!\!\int_{-1}^{1}
+% \psi_u^*(\sigma,\tau)\psi_g(\sigma,\tau)\,
+% (\sigma^2-\tau^2)\,d\tau\,d\sigma.
+% \]
 
-\subsubsection*{Parity and separated form}
+% \subsubsection*{Parity and separated form}
 
-Inversion $(x,y)\to(-x,-y)$ corresponds to $\tau\to-\tau$, hence
-\[
-\psi_g(\sigma,-\tau)=+\psi_g(\sigma,\tau), \qquad
-\psi_u(\sigma,-\tau)=-\psi_u(\sigma,\tau).
-\]
+% Inversion $(x,y)\to(-x,-y)$ corresponds to $\tau\to-\tau$, hence
+% \[
+% \psi_g(\sigma,-\tau)=+\psi_g(\sigma,\tau), \qquad
+% \psi_u(\sigma,-\tau)=-\psi_u(\sigma,\tau).
+% \]
 
-Assume separable wavefunctions
-\[
-\psi(\sigma,\tau) = F(\sigma)\,G(\tau).
-\]
+% Assume separable wavefunctions
+% \[
+% \psi(\sigma,\tau) = F(\sigma)\,G(\tau).
+% \]
 
-A minimal symmetry-adapted choice for the lowest $\Sigma$ states is:
-\[
-\psi_g(\sigma,\tau) = F_g(\sigma)\,G_g(\tau),
-\qquad
-G_g(\tau) = \frac{1}{\sqrt{2}},
-\]
-\[
-\psi_u(\sigma,\tau) = F_u(\sigma)\,G_u(\tau),
-\qquad
-G_u(\tau) = \sqrt{\frac{3}{2}}\,\tau.
-\]
+% A minimal symmetry-adapted choice for the lowest $\Sigma$ states is:
+% \[
+% \psi_g(\sigma,\tau) = F_g(\sigma)\,G_g(\tau),
+% \qquad
+% G_g(\tau) = \frac{1}{\sqrt{2}},
+% \]
+% \[
+% \psi_u(\sigma,\tau) = F_u(\sigma)\,G_u(\tau),
+% \qquad
+% G_u(\tau) = \sqrt{\frac{3}{2}}\,\tau.
+% \]
 
-\subsection*{4. Dipole component $d_y$}
+% \subsection*{4. Dipole component $d_y$}
 
-Because $G_u(\tau)G_g(\tau)(\sigma^2-\tau^2) \propto \tau(\sigma^2-\tau^2)$
-is odd in $\tau$,  
-\[
-d_y = 0.
-\]
+% Because $G_u(\tau)G_g(\tau)(\sigma^2-\tau^2) \propto \tau(\sigma^2-\tau^2)$
+% is odd in $\tau$,  
+% \[
+% d_y = 0.
+% \]
 
-Thus the $\Sigma_g \to \Sigma_u$ transition couples only to polarization
-along the molecular axis.
+% Thus the $\Sigma_g \to \Sigma_u$ transition couples only to polarization
+% along the molecular axis.
 
-\subsection*{5. Dipole component $d_x$}
+% \subsection*{5. Dipole component $d_x$}
 
-Insert the separated forms:
-\[
-d_x = 
--\frac{R^3}{8}
-\int_{1}^{\infty} F_u^*(\sigma)F_g(\sigma)\,
-\frac{\sigma}{\sqrt{\sigma^2-1}}
-\,I(\sigma)\,d\sigma,
-\]
-where the angular integral is
-\[
-I(\sigma)=
-\int_{-1}^{1}
-G_u(\tau)G_g(\tau)\,
-\frac{\tau(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}\,d\tau.
-\]
+% Insert the separated forms:
+% \[
+% d_x = 
+% -\frac{R^3}{8}
+% \int_{1}^{\infty} F_u^*(\sigma)F_g(\sigma)\,
+% \frac{\sigma}{\sqrt{\sigma^2-1}}
+% \,I(\sigma)\,d\sigma,
+% \]
+% where the angular integral is
+% \[
+% I(\sigma)=
+% \int_{-1}^{1}
+% G_u(\tau)G_g(\tau)\,
+% \frac{\tau(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}\,d\tau.
+% \]
 
-Using 
-\[
-G_u(\tau)G_g(\tau)
-= \sqrt{\frac{3}{4}}\,\tau,
-\]
-we obtain
-\[
-I(\sigma)
-=
-\sqrt{\frac{3}{4}}
-\int_{-1}^{1}
-\frac{\tau^2(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}
-\,d\tau.
-\]
+% Using 
+% \[
+% G_u(\tau)G_g(\tau)
+% = \sqrt{\frac{3}{4}}\,\tau,
+% \]
+% we obtain
+% \[
+% I(\sigma)
+% =
+% \sqrt{\frac{3}{4}}
+% \int_{-1}^{1}
+% \frac{\tau^2(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}
+% \,d\tau.
+% \]
 
-The integral evaluates to
-\[
-\int_{-1}^{1}
-\frac{\tau^2(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}
-\,d\tau
-=
-\frac{\pi}{2}\sigma^2 - \frac{3\pi}{8},
-\]
-thus
-\[
-I(\sigma)
-=
-\frac{\sqrt{3}\,\pi}{16}\,(4\sigma^2 - 3).
-\]
+% The integral evaluates to
+% \[
+% \int_{-1}^{1}
+% \frac{\tau^2(\sigma^2-\tau^2)}{\sqrt{1-\tau^2}}
+% \,d\tau
+% =
+% \frac{\pi}{2}\sigma^2 - \frac{3\pi}{8},
+% \]
+% thus
+% \[
+% I(\sigma)
+% =
+% \frac{\sqrt{3}\,\pi}{16}\,(4\sigma^2 - 3).
+% \]
 
-\subsection*{6. Final expression}
+% \subsection*{6. Final expression}
 
-Therefore the transition dipole between the ground gerade and first ungerade states is
-\[
-d_x^{(g\to u)} =
--\frac{\sqrt{3}\,\pi R^3}{128}
-\int_{1}^{\infty}
-F_u^*(\sigma)\,F_g(\sigma)\,
-\frac{\sigma(4\sigma^2 - 3)}{\sqrt{\sigma^2-1}}
-\,d\sigma,
-\]
-\[
-d_y^{(g\to u)} = 0.
-\]
+% Therefore the transition dipole between the ground gerade and first ungerade states is
+% \[
+% d_x^{(g\to u)} =
+% -\frac{\sqrt{3}\,\pi R^3}{128}
+% \int_{1}^{\infty}
+% F_u^*(\sigma)\,F_g(\sigma)\,
+% \frac{\sigma(4\sigma^2 - 3)}{\sqrt{\sigma^2-1}}
+% \,d\sigma,
+% \]
+% \[
+% d_y^{(g\to u)} = 0.
+% \]
 
-This is the explicit one-dimensional integral for the electric dipole
-transition in 2D H$_2^+$ using the alternative elliptic coordinates
-$(\sigma,\tau)$.
+% This is the explicit one-dimensional integral for the electric dipole
+% transition in 2D H$_2^+$ using the alternative elliptic coordinates
+% $(\sigma,\tau)$.
 
-The following graph shows the Einstein A coefficient as function or the internuclear distance $ R $.
-\includegraphics{"Einstein"}
+% The following graph shows the Einstein A coefficient as function or the internuclear distance $ R $.
+% \includegraphics{"Einstein"}
 
-The relevant code is in appendix \ref{AppendixF}
+% The relevant code is in appendix \ref{AppendixF}
+{ \Large Calculate the RCT cross sections for only a few partial waves, e.g., the first 5 partial waves. Pick a low collision energy so only the first 5 partial wave contributions to the RCT cross section. Plot the individual partial cross sections. }
 
 \section{Anyons}
 
