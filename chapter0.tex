@@ -115,7 +115,7 @@ This process is governed by the selection rules,
 
 Here, we consider the radiative charge transfer process
 \begin{equation}
-  Yb^+ + Ca = Yb + Ca^+ \hbar\omega
+  Yb^+ + Ca = Yb + Ca^+ + \hbar\omega
 \end{equation}
 where $ \hbar\omega $ is the energy of the emitted photon given by the expression \eqref{hbaromega2}.
 The cross-section for the radiative charge transfer process is given by
@@ -182,7 +182,7 @@ So we define a complex potential
 \begin{equation}
 \begin{split}
   & V(R) = V_{BO}(R) + V_{OPT}(R) = V_{BO}(R) + i\frac{A(R)}{2} \\[.8em]
-  & A(R) = \frac{4}{3c^2}D^(R)[V_A(R) - V_X(R)]
+  & A(R) = \frac{4}{3c^2}D(R)[V_A(R) - V_X(R)]
 \end{split}
 \end{equation}
 $ A(R) $ is the Einstein-A coefficient. We shall use a 2D version of the optical theorem to compute the radiative charge transfer in the 2D case in the next chapter.
@@ -190,12 +190,12 @@ The next step is to solve the usual radial scattering equation, but with $ V(R) 
 
 The cross-section for radiative quenching is given by
 \begin{equation}\label{quenchR}
-  \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j)}}
+  \sigma = \frac{\pi}{k^2}\sum_J{(2J+1)(1 - e^{-4\eta_j})}
 \end{equation}
 
 where $ \eta_j $ is the imaginary part of the J'th partial wave phase shift $\delta_j $ for the radial wave $ f_J(kR) $ that satisfies
 \begin{equation}\label{PartW3D}
-  f_J^{''}(kR) - \frac{J(J+1)}{R^2}f_J(kR) + 2\mu (V_A(R) + V_{opt}(R))f_J(kR) + k^2f_J(kR) = 0
+  f_J^{''}(kR) - \frac{J(J+1)}{R^2}f_J(kR) + 2\mu [V_A(R) + V_{opt}(R)]f_J(kR) + k^2f_J(kR) = 0
 \end{equation}
 
 The Local Optical Potential is generally applicable when the following conditions are satisfied, which aligns well with our case.
@@ -266,7 +266,7 @@ However, this approximation is good only for values $ J < J_{max} $ \cite{Zygelm
 The collision energy of the collision system is given as $ 3/2 k_B\, T $ where $ k_B $ is the Boltzman constant and $ T $ is the temperature in Kelvin \\
 Value $ J_{max} $ is the critical angular momentum for which the collision system has sufficient collision energy to overcome the centrifugal potential barrier \cite{ZygelmanHunt2012}. For larger J, tunneling resonances can access the inner region where the transition dipole moment is non-negligible and induce radiative transitions.
 
-In Table I of \cte{ZL}, we present the various cross sections at several representative collision temperatures. The second column contains the association cross-section obtained using the FGR method described above. For the radiative charge-transfer cross sections, as listed in the third column, we used \eqref{sigmaUpper}. Thus, the upper bound for the total radiative relaxation cross sections is given in column 4. The last column gives the results obtained using the local optical potential method. The table shows that, over the temperature range considered, the local optical potential method predicts cross sections that are less than the upper bound itemized in column 4. Secondly, the differences between the two theories' predictions are small. The optical potential cross section differs by less than 4\%  from the upper limit values over the entire temperature range, including the ultra-cold region.\\
+In Table I of \cite{ZL}, we present the various cross sections at several representative collision temperatures. The second column contains the association cross-section obtained using the FGR method described above. For the radiative charge-transfer cross sections, as listed in the third column, we used \eqref{sigmaUpper}. Thus, the upper bound for the total radiative relaxation cross sections is given in column 4. The last column gives the results obtained using the local optical potential method. The table shows that, over the temperature range considered, the local optical potential method predicts cross sections that are less than the upper bound itemized in column 4. Secondly, the differences between the two theories' predictions are small. The optical potential cross section differs by less than 4\%  from the upper limit values over the entire temperature range, including the ultra-cold region.\\
 One can also note that the optical potential method predicts cross sections that are larger than the radiative association cross sections. At the same time the optical potential method provides a reliable upper bound for the total (RR) cross section.\\
 
 In Figure we plot the total radiative relaxation cross section, obtained using the optical potential method, for the gas temperature range $ 1 mK < T < 1K$.
@@ -310,7 +310,7 @@ Different Yb isotopes $ ({}^{170}Yb, {}^{174}Yb, {}^{176}Yb) $ differ only in nu
   \int_0^{R_0}{dR\,\phi(R)D(R)\phi_{J=1}^{n}(R)}
 \end{equation}
 Because isotope mass shifts the bound-state energies, it leads to order-of-magnitude differences in rate constants between isotopes.\\
-At ultra-low temperatures ($ \mu K $K and below), only the s-wave is present, and the rates obey the Wigner threshold law. In that case, if a $Yb$ isotope supports a bound state just below threshold, the scattering length becomes very large, and the radiative association rate is strongly enhanced. The enhancement becomes isotope-specific. This explains the pronounced isotope separation seen in calculated rate curves as shown in \cite{ZygEtAll4}.
+At ultra-low temperatures ($ \mu K $ and below), only the s-wave is present, and the rates obey the Wigner threshold law. In that case, if a $Yb$ isotope supports a bound state just below threshold, the scattering length becomes very large, and the radiative association rate is strongly enhanced. The enhancement becomes isotope-specific. This explains the pronounced isotope separation seen in calculated rate curves as shown in \cite{ZygEtAll4}.
 So, radiative association shows strong isotope dependence, while the radiative charge transfer isotope dependence is smaller. {\Large \it Include diagram in published paper which shows isotope effect}
 
 In the following sections, we focus on 2D systems and describe Resonant Charge Transfer. Something we will calculate in the following sections.
