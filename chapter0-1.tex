@@ -52,7 +52,11 @@ on the surface. The surface states admit both localized and non-localized block-
 Another interesting application of 2D electronics is the LED elements in 2D \cite{2DLED}. Electronics research is closely related to research on new 2D materials. For example, graphene itself is not compatible with silicon. However, there is a new material, black phosphorus\cite{2DPhos}, which is both compatible with silicon and it holds promise for future electronic\cite{2DPhos3} devices. This fact relies on two key properties: the first is that black phosphorus has higher mobility, the speed at which it can carry an electrical charge, than silicon. The other is that it has a finite bandgap, whereas graphene does not. So, in essence, in the presence of an electric field, black phosphorus can act as a semiconductor\cite{2DPhos2}.
 
 \subsection*{Quantum Computing}
-One promising platform, topological quantum computing \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter.
+The concept of topological quantum computing \cite{Tqc1} depends on the unique properties of 2D materials. 
+It \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter.
+In principle, there are no theoretical objections to building a quantum computer; there are serious technical issues, such as noise and scaling limitations, for current qubit technologies that need to be overcome\cite{QCProblems}. 
+The topological approach promises a physically realizable quantum computer\cite{Tqc2,Tqc3}. 
+
 The current computer architecture is based on the so-called 'von Neumann' architecture. The algorithms based on that architecture have inherent limitations, and, as it currently stands, the architecture cannot overcome them.
 
 There are two main classes of computer algorithms, P and NP. There are subclasses within those classes, but those two classes capture the essential behavior of classical algorithms. The algorithms belonging to class P are solvable in polynomial time, with regard to the size of the input. Those algorithms belonging to class NP are those that require exponential time to complete\cite{PvsNP}.
@@ -67,12 +71,6 @@ Even if the NP problems remain intractable, just the possibility that, according
 For example, Schor's algorithm \cite{Schor} can provably solve integer factorization in polynomial time, as opposed to the best classical algorithm (quadratic sieve), which works in sub-exponential time \cite{Pomerance}. Unfortunately, the integer factorization problem, as well as other BQP problems, do not belong to the class of NP-complete problems. 
 
 Interestingly, according to Abrams and Lloyd \cite{Abrams_1998}, \cite{Abrams_1999}, if the small nonlinear term is added to Quantum Mechanics, quantum computers would be able to solve NP-complete problems in polynomial time.
-
-\subsection*{Topological Quantum Computing}
-The concept of topological quantum computing \cite{Tqc1}
-depends on the unique properties of 2D materials. In principle, there are no theoretical objections to building a quantum computer; there are serious technical issues, such as noise and scaling limitations, for current qubit technologies that need to be overcome\cite{QCProblems}. 
-The topological approach promises a physically realizable quantum computer\cite{Tqc2,Tqc3}. 
-\subsection{Overview of CT theory for low energy collisions in 3D}
 
 \subsection*{Anyons}
 Anyons are quasi-particles that can arise in 2D systems and whose quantum statistics in neither Fermionic nor Bosonic \cite{Anyons1}. This fact has been proven\cite{Anyons2}, but
@@ -110,6 +108,7 @@ Since the exciton system resembles either the hydrogen atom or the hydrogen mole
 A similar system is the trion, a bound state of three charged particles. It consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecular ion. 
 
 
+\chapter{Overview of CT theory for low energy collisions in 3D}
 
 \section{Molecular Orbitals in 2 D}
 In order to calculate the resonant charge transfer rate (RCT), we require the potential surfaces for the two lowest ground state Born-Oppenheimer (BO) that correlate to the degenerate asymptotic
@@ -211,23 +210,27 @@ In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf 
 
 In the following figures, we show the atomic orbitals for the gerade and ungerade cases as a function of the internuclear distance R.
 
+\includepdf[pages=-,pagecommand=\subsubsection{Gerade potentials as function of the internuclear distance R},offset=0 -1.5cm]{Ger-Lcao-Graphs.pdf}
 
-%\includepdf[pages=-,pagecommand=\subsubsection{Gerade potentials as function of the internuclear distance R},offset=0 -1.5cm]{Ger-Lcao-Graphs.pdf}
-Gerade:
+\begin{figure}[!htp]
+    \caption{Gerade Orbitals}\par\medskip
+\noindent\includegraphics[width=1\textwidth]{Ger-Lcao-Graphs}
+\end{figure}
+\vspace{-10.cm}
+\begin{figure}[!htp]
+  \caption{Gerade Orbitals in 3D}\par\medskip
+\noindent\includegraphics[width=1\textwidth]{Ger-Lcao-3D-Graphs}
+\end{figure}
+\vspace{-10.cm}
+\begin{figure}[H]
+  \caption{Ungerade Orbitals}\par\medskip
+\noindent\includegraphics[width=1\textwidth]{UnGer-Lcao-Graphs}
+\end{figure}
 
-\includegraphics[width=1\textwidth]{Ger-Lcao-Graphs}
-
-Gerade 3D:
-
-\includegraphics[width=1\textwidth]{Ger-Lcao-3D-Graphs}
-
-Ungerade:
-
-\includegraphics[width=1\textwidth]{UnGer-Lcao-Graphs}
-
-Ungerade 3D:
-
-\includegraphics[width=1\textwidth]{UnGer-Lcao-3D-Graphs}
+\begin{figure}[H]
+  \caption{Ungerade Orbitals 3D}\par\medskip
+\noindent\includegraphics[width=1\textwidth]{UnGer-Lcao-3D-Graphs}
+\end{figure}
 
 Following our previous discussion, we have determined that our LCAO example provides only a rough qualitative description of the two-dimensional ground state potential surfaces for the \(H_{2}^{+}\) molecule. To obtain more accurate data, we will introduce a semi-analytic procedure initially developed by Bates and his colleagues for the treatment of the three-dimensional \(H_{2}^{+}\) molecular ion in the upcoming chapters. 
 
