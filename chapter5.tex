@@ -273,7 +273,7 @@ scattering coefficients for the gerade and ungerade potentials, respectively.
 
  charge transfer cross section. We compute it in the Wolfram Mathematica code listed in Appendix \ref{AppendixE}.
 
- The following is the plot of the charge transfer cross section in a.u. vs energy. We did a calculation for the range of  $ 10 \mueV $ to $ 1 meV $ which corresponds to temperatures from $ 0.11 K $ to $ 11 K $.
+ The following is the plot of the charge transfer cross section in a.u. vs energy. We did a calculation for the range of  $ 10 \mu eV $ to $ 1 meV $ which corresponds to temperatures from $ 0.11 K $ to $ 11 K $.
 
  \begin{figure}[h]
    \centering
@@ -283,6 +283,42 @@ scattering coefficients for the gerade and ungerade potentials, respectively.
  \end{figure}
 
 The Mathematica code is in appendix \ref{AppendixE}
+
+We also calculated the resonant charge transfer cross for each of the first 5 partial waves. The following graphs show the cross section for the same energy (temperature) range. 
+
+\begin{figure*}[ht]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{RCT-1}
+    \caption{Resonant Charge Transfer Cross Section, 1st partial wave}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{RCT-2}
+    \caption{Resonant Charge Transfer Cross Section, 2nd  partial wave}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{RCT-3}
+    \caption{Resonant Charge Transfer Cross Section, 3rd partial wave}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{RCT-4}
+    \caption{Resonant Charge Transfer Cross Section, 4th partial wave}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{RCT-5}
+    \caption{Resonant Charge Transfer Cross Section, 5th partial wave}
+  \end{subfigure}%
+  \vfill
+  \caption*{Resonant Charge Transfer Cross Section for each of the first 5 partial waves}
+\end{figure*}
 
 % \subsection*{Electric Dipole Transition, Einstein A Coefficient: Ground Gerade $\to$ First Ungerade in 2D H$_2^+$}
 
@@ -459,7 +495,6 @@ The Mathematica code is in appendix \ref{AppendixE}
 % \includegraphics{"Einstein"}
 
 % The relevant code is in appendix \ref{AppendixF}
-{ \Large Calculate the RCT cross sections for only a few partial waves, e.g., the first 5 partial waves. Pick a low collision energy so only the first 5 partial wave contributions to the RCT cross section. Plot the individual partial cross sections. }
 
 \section{Anyons}
 
