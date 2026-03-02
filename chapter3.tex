@@ -188,8 +188,7 @@ where $J_{m}(k R)$ is the regular Bessel function
 and $ H^{1}_{m}(k R) $ is a Hankel function of the first kind,
 and $a_{m},b_{m} $ are constants. We impose the boundary condition
 \begin{equation}\label{psiAsymp}
-\psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}
-+ f(\phi) \, \frac{e^{i \, k  R}}{\sqrt{R}} .
+\psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi} + f(\phi) \, \frac{e^{i \, k  R}}{\sqrt{R}} .
 \end{equation}
 Using the identity 
 \begin{equation}
@@ -200,9 +199,12 @@ Using the identity
 \end{equation}
 we set $ a_{m} = -i^{-|m|} $ and inserting into \eqref{psiAsymp} we get another equation
 
-\begin{equation}\label{ppsiAsymp2}
- \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
-(-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
+\begin{equation}
+\label{p2psiAsymp2}
+\begin{split}
+  & \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m} \\[.8em]
+& (-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
+  \end{split}
 \end{equation}
 
 where we used the asymptotic form
@@ -218,7 +220,7 @@ evaluated at a cutoff distance $R_{c}$ so that the ratio
 \begin{equation}
 i^{-|m|} \, \frac{J'_{|m|} - y_{m} \, J_{|m|} }{ \, H'^{(1)}_{|m|} - y_{m} \, H^{(1)}_{|m|} }
 \end{equation}
-tends to a constant value $b_{|m|} $ at $ R>R_{c}.$
+tends to a constant value $b_{|m|} $ at $ R>R_{c}$.
 
 Using the expression
 \begin{equation}
@@ -241,7 +243,8 @@ Defining the cross section as the ratio of particle flux scattered into the regi
 \begin{equation}
 d\sigma   \equiv   |f(\phi)|^2 \, d\phi
 \end{equation}
-Comparing equation \eqref{psiAsymp} with equation \eqref{ppsiAsymp2} we find that
+
+Comparing equation \eqref{psiAsymp} with equation \eqref{p2psiAsymp2} we find that
 \begin{equation}
 f(\phi) =
 \sqrt{\frac{2}{\pi k}} \sum_{m}

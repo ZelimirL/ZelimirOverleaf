@@ -39,7 +39,6 @@
 \usepackage{blindtext}
 \usepackage{helvet}
 \RequirePackage{color}
-%\RequirePackage{hyperref}
 \RequirePackage{url}
 \widowpenalty=300
 \clubpenalty=300
@@ -86,6 +85,7 @@
 % Add pdf file
 \usepackage{pdfpages} 
 
+\usepackage{hyperref}
 % Front matter.
 \setcounter{tocdepth}{1}
 \usepackage[titles]{tocloft}

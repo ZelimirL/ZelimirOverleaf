@@ -2,130 +2,7 @@
 \label{chap:RRP2}
 
 \section{Theory}
-\subsection{Elastic Scattering}
 
-We start with the following Hamiltonian's:
-\begin{equation}\label{eqH1} 
-\begin{split} 
-  & H = -\frac{1}{2\mu}\nabla^2_{\mathbf{R}} + V_{g,u}(R)
-\end{split} 
-\end{equation}
-where $ V_{g,u}(R) $ represents the potential for the gerade (g) and ungerade state (u)
-
-where $ \mu = \frac{m_p\,m_e}{m_p + m_e} $, is the reduced mass, $ \nabla_{\mathbf{R}} $ is the gradient operator for the relative nuclear motion. $ H_{el}(\mathbf{R},\mathbf{r}) $ is the fixed nuclei Hamiltonian for the electron, whose coordinate are labeled by $ \mathbf{r} $. $ H_{rad} $ is the Hamiltonian of the radiation field, and $ H_{int} $ is the radiation-matter coupling. Since we are dealing with the interaction of an atom with the EM radiation, it is common to use the length gauge.
-
-From the physics of the system, we have two classes of solution, Gerade and Ungerade. Those correspond to the parity of the electron's wavefunction.
-
-Now given the Hamiltonian for the homonuclear diatom with one electron:
-\begin{equation}\label{hdia}
-  H = -\frac{1}{2}\vec{\nabla}^2 + V_a(|\vec{r} - \frac{\vec{R}}{2}|) + V_b(|\vec{r} + \frac{\vec{R}}{2}|) + V(|\vec{R}|)
-\end{equation}
-where $ V_a, V_b $ are the electron nucleus Coulomb interaction for the nuclei A and B respectively. The $ \vec{r} $ is the position of the electron and $ \vec{R} $ is the distance between the nuclei.
-
-In the PSS (perturbed stationary state) approximation, and after factoring out the center of mass coordinates, the system wave amplitude is given by the expression
-\begin{equation}
-\psi_{g}({\bf R}) \phi_{g}({\bf R},{\bf r}) + \psi_{u}({\bf R}) \phi_{u}({\bf R},{\bf r})
-\label{0.00}
-\end{equation}
-where $ \phi_{u,g}({\bf R},{\bf r}) $ are, respectively, the gerade and ungerade electronic ground BO eigenstates
-and $\psi_{g}({\bf R}), \psi_{u}({\bf R}) $ are the gerade and
-un-gerade amplitudes for the relative motion of the atom and projectile. The amplitudes satisfy the following
-\begin{equation}
--\frac{1}{2 \mu} {\bf \nabla^2} \psi_{u,g}({\bf R}) + V_{u,g}(R)
-\psi_{u,g}({\bf R}) = E \, \psi_{u,g}({\bf R})
-\label{0.01}
-\end{equation}
-where $ E = k^2/2\mu $ is the collision energy, and $ V_{u,g} $
-are the Born-Oppenheimer potentials for the gerade and ungerade
-electronic states respectively. Here $ {\bf \nabla}^2 $ is the two-dimensional Laplacian, and because $ V_{g,u}(R) $ are rotationally invariant, we can express the amplitudes as a partial wave expansion
-\begin{equation}
-\psi_{g,u}({\bf R}) = \sum_{m=-\infty}^{m=\infty} \, e^{i m \phi} F^{\, g,u}_{m}(R)
-\end{equation}
-where the radial functions $F_{m}(R)$ obey
-\begin{equation}\label{FZg}
-F_{m}''(R) + \frac{F'_{m}}{R} - \frac{m^2}{R^2} F_{m}(R) + (k^2 - 2 \mu V_{g,u}(R)) F_{m}(R) =0
-\end{equation}
-where we suppressed the $g,u$ superscripts in the radial functions, and the prime notation denotes derivatives with respect to $R$.
-
-In the asymptotic region as $ R \rightarrow \infty $ and $ V_{g,u} \rightarrow 0$,
-Eq. \eqref{FZg} tends to the Bessel equation for integer order, and the radial solutions tend to
-\begin{equation}\label{FAmpl}
-F_{m}(R)\rightarrow a_{m} \, J_{|m|}(k R) +
-b_{m} H^{(1)}_{|m|}(k R)
-\end{equation}
-where $J_{m}(k R)$ is the regular Bessel function
-and $ H^{1}_{m}(k R) $ is a Hankel function of the first kind,
-and $a_{m},b_{m} $ are constants. We impose the boundary condition
-\begin{equation}\label{psiLR}
-\psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}
-+ f(\phi) \, \frac{e^{i \, k  R}}{\sqrt{R}} .
-\end{equation}
-Using the identity ,
-\begin{equation}
-e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
-\end{equation}
-\begin{equation}
-e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty} \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}
-\end{equation}
-we set $ a_{m} = -i^{-|m|}$ and inserting into \eqref{psiLR} we get
-
-\begin{equation}\label{LRpsi}
- \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m}
-(-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
-\end{equation}
-
-where we used the asymptotic form
-\begin{equation}
-H^{(1)}_{m} \rightarrow \sqrt{\frac{2}{\pi k R}} \,
-  e^{\left (i \, (k \, R -\frac{m \pi}{2} -\frac{\pi}{4}) \right )}.
-\end{equation}
-We can solve for the coefficients $b_{|m|}$ by matching the radial logarithmic derivative
-\begin{equation}
-y_{m} \equiv \frac{F'_{m}}{F_{m}}
-\end{equation}
-evaluated at a cutoff distance $R_{c}$ so that the ratio
-\begin{equation}
-i^{-|m|} \, \frac{J'_{|m|} - y_{m} \, J_{|m|} }{ \, H'^{(1)}_{|m|} - y_{m} \, H^{(1)}_{|m|} }
-\end{equation}
-tends to a constant value $b_{|m|} $ at $ R>R_{c}.$
-
-Using the expression
-\begin{equation}
-  {\bf j} = Re \Bigl [\frac{-i}{\mu} \, \psi^{*}({\bf R}){\nabla }\psi^{*}({\bf R})  \Bigr ]
-\end{equation}
-where ${\bf \nabla}$ is the two-dimensional gradient operator for the probability current, we obtain for the incident current
-along the $z-$ direction
-\begin{equation}
-j_{inc} = \frac{ k}{\mu}
-\end{equation}
-and
-for the leading order term of outgoing radial current
-\begin{equation}
-j_{r} = \frac{k}{R \mu } f^{*}(\phi)f(\phi)
-\end{equation}
-\begin{equation}
-j_{r} = \frac{k}{R \mu } f^{*}(\phi)f(\phi)
-\end{equation}
-Defining the cross section as the ratio of particle flux scattered into the region $ R \, d \phi $ centered at angle $\phi$ with the incident current $j_{inc}$, we get
-\begin{equation}
-d\sigma   \equiv   |f(\phi)|^2 \, d\phi
-\end{equation}
-Comparing \eqref{psiLR} with \eqref{LRpsi} we find that
-\begin{equation}
-f(\phi) =
-\sqrt{\frac{2}{\pi k}} \sum_{m}
-(-1)^{(m+1)} e^{- i \frac{\pi}{4}}\,e^{i m \phi} \,b_{|m|}
-\end{equation}
-Thus
-\begin{equation}
-\sigma= \int_{0}^{2\pi} d\phi \, \frac{d\sigma}{d \phi} =
-\int_{0}^{2\pi} d\phi |f(\phi)|^2 =
-\frac{4}{k} \sum_{m} |b_{|m|}|^2
-\end{equation}
-Alternatively, the constant $ b_{m} $ is sometimes expressed as a phase shift.
-
-
-% So following the \cite{Dalgarno1953} we have the $ |R| \rightarrow \infty $ asymptotic eigenstates of Schrodinger equation with Hamiltonian \eqref{hdia}, both gerade and ungerade:
 % \begin{equation}
 % \begin{split}
 %   & \Phi_g = \frac{1}{\sqrt{2}}\left(\Phi_a(\vec{r} - \frac{\vec{R}}{2}) + \Phi_b(\vec{r} + \frac{\vec{R}}{2})\right) \\
@@ -203,11 +80,10 @@ Alternatively, the constant $ b_{m} $ is sometimes expressed as a phase shift.
 % % The equation \eqref{squatters} represents the number of particles scattered between $ \theta $ and $ \theta + d\theta $ per second per unit incident flux.
 
 \subsection{Long Range Behavior of $E(R)$ }
-In the calculation for the phase shifts, or $b_{m}$, we use the accurate $g,u$ potential curves calculated using the method outlined in Chap. (xx)
-However, for large internuclear separations $ R \approx > 13 a_{0} $, that numerical method becomes 
-unstable. Instead, we match those calculated curves with the analytic asymptotic form described
-below.
+In the calculation for the phase shifts, or $b_{m}$, we use the accurate $g,u$ potential curves calculated using the method outlined in Chap. \ref{h2plus2DPotential}.\\
 
+However, for large internuclear separations $ R \approx > 13 a_{0} $, that numerical method becomes unstable. Instead, we match those calculated curves with the analytic asymptotic form described
+below.
 Although the LCAO approximation given above correctly predicts the asymptotic energy
 $ E(R) \rightarrow -2  $ as $ R \rightarrow \infty $, it does not accurately predict the long range behavior of $E(R).$ To that end we note that as $ R \rightarrow \infty $,
 \begin{equation}
@@ -234,7 +110,6 @@ The lowest non-vanishing contribution arises from second-order perturbation theo
   \end{split}
 \end{equation}
 The polarization constant $C_{4} =0.082 $ was given in cite{YangXL}.
-
 
 
 \section{Resonant Charge Transfer Cross Sections}
