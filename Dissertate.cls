@@ -52,7 +52,7 @@
 \RequirePackage{titling}
 
 %citations
-\usepackage[breaklinks=true]{hyperref}
+%\usepackage[breaklinks=true]{hyperref}
 \usepackage{breakcites}
 \usepackage{url}
 \usepackage{cite}
@@ -85,7 +85,6 @@
 % Add pdf file
 \usepackage{pdfpages} 
 
-\usepackage{hyperref}
 % Front matter.
 \setcounter{tocdepth}{1}
 \usepackage[titles]{tocloft}
@@ -108,6 +107,8 @@
 %\def\pdTwoName#1{\gdef\@pdTwoName{#1}}
 %\def\pdTwoSchool#1{\gdef\@pdTwoSchool{#1}}
 %\def\pdTwoYear#1{\gdef\@pdTwoYear{#1}}
+
+\usepackage{hyperref}
 
 \newcommand{\copyrightpage}{
   \newpage

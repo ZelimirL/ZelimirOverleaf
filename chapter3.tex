@@ -25,7 +25,7 @@
 
   Note that the $ m $ is a quantum number, not the mass. 
 
-  The function $ T(\phi) $ must be single-valued and symmetric about the incident beam, taken to be centered at $ x $. In that case, m must be an integer, and the solution must be symmetric along the x-axis. Ergo, the normalized angular function is:
+  The function $ T(\phi) $ must be single-valued and symmetric about the incident beam, taken to be centered at $ x $. In that case, $ m $ must be an integer, and the solution must be symmetric along the x-axis. Ergo, the normalized angular function is:
   \begin{equation}
 T(\phi) = \frac{1}{\sqrt{\pi}}e^{i m\phi}
 \end{equation}
@@ -50,7 +50,7 @@ Here we have an incoming particle (or particle beam) with the uniform momentum $
 
 The way to solve the equation \eqref{2DS1H} is to expand the incident wave in terms of the Bessel function. This is the Partial-Wave Expansion method. We get:
 \begin{equation}
-    e^{i\ kx} = e^{i\ kr\cos\theta} = sum_{m=0}^{\infty}{\epsilon_m\i^m\cos(m\theta)R_m(kr)}
+    e^{i\ kx} = e^{i\ kr\cos\theta} = \sum_{m=0}^{\infty}{\epsilon_m\i^m\cos(m\theta)R_m(kr)}
 \end{equation}
 where the most general form of $ R_m(kr) $ is the combination of cylindrical Bessel functions:
 \begin{equation}\label{bss}
@@ -61,7 +61,7 @@ We shall subsequently show the asymptotic form of the Bessel functions.
 
 \subsubsection{\textbf{Far away region, Scattered particle}}
 
-Here is still have the $ V(r) \rightarrow 0 $
+Here we consider the region where $ V(r) \rightarrow 0 $
 
 In this region, the solution to the wave equation \eqref{frr} looks like the combination of the incoming plus the scattered outgoing wave.
 \begin{equation}\label{free2D}
@@ -88,7 +88,7 @@ In the often-used partial wave expansion, the scattering amplitude and the phase
 \end{equation}
 In general, the shape of the $ f(\theta) $ will depend on the symmetry of the system.
 
-The actual $ f(\theta) $ is not observable; however, it is used to compute differential cross section
+The actual $ f(\theta) $ is not observable; however, it is used to compute differential cross section which is observable.
 \begin{equation}
     \frac{d\sigma}{d\theta} = \frac{1}{k}\left|f(\theta)\right|^2
 \end{equation}
@@ -194,23 +194,14 @@ Using the identity
 \begin{equation}
   e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty}{ \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}}
 \end{equation}
-\begin{equation}
-  e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty}{ \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}}
-\end{equation}
 we set $ a_{m} = -i^{-|m|} $ and inserting into \eqref{psiAsymp} we get another equation
-
-\begin{equation}
-\label{asymp2Psi}
-\begin{split}
-  & \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m} \\[.8em]
-& (-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
-  \end{split}
+\begin{equation}\label{asymp2Psi}
+  \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m} 
+ (-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
 \end{equation}
-
 where we used the asymptotic form
 \begin{equation}
-H^{(1)}_{m} \rightarrow \sqrt{\frac{2}{\pi k R}} \,
-  e^{\left (i \, (k \, R -\frac{m \pi}{2} -\frac{\pi}{4}) \right )}.
+H^{(1)}_{m} \rightarrow \sqrt{\frac{2}{\pi k R}} \, e^{\left[i \, (k \, R -\frac{m \pi}{2} -\frac{\pi}{4}) \right]}.
 \end{equation}
 We can solve for the coefficients $b_{|m|}$ by matching the radial logarithmic derivative
 \begin{equation}
@@ -224,18 +215,14 @@ tends to a constant value $b_{|m|} $ at $ R>R_{c}$.
 
 Using the expression
 \begin{equation}
-  {\bf j} = Re \Bigl [\frac{-i}{\mu} \, \psi^{*}({\bf R}){\nabla }\psi^{*}({\bf R})  \Bigr ]
+  {\bf j} = Re \left[\frac{-i}{\mu} \, \psi^{*}({\bf R}){\nabla }\psi^{*}({\bf R}) \right]
 \end{equation}
 where ${\bf \nabla}$ is the two-dimensional gradient operator for the probability current, we obtain for the incident current
 along the $z-$ direction
 \begin{equation}
 j_{inc} = \frac{ k}{\mu}
 \end{equation}
-and
-for the leading order term of outgoing radial current
-\begin{equation}
-j_{r} = \frac{k}{R \mu } f^{*}(\phi)f(\phi)
-\end{equation}
+and for the leading order term of outgoing radial current
 \begin{equation}
 j_{r} = \frac{k}{R \mu } f^{*}(\phi)f(\phi)
 \end{equation}
@@ -244,7 +231,7 @@ Defining the cross section as the ratio of particle flux scattered into the regi
 d\sigma   \equiv   |f(\phi)|^2 \, d\phi
 \end{equation}
 
-Comparing equation \eqref{psiAsymp} with equation \eqref{asymp2Psi} we find that
+Comparing equation \eqref{psiAsymp} with e similar equation \eqref{asymp2Psi} we find that
 \begin{equation}
 f(\phi) = \sqrt{\frac{2}{\pi k}} \sum_{m} (-1)^{(m+1)} e^{- i \frac{\pi}{4}}\,e^{i m \phi} \,b_{|m|}
 \end{equation}
