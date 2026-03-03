@@ -181,24 +181,22 @@ where we suppressed the $g,u$ superscripts in the radial functions, and the prim
 In the asymptotic region as $ R \rightarrow \infty $ and $ V_{g,u} \rightarrow 0$,
 Eq. \eqref{FZg} tends to the Bessel equation for integer order, and the radial solutions tend to
 \begin{equation}\label{FAmpl}
-F_{m}(R)\rightarrow a_{m} \, J_{|m|}(k R) +
-b_{m} H^{(1)}_{|m|}(k R)
+F_{m}(R)\rightarrow a_{m} \, J_{|m|}(k R) + b_{m} H^{(1)}_{|m|}(k R)
 \end{equation}
-where $J_{m}(k R)$ is the regular Bessel function
-and $ H^{1}_{m}(k R) $ is a Hankel function of the first kind,
-and $a_{m},b_{m} $ are constants. We impose the boundary condition
+where $J_{m}(k R)$ is the regular Bessel function and $ H^{1}_{m}(k R) $ is a Hankel function of the first kind, and $a_{m},b_{m} $ are constants. We impose the boundary condition
 \begin{equation}\label{psiAsymp}
-\psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi} + f(\phi) \, \frac{e^{i \, k  R}}{\sqrt{R}} .
+\psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi} + f(\phi) \, \frac{e^{i \, k  R}}{\sqrt{R}} 
 \end{equation}
 Using the identity 
 \begin{equation}
-  e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty}{ \, -i^{-|m|} J_{|m|}( k R) e^{i m \phi}}
+  e^{i k R \cos\phi} = \sum_{m=-\infty}^{m=\infty}{-i^{-|m|} J_{|m|}(k\,R) e^{i m \phi}}
 \end{equation}
 we set $ a_{m} = -i^{-|m|} $ and inserting into \eqref{psiAsymp} we get another equation
-\begin{equation}\label{asymp2Psi}
-  \psi({\bf R}) \rightarrow e^{i \, k R \, \cos\phi}+ \nonumber \frac{e^{ i k R}}{\sqrt{R}} \, \sqrt{\frac{2}{\pi k}} \sum_{m} 
- (-1)^{(m+1)} e^{- i \frac{\pi}{4}} e^{i m \phi} \,b_{m}
+
+\begin{equation}\label{zaaa}
+  \psi({\bf R} \rightarrow e^{i\,k R \, \cos\phi} + \frac{e^{ikR}}{\sqrt{R}}\sqrt{\frac{2}{\pi\,k}}\sum_{m}(-1)^{m+1}e^{-i\frac{\pi}{4}}e^{im\phi}b_{m}
 \end{equation}
+
 where we used the asymptotic form
 \begin{equation}
 H^{(1)}_{m} \rightarrow \sqrt{\frac{2}{\pi k R}} \, e^{\left[i \, (k \, R -\frac{m \pi}{2} -\frac{\pi}{4}) \right]}.
@@ -231,7 +229,7 @@ Defining the cross section as the ratio of particle flux scattered into the regi
 d\sigma   \equiv   |f(\phi)|^2 \, d\phi
 \end{equation}
 
-Comparing equation \eqref{psiAsymp} with the equation \eqref{asymp2Psi} we find that
+Comparing equation \eqref{psiAsymp} with the equation \eqref{zaaa} we find that
 \begin{equation}
 f(\phi) = \sqrt{\frac{2}{\pi k}} \sum_{m} (-1)^{(m+1)} e^{- i \frac{\pi}{4}}\,e^{i m \phi} \,b_{|m|}
 \end{equation}
