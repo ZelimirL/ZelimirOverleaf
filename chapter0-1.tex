@@ -129,7 +129,7 @@ The definition:
 \section{Selection rules and consequences}
 Electric dipole transitions: transitions between electronic states follow the parity selection rule. The electric dipole operator is odd (Ungerade). Therefore, allowed transitions must change parity: $ g \rightarrow u $. Transitions $ g \rightarrow g $ or $ u \rightarrow u $ are electric dipole forbidden (though allowed by higher multipoles or vibronic coupling).
 \\
-Orbital interactions: orbitals can only mix (form nonzero overlap/hybridize) if they belong to the same symmetry species, including parity. Thus, g orbitals do not mix with u orbitals.
+Orbital interactions: orbitals can only mix (form nonzero overlap/hybridize) if they belong to the same symmetry species, including parity. Thus, $ g $ orbitals do not mix with $ u $ orbitals.
 
 
 \section{LCAO}
@@ -185,11 +185,17 @@ In Table \ref{tab:lcaotabG}, we present the accurate and LCAO values for the ger
 
 Graphical comparison of the accurate vs LCAO potential for the gerade state. The exact potential is shown in Red, and the approximation is shown in blue.
 
+\begin{figure}[ht]
 \includegraphics{"Vg-Vs-LCAO-good"}
+  \caption{Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state}
+\end{figure}
 
 This is more readily observed in the enhanced plot.
 
+\begin{figure}[ht]
 \includegraphics{"Vg-Vs-LCAO-2"}
+  \caption{Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state, enhanced plot}
+\end{figure}
 
 The above graphs show the accurate gerade potentials (red dots) versus those obtained with the simple LCAO method described above.
 We observe that for $R > 10$, there is fair agreement; the agreement is poorer for $R < 10$. This is a reasonable result, as the LCAO, which includes only the ground-state orbital, is a poor description in the molecular region.
@@ -198,7 +204,10 @@ We now show the same comparison for the ungerade state in Table \ref{tab:lcaotab
 
 Graphical comparison of the accurate and LCAO potentials for the ungerade state.
 
+\begin{figure}[H]
 \includegraphics{"Vu-Vs-LCAO-good"}
+  \caption{Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ 1st  ungerade state}
+\end{figure}
 
 Unlike for the gerade state, in the ungerade case the LCAO is quite a good approximation to the accurate potential. \\
 The reason is the symmetries of the gerade and ungerade states and the overlap integral \eqref{eq:soverlap}.
@@ -210,27 +219,32 @@ In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf 
 
 In the following figures, we show the atomic orbitals for the gerade and ungerade cases as a function of the internuclear distance R.
 
-%\includepdf[pages=-,pagecommand=\subsubsection{Gerade potentials as function of the internuclear distance R},offset=0 -1.5cm]{Ger-Lcao-Graphs.pdf}
-
-\begin{figure}[!htp]
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \noindent\includegraphics[width=\linewidth]{Ger-Lcao-Graphs}
     \caption{Gerade Orbitals}\par\medskip
-\noindent\includegraphics[width=1\textwidth]{Ger-Lcao-Graphs}
-\end{figure}
-\vspace{-10.cm}
-\begin{figure}[!htp]
-  \caption{Gerade Orbitals in 3D}\par\medskip
-\noindent\includegraphics[width=1\textwidth]{Ger-Lcao-3D-Graphs}
-\end{figure}
-\vspace{-10.cm}
-\begin{figure}[H]
-  \caption{Ungerade Orbitals}\par\medskip
-\noindent\includegraphics[width=1\textwidth]{UnGer-Lcao-Graphs}
-\end{figure}
-
-\begin{figure}[H]
-  \caption{Ungerade Orbitals 3D}\par\medskip
-\noindent\includegraphics[width=1\textwidth]{UnGer-Lcao-3D-Graphs}
-\end{figure}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \noindent\includegraphics[width=\linewidth]{Ger-Lcao-3D-Graphs}
+    \caption{Gerade Orbitals in 3D}\par\medskip
+  \end{subfigure}
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \noindent\includegraphics[width=\linewidth]{UnGer-Lcao-Graphs}
+    \caption{Ungerade Orbitals}\par\medskip
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \noindent\includegraphics[width=\linewidth]{UnGer-Lcao-3D-Graphs}
+    \caption{Ungerade Orbitals 3D}\par\medskip
+  \end{subfigure}
+  \caption*{Plot of LCAO potentials}
+  \end{figure}
 
 Following our previous discussion, we have determined that our LCAO example provides only a rough qualitative description of the two-dimensional ground state potential surfaces for the \(H_{2}^{+}\) molecule. To obtain more accurate data, we will introduce a semi-analytic procedure initially developed by Bates and his colleagues for the treatment of the three-dimensional \(H_{2}^{+}\) molecular ion in the upcoming chapters. 
 
