@@ -4,20 +4,20 @@
 
 \label{introduction}
  
-\section{Motivation}
+\section{Overview}
 % For a long time humanity asked itself about the origin of the universe, its final destiny, origin and possible evolution of its laws and humanity place in the universe.
 % Not being able to answer any of those questions, this thesis focuses on the significantly more modest goal, by examining the Hydrogen Molecular Ion in 2 dimensions (2D).
 
-Charge transfer refers to the movement of electrons or ions from one species (atom, molecule, or ion) to another. This transfer can occur through various mechanisms, including chemical reactions, electrochemical processes, and interactions with electromagnetic fields. Charge transfer can occur through several mechanisms, including chemical reactions, Electrochemical processes, Photo-induced charge transfer, and ionization.
+Charge transfer (CT) refers to the movement of electrons or ions from one species (atom, molecule, or ion) to another. This transfer can occur through various mechanisms, including chemical reactions, electrochemical processes, and interactions with electromagnetic fields. Charge transfer can occur through several mechanisms, including chemical reactions, Electrochemical processes, Photoinduced charge transfer, and ionization.
 
 \begin{itemize}
-\item{Chemical reactions}\\
+\item{Chemical reactions}
   Charge transfer occurs when electrons are exchanged between the reactants.
-\item{Electrochemical processes}\\
+\item{Electrochemical processes}
   Electrochemical reactions involve the transfer of electrons between electrodes and electrolytes. This is the main process in batteries, where the transfer of electrons creates an electric current.
-\item{Photo-induced charge transfer}\\
+\item{Photo-induced charge transfer}
   In this scenario, the charge transfer is induced by light. It is the process in photosynthesis, photovoltaic cells, and optical devices.
-\item{Ionization processes}\\
+\item{Ionization processes}
   These processes often occur in plasmas or atmospheric chemistry. The charge transfer in this environment leads to the formation of ions. A large part of the visible universe is plasma, including stars, nebulae, interstellar space, and intergalactic space. Understanding charge transfer leads to a better understanding of the formation of these cosmic bodies.
 \end{itemize}
 
@@ -30,153 +30,313 @@ Charge transfer refers to the movement of electrons or ions from one species (at
 % QM has increasingly found applications in information theory, material, and the life sciences, areas that traditionally used to lie in the domain of classical physics. Within information theory, a new computing paradigm is emerging. It is recognized that the quantum theory allows the processing of information \cite{QIP} not available within the classical framework.
 % The principles of QM have enabled a novel and powerful information processing platform, quantum computing. The latter's basic component is called a qubit \cite{qubits} and is the quantum analog of the bit, the lowest common denominator of classical information. Qubits are fragile in that quantum coherence, which gives the quantum computer its power, requires a noise-free environment that is difficult to establish and maintain in the laboratory. Several platforms for qubit technologies have been explored, including trapped ions and superconducting circuits \cite{qubits2}. At present, it is not known if present-day qubit technologies can be scaled to build a functional and useful quantum computer.
 
-One promising platform, topological quantum computing \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter. In the past few decades, there have been great strides in creating 2D materials that promise novel applications.\cite{Nature2D}
-To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular levels. In this thesis, we will explore ions' interactions with the neutral matter in a 2D environment. Specific topics include non-radiative and radiative charge transfer reactions. Such processes are important in 3D gases, as in astrophysical and laboratory plasma environments, and have attracted much attention \cite{plasma}
+\subsection{CT in the ultra-cold regime}
+\noindent
+Over the past several decades, cold and ultracold atom physics has evolved into a cornerstone of atomic, molecular, and optical (AMO) science. Advances in laser cooling, trapping, and coherent control have enabled the preparation of atomic systems at temperatures at which quantum mechanics governs both internal and external degrees of freedom. Within the AMO framework, cold-atom research is distinguished by its exceptional experimental tunability and isolation from environmental noise, enabling quantitative tests of quantum theory and the controlled exploration of interacting many-body systems. These capabilities place cold atoms at the intersection of traditional atomic physics, quantum optics, and modern quantum many-body theory.
 
-In this thesis, we will calculate the rate of the radiative and charge transfer reactions between a positively charged ion and neutral 2D hydrogen at very low collision energies. In our formalism, the particles are constrained to move in a 2D manifold, but the emitted radiation can propagate in 3D. This study will provide insight into how constrained 2D dynamics affect the rate coefficient for radiative charge transfer.
+\medskip
+\noindent
+A central motivation for cold atom research is the ability to study atomic interactions in the ultralow-energy regime, where scattering processes are governed by universal principles. At microkelvin and nanokelvin temperatures, collisions are dominated by a small number of partial waves, allowing interactions to be characterized by a few experimentally accessible parameters. The development of magnetically tunable Feshbach resonances has provided a powerful tool for controlling these interactions, enabling continuous tuning from weak to strong coupling. This level of control has facilitated precision studies of few-body physics, including universal bound states and resonant scattering phenomena, as well as systematic investigations of strongly correlated quantum gases. From an AMO perspective, these advances represent a natural extension of collision and scattering physics into a fully quantum-controlled regime.
 
-\section{Some Applications of the 2D Quantum Mechanics}
-Quantum Mechanics was developed during the first quarter of the 20th century, and its methods have been applied to increasingly complex systems. QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
+\medskip
+\noindent
+Cold-atom platforms also play a vital role in precision measurements, a long-standing strength of AMO physics. Laser-cooled atoms underpin the most accurate frequency standards currently available, with optical lattice clocks achieving extraordinary stability and accuracy. These systems provide sensitive probes of fundamental symmetries and potential variations of fundamental constants, while also enabling practical advances in timekeeping and navigation. In parallel, matter-wave interferometry with cold atoms exploits long coherence times and precise control over atomic wave packets to achieve high sensitivity to inertial and gravitational effects. Such experiments exemplify the dual intellectual and practical impact of cold atom research within the AMO tradition.
 
- In this introduction, we discuss two major applications.
- One is a creation of the novel, 2-dimensional materials.
- The second is the application of 2D materials to quantum computing.
+\medskip
+\noindent
+Beyond precision measurement, cold atoms serve as model quantum systems in which complex many-body phenomena can be studied from first principles. Optical lattices formed by interfering laser fields allow neutral atoms to be arranged in highly controllable periodic potentials, providing clean realizations of lattice Hamiltonians relevant to condensed matter physics. Unlike solid-state systems, these atomic analogues are largely free of disorder and can be dynamically tuned, enabling controlled exploration of quantum magnetism, superfluidity, and correlated fermionic behavior. For AMO researchers, this represents an opportunity to investigate emergent quantum phenomena while retaining the microscopic control and measurement capabilities characteristic of atomic physics.
+
+\medskip
+\noindent
+Recent years have also seen growing interest in hybrid systems that combine trapped ions with ultracold neutral atoms. Cold ion--atom platforms merge two mature areas of AMO physics—ion trapping and ultracold neutral gases—into a single experimental setting. The ion--atom interaction is dominated by a long-range polarization potential, leading to scattering and collision dynamics that differ qualitatively from those of neutral atoms alone. These systems, therefore, open a distinct regime of cold collision physics, offering new opportunities to test theoretical models of quantum scattering, charge exchange, and controlled chemical processes at ultralow energies.
+
+\medskip
+\noindent
+From a fundamental standpoint, cold ion--atom systems provide a versatile platform for studying impurity physics and nonequilibrium dynamics in quantum environments. A single trapped ion immersed in a cold atomic gas can act as a well-localized probe of many-body behavior, enabling studies of decoherence, energy exchange, and transport at the microscopic level. These questions connect directly to core AMO themes, including open quantum systems and the interplay between coherent control and dissipation. While hybrid ion--atom experiments pose unique technical challenges, continued progress in this area is rapidly expanding the range of experimentally accessible phenomena.
+
+\medskip
+\noindent
+In summary, research in cold atom physics is motivated by its unique capacity to unify precision measurement, controlled interactions, and quantum many-body dynamics within a single AMO framework. Over the past few decades, cold atoms have transformed the scope of atomic physics, enabling quantitative studies of complex quantum phenomena with unprecedented clarity. The emergence of cold ion--atom systems represents a natural and complementary extension of this progress, broadening the experimental and theoretical landscape of AMO physics. Together, these platforms continue to provide fertile ground for fundamental discovery while supporting the development of future quantum technologies.
+
+In this thesis, we focus on two distinct applications of CT. In a recent study, published in the authoritative Physical Review Letters
+(cite reference) xxx et al reported an enhanced radiative association
+rate of the $Yb^{+}$ ion in collisions with $Ca$ at temperatures in
+the sub-Kelvin regime. The reported rate was about five orders of magnitude larger than previous measurements of similar species
+at those temperatures, and the authors posited that a new mechanism beyond Langevin behavior was responsible for the enhanced rate.
+
+Here, we report on our independent investigation of
+this collision process. Our results, published in (xx), find that Langevin behavior persists into the sub-mK region, and
+predict a CT association rate for the $YbCa^{+}$ molecule that is orders
+of magnitude smaller than that reported in the cited measurements.
+The results of our investigation have prompted the authors of the laboratory study to reconsider the interpretation of their measurements.
+
+However, in carrying out calculations into the ultracold regime in which only a few partial waves contribute, we find dramatic isotopic behavior not reported, to the best of our knowledge, in the current literature. This discovery was highlighted in a Europhysics feature article (find citation) subsequent to our publications. Our calculations are the first of their kind for this collision system, and in the first part of this thesis, we review and elaborate on our calculations. 
+
+In the second part of the thesis, we explore charge transfer (CT) in a two-dimensional (2D) environment, in which the collision partners are confined to trajectories on a 2D plane. This investigation is motivated by two primary factors. 
+
+First, advances in laboratory techniques and device fabrication over the past few decades have significantly improved the development of 2D materials. Therefore, it is relevant to examine a fundamental process like CT through theoretical investigations.
+
+Second, it is recognized that quantum exchange symmetry behaves quite differently in 2D compared to three-dimensional (3D) systems. In 3D, particles are classified into two types: fermions and bosons. The probability amplitude for fermions changes sign under particle interchange, whereas for bosons it remains symmetric. These characteristics have profound implications for the structure of matter.
+
+In the early 1980s, it became widely accepted that the conventional distinctions between fermionic and bosonic behavior no longer applied to 2D systems. Indeed, in 2D, exchange symmetry allows for a variety of phase dependencies in the scattering amplitudes of identical particles. Particles that exhibit these properties are referred to as anyons.
+
+In this thesis, we will focus on the \( H-H^{+} \) system as the subject of our investigations. In this context, the ground states for \( H_{2}^{+} \) are degenerate, and the charge transfer (CT) reaction, in which an electron from a neutral hydrogen atom is captured by a proton, is referred to as resonant charge transfer. Since collisions in the ultra-cold regime require a molecular-based description, we will need to generate potential energy curves in a two-dimensional (2D) domain. Most quantum chemistry codes use three-dimensional (3D) orbitals, developed over the past 70 years for 3D dynamics; therefore, we must develop techniques specifically for the 2D system. Additionally, we will explore, for the first time, how anyonic behavior affects resonant charge transfer in the ultralow energy regime.
+
+The outline of this thesis is structured as follows: Below, we provide a brief review of the general theoretical approaches to calculating charge transfer rates in ion-atom processes in 3D. In Chapter 1, We will then focus on the general theory and methodology employed to calculate radiative charge transfer. A detailed disc
+
+\section{Overview of CT theories}
+\subsubsection{Classical descriptions: COB model}
+The classical 'over the barrier model' \cite{BransdenMcDowell1992} treats an electron as being inside a potential well. The well's potential is described by the function
+\begin{equation}
+  V(r) = -\frac{q}{x} - \frac{1}{\lvert R - r \rvert}
+\end{equation}
+where $ r $ is the distance of the bound electron from the incoming nucleus. $ R $ is the distance between the nuclei, and $ q $ is the charge of the ion.
+
+Potential has it maximum as $ V_{max} = -\left(\sqrt{q} + 1\right)^2/R $. The electron attaches itself to an incoming ion if its binding energy, perturbed by the electron–ion Coulomb energy $ -1/2 - q/R $ becomes greater that $ V_{max} $.
+
+Assuming that the electron's binding energy is $ E_n = -q^2/2n^2 $ where $ n $ is a principal quantum number, energy conservation requires that
+\begin{equation}
+  -\frac{1}{2} - \frac{q}{R} = E_n - \frac{1}{R}
+\end{equation}
+Together these relations predict the largest value of $ R $ where the electron is transferred to an incoming ion with an energy $ E_n $ to be:
+\begin{equation}\label{COBRT}
+  R_n = \frac{2(q-1)}{q^2/n^2-1}
+\end{equation}
+Assuming the transfer probability of $ 1/2 $ this model predicts the total charge transfer cross section to be:
+\begin{equation}
+  \sigma_{CT} = \frac{\pi}{2}R_{n^*}^2
+\end{equation}
+where $ n^* $ is the value of $ n $ in equation \eqref{COBRT} where the equality holds. We shall compare this value with the value obtained by our method. But generally speaking this method fails to give the correct values for the very low energy processes \cite{osti_6533174}.
+
+\subsubsection{Quantum descriptions I: Langevin Orbiting}
+Since the preceding model fails to give the correct prediction a new, still classical model was suggested by P. Langevin. In this model, the incoming ion introduces the energy shift of the electron's ground state by
+\begin{equation}
+  \Delta E = -\frac{1}{2}\alpha|E|^2  
+ \end{equation}
+ where $ \alpha $ is called the polarizability of the atom and $ E = q/R^2 $. The mutually attractive potential has the form :
+\begin{equation}
+  V_{pol}(R) = -\frac{C_4}{R^4}\,\,\,\,\,C_4 = \frac{\alpha}{2}q^2
+\end{equation}
+in addition to the centripetal potential
+\begin{equation}
+  V_L(R) = \frac{L(L+1)}{2\mu R^2}
+\end{equation}
+where $ L = \mu v b $ is an angular momentum and $ b $ is an impact parameter. For a given $ b $, the effective potential, the sum of $ V_{pol} $ and $ V_L $ possesses a local maximum $ V_{max}(b) $ at critical value $ R_c $.
+At the end this model predicts the total charge transfer cross section to be:
+\begin{equation}
+  \sigma_{CT} = 2\pi \int_0^{b_c}{db\, b} = \pi b_c^2 = \frac{\pi}{v}\sqrt{\frac{8 C_4}{\mu}} = \frac{2\pi q}{v}\sqrt{\frac{\alpha}{\mu}}
+\end{equation}
+
+\subsubsection{Quantum descriptions II: Landau–Zener–Rosen Theories}
+This is a semi-classical method that offers a quick analytic formula, which takes into account the quantum nature of the motion, to estimate CT rates in systems in which the molecular potentials share an avoided crossing.  We shall skip the detailed derivation, just to note that this model predicts the cross section to be:
+\begin{equation}
+\begin{split}
+  & \sigma_{CT} = 2\pi \int_0^{R_c}{b P(b) db} \\[.8em]
+  & P(b) = \frac{1}{2}sech^2\left(\frac{\pi \Delta E(R_c)}{2\lambda v(b)}\right).
+\end{split}
+\end{equation}
+{\Large \it Define the parameters here !}
+
+
+\subsection{Quantum descriptions III, MOCC Approach}
+
+The Molecular Orbital Approach (MOCC) assumes that the total system amplitude is expressed as a sum of electronic
+eigenstates, whose expansion coefficients describe the motion of the nuclear coordinate R. There are two versions of
+this theory. In the first, the nuclear motion is treated classically, but the electronic degrees of freedom are treated quantum mechanically. This approach, the method of perturbed stationary states (PSS), was first advocated by Massey and Smith in 1932.
+The quantum version of this theory treats both the nuclear motion and the electronic degrees of freedom quantum mechanically. It was developed by David Bates and coworkers in the 1950s. It was not much used since it required a sizable computing power. So only in the 80s the fully quantum MOCC computation becomes available. \cite{ZygelmanCT}.
+
+In the fully quantum expressions of the PSS equations we get for the wavefunction
+
+\begin{equation}
+  \Psi(\mathbf{r},\mathbf{R}) = \sum_n^N{\phi_n(\mathbf{r},\mathbf{R})F_n(R)}
+\end{equation}
+where $ F_n(R) $ are quantal amplitudes that predict the prob- ability for the system to occupy the n-th electronic states
+at R. Index $ N $ basically includes all the states that are energetically open.
+The states $ \phi_n $ form a complete set
+\begin{equation}
+  \sum_n{\phi_n^{\dag}(\mathbf{r},\mathbf{R})F_n(R)\phi_n(\mathbf{r'},\mathbf{R})F_n(R)} = \delta(\mathbf{r} - \mathbf{r'})
+\end{equation}
+and we can integrate out the degrees of freedom associated with the electrons and derive an effective Schrödinger description, for the amplitudes $F_{n}(\bf R)$ that describe the motion of the nucleii. In Chapter 1, we will apply this method to calculate 
+the CT and CT-induced molecular association rates for the
+$ Yb^{+}-Ca$ system.
+% While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
+
+% \subsection*{Length gauge}
+
+% This is an interesting approach, which could potentially be used in calculation. In this thesis we would not be using it.
+
+% The length gauge is a gauge transformation that replaces the vector potential for the field by the scalar potential for the quasi-static electric field \cite{LengthGauge3}.  In this gauge we take the Hamiltonian as: $ H = \mathbf{p}^2/2m + V(\mathbf{r})  + e\mathbf{E}\mathbf{r} $. The length gauge is convenient since both the Coulomb and the external fields are represented by the scalar potentials, which are additive. In the presence of the radiation field, the length gauge is obtained by the gauge transformation of the vector potential $ \mathbf{A} $, such that $ \mathbf{A} \rightarrow \mathbf{A} + \nabla \chi $ where $ \chi = - \mathbf{r} \cdot \mathbf{A} $.
+
+% In the length gauge, the interaction Hamiltonian is:
+% \begin{equation}
+% \begin{split}
+% & H_{int} = -\sum_j{ \mathbf{r}\cdot\mathbf{E} } \\[.8em]
+% & \mathbf{E} = i\,\sum_{k\alpha}{\left(\frac{2\pi c k}{V}\right)^{1/2}\hat{\epsilon}_{k\alpha}\left(a_{k\alpha} - a^{\dagger}_{k\alpha}\right)}
+% \end{split}
+% \end{equation}
+% where $ a_{k\alpha} $ and $ a^{\dagger}_{k\alpha} $ are destruction and creation operators for the photon of momentum $ \hbar k $ and polarization $ \alpha $ respectively.
+
+
+
+
+
+
+
+
+
+% One promising platform, topological quantum computing \cite{Tqc1,Tqc2,Tqc3, Tqc4, Tqc5}, relies on the unusual quantum properties of 2-dimensional (2D) matter. In the past few decades, there have been great strides in creating 2D materials that promise novel applications.\cite{Nature2D}
+% To facilitate this emergent technology, it is imperative that we understand, at a fundamental level, the processes that govern the behavior of matter at the atomic and molecular levels. In this thesis, we will explore ions' interactions with the neutral matter in a 2D environment. Specific topics include non-radiative and radiative charge transfer reactions. Such processes are important in 3D gases, as in astrophysical and laboratory plasma environments, and have attracted much attention \cite{plasma}
+
+% In this thesis, we will calculate the rate of the radiative and charge transfer reactions between a positively charged ion and neutral 2D hydrogen at very low collision energies. In our formalism, the particles are constrained to move in a 2D manifold, but the emitted radiation can propagate in 3D. This study will provide insight into how constrained 2D dynamics affect the rate coefficient for radiative charge transfer.
+
+% \section{Some Applications of the 2D Quantum Mechanics}
+% Quantum Mechanics was developed during the first quarter of the 20th century, and its methods have been applied to increasingly complex systems. QM has allowed the development of novel electronic components, lasers, high-speed telecommunications, new diagnostic technologies in medicine, and new materials.
+
+%  In this introduction, we discuss two major applications.
+%  One is a creation of the novel, 2-dimensional materials.
+%  The second is the application of 2D materials to quantum computing.
  
- \section{New Materials}
+%  \section{New Materials}
 
-The application of QM to solid-state systems has led to a deeper understanding of the properties of materials. That understanding has led to the creation of new materials, including so-called two-dimensional (2D) materials.
+% The application of QM to solid-state systems has led to a deeper understanding of the properties of materials. That understanding has led to the creation of new materials, including so-called two-dimensional (2D) materials.
  
-2D materials can exhibit unique topological properties that do not exist in the 3D case. An exciting and important feature in this context is the emergence of anyons \cite{anyonsR}. Anyons are neither Fermions nor Bosons. The exchange of two anyons induces an arbitrary relative phase between the partners; an effect called fractional statistics.
-In 3D space, the relative phase can only take the integer values of $2 \pi $ (Bosons) or $ \pi$ (Fermions).
+% 2D materials can exhibit unique topological properties that do not exist in the 3D case. An exciting and important feature in this context is the emergence of anyons \cite{anyonsR}. Anyons are neither Fermions nor Bosons. The exchange of two anyons induces an arbitrary relative phase between the partners; an effect called fractional statistics.
+% In 3D space, the relative phase can only take the integer values of $2 \pi $ (Bosons) or $ \pi$ (Fermions).
  
-\section{On 2D Materials No-Go Theorems and Graphene}
+% \section{On 2D Materials No-Go Theorems and Graphene}
 
-Landau and Pierls\cite{LandauG}\cite{Pierls} initially argued that 2D materials could not exist. That argument posited that the displacement of atoms at finite temperatures induces thermal fluctuations that are an order of the atomic distance and lead to melting of the 2D material at temperatures higher than $ 0 K $. 
+% Landau and Pierls\cite{LandauG}\cite{Pierls} initially argued that 2D materials could not exist. That argument posited that the displacement of atoms at finite temperatures induces thermal fluctuations that are an order of the atomic distance and lead to melting of the 2D material at temperatures higher than $ 0 K $. 
 
-There is an even stronger statement against 2D materials, in the form of the Mermin-Wagner-Hohenberg (MWH) theorem \cite{Hohenberg}\cite{Mermin2}. In these papers, the authors show that 2D systems with short-range interactions are unstable and cannot exist.  Using thermodynamics arguments, one can show that a 3D system is stable if its free energy is bounded from below and convex (upwards). In this way, the system can minimize the energy of the ground state. Because higher-order fluctuations are finite, the system is stable.
-The MWH argument posits that, in 2D systems, fluctuations around the ordered state (lattice in the 2D case) decorrelate over large distances, thus destroying the large-scale order. 
-Therefore, it seemed that the possible existence and applications of the 2D materials were quite limited. The only 2D materials considered stable were thin molecular films, which could form on a solids' surface. Dash\cite{2DMatter1} predicted that 2D materials exist as a thin film either on the surface of the boundaries of 3D materials.
+% There is an even stronger statement against 2D materials, in the form of the Mermin-Wagner-Hohenberg (MWH) theorem \cite{Hohenberg}\cite{Mermin2}. In these papers, the authors show that 2D systems with short-range interactions are unstable and cannot exist.  Using thermodynamics arguments, one can show that a 3D system is stable if its free energy is bounded from below and convex (upwards). In this way, the system can minimize the energy of the ground state. Because higher-order fluctuations are finite, the system is stable.
+% The MWH argument posits that, in 2D systems, fluctuations around the ordered state (lattice in the 2D case) decorrelate over large distances, thus destroying the large-scale order. 
+% Therefore, it seemed that the possible existence and applications of the 2D materials were quite limited. The only 2D materials considered stable were thin molecular films, which could form on a solids' surface. Dash\cite{2DMatter1} predicted that 2D materials exist as a thin film either on the surface of the boundaries of 3D materials.
 
-Despite those arguments, it has been speculated that stable 2D materials are possible\cite{2DMatter1}. The situation changed dramatically in 2004 when 2D carbon (graphene) was discovered and created in the laboratory\cite{Graphene0, GrapheneN} at the University of Manchester, Great Britain. 
+% Despite those arguments, it has been speculated that stable 2D materials are possible\cite{2DMatter1}. The situation changed dramatically in 2004 when 2D carbon (graphene) was discovered and created in the laboratory\cite{Graphene0, GrapheneN} at the University of Manchester, Great Britain. 
 
-2D materials have qualitatively different topological properties\cite{2DMatterCurvature}. Moreover, those properties do not depend on the type of microscopic interactions between particles. While this subject is beyond the scope of this thesis, it does show that the field of 2D materials is a fertile ground for both fundamental and applied research. Interestingly, it has been shown \cite{GraphLayers} that it takes ten layers of graphene for it to start behaving like a 'regular' 3D material.  
-The existence of graphene does not contradict the above-mentioned no-go theorem \cite{Mermin2}, but it does circumvent it \cite{GrapheneRiples}. In graphene, thermal oscillations produce ripples or bending of the graphene sheet. That way, graphene behaves like an elastic membrane that allows phonons to propagate in 2 dimensions and couple in a plane stretching along the transverse fluctuations out of the plane. These phonons mediate a long-range interaction, thereby circumventing the Mermin-Wagner no-go theorem. 
+% 2D materials have qualitatively different topological properties\cite{2DMatterCurvature}. Moreover, those properties do not depend on the type of microscopic interactions between particles. While this subject is beyond the scope of this thesis, it does show that the field of 2D materials is a fertile ground for both fundamental and applied research. Interestingly, it has been shown \cite{GraphLayers} that it takes ten layers of graphene for it to start behaving like a 'regular' 3D material.  
+% The existence of graphene does not contradict the above-mentioned no-go theorem \cite{Mermin2}, but it does circumvent it \cite{GrapheneRiples}. In graphene, thermal oscillations produce ripples or bending of the graphene sheet. That way, graphene behaves like an elastic membrane that allows phonons to propagate in 2 dimensions and couple in a plane stretching along the transverse fluctuations out of the plane. These phonons mediate a long-range interaction, thereby circumventing the Mermin-Wagner no-go theorem. 
 
-Additionally \cite{Graphene0} \cite{Dirac2}\cite{Dirac3},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the material's electronic properties. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions.  
+% Additionally \cite{Graphene0} \cite{Dirac2}\cite{Dirac3},2D materials exhibit several other interesting properties. Its quantum excitations behave in a manner described by relativistic dynamics. Usually, in condensed matter systems, the Schrodinger equation's solutions describe the material's electronic properties. In graphene, the electrons obey the non-relativistic Schrodinger equation, but interactions with the graphene lattice's periodic potential give rise to solutions referred to as quasiparticles excitations, and they behave in the same manner as massless Dirac fermions. Even at low energies, these quasiparticles are described by a Dirac equation in 2+1 dimensions.  
 
-\subsection{Excitons}
-These excitations represent a wide class of intrinsic electronic excitations (Excitons) \cite{Excitons1, Excitons2} in crystals of semiconductors and dielectrics. In one model, Excitons represent a bound state of an electron and a hole, typically formed when an incident photon is absorbed, exciting an electron from the valence to the conduction band. The attractive Coulomb interaction between the excited electron and the newly created hole binds them together to form a bound neutral compound system of the two charge carriers similar to a hydrogen atom. 
-The character of exciton motion depends on the strength of the exciton interaction with phonons. The electron-hole model is common in crystals of insulators and semiconductors.
-Ya. I. Frenkel (1931) introduced excitons to explain the light absorption in crystals, which does not lead to photoconductivity. In the Frenkel model, the exciton is considered as an electronic excitation of one crystal site with the energy close to, but a bit smaller than that necessary for the excitation of a free electron. Due to the crystal's translation symmetry, the exciton can move along the lattice sites transferring the energy to the electrically active or luminescence centers.
+% \subsection{Excitons}
+% These excitations represent a wide class of intrinsic electronic excitations (Excitons) \cite{Excitons1, Excitons2} in crystals of semiconductors and dielectrics. In one model, Excitons represent a bound state of an electron and a hole, typically formed when an incident photon is absorbed, exciting an electron from the valence to the conduction band. The attractive Coulomb interaction between the excited electron and the newly created hole binds them together to form a bound neutral compound system of the two charge carriers similar to a hydrogen atom. 
+% The character of exciton motion depends on the strength of the exciton interaction with phonons. The electron-hole model is common in crystals of insulators and semiconductors.
+% Ya. I. Frenkel (1931) introduced excitons to explain the light absorption in crystals, which does not lead to photoconductivity. In the Frenkel model, the exciton is considered as an electronic excitation of one crystal site with the energy close to, but a bit smaller than that necessary for the excitation of a free electron. Due to the crystal's translation symmetry, the exciton can move along the lattice sites transferring the energy to the electrically active or luminescence centers.
 
-Similar excitations occur in 2D systems. \cite{Excitons2D1,Excitons2D3}. 2D excitons promise to form a building block of the 2D electronics. \cite{Excitons2D2}.  Although exciton-based transistor actions have been demonstrated successfully in bulk semiconductor-based coupled quantum wells, the low temperature required for their operation limits their practical application. The emergence of 2D semiconductors with large exciton binding energies may lead to excitonic devices and circuits that operate at room temperature. \cite{Excitons2D2}.
+% Similar excitations occur in 2D systems. \cite{Excitons2D1,Excitons2D3}. 2D excitons promise to form a building block of the 2D electronics. \cite{Excitons2D2}.  Although exciton-based transistor actions have been demonstrated successfully in bulk semiconductor-based coupled quantum wells, the low temperature required for their operation limits their practical application. The emergence of 2D semiconductors with large exciton binding energies may lead to excitonic devices and circuits that operate at room temperature. \cite{Excitons2D2}.
 
-\subsection{Graphene}
-Graphene exhibits similar properties\cite{Graphene0}, such as its Quantum Electrodynamics (QED) like electronic spectrum, electron tunneling. Another interesting consequence of the QED like electron spectrum is the possibility of experimentally studying QED in curved space by controllable bending of a graphene sheet. Such study may offer a possibility to address a certain class of cosmological problems. 
+% \subsection{Graphene}
+% Graphene exhibits similar properties\cite{Graphene0}, such as its Quantum Electrodynamics (QED) like electronic spectrum, electron tunneling. Another interesting consequence of the QED like electron spectrum is the possibility of experimentally studying QED in curved space by controllable bending of a graphene sheet. Such study may offer a possibility to address a certain class of cosmological problems. 
 
-At present, since the discovery of graphene, several new 2D materials have been identified\cite{Many2DMaterials}. 
-As the new 2D materials are getting discovered, people are investigating their possible applications. One of the very useful applications for any exotic materials is electronics. These new 2D materials promise that they can be used to build existing electronic components, but with potentially better performances \cite{2DEJour1}\cite{2DEJour2}.
+% At present, since the discovery of graphene, several new 2D materials have been identified\cite{Many2DMaterials}. 
+% As the new 2D materials are getting discovered, people are investigating their possible applications. One of the very useful applications for any exotic materials is electronics. These new 2D materials promise that they can be used to build existing electronic components, but with potentially better performances \cite{2DEJour1}\cite{2DEJour2}.
 
-Nanotubes are rolled-up graphene sheets, and depending on the application, graphene (as a sheet) is sometimes superior, sometimes inferior, and sometimes completely different. The other fascinating application is the appearance of high-temperature superconductivity in 2D materials\cite{2DSuper}.
+% Nanotubes are rolled-up graphene sheets, and depending on the application, graphene (as a sheet) is sometimes superior, sometimes inferior, and sometimes completely different. The other fascinating application is the appearance of high-temperature superconductivity in 2D materials\cite{2DSuper}.
 
-\subsection*{2D Electronics}
-Driven by a demand for higher performance and lower consumption in electronic devices, 2D materials have found application in that arena\cite{2DEJour1},\cite{2DEJour2}. 
-There is the hope that graphene can be used to build active electronic components, such as diodes, transistors (FET), and other electronic components. Alternatively, graphene may also be used as a conductor in electronic components and batteries due to its conductivity. graphene itself is a zero-gap semiconductor. There is another unique opportunity in 2D semiconductors. In a 3D semiconductor, electronic states are buried deep inside the material. Unlike the surface state, electron states inside the material are localized, i.e., the wave function has an exponentially decaying tail.
+% \subsection*{2D Electronics}
+% Driven by a demand for higher performance and lower consumption in electronic devices, 2D materials have found application in that arena\cite{2DEJour1},\cite{2DEJour2}. 
+% There is the hope that graphene can be used to build active electronic components, such as diodes, transistors (FET), and other electronic components. Alternatively, graphene may also be used as a conductor in electronic components and batteries due to its conductivity. graphene itself is a zero-gap semiconductor. There is another unique opportunity in 2D semiconductors. In a 3D semiconductor, electronic states are buried deep inside the material. Unlike the surface state, electron states inside the material are localized, i.e., the wave function has an exponentially decaying tail.
 
-In 2D semiconductors, the electronic states exist
-on the surface. The surface states admit both localized and non-localized, Block bulk states \cite{LocStates}.
-Another interesting application of 2D electronics is the LED elements in 2D \cite{2DLED}. The electronics research is closely related to the research of new 2D materials. For example, graphene itself is not compatible with silicon. However, there is a new material, black phosphorus\cite{2DPhos}, which is both compatible with silicon and it holds promise for future electronic\cite{2DPhos3} devices. This fact relies on two key properties; the first is that black phosphorus has higher mobility, the speed at which it can carry an electrical charge, than silicon. The other is that it has a finite bandgap, whereas graphene does not. So, in essence, in the presence of an electric field, black phosphorus can act as a semiconductor\cite{2DPhos2}.
+% In 2D semiconductors, the electronic states exist
+% on the surface. The surface states admit both localized and non-localized, Block bulk states \cite{LocStates}.
+% Another interesting application of 2D electronics is the LED elements in 2D \cite{2DLED}. The electronics research is closely related to the research of new 2D materials. For example, graphene itself is not compatible with silicon. However, there is a new material, black phosphorus\cite{2DPhos}, which is both compatible with silicon and it holds promise for future electronic\cite{2DPhos3} devices. This fact relies on two key properties; the first is that black phosphorus has higher mobility, the speed at which it can carry an electrical charge, than silicon. The other is that it has a finite bandgap, whereas graphene does not. So, in essence, in the presence of an electric field, black phosphorus can act as a semiconductor\cite{2DPhos2}.
 
-\subsection*{Quantum Computing}
+% \subsection*{Quantum Computing}
 
-The current computer architecture is based on the so-called 'von Neumann' architecture. The algorithms based on that architecture have some inherent limits, and as it currently stands, the architecture cannot overcome those limits.
+% The current computer architecture is based on the so-called 'von Neumann' architecture. The algorithms based on that architecture have some inherent limits, and as it currently stands, the architecture cannot overcome those limits.
 
-There are two main classes of computer algorithms, P and NP. There are subclasses within those classes, but those two classes capture the essential behavior of classical algorithms. The algorithms belonging to class P are solvable in polynomial time, with regard to the size of the input. Those algorithms belonging to class NP are those which require exponential time to complete\cite{PvsNP}.
+% There are two main classes of computer algorithms, P and NP. There are subclasses within those classes, but those two classes capture the essential behavior of classical algorithms. The algorithms belonging to class P are solvable in polynomial time, with regard to the size of the input. Those algorithms belonging to class NP are those which require exponential time to complete\cite{PvsNP}.
 
-Currently, the major unsolved problem in Computer Science is the P vs. NP problem \cite{PvsNP}. While the hypothesis that $ P \neq NP $ is generally accepted, no proof has been found. Applying quantum mechanical principles in engineering disciplines, such as computer science \cite{FQC} promises to bring us the much qualitatively more powerful quantum computer. 
+% Currently, the major unsolved problem in Computer Science is the P vs. NP problem \cite{PvsNP}. While the hypothesis that $ P \neq NP $ is generally accepted, no proof has been found. Applying quantum mechanical principles in engineering disciplines, such as computer science \cite{FQC} promises to bring us the much qualitatively more powerful quantum computer. 
 
- Now all problems in the NP class (more precisely, NP-complete subclass) can be transformed into each other in polynomial time to each other \cite{NPComplete},  therefore finding a polynomial-time solution for one of them would amount to having a polynomial-time solution to all problems in NP class. So the goal is rather worthy. 
+%  Now all problems in the NP class (more precisely, NP-complete subclass) can be transformed into each other in polynomial time to each other \cite{NPComplete},  therefore finding a polynomial-time solution for one of them would amount to having a polynomial-time solution to all problems in NP class. So the goal is rather worthy. 
 
-Currently, it is known that the quantum computer will not be able to solve NP problems. They could solve the class of the bounded-error, quantum, polynomial time (BQP) problems \cite{BQP}. 
-Even if the NP problems remain intractable, just the possibility that according to Feynman \cite{FQC}, a quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. 
+% Currently, it is known that the quantum computer will not be able to solve NP problems. They could solve the class of the bounded-error, quantum, polynomial time (BQP) problems \cite{BQP}. 
+% Even if the NP problems remain intractable, just the possibility that according to Feynman \cite{FQC}, a quantum computer can be used to simulate the quantum processes, which will in itself be a step forward. 
 
-For example, Schor's algorithm \cite{Schor} can provably solve integer factorization in a polynomial time, as opposed to the best classical algorithm (quadratic sieve), which works in sub-exponential time \cite{Pomerance}. Unfortunately, the integer factorization problem, as well as other BQP problems, do not belong to the class of NP-complete problems. 
+% For example, Schor's algorithm \cite{Schor} can provably solve integer factorization in a polynomial time, as opposed to the best classical algorithm (quadratic sieve), which works in sub-exponential time \cite{Pomerance}. Unfortunately, the integer factorization problem, as well as other BQP problems, do not belong to the class of NP-complete problems. 
 
-Interestingly, according to Abrams and Lloyd \cite{Abrams_1998}, \cite{Abrams_1999} if the small nonlinear term is added to Quantum Mechanics, quantum computers would be able to solve NP-complete problems in polynomial time.
+% Interestingly, according to Abrams and Lloyd \cite{Abrams_1998}, \cite{Abrams_1999} if the small nonlinear term is added to Quantum Mechanics, quantum computers would be able to solve NP-complete problems in polynomial time.
 
-\subsection*{Topological Quantum Computing}
-The concept of topological quantum computing \cite{Tqc1}
-depends on the unique properties of 2D materials.  In principle, there are no theoretical objections to building a quantum computer; there are serious technical issues, such as noise and scaling limitations, for current qubit technologies that need to be overcome\cite{QCProblems}. 
-The topological approach promises a physically realizable quantum computer\cite{Tqc2,Tqc3}. 
-
-\subsection*{Anyons}
-Anyons are quasi-particles that can arise in 2D systems and whose quantum statistics in neither Fermionic nor Bosonic \cite{Anyons1}.  This fact has been proven\cite{Anyons2}, but
-arbitrary statistics are valid only in 2 dimensions \cite{Walsh}. After exchanging two identical particles, the wave function gains an arbitrary phase factor $ \Psi = e^{i\theta}\Psi $, where $ \theta = 2\pi\nu^{s} $. In contrast, for a 3D system, the exchange of two particles leads to either phase factor $ \pi $ or $ 0 $, for fermions and bosons, respectively.
-
-In general, there are two kinds of Anyons, Abelian and non-Abelian. Abelian Anyons have been reliably detected in systems exhibiting the Fractional Quantum Hall Effect\cite{FQHE}.  Whereas the computation with Abelian Anyons is theoretically possible \cite{AbelianAnyons}, considerably more attention has been paid to non-Abelian Anyons.
-There are several possibilities for realizing non-abelian statistics experimentally: 
-\begin{itemize}
-  \item A two-dimensional electron gas in a large magnetic field (the fractional quantum Hall effect)
- \item Rapidly rotating Bose-Einstein condensates\cite{RrBeC} 
- \item Frustrated magnets \cite{FrMag}.
- \item One of the anyons candidates the Majorana fermion \cite{Majorana}. 
-\end{itemize}
-Majorana fermion (particle) the particle that is its own antiparticle. A pair of localized Majorana states has been predicted to reside at the ends of a specially designed superconducting wire.  Very recently (2020) \cite{Manna8775}
-there is a possibility that Majorana particles has been observed for the first time. The other property of the Majorana fermion is that it is a non-Abelian anyon.
-This present the possibility for the realization of fault-tolerant topological quantum computing\cite{AnyonsTqc}. 
-
-\subsection*{Excitons and Trions}
-Other interesting quasiparticle phenomena are called excitons \cite{Excitons2D1}. It is a bound state of a hole and an electron in a solid-state material. Excitons allow the transport of energy without the transport of an electric charge. There are two types of excitons: 
-
-1. Frenkel excitons are found in organic molecular crystals\cite{Excitons3} and have binding energies on
-order of $ 1eV $ and radii $ ~ 10\text{\AA} $.  
+% \subsection*{Topological Quantum Computing}
+% The concept of topological quantum computing \cite{Tqc1}
+% depends on the unique properties of 2D materials.  In principle, there are no theoretical objections to building a quantum computer; there are serious technical issues, such as noise and scaling limitations, for current qubit technologies that need to be overcome\cite{QCProblems}. 
+% The topological approach promises a physically realizable quantum computer\cite{Tqc2,Tqc3}. 
+% \subsection{Overview of CT theory for low energy collisions in 3D}
 
 
-2. Wannier excitons are found in semiconductors\cite{Excitons2} and have binding energies on the order of $ ~1 meV $ with radii$ ~100\text{\AA}. $
 
 
-Excitons have been observed in 2D materials\cite{Excitons2D2} as
-well as 2D excitons in 3D materials. The promise here is that these kinds of quasi-particles can help create a new kind of electronic components, typically opto-electronics.
+% \subsection*{Anyons}
+% Anyons are quasi-particles that can arise in 2D systems and whose quantum statistics in neither Fermionic nor Bosonic \cite{Anyons1}.  This fact has been proven\cite{Anyons2}, but
+% arbitrary statistics are valid only in 2 dimensions \cite{Walsh}. After exchanging two identical particles, the wave function gains an arbitrary phase factor $ \Psi = e^{i\theta}\Psi $, where $ \theta = 2\pi\nu^{s} $. In contrast, for a 3D system, the exchange of two particles leads to either phase factor $ \pi $ or $ 0 $, for fermions and bosons, respectively.
 
-Since the exciton system resembles either the hydrogen atom or the hydrogen molecule, and it seems conceivable that the dynamics of  $ H_2^{+} $ molecule is qualitatively similar and could be applied to the excitons systems as well.
+% In general, there are two kinds of Anyons, Abelian and non-Abelian. Abelian Anyons have been reliably detected in systems exhibiting the Fractional Quantum Hall Effect\cite{FQHE}.  Whereas the computation with Abelian Anyons is theoretically possible \cite{AbelianAnyons}, considerably more attention has been paid to non-Abelian Anyons.
+% There are several possibilities for realizing non-abelian statistics experimentally: 
+% \begin{itemize}
+%   \item A two-dimensional electron gas in a large magnetic field (the fractional quantum Hall effect)
+%  \item Rapidly rotating Bose-Einstein condensates\cite{RrBeC} 
+%  \item Frustrated magnets \cite{FrMag}.
+%  \item One of the anyons candidates the Majorana fermion \cite{Majorana}. 
+% \end{itemize}
+% Majorana fermion (particle) the particle that is its own antiparticle. A pair of localized Majorana states has been predicted to reside at the ends of a specially designed superconducting wire.  Very recently (2020) \cite{Manna8775}
+% there is a possibility that Majorana particles has been observed for the first time. The other property of the Majorana fermion is that it is a non-Abelian anyon.
+% This present the possibility for the realization of fault-tolerant topological quantum computing\cite{AnyonsTqc}. 
 
-The similar system is the trion, a bound state of three charged particles. It consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecular ion. 
 
-\section{Ion - Atom Charge Transfer}
 
-Charge transfer refers to the movement of electrons or ions from one species (atom, molecule or ion) to another. This transfer can occur through various mechanisms, including chemical reactions, electrochemical processes and interactions with electromagnetic fields. The charge transfer can occur through several mechanisms, such as Chemical reactions, Electrochemical processes, Photo induced charge transfer, Ionization processes.
+% \subsection*{Excitons and Trions}
+% Other interesting quasiparticle phenomena are called excitons \cite{Excitons2D1}. It is a bound state of a hole and an electron in a solid-state material. Excitons allow the transport of energy without the transport of an electric charge. There are two types of excitons: 
 
-\begin{itemize}
-\item{Chemical reactions}
-  Charge transfer occurs when electrons are exchanged between the reactants.
-\item{Electrochemical processes}
-  Electrochemical reactions involve the transfer of electrons between electrodes and electrolytes. This is the main process in batteries, where transfer of electrons create an electric current.
-\item{Photo induced charge transfer}
-  In this scenario the charge transfer is induced by light. It the process in photosynthesis, photovoltaic cells and optical devices.
-\item{Ionization processes}
-  These process often occur in plasmas or atmospheric chemistry. The charge transfer in these environment leads to the formations of ions. The large part of visible universe is plasma, including stars, nebulae interstellar space, and intergalactic space. Understanding charge transfer leads to better understanding of the formation of these cosmic bodies.
-\end{itemize}
+% 1. Frenkel excitons are found in organic molecular crystals\cite{Excitons3} and have binding energies on
+% order of $ 1eV $ and radii $ ~ 10\text{\AA} $.  
 
-The charge transfer is a major part of these processes: Chemical reactivity, Energy conversion and storage, Biological processes, Creating electronic devices.
 
-In this thesis we shall consider a non-relativistic charge transfer that occurs at low energies in 2 dimensions (2D). 
+% 2. Wannier excitons are found in semiconductors\cite{Excitons2} and have binding energies on the order of $ ~1 meV $ with radii$ ~100\text{\AA}. $
 
-Given that the universe is 3 dimensional, obviously most of the processes and application listed above are not applicable in 2D. But we have already seen that there exist a 2D materials. Thus the 2D charge transfer calculations can be applied to those kind of materials. Those 2D materials also offer promises of a new electronic devices, whose behaviour is governed by the charge transfer.
 
-We address the charge transfer processes in more details in \autoref{chap:RRP}
+% Excitons have been observed in 2D materials\cite{Excitons2D2} as
+% well as 2D excitons in 3D materials. The promise here is that these kinds of quasi-particles can help create a new kind of electronic components, typically opto-electronics.
 
-\subsection*{Future Applications and Speculations}
+% Since the exciton system resembles either the hydrogen atom or the hydrogen molecule, and it seems conceivable that the dynamics of  $ H_2^{+} $ molecule is qualitatively similar and could be applied to the excitons systems as well.
 
-While the applications of the 2D materials above are certainly interesting, creating an exact analytical  model of such material is extremely complex. Even with today's computing machinery, the many-body wave equation is intractable.  
+% The similar system is the trion, a bound state of three charged particles. It consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecular ion. 
 
-Equations for many bodies systems may formally be created by extending equations for a one or two bodies systems. But as soon as one tries that, one realizes that the complexity of such equations increases enormously, and than assumptions  made for a small systems are not valid any more. In this author's opinion, moving from a simple system to an order of magnitude more complex, requires a completely new mathematical and physical framework. Something analogous between the classical mechanics and thermodynamics.
+% \section{Ion - Atom Charge Transfer}
 
-\section*{Outline}
-In this thesis, we will focus on investigating and solving the radiative charge transfer for the most straightforward molecular system, namely hydrogen molecular ion $ {H_2^{+}}  $ in 2 dimensions (2D in the further text), and solving such system in 2D exactly.  Chapter 2 we will compare results applying our method to the already solved and known $ {H_2^{+}} $ results in 3D. Then in chapter 3, we will introduce the procedure to analytically solve the $ {H_2^{+}} $ in 2D. After providing an analytical solution, we will fall back to the numerical methods to calculate the energy levels and obtain the potential curves. In chapter 4, we use the results obtained to calculate the dipole moment and the cross section for the radiative charge transfer process.
+% Charge transfer refers to the movement of electrons or ions from one species (atom, molecule or ion) to another. This transfer can occur through various mechanisms, including chemical reactions, electrochemical processes and interactions with electromagnetic fields. The charge transfer can occur through several mechanisms, such as Chemical reactions, Electrochemical processes, Photo induced charge transfer, Ionization processes.
 
-In the following chapter, we re-calculate the electron energies for hydrogen molecular ion in 3D by using a different and arguably simpler approach.
+% \begin{itemize}
+% \item{Chemical reactions}
+%   Charge transfer occurs when electrons are exchanged between the reactants.
+% \item{Electrochemical processes}
+%   Electrochemical reactions involve the transfer of electrons between electrodes and electrolytes. This is the main process in batteries, where transfer of electrons create an electric current.
+% \item{Photo induced charge transfer}
+%   In this scenario the charge transfer is induced by light. It the process in photosynthesis, photovoltaic cells and optical devices.
+% \item{Ionization processes}
+%   These process often occur in plasmas or atmospheric chemistry. The charge transfer in these environment leads to the formations of ions. The large part of visible universe is plasma, including stars, nebulae interstellar space, and intergalactic space. Understanding charge transfer leads to better understanding of the formation of these cosmic bodies.
+% \end{itemize}
 
-We shall use analytic methods where possible and resort to the numerical approach when there is no hope of finding an analytic solution.
-Quantitative calculations have greatly enabled the advancement of computing technology, as it is now possible to solve partial differential equations relatively quickly using computers that are widely accessible.  However, applying approximate methods and using only numerical methods allow limited insights. While the numerical methods provide results, they do not provide much insight into a quantum system's behavior. Furthermore, unless one is cautious, systemic numerical errors can accumulate and lead to neither insightful nor correct results. Therefore, analytic solutions are almost always desirable. However, for moderately complex systems, closed analytic solutions are usually impossible to obtain. Nevertheless, it is still desirable to find an exact analytic solution,  if possible, and fall back to numerical methods only as a last step. 
+% The charge transfer is a major part of these processes: Chemical reactivity, Energy conversion and storage, Biological processes, Creating electronic devices.
 
-Finally, while naturally occurring 2D atoms and molecules do not exist, excitons are proven to exist, and they are analogous to the 2D atoms. So we explore the $ H_2 $ molecule so that we gain insights that can be translated into excitons.
+% In this thesis we shall consider a non-relativistic charge transfer that occurs at low energies in 2 dimensions (2D). 
+
+% Given that the universe is 3 dimensional, obviously most of the processes and application listed above are not applicable in 2D. But we have already seen that there exist a 2D materials. Thus the 2D charge transfer calculations can be applied to those kind of materials. Those 2D materials also offer promises of a new electronic devices, whose behaviour is governed by the charge transfer.
+
+% We address the charge transfer processes in more details in \autoref{chap:RRF}
+
+% \subsection*{Future Applications and Speculations}
+
+% While the applications of the 2D materials above are certainly interesting, creating an exact analytical  model of such material is extremely complex. Even with today's computing machinery, the many-body wave equation is intractable.  
+
+% Equations for many bodies systems may formally be created by extending equations for a one or two bodies systems. But as soon as one tries that, one realizes that the complexity of such equations increases enormously, and than assumptions  made for a small systems are not valid any more. In this author's opinion, moving from a simple system to an order of magnitude more complex, requires a completely new mathematical and physical framework. Something analogous between the classical mechanics and thermodynamics.
+
+% \section*{Outline}
+% In this thesis, we will focus on investigating and solving the radiative charge transfer for the most straightforward molecular system, namely hydrogen molecular ion $ {H_2^{+}}  $ in 2 dimensions (2D in the further text), and solving such system in 2D exactly.  Chapter 2 we will compare results applying our method to the already solved and known $ {H_2^{+}} $ results in 3D. Then in chapter 3, we will introduce the procedure to analytically solve the $ {H_2^{+}} $ in 2D. After providing an analytical solution, we will fall back to the numerical methods to calculate the energy levels and obtain the potential curves. In chapter 4, we use the results obtained to calculate the dipole moment and the cross section for the radiative charge transfer process.
+
+% In the following chapter, we re-calculate the electron energies for hydrogen molecular ion in 3D by using a different and arguably simpler approach.
+
+% We shall use analytic methods where possible and resort to the numerical approach when there is no hope of finding an analytic solution.
+% Quantitative calculations have greatly enabled the advancement of computing technology, as it is now possible to solve partial differential equations relatively quickly using computers that are widely accessible.  However, applying approximate methods and using only numerical methods allow limited insights. While the numerical methods provide results, they do not provide much insight into a quantum system's behavior. Furthermore, unless one is cautious, systemic numerical errors can accumulate and lead to neither insightful nor correct results. Therefore, analytic solutions are almost always desirable. However, for moderately complex systems, closed analytic solutions are usually impossible to obtain. Nevertheless, it is still desirable to find an exact analytic solution,  if possible, and fall back to numerical methods only as a last step. 
+
+% Finally, while naturally occurring 2D atoms and molecules do not exist, excitons are proven to exist, and they are analogous to the 2D atoms. So we explore the $ H_2 $ molecule so that we gain insights that can be translated into excitons.
