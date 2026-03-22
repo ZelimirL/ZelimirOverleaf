@@ -369,39 +369,6 @@ We also calculated the resonant charge transfer cross for each of the first 5 pa
 
 % The relevant code is in appendix \ref{AppendixF}
 
-\section{Anyons}
-
-Here we briefly discuss the anyon case, i.e since the two $ H_2^{+} $ nuclei are confined in 2D, they obey neither Fermi-Dirac nor Bose-Einstein statistics.
-
-The preceding form of the 2D Schrodinger equation and its solution in 2D remain the same. For two identical particles, in polar coordinates  we impose:
-\begin{equation}
-  \Psi(r,\theta + 2\pi) = e^{i2\pi\alpha}\Psi(r,\theta) 
-  \end{equation}
-  where we have for $ \alpha = 0 $ - bosons, $ \alpha = 1/2 $ - fermions, $ \alpha = \text{any other value} $ - anyons.
-
-In the anyon case, the partial waves becomes fractional, i.e. the phase shift and scattering matrix elements become: 
-\begin{equation}
-  \delta_m(k), S_m(k) \rightarrow  \delta_{m+\alpha}(k), S_{m+\alpha}(k)
-\end{equation}
-and the scattering amplitude becomes fractional
-\begin{equation}
-  f_{\alpha}(\theta) = \frac{1}{\sqrt{2\pi k}}\sum_{m=-\infty}^{\infty}{\left(S_{m+\alpha}-1\right)e^{i m \theta}}
-\end{equation}
-
-Finally the scattering cross section changes to:
-\begin{equation}
-  \sigma(k;\alpha) = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\sin^2(\delta_{m+\beta})}
-\end{equation}
-
-The charge transfer cross section becomes:
-\begin{equation}
-  \sigma_{CT}(k;\alpha) = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\left|\delta_{m+\beta}^{+}-\delta_{m+\beta}^{-}\right|}
-\end{equation}
-
-Note that protons are not anyons in 3D. To make them behave as anyons we need 2D topological medium or quantum Hall effect. 
-
-The rest of the computation would be same, taking into account the additional phase.
-
 \begin{table}[ht]
   \caption{Accurate LCAO Energy as Function or R (internuclear distance) for the gerade state}
   \centering
@@ -475,5 +442,91 @@ The rest of the computation would be same, taking into account the additional ph
   \hline
    \end{tabular}
 \end{table}
+
+\section{Anyons}
+
+Here we briefly discuss the anyon case, i.e since the two $ H_2^{+} $ nuclei are confined in 2D, they obey neither Fermi-Dirac nor Bose-Einstein statistics.
+
+The preceding form of the 2D Schrodinger equation and its solution in 2D remain the same. For two identical particles, in polar coordinates  we impose:
+\begin{equation}
+  \Psi(r,\theta + 2\pi) = e^{i2\pi\alpha}\Psi(r,\theta) 
+  \end{equation}
+  where we have for $ \alpha = 0 $ - bosons, $ \alpha = 1/2 $ - fermions, $ \alpha = \text{any other value} $ - anyons.
+
+In the anyon case, the partial waves becomes fractional, i.e. the phase shift and scattering matrix elements become: 
+\begin{equation}
+  \delta_m(k), S_m(k) \rightarrow  \delta_{m+\alpha}(k), S_{m+\alpha}(k)
+\end{equation}
+and the scattering amplitude becomes fractional
+\begin{equation}
+  f_{\alpha}(\theta) = \frac{1}{\sqrt{2\pi k}}\sum_{m=-\infty}^{\infty}{\left(S_{m+\alpha}-1\right)e^{i m \theta}}
+\end{equation}
+
+Finally the scattering cross section changes to:
+\begin{equation}
+  \sigma(k;\alpha) = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\sin^2(\delta_{m+\beta})}
+\end{equation}
+
+The charge transfer cross section becomes:
+\begin{equation}
+  \sigma_{CT}(k;\alpha) = \frac{4}{k}\sum_{m=-\infty}^{+\infty}{\left|\delta_{m+\beta}^{+}-\delta_{m+\beta}^{-}\right|}
+\end{equation}
+
+Note that protons are not anyons in 3D. To make them behave as anyons we need 2D topological medium or quantum Hall effect. 
+
+\section{Role of Symmetry and Anyonic Flux tube}
+
+The nuclei of the H molecule are identical fermions, and so we enforce standard symmetry requirements for the latter. Symmetrization requires the inclusion of the spin degree of freedom, and here, we assume that both nuclei are spin- polarized. 
+
+Therefore, under traditional interpretations in which the nuclei are Fermions, we take the spatial component of the wave amplitude to be anti-symmetric under interchange $ P_{12}\pmb{R}_{1} \rightarrow \pmb{R}_2  $ or $ P_{12}\pmb{R} \rightarrow -\pmb{R}  $ where $ P_{12} $ is an interchange operator. Now since
+\begin{equation}
+\begin{split}
+  &  F = \psi_g(\pmb{R})\phi_g + \psi_u(\pmb{R})\phi_u \\[.8em]
+  &  P_{12}F = \psi_g(-\pmb{R})\phi_g + \psi_u(-\pmb{R})\phi_u
+\end{split}
+\end{equation}
+We symmetrize by requiring the amplitude
+\begin{equation}
+F \rightarrow (\psi_g(\pmb{R}) - \psi_g(-\pmb{R}))\phi_g + (\psi_u(\pmb{R}) - \psi_u(-\pmb{R}))\phi_u
+\end{equation}
+  or
+\begin{equation}
+\begin{split}
+  &  F \rightarrow \sqrt{2}(e^{ikR\cos\phi} + e^{-ikR\cos\phi})\phi_a + \sqrt{2}(f_g(\phi) - f_g(\phi + \pi) + f_u(\phi) - f_u(\phi + \pi))\phi_a \\[.8em]
+  & + \sqrt{2}(f_g(\phi) - f_g(\phi + \pi) - f_u(\phi) + f_u(\phi + \pi))
+\end{split}
+\end{equation}
+Thus
+\begin{equation}
+\begin{split}
+  & \sigma_{RCT} = \frac{1}{8}\int_0^{2\pi}{\left|f_g(\phi) - f_g(\phi + \pi) - f_u(\phi) + f_u(\phi + \pi)\right|} = \\[.8em]
+  & \frac{2}{k}\sum_{m=\pm 1, \pm 3, ...}{\left|b_m^g - b_m^u\right|^2}
+\end{split}
+\end{equation}
+In a pioneering paper, J. M. Leinass and J. Myrheim \cite{LeinassMyrheim} argued that in two dimensions, identical particles can exhibit interchange statistics that differ from Bosons or Fermions. As emphasized, the topology of the configuration space of identical particles in a 2D spatial manifold differs from that of a 3-dimensional manifold. The latter allows the amplitude $ \psi(\pmb{r}_1,\pmb{r}_2) $ for the pair of identical particles to obey $ P_{12}\psi(\pmb{r}_1,\pmb{r}_2) = e^{i\alpha}\psi(\pmb{r}_2,\pmb{r}_1) $ where $ \alpha $ is an arbitrary constant.
+For Fermions $  \alpha = \frac{1}{2} $, and for Bosons $  \alpha = 1 $.
+
+Particles that differ from Fermion/Boson statistics are called Anyons \cite{Wilzceck1982}. Whether such particles exist in nature is of topical and intense investigation. Several studies have examined the role of the latter in the bulk properties of an Anyon gas \cite{AROVAS1985117}. There are two popular methods used to enforce Anyonic statistics among identical particles.  The first involves positing a Chern-Simons \cite{IENGO1992179} term that couples each anyon to a pure gauge field. Alternatively, one posits the presence of an Aharonov-Bohm infinitesimal magnetic flux tube piercing the Anyon at an angle perpendicular to the 2D plane(see Fig \ref{AHBAnyon}).
+We shall assume the latter for the nuclei of our collision partners. Hence, the Hamiltonian for a pair of 2D $ H $ atoms, whose
+nuclei are Anyons, takes the form
+\begin{equation}
+  H = \frac{1}{2m}(\pmb{p}_1 - \pmb{A}) + \frac{1}{2m}(\pmb{p}_2 - \pmb{A}) + H^{'}(\pmb{r}_1, \pmb{r}_2)
+\end{equation}
+where $ H^{'}(\pmb{r}_1, \pmb{r}_2) $ includes the electronic kinetic energy an all Coulombic interac-
+tions discussed in the previous chapters.
+\begin{equation}
+A \equiv \frac{\alpha}{2\pi}\frac{n \times (\pmb(r)_1 - \pmb(r)_2)}{\left|\pmb(r)_1 - \pmb(r)_2\right|^2}
+\end{equation}
+is a gauge potential \cite{YSWU}. Here $ \pmb{n} $ a unit normal vector to the 2D scattering plane. Introducing the relative coordinates
+\begin{equation}
+\begin{split}
+  & \pmb{R} = \pmb(r)_2 - \pmb(r)_1 \\[.8em]
+  & R_{CM} = \frac{1}{2}(\pmb(r)_2 + \pmb(r)_1)
+\end{split}
+\end{equation}
+The Schrodinger equation for the relative motion $ F(\pmb{R}) $ becomes
+\begin{equation}
+  -\frac{1}{2\mu}(\nabla - i\pmb(A))^2F(\pmb{R}) + V_{g,u}(R)F(\pmb{R}) - EF(\pmb{R}) = 0
+
 
 
