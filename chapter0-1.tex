@@ -1,9 +1,8 @@
-\chapter{CT Processes in Two Dimensions}
+\chapter{Charge Transfer Processes in Two Dimensions}
 \label{chap:2DS}
 In this part of the thesis, we will consider the following resonant charge transfer process 
-\begin{equation}
+\begin{equation}\label{H22D1}
 H^{+} + H \rightarrow H + H^{+}
-  \label{H22D1}
 \end{equation}
 i.e., the exchange of an electron in the collision of a proton
 with a hydrogen atom. This fundamental CT process has been
@@ -13,7 +12,7 @@ and nuclei are constrained to move in two dimensions.
 The motivation for this study stems from advances in laboratory
 studies of 2D systems and the fabrication of quantum materials in 2D. Thus, fundamental collision processes must be investigated theoretically in 2 dimensions. 
 2D materials hold great promise for innovative applications. To advance this emerging technology, it is essential to gain a fundamental understanding of the processes that govern the behavior of matter at the atomic and molecular levels. In this thesis, we will examine the interactions of ions with neutral matter in a 2D environment. 
-Before we focus on the calculation of Eq. (xx), we review, below, some advances in the physics of 2D systems.
+Before we focus on the calculation of Eq. \eqref{H22D1}, we review, below, some advances in the physics of 2D systems.
 \subsection{Overview of 2D material science}
 2D materials can exhibit unique topological properties that do not exist in the 3D case. An exciting and important feature in this context is the emergence of anyons \cite{anyonsR}. Anyons are neither Fermions nor Bosons. The exchange of two anyons induces an arbitrary relative phase between the partners; an effect called fractional statistics.
 In 3D space, the relative phase can only take the integer values of $2 \pi $ (Bosons) or $ \pi$ (Fermions).
@@ -129,12 +128,6 @@ The definition:
   \item Ungerade(u): an orbital wavefunction $ \Psi(r) $ is ungerade if it changes sign under inversion: $ \Psi(-r) = -\Psi(r)  $. It has odd parity. Example $ 2p\sigma_u $.
 \end{itemize}
 
-\section{Selection rules and consequences}
-Electric dipole transitions: transitions between electronic states follow the parity selection rule. The electric dipole operator is odd (Ungerade). Therefore, allowed transitions must change parity: $ g \rightarrow u $. Transitions $ g \rightarrow g $ or $ u \rightarrow u $ are electric dipole forbidden (though allowed by higher multipoles or vibronic coupling).
-\\
-Orbital interactions: orbitals can only mix (form nonzero overlap/hybridize) if they belong to the same symmetry species, including parity. Thus, $ g $ orbitals do not mix with $ u $ orbitals.
-
-
 \section{LCAO}
 The ground state expression gives amplitude for the 2-dimensional hydrogen atom \cite{YangXL}
 \begin{equation}
@@ -184,7 +177,7 @@ In the same manner, we obtain the BO energy for the ungerade BO state,
 \psi_{u}({\bf r},{\bf R}) =\frac{1}{\sqrt{2 (1- S(R) )}}\int d^2 {\bf r} \, \Bigl ( \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) \Bigr ).
 \end{equation}
 
-In Table \ref{tab:lcaotabG}, we present the accurate and LCAO values for the gerade state.
+In chapter \ref{h2plus2DPotential} we shall compute the accurate solution of the 2D potential. Here for illustration, in Table \ref{tab:lcaotabG}, we present the accurate and LCAO values for the gerade state.
 
 Graphical comparison of the accurate vs LCAO potential for the gerade state. The exact potential is shown in Red, and the approximation is shown in blue.
 
@@ -222,32 +215,26 @@ In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf 
 
 In the following figures, we show the atomic orbitals for the gerade and ungerade cases as a function of the internuclear distance R.
 
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}[t]{0.45\textwidth}
+\begin{figure}[ht]
     \centering
     \noindent\includegraphics[width=\linewidth]{Ger-Lcao-Graphs}
-    \caption{Gerade Orbitals}\par\medskip
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+    \caption{Gerade Orbitals obtained from the LCAO approximation}
+\end{figure}
+\begin{figure}[ht]
     \centering
     \noindent\includegraphics[width=\linewidth]{Ger-Lcao-3D-Graphs}
-    \caption{Gerade Orbitals in 3D}\par\medskip
-  \end{subfigure}
-  \begin{subfigure}[t]{0.45\textwidth}
+    \caption{Gerade Orbitals in 3D from the same LCAO approximation}
+\end{figure}
+\begin{figure}[ht]
     \centering
     \noindent\includegraphics[width=\linewidth]{UnGer-Lcao-Graphs}
-    \caption{Ungerade Orbitals}\par\medskip
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+    \caption{Ungerade Orbitals obtained from the LCAO approximation}
+\end{figure}
+\begin{figure}[ht]
     \centering
     \noindent\includegraphics[width=\linewidth]{UnGer-Lcao-3D-Graphs}
-    \caption{Ungerade Orbitals 3D}\par\medskip
-  \end{subfigure}
-  \caption*{Plot of LCAO potentials}
-  \end{figure}
+    \caption{Ungerade Orbitals 3D  from the same LCAO approximation}
+\end{figure}
 
 Following our previous discussion, we have determined that our LCAO example provides only a rough qualitative description of the two-dimensional ground state potential surfaces for the \(H_{2}^{+}\) molecule. To obtain more accurate data, we will introduce a semi-analytic procedure initially developed by Bates and his colleagues for the treatment of the three-dimensional \(H_{2}^{+}\) molecular ion in the upcoming chapters. 
 
