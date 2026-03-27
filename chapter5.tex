@@ -552,7 +552,7 @@ Here, we follow the procedure of Aharonov-Bohm and expand $ F(\pmb{R}) $ in term
   F_m^{''}(R) + \frac{F_m^{'}(R)}{R} - \frac{(m - \alpha)^2}{R^2}F_m(R) + (k^2 - 2\mu V_{g,u}(R))F_m(R) = 0
 \end{equation}
 from which we construct the amplitude in the asymptotic region
-\begin{equation}
+\begin{equation}\label{sumampl}
   \sum_{m=0,\pm 1}{e^{im\phi}\left(a_mJ_{\left| m-\alpha\right| }(kR) + b_mH_{\left| m-\alpha\right| }^{(1)}(kR)\right)}
 \end{equation}
 If we choose (see Aharonov Bohm) $ a_m = (-i)^{\left| m- \alpha \right| } $  the above expression reduces 
@@ -560,18 +560,18 @@ If we choose (see Aharonov Bohm) $ a_m = (-i)^{\left| m- \alpha \right| } $  the
 F_{g,u}\rightarrow e^{i\alpha\phi}e^{-ikz} + \frac{e^{ikR}}{\sqrt{2\pi kR}}f_{AB}(\phi) + f_{g,u}(\phi)\frac{e^{ikR}}{\sqrt{R}}
 \end{equation}
 where $ f_{AB}(\phi) $ is the Aharonov-Bohm scattering amplitude, and $ f_{g,u}(\phi) $ is given by the expression
-\begin{equation}
+\begin{equation}\label{ahbw}
   f_{g,u}(\phi) = \sqrt{\frac{2}{\pi k}}\sum_{m=\pm 1,\pm 3}{(-i)^{\left| m- \alpha \right| }e^{im\phi}b_m^{g,u}}
 \end{equation}
 where
-\begin{equation}
+\begin{equation}\label{bgu2}
   b_m^{g,u} = (-i)^{\left| m- \alpha \right| }\frac{J_{\left| m- \alpha \right| }^{'}-y_m^{g,u}J_{\left| m- \alpha \right| }}{H_{\left| m- \alpha \right| }^{'} - y_m^{g,u}J_{\left| m- \alpha \right| }}
 \end{equation}
 and the cross section becomes
 \begin{equation}
   \sigma_{CT} = \frac{2}{k}\left(\sum_{m=\pm 1, \pm 3}{\left| b_m^{(g)} - b_m^{(u)}\right|^2}\right)
 \end{equation}
-and $ J^{'}, H^{'} $ epresent derivatives with respect to $ R $, and $ y^{g,u} $ the log-derivates corresponding to gerade and ungerade potentials respectively. Following the discussion leading to Eq. (xx), we obtain the outgoing wave of the charge transfer amplitude given by Eq. (xx), but where $ b_m^{g,u} $ satisfies relation (xx), instead of (xx). Note that the terms proportional to $ f_{AB}(\phi) $ cancel as they are independent of the gerade/ungerade potentials. The restriction to odd values $ m $ is determined by the fermionic symmetry requirement of the base $ \alpha = 0 $ system.
+and $ J^{'}, H^{'} $ represent derivatives with respect to $ R $, and $ y^{g,u} $ the log-derivates corresponding to gerade and ungerade potentials respectively. Following the discussion leading to \eqref{sumampl}, we obtain the outgoing wave of the charge transfer amplitude given by \eqref{ahbw}, but where $ b_m^{g,u} $ satisfies relation \eqref{bgu2}, instead of \eqref{bm2DReg}. Note that the terms proportional to $ f_{AB}(\phi) $ cancel as they are independent of the gerade/ungerade potentials. The restriction to odd values $ m $ is determined by the fermionic symmetry requirement of the base $ \alpha = 0 $ system.
 
 
 
