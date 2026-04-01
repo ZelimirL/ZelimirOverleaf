@@ -95,62 +95,8 @@ The actual $ f(\theta) $ is not observable; however, it is used to compute diffe
 \subsubsection{\textbf{Scattering region}}
 
 In this case, we consider the scattering area, where $ V(r) \neq 0 $. In this case, we use the potential function $ V(R) $ obtained in Chapter 2 and numerically solve the 2D Schrodinger equation. To obtain the phase shift, we match the wave function in the scattering region to the wavefunction in the far-away region and use the optical theorem.
+The theory is in the follows in the next section.
 
-In these regions, the radial Schrodinger equation $ F(r) $ has the form:
-\begin{equation}\label{frrSr}
-\frac{d^2 F}{dr^2} + \frac{1}{r}\frac{dF}{dr} + \left(k^2 - 2V(r) - \frac{m^2}{r^2}\right)F = 0
-\end{equation}
-
-
-\subsubsection{Scattering Process}
-
-Now we expand:
-\begin{equation}\label{expE}
-e^{ikx} = e^{ikr\cos\theta} = \sum_m{\epsilon_m i^m \cos(m\theta)J_m(kr)}
-\end{equation}
-where $\epsilon_m = 2 $ for $ m \neq 0 $ and $ \epsilon_0 = 1 $.
-
-Note: This looks very similar to the 3D case. The main difference is that in the 2D case, the solution is a sum of cylindrical Bessel functions $ J_m(kr) $ and $ N_m(kr) $.
-In the 3D case, the solution is the sum of the spherical Bessel functions.
-
-Using asymptotic expressions for $ r \rightarrow \infty 0$:
-\begin{equation}\label{asymp2}
-\begin{split}
-& J_m(kr) \xrightarrow{r \rightarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\cos\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right) \\[.7em]
-& N_m(kr) \xrightarrow{r \rightarrow \infty}  = \sqrt{\frac{2}{\pi k r}}\sin\left(kr - \frac{m\pi}{2} - \frac{\pi}{4}\right)
-\end{split}
-\end{equation}
-The most general solution of the radial part in the absence of potential is:
-\begin{equation}\label{bigRBsl}
-R(r) = A_mJ_m(kr) + B_mN_m(kr) 
-\end{equation}
-For $ r \rightarrow\infty $ the \eqref{bigRBsl} has asymptotic form
-\begin{equation}\label{asympR}
-R(r) = A_m\frac{1}{\sqrt{kr}}\cos\left[kr-\pi\frac{m + 1/2}{2} + \delta_m\right]
-\end{equation}
-Now equating equations \eqref{asympR} and and using \eqref{expE},\eqref{asymp2} we obtain:
-\begin{equation}\label{asymR2}
-\begin{split}
-& \sum_m{\epsilon_m i^m\sqrt{\frac{2}{\pi kr}}\cos(m\theta)\cos\left[kr-\pi\frac{m + 1/2}{2}\right]} + f(\theta)\frac{e^{ikr}}{\sqrt{r}} = \\[.7em]
-& \sum_m{A_m\frac{1}{\sqrt{kr}}\cos\left[kr-\pi\frac{m + 1/2}{2} + \delta_m\right]\cos(m\theta)}
-\end{split}
-\end{equation}
-Now this can be rewritten as:
-\begin{equation}\label{asyR3}
-\begin{split}
-& \sum_m{\epsilon_m i^m \sqrt{\frac{2\cos(m\theta)}{\pi kr}}\left[e^{i\left(kr-\pi\frac{m + 1/2}{2}\right)} + e^{-i\left(kr-\pi\frac{m + 1/2}{2}\right)}\right]}
-+ f(\theta)\frac{e^{ikr}}{\sqrt{r}} = \\[.7em]
-& \sum_m{A_m\frac{\cos(m\theta)}{\sqrt{kr}}\left[e^{i\left(kr-\pi\frac{m + 1/2}{2} + \delta_m\right)} + e^{-i\left(kr-\pi\frac{m + 1/2}{2} + \delta_m\right)}\right]}
-\end{split}
-\end{equation}
-Now coefficients with $ e^{ikr} $ and $ e^{-ikr} $ must be equal. After some algebra and following \cite{2DScatter2} we get:
-\begin{equation}\label{AandDelta}
-A_m = 2\epsilon_m \frac{i^m}{\sqrt{2\pi k}}e^{i\delta_m}
-\end{equation}
-So the scattering amplitude is:
-\begin{equation}
-f(\theta) = \sqrt{\frac{1}{2\pi i k}}\sum_{m=0}^{\infty}{\epsilon_m\cos(m\theta)\left[e^{2i\delta_m}-1\right]}
-\end{equation}
 \section{Elastic Scattering}
 In the PSS (perturbed stationary state) approximation, and after factoring out the center of mass coordinates, the system wave amplitude is given by the expression
 \begin{equation}
