@@ -445,7 +445,98 @@ We also calculated the resonant charge transfer cross for each of the first 5 pa
 
 \clearpage
 
-\section{Anyons}
+\chapter{Role of Symmetry and Anyonic Flux tube}
+\label{chap:amyns}
+
+The nuclei of the H molecule are identical particles, and so we must enforce symmetry con- straints for the latter. Symmetrization requires the inclusion of the spin degree of freedom, and here, for now, we assume that both nuclei are spin-polarized. Therefore, under tradi tional interpretations in which the nuclei are fermions, we take the spatial component of the wave amplitude to be antisymmetric under interchange
+\begin{equation}
+F({\bf R},{\bf r}) = \psi_{g}({\bf R}) \phi_{g}({\bf R},{\bf r}) + \psi_{u}({\bf R}) \phi_{u}({\bf R},{\bf r})
+\end{equation}
+where $ P_{12}$ is an interchange operator. Now since
+\begin{equation}
+\begin{split}
+& F = \psi_{g}({\bf R}) \phi_{g} + \psi_{u}({\bf R}) \phi_{u} \nonumber \\
+& P_{12} F = \psi_{g}(-{\bf R}) \phi_{g} + \psi_{u}(-{\bf R}) \phi_{u}
+\end{split}
+\end{equation}
+We symmetrize by requiring the amplitude
+\begin{equation}
+F \rightarrow \left (\psi_{g}({\bf R})-\psi_{g}({-\bf R}) \right ) \phi_{g} +  \left ( \psi_{u}({\bf R})-\psi_{u}({-\bf R}) \right ) \phi_{u}
+\end{equation}
+or
+\begin{equation}
+\begin{split}
+& F \rightarrow \sqrt{2} \left (\exp(i k R \cos\phi)  + \exp(-i k R \cos\phi) \right ) \, \phi_{a} \nonumber \\
+& +\frac{1}{\sqrt{2}} \left ( f_{g}(\phi) - f_{g}(\phi+\pi) + f_{u}(\phi) - f_{u}(\phi+\pi) \right ) \, \phi_{a} \nonumber \\
+& + \frac{1}{\sqrt{2}} \left ( f_{g}(\phi) - f_{g}(\phi+\pi) - f_{u}(\phi) + f_{u}(\phi+\pi) \right )  \, \phi_{b} 
+\end{split}
+\end{equation}
+Thus
+\begin{equation}
+\begin{split}
+& \sigma_{RCT} = \frac{1}{8} \, \int_{0}^{2 \pi} | f_{g}(\phi) - f_{g}(\phi+\pi) - f_{u}(\phi) + f_{u}(\phi+\pi) |^2 = \\ 
+& \frac{2}{k} \sum_{m=\pm 1, \pm 3,...} | b^{g}_{m} -  | b^{u}_{m} |^2.
+\end{split}
+\end{equation}
+In a pioneering paper, J. M. Leinass and J. Myrheim \cite{LeinassMyrheim} argued that in two dimensions, identical particles can exhibit interchange statistics that differ from bosons or fermions. As emphasized in that paper, the topology of the configuration space of identical particles in a  $ 2D $ spatial manifold differs from that of a 3-dimensional manifold. The former allows
+a generalized amplitude $\psi({\bf r}_{1},\bf r_{2})$ for a pair of identical particles to obey 
+
+$ P_{12} \psi({\bf r}_{1},{\bf r}_{2} ) = \exp(i \pi \,\alpha) \psi({\bf r}_{2},{\bf r}_{1}) $ where $\alpha $ is an arbitrary constant. 
+
+For fermions $\alpha=1$, and for bosons $\alpha=0.$ For fractional values of $\alpha$, the amplitudes are elements of the braid group \cite{kassel2008braid} 
+
+Particles that differ from fermion/boson statistics are called anyons (Wilzceck \cite{Wilzceck1982}).
+
+Whether such particles exist in nature is of topical and intense investigation. Several studies have examined the role of the latter in the bulk properties of an anyon gas \cite{AROVAS1985117}. There are two popular methods used to enforce anyonic statistics among identical particles. The first involves positing a Chern-Simons \cite{IENGO1992179} term that couples each anyon to a pure gauge field. Alternatively, one posits the presence of an Aharonov-Bohm infinitesimal magnetic flux tube piercing the anyon at an angle perpendicular to the 2D plane (see Fig \ref{fluxt}).
+\begin{figure}[htp]
+  \includegraphics[width=\textwidth]{fluxtube}
+  \caption{Illustration of anyon as a particle-flux tube composite. Illustration taken form D.  P. Avoras ”Geometric Phases in Physics”, pg. 287, ed. A. Shapere and F. Wilczek, World Scientific (1989)}
+  \label{fluxt}
+\end{figure}
+
+We shall assume the latter for the nuclei of our collision partners. Hence, the Hamiltonian for a 2D Hydrogen atom/ion pair, whose nuclei are anyons, takes the form
+
+\begin{equation}
+  H =\frac{1}{2 m} \left ({\bf p}_{1} - {\bf A} \right)^2 + \frac{1}{2 m} ({\bf p}_{2} - {\bf A} )^2 + H'({\bf r}_{1},{\bf r}_{2} )
+\end{equation}
+where $H'({\bf r}_{1},{\bf r}_{2})$ includes the electronic kinetic energy an all Coulombic interactions discussed in the previous chapters and 
+
+\begin{equation}
+{\bf A} \equiv  \alpha \, \frac{{\bf n} \times ({\bf r}_{1} - {\bf r}_{2}  ) }{|{\bf r}_{1} -{\bf r}_{2} |^2}
+\end{equation}
+is a gauge potential \cite{Wu1984PRL53_111}. Here $ {\bf n}$ is a unit normal vector to the 2D scattering plane and $ 0 < \alpha <1. $ Introducing the relative coordinates
+
+\begin{equation}
+\begin{split}
+& {\bf R}= {\bf r}_{2} -{\bf r}_{1}  \\
+& {\bf R}_{cm} = \frac{1}{2} \, ( {\bf r}_{2} + {\bf r}_{1} )
+\end{split}
+\end{equation}
+The Schrodinger equation for the relative motion $F({\bf R})$ becomes
+\begin{equation}
+ -\frac{1}{2 \mu} ({\bf \nabla} - i \, {\bf A})^2  F({\bf R}) + V_{g,u}(R) F({\bf R}) - E F({\bf R}) =0
+\end{equation}
+where ${\bf \nabla}$ is  the 2D gradiant operator and, in a cylindrical coordinate system,
+\begin{equation}
+{\bf A} = {\hat {\bf \phi} } \, \frac{\alpha}{R}
+\end{equation}
+Or
+\begin{equation}
+\begin{split}
+& \frac{d^2 F({\bf R})}{d R^2} + \frac{ d F({\bf R})}{d R} \frac{1}{R} +\frac{1}{R^2} \left (\frac{\partial}{\partial \phi} - i \, \alpha \right )^2 F({\bf R}) +  \\
+& (k^2 -2 \mu V_{g,u}(R)) F({\bf R}) =0.
+\end{split}
+\end{equation}
+Note that if we impose a singular gauge transformation $ F({\bf R}) \rightarrow \exp(i \, \alpha \, \phi) {\tilde F}({\bf R}) $ then $ {\tilde F}(\bf R}) $ obeys the standard Schrodinger without the presence of a flux tube, however, the pre-factor $\exp(i \, \alpha )$ introduces multi-valuedness in the total amplitude and special methods
+
+
+
+
+--------------
+
+
+
+
 
 Here we briefly discuss the anyon case, i.e since the two $ H_2^{+} $ nuclei are confined in 2D, they obey neither Fermi-Dirac nor Bose-Einstein statistics.
 
