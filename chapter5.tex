@@ -475,7 +475,7 @@ Thus
 \begin{equation}
 \begin{split}
 & \sigma_{RCT} = \frac{1}{8} \, \int_{0}^{2 \pi} | f_{g}(\phi) - f_{g}(\phi+\pi) - f_{u}(\phi) + f_{u}(\phi+\pi) |^2 = \\ 
-& \frac{2}{k} \sum_{m=\pm 1, \pm 3,...} | b^{g}_{m} -  | b^{u}_{m} |^2.
+& \frac{2}{k} \sum_{m=\pm 1, \pm 3,...} | b^{g}_{m}  -   b^{u}_{m} |^2.
 \end{split}
 \end{equation}
 In a pioneering paper, J. M. Leinass and J. Myrheim \cite{LeinassMyrheim} argued that in two dimensions, identical particles can exhibit interchange statistics that differ from bosons or fermions. As emphasized in that paper, the topology of the configuration space of identical particles in a  $ 2D $ spatial manifold differs from that of a 3-dimensional manifold. The former allows
@@ -524,10 +524,86 @@ Or
 \begin{equation}
 \begin{split}
 & \frac{d^2 F({\bf R})}{d R^2} + \frac{ d F({\bf R})}{d R} \frac{1}{R} +\frac{1}{R^2} \left (\frac{\partial}{\partial \phi} - i \, \alpha \right )^2 F({\bf R}) +  \\
-& (k^2 -2 \mu V_{g,u}(R)) F({\bf R}) =0.
+& (k^2 -2 \mu V_{g,u}(R)) F({\bf R}) = 0
 \end{split}
 \end{equation}
-Note that if we impose a singular gauge transformation $ F({\bf R}) \rightarrow \exp(i \, \alpha \, \phi) {\tilde F}({\bf R}) $ then $ {\tilde F}(\bf R}) $ obeys the standard Schrodinger without the presence of a flux tube, however, the pre-factor $\exp(i \, \alpha )$ introduces multi-valuedness in the total amplitude and special methods
+Note that if we impose a singular gauge transformation 
+$ F({\bf R}) \rightarrow \exp(i \, \alpha \, \phi) {\tilde F}({\bf R}) $ then 
+$ {\tilde F}(\bf R) $ obeys the standard Schrodinger without the presence of a flux tube, however, the pre-factor $e^{i \, \alpha }$ introduces multi-valuedness in the total amplitude and special methods \cite{Berry1980_AB_exact} must be invoked to cancel that singularity. Under
+particle interchange $ {\bf R} \rightarrow -{\bf R} $, which in this coordinate system is equivalent to the  action of the parity operator ${\bf  \Pi}. $
+
+Here, we follow the procedure of Aharonov-Bohm and expand $F({\bf R}) $ in terms of
+single-valued function $ e^{i m \phi} $, $ m=0,\pm1, \dots $, resulting in the
+the radial equations \eqref{AhBo2}
+\begin{equation}\label{AhBo2}
+F_{m}''(R) + \frac{F'_{m}}{R} - \frac{(m- \alpha)^2}{R^2} F_{m}(R) + (k^2 - 2 \mu V_{g,u}(R)) F_{m}(R) =0
+\end{equation}
+from which we construct the amplitude in the asymptotic region
+\begin{equation}\label{AhBo3}
+\sum_{m=0,\pm1,...} \exp(i m \phi) \, \left ( a_{m} \, J_{|m-\alpha | }(k R)  + b_{m} {H^{(1)}}_{|m - \alpha |} (k R) \right )
+\end{equation}
+If we choose (see \eqref{AhBo3}) $ a_{m} = (- i)^{| m - \alpha |}  $,  the above expression reduces to
+
+\begin{equation}\label{ReducedAB}
+F_{g,u} \rightarrow \exp(i \alpha \phi) \exp(-i k z) + \frac{\exp(i k R)}{\sqrt{2 \pi k R} } f_{AB}(\phi) + f^{g,u}(\phi) \frac{\exp(i k R)}{\sqrt{ R} }
+\end{equation}
+
+where $f_{AB} $ is the Aharonov-Bohm scattering amplitude, and $ f_{g,u}(\phi) $ is given by the expression
+
+\begin{equation}\label{AhBoutWave}
+& f^{g,u}(\phi) =\sqrt{\frac{2}{\pi k}} \, \sum_{m=0, \pm 1 \dots} {(-i)}^{|m-\alpha |}  \exp(i m \phi) \, b^{g,u}_{m} \\
+& b^{g,u}_{m}= {(-i)}^{| m -\alpha | } \frac{J'_{| m-\alpha | }- y^{g,u}_{m} J_{|m -\alpha|} }{ H'_{| m-\alpha |} - y^{g,u}_{m} H_{|m-\alpha|}} 
+\end{split}
+\end{equation}
+and $J', H'$ represent derivatives with respect to R, and $ y^{g,u}$ the log-derivates corresponding to gerade and ungerade potentials respectively Note that the wave amplitude, though single valued, the incident wave in equation \eqref{ReducedAB} is multi-valued.
+As Schrodinger equation \eqref{Schr2DAnyon} is invariant to the parity operation $ {\bf \Pi}$, weseek the eigensolutions $F({\bf R})$ that are either even or odd with respect to a parity transformation, i.e.${\bf \Pi}\, F({\bf R}) = F({\bf R}) $ or
+${\bf \Pi} \, F({\bf R}) = -F({\bf R}) $ for even/odd functions respectively. We shall call the former the bosonic/fermionic bases respectively.
+
+Following the discussion leading to equation \eqref{ReducedAB} e obtain the outgoing wave
+of the charge transfer amplitude given by Eq. \eqref{AhBoutWave} but where
+ b_{|m|}^{g,u} $ satisfies relation \eqref{AhBoutWave}  instead of \eqref{bm2DReg}, and we get
+\begin{equation}
+\begin{split}
+&\sigma_{CT} = \frac{2}{k} \left (\sum_{m} | b^{(g)}_{m} - b^{(u)}_{m} |^2 \right ) \\
+& m=0, \pm 2, \dots \quad {\rm for \, bosonic \, base} \\
+& m=\pm 1, \pm 3 \quad {\rm for \, fermionic \, base}
+\end{split}
+\end{equation}
+
+Note that the terms proportional to $ f_{AB}(\phi) $ cancel as they are independent of the gerade/ungerade potentials. The restriction to odd values of $ m$ is determined by the fermionic symmetry requirement of the base $(\alpha=0)$ system.  
+
+\ection{Calculations and Discussion}
+Below we illustrate the result of the calculations corresponding to the analysis given above.
+
+In Figures  2-7 we present values for the calculation of the partial wave contributions to
+$ | b^{(g)}_{m} - b^{(u)}_{m} |^2 $ for the values of temperatures from $T=1, 10, 100k \, K. $ The abcissa correspond to the partial wave index $m$, and the blue/red icons refer to bosonic/fermionic basis respectively. The parameter $\alpha$ gives the strength of the flux tube, so $\alpha =0$ corresponds to the absence of a flux tube, and the partial wave contributions reflect the standard symmetry identification for the 3D case.
+For $\alpha=1$, the Wilson loop integral
+\begin{equation}
+\oint_{C} {\bf A}\cdot d{\bf r} = 2 \pi \, n
+\end{equation}
+where $C$ is any circuit enclosing the flux with winding number $ n.$ In that case we notice, from these figures, that he  partial wave spectra
+are identical to the $\alpha=0 $ spectra, with the important difference that the bosonic 
+$\alpha =0 $, contributions now correspond to the fermionic $\alpha=1$ contributions, and vice/versa. One can interpret this phenomenon as a transmutation of bosons into fermions, and vice/versa.
+
+The case $\alpha=1/2$ exhibits fractional statistics, and
+in order to distinguish it from bosonic/fermionic statistics, particles that exhibit this feature
+are commonly called semions
+in the literature (cite papers).  In the figures below, we also
+illustrate the partial wave contributions for semions $(\alpha=1/2)$, at $ T=1K, 10K, 100K.$
+
+\begin{figure} [H]  
+    \centering 
+    \includegraphics[width = \textwidth]{fig1a.pdf}
+    \caption{Collison temperature $T= 1 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base.}
+    \label{fig:one} 
+\end
+
+\begin{figure} [H]  
+    \centering 
+    \includegraphics[width = 0.7\textwidth]{fig1b.pdf}
+    \caption{Collison temperature $T= 1 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. }
+    \label{fig:one} 
+\end{figure}
 
 
 
@@ -632,7 +708,7 @@ where $ \nabla $ is the 2D gradient operator and, in a cylindrical coordinate sy
   \pmb{A} = \frac{\hat{\phi}}{2\pi}\frac{\alpha}{R}
 \end{equation}
 or
-\begin{equation}
+\begin{equation}\{Schr2DAnyon}
 \frac{d^2}{dR^2}F(\pmb{R}) + \frac{d}{dR}F(\pmb{R})\frac{1}{R} + \frac{1}{R^2}\left(\frac{\partial}{\partial \phi}-i\frac{\alpha}{2\pi}\right)^2 F(\pmb{R}) + (k^2 - 2\mu V_{g,u}(R))F(\pmb{R}) = 0  
 \end{equation}
 where $ k $ is the wave number. $ \mu $ is the reduces mass,  and $ V_{g,u}(R) $ in the BO potential for the gerade $ g $ and ungerade $ u $ state.
