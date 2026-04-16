@@ -1,6 +1,6 @@
-\chapter{Charge Transfer Processes in Two Dimensions}
+\chapter{Quantum Materials in 2 Dimensions}
 \label{chap:2DS}
-In this secton of the thesis, we will consider the following resonant charge transfer process 
+In this section , we will consider the following resonant charge transfer (RCT) process 
 \begin{equation}\label{H22D1}
 H^{+} + H \rightarrow H + H^{+}
 \end{equation}
@@ -110,7 +110,7 @@ Since the exciton system resembles either the hydrogen atom or the hydrogen mole
 A similar system is the trion, a bound state of three charged particles. It consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecular ion. 
 
 
-\chapter{Overview of the Molecular Potentials calculation in 3D}:
+\chapter{Overview of the Calculation of Molecular Potentials in 3D}:
 
 \section{Molecular Orbitals in 2 D}
 In order to calculate the resonant charge transfer rate (RCT), we require the potential surfaces for the two lowest ground state Born-Oppenheimer (BO) that correlate to the degenerate asymptotic
@@ -177,13 +177,14 @@ In the same manner, we obtain the BO energy for the ungerade BO state,
 \psi_{u}({\bf r},{\bf R}) =\frac{1}{\sqrt{2 (1- S(R) )}}\int d^2 {\bf r} \, \Bigl ( \psi_{1s}({\bf r}-{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) \Bigr ).
 \end{equation}
 
-In chapter \ref{h2plus2DPotential} we shall compute the accurate solution of the 2D potential. Here for illustration, in Table \ref{tab:lcaotabG}, we present the accurate and LCAO values for the gerade state.
+In chapter \ref{h2plus2DPotential} we shall compute the accurate solution of the 2D potential. Here for illustration, in Table \ref{tab:lcaotabG}, we present LCAO values for the gerade state, and compare it to the accurate results obtained in the discussions of te chapter \ref{h2plus2DPotential}.
 
-Graphical comparison of the accurate vs LCAO potential for the gerade state. The exact potential is shown in Red, and the approximation is shown in blue.
+In Fig \ref{vgvslcao} we provide a graphical comparison of the accurate vs LCAO potential for the gerade state. The exact potential is shown in Red, and the approximation is shown in blue.
 
 \begin{figure}[ht]
 \includegraphics{"Vg-Vs-LCAO-good"}
-  \caption{Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state}
+  \caption{A.ccurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state}
+  \label{vgvslcao}
 \end{figure}
 
 This is more readily observed in the enhanced plot.
@@ -198,11 +199,12 @@ We observe that for $R > 10$, there is fair agreement; the agreement is poorer f
 
 We now show the same comparison for the ungerade state in Table \ref{tab:lcaotabU} we show the accurate vs LCAO values for the ungerade state.
 
-Graphical comparison of the accurate and LCAO potentials for the ungerade state.
+Graphical comparison of the accurate and LCAO potentials for the ungerade state is given in figure \ref{vuvslcao}.
 
 \begin{figure}[H]
 \includegraphics{"Vu-Vs-LCAO-good"}
   \caption{Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ 1st excited  ungerade state}
+ \label{vuvslcao}
 \end{figure}
 
 Unlike for the gerade state, in the ungerade case the LCAO is quite a good approximation to the accurate potential. \\
@@ -213,13 +215,14 @@ It follows that the orbital are close to being orthogonal, which makes LCAO appr
 
 In the gerade case, we have $ \psi_{g}({\bf r},{\bf R}) \approx  \psi_{1s}({\bf r}+{\bf R}/2 ) - \psi_{1s}({\bf r}+{\bf R}/2 ) $. In this case, we have $ 1 + S > S $. In this case, the LCAO orbits are much less orthogonal, so the overlap error becomes much greater.
 
-In the following figures, we show the atomic orbitals for the gerade and ungerade cases as a function of the internuclear distance R.
+In the panels of figure \ref{lcaoOrb1} we show the atomic orbitals for the gerade and ungerade cases as a function of the internuclear distance R.
 
 \begin{figure}[ht]
     \centering
     \noindent\includegraphics[scale=0.25]{Ger-Lcao-Graphs}
     \caption{Gerade Orbitals obtained from the LCAO approximation. The graph shows the overlap of the electronic orbitals for different values of the internuclear distance R}
 \end{figure}
+ \label{lcaoOrb1}
 \begin{figure}[ht]
     \centering
     \noindent\includegraphics[width=\linewidth]{Ger-Lcao-3D-Graphs}
@@ -240,7 +243,7 @@ Following our previous discussion, we have determined that our LCAO example prov
 
 In the next chapter, we will review this method as it applies to the three-dimensional system and provide a more precise description of the data presented in Ref. \cite{Bates1}. Subsequently, we will use a similar approach to generate the data for the two-dimensional case of \(H_{2}^{+}\). 
 
-We will compare our results with those from a previous study \cite{Ref4} and apply our findings in the calculation of the RCT process given by Eq. \eqref{H22D1} at ultra-cold temperatures.
+We will compare our results with those from a previous study \cite{Ref4} and apply our findings in the calculation of the RCT process given by Eq. \eqref{H22D1} at cold temperatures.
 
 
 
