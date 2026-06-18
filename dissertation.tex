@@ -2,11 +2,17 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass{Dissertate}
+\author{Zelimir Lucic}
+\title{Ion-Atom Charge Transfer Reactions at Cold and Ultra-Cold Temperatures}
+\advisor{Bernard Zygelman}
+\let\cleardoublepage\clearpage
 
 \begin{document}
 
 % the front matter
+\pagestyle{empty}
 \input{cover}
+\thispagestyle{empty}
 %\maketitle
 \acknowledgments
 %\copyrightpage
@@ -14,8 +20,12 @@
 \setstretch{1.2}
 \abstractpage
 \tableofcontents
+\clearpage
 %\authorlist
 \listoffigures
+\clearpage
+\listoftables
+\clearpage
 \doublespacing
 
 % length above and below equations
@@ -25,7 +35,12 @@
 % include each chapter...
 \renewcommand{\thechapter}{\arabic{chapter}}
 %\renewcommand{\thepage}{\arabic{chapter}}
+
+% Start printed page numbering at the first chapter.
+\clearpage
+\pagestyle{plain}
 \pagenumbering{arabic}
+\setcounter{page}{1}
 \setcounter{chapter}{-1}  % start chapter numbering at 0
 \include{introduction}
 \include{chapter0}
