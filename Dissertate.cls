@@ -148,6 +148,7 @@
 
 \newcommand{\acknowledgments}{
   \chapter*{Acknowledgments}
+   \thispagestyle{empty}
   \noindent
   \input{thanks}
   \vspace*{\fill} \newpage
