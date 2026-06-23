@@ -14,7 +14,12 @@
 \LoadClass[12pt, oneside, letterpaper]{book}
 
 % Text layout.
-\RequirePackage[width=5.75in, letterpaper]{geometry}
+\RequirePackage[ 
+  letterpaper,
+  left=1in,
+  right=1in,
+  top=1in,
+  bottom=1in]{geometry}
 \usepackage{ragged2e}
 \RaggedRight
 \RequirePackage{graphicx}
