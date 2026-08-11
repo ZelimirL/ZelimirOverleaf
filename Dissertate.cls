@@ -57,13 +57,14 @@
 \RequirePackage{titling}
 
 %citations
-%\usepackage[breaklinks=true]{hyperref}
-\usepackage{breakcites}
-\usepackage{url}
+\usepackage[breaklinks=true]{hyperref}
+%\usepackage{breakcites}
+%\usepackage{url}
 \usepackage{cite}
-\usepackage[super]{natbib}
-\usepackage{notoccite}
+%\usepackage[super]{natbib}
+%\usepackage{notoccite}
 \bibliographystyle{unsrt}
+\usepackage{doi}
 
 %math
 \usepackage{amssymb}
