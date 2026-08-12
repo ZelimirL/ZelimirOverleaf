@@ -63,8 +63,8 @@
 \usepackage{cite}
 %\usepackage[super]{natbib}
 %\usepackage{notoccite}
-\bibliographystyle{unsrt}
 \usepackage{doi}
+\bibliographystyle{unsrt}
 
 %math
 \usepackage{amssymb}
