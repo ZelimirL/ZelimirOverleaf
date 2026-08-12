@@ -57,14 +57,16 @@
 \RequirePackage{titling}
 
 %citations
-\usepackage[breaklinks=true]{hyperref}
+\usepackage[style=numeric,backend=bibtex]{biblatex}
+\addbibresource{dissertation.bib}
+%$\usepackage[breaklinks=true]{hyperref}
 %\usepackage{breakcites}
 %\usepackage{url}
-\usepackage{cite}
+%\usepackage{cite}
 %\usepackage[super]{natbib}
 %\usepackage{notoccite}
-\usepackage{doi}
-\bibliographystyle{unsrt}
+%\usepackage{doi}
+%\bibliographystyle{unsrt}
 
 %math
 \usepackage{amssymb}
