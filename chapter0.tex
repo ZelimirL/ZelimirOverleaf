@@ -89,7 +89,7 @@ f_{J}(kR) \longleftarrow \sqrt{\frac{2\mu}{\pi k}}\sin(kR - \frac{J\pi}{2} + \de
 where $ \delta_J $ is a phaseshift, as $ R \rightarrow \infty $.
 The energy of the emitted photon is given by
 \begin{equation}
-\hbar\omega = \frac{\hbar k^2}{2\mu} + V_A(\infty) - \epsilon_{nJ} - V_X(\infty) 
+\hbar\omega = \frac{\hbar^2 k^2}{2\mu} + V_A(\infty) - \epsilon_{nJ} - V_X(\infty) 
 \end{equation}
 
 This process is governed by the selection rules, 
@@ -120,7 +120,7 @@ where $ \hbar\omega $ is the energy of the emitted photon given by the expressio
 The cross-section for the radiative charge transfer process is given by
 \begin{equation}\label{sumZZ}
 \begin{split}
-& \sigma_{CT} = \int_0^{\omega_max}{d\omega\,\frac{d\sigma}{d\omega}},\\[.8em]
+& \sigma_{CT} = \int_0^{\omega_{max}}{d\omega\,\frac{d\sigma}{d\omega}},\\[.8em]
 & \frac{d\sigma}{d\omega} = \sum_J{\frac{8}{3}\frac{\pi^2\omega_{nJ}^3}{c^3k^2}\left[(J+1)M_{J+1,J}^2(k,k')+J\,M_{J-1,J}^2(k,k')\right] }
 \end{split}
 \end{equation}
@@ -136,21 +136,21 @@ The radial wavefunctions are normalized as in \eqref{fjRZ} and
   & \Delta E = V_A(\infty) - V_X(\infty)
 \end{split}
 \end{equation}
-From the \eqref{hbaromega2} the maximum angular frequency $ \omega_max $ is
+From the \eqref{hbaromega2} the maximum angular frequency $ \omega_{max} $ is
 \begin{equation}
-\hbar\omega_{max} = \frac{\hbar k^2}{2\mu} +  \Delta E
+\hbar\omega_{max} = \frac{\hbar^2 k^2}{2\mu} +  \Delta E
 \end{equation}
 We avoid evaluating the sum \eqref{sumZZ}. \\
 
 Instead, we will compute an upper bound on the charge transfer cross section.
 From the equation above,e we get for the frequency of the emitted photon, during an RCT transition, to be
 \begin{equation}
-\hbar\omega = \frac{\hbar k^2}{2\mu} - \frac{\hbar k^{'2}}{2\mu} + V_A(\infty) - V_X(\infty) = \frac{\hbar k^2}{2\mu} - E' + V_A(\infty) - V_X(\infty)
+\hbar\omega = \frac{\hbar^2 k^2}{2\mu} - \frac{\hbar^2 k^{'2}}{2\mu} + V_A(\infty) - V_X(\infty) = \frac{\hbar^2 k^2}{2\mu} - E' + V_A(\infty) - V_X(\infty)
 \end{equation}
 Now, from the equation above, we can see that to achieve the maximum energy of the emitted photon, $ \hbar\omega_{max} $, we need to have $ E' = 0 $.
 The maximum value of $ E' $ is achieved when $ \hbar\omega = 0 $ therefore:
 \begin{equation}
-  E_max^{'} = \frac{\hbar k^2}{2\mu} + V_A(\infty) - V_X(\infty)
+  E_{max}^{'} = \frac{\hbar^2 k^2}{2\mu} + V_A(\infty) - V_X(\infty)
 \end{equation}
 Now the \eqref{sumZZ} can be written as:
 \begin{equation}
