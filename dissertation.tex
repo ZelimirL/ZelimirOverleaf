@@ -36,15 +36,16 @@
 \renewcommand{\contentsname}{Table of Contents}
 \tableofcontents
 \clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\clearpage
 %\authorlist
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
 \clearpage
-\phantomsection
-\addcontentsline{toc}{chapter}{List of Tables}
-\listoftables
-\clearpage
+
 \doublespacing
 
 % length above and below equations
@@ -86,10 +87,13 @@
 
 % the back matter
 \clearpage
+% Bibliography/References must appear before the Curriculum Vitae.
+% bibintoc adds the bibliography heading to the Table of Contents.
 %\bibliography{dissertation}
-\printbibliography[heading=bibintoc,title={References}]
+\printbibliography[heading=bibintoc,title={Bibliography}]
 % \bibliographystyle{plain}
 
+\clearpage
 \include{cv}
 
 \end{document}
