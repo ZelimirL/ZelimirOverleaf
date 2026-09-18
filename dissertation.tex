@@ -1,0 +1,89 @@
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+% Enable native LaTeX PDF tagging. Compile with TeX Live 2026 or newer.
+\DocumentMetadata{
+  lang=en-US,
+  pdfstandard=ua-2,
+  pdfversion=2.0
+}
+
+\documentclass{Dissertate}
+\author{Zelimir Lucic}
+\title{Ion-Atom Charge Transfer Reactions at Cold and Ultra-Cold Temperatures}
+\advisor{Bernard Zygelman}
+\hypersetup{
+  pdftitle={Ion-Atom Charge Transfer Reactions at Cold and Ultra-Cold Temperatures},
+  pdfauthor={Zelimir Lucic},
+  pdfsubject={Doctoral dissertation on ion-atom charge-transfer reactions at cold and ultracold temperatures},
+  pdfkeywords={ion-atom collisions, charge transfer, ultracold physics, radiative association},
+  pdfdisplaydoctitle=true
+}
+\let\cleardoublepage\clearpage
+
+\begin{document}
+
+% the front matter
+\pagestyle{empty}
+\input{cover}
+\thispagestyle{empty}
+%\maketitle
+%\copyrightpage
+
+\setstretch{1.2}
+\abstractpage
+\acknowledgments
+\tableofcontents
+\clearpage
+%\authorlist
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+\doublespacing
+
+% length above and below equations
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+
+% include each chapter...
+\renewcommand{\thechapter}{\arabic{chapter}}
+%\renewcommand{\thepage}{\arabic{chapter}}
+
+% Start printed page numbering at the first chapter.
+\clearpage
+\pagestyle{plain}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\setcounter{chapter}{-1}  % start chapter numbering at 0
+\include{introduction}
+\include{chapter0}
+\include{chapter0-1}
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+% \include{chapter4}
+\include{chapter5}
+\include{conclusion}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+\begin{appendices}
+    \include{appendixA}
+    \include{appendixB}
+    \include{appendixC}
+    \include{appendixD}
+    \include{appendixE}
+%    \include{appendixF}
+\end{appendices}
+
+\setstretch{1.2}
+
+% the back matter
+\clearpage
+%\bibliography{dissertation}
+\printbibliography
+\addcontentsline{toc}{chapter}{References}
+% \bibliographystyle{plain}
+
+\include{cv}
+
+\end{document}

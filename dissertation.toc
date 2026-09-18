@@ -1,0 +1,57 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}CT in the ultra-cold regime}{2}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Overview of CT theories}{6}{section.1.2}%
+\contentsline {subsubsection}{Classical descriptions: COB model}{6}{subsubsection*.5}%
+\contentsline {subsubsection}{Quantum descriptions I: Langevin Orbiting}{7}{subsubsection*.6}%
+\contentsline {subsubsection}{Quantum descriptions II: Landau–Zener–Rosen Theories}{8}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {1.2.1}Quantum descriptions III, MOCC Approach}{8}{subsection.1.2.1}%
+\contentsline {chapter}{\numberline {2}Radiative Charge Transfer and Association for the $ Yb^{+} + Ca $ system}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Description}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Radiative Charge Transfer and Association}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Radiative Association}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Theory}{13}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Radiative Charge Transfer theory}{15}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Optical Potential Approach}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Ultra Cold Limit}{18}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Results}{19}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Isotope Dependency}{25}{subsection.2.5.1}%
+\contentsline {chapter}{\numberline {3}Quantum Materials in 2 Dimensions}{27}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}Overview of 2D material science}{28}{subsection.3.0.1}%
+\contentsline {subsection}{\numberline {3.0.2}On 2D Materials No-Go Theorems and Graphene}{28}{subsection.3.0.2}%
+\contentsline {subsection}{\numberline {3.0.3}Excitons}{29}{subsection.3.0.3}%
+\contentsline {subsection}{\numberline {3.0.4}Graphene}{30}{subsection.3.0.4}%
+\contentsline {chapter}{\numberline {4}Overview of the Calculation of Molecular Potentials in 3D}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Molecular Orbitals in 2 D}{36}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Gerade and Ungerade Molecular Potentials}{36}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}LCAO}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hydrogen Molecular Ion in 3 Dimensions, the method of Bates}{44}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Description}{45}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Replicating the 3D Solution for the $ H_2^{+} $ Molecular Ion }{52}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Solution Process}{52}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Differential Operator Spectrum}{53}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Towards the Solution}{54}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Series Expansions and Eigenvalue Determinant}{55}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}L Equation}{55}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}M Equation}{56}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Numerical Calculation}{58}{subsection.4.6.3}%
+\contentsline {chapter}{\numberline {5}Non-Relativistic Solution of the Hydrogen Molecular Ion in 2 Spatial Dimensions}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Existing Solutions}{63}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Exact solution of the electron energies of the $ H_2^+ $ molecule}{64}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Algebraic Solution}{67}{subsection.5.2.1}%
+\contentsline {subsubsection}{ M Equation }{67}{subsubsection*.28}%
+\contentsline {subsubsection}{ F Equation }{68}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {5.2.2}Long Range Behavior of $E(R)$ }{72}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Scattering in Two Dimensions}{76}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Resonant Charge Transfer in Two Dimensions}{79}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Resonant Charge Transfer Cross Sections}{79}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Role of Symmetry and Anyonic Flux Tube}{80}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Calculations and Discussion}{84}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusion}{90}{chapter.7}%
+\contentsline {chapter}{Appendix \numberline {A}Center of Mass as a Plane Wave}{93}{appendix.A}%
+\contentsline {chapter}{Appendix \numberline {B}Mathematica Code for Calculating the Eigenvalues for the H2 Ion in 3 Dimensions}{96}{appendix.B}%
+\contentsline {chapter}{Appendix \numberline {C}Hydrogen Ion in 2 Dimension Equation, Mathematica Code}{103}{appendix.C}%
+\contentsline {chapter}{Appendix \numberline {D}Fortran code for Calculating Energies for the 2D problem}{106}{appendix.D}%
+\contentsline {chapter}{Appendix \numberline {E}Scattering Cross Section Code}{117}{appendix.E}%
+\contentsline {chapter}{References}{132}{appendix*.45}%
+\contentsline {chapter}{Curriculum Vitae}{133}{section*.47}%

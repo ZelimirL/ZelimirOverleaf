@@ -1,0 +1,200 @@
+In[1]:=   (* this routine needs to run Vpots.nb *)
+
+          geradeData =
+            Import["/Users/zelimir/Work/Physics-Thesis/thesis-2/ZelimirOverleaf/
+                 MathematicaCodeFinal/gerade1sV3.mx"];
+          geradePotential = Table[{geradeData?i, 1?, geradeData?i, 3?}, {i, 1, 27}];
+          ungeradeData =
+            Import["/Users/zelimir/Work/Physics-Thesis/thesis-2/ZelimirOverleaf/
+                 MathematicaCodeFinal/ungerade1sV3.mx"];
+          ungeradePotential = Table[{ungeradeData?i, 1?, ungeradeData?i, 3?}, {i, 1, 27}];
+          long[R_] := -2.0 - 0.082 / R ^ 4;
+          geradefun = Interpolation[geradePotential];
+          ungeradefun = Interpolation[ungeradePotential];
+          (* Fit to a model *)
+          gdata = Drop[geradePotential, {5, 27}];
+          udata = Drop[ungeradePotential, {5, 27}];
+          model[R_, C1_, C2_, C3_] := C1 Exp[-C2 R] / R + C3;
+          gnlm = NonlinearModelFit[gdata, model[R, C1, C2, C3], {C1, C2, C3}, R];
+          unlm = NonlinearModelFit[udata, model[R, C1, C2, C3], {C1, C2, C3}, R];
+          gshort[R_] := model[R, C1, C2, C3] /. gnlm["BestFitParameters"];
+          ushort[R_] := model[R, C1, C2, C3] /. unlm["BestFitParameters"];
+          gpot[R_] = Piecewise[
+             {{gshort[R], R <= 0.3}, {geradefun[R], 0.3 < R < 13.0}, {long[R], R >= 13.0}}];
+          upot[R_] = Piecewise[
+             {{ushort[R], R <= 0.3}, {ungeradefun[R], 0.3 < R < 13.0}, {long[R], R >= 13.0}}];
+          Plot[{gpot[R], upot[R]}, {R, 0.2, 5}, PlotRange ? All]
+
+
+          (*e=0.1/27.21;*)
+          u = 1866.0 / 2.0;
+          (*k=    2 u e ;*)
+          kB = 0.695; (* Boltzman in AU, cm-1 ?K *)
+          (*?=2?/k*)
+          a0 = 5.29188 ^ -11;
+
+
+          r0 = 0.01;
+          rend = 100;
+
+
+          (*For a single partial wave m, energy e, and range r0 ? rend*)
+          computePhaseShifts[m_, e_, r0_, rend_] :=
+            Module?{k, eqG, eqU, solsG, solsU, fg, fu},
+
+             k=     2ue;
+             equG := yg ''[r] + yg '[r] / r - 2 u (gpot[r] + 2) yg[r] - m ^ 2 / r ^ 2 yg[r] + 2 u e yg[r] ;
+             equU := yu ''[r] + yu '[r] / r - 2 u (upot[r] + 2) yu[r] - m ^ 2 / r ^ 2 yu[r] + 2 u e yu[r];
+
+2     Z_u_g_first-5-v1.nb
+
+
+
+
+                 solsG = Flatten[NDSolve[
+                       {equG ? 0, yg[r0] ? 0, yg '[r0] ? 1}, yg, {r, r0, rend}, MaxSteps ? 200 000]];
+                 solsU = Flatten[NDSolve[
+                       {equU ? 0, yu[r0] ? 0, yu '[r0] ? 1}, yu, {r, r0, rend}, MaxSteps ? 200 000]];
+                 fg[r_] = yg[r] /. solsG;
+                 fu[r_] = yu[r] /. solsU;
+                 ylogG[r_] := fg '[r] / fg[r];
+                 ylogU[r_] := fu '[r] / fu[r];
+                 sl[n_, r_] := BesselJ[n, k r];
+                 cl[n_, r_] := HankelH1[n, k r];
+                 slp[n_, r_] := Derivative[0, 1][sl][n, r];
+                 clp[n_, r_] := Derivative[0, 1][cl][n, r];
+                 bG[n_, r_] :=
+                     (-I) ^ (Abs[n]) ( slp[n, r] - ylogG[r] x sl[n, r]) / ( clp[n, r] - ylogG[r] x cl[n, r]);
+                 bU[n_, r_] :=
+                     (-I) ^ (Abs[n]) ( slp[n, r] - ylogU[r] x sl[n, r]) / ( clp[n, r] - ylogU[r] x cl[n, r]);
+                 If?m ? 0,
+                     Return??Abs[N[bG[m, rend]]], Abs[N[bG[m, rend] - bU[m, rend]]]2 ??,
+                     Return??2 Abs[N[bG[m, rend]]], 2 Abs[N[bG[m, rend] - bU[m, rend]]]2 ???
+                ?;
+           (*computePhaseShifts[10,0.003,0.1,100];*)
+
+
+
+Out[18]=
+
+            4
+
+
+            3
+
+
+            2
+
+
+            1
+
+
+                         1          2         3          4         5
+
+           -1
+
+
+           -2
+
+
+           -3
+
+                                                                    Z_u_g_first-5-v1.nb   3
+
+
+
+
+(* e = collision energy in eV, r0, rend - R range *)
+computeCrossSect[eV_, r0_, rend_, mMin_, mMax_] :=
+  Module?{allBs, eH, kk, crossSection},
+   eH = eV / 27.21; (* energy Hartree *)
+   kk =     2 u eH ;
+   (* m - partial waves *)
+   allBs = Table[{m, computePhaseShifts[m, eH, r0, rend]}, {m, mMin, mMax}];
+                   1
+   crossSection =    Total[allBs, {1}]?2?;
+                  kk
+   {eV, crossSection}
+  ?;
+
+
+(* Up to this partial wave *)
+mMax = 5;
+
+
+crossSection =
+  Table[computeCrossSect[e, r0, rend, 0, mMax], {e, 0.00001, .001, 0.00005}];
+
+4       Z_u_g_first-5-v1.nb
+
+
+
+
+    In[29]:=
+
+
+
+
+               crossSectionGraphSC =
+                    Interpolation[{crossSection?All, 1?, crossSection?All, 2??All, 1?} // Transpose];
+               crossSectionGraphCT =
+                    Interpolation[{crossSection?All, 1?, crossSection?All, 2??All, 2?} // Transpose];
+
+
+               start = crossSection?1??1?
+               end = crossSection?Length[crossSection]??1?
+               Plot[crossSectionGraphSC[e], {e, start, end},
+                AxesOrigin ? {0, 0}, AxesLabel ? {"eV", "? (a0)"},
+                PlotLabel ? "Scattering Cross Section (a0 ) vs Energy (eV) " ]
+               Plot[crossSectionGraphCT[e], {e, start, end},
+                AxesOrigin ? {0, 0}, AxesLabel ? {"eV", "? (a0 )"},
+                PlotLabel ? "Resonant Charge Transfer Cross Section (a0) vs Energy"]
+
+Out[33]=
+                              Scattering Cross Section (a0 ) vs Energy (eV)
+               ? (a0)
+
+
+               40
+
+
+
+               30
+
+
+
+               20
+
+
+
+               10
+
+
+
+                                                                                 eV
+                              0.0002        0.0004        0.0006        0.0008
+
+Out[34]=
+                         Resonant Charge Transfer Cross Section (a0) vs Energy
+               ? (a0 )
+
+
+               20
+
+
+
+               15
+
+
+
+               10
+
+
+
+                5
+
+
+
+                                                                                 eV
+                              0.0002        0.0004        0.0006        0.0008
+

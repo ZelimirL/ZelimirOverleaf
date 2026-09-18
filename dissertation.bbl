@@ -1,0 +1,3140 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{GrapheneRiples}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AF}{%
+         family={A.},
+         familyi={A\bibinitperiod},
+         given={Fasolino},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HLJ}{%
+         family={H.},
+         familyi={H\bibinitperiod},
+         given={Los\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=IKM}{%
+         family={I.},
+         familyi={I\bibinitperiod},
+         given={Katsnelson\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AFHLJIKM1}
+    \strng{fullhash}{AFHLJIKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1038/nmat2011
+    \endverb
+    \field{pages}{858\bibrangedash 861}
+    \field{title}{Intrinsic ripples in graphene}
+    \verb{url}
+    \verb https://arxiv.org/abs/0704.1793
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Nature Materials}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Abrams_1998}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ADS}{%
+         family={Abrams},
+         familyi={A\bibinitperiod},
+         given={Daniel\bibnamedelima S.},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lloyd},
+         familyi={L\bibinitperiod},
+         given={Seth},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society (APS)}%
+    }
+    \strng{namehash}{ADSLS1}
+    \strng{fullhash}{ADSLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1103/physrevlett.81.3992
+    \endverb
+    \field{issn}{1079-7114}
+    \field{number}{18}
+    \field{title}{Nonlinear Quantum Mechanics Implies Polynomial-Time Solution
+  for NP-Complete Problems}
+    \verb{url}
+    \verb http://dx.doi.org/10.1103/PhysRevLett.81.3992
+    \endverb
+    \field{volume}{81}
+    \field{journaltitle}{Physical Review Letters}
+    \field{month}{11}
+    \field{year}{1998}
+  \endentry
+
+  \entry{Abrams_1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ADS}{%
+         family={Abrams},
+         familyi={A\bibinitperiod},
+         given={Daniel\bibnamedelima S.},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lloyd},
+         familyi={L\bibinitperiod},
+         given={Seth},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society (APS)}%
+    }
+    \strng{namehash}{ADSLS1}
+    \strng{fullhash}{ADSLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1103/physrevlett.83.5162
+    \endverb
+    \field{issn}{1079-7114}
+    \field{number}{24}
+    \field{title}{Quantum Algorithm Providing Exponential Speed Increase for
+  Finding Eigenvalues and Eigenvectors}
+    \verb{url}
+    \verb http://dx.doi.org/10.1103/PhysRevLett.83.5162
+    \endverb
+    \field{volume}{83}
+    \field{journaltitle}{Physical Review Letters}
+    \field{year}{1999}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Graphene0}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AG}{%
+         family={A.K.},
+         familyi={A\bibinitperiod},
+         given={Geim},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={K.S},
+         familyi={K\bibinitperiod},
+         given={Novoselov},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AGKN1}
+    \strng{fullhash}{AGKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{The Rise of Graphene}
+    \verb{url}
+    \verb http://arxiv.org/ftp/cond-mat/papers/0702/0702595.pdf
+    \endverb
+    \field{journaltitle}{Nature Materials}
+    \field{year}{2007}
+  \endentry
+
+  \entry{GrapheneN}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=AG}{%
+         family={Andre},
+         familyi={A\bibinitperiod},
+         given={Geim},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Konstantin},
+         familyi={K\bibinitperiod},
+         given={Novoselov},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AGKN2}
+    \strng{fullhash}{AGKN2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Nobel Prize in Physics for Graphene}
+    \verb{url}
+    \verb http://www.nobelprize.org/nobel_prizes/physics/laureates/2010/advance
+    \verb d-physicsprize2010.pdf
+    \endverb
+    \field{year}{2010}
+  \endentry
+
+  \entry{Arfken}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AGB}{%
+         family={Arfken},
+         familyi={A\bibinitperiod},
+         given={George\bibnamedelima B.},
+         giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=WHJ}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Hans\bibnamedelima J.},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AGBWHJ1}
+    \strng{fullhash}{AGBWHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Mathematical Methods for Physicists}
+    \field{year}{2005}
+  \endentry
+
+  \entry{AROVAS1985117}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ADP}{%
+         family={Arovas},
+         familyi={A\bibinitperiod},
+         given={Daniel\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Schrieffer},
+         familyi={S\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wilczek},
+         familyi={W\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zee},
+         familyi={Z\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ADP+1}
+    \strng{fullhash}{ADPSRWFZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0550-3213(85)90252-4
+    \endverb
+    \field{issn}{0550-3213}
+    \field{pages}{117\bibrangedash 126}
+    \field{title}{Statistical mechanics of anyons}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0550321385902524
+    \endverb
+    \field{volume}{251}
+    \field{journaltitle}{Nuclear Physics B}
+    \field{year}{1985}
+  \endentry
+
+  \entry{2DEJour1}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=aV}{%
+         family={authors},
+         familyi={a\bibinitperiod},
+         given={Various},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{aV1}
+    \strng{fullhash}{aV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{2D layered materials: From materials properties to device
+  applications}
+    \verb{url}
+    \verb http://ieeexplore.ieee.org/document/7409780/?reload=true
+    \endverb
+    \field{journaltitle}{IEEE Explore}
+  \endentry
+
+  \entry{2DEJour2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=aV}{%
+         family={authors},
+         familyi={a\bibinitperiod},
+         given={Various},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{aV1}
+    \strng{fullhash}{aV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{2D materials and electronic devices}
+    \verb{url}
+    \verb http://iopscience.iop.org/journal/0022-3727/page/2D-materials-and-ele
+    \verb ctronic-devices
+    \endverb
+    \field{journaltitle}{Journal of Physics D: Applied Physics}
+  \endentry
+
+  \entry{Zygelman1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BZ}{%
+         family={B},
+         familyi={B},
+         given={Zygelman},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={P.C.},
+         familyi={P\bibinitperiod},
+         given={Stancil},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={A},
+         familyi={A},
+         given={Dalgarno},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BZPSAD1}
+    \strng{fullhash}{BZPSAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{508\bibrangedash 151}
+    \field{title}{Stimulated Radiative Association of {He} and {H+}}
+    \field{journaltitle}{The Astrophysical Journal}
+    \field{year}{1998}
+  \endentry
+
+  \entry{ZygelmanDalgarno1}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BZ}{%
+         family={B.},
+         familyi={B\bibinitperiod},
+         given={Zygelman},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={A.},
+         familyi={A\bibinitperiod},
+         given={Dalgarno},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JJM}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Jamieson\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CSP}{%
+         family={C.},
+         familyi={C\bibinitperiod},
+         given={Stancil\bibnamedelima P.},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BZ+1}
+    \strng{fullhash}{BZADJJMCSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{issue}{4}
+    \field{title}{Multichannel study of spin-exchange and hyperfine-induced
+  frequency shift and line broadening in cold collisions of hydrogen atoms}
+    \verb{url}
+    \verb http://link.aps.org/doi/10.1103/PhysRevA.67.042715
+    \endverb
+    \field{volume}{67}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{month}{04}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Bates2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BDR}{%
+         family={Bates},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Carson},
+         familyi={C\bibinitperiod},
+         given={T.R.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDRCT1}
+    \strng{fullhash}{BDRCT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{1197}
+    \field{pages}{207\bibrangedash 217}
+    \field{title}{Exact Wave Function Of HeH2+}
+    \verb{url}
+    \verb http://www.jstor.org/stable/99814
+    \endverb
+    \field{volume}{234}
+    \field{journaltitle}{Proceedings of the Royal Society of London. Series A,
+  Mathematical and Physical Sciences}
+    \field{year}{1956}
+  \endentry
+
+  \entry{Bates1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BDR}{%
+         family={Bates},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Ledsham},
+         familyi={L\bibinitperiod},
+         given={Kathleen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SAL}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={A.\bibnamedelima L.},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDRLKSAL1}
+    \strng{fullhash}{BDRLKSAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{911}
+    \field{pages}{215\bibrangedash 240}
+    \field{title}{Wave Function Of The Hydrogen Molecular Ion}
+    \verb{url}
+    \verb http://www.jstor.org/stable/91504
+    \endverb
+    \field{volume}{246}
+    \field{journaltitle}{Philosophical Transactions of the Royal Society of
+  London. Series A, Mathematical and Physical Sciences}
+    \field{year}{1953}
+  \endentry
+
+  \entry{Berry1980_AB_exact}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BMV}{%
+         family={Berry},
+         familyi={B\bibinitperiod},
+         given={M.\bibnamedelima V.},
+         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMV1}
+    \strng{fullhash}{BMV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1088/0143-0807/1/4/002
+    \endverb
+    \field{number}{4}
+    \field{pages}{240\bibrangedash 244}
+    \field{title}{Exact Aharonov--Bohm wavefunction obtained by applying
+  Dirac's magnetic phase factor}
+    \field{volume}{1}
+    \field{journaltitle}{European Journal of Physics}
+    \field{year}{1980}
+  \endentry
+
+  \entry{Dirac3}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BA}{%
+         family={Bostwick},
+         familyi={B\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=OT}{%
+         family={Ohta},
+         familyi={O\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=ST}{%
+         family={Seyller},
+         familyi={S\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=HK}{%
+         family={Horn},
+         familyi={H\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+      {{hash=RE}{%
+         family={Rotenberg},
+         familyi={R\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BAOTSTHKRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1038/nphys477
+    \endverb
+    \field{title}{Quasiparticle Dynamics in Graphene}
+    \field{volume}{3}
+    \field{journaltitle}{Nature Physics}
+    \field{month}{01}
+    \field{year}{2007}
+  \endentry
+
+  \entry{2DMatterCurvature}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Bowick},
+         familyi={B\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Giomi},
+         familyi={G\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMGL1}
+    \strng{fullhash}{BMGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Two-Dimensional Matter: Order, Curvature and Defects}
+    \list{institution}{1}{%
+      {Syracuse University}%
+    }
+    \field{journaltitle}{Physics.Paper 139}
+    \field{year}{2009}
+  \endentry
+
+  \entry{BransdenMcDowell1992}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BBH}{%
+         family={Bransden},
+         familyi={B\bibinitperiod},
+         given={B\bibnamedelima H},
+         giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MMRC}{%
+         family={McDowell},
+         familyi={M\bibinitperiod},
+         given={M\bibnamedelima R\bibnamedelima C},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{BBHMMRC1}
+    \strng{fullhash}{BBHMMRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1093/oso/9780198520207.001.0001
+    \endverb
+    \field{isbn}{9780198520207}
+    \field{title}{Charge Exchange and the Theory of Ion-Atom Collisions}
+    \field{month}{05}
+    \field{year}{1992}
+  \endentry
+
+  \entry{ExperimentalBates3}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Carrington},
+         familyi={C\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=MIR}{%
+         family={McNab},
+         familyi={M\bibinitperiod},
+         given={I\bibnamedelima R},
+         giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MCA}{%
+         family={Montgomerie},
+         familyi={M\bibinitperiod},
+         given={C\bibnamedelima A},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CAMIRMCA1}
+    \strng{fullhash}{CAMIRMCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{3551\bibrangedash 3586}
+    \field{title}{Spectroscopy of the hydrogen molecular ion}
+    \verb{url}
+    \verb http://www.giovannibachelet.it/SDM-15-16/17/dissoc_H2.pdf
+    \endverb
+    \field{volume}{22}
+    \list{location}{1}{%
+      {Hampshire, UK}%
+    }
+    \list{institution}{1}{%
+      {University of Southampton}%
+    }
+    \field{journaltitle}{Journal Phys. B}
+    \field{year}{1989}
+  \endentry
+
+  \entry{FrMag}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CJ}{%
+         family={Chalker},
+         familyi={C\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJ1}
+    \strng{fullhash}{CJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Geometrically Frustrated Magnets}
+    \verb{url}
+    \verb https://www-thphys.physics.ox.ac.uk/people/JohnChalker/research/weizm
+    \verb ann09.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Physics Department, Oxford University}%
+    }
+  \endentry
+
+  \entry{Greg}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=CG}{%
+         family={Colarch},
+         familyi={C\bibinitperiod},
+         given={Gregory},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CG1}
+    \strng{fullhash}{CG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{A Gauge Theoretic Treatment of Rovibrational Motion in
+  Diatoms}
+    \list{location}{1}{%
+      {Las Vegas, NV}%
+    }
+    \list{institution}{1}{%
+      {University of Nevada, Las Vegas}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2022}
+  \endentry
+
+  \entry{PvsNP}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CS}{%
+         family={Cook},
+         familyi={C\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CS1}
+    \strng{fullhash}{CS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{The P versus NP Problem}
+    \verb{url}
+    \verb https://www.claymath.org/sites/default/files/pvsnp.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Clay Mathematics Institute}%
+    }
+  \endentry
+
+  \entry{Excitons2D3}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=DU}{%
+         family={D},
+         familyi={D},
+         given={Unuchek},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={A.},
+         familyi={A\bibinitperiod},
+         given={Ciarrocchi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={A.},
+         familyi={A\bibinitperiod},
+         given={Avsar},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ea}{%
+         prefix={et},
+         prefixi={e\bibinitperiod},
+         family={al.},
+         familyi={a\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DU+1}
+    \strng{fullhash}{DUACAAae1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Room-temperature electrical control of exciton flux in a van
+  der Waals heterostructure}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41586-018-0357-y
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{LocStates}{book}{}
+    \name{author}{2}{}{%
+      {{hash=DSG}{%
+         family={Davison},
+         familyi={D\bibinitperiod},
+         given={Sidney\bibnamedelima G.},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Steslicka},
+         familyi={S\bibinitperiod},
+         given={Maria},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Clarendon Press}%
+    }
+    \strng{namehash}{DSGSM1}
+    \strng{fullhash}{DSGSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Basic Theory of Surface States}
+    \field{year}{1992}
+  \endentry
+
+  \entry{RadQuench1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DAZ}{%
+         family={Devdariani},
+         familyi={D\bibinitperiod},
+         given={A.\bibnamedelima Z.},
+         giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=CEA}{%
+         family={Chesnokov},
+         familyi={C\bibinitperiod},
+         given={E.\bibnamedelima A.},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DAZCEA1}
+    \strng{fullhash}{DAZCEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{issue}{6}
+    \field{pages}{858\bibrangedash 865}
+    \field{title}{Radiative Quenching and Excitation of Metastable States upon
+  Differential Scattering of Atoms {I}. Uniform Quasi-Classical Theory}
+    \field{volume}{99}
+    \field{journaltitle}{Optics and Spectroscopy}
+    \field{month}{12}
+    \field{year}{2005}
+  \endentry
+
+  \entry{RadQuench2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DAZ}{%
+         family={Devdariani},
+         familyi={D\bibinitperiod},
+         given={A.\bibnamedelima Z.},
+         giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=CEA}{%
+         family={Chesnokov},
+         familyi={C\bibinitperiod},
+         given={E.\bibnamedelima A.},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DAZCEA1}
+    \strng{fullhash}{DAZCEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{issue}{6}
+    \field{pages}{866\bibrangedash 872}
+    \field{title}{Radiative Quenching and Excitation of Metastable States upon
+  Differential Scattering of Atoms {II}. The $ {He}(1^1{S}-2^1{S})-{Ne}$
+  Molecule}
+    \field{volume}{99}
+    \field{journaltitle}{Optics and Spectroscopy}
+    \field{year}{2005}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Many2DMaterials}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DS}{%
+         family={Direct},
+         familyi={D\bibinitperiod},
+         given={Science},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DS1}
+    \strng{fullhash}{DS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Two-Dimensional Materials}
+    \verb{url}
+    \verb https://www.sciencedirect.com/topics/materials-science/two-dimensiona
+    \verb l-materials
+    \endverb
+  \endentry
+
+  \entry{Dulieu2014Europhysics}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DO}{%
+         family={Dulieu},
+         familyi={D\bibinitperiod},
+         given={O.},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Osterwalder},
+         familyi={O\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DOOA1}
+    \strng{fullhash}{DOOA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{3}
+    \field{pages}{20\bibrangedash 24}
+    \field{title}{Cold chemistry with atom--ion collisions}
+    \field{volume}{45}
+    \field{journaltitle}{Europhysics News}
+    \field{year}{2014}
+  \endentry
+
+  \entry{RrBeC}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FA}{%
+         family={Fetter},
+         familyi={F\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FA1}
+    \strng{fullhash}{FA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Rapidly rotating Bose-Einstein condensates}
+    \verb{url}
+    \verb http://www.int.washington.edu/talks/WorkShops/int_05_2b/People/Fetter
+    \verb _A/A_Fetter.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Stanford University}%
+    }
+  \endentry
+
+  \entry{FQC}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FR}{%
+         family={Feynman},
+         familyi={F\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FR1}
+    \strng{fullhash}{FR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{pages}{467\bibrangedash 488}
+    \field{title}{Simulating Physics with Computers}
+    \field{volume}{21 (6-7)}
+    \field{journaltitle}{International Journal of Theoretical Physics}
+    \field{year}{1982}
+  \endentry
+
+  \entry{Tqc5}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=FMH}{%
+         family={Freedman},
+         familyi={F\bibinitperiod},
+         given={Michael\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kitaev},
+         familyi={K\bibinitperiod},
+         given={Alexei},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LMJ}{%
+         family={Larsen},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhenghan},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FMH+1}
+    \strng{fullhash}{FMHKALMJWZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{eprint}
+    \verb quant-ph/0101025
+    \endverb
+    \field{title}{Topological Quantum Computation}
+    \verb{url}
+    \verb https://arxiv.org/abs/quant-ph/0101025
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{quant-ph}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Excitons3}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FJ}{%
+         family={Frenkel},
+         familyi={F\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJ1}
+    \strng{fullhash}{FJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{On the Transformation of light into Heat in Solids. I}
+    \verb{url}
+    \verb http://journals.aps.org/pr/abstract/10.1103/PhysRev.37.17
+    \endverb
+    \field{volume}{37}
+    \field{journaltitle}{Physical Review}
+    \field{year}{1931}
+  \endentry
+
+  \entry{QRDecomposition1}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GW}{%
+         family={Gander},
+         familyi={G\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GW1}
+    \strng{fullhash}{GW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Algorithms for the QR-Decomposition}
+    \verb{url}
+    \verb https://www.inf.ethz.ch/personal/gander/papers/qrneu.pdf
+    \endverb
+    \list{institution}{1}{%
+      {ETH, Zurich}%
+    }
+  \endentry
+
+  \entry{NPComplete}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GMRSJD}{%
+         family={Garey M.\bibnamedelima R},
+         familyi={G\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+         suffix={Johnson\bibnamedelima D},
+         suffixi={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+    }
+    \strng{namehash}{GMRJDS1}
+    \strng{fullhash}{GMRJDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Computers and Intractability: A Guide to the Theory of
+  NP-Completeness}
+    \field{year}{1972}
+  \endentry
+
+  \entry{2DPhos}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GH}{%
+         family={Graphene},
+         familyi={G\bibinitperiod},
+         given={HQ},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GH1}
+    \strng{fullhash}{GH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Black Phosphorus}
+    \verb{url}
+    \verb http://www.hqgraphene.com/Black-Phosphorus.php
+    \endverb
+  \endentry
+
+  \entry{Excitons2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GW}{%
+         family={Gregory},
+         familyi={G\bibinitperiod},
+         given={W},
+         giveni={W},
+      }}%
+    }
+    \strng{namehash}{GW2}
+    \strng{fullhash}{GW2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{The Structure of Electronic Excitation Levels in Insulating
+  Crystals}
+    \verb{url}
+    \verb http://journals.aps.org/pr/abstract/10.1103/PhysRev.52.191
+    \endverb
+    \field{volume}{52}
+    \field{journaltitle}{Physical Review}
+    \field{year}{1937}
+  \endentry
+
+  \entry{Mathieu4}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GVJC}{%
+         family={Gutierrez-Vega},
+         familyi={G\bibinithyphendelim V\bibinitperiod},
+         given={Julio\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GVJC1}
+    \strng{fullhash}{GVJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Theory and numerical analysis of the Mathieu functions}
+    \verb{url}
+    \verb http://optica.mty.itesm.mx/pmog/Papers/Mathieu.pdf
+    \endverb
+    \field{year}{2008}
+  \endentry
+
+  \entry{osti_6533174}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HCC}{%
+         family={Havener},
+         familyi={H\bibinitperiod},
+         given={C\bibnamedelima C},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HMS}{%
+         family={Huq},
+         familyi={H\bibinitperiod},
+         given={M\bibnamedelima S},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=KHF}{%
+         family={Krause},
+         familyi={K\bibinitperiod},
+         given={H\bibnamedelima F},
+         giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=SPA}{%
+         family={Schulz},
+         familyi={S\bibinitperiod},
+         given={P\bibnamedelima A},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PRA}{%
+         family={Phaneuf},
+         familyi={P\bibinitperiod},
+         given={R\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCC+1}
+    \strng{fullhash}{HCCHMSKHFSPAPRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.39.1725
+    \endverb
+    \field{title}{Merged-beams measurements of electron-capture cross sections
+  for $ {O}^{5+} $ $ +{H} $ at electron-volt energies}
+    \verb{url}
+    \verb https://www.osti.gov/biblio/6533174
+    \endverb
+    \field{volume}{39:4}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{annotation}{%
+    Absolute total cross-section measurements are presented for electron
+  capture in O/sup 5+/+H(D) collisions over the energy range 0.9--800 eV/amu.
+  These are the first experimental data to be reported using a new
+  multicharged-ion--atom merged-beams apparatus developed at Oak Ridge National
+  Laboratory. The experimental method and the cross-section measurements are
+  described in detail. At energies below 2 eV/amu, the data show a
+  cross-section enhancement which may be attributed to the ion-induced dipole
+  attraction between the reactants. Agreement with recent unpublished
+  quantum-mechanical calculations ranges from fair at the lower energies to
+  excellent at the higher energies.%
+    }
+    \field{month}{02}
+    \field{year}{1989}
+  \endentry
+
+  \entry{Hohenberg}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HPC}{%
+         family={Hohenberg},
+         familyi={H\bibinitperiod},
+         given={P.\bibnamedelima C.},
+         giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HPC1}
+    \strng{fullhash}{HPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb https://doi.org/10.1103/PhysRev.158.383
+    \endverb
+    \field{issue}{2}
+    \field{title}{Existence of Long-Range Order in One and Two Dimensions}
+    \verb{url}
+    \verb https://journals.aps.org/pr/abstract/10.1103/PhysRev.158.383
+    \endverb
+    \field{volume}{153}
+    \field{journaltitle}{Physical Review Letters}
+    \field{year}{1967}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{IENGO1992179}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IR}{%
+         family={Iengo},
+         familyi={I\bibinitperiod},
+         given={Roberto},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lechne},
+         familyi={L\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IRLK1}
+    \strng{fullhash}{IRLK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0370-1573(92)90039-3
+    \endverb
+    \field{issn}{0370-1573}
+    \field{number}{4}
+    \field{pages}{179\bibrangedash 269}
+    \field{title}{Anyon quantum mechanics and Chern-Simons theory}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0370157392900393
+    \endverb
+    \field{volume}{213}
+    \field{journaltitle}{Physics Reports}
+    \field{year}{1992}
+  \endentry
+
+  \entry{2DPhos3}{misc}{}
+    \name{author}{7}{}{%
+      {{hash=IYY}{%
+         family={Illarionov},
+         familyi={I\bibinitperiod},
+         given={Yu.\bibnamedelima Yu.},
+         giveni={Y\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Walt},
+         familyi={W\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RG}{%
+         family={Rzepa},
+         familyi={R\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Knobloch},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={J.S.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Akinwande},
+         familyi={A\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Grasser},
+         familyi={G\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IYY+1}
+    \strng{fullhash}{IYYWMRGKTKJADGT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Highly stable black phosphorus field-effect transistors with
+  low density of oxide traps}
+    \verb{url}
+    \verb https://www.nature.com/articles/s41699-017-0025-3
+    \endverb
+  \endentry
+
+  \entry{2DMatter1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={J.G.Dash},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{1}
+    \field{pages}{15\bibrangedash 22}
+    \field{title}{Two-dimensional matter}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/0160932782900059
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Endeavour}
+    \field{year}{1982}
+  \endentry
+
+  \entry{TwoCentersParticle}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=JWM}{%
+         family={Jr.},
+         familyi={J\bibinitperiod},
+         given={Willard\bibnamedelima Miller},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=TAV}{%
+         family={Turbiner},
+         familyi={T\bibinitperiod},
+         given={Alexander\bibnamedelima V},
+         giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JWMTAV1}
+    \strng{fullhash}{JWMTAV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Particle in a field of two centers in prolate spheroidal
+  coordinates: integrability and solvability}
+    \verb{url}
+    \verb http://arxiv.org/abs/1402.3816
+    \endverb
+  \endentry
+
+  \entry{2DSuper}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=JW}{%
+         family={Judy},
+         familyi={J\bibinitperiod},
+         given={Wu},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Hanno},
+         familyi={H\bibinitperiod},
+         given={Weitering},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JWHW1}
+    \strng{fullhash}{JWHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Superconductivity in 2D Materials}
+    \verb{url}
+    \verb https://iopscience.iop.org/journal/0953-2048/page/Focus-on-Supercondu
+    \verb ctivity-in-the-2D-Limit
+    \endverb
+  \endentry
+
+  \entry{kassel2008braid}{book}{}
+    \name{author}{2}{}{%
+      {{hash=KC}{%
+         family={Kassel},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TV}{%
+         family={Turaev},
+         familyi={T\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer New York}%
+    }
+    \strng{namehash}{KCTV1}
+    \strng{fullhash}{KCTV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1007/978-0-387-68548-9
+    \endverb
+    \field{isbn}{978-0-387-33841-5}
+    \field{note}{With the graphical assistance of Olivier Dodane}
+    \field{number}{247}
+    \field{pages}{338}
+    \field{series}{Graduate Texts in Mathematics}
+    \field{title}{Braid Groups}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Excitons2D1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KZ}{%
+         family={Koinov},
+         familyi={K\bibinitperiod},
+         given={Z.G.},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KZ1}
+    \strng{fullhash}{KZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{pages}{297\bibrangedash 303}
+    \field{title}{Excitons in two dimensions: the excitation spectrum and phase
+  transition to superfluidity}
+    \field{volume}{265}
+    \field{journaltitle}{Physics Letters A}
+    \field{year}{2000}
+  \endentry
+
+  \entry{KramersTerHaar1946}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KHA}{%
+         family={Kramers},
+         familyi={K\bibinitperiod},
+         given={H.\bibnamedelima A.},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=tHD}{%
+         prefix={ter},
+         prefixi={t\bibinitperiod},
+         family={Haar},
+         familyi={H\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KHAHDt1}
+    \strng{fullhash}{KHAHDt1}
+    \field{labelnamesource}{author}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{pages}{137}
+    \field{volume}{10}
+    \field{journaltitle}{Bulletin of the Astronomical Institutes of the
+  Netherlands}
+    \field{year}{1946}
+  \endentry
+
+  \entry{LandauG}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LLD}{%
+         family={Landau},
+         familyi={L\bibinitperiod},
+         given={L.\bibnamedelima D.},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LLD1}
+    \strng{fullhash}{LLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{pages}{26\bibrangedash 35}
+    \field{title}{Zur Theorie der phasenumwandlungen II}
+    \field{volume}{11}
+    \field{journaltitle}{Phys. Z. Sowjetunion}
+    \field{year}{1937}
+  \endentry
+
+  \entry{Lapack1}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={LAPACK},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Linear Algebra Package}
+    \verb{url}
+    \verb http://www.netlib.org/lapack/
+    \endverb
+  \endentry
+
+  \entry{FQHE}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=LRB}{%
+         family={Laughlin},
+         familyi={L\bibinitperiod},
+         given={Robert\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=SHL}{%
+         family={Stormer},
+         familyi={S\bibinitperiod},
+         given={Horst\bibnamedelima L.},
+         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=TDC}{%
+         family={Tsui},
+         familyi={T\bibinitperiod},
+         given={Daniel\bibnamedelima C.},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LRBSHLTDC1}
+    \strng{fullhash}{LRBSHLTDC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Discovery of a new Form of Quantum Fluid with Fractionally
+  Charged Excitations}
+    \verb{url}
+    \verb http://www.nobelprize.org/nobel_prizes/physics/laureates/1998/
+    \endverb
+  \endentry
+
+  \entry{LeinassMyrheim}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LJM}{%
+         family={Leinass},
+         familyi={L\bibinitperiod},
+         given={J.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Myrheim},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJMMJ1}
+    \strng{fullhash}{LJMMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1007/BF02727953
+    \endverb
+    \field{title}{On the theory of identical particles}
+    \field{volume}{37}
+    \field{journaltitle}{Nuovo Cimento B}
+    \field{year}{1977}
+  \endentry
+
+  \entry{Excitons1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LWY}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={W\bibnamedelima Y},
+         giveni={W\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LWY1}
+    \strng{fullhash}{LWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{pages}{226\bibrangedash 228}
+    \field{title}{Excitons}
+    \verb{url}
+    \verb http://iopscience.iop.org/article/10.1088/0031-9120/5/4/003/pdf
+    \endverb
+    \field{volume}{5}
+    \field{journaltitle}{Physics Education}
+    \field{year}{1970}
+  \endentry
+
+  \entry{Anyons1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MLJ}{%
+         family={M},
+         familyi={M},
+         given={Leinaas\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={J},
+         familyi={J},
+         given={Myrheim},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MLJJM1}
+    \strng{fullhash}{MLJJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{957\bibrangedash 959}
+    \field{title}{On the Theory of Identical Particles}
+    \verb{url}
+    \verb http://www.ifi.unicamp.br/~cabrera/teaching/referencia.pdf
+    \endverb
+    \field{volume}{49}
+    \list{institution}{1}{%
+      {Department of Physics, University of Oslo - Oslo}%
+    }
+    \field{journaltitle}{Physical Review Letters}
+    \field{year}{1976}
+  \endentry
+
+  \entry{Manna8775}{article}{}
+    \name{author}{6}{}{%
+      {{hash=MS}{%
+         family={Manna},
+         familyi={M\bibinitperiod},
+         given={Sujit},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=XY}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Yingming},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LKT}{%
+         family={Law},
+         familyi={L\bibinitperiod},
+         given={Kam\bibnamedelima Tuen},
+         giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=LPA}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Patrick\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MJS}{%
+         family={Moodera},
+         familyi={M\bibinitperiod},
+         given={Jagadeesh\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Academy of Sciences}%
+    }
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSWPXYLKTLPAMJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1073/pnas.1919753117
+    \endverb
+    \field{number}{16}
+    \field{pages}{8775\bibrangedash 8782}
+    \field{title}{Signature of a pair of Majorana zero modes in superconducting
+  gold surface states}
+    \field{volume}{117}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Mathieu2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=oMFNDL}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={Mathematical\bibnamedelima Functions},
+         familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+         given={NIST Digital\bibnamedelima Library},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MFNDLo1}
+    \strng{fullhash}{MFNDLo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Mathieu's equation}
+    \verb{url}
+    \verb http://dlmf.nist.gov/28
+    \endverb
+  \endentry
+
+  \entry{MorseFeshbach}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MP}{%
+         family={Morse},
+         familyi={M\bibinitperiod},
+         given={P.M.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Feshbach},
+         familyi={F\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{MPFH1}
+    \strng{fullhash}{MPFH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Methods of Theoretical Physics}
+    \field{year}{1953}
+  \endentry
+
+  \entry{AnyonsTqc}{article}{}
+    \name{author}{5}{}{%
+      {{hash=NC}{%
+         family={Nayak},
+         familyi={N\bibinitperiod},
+         given={Chetan},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SSH}{%
+         family={Simon},
+         familyi={S\bibinitperiod},
+         given={Steven\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Stern},
+         familyi={S\bibinitperiod},
+         given={Ady},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Freedman},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SSD}{%
+         family={Sarma},
+         familyi={S\bibinitperiod},
+         given={Sankar\bibnamedelima Das},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NC+1}
+    \strng{fullhash}{NCSSHSAFMSSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{Non-Abelian Anyons and Topological Quantum Computation}
+    \verb{url}
+    \verb http://arxiv.org/abs/0707.1889
+    \endverb
+    \field{volume}{80}
+    \field{journaltitle}{Rev. Mod. Phys}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Mermin2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NM}{%
+         family={N.D.},
+         familyi={N\bibinitperiod},
+         given={Mermin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={H.},
+         familyi={H\bibinitperiod},
+         given={Wagner},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NMHW1}
+    \strng{fullhash}{NMHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \verb{doi}
+    \verb https://doi.org/10.1103/PhysRevLett.17.1133
+    \endverb
+    \field{issue}{22}
+    \field{title}{Absence of Ferromagnetism or Antiferromagnetism in One- or
+  Two-Dimensional Isotropic Heisenberg Models}
+    \verb{url}
+    \verb https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.17.1133
+    \endverb
+    \field{volume}{17}
+    \field{journaltitle}{Phys. Rev. Lett}
+    \field{year}{1966}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Tqc4}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PJK}{%
+         family={Pachos},
+         familyi={P\bibinitperiod},
+         given={Jiannis\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJK1}
+    \strng{fullhash}{PJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Introduction to Topological Quantum Computation}
+    \verb{url}
+    \verb http://quince.leeds.ac.uk/~phyjkp/index_files/JiannisPachosLecture.pd
+    \verb f
+    \endverb
+    \list{institution}{2}{%
+      {School of Physics}%
+      {Astronomy University of Leeds Leeds LS2 9JT UK}%
+    }
+  \endentry
+
+  \entry{Dirac2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PD}{%
+         family={P.A.M},
+         familyi={P\bibinitperiod},
+         given={Dirac},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PD1}
+    \strng{fullhash}{PD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{The Quantum Theory of the Electron}
+    \field{volume}{117}
+    \field{journaltitle}{Proceedings of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences}
+    \field{year}{1928}
+  \endentry
+
+  \entry{2DHAtom}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PD}{%
+         family={Parfitt},
+         familyi={P\bibinitperiod},
+         given={D.G.W.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Portnoi},
+         familyi={P\bibinitperiod},
+         given={M.E.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PDPM1}
+    \strng{fullhash}{PDPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb https://doi.org/10.1063/1.1503868
+    \endverb
+    \field{title}{The two-dimensional hydrogen atom revisited}
+    \field{volume}{43}
+    \field{journaltitle}{Journal of Mathematical Physics}
+    \field{year}{2002}
+  \endentry
+
+  \entry{GraphLayers}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PB}{%
+         family={Partoens},
+         familyi={P\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Peeters},
+         familyi={P\bibinitperiod},
+         given={F.M.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PBPF1}
+    \strng{fullhash}{PBPF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{From graphene to graphite: Electronic structure around the K
+  point}
+    \field{volume}{72}
+    \field{journaltitle}{Phys. Rev. B}
+    \field{year}{2005}
+  \endentry
+
+  \entry{H2Plus2d1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PSH}{%
+         family={Patil},
+         familyi={P\bibinitperiod},
+         given={S.\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PSH1}
+    \strng{fullhash}{PSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{5}
+    \field{title}{Hydrogen molecular ion and molecule in two dimensions}
+    \field{volume}{118}
+    \field{journaltitle}{Journal of Chemical Physics}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Pierls}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PRE}{%
+         family={Pierls},
+         familyi={P\bibinitperiod},
+         given={R.\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PRE1}
+    \strng{fullhash}{PRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{pages}{177\bibrangedash 222}
+    \field{title}{Quelques proprietes typiques des corpses solides}
+    \field{volume}{5}
+    \field{journaltitle}{Ann. I. H. Poincare}
+    \field{year}{1935}
+  \endentry
+
+  \entry{Pomerance}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PC}{%
+         family={Pomerance},
+         familyi={P\bibinitperiod},
+         given={Carl},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PC1}
+    \strng{fullhash}{PC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{pages}{89\bibrangedash 139}
+    \field{title}{Analysis and Comparison of Some Integer Factoring Algorithms,
+  in Computational Methods in Number Theory, Part I}
+    \verb{url}
+    \verb https://math.dartmouth.edu/~carlp/PDF/analysiscomparison.pdf
+    \endverb
+    \field{volume}{154}
+    \field{journaltitle}{Math. Centre Tract}
+    \field{year}{1982}
+  \endentry
+
+  \entry{QCProblems}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PA}{%
+         family={Ponnath},
+         familyi={P\bibinitperiod},
+         given={Abhilash},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PA1}
+    \strng{fullhash}{PA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Difficulties in the Implementation of Quantum Computers}
+    \verb{url}
+    \verb https://arxiv.org/pdf/cs/0602096.pdf
+    \endverb
+  \endentry
+
+  \entry{2DPhos2}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=QJ}{%
+         family={Qiao},
+         familyi={Q\bibinitperiod},
+         given={Jingsi},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KX}{%
+         family={Kong},
+         familyi={K\bibinitperiod},
+         given={Xianghua},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HZX}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Zhi-Xin},
+         giveni={Z\bibinithyphendelim X\bibinitperiod},
+      }}%
+      {{hash=YF}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=JW}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{QJ+1}
+    \strng{fullhash}{QJKXHZXYFJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{title}{Few-layer black phosphorus: emerging direct band gap
+  semiconductor with high carrier mobility}
+    \verb{url}
+    \verb https://arxiv.org/vc/arxiv/papers/1401/1401.5045v1.pdf
+    \endverb
+  \endentry
+
+  \entry{Tqc3}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RR}{%
+         family={Raussendorf},
+         familyi={R\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Harrington},
+         familyi={H\bibinitperiod},
+         given={Jim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Goyal},
+         familyi={G\bibinitperiod},
+         given={Kovid},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RRHJGK1}
+    \strng{fullhash}{RRHJGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Topological fault-tolerance in cluster state quantum
+  computation}
+    \verb{url}
+    \verb http://arxiv.org/abs/quant-ph/0703143
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{New Journal of Physics}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Ref4}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=RWG}{%
+         family={Rellergert},
+         familyi={R\bibinitperiod},
+         given={W.\bibnamedelima G.},
+         giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SST}{%
+         family={Sullivan},
+         familyi={S\bibinitperiod},
+         given={S.\bibnamedelima T.},
+         giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kotochigova},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Petrov},
+         familyi={P\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SSJ}{%
+         family={Schowalter},
+         familyi={S\bibinitperiod},
+         given={S.\bibnamedelima J.},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HER}{%
+         family={Hudson},
+         familyi={H\bibinitperiod},
+         given={E.\bibnamedelima R.},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Optica Publishing Group}%
+    }
+    \strng{namehash}{RWG+1}
+    \strng{fullhash}{RWGSSTKSPASSJCKHER1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{I1000}
+    \field{title}{Chemical Reaction of Ultracold Atoms and Ions in a Hybrid
+  Trap}
+    \field{journaltitle}{Proceedings of the International Quantum Electronics
+  Conference and Conference on Lasers and Electro-Optics Pacific Rim 2011}
+    \field{year}{2011}
+  \endentry
+
+  \entry{2DLED}{article}{}
+    \name{author}{12}{}{%
+      {{hash=RJS}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={Jason\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Klement},
+         familyi={K\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JAM}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Aaron\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GNJ}{%
+         family={Ghimire},
+         familyi={G\bibinitperiod},
+         given={Nirmal\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Jiaqiang},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MDG}{%
+         family={Mandrus},
+         familyi={M\bibinitperiod},
+         given={D.\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Taniguchi},
+         familyi={T\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kitamura},
+         familyi={K\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Wang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CDH}{%
+         family={Cobden},
+         familyi={C\bibinitperiod},
+         given={David\bibnamedelima H.},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Xiaodong},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RJS+1}
+    \strng{fullhash}{RJSKPJAMGNJYJMDGTTWKKKYWCDHXX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{268\bibrangedash 272}
+    \field{title}{Electrically tunable excitonic light-emitting diodes based on
+  monolayer WSe2 p-n junctions}
+    \verb{url}
+    \verb http://www.nature.com/nnano/journal/v9/n4/full/nnano.2014.26.html
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{Nature Nanotechnology}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Tqc1}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=SSD}{%
+         family={Sarma},
+         familyi={S\bibinitperiod},
+         given={Sandra\bibnamedelima Das},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Freedmana},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Nayak},
+         familyi={N\bibinitperiod},
+         given={Chetan},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSDFMNC1}
+    \strng{fullhash}{SSDFMNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Topological Quantum Computation}
+    \verb{url}
+    \verb http://stationq.cnsi.ucsb.edu/~freedman/publications/96.pdf
+    \endverb
+  \endentry
+
+  \entry{Tqc2}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SSD}{%
+         family={Sarma},
+         familyi={S\bibinitperiod},
+         given={Sankar\bibnamedelima Das},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Freedman},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Nayak},
+         familyi={N\bibinitperiod},
+         given={Chetan},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSDFMNC2}
+    \strng{fullhash}{SSDFMNC2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Topologically-Protected Qubits from a Possible Non-Abelian
+  Fractional Quantum Hall State}
+    \verb{url}
+    \verb http://arxiv.org/abs/cond-mat/0412343
+    \endverb
+    \field{volume}{94}
+    \field{journaltitle}{Phys. Rev. Lett}
+    \field{year}{2005}
+  \endentry
+
+  \entry{BOApprox2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SCD}{%
+         family={Sherrill},
+         familyi={S\bibinitperiod},
+         given={C.\bibnamedelima David},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCD1}
+    \strng{fullhash}{SCD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{The Born-Oppenheimer Approximation}
+    \verb{url}
+    \verb http://vergil.chemistry.gatech.edu/notes/bo/bo.html
+    \endverb
+    \list{institution}{2}{%
+      {School of Chemistry}%
+      {Biochemistry, Georgia Institute of Technology}%
+    }
+  \endentry
+
+  \entry{Schor}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SPW}{%
+         family={Shor},
+         familyi={S\bibinitperiod},
+         given={Peter\bibnamedelima W},
+         giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPW1}
+    \strng{fullhash}{SPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{1484\bibrangedash 1509}
+    \field{title}{Polynomial-Time Algorithms for Prime Factorization and
+  Discrete Logarithms on a Quantum Computer}
+    \verb{url}
+    \verb http://arxiv.org/abs/quant-ph/9508027v2
+    \endverb
+    \field{volume}{26}
+    \field{journaltitle}{SIAM J. Sci. Statist. Comput}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Excitons2D2}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Excitons in Semiconductor Quantum Wells Studied Using
+  Two-Dimensional Coherent Spectroscopy}
+    \verb{url}
+    \verb https://jila.colorado.edu/publications/46707/excitons-semiconductor-q
+    \verb uantum-wells
+    \endverb
+    \list{location}{1}{%
+      {Boulder, CO}%
+    }
+    \list{institution}{1}{%
+      {University of Colorado}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Slater}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SCJ}{%
+         family={Slater},
+         familyi={S\bibinitperiod},
+         suffix={John},
+         suffixi={J\bibinitperiod},
+         given={C},
+         giveni={C},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{SJC1}
+    \strng{fullhash}{SJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Quantum Theory of Molecules and Solids}
+    \field{year}{1963}
+  \endentry
+
+  \entry{anyonsR}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Stern},
+         familyi={S\bibinitperiod},
+         given={Ady},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{issue}{1}
+    \field{title}{Anyons and the quantum Hall effect - A pedagogical review}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0003491607001674
+    \endverb
+    \field{volume}{323}
+    \field{journaltitle}{Annals of Physics}
+    \field{year}{2008}
+  \endentry
+
+  \entry{C1CP21205B}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SST}{%
+         family={Sullivan},
+         familyi={S\bibinitperiod},
+         given={Scott\bibnamedelima T.},
+         giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=RWG}{%
+         family={Rellergert},
+         familyi={R\bibinitperiod},
+         given={Wade\bibnamedelima G.},
+         giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kotochigova},
+         familyi={K\bibinitperiod},
+         given={Svetlana},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Kuang},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SSJ}{%
+         family={Schowalter},
+         familyi={S\bibinitperiod},
+         given={Steven\bibnamedelima J.},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HER}{%
+         family={Hudson},
+         familyi={H\bibinitperiod},
+         given={Eric\bibnamedelima R.},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Royal Society of Chemistry}%
+    }
+    \strng{namehash}{SST+1}
+    \strng{fullhash}{SSTRWGKSCKSSJHER1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1039/C1CP21205B
+    \endverb
+    \field{issue}{42}
+    \field{pages}{18859\bibrangedash 18863}
+    \field{title}{Trapping molecular ions formed via photo-associative
+  ionization of ultracold atoms}
+    \verb{url}
+    \verb http://dx.doi.org/10.1039/C1CP21205B
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Phys. Chem. Chem. Phys.}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Majorana}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VS}{%
+         family={Vijay},
+         familyi={V\bibinitperiod},
+         given={Sagar},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HTH}{%
+         family={Hsieh},
+         familyi={H\bibinitperiod},
+         given={Timothy\bibnamedelima H.},
+         giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=FL}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Liang},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society (APS)}%
+    }
+    \strng{namehash}{VSHTHFL1}
+    \strng{fullhash}{VSHTHFL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.1103/physrevx.5.041038
+    \endverb
+    \field{issn}{2160-3308}
+    \field{number}{4}
+    \field{title}{Majorana Fermion Surface Code for Universal Quantum
+  Computation}
+    \verb{url}
+    \verb http://dx.doi.org/10.1103/PhysRevX.5.041038
+    \endverb
+    \field{volume}{5}
+    \field{journaltitle}{Physical Review X}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kolos}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WK}{%
+         family={W.},
+         familyi={W\bibinitperiod},
+         given={Kolos},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={W},
+         familyi={W},
+         given={Wolniewicz},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WKWW1}
+    \strng{fullhash}{WKWW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb http://dx.doi.org/10.1103/RevModPhys.35.473
+    \endverb
+    \field{issue}{3}
+    \field{pages}{473\bibrangedash 483}
+    \field{title}{Nonadiabatic Theory for Diatomic Molecules and Its
+  Application to the Hydrogen Molecule}
+    \verb{url}
+    \verb http://journals.aps.org.ezproxy.library.unlv.edu/rmp/pdf/10.1103/RevM
+    \verb odPhys.35.473
+    \endverb
+    \field{volume}{35}
+    \field{journaltitle}{Reviews of Modern Physics}
+    \field{year}{1963}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{FermiGR}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WA}{%
+         family={Wacker},
+         familyi={W\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \strng{namehash}{WA1}
+    \strng{fullhash}{WA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Fermis golden rule}
+    \verb{url}
+    \verb http://www.matfys.lth.se/staff/andreas.wacker/Scripts/fermiGR.pdf
+    \endverb
+  \endentry
+
+  \entry{Walsh}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WD}{%
+         family={Walsh},
+         familyi={W\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WD1}
+    \strng{fullhash}{WD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{A Physicist's Introduction to Topology: Connections to
+  Bosons, Fermions, and Anyons}
+    \verb{url}
+    \verb http://physics.ucsd.edu/~mcgreevy/s13/final-papers/2013S-215C-Walsh-D
+    \verb aniel.pdf
+    \endverb
+  \endentry
+
+  \entry{ExperimentalBates2}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=WAL}{%
+         family={Wasserman},
+         familyi={W\bibinitperiod},
+         given={Allen\bibnamedelima Lowell},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WAL1}
+    \strng{fullhash}{WAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{The hydrogen molecule-ion as a superposition of atomic
+  orbitals}
+    \verb{url}
+    \verb https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=3568&context=r
+    \verb td
+    \endverb
+    \list{institution}{1}{%
+      {Iowa State University}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{1963}
+  \endentry
+
+  \entry{Anyons2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WF}{%
+         family={Wilczek},
+         familyi={W\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+    }
+    \strng{namehash}{WF1}
+    \strng{fullhash}{WF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Quantum Mechanics of Fractional-Spin Particles}
+    \verb{url}
+    \verb http://www.ifi.unicamp.br/~mtamash/f689_mecquant_i/prl49_957.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Institute for Theoretical Physics University of California Santa Barbara
+  California 93106}%
+    }
+    \field{year}{1982}
+  \endentry
+
+  \entry{Wilzceck1982}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WF}{%
+         family={Wilczek},
+         familyi={W\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{WF2}
+    \strng{fullhash}{WF2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.49.957
+    \endverb
+    \field{issue}{14}
+    \field{pages}{957\bibrangedash 959}
+    \field{title}{Quantum Mechanics of Fractional-Spin Particles}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.49.957
+    \endverb
+    \field{volume}{49}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{1982}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{BQP}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WP}{%
+         family={Wocjan},
+         familyi={W\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WPZS1}
+    \strng{fullhash}{WPZS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Several natural BQP-Complete problems}
+    \verb{url}
+    \verb https://arxiv.org/abs/quant-ph/0606179
+    \endverb
+    \field{year}{2006}
+  \endentry
+
+  \entry{AbelianAnyons}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=WJR}{%
+         family={Wootton},
+         familyi={W\bibinitperiod},
+         given={James\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=PJK}{%
+         family={Pachos},
+         familyi={P\bibinitperiod},
+         given={Jiannis\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJRPJK1}
+    \strng{fullhash}{WJRPJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Universal Quantum Computation with Abelian Anyon Models}
+    \verb{url}
+    \verb http://arxiv.org/pdf/0904.4373v2.pdf
+    \endverb
+    \field{year}{2009}
+  \endentry
+
+  \entry{YSWU}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WYS}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Yong-Shi},
+         giveni={Y\bibinithyphendelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{WYS1}
+    \strng{fullhash}{WYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{issue}{2}
+    \field{pages}{111\bibrangedash 114}
+    \field{title}{Multiparticle Quantum Mechanics Obeying Fractional
+  Statistics}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.53.111
+    \endverb
+    \field{volume}{53}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{1984}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{H2atom}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=YXL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={X.\bibnamedelima L.},
+         giveni={X\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=GSH}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={S.\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CFT}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={F.\bibnamedelima T.},
+         giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YXLGSHCFT1}
+    \strng{fullhash}{YXLGSHCFT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{title}{Analytic solution of a two-dimensional hydrogen atom. I.
+  Non-relativistic theory}
+    \verb{url}
+    \verb http://journals.aps.org/pra/abstract/10.1103/PhysRevA.43.1186
+    \endverb
+  \endentry
+
+  \entry{YangXL}{article}{}
+    \name{author}{5}{}{%
+      {{hash=YXL}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={X.\bibnamedelima L.},
+         giveni={X\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=GSH}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={S.\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CFT}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={F.\bibnamedelima T.},
+         giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=WKW}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={K.\bibnamedelima W.},
+         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=CWY}{%
+         family={Ching},
+         familyi={C\bibinitperiod},
+         given={W.\bibnamedelima Y.},
+         giveni={W\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{YXL+1}
+    \strng{fullhash}{YXLGSHCFTWKWCWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.43.1186
+    \endverb
+    \field{issue}{3}
+    \field{pages}{1186\bibrangedash 1196}
+    \field{title}{Analytic solution of a two-dimensional hydrogen atom. I.
+  Nonrelativistic theory}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.43.1186
+    \endverb
+    \field{volume}{43}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{year}{1991}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{H2Plus2d2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZJL}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Jia-Lin},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=XJJ}{%
+         family={Xiong},
+         familyi={X\bibinitperiod},
+         given={Jia-Jiong},
+         giveni={J\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZJLXJJ1}
+    \strng{fullhash}{ZJLXJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{number}{17}
+    \field{title}{Hydrogen Molecular Ion in Two Dimensions}
+    \field{volume}{41}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{1990}
+  \endentry
+
+  \entry{Zygelman88}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZB}{%
+         family={Zygelman},
+         familyi={Z\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dalgarno},
+         familyi={D\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{ZBDA1}
+    \strng{fullhash}{ZBDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.38.1877
+    \endverb
+    \field{issue}{4}
+    \field{pages}{1877\bibrangedash 1884}
+    \field{title}{Radiative quenching of ${He}(2^{1}{S}$) induced by collisions
+  with ground-state helium atoms}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.38.1877
+    \endverb
+    \field{volume}{38}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{year}{1988}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ZygelmanHunt2012}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=ZB}{%
+         family={Zygelman},
+         familyi={Z\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hunt},
+         familyi={H\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZBHR1}
+    \strng{fullhash}{ZBHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{eprint}
+    \verb 1211.5079
+    \endverb
+    \field{title}{Comment on {"Measurement of a large Chemical Reaction Rate
+  between Ultracold Closed-Shell Ca Atoms and Open-Shell {Yb+} Ions Held in a
+  Hybrid Atom-Ion Trap"}}
+    \verb{url}
+    \verb https://arxiv.org/abs/1211.5079
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{physics.atm-clus}
+    \field{year}{2012}
+  \endentry
+
+  \entry{ZL}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZB}{%
+         family={Zygelman},
+         familyi={Z\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+      {{hash=LZ}{%
+         family={Lucic},
+         familyi={L\bibinitperiod},
+         given={Zelimir},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=HER}{%
+         family={Hudson},
+         familyi={H\bibinitperiod},
+         given={Eric\bibnamedelima R},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{ZBLZHER1}
+    \strng{fullhash}{ZBLZHER1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{doi}
+    \verb 10.1088/0953-4075/47/1/015301
+    \endverb
+    \field{number}{1}
+    \field{pages}{015301}
+    \field{title}{Cold ion-atom chemistry driven by spontaneous radiative
+  relaxation: a case study for the formation of the YbCa+ molecular ion}
+    \verb{url}
+    \verb https://doi.org/10.1088/0953-4075/47/1/015301
+    \endverb
+    \field{volume}{47}
+    \field{journaltitle}{Journal of Physics B: Atomic, Molecular and Optical
+  Physics}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ZygelmanCT}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZB}{%
+         family={Zygelman},
+         familyi={Z\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Stancil},
+         familyi={S\bibinitperiod},
+         given={P.C.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gargaud},
+         familyi={G\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={McCarroll},
+         familyi={M\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \strng{namehash}{ZB+1}
+    \strng{fullhash}{ZBSPGMMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{title}{Ion–Atom Charge Transfer Reactions at Low Energies}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-030-73893-8_55
+    \endverb
+    \field{journaltitle}{Springer Handbook of Atomic, Molecular, and Optical
+  Physics. Springer Handbooks. Springer, Cham}
+    \field{year}{2023}
+  \endentry
+\enddatalist
+\endinput
