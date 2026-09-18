@@ -104,6 +104,9 @@
 \usepackage[titletoc]{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftchapfont}{\normalsize \scshape}
+\renewcommand{\cftchappresnum}{Chapter\space}
+\renewcommand{\cftchapaftersnum}{:}
+\setlength{\cftchapnumwidth}{6.5em}
 \renewcommand\listfigurename{List of Figures}
 \renewcommand\listtablename{List of Tables}
 

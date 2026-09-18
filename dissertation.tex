@@ -71,6 +71,8 @@
 \include{chapter5}
 \include{conclusion}
 %\renewcommand{\thechapter}{\Roman{chapter}}
+\addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{Appendix\space}}
+\addtocontents{toc}{\protect\setlength{\protect\cftchapnumwidth}{7.0em}}
 \begin{appendices}
     \include{appendixA}
     \include{appendixB}
@@ -85,8 +87,7 @@
 % the back matter
 \clearpage
 %\bibliography{dissertation}
-\printbibliography
-\addcontentsline{toc}{chapter}{References}
+\printbibliography[heading=bibintoc,title={References}]
 % \bibliographystyle{plain}
 
 \include{cv}

@@ -53,9 +53,11 @@
 \contentsline {section}{\numberline {6.3}Calculations and Discussion}{84}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Conclusion}{90}{chapter.7}%
 \contentsline {chapter}{Appendix \numberline {A}Center of Mass as a Plane Wave}{93}{appendix.A}%
+\renewcommand {\cftchappresnum }{Appendix }
+\setlength {\cftchapnumwidth }{7.0em}
 \contentsline {chapter}{Appendix \numberline {B}Mathematica Code for Calculating the Eigenvalues for the H2 Ion in 3 Dimensions}{96}{appendix.B}%
 \contentsline {chapter}{Appendix \numberline {C}Hydrogen Ion in 2 Dimension Equation, Mathematica Code}{103}{appendix.C}%
 \contentsline {chapter}{Appendix \numberline {D}Fortran code for Calculating Energies for the 2D problem}{106}{appendix.D}%
 \contentsline {chapter}{Appendix \numberline {E}Scattering Cross Section Code}{117}{appendix.E}%
-\contentsline {chapter}{References}{132}{appendix*.49}%
+\contentsline {chapter}{References}{125}{appendix*.49}%
 \contentsline {chapter}{Curriculum Vitae}{133}{section*.51}%
