@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 15:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1235,8 +1235,8 @@ th-e-mat-
  []
 
 
-Overfull \hbox (2.5644pt too wide) in paragraph at lines 60--60
- [][] []\T1/lmr/m/sc/12 Ap-pendix []Fortran code for Cal-cu-lat-ing En-er-gies 
+Overfull \hbox (4.9044pt too wide) in paragraph at lines 60--60
+ [][] []\T1/lmr/m/sc/12 Ap-pendix []Fortran Code for Cal-cu-lat-ing En-er-gies 
 for the 
  []
 
@@ -1608,10 +1608,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 1.
 
-Overfull \hbox (6.315pt too wide) in paragraph at lines 1--1
+Overfull \hbox (8.24454pt too wide) in paragraph at lines 1--1
 |\T1/phv/m/sc/14.4 Radiative Charge Trans-fer and As-so-ci-a-tion for the $\OML
 /lmm/m/it/14.4 Yb[] \OT1/lmr/m/n/14.4 + \OML/lmm/m/it/14.4 Ca$ \T1/phv/m/sc/14.
-4 sys-
+4 Sys-
  []
 
 [10
@@ -2794,8 +2794,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--101
  (./appendixD.tex
 Appendix D.
 
-Overfull \hbox (5.8038pt too wide) in paragraph at lines 1--1
-|\T1/phv/m/sc/14.4 Fortran code for Cal-cu-lat-ing En-er-gies for the 2D prob-l
+Overfull \hbox (9.82143pt too wide) in paragraph at lines 1--1
+|\T1/phv/m/sc/14.4 Fortran Code for Cal-cu-lat-ing En-er-gies for the 2D Prob-l
 em| 
  []
 
@@ -3450,7 +3450,7 @@ Package logreq Info: Writing requests to 'dissertation.run.xml'.
 Here is how much of TeX's memory you used:
  27686 strings out of 474116
  515437 string characters out of 5743681
- 2010187 words of memory out of 5000000
+ 2009187 words of memory out of 5000000
  49036 multiletter control sequences out of 15000+600000
  668899 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3476,7 +3476,7 @@ ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/
 fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvr8a.pfb>
-Output written on dissertation.pdf (148 pages, 11902061 bytes).
+Output written on dissertation.pdf (148 pages, 11902155 bytes).
 PDF statistics:
  2116 PDF objects out of 2487 (max. 8388607)
  1802 compressed objects within 19 object streams
