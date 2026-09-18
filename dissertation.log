@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,7 +1203,7 @@ they say if you want some-
 ) [4
 
 ] (./dissertation.toc
-Overfull \hbox (2.41472pt too wide) in paragraph at lines 38--38
+Overfull \hbox (2.41472pt too wide) in paragraph at lines 42--42
  [][] [][]\T1/lmr/m/sc/12 Non-Relativistic So-lu-tion of the Hy-dro-gen Molec-u
 -lar Ion in 2 Spa- 
  []
@@ -1213,17 +1213,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \scan_stop: 
-l.51 ...r of Mass as a Plane Wave}{93}{appendix.A}
+l.44 ...f the $ H_2^+ $ molecule}{64}{section.5.2}
                                                   % [1
 
 ]
-Overfull \hbox (15.14131pt too wide) in paragraph at lines 52--52
+Overfull \hbox (15.14131pt too wide) in paragraph at lines 56--56
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Mathematica Code for Cal-cu-lat-ing the Eig
 en-val-ues for the 
  []
 
 
-Overfull \hbox (1.89032pt too wide) in paragraph at lines 54--54
+Overfull \hbox (1.89032pt too wide) in paragraph at lines 58--58
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Fortran code for Cal-cu-lat-ing En-er-gies 
 for the 2D prob-lem[] []  
  []
@@ -1615,7 +1615,7 @@ Overfull \hbox (8.27908pt too wide) in paragraph at lines 78--81
 \OT1/lmr/m/n/12 ^^F[]$ \T1/phv/m/n/12 states of the $\OML/lmm/m/it/12 YbCa[]$ 
  []
 
-<RadAssocPotentials-4.png, id=354, 631.60968pt x 374.90062pt>
+<RadAssocPotentials-4.png, id=362, 631.60968pt x 374.90062pt>
 File: RadAssocPotentials-4.png Graphic file (type png)
 <use RadAssocPotentials-4.png>
 Package pdftex.def Info: RadAssocPotentials-4.png  used on input line 107.
@@ -1651,13 +1651,13 @@ Overfull \hbox (11.29553pt too wide) detected at line 166
  []
 
 [16] [17]
-<EnsteinA3D.png, id=405, 361.35pt x 236.885pt>
+<EnsteinA3D.png, id=413, 361.35pt x 236.885pt>
 File: EnsteinA3D.png Graphic file (type png)
 <use EnsteinA3D.png>
 Package pdftex.def Info: EnsteinA3D.png  used on input line 225.
 (pdftex.def)             Requested size: 469.75502pt x 307.95407pt.
  [18] [19 <./EnsteinA3D.png>]
-<ResultsYbCa.png, id=426, 454.69875pt x 264.99pt>
+<ResultsYbCa.png, id=434, 454.69875pt x 264.99pt>
 File: ResultsYbCa.png Graphic file (type png)
 <use ResultsYbCa.png>
 Package pdftex.def Info: ResultsYbCa.png  used on input line 253.
@@ -1692,7 +1692,7 @@ Overfull \hbox (11.98997pt too wide) in paragraph at lines 269--269
 e time the op-ti-cal po-ten-tial method 
  []
 
-<CrossSection3D.png, id=453, 407.5225pt x 261.97874pt>
+<CrossSection3D.png, id=461, 407.5225pt x 261.97874pt>
 File: CrossSection3D.png Graphic file (type png)
 <use CrossSection3D.png>
 Package pdftex.def Info: CrossSection3D.png  used on input line 274.
@@ -1704,7 +1704,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--275
  []
 
 [22]
-<Spectrum3D.png, id=460, 412.54124pt x 275.0275pt>
+<Spectrum3D.png, id=468, 412.54124pt x 275.0275pt>
 File: Spectrum3D.png Graphic file (type png)
 <use Spectrum3D.png>
 Package pdftex.def Info: Spectrum3D.png  used on input line 282.
@@ -1721,7 +1721,7 @@ Overfull \hbox (8.11528pt too wide) in paragraph at lines 302--304
 oth quan-tum and semi-classical 
  []
 
-<IsotopicDependency.jpg, id=480, 983.675pt x 750.805pt>
+<IsotopicDependency.jpg, id=488, 983.675pt x 750.805pt>
 File: IsotopicDependency.jpg Graphic file (type jpg)
 <use IsotopicDependency.jpg>
 Package pdftex.def Info: IsotopicDependency.jpg  used on input line 316.
@@ -1772,7 +1772,7 @@ rox-i-mate de-scrip-tion of the 2D ger-ade molecule
  []
 
 [37]
-<Vg-Vs-LCAO-good.png, id=676, 361.35pt x 242.9075pt>
+<Vg-Vs-LCAO-good.png, id=684, 361.35pt x 242.9075pt>
 File: Vg-Vs-LCAO-good.png Graphic file (type png)
 <use Vg-Vs-LCAO-good.png>
 Package pdftex.def Info: Vg-Vs-LCAO-good.png  used on input line 185.
@@ -1783,7 +1783,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--186
 ox-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
-<Vg-Vs-LCAO-2.png, id=677, 361.35pt x 227.85126pt>
+<Vg-Vs-LCAO-2.png, id=685, 361.35pt x 227.85126pt>
 File: Vg-Vs-LCAO-2.png Graphic file (type png)
 <use Vg-Vs-LCAO-2.png>
 Package pdftex.def Info: Vg-Vs-LCAO-2.png  used on input line 193.
@@ -1795,7 +1795,7 @@ x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
 [38]
-<Vu-Vs-LCAO-good.png, id=689, 361.35pt x 240.9pt>
+<Vu-Vs-LCAO-good.png, id=697, 361.35pt x 240.9pt>
 File: Vu-Vs-LCAO-good.png Graphic file (type png)
 <use Vu-Vs-LCAO-good.png>
 Package pdftex.def Info: Vu-Vs-LCAO-good.png  used on input line 205.
@@ -1808,7 +1808,7 @@ x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 1st
 
 [39 <./Vg-Vs-LCAO-good.png (PNG copy)>] [40 <./Vg-Vs-LCAO-2.png (PNG copy)> <./
 Vu-Vs-LCAO-good.png (PNG copy)>]
-<Ger-Lcao-Graphs.jpg, id=701, 1715.40875pt x 452.69125pt>
+<Ger-Lcao-Graphs.jpg, id=709, 1715.40875pt x 452.69125pt>
 File: Ger-Lcao-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-Graphs.jpg  used on input line 222.
@@ -1819,7 +1819,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--223
 -i-ma-tion. The graph shows
  []
 
-<Ger-Lcao-3D-Graphs.jpg, id=702, 460.8417pt x 264.2673pt>
+<Ger-Lcao-3D-Graphs.jpg, id=710, 460.8417pt x 264.2673pt>
 File: Ger-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-3D-Graphs.jpg  used on input line 228.
@@ -1830,7 +1830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 x-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-Graphs.jpg, id=703, 1518.67375pt x 406.51875pt>
+<UnGer-Lcao-Graphs.jpg, id=711, 1518.67375pt x 406.51875pt>
 File: UnGer-Lcao-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-Graphs.jpg  used on input line 233.
@@ -1841,7 +1841,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--234
 ox-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-3D-Graphs.jpg, id=704, 454.3374pt x 264.7491pt>
+<UnGer-Lcao-3D-Graphs.jpg, id=712, 454.3374pt x 264.7491pt>
 File: UnGer-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-3D-Graphs.jpg  used on input line 238.
@@ -1882,7 +1882,7 @@ T1/phv/m/n/12 . Of course,
  []
 
 [45] [46]
-<H2Ion3D-2.png, id=771, 495.8525pt x 317.185pt>
+<H2Ion3D-2.png, id=779, 495.8525pt x 317.185pt>
 File: H2Ion3D-2.png Graphic file (type png)
 <use H2Ion3D-2.png>
 Package pdftex.def Info: H2Ion3D-2.png  used on input line 98.
@@ -1922,12 +1922,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 168.
 
 [51] [52] [53] [54] [55] [56] [57] [58]
-<Bates3DEofR-2.png, id=910, 361.35pt x 237.88875pt>
+<Bates3DEofR-2.png, id=918, 361.35pt x 237.88875pt>
 File: Bates3DEofR-2.png Graphic file (type png)
 <use Bates3DEofR-2.png>
 Package pdftex.def Info: Bates3DEofR-2.png  used on input line 352.
 (pdftex.def)             Requested size: 361.34912pt x 237.88815pt.
-<Bates3DEofRPlusVofR-2.png, id=913, 361.35pt x 237.88875pt>
+<Bates3DEofRPlusVofR-2.png, id=921, 361.35pt x 237.88875pt>
 File: Bates3DEofRPlusVofR-2.png Graphic file (type png)
 <use Bates3DEofRPlusVofR-2.png>
 Package pdftex.def Info: Bates3DEofRPlusVofR-2.png  used on input line 360.
@@ -2075,17 +2075,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--227
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<H2_1Sg-Potential.pdf, id=1030, 361.35pt x 221.82875pt>
+<H2_1Sg-Potential.pdf, id=1038, 361.35pt x 221.82875pt>
 File: H2_1Sg-Potential.pdf Graphic file (type pdf)
 <use H2_1Sg-Potential.pdf>
 Package pdftex.def Info: H2_1Sg-Potential.pdf  used on input line 262.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_1Su-Potential.png, id=1031, 361.35pt x 221.82875pt>
+<H2_1Su-Potential.png, id=1039, 361.35pt x 221.82875pt>
 File: H2_1Su-Potential.png Graphic file (type png)
 <use H2_1Su-Potential.png>
 Package pdftex.def Info: H2_1Su-Potential.png  used on input line 267.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_sGpU-Potential.png, id=1032, 361.35pt x 228.35312pt>
+<H2_sGpU-Potential.png, id=1040, 361.35pt x 228.35312pt>
 File: H2_sGpU-Potential.png Graphic file (type png)
 <use H2_sGpU-Potential.png>
 Package pdftex.def Info: H2_sGpU-Potential.png  used on input line 273.
@@ -2223,7 +2223,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2.
 l.251 F
        or fermions $\alpha=1$, and for bosons $\alpha=0.$ For fractional val...
 ]
-<fluxtube.png, id=1145, 3311.37125pt x 2646.88875pt>
+<fluxtube.png, id=1153, 3311.37125pt x 2646.88875pt>
 File: fluxtube.png Graphic file (type png)
 <use fluxtube.png>
 Package pdftex.def Info: fluxtube.png  used on input line 257.
@@ -2247,7 +2247,7 @@ $\OML/lmm/m/it/12 m$ \T1/phv/m/n/12 is de-ter-mined by the fermionic
  []
 
 [84]
-<fig1a.pdf, id=1191, 433.62pt x 286.06876pt>
+<fig1a.pdf, id=1199, 433.62pt x 286.06876pt>
 File: fig1a.pdf Graphic file (type pdf)
 <use fig1a.pdf>
 Package pdftex.def Info: fig1a.pdf  used on input line 363.
@@ -2260,7 +2260,7 @@ sonic base, and red
  []
 
 [85]
-<fig1b.pdf, id=1197, 260.975pt x 171.64125pt>
+<fig1b.pdf, id=1205, 260.975pt x 171.64125pt>
 File: fig1b.pdf Graphic file (type pdf)
 <use fig1b.pdf>
 Package pdftex.def Info: fig1b.pdf  used on input line 370.
@@ -2272,7 +2272,7 @@ T1/lmr/m/n/12 = 1 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bo
 sonic base, and red
  []
 
-<fig2a.pdf, id=1198, 433.62pt x 289.08pt>
+<fig2a.pdf, id=1206, 433.62pt x 289.08pt>
 File: fig2a.pdf Graphic file (type pdf)
 <use fig2a.pdf>
 Package pdftex.def Info: fig2a.pdf  used on input line 377.
@@ -2289,7 +2289,7 @@ osonic base, and red
 pdfTeX warning: pdflatex (file ./fig1b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig2b.pdf, id=1256, 260.975pt x 170.6375pt>
+<fig2b.pdf, id=1264, 260.975pt x 170.6375pt>
 File: fig2b.pdf Graphic file (type pdf)
 <use fig2b.pdf>
 Package pdftex.def Info: fig2b.pdf  used on input line 384.
@@ -2301,7 +2301,7 @@ T1/lmr/m/n/12 = 10 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a b
 osonic base, and red
  []
 
-<fig3a.pdf, id=1257, 433.62pt x 289.08pt>
+<fig3a.pdf, id=1265, 433.62pt x 289.08pt>
 File: fig3a.pdf Graphic file (type pdf)
 <use fig3a.pdf>
 Package pdftex.def Info: fig3a.pdf  used on input line 392.
@@ -2311,12 +2311,12 @@ Package pdftex.def Info: fig3a.pdf  used on input line 392.
 pdfTeX warning: pdflatex (file ./fig2b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig3b.pdf, id=1316, 260.975pt x 170.6375pt>
+<fig3b.pdf, id=1324, 260.975pt x 170.6375pt>
 File: fig3b.pdf Graphic file (type pdf)
 <use fig3b.pdf>
 Package pdftex.def Info: fig3b.pdf  used on input line 399.
 (pdftex.def)             Requested size: 328.82707pt x 215.00436pt.
-<CT.pdf, id=1317, 260.975pt x 171.64125pt>
+<CT.pdf, id=1325, 260.975pt x 171.64125pt>
 File: CT.pdf Graphic file (type pdf)
 <use CT.pdf>
 Package pdftex.def Info: CT.pdf  used on input line 407.
@@ -2924,13 +2924,13 @@ Overfull \hbox (7.38986pt too wide) in paragraph at lines 8--8
  []
 
 ) [124]
-Overfull \hbox (11.99875pt too wide) in paragraph at lines 85--85
+Overfull \hbox (11.99875pt too wide) in paragraph at lines 89--89
 []\T1/lmr/m/n/12 Daniel S. Abrams and Seth Lloyd. ``Non-lin-ear Quan-tum Me-cha
 n-ics Im-plies Polynomial- 
  []
 
 
-Overfull \hbox (0.37364pt too wide) in paragraph at lines 85--85
+Overfull \hbox (0.37364pt too wide) in paragraph at lines 89--89
 []\T1/lmr/m/n/12 Geim A.K. and Novoselov K.S. ``The Rise of Graphene''. In: \T1
 /lmr/m/it/12 Na-ture Ma-te-ri-als \T1/lmr/m/n/12 (2007). 
  []
@@ -2941,45 +2941,45 @@ Overfull \hbox (0.37364pt too wide) in paragraph at lines 85--85
 
 
 ] [126] [127]
-Overfull \hbox (20.9127pt too wide) in paragraph at lines 85--85
+Overfull \hbox (20.9127pt too wide) in paragraph at lines 89--89
 \T1/lmr/m/it/12 of Quan-tum Fluid with Frac-tion-ally Charged Ex-ci-ta-tions\T1
 /lmr/m/n/12 . \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1/lmtt/m/n/12 http : / /
  www . nobelprize . 
  []
 
 [128]
-Overfull \hbox (1.92459pt too wide) in paragraph at lines 85--85
+Overfull \hbox (1.92459pt too wide) in paragraph at lines 89--89
 \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1/lmtt/m/n/12 http : / / quince . leed
 s . ac . uk / ~phyjkp / index _ files / JiannisPachosLecture . 
  []
 
 
-Overfull \hbox (12.90683pt too wide) in paragraph at lines 85--85
+Overfull \hbox (12.90683pt too wide) in paragraph at lines 89--89
 []\T1/lmr/m/n/12 R. E. Pierls. ``Quelques pro-pri-etes typ-iques des corpses so
 lides''. In: \T1/lmr/m/it/12 Ann. I. H. Poincare 
  []
 
 
-Overfull \hbox (42.66086pt too wide) in paragraph at lines 85--85
+Overfull \hbox (42.66086pt too wide) in paragraph at lines 89--89
 \T1/lmr/m/n/12 (1982), pp. 89^^U139. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1
 /lmtt/m/n/12 https : / / math . dartmouth . edu / ~carlp / PDF / analysiscompar
 ison . 
  []
 
 [129]
-Overfull \hbox (4.5646pt too wide) in paragraph at lines 85--85
+Overfull \hbox (4.5646pt too wide) in paragraph at lines 89--89
 []\T1/lmr/m/n/12 R Singh. ``Ex-ci-tons in Semi-con-duc-tor Quan-tum Wells Stud-
 ied Us-ing Two-Dimensional 
  []
 
 
-Overfull \hbox (9.09259pt too wide) in paragraph at lines 85--85
+Overfull \hbox (9.09259pt too wide) in paragraph at lines 89--89
 \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1/lmtt/m/n/12 https : / / jila . color
 ado . edu / publications / 46707 / excitons -[] semiconductor -[] 
  []
 
 
-Overfull \hbox (16.81828pt too wide) in paragraph at lines 85--85
+Overfull \hbox (16.81828pt too wide) in paragraph at lines 89--89
 []\T1/lmr/m/n/12 Daniel Walsh. \T1/lmr/m/it/12 A Physi-cist's In-tro-duc-tion t
 o Topol-ogy: Con-nec-tions to Bosons, Fermions, 
  []
@@ -3431,10 +3431,10 @@ Package logreq Info: Writing requests to 'dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27678 strings out of 474116
- 515369 string characters out of 5743681
- 2010187 words of memory out of 5000000
- 49032 multiletter control sequences out of 15000+600000
+ 27686 strings out of 474116
+ 515437 string characters out of 5743681
+ 2009187 words of memory out of 5000000
+ 49036 multiletter control sequences out of 15000+600000
  668899 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,17n,93p,1914b,1491s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3459,10 +3459,10 @@ ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/
 fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvr8a.pfb>
-Output written on dissertation.pdf (148 pages, 11900062 bytes).
+Output written on dissertation.pdf (148 pages, 11901144 bytes).
 PDF statistics:
- 2091 PDF objects out of 2487 (max. 8388607)
- 1778 compressed objects within 18 object streams
- 492 named destinations out of 1000 (max. 500000)
- 404 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2112 PDF objects out of 2487 (max. 8388607)
+ 1799 compressed objects within 18 object streams
+ 496 named destinations out of 1000 (max. 500000)
+ 436 words of extra memory for PDF output out of 10000 (max. 10000000)
 

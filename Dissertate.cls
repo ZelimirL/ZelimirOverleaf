@@ -104,8 +104,8 @@
 \usepackage[titletoc]{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftchapfont}{\normalsize \scshape}
-\renewcommand\listfigurename{Listing of figures}
-\renewcommand\listtablename{Listing of tables}
+\renewcommand\listfigurename{List of Figures}
+\renewcommand\listtablename{List of Tables}
 
 % Some definitions.
 %\def\degreeyear#1{\gdef\@degreeyear{#1}}
@@ -141,6 +141,8 @@
   \newpage
   \pagenumbering{roman}
   \setcounter{page}{3}
+  \phantomsection
+  \addcontentsline{toc}{chapter}{Abstract}
   \pagestyle{fancy}
   \lhead{Thesis advisor: Professor \@advisor} \rhead{\@author}
   \renewcommand{\headrulewidth}{0.0pt}
@@ -163,7 +165,9 @@
 }
 
 \newcommand{\acknowledgments}{
-  \chapter*{Acknowledgments}
+  \chapter*{Acknowledgements}
+  \phantomsection
+  \addcontentsline{toc}{chapter}{Acknowledgements}
    \thispagestyle{empty}
   \noindent
   \input{thanks}
