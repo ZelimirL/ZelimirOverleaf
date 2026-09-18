@@ -20,6 +20,8 @@
   pdfdisplaydoctitle=true
 }
 \let\cleardoublepage\clearpage
+% Prevent long unbreakable text from protruding into the 1-inch margins.
+\setlength{\emergencystretch}{3em}
 
 \begin{document}
 
@@ -90,10 +92,16 @@
 % Bibliography/References must appear before the Curriculum Vitae.
 % bibintoc adds the bibliography heading to the Table of Contents.
 %\bibliography{dissertation}
+\begingroup
+\sloppy
 \printbibliography[heading=bibintoc,title={Bibliography}]
+\endgroup
 % \bibliographystyle{plain}
 
 \clearpage
+\begingroup
+\sloppy
 \include{cv}
+\endgroup
 
 \end{document}

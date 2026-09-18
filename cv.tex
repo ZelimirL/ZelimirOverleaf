@@ -1,3 +1,7 @@
+% Margin-safety settings: preserve the required page geometry while preventing overfull lines.
+\begingroup
+\setlength{\emergencystretch}{3em}
+\sloppy
 ﻿\chapter*{Curriculum Vitae}
 \phantomsection
 \addcontentsline{toc}{chapter}{Curriculum Vitae}
@@ -7,4 +11,5 @@
 \begingroup
 \small
 \verbatiminput{cv-accessible.txt}
+\endgroup
 \endgroup

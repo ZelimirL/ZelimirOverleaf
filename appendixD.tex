@@ -5,6 +5,8 @@ To run the numerical calculations I used gfortan 5.2.0, running on 2.2 GHz, Inte
 
 This is Fortran 90 code for calculating even and odd eigenvalues and consequently the energies.
 
+\begingroup
+\footnotesize
 \begin{verbatim}
 ! To Compile 
 ! gfortran -O4 -o h2Plus h2plus.f90 hpsort.f90 -L ./ -l lapacke -l lapack -l blas -l install
@@ -274,4 +276,5 @@ end if
 end function Delta
 
 \end{verbatim}
+\endgroup
 

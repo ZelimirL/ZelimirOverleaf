@@ -1,37 +1,37 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of the BO molecular potential curves (solid thick lines) participating in the radiative association process. In the $ A^2\Sigma ^+ $ entrance channel, the wave function is shown by the light undulating line. The oscillations are due to the strong polarization force in the entrance channel, leading to a potential minimum at $ R \approx 14a_0 $. Association is precipitated by the emission of a photon of energy $ \omega $ near the classical turning point. The final bound rho-vibrational state, in the $ X^2\Sigma ^+ $ channel, is shown by the thin line.}}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces R-dependent Einstein A coefficient as a function of internuclear distance}}{19}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Plot of various cross sections as a function of incoming partial wave $ J $. Circles represent data for the radiative association cross sections, X’s represent an upper bound for the total (association + radiative charge transfer), and squares represent the data for the total radiative relaxation obtained using the optical potential method.}}{21}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Total radiative relaxation cross section as a function of collision energy expressed as $ E = 3/2\,k_B T $, where T is the temperature in Kelvin}}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Emission spectrum for the radiative association process at a gas temperature of 1mK.}}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Isotopic dependence of radiative association into the $ YbCa^+ $ molecular ion }}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of the BO molecular potential curves (solid thick lines) participating in the radiative association process. In the $ A^2\Sigma ^+ $ entrance channel, the wave function is shown by the light undulating line. The oscillations are due to the strong polarization force in the entrance channel, leading to a potential minimum at $ R \approx 14a_0 $. Association is precipitated by the emission of a photon of energy $ \omega $ near the classical turning point. The final bound rho-vibrational state, in the $ X^2\Sigma ^+ $ channel, is shown by the thin line.}}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces R-dependent Einstein A coefficient as a function of internuclear distance}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Plot of various cross sections as a function of incoming partial wave $ J $. Circles represent data for the radiative association cross sections, X’s represent an upper bound for the total (association + radiative charge transfer), and squares represent the data for the total radiative relaxation obtained using the optical potential method.}}{22}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Total radiative relaxation cross section as a function of collision energy expressed as $ E = 3/2\,k_B T $, where T is the temperature in Kelvin}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Emission spectrum for the radiative association process at a gas temperature of 1mK.}}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Isotopic dependence of radiative association into the $ YbCa^+ $ molecular ion }}{27}{figure.caption.17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Aaccurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state}}{39}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state, enhanced plot}}{40}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ 1st excited ungerade state}}{40}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Gerade Orbitals obtained from the LCAO approximation. The graph shows the overlap of the electronic orbitals for different values of the internuclear distance R}}{41}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Gerade Orbitals in 3D from the same LCAO approximation. The graph shows the magnitude of the potential function for different values of the internuclear distance R}}{42}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Ungerade Orbitals obtained from the LCAO approximation. The graph shows the overlap of the electronic orbitals for different values of the internuclear distance R}}{43}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ungerade Orbitals 3D from the same LCAO approximation. The graph shows the magnitude of the potential function for different values values of the internuclear distance R}}{43}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces $ H_2^{+} $ Ion, showing the position of the nuclei at distance R, and a coordinates of an electron}}{48}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Electron potential energy as function of internuclear distance R for 3D $ H_2^+ $ }}{59}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Total Electron potential energy as function of internuclear distance R for 3D $ H_2^+ $, given as $ E(R) + V(R) $}}{60}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Aaccurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state}}{40}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ ground gerade state, enhanced plot}}{41}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Accurate potential curve (red) vs LCAO approximation (blue) for the $ H_2^{+} $ 1st excited ungerade state}}{41}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Gerade Orbitals obtained from the LCAO approximation. The graph shows the overlap of the electronic orbitals for different values of the internuclear distance R}}{42}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gerade Orbitals in 3D from the same LCAO approximation. The graph shows the magnitude of the potential function for different values of the internuclear distance R}}{43}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ungerade Orbitals obtained from the LCAO approximation. The graph shows the overlap of the electronic orbitals for different values of the internuclear distance R}}{44}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ungerade Orbitals 3D from the same LCAO approximation. The graph shows the magnitude of the potential function for different values values of the internuclear distance R}}{44}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces $ H_2^{+} $ Ion, showing the position of the nuclei at distance R, and a coordinates of an electron}}{49}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Electron potential energy as function of internuclear distance R for 3D $ H_2^+ $ }}{60}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Total Electron potential energy as function of internuclear distance R for 3D $ H_2^+ $, given as $ E(R) + V(R) $}}{61}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Hydrogen Molecular Ion in 2 dimensions}}{66}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces $ H_2^{+} $ Energy and Potential curves for the $ 1s_g^{+} $ state}}{71}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces $ H_2^{+} $ Energy and Potential curves for the $ 1s_u^{+} $ state}}{71}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces $ H_2^{+} $ Potential curves for the first gerade (red) and first ungerade (green) states}}{73}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hydrogen Molecular Ion in 2 dimensions}}{67}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces $ H_2^{+} $ Energy and Potential curves for the $ 1s_g^{+} $ state}}{72}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces $ H_2^{+} $ Energy and Potential curves for the $ 1s_u^{+} $ state}}{72}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces $ H_2^{+} $ Potential curves for the first gerade (red) and first ungerade (green) states}}{74}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of anyon as a particle-flux tube composite. Illustration taken from D. P. Avoras ”Geometric Phases in Physics”, pg. 287, ed. A. Shapere and F. Wilczek, World Scientific (1989)}}{82}{figure.caption.41}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Collision temperature $T= 1 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base.}}{86}{figure.caption.42}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Collision temperature $T= 1 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{86}{figure.caption.43}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Collision temperature $T=10 \, K.$ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{87}{figure.caption.44}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Collision temperature $ T=10 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{87}{figure.caption.45}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Collision temperature $T=100 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{88}{figure.caption.46}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Collision temperature $T=100 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. Flux tube charge $\alpha =0$, and $T=1 K $}}{88}{figure.caption.47}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Total RCT cross sections. Solid lines refer to $ \alpha =0$ (i.e., absence of flux tube), for the bosonic base (Blue line) and the fermionic base (Red line) respectively. The dashed line refers to a semion $(\alpha =1/2)$, and the cross section is identical for both fermionic and bosonic bases.}}{89}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of anyon as a particle-flux tube composite. Illustration taken from D. P. Avoras ”Geometric Phases in Physics”, pg. 287, ed. A. Shapere and F. Wilczek, World Scientific (1989)}}{83}{figure.caption.41}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Collision temperature $T= 1 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base.}}{87}{figure.caption.42}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Collision temperature $T= 1 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{87}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Collision temperature $T=10 \, K.$ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{88}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Collision temperature $ T=10 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{88}{figure.caption.45}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Collision temperature $T=100 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. }}{89}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Collision temperature $T=100 \, K. $ Blue icons refer to a bosonic base, and red icons to a fermionic base. Flux tube charge $\alpha =0$, and $T=1 K $}}{89}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Total RCT cross sections. Solid lines refer to $ \alpha =0$ (i.e., absence of flux tube), for the bosonic base (Blue line) and the fermionic base (Red line) respectively. The dashed line refers to a semion $(\alpha =1/2)$, and the cross section is identical for both fermionic and bosonic bases.}}{90}{figure.caption.48}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

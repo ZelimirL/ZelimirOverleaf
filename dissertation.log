@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -962,7 +962,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
 \BKM@id=\count476
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 24
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 26
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -974,24 +974,24 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 (./appendixE.aux) (./cv.aux))
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1129,8 +1129,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 24.
-Package biblatex Info: Reference segment=0 on input line 24.
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
 \c@lstlisting=\count483
  (/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1138,7 +1138,7 @@ Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 ))
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (./cover.tex [1
 
@@ -1194,24 +1194,19 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr
-/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./thanks.tex
-Overfull \hbox (0.68987pt too wide) in paragraph at lines 5--6
-\T1/lmr/m/n/12 goes to my kids, An-drei and Alek-san-dar, who kept me busy. As 
-they say if you want some- 
- []
+/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./thanks.tex) [4
 
-) [4
-
-] (./dissertation.toc
-Overfull \hbox (6.38869pt too wide) in paragraph at lines 28--28
+]
+(./dissertation.toc
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
  [][] [][]\T1/lmr/m/sc/12 Overview of the Cal-cu-la-tion of Molec-u-lar Po-ten-
-tials in 3D[] []  
+tials in 
  []
 
 
-Overfull \hbox (4.81107pt too wide) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
  [][] [][]\T1/lmr/m/sc/12 Non-Relativistic So-lu-tion of the Hy-dro-gen Molec-u
--lar Ion 
+-lar 
  []
 
 
@@ -1219,25 +1214,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \scan_stop: 
-l.43 ... {5.1}Existing Solutions}{63}{section.5.1}
+l.43 ... {5.1}Existing Solutions}{64}{section.5.1}
                                                   % [1
 
 ]
-Overfull \hbox (13.5301pt too wide) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Mathematica Code for Cal-cu-lat-ing the Eig
-en-val- 
+en- 
  []
 
 
-Overfull \hbox (15.70123pt too wide) in paragraph at lines 59--59
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Hydrogen Ion in 2 Di-men-sion Equa-tion, Ma
-th-e-mat- 
+th-e- 
  []
 
 
-Overfull \hbox (4.9044pt too wide) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Fortran Code for Cal-cu-lat-ing En-er-gies 
-for the 
+for 
  []
 
 )
@@ -1245,29 +1240,29 @@ for the
 \openout4 = `dissertation.toc'.
 
  [2] (./dissertation.lot
-Overfull \hbox (0.55429pt too wide) in paragraph at lines 8--8
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
  [][] [][]\T1/lmr/m/n/12 The sep-a-ra-tion con-stant A, elec-tronic en-ergy E, 
 and to-tal en-ergy $\OML/lmm/m/it/12 E \OT1/lmr/m/n/12 + 1\OML/lmm/m/it/12 =R$ 
-\T1/lmr/m/n/12 for 
+
  []
 
 
-Overfull \hbox (0.55429pt too wide) in paragraph at lines 9--9
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
  [][] [][]\T1/lmr/m/n/12 The sep-a-ra-tion con-stant A, elec-tronic en-ergy E, 
 and to-tal en-ergy $\OML/lmm/m/it/12 E \OT1/lmr/m/n/12 + 1\OML/lmm/m/it/12 =R$ 
-\T1/lmr/m/n/12 for 
+
  []
 
 
-Overfull \hbox (21.75558pt too wide) in paragraph at lines 10--10
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
  [][] [][]\T1/lmr/m/n/12 Accurate and LCAO En-ergy as Func-tion of R (in-ter-nu
--clear dis-tance) for the ger- 
+-clear dis-tance) for the 
  []
 
 
-Overfull \hbox (34.81155pt too wide) in paragraph at lines 11--11
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
  [][] [][]\T1/lmr/m/n/12 Accurate and LCAO En-ergy as Func-tion of R (in-ter-nu
--clear dis-tance) for the unger- 
+-clear dis-tance) for the 
  []
 
 )
@@ -1278,211 +1273,195 @@ Overfull \hbox (34.81155pt too wide) in paragraph at lines 11--11
 
 
 ] (./dissertation.lof
-Overfull \hbox (7.04924pt too wide) in paragraph at lines 3--3
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
  [][] [][]\T1/lmr/m/n/12 Illustration of the BO molec-u-lar po-ten-tial curves 
-(solid thick lines) par-tic-i-pat- 
+(solid thick lines) par-tic-i- 
  []
 
 
-Overfull \hbox (19.0697pt too wide) in paragraph at lines 3--3
- \T1/lmr/m/n/12 ing in the ra-dia-tive as-so-ci-a-tion pro-cess. In the $\OML/l
-mm/m/it/12 A[]\OT1/lmr/m/n/12 ^^F[]$ \T1/lmr/m/n/12 en-trance chan-nel, the wav
-e 
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+ \T1/lmr/m/n/12 pat-ing in the ra-dia-tive as-so-ci-a-tion pro-cess. In the $\O
+ML/lmm/m/it/12 A[]\OT1/lmr/m/n/12 ^^F[]$ \T1/lmr/m/n/12 en-trance chan-nel, 
  []
 
 
-Overfull \hbox (4.9349pt too wide) in paragraph at lines 3--3
- \T1/lmr/m/n/12 func-tion is shown by the light un-du-lat-ing line. The os-cil-
-la-tions are due to the 
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+ \T1/lmr/m/n/12 the wave func-tion is shown by the light un-du-lat-ing line. Th
+e os-cil-la-tions are 
  []
 
 
-Overfull \hbox (2.45306pt too wide) in paragraph at lines 3--3
- \T1/lmr/m/n/12 strong po-lar-iza-tion force in the en-trance chan-nel, lead-in
-g to a po-ten-tial min-i- 
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+ \T1/lmr/m/n/12 due to the strong po-lar-iza-tion force in the en-trance chan-n
+el, lead-ing to a 
  []
 
 
-Overfull \hbox (1.13608pt too wide) in paragraph at lines 3--3
- \T1/lmr/m/n/12 mum at $\OML/lmm/m/it/12 R \OMS/lmsy/m/n/12 ^^Y \OT1/lmr/m/n/12
- 14\OML/lmm/m/it/12 a[]$\T1/lmr/m/n/12 . As-so-ci-a-tion is pre-cip-i-tated by 
-the emis-sion of a pho-ton of 
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+ \T1/lmr/m/n/12 of a pho-ton of en-ergy $\OML/lmm/m/it/12 !$ \T1/lmr/m/n/12 nea
+r the clas-si-cal turn-ing point. The fi-nal bound 
  []
 
 
-Overfull \hbox (17.83867pt too wide) in paragraph at lines 3--3
- \T1/lmr/m/n/12 en-ergy $\OML/lmm/m/it/12 !$ \T1/lmr/m/n/12 near the clas-si-ca
-l turn-ing point. The fi-nal bound rho-vibrational state, 
- []
-
-
-Overfull \hbox (7.99925pt too wide) in paragraph at lines 5--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
  [][] [][]\T1/lmr/m/n/12 Plot of var-i-ous cross sec-tions as a func-tion of in
--com-ing par-tial wave $\OML/lmm/m/it/12 J$\T1/lmr/m/n/12 . Cir-cles 
+-com-ing par-tial wave $\OML/lmm/m/it/12 J$\T1/lmr/m/n/12 . Cir- 
  []
 
 
-Overfull \hbox (9.8227pt too wide) in paragraph at lines 5--5
- \T1/lmr/m/n/12 rep-re-sent data for the ra-dia-tive as-so-ci-a-tion cross sec-
-tions, X's rep-re-sent an up- 
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \T1/lmr/m/n/12 cles rep-re-sent data for the ra-dia-tive as-so-ci-a-tion cross
+ sec-tions, X's rep-re-sent 
  []
 
 
-Overfull \hbox (3.0396pt too wide) in paragraph at lines 5--5
- \T1/lmr/m/n/12 per bound for the to-tal (as-so-ci-a-tion + ra-dia-tive charge 
-trans-fer), and squares 
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \T1/lmr/m/n/12 an up-per bound for the to-tal (as-so-ci-a-tion + ra-dia-tive c
+harge trans-fer), and 
  []
 
 
-Overfull \hbox (6.76044pt too wide) in paragraph at lines 5--5
- \T1/lmr/m/n/12 rep-re-sent the data for the to-tal ra-dia-tive re-lax-ation ob
--tained us-ing the op-ti-cal 
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \T1/lmr/m/n/12 squares rep-re-sent the data for the to-tal ra-dia-tive re-lax-
+ation ob-tained us-ing 
  []
 
 
-Overfull \hbox (23.07927pt too wide) in paragraph at lines 6--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
  [][] [][]\T1/lmr/m/n/12 Total ra-dia-tive re-lax-ation cross sec-tion as a fun
-c-tion of col-li-sion en-ergy ex-pressed 
+c-tion of col-li-sion en-ergy 
  []
 
 
-Overfull \hbox (1.43794pt too wide) in paragraph at lines 7--7
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
  [][] [][]\T1/lmr/m/n/12 Emission spec-trum for the ra-dia-tive as-so-ci-a-tion
- pro-cess at a gas tem-per-a-ture 
+ pro-cess at a gas tem-per-a- 
  []
 
 
-Overfull \hbox (31.80156pt too wide) in paragraph at lines 11--11
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
  [][] [][]\T1/lmr/m/n/12 Aaccurate po-ten-tial curve (red) vs LCAO ap-prox-i-ma
--tion (blue) for the $\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 ground 
+-tion (blue) for the $\OML/lmm/m/it/12 H[]$ 
  []
 
 
-Overfull \hbox (25.60017pt too wide) in paragraph at lines 12--12
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
  [][] [][]\T1/lmr/m/n/12 Accurate po-ten-tial curve (red) vs LCAO ap-prox-i-ma-
-tion (blue) for the $\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 ground 
+tion (blue) for the $\OML/lmm/m/it/12 H[]$ 
  []
 
 
-Overfull \hbox (4.77591pt too wide) in paragraph at lines 13--13
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
  [][] [][]\T1/lmr/m/n/12 Accurate po-ten-tial curve (red) vs LCAO ap-prox-i-ma-
-tion (blue) for the $\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 1st 
+tion (blue) for the $\OML/lmm/m/it/12 H[]$ 
  []
 
 
-Overfull \hbox (15.22371pt too wide) in paragraph at lines 14--14
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
  [][] [][]\T1/lmr/m/n/12 Gerade Or-bitals ob-tained from the LCAO ap-prox-i-ma-
-tion. The graph shows the 
+tion. The graph shows 
  []
 
 
-Overfull \hbox (14.0049pt too wide) in paragraph at lines 14--14
- \T1/lmr/m/n/12 over-lap of the elec-tronic or-bitals for dif-fer-ent val-ues o
-f the in-ter-nu-clear dis-tance 
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+ \T1/lmr/m/n/12 the over-lap of the elec-tronic or-bitals for dif-fer-ent val-u
+es of the in-ter-nu-clear 
  []
 
 
-Overfull \hbox (8.59639pt too wide) in paragraph at lines 15--15
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
  [][] [][]\T1/lmr/m/n/12 Gerade Or-bitals in 3D from the same LCAO ap-prox-i-ma
--tion. The graph shows 
+-tion. The graph 
  []
 
 
-Overfull \hbox (6.04276pt too wide) in paragraph at lines 15--15
- \T1/lmr/m/n/12 the mag-ni-tude of the po-ten-tial func-tion for dif-fer-ent va
-l-ues of the in-ter-nu-clear 
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ \T1/lmr/m/n/12 shows the mag-ni-tude of the po-ten-tial func-tion for dif-fer-
+ent val-ues of the 
  []
 
 [4
 
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Overfull \hbox (6.97977pt too wide) in paragraph at lines 16--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
  [][] [][]\T1/lmr/m/n/12 Ungerade Or-bitals ob-tained from the LCAO ap-prox-i-m
-a-tion. The graph shows 
+a-tion. The graph 
  []
 
 
-Overfull \hbox (10.74121pt too wide) in paragraph at lines 16--16
- \T1/lmr/m/n/12 the over-lap of the elec-tronic or-bitals for dif-fer-ent val-u
-es of the in-ter-nu-clear dis- 
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+ \T1/lmr/m/n/12 shows the over-lap of the elec-tronic or-bitals for dif-fer-ent
+ val-ues of the in-ter- 
  []
 
 
-Overfull \hbox (6.87978pt too wide) in paragraph at lines 17--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
  [][] [][]\T1/lmr/m/n/12 Ungerade Or-bitals 3D from the same LCAO ap-prox-i-ma-
-tion. The graph shows 
+tion. The graph 
  []
 
 
-Overfull \hbox (8.0665pt too wide) in paragraph at lines 17--17
- \T1/lmr/m/n/12 the mag-ni-tude of the po-ten-tial func-tion for dif-fer-ent va
-l-ues val-ues of the in-ter- 
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \T1/lmr/m/n/12 shows the mag-ni-tude of the po-ten-tial func-tion for dif-fer-
+ent val-ues val-ues of 
  []
 
 
-Overfull \hbox (7.85002pt too wide) in paragraph at lines 18--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
  [][] [][]$\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 Ion, show-ing the po-si-tion of
- the nu-clei at dis-tance R, and a co-or-di-nates of 
+ the nu-clei at dis-tance R, and a co-or-di-nates 
  []
 
 
-Overfull \hbox (24.69048pt too wide) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
  [][] [][]\T1/lmr/m/n/12 Total Elec-tron po-ten-tial en-ergy as func-tion of in
--ter-nu-clear dis-tance R for 3D $\OML/lmm/m/it/12 H[]$\T1/lmr/m/n/12 , 
+-ter-nu-clear dis-tance R for 3D 
  []
 
 
-Overfull \hbox (7.21123pt too wide) in paragraph at lines 27--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
  [][] [][]\T1/lmr/m/n/12 Illustration of anyon as a particle-flux tube com-pos-
-ite. Il-lus-tra-tion taken from 
+ite. Il-lus-tra-tion taken 
  []
 
 
-Overfull \hbox (47.30382pt too wide) in paragraph at lines 27--27
- \T1/lmr/m/n/12 D. P. Avo-ras ^^QGe-o-met-ric Phases in Physics^^Q, pg. 287, ed
-. A. Shapere and F. Wilczek, 
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ \T1/lmr/m/n/12 from D. P. Avo-ras ^^QGe-o-met-ric Phases in Physics^^Q, pg. 28
+7, ed. A. Shapere 
  []
 
 
-Overfull \hbox (17.86252pt too wide) in paragraph at lines 28--28
- [][] [][]\T1/lmr/m/n/12 Collision tem-per-a-ture $\OML/lmm/m/it/12 T \OT1/lmr/
-m/n/12 = 1 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bosonic b
-ase, and red icons 
- []
-
-
-Overfull \hbox (17.86252pt too wide) in paragraph at lines 29--29
- [][] [][]\T1/lmr/m/n/12 Collision tem-per-a-ture $\OML/lmm/m/it/12 T \OT1/lmr/
-m/n/12 = 1 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bosonic b
-ase, and red icons 
- []
-
-
-Overfull \hbox (0.17226pt too wide) in paragraph at lines 32--32
+Underfull \hbox (badness 2717) in paragraph at lines 32--32
  [][] [][]\T1/lmr/m/n/12 Collision tem-per-a-ture $\OML/lmm/m/it/12 T \OT1/lmr/
 m/n/12 = 100 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bosonic
- base, and red 
+ base, and 
  []
 
 
-Overfull \hbox (0.17226pt too wide) in paragraph at lines 33--33
+Underfull \hbox (badness 2717) in paragraph at lines 33--33
  [][] [][]\T1/lmr/m/n/12 Collision tem-per-a-ture $\OML/lmm/m/it/12 T \OT1/lmr/
 m/n/12 = 100 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bosonic
- base, and red 
+ base, and 
  []
 
 
-Overfull \hbox (10.62746pt too wide) in paragraph at lines 34--34
+Underfull \hbox (badness 4832) in paragraph at lines 34--34
  [][] [][]\T1/lmr/m/n/12 Total RCT cross sec-tions. Solid lines re-fer to $\OML
-/lmm/m/it/12  \OT1/lmr/m/n/12 = 0$ \T1/lmr/m/n/12 (i.e., ab-sence of flux tube
-), 
+/lmm/m/it/12  \OT1/lmr/m/n/12 = 0$ \T1/lmr/m/n/12 (i.e., ab-sence of flux 
  []
 
 
-Overfull \hbox (8.51868pt too wide) in paragraph at lines 34--34
- \T1/lmr/m/n/12 for the bosonic base (Blue line) and the fermionic base (Red li
-ne) re-spec-tively. 
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+ \T1/lmr/m/n/12 tube), for the bosonic base (Blue line) and the fermionic base 
+(Red line) 
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 34--34
+ \T1/lmr/m/n/12 re-spec-tively. The dashed line refers to a semion $\OT1/lmr/m/
+n/12 (\OML/lmm/m/it/12  \OT1/lmr/m/n/12 = 1\OML/lmm/m/it/12 =\OT1/lmr/m/n/12 2
+)$\T1/lmr/m/n/12 , and the cross 
  []
 
 )
@@ -1500,18 +1479,6 @@ LaTeX Font Info:    Trying to load font information for T1+phv on input line 1.
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 Chapter 1.
-
-Overfull \hbox (3.08667pt too wide) in paragraph at lines 11--12
-\T1/phv/m/n/12 Charge trans-fer (CT) refers to the move-ment of elec-trons or i
-ons from one species (atom, 
- []
-
-
-Overfull \hbox (2.24762pt too wide) in paragraph at lines 11--12
-\T1/phv/m/n/12 mag-netic fields. Charge trans-fer can oc-cur through sev-eral m
-ech-a-nisms, in-clud-ing chem- 
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 4.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -1541,50 +1508,25 @@ been already used, duplicate ignored
                    \scan_stop: 
 l.54 \noindent
                [3]
-Overfull \hbox (22.48975pt too wide) in paragraph at lines 64--65
-\T1/phv/m/n/12 than that re-ported in the cited mea-sure-ments. The re-sults of
- our in-ves-ti-ga-tion have prompted 
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \scan_stop: 
 l.65 
       [4]
-Overfull \hbox (4.11882pt too wide) in paragraph at lines 70--71
-[]\T1/phv/m/n/12 First, ad-vances in lab-o-ra-tory tech-niques and de-vice fab-
-ri-ca-tion over the past few decades 
- []
-
-
-Overfull \hbox (42.70992pt too wide) in paragraph at lines 74--75
-\T1/phv/m/n/12 tudes of iden-ti-cal par-ti-cles. Par-ti-cles that ex-hibit thes
-e prop-er-ties are re-ferred to as anyons.  
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \scan_stop: 
-l.76 I
-      n this thesis, we will focus on the \( H-H^{+} \) system as the subjec...
-[5]
-Overfull \hbox (0.32634pt too wide) in paragraph at lines 76--77
-\T1/phv/m/n/12 based de-scrip-tion, we will need to gen-er-ate po-ten-tial en-e
-rgy curves in a two-dimensional 
- []
-
-
+l.75 
+      [5]
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \scan_stop: 
-l.89 
-      [6] [7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.en
-c}] [8]) [9]
+l.85 \end{equation}
+                    [6] [7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/l
+m/lm-mathex.enc}] [8] [9]) [10]
 \openout2 = `chapter0.aux'.
 
  (./chapter0.tex
@@ -1608,26 +1550,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 1.
 
-Overfull \hbox (8.24454pt too wide) in paragraph at lines 1--1
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |\T1/phv/m/sc/14.4 Radiative Charge Trans-fer and As-so-ci-a-tion for the $\OML
-/lmm/m/it/14.4 Yb[] \OT1/lmr/m/n/14.4 + \OML/lmm/m/it/14.4 Ca$ \T1/phv/m/sc/14.
-4 Sys-
+/lmm/m/it/14.4 Yb[] \OT1/lmr/m/n/14.4 + \OML/lmm/m/it/14.4 Ca$
  []
 
-[10
+[11
 
 
 
 
-] [11] [12] [13]
-Overfull \hbox (8.27908pt too wide) in paragraph at lines 78--81
-\T1/phv/m/n/12 where $\OML/lmm/m/it/12 D\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 R\OT1
-/lmr/m/n/12 )$ \T1/phv/m/n/12 is the tran-si-tion dipole mo-ment be-tween $\OML
-/lmm/m/it/12 X[]\OT1/lmr/m/n/12 ^^F[]$ \T1/phv/m/n/12 and $\OML/lmm/m/it/12 A[]
-\OT1/lmr/m/n/12 ^^F[]$ \T1/phv/m/n/12 states of the $\OML/lmm/m/it/12 YbCa[]$ 
- []
-
-<RadAssocPotentials-4.png, id=365, 631.60968pt x 374.90062pt>
+] [12] [13] [14]
+<RadAssocPotentials-4.png, id=370, 631.60968pt x 374.90062pt>
 File: RadAssocPotentials-4.png Graphic file (type png)
 <use RadAssocPotentials-4.png>
 Package pdftex.def Info: RadAssocPotentials-4.png  used on input line 107.
@@ -1657,19 +1591,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--108
 mm/m/it/12 !$ \T1/lmr/m/n/12 near the clas-si-cal turn-ing point. The
  []
 
-[14] [15 <./RadAssocPotentials-4.png>]
+[15] [16 <./RadAssocPotentials-4.png>]
 Overfull \hbox (11.29553pt too wide) detected at line 166
  $[][] [] \OT1/lmr/m/n/12 = [][] []$  
  []
 
-[16] [17]
-<EnsteinA3D.png, id=416, 361.35pt x 236.885pt>
+[17] [18]
+<EnsteinA3D.png, id=421, 361.35pt x 236.885pt>
 File: EnsteinA3D.png Graphic file (type png)
 <use EnsteinA3D.png>
 Package pdftex.def Info: EnsteinA3D.png  used on input line 225.
 (pdftex.def)             Requested size: 469.75502pt x 307.95407pt.
- [18] [19 <./EnsteinA3D.png>]
-<ResultsYbCa.png, id=437, 454.69875pt x 264.99pt>
+ [19] [20 <./EnsteinA3D.png>]
+<ResultsYbCa.png, id=443, 454.69875pt x 264.99pt>
 File: ResultsYbCa.png Graphic file (type png)
 <use ResultsYbCa.png>
 Package pdftex.def Info: ResultsYbCa.png  used on input line 253.
@@ -1692,19 +1626,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--254
  and squares rep-re-sent the data for
  []
 
-[20] [21 <./ResultsYbCa.png>]
-Overfull \hbox (3.80594pt too wide) in paragraph at lines 269--269
-\T1/phv/m/n/12 One can also note that the op-ti-cal po-ten-tial method pre-dict
-s cross sec-tions that are larger 
- []
-
-
-Overfull \hbox (11.98997pt too wide) in paragraph at lines 269--269
-\T1/phv/m/n/12 than the ra-dia-tive as-so-ci-a-tion cross sec-tions. At the sam
-e time the op-ti-cal po-ten-tial method 
- []
-
-<CrossSection3D.png, id=464, 407.5225pt x 261.97874pt>
+[21] [22 <./ResultsYbCa.png>]
+<CrossSection3D.png, id=469, 407.5225pt x 261.97874pt>
 File: CrossSection3D.png Graphic file (type png)
 <use CrossSection3D.png>
 Package pdftex.def Info: CrossSection3D.png  used on input line 274.
@@ -1715,8 +1638,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--275
  a func-tion of col-li-sion en-ergy ex-
  []
 
-[22]
-<Spectrum3D.png, id=471, 412.54124pt x 275.0275pt>
+[23]
+<Spectrum3D.png, id=476, 412.54124pt x 275.0275pt>
 File: Spectrum3D.png Graphic file (type png)
 <use Spectrum3D.png>
 Package pdftex.def Info: Spectrum3D.png  used on input line 282.
@@ -1727,46 +1650,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
 a-tion pro-cess at a gas tem-per-a-ture
  []
 
-[23 <./CrossSection3D.png>] [24 <./Spectrum3D.png>]
-Overfull \hbox (8.11528pt too wide) in paragraph at lines 302--304
-[]\T1/phv/m/n/12 We can sum-ma-rize the cur-rent chap-ter as fol-lows. Us-ing b
-oth quan-tum and semi-classical 
- []
-
-<IsotopicDependency.jpg, id=491, 983.675pt x 750.805pt>
+[24 <./CrossSection3D.png>] [25 <./Spectrum3D.png>]
+<IsotopicDependency.jpg, id=496, 983.675pt x 750.805pt>
 File: IsotopicDependency.jpg Graphic file (type jpg)
 <use IsotopicDependency.jpg>
 Package pdftex.def Info: IsotopicDependency.jpg  used on input line 316.
 (pdftex.def)             Requested size: 469.75502pt x 358.54929pt.
-[25]) [26 <./IsotopicDependency.jpg>]
+ [26]) [27 <./IsotopicDependency.jpg>]
 \openout2 = `chapter0-1.aux'.
 
  (./chapter0-1.tex
 Chapter 3.
-
-Overfull \hbox (3.17029pt too wide) in paragraph at lines 17--19
-\T1/phv/m/n/12 An ex-cit-ing and im-por-tant fea-ture in this con-text is the e
-mer-gence of anyons [[]76[]]. Anyons 
- []
-
-[27
+[28
 
 
 
 
-] [28]
-Overfull \hbox (0.93823pt too wide) in paragraph at lines 28--30
-[]\T1/phv/m/n/12 2D ma-te-ri-als have qual-i-ta-tively dif-fer-ent topo-log-i-c
-al prop-er-ties[[]16[]]. More-over, those prop- 
- []
-
-
-Overfull \hbox (1.9096pt too wide) in paragraph at lines 31--32
-[]\T1/phv/m/n/12 Additionally [[]4[]] [[]59[]][[]15[]],2D ma-te-ri-als ex-hibit
- sev-eral other in-ter-est-ing prop-er-ties. Its quan- 
- []
-
-[29] [30] [31] [32] [33] [34] [35]
+] [29] [30] [31] [32] [33] [34] [35] [36]
 Chapter 4.
 
 Overfull \hbox (3.83109pt too wide) in paragraph at lines 113--113
@@ -1774,17 +1674,10 @@ Overfull \hbox (3.83109pt too wide) in paragraph at lines 113--113
 n 3D| 
  []
 
-[36
+[37
 
-]
-Overfull \hbox (10.85811pt too wide) in paragraph at lines 135--137
-\T1/phv/m/n/12 where $\OML/lmm/m/it/12 r \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 j\O
-T1/lmr/bx/n/12 r\OMS/lmsy/m/n/12 j$\T1/phv/m/n/12 . In the LCAO method, an ap-p
-rox-i-mate de-scrip-tion of the 2D ger-ade molecule 
- []
-
-[37]
-<Vg-Vs-LCAO-good.png, id=687, 361.35pt x 242.9075pt>
+] [38]
+<Vg-Vs-LCAO-good.png, id=692, 361.35pt x 242.9075pt>
 File: Vg-Vs-LCAO-good.png Graphic file (type png)
 <use Vg-Vs-LCAO-good.png>
 Package pdftex.def Info: Vg-Vs-LCAO-good.png  used on input line 185.
@@ -1795,7 +1688,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--186
 ox-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
-<Vg-Vs-LCAO-2.png, id=688, 361.35pt x 227.85126pt>
+<Vg-Vs-LCAO-2.png, id=693, 361.35pt x 227.85126pt>
 File: Vg-Vs-LCAO-2.png Graphic file (type png)
 <use Vg-Vs-LCAO-2.png>
 Package pdftex.def Info: Vg-Vs-LCAO-2.png  used on input line 193.
@@ -1806,8 +1699,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--194
 x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
-[38]
-<Vu-Vs-LCAO-good.png, id=700, 361.35pt x 240.9pt>
+[39]
+<Vu-Vs-LCAO-good.png, id=706, 361.35pt x 240.9pt>
 File: Vu-Vs-LCAO-good.png Graphic file (type png)
 <use Vu-Vs-LCAO-good.png>
 Package pdftex.def Info: Vu-Vs-LCAO-good.png  used on input line 205.
@@ -1818,9 +1711,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--206
 x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 1st
  []
 
-[39 <./Vg-Vs-LCAO-good.png (PNG copy)>] [40 <./Vg-Vs-LCAO-2.png (PNG copy)> <./
+[40 <./Vg-Vs-LCAO-good.png (PNG copy)>] [41 <./Vg-Vs-LCAO-2.png (PNG copy)> <./
 Vu-Vs-LCAO-good.png (PNG copy)>]
-<Ger-Lcao-Graphs.jpg, id=712, 1715.40875pt x 452.69125pt>
+<Ger-Lcao-Graphs.jpg, id=718, 1715.40875pt x 452.69125pt>
 File: Ger-Lcao-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-Graphs.jpg  used on input line 222.
@@ -1831,7 +1724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--223
 -i-ma-tion. The graph shows
  []
 
-<Ger-Lcao-3D-Graphs.jpg, id=713, 460.8417pt x 264.2673pt>
+<Ger-Lcao-3D-Graphs.jpg, id=719, 460.8417pt x 264.2673pt>
 File: Ger-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-3D-Graphs.jpg  used on input line 228.
@@ -1842,7 +1735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 x-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-Graphs.jpg, id=714, 1518.67375pt x 406.51875pt>
+<UnGer-Lcao-Graphs.jpg, id=720, 1518.67375pt x 406.51875pt>
 File: UnGer-Lcao-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-Graphs.jpg  used on input line 233.
@@ -1853,7 +1746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--234
 ox-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-3D-Graphs.jpg, id=715, 454.3374pt x 264.7491pt>
+<UnGer-Lcao-3D-Graphs.jpg, id=721, 454.3374pt x 264.7491pt>
 File: UnGer-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-3D-Graphs.jpg  used on input line 238.
@@ -1870,31 +1763,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--239
 -ues val-ues of the in-ter-nu-clear dis-
  []
 
-[41 <./Ger-Lcao-Graphs.jpg>]) [42 <./Ger-Lcao-3D-Graphs.jpg>] [43 <./UnGer-Lcao
+[42 <./Ger-Lcao-Graphs.jpg>]) [43 <./Ger-Lcao-3D-Graphs.jpg>] [44 <./UnGer-Lcao
 -Graphs.jpg> <./UnGer-Lcao-3D-Graphs.jpg>]
 \openout2 = `chapter1.aux'.
 
  (./chapter1.tex
-Overfull \hbox (34.26163pt too wide) in paragraph at lines 3--4
-\T1/phv/m/n/12 view an-a-lytic meth-ods[[]13[]][[]12[]][[]75[]] used to ob-tain
- so-lu-tions of the time-independent Schrodinger 
- []
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 6.
-[44
+ [45
 
 
 
-]
-Overfull \hbox (3.58539pt too wide) in paragraph at lines 37--39
-\T1/phv/m/n/12 tion of both the col-lec-tive nu-clear co-or-di-nates $\OT1/lmr/
-bx/n/12 R$\T1/phv/m/n/12 , and elec-tronic co-or-di-nates $\OT1/lmr/bx/n/12 x$\
-T1/phv/m/n/12 . Of course, 
- []
-
-[45] [46]
-<H2Ion3D-2.png, id=782, 495.8525pt x 317.185pt>
+] [46] [47]
+<H2Ion3D-2.png, id=787, 495.8525pt x 317.185pt>
 File: H2Ion3D-2.png Graphic file (type png)
 <use H2Ion3D-2.png>
 Package pdftex.def Info: H2Ion3D-2.png  used on input line 98.
@@ -1910,13 +1791,7 @@ Overfull \hbox (20.37721pt too wide) detected at line 114
 $[][]$  
  []
 
-[47] [48 <./H2Ion3D-2.png>] [49]
-Overfull \hbox (3.98698pt too wide) in paragraph at lines 139--140
-\T1/phv/m/n/12 mo-tion in a molecule. The phys-i-cal ba-sis for the ap-prox-i-m
-a-tion is the same one as above, 
- []
-
-[50]
+[48] [49 <./H2Ion3D-2.png>] [50] [51]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 168.
@@ -1933,13 +1808,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 168.
 
-[51] [52] [53] [54] [55] [56] [57] [58]
-<Bates3DEofR-2.png, id=921, 361.35pt x 237.88875pt>
+[52] [53] [54] [55] [56] [57] [58] [59]
+<Bates3DEofR-2.png, id=926, 361.35pt x 237.88875pt>
 File: Bates3DEofR-2.png Graphic file (type png)
 <use Bates3DEofR-2.png>
 Package pdftex.def Info: Bates3DEofR-2.png  used on input line 352.
 (pdftex.def)             Requested size: 361.34912pt x 237.88815pt.
-<Bates3DEofRPlusVofR-2.png, id=924, 361.35pt x 237.88875pt>
+<Bates3DEofRPlusVofR-2.png, id=929, 361.35pt x 237.88875pt>
 File: Bates3DEofRPlusVofR-2.png Graphic file (type png)
 <use Bates3DEofRPlusVofR-2.png>
 Package pdftex.def Info: Bates3DEofRPlusVofR-2.png  used on input line 360.
@@ -2020,30 +1895,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--410
 []|\T1/lmr/m/n/12 -E(R)
  []
 
-) [59 <./Bates3DEofR-2.png (PNG copy)>] [60 <./Bates3DEofRPlusVofR-2.png (PNG c
-opy)>] [61] [62]
+) [60 <./Bates3DEofR-2.png (PNG copy)>] [61 <./Bates3DEofRPlusVofR-2.png (PNG c
+opy)>] [62] [63]
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex
 Chapter 5.
 
-Overfull \hbox (28.3487pt too wide) in paragraph at lines 1--1
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |\T1/phv/m/sc/14.4 Non-Relativistic So-lu-tion of the Hy-dro-gen Molec-u-lar Io
-n in 2 Spa-
+n in 2
  []
 
-[63
+[64
 
 
 
 
 ]
-Overfull \hbox (0.3415pt too wide) in paragraph at lines 21--22
-\T1/phv/m/n/12 prob-lem), with two co-or-di-nates, $\OML/lmm/m/it/12 ^^V$ \T1/p
-hv/m/n/12 and $\OML/lmm/m/it/12 ^^U$ \T1/phv/m/n/12 de-not-ing the po-si-tion o
-f the elec-tron in 2D plane. 
- []
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 23.
@@ -2060,7 +1929,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 23.
 
-[64]
+[65]
 File: H2Ion3D-2.png Graphic file (type png)
 <use H2Ion3D-2.png>
 Package pdftex.def Info: H2Ion3D-2.png  used on input line 65.
@@ -2070,7 +1939,7 @@ Overfull \hbox (26.09627pt too wide) in paragraph at lines 65--66
 [][] 
  []
 
-[65] [66] [67] [68] [69]
+[66] [67] [68] [69] [70]
 Underfull \hbox (badness 10000) in paragraph at lines 192--192
 []\T1/lmr/m/n/12 Table 5.1: |The sep-a-ra-tion con-stant A, elec-tronic en-ergy
  E, and to-tal en-ergy $\OML/lmm/m/it/12 E \OT1/lmr/m/n/12 + 1\OML/lmm/m/it/12 
@@ -2087,23 +1956,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--227
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<H2_1Sg-Potential.pdf, id=1041, 361.35pt x 221.82875pt>
+<H2_1Sg-Potential.pdf, id=1046, 361.35pt x 221.82875pt>
 File: H2_1Sg-Potential.pdf Graphic file (type pdf)
 <use H2_1Sg-Potential.pdf>
 Package pdftex.def Info: H2_1Sg-Potential.pdf  used on input line 262.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_1Su-Potential.png, id=1042, 361.35pt x 221.82875pt>
+<H2_1Su-Potential.png, id=1047, 361.35pt x 221.82875pt>
 File: H2_1Su-Potential.png Graphic file (type png)
 <use H2_1Su-Potential.png>
 Package pdftex.def Info: H2_1Su-Potential.png  used on input line 267.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_sGpU-Potential.png, id=1043, 361.35pt x 228.35312pt>
+<H2_sGpU-Potential.png, id=1048, 361.35pt x 228.35312pt>
 File: H2_sGpU-Potential.png Graphic file (type png)
 <use H2_sGpU-Potential.png>
 Package pdftex.def Info: H2_sGpU-Potential.png  used on input line 273.
 (pdftex.def)             Requested size: 361.34912pt x 228.35255pt.
-[70] [71 <./H2_1Sg-Potential.pdf> <./H2_1Su-Potential.png (PNG copy)>] [72]
-[73 <./H2_sGpU-Potential.png (PNG copy)>]
+[71] [72 <./H2_1Sg-Potential.pdf> <./H2_1Su-Potential.png (PNG copy)>] [73]
+[74 <./H2_sGpU-Potential.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 316--316
 []\T1/lmr/m/n/12 Table 5.3: |Ac-cu-rate and LCAO En-ergy as Func-tion of R (in-
 ter-nu-clear dis-tance) for the
@@ -2195,32 +2064,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--370
 []|\T1/lmr/m/n/12 -
  []
 
-[74] [75])
+[75] [76])
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 6.
-[76
+[77
 
 
 
 
 
 
-] [77]) [78]
+] [78]) [79]
 \openout2 = `chapter5.aux'.
 
- (./chapter5.tex
-Overfull \hbox (2.12091pt too wide) in paragraph at lines 29--32
-\T1/phv/m/n/12 Due to the $\OML/lmm/m/it/12 H$ \T1/phv/m/n/12 nu-clei be-ing eq
-ual, the charge-transfer prob-a-bil-ity is gov-erned by the phase 
- []
-
-[79
+ (./chapter5.tex [80
 
 
 
-] [80
+] [81
 pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2.
 25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2235,7 +2098,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2.
 l.251 F
        or fermions $\alpha=1$, and for bosons $\alpha=0.$ For fractional val...
 ]
-<fluxtube.png, id=1156, 3311.37125pt x 2646.88875pt>
+<fluxtube.png, id=1162, 3311.37125pt x 2646.88875pt>
 File: fluxtube.png Graphic file (type png)
 <use fluxtube.png>
 Package pdftex.def Info: fluxtube.png  used on input line 257.
@@ -2252,14 +2115,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--258
  A. Shapere and F. Wilczek,
  []
 
-[81] [82 <./fluxtube.png>] [83]
-Overfull \hbox (7.11179pt too wide) in paragraph at lines 339--341
-\T1/phv/m/n/12 ade/unger-ade po-ten-tials. The re-stric-tion to odd val-ues of 
-$\OML/lmm/m/it/12 m$ \T1/phv/m/n/12 is de-ter-mined by the fermionic 
- []
-
-[84]
-<fig1a.pdf, id=1202, 433.62pt x 286.06876pt>
+[82] [83 <./fluxtube.png>] [84] [85]
+<fig1a.pdf, id=1207, 433.62pt x 286.06876pt>
 File: fig1a.pdf Graphic file (type pdf)
 <use fig1a.pdf>
 Package pdftex.def Info: fig1a.pdf  used on input line 363.
@@ -2271,8 +2128,8 @@ T1/lmr/m/n/12 = 1 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bo
 sonic base, and red
  []
 
-[85]
-<fig1b.pdf, id=1208, 260.975pt x 171.64125pt>
+[86]
+<fig1b.pdf, id=1213, 260.975pt x 171.64125pt>
 File: fig1b.pdf Graphic file (type pdf)
 <use fig1b.pdf>
 Package pdftex.def Info: fig1b.pdf  used on input line 370.
@@ -2284,7 +2141,7 @@ T1/lmr/m/n/12 = 1 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bo
 sonic base, and red
  []
 
-<fig2a.pdf, id=1209, 433.62pt x 289.08pt>
+<fig2a.pdf, id=1214, 433.62pt x 289.08pt>
 File: fig2a.pdf Graphic file (type pdf)
 <use fig2a.pdf>
 Package pdftex.def Info: fig2a.pdf  used on input line 377.
@@ -2296,12 +2153,12 @@ T1/lmr/m/n/12 = 10 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a b
 osonic base, and red
  []
 
-[86 <./fig1a.pdf> <./fig1b.pdf
+[87 <./fig1a.pdf> <./fig1b.pdf
 
 pdfTeX warning: pdflatex (file ./fig1b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig2b.pdf, id=1267, 260.975pt x 170.6375pt>
+<fig2b.pdf, id=1273, 260.975pt x 170.6375pt>
 File: fig2b.pdf Graphic file (type pdf)
 <use fig2b.pdf>
 Package pdftex.def Info: fig2b.pdf  used on input line 384.
@@ -2313,22 +2170,22 @@ T1/lmr/m/n/12 = 10 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a b
 osonic base, and red
  []
 
-<fig3a.pdf, id=1268, 433.62pt x 289.08pt>
+<fig3a.pdf, id=1274, 433.62pt x 289.08pt>
 File: fig3a.pdf Graphic file (type pdf)
 <use fig3a.pdf>
 Package pdftex.def Info: fig3a.pdf  used on input line 392.
 (pdftex.def)             Requested size: 469.75502pt x 313.1854pt.
-[87 <./fig2a.pdf> <./fig2b.pdf
+[88 <./fig2a.pdf> <./fig2b.pdf
 
 pdfTeX warning: pdflatex (file ./fig2b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig3b.pdf, id=1328, 260.975pt x 170.6375pt>
+<fig3b.pdf, id=1333, 260.975pt x 170.6375pt>
 File: fig3b.pdf Graphic file (type pdf)
 <use fig3b.pdf>
 Package pdftex.def Info: fig3b.pdf  used on input line 399.
 (pdftex.def)             Requested size: 328.82707pt x 215.00436pt.
-<CT.pdf, id=1329, 260.975pt x 171.64125pt>
+<CT.pdf, id=1334, 260.975pt x 171.64125pt>
 File: CT.pdf Graphic file (type pdf)
 <use CT.pdf>
 Package pdftex.def Info: CT.pdf  used on input line 407.
@@ -2339,38 +2196,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--408
 e) re-spec-tively. The dashed
  []
 
-[88 <./fig3a.pdf> <./fig3b.pdf
+[89 <./fig3a.pdf> <./fig3b.pdf
 
 pdfTeX warning: pdflatex (file ./fig3b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
->]) [89 <./CT.pdf>]
+>]) [90 <./CT.pdf>]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 7.
-
-Overfull \hbox (1.08263pt too wide) in paragraph at lines 4--5
-\T1/phv/m/n/12 (2D) quan-tum en-vi-ron-ments. The cen-tral ob-jec-tive has been
- to deepen our under- stand- 
- []
-
-
-Overfull \hbox (29.1634pt too wide) in paragraph at lines 4--5
-\T1/phv/m/n/12 while also ex-tend-ing ex-ist-ing the-o-ret-i-cal frame-works in
-to pre-vi-ously un-ex-plored do-mains.  
- []
-
-[90
+[91
 
 
 
 
-]) [91] [92]
+]) [92] [93]
 \openout2 = `appendixA.aux'.
 
  (./appendixA.tex
 Appendix A.
-[93
+[94
 
 
 
@@ -2380,15 +2225,15 @@ Overfull \hbox (55.2833pt too wide) detected at line 49
 $[][]$  
  []
 
-[94]) [95]
+[95]) [96]
 \openout2 = `appendixB.aux'.
 
  (./appendixB.tex
 Appendix B.
 
-Overfull \hbox (21.59505pt too wide) in paragraph at lines 1--1
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |\T1/phv/m/sc/14.4 Mathematica Code for Cal-cu-lat-ing the Eigen-val-ues for th
-e H2 Ion
+e H2
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
@@ -2397,7 +2242,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 File: "Bates-Reproduce-3D-accessible.txt"  (verbatim)
- [96
+ [97
 
 
 
@@ -2444,7 +2289,7 @@ Overfull \hbox (99.3696pt too wide) in paragraph at lines 15--15
  1? + (- 4 p + 1) n + ?- 2 p - p2 + 2 R??[] 
  []
 
-[97]
+[98]
 Overfull \hbox (128.11327pt too wide) in paragraph at lines 15--15
 []   \T1/lmtt/m/n/10.95 matrixM[[m + 1]] = Table?mSumExpanded[m, n]            
                            , {n, 0, max - 1}?,[] 
@@ -2456,7 +2301,7 @@ Overfull \hbox (1.64113pt too wide) in paragraph at lines 15--15
 ????????????????????????[] 
  []
 
-[98] [99]
+[99] [100]
 Overfull \hbox (70.62593pt too wide) in paragraph at lines 15--15
 []                 \T1/lmtt/m/n/10.95 Sort[Map[rm, Eigenvalues[N[matrixM /. p -
 > pgrid[[i]], 10.]]], Greater][[1]];[] 
@@ -2474,13 +2319,13 @@ Overfull \hbox (59.12846pt too wide) in paragraph at lines 15--15
 ??????????????????????????????????[] 
  []
 
-[100]
+[101]
 Overfull \hbox (277.58034pt too wide) in paragraph at lines 15--15
 []                                                                             
                       \T1/lmtt/m/n/10.95 Bates-Reproduce-3D.nb   ???   3[] 
  []
 
-[101]
+[102]
 Overfull \hbox (7.38986pt too wide) in paragraph at lines 15--15
 []                                                                             
      \T1/lmtt/m/n/10.95 1[] 
@@ -2498,325 +2343,315 @@ Overfull \hbox (82.1234pt too wide) in paragraph at lines 15--15
 ??????????????????????????????????????[] 
  []
 
-) [102]
+) [103]
 \openout2 = `appendixC.aux'.
 
  (./appendixC.tex
 Appendix C.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 $[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 1917) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 6741) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 6364) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
+[][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [] []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [] []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--54
+Underfull \hbox (badness 10000) in paragraph at lines 10--56
 [][]  
  []
 
-[103
+[104
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
 $[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
 [][]  
  []
 
-[104]
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+[105]
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
 $[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--80
+Underfull \hbox (badness 10000) in paragraph at lines 75--82
 $[][]  
  []
 
 
-Overfull \hbox (15.69229pt too wide) in paragraph at lines 73--80
+Underfull \hbox (badness 2884) in paragraph at lines 75--82
 [][]  
  []
 
 
-Overfull \hbox (14.37956pt too wide) in paragraph at lines 87--93
+Underfull \hbox (badness 1067) in paragraph at lines 75--82
 [][]  
  []
 
 
-Overfull \hbox (14.34845pt too wide) in paragraph at lines 87--93
-[][]  
- []
-
-
-Overfull \hbox (0.29857pt too wide) in paragraph at lines 87--93
-[][]  
- []
-
-
-Overfull \hbox (52.59212pt too wide) in paragraph at lines 96--101
+Underfull \hbox (badness 1762) in paragraph at lines 89--95
 $[][]  
  []
 
 
-Overfull \hbox (6.74242pt too wide) in paragraph at lines 96--101
-[][]  
+Overfull \hbox (8.94115pt too wide) in paragraph at lines 98--103
+$[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
 [][]  
  []
 
-) [105]
+) [106]
 \openout2 = `appendixD.aux'.
 
  (./appendixD.tex
 Appendix D.
 
-Overfull \hbox (9.82143pt too wide) in paragraph at lines 1--1
-|\T1/phv/m/sc/14.4 Fortran Code for Cal-cu-lat-ing En-er-gies for the 2D Prob-l
-em| 
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+|\T1/phv/m/sc/14.4 Fortran Code for Cal-cu-lat-ing En-er-gies for the 2D Prob-
  []
 
 
-Overfull \hbox (98.33125pt too wide) in paragraph at lines 10--10
-[]\T1/lmtt/m/n/12 ! gfortran -O4 -o h2Plus h2plus.f90 hpsort.f90 -L ./ -l lapac
+Overfull \hbox (13.24358pt too wide) in paragraph at lines 12--12
+[]\T1/lmtt/m/n/10 ! gfortran -O4 -o h2Plus h2plus.f90 hpsort.f90 -L ./ -l lapac
 ke -l lapack -l blas -l install[] 
  []
 
-[106
+[107
 
 
 
 
-] [107] [108] [109] [110] [111] [112]
-Overfull \hbox (11.89522pt too wide) in paragraph at lines 195--195
-[]\T1/lmtt/m/n/12 !     val = ( (-1)*((2.0d0 * k + 1)**2) + ( (p**2.0)/4.0d0) )
- * Delta(m,k) + &[] 
- []
-
-[113] [114] [115]) [116]
+] [108] [109] [110] [111] [112] [113] [114]) [115]
 \openout2 = `appendixE.aux'.
 
  (./appendixE.tex
@@ -2834,7 +2669,7 @@ Overfull \hbox (47.631pt too wide) in paragraph at lines 8--8
 ngeradeData?i, 3?}, {i, 1, 27}];[] 
  []
 
-[117
+[116
 
 
 
@@ -2863,7 +2698,7 @@ Overfull \hbox (139.61073pt too wide) in paragraph at lines 8--8
  + 2) yu[r] - m ^ 2 / r ^ 2 yu[r] + 2 u e yu[r];[] 
  []
 
-[118]
+[117]
 Overfull \hbox (110.86707pt too wide) in paragraph at lines 8--8
 []                       \T1/lmtt/m/n/10.95 {equG ? 0, yg[r0] ? 0, yg '[r0] ? 1
 }, yg, {r, r0, rend}, MaxSteps ? 200 000]];[] 
@@ -2899,13 +2734,13 @@ Overfull \hbox (59.12846pt too wide) in paragraph at lines 8--8
 N[bG[m, rend] - bU[m, rend]]]2 ???[] 
  []
 
-[119]
+[118]
 Overfull \hbox (53.37973pt too wide) in paragraph at lines 8--8
 []                                                                    \T1/lmtt/
 m/n/10.95 Z_u_g_first-5-v1.nb   3[] 
  []
 
-[120] [121]
+[119] [120]
 Overfull \hbox (110.86707pt too wide) in paragraph at lines 8--8
 []                    \T1/lmtt/m/n/10.95 Interpolation[{crossSection?All, 1?, c
 rossSection?All, 2??All, 1?} // Transpose];[] 
@@ -2923,517 +2758,473 @@ Overfull \hbox (13.1386pt too wide) in paragraph at lines 8--8
 s Section (a0) vs Energy"][] 
  []
 
+[121]
+Overfull \hbox (7.38986pt too wide) in paragraph at lines 8--8
+[]                                                                             
+    \T1/lmtt/m/n/10.95 eV[] 
+ []
+
 [122]
 Overfull \hbox (7.38986pt too wide) in paragraph at lines 8--8
 []                                                                             
     \T1/lmtt/m/n/10.95 eV[] 
  []
 
-[123]
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 8--8
-[]                                                                             
-    \T1/lmtt/m/n/10.95 eV[] 
- []
-
-) [124]
-Overfull \hbox (11.99875pt too wide) in paragraph at lines 93--93
+) [123]
+Underfull \hbox (badness 1173) in paragraph at lines 97--97
 []\T1/lmr/m/n/12 Daniel S. Abrams and Seth Lloyd. ``Non-lin-ear Quan-tum Me-cha
-n-ics Im-plies Polynomial- 
+n-ics Im-plies 
  []
 
-
-Overfull \hbox (0.37364pt too wide) in paragraph at lines 93--93
-[]\T1/lmr/m/n/12 Geim A.K. and Novoselov K.S. ``The Rise of Graphene''. In: \T1
-/lmr/m/it/12 Na-ture Ma-te-ri-als \T1/lmr/m/n/12 (2007). 
- []
-
-[125
+[124
 
 
 
 
-] [126] [127]
-Overfull \hbox (20.9127pt too wide) in paragraph at lines 93--93
-\T1/lmr/m/it/12 of Quan-tum Fluid with Frac-tion-ally Charged Ex-ci-ta-tions\T1
-/lmr/m/n/12 . \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1/lmtt/m/n/12 http : / /
- www . nobelprize . 
- []
-
-[128]
-Overfull \hbox (1.92459pt too wide) in paragraph at lines 93--93
-\T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1/lmtt/m/n/12 http : / / quince . leed
-s . ac . uk / ~phyjkp / index _ files / JiannisPachosLecture . 
- []
-
-
-Overfull \hbox (12.90683pt too wide) in paragraph at lines 93--93
-[]\T1/lmr/m/n/12 R. E. Pierls. ``Quelques pro-pri-etes typ-iques des corpses so
-lides''. In: \T1/lmr/m/it/12 Ann. I. H. Poincare 
- []
-
-
-Overfull \hbox (42.66086pt too wide) in paragraph at lines 93--93
-\T1/lmr/m/n/12 (1982), pp. 89^^U139. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1
-/lmtt/m/n/12 https : / / math . dartmouth . edu / ~carlp / PDF / analysiscompar
-ison . 
- []
-
-[129]
-Overfull \hbox (4.5646pt too wide) in paragraph at lines 93--93
+] [125] [126] [127] [128]
+Underfull \hbox (badness 1552) in paragraph at lines 97--97
 []\T1/lmr/m/n/12 R Singh. ``Ex-ci-tons in Semi-con-duc-tor Quan-tum Wells Stud-
-ied Us-ing Two-Dimensional 
+ied Us-ing Two- 
  []
 
-
-Overfull \hbox (9.09259pt too wide) in paragraph at lines 93--93
-\T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1/lmtt/m/n/12 https : / / jila . color
-ado . edu / publications / 46707 / excitons -[] semiconductor -[] 
- []
-
-
-Overfull \hbox (16.81828pt too wide) in paragraph at lines 93--93
-[]\T1/lmr/m/n/12 Daniel Walsh. \T1/lmr/m/it/12 A Physi-cist's In-tro-duc-tion t
-o Topol-ogy: Con-nec-tions to Bosons, Fermions, 
- []
-
-[130] [131] [132]
+[129] [130] [131]
 \openout2 = `cv.aux'.
 
  (./cv.tex
 File: "cv-accessible.txt"  (verbatim)
 
-Overfull \hbox (41.88226pt too wide) in paragraph at lines 9--9
+Overfull \hbox (41.88226pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Zelimir Lucic                                             
                 ?(206) 384-8528[] 
  []
 
 
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 9--9
+Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
          ? zelimir.lucic@gmail.com[] 
  []
 
 
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 9--9
+Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Software engineer with over 18+ years experience in Softwa
 re Engineering, Business to Business[] 
  []
 
 
-Overfull \hbox (105.11833pt too wide) in paragraph at lines 9--9
+Overfull \hbox (105.11833pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 applications, Object Oriented design and methodologies. Hi
 ghly Proficient in C/C++, Java/Kotlin, C#,[] 
  []
 
 
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 9--9
+Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Up to date knowledge of distributed systems, Akka, Tempora
 l, Algorithms, Computational Mathematics,[] 
  []
 
 
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 9--9
+Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 transaction processing, relational database and network en
 gineering. Strong system programming[] 
  []
 
 
-Overfull \hbox (24.63606pt too wide) in paragraph at lines 9--9
+Overfull \hbox (24.63606pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 background, excellent knowledge of mission critical applic
 ations, networks, protocols.[] 
  []
 
 
-Overfull \hbox (30.3848pt too wide) in paragraph at lines 9--9
+Overfull \hbox (30.3848pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Operating Systems: UNIX (Linux, HP_UX, AIX, s), Windows 
 .NET, Win32, Embedded Systems[] 
  []
 
 
-Overfull \hbox (53.37973pt too wide) in paragraph at lines 9--9
+Overfull \hbox (53.37973pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Methodologies and concepts: Object Oriented analysis and
  design, Client/Server and N-tier[] 
  []
 
 
-Overfull \hbox (133.862pt too wide) in paragraph at lines 9--9
+Overfull \hbox (133.862pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Real life experience of scaling and optimizing large sys
 tems, designing for reliability and scalability[] 
  []
 
 
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 9--9
+Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Throughout knowledge of C++, STL programming practices a
 nd paradigms. Early adopter of new[] 
  []
 
 
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 9--9
+Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Excellent knowledge of full range of Microsoft technolog
 ies, and recent expertise in C# ,.NET,[] 
  []
 
 
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 9--9
+Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
 []  \T1/lmtt/m/n/10.95 ASP.NET platform and SQL server (complete .NET stack), E
 xcel RTD Server and Excel Extensions[] 
  []
 
 
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 9--9
+Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Deep knowledge and experience with: distributed systems,
  Web services, concurrent programming,[] 
  []
 
 
-Overfull \hbox (47.631pt too wide) in paragraph at lines 9--9
+Overfull \hbox (47.631pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Experience with database theory, database programming, O
 RACLE 9i and 10g administration,[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Implemented Classification, Data analytics, Machine Lear
 ning solutions, using NumPY, Tensor[] 
  []
 
 
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 9--9
+Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Theoretical background: Applied Mathematics, software en
 gineering, digital signal processing[] 
  []
 
 
-Overfull \hbox (122.36453pt too wide) in paragraph at lines 9--9
+Overfull \hbox (122.36453pt too wide) in paragraph at lines 13--13
 []  \T1/lmtt/m/n/10.95 applications, statistical process analysis, network anal
 ysis, Working experience in writing technical[] 
  []
 
-[133
+[132
 
 
 
 ]
-Overfull \hbox (93.62086pt too wide) in paragraph at lines 9--9
+Overfull \hbox (93.62086pt too wide) in paragraph at lines 13--13
 []  \T1/lmtt/m/n/10.95 design specification, overseeing the development and tes
 ting process, and providing a mentorship[] 
  []
 
 
-Overfull \hbox (93.62086pt too wide) in paragraph at lines 9--9
+Overfull \hbox (93.62086pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Knowledge of practical software engineering techniques, 
 such as basic waterfall and incremental,[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Programming and Development tools: Git, Claude, Devin, M
 S Visual Studio, .NET, ATL, Various[] 
  []
 
 
-Overfull \hbox (1.64113pt too wide) in paragraph at lines 9--9
+Overfull \hbox (1.64113pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Amazon Inc, Seattle, WA                                   
                2022-2026[] 
  []
 
 
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 9--9
+Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Lead the implementation of the several ML models and l
 ibraries, using TarsosDsp, OpenCV, Tensor[] 
  []
 
 
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 9--9
+Overfull \hbox (7.38986pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Refactoring of the existing application, following the
  Android design patterns.[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Design and development of the AWS based service to sup
 port continuous monitoring and data[] 
  []
 
 
-Overfull \hbox (41.88226pt too wide) in paragraph at lines 9--9
+Overfull \hbox (41.88226pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Zelimir Lucic                                             
                 ?(206) 384-8528[] 
  []
 
 
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 9--9
+Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
          ? zelimir.lucic@gmail.com[] 
  []
 
 
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 9--9
+Overfull \hbox (7.38986pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Tableau Software, Seattle, WA                             
                 2017-2022[] 
  []
 
 
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 9--9
+Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Participated in the Implemented of classification netw
 ork for error tracking and prediction[] 
  []
 
-[134]
-Overfull \hbox (53.37973pt too wide) in paragraph at lines 9--9
+[133]
+Overfull \hbox (53.37973pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Microsoft Corp., Redmond, WA                              
                         2016-2017[] 
  []
 
 
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 9--9
+Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Rocket Gaming System, Las Vegas, NV                       
                                 2013-2014[] 
  []
 
 
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 9--9
+Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Analyze and define the game characteristics, define an
 d implement the mathematical model[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Refactoring, Performance and Usability improvements of
  the existing software and software[] 
  []
 
 
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 9--9
+Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Bloomberg Inc, New York, NY                               
                            2012-2013[] 
  []
 
 
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 9--9
+Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Lead the design and implementation of custom Excel funct
 ion handling high frequency sell side[] 
  []
 
 
-Overfull \hbox (47.631pt too wide) in paragraph at lines 9--9
+Overfull \hbox (47.631pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 trading and data flow. The application consists of C++ 
 RTD server, and C#/.NET Excel UI[] 
  []
 
 
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 9--9
+Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Designed and implemented the data flow, algorithms and E
 xcel UI for the Bloomberg specific[] 
  []
 
 
-Overfull \hbox (30.3848pt too wide) in paragraph at lines 9--9
+Overfull \hbox (30.3848pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Worked with other teams to implement end to end, high fr
 equency trading and data flow[] 
  []
 
 
-Overfull \hbox (133.862pt too wide) in paragraph at lines 9--9
+Overfull \hbox (133.862pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 applications. The applications are the real time Excel 
 extensions, passing large data sets to customer[] 
  []
 
 
-Overfull \hbox (87.87213pt too wide) in paragraph at lines 9--9
+Overfull \hbox (87.87213pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Translattice, Santa Clara. CA                             
                             2010 - 2011[] 
  []
 
 
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 9--9
+Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Implementation of the Paxos algorithm for distributed DB
  operation on Postgres DB engine in C.[] 
  []
 
 
-Overfull \hbox (105.11833pt too wide) in paragraph at lines 9--9
+Overfull \hbox (105.11833pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Design and Implementation of distributed transactions, d
 istributed table sharding for the Postgres[] 
  []
 
 
-Overfull \hbox (47.631pt too wide) in paragraph at lines 9--9
+Overfull \hbox (47.631pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Zelimir Lucic                                             
                  ?(206) 384-8528[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
           ? zelimir.lucic@gmail.com[] 
  []
 
-[135]
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 9--9
+[134]
+Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Design and Implementation of the underlying multithrea
 ded and multi process communication /[] 
  []
 
 
-Overfull \hbox (105.11833pt too wide) in paragraph at lines 9--9
+Overfull \hbox (105.11833pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ?   Performance improvements, refactoring existing code, U
 sing C for the database engine and C++ for[] 
  []
 
 
-Overfull \hbox (116.6158pt too wide) in paragraph at lines 9--9
+Overfull \hbox (116.6158pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 MySpace.com, Seattle, WA                                  
                                  2007 - 2010[] 
  []
 
 
-Overfull \hbox (41.88226pt too wide) in paragraph at lines 9--9
+Overfull \hbox (41.88226pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Lead the design and implementation of MySpace Messaging 
 system, which included internal[] 
  []
 
 
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 9--9
+Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 messaging and email server and client. The project inte
 grated new messaging, email, comments,[] 
  []
 
 
-Overfull \hbox (53.37973pt too wide) in paragraph at lines 9--9
+Overfull \hbox (53.37973pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 WebIm into the existing MySpace framework. Project was 
 based on .NET platform, using C#,[] 
  []
 
 
-Overfull \hbox (24.63606pt too wide) in paragraph at lines 9--9
+Overfull \hbox (24.63606pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Designed and developed message passing system supporting
  transaction like operation.[] 
  []
 
 
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 9--9
+Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Developed Rest based services, using full .NET stack, fr
 om SQL Server as a back end DB to the[] 
  []
 
 
-Overfull \hbox (139.61073pt too wide) in paragraph at lines 9--9
+Overfull \hbox (139.61073pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Significantly refactored and the existing design, to pro
 vide the transition path to the new architecture[] 
  []
 
 
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 9--9
+Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Engineered and implemented the Web Service interoperabil
 ity solutions between MySpace back end[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Providing the design for the transition to multi level a
 pplication, highly scalable system.[] 
  []
 
 
-Overfull \hbox (110.86707pt too wide) in paragraph at lines 9--9
+Overfull \hbox (110.86707pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 Amazon.com. Seattle, WA                                   
                                 2004 - 2007[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Leading the design of the next generation high performan
 ce, distributed software deployment[] 
  []
 
 
-Overfull \hbox (122.36453pt too wide) in paragraph at lines 9--9
+Overfull \hbox (122.36453pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Designed and developed (as a lead in the team) distribut
 ed and multithread set of C++ applications to[] 
  []
 
 
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 9--9
+Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 effectively manage, update and monitor over 30,000+ hos
 ts. The whole system consisted of several[] 
  []
 
 
-Overfull \hbox (116.6158pt too wide) in paragraph at lines 9--9
+Overfull \hbox (116.6158pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 server side applications, each on separate server farm,
  set of client apps and daemons, persistence[] 
  []
 
 
-Overfull \hbox (87.87213pt too wide) in paragraph at lines 9--9
+Overfull \hbox (87.87213pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 subsystem (Database) and a data streaming subsystem. Th
 e amount of data stored was second only[] 
  []
 
 
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 9--9
+Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Used several C++ libraries, multithread, multiprocessing
  methodologies and applications Justified[] 
  []
 
 
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 9--9
+Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
 []   \T1/lmtt/m/n/10.95 and implemented specific solutions, related to scaling,
  performance improvement, operational[] 
  []
 
 
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 9--9
+Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Developed and programmed on the application server stack
 , from database (Oracle 9i and 10g) to[] 
  []
 
 
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 9--9
+Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Improved, refactored, and significantly increased functi
 onality of the existing application by[] 
  []
 
-[136]
-Overfull \hbox (87.87213pt too wide) in paragraph at lines 9--9
+[135]
+Overfull \hbox (87.87213pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 PACKETEER Inc., Kelowna, BC                               
                             2002 - 2004[] 
  []
 
 
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 9--9
+Overfull \hbox (7.38986pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Implementation of compression algorithms for IP, TCP and
  HTTP based traffic in C.[] 
  []
 
 
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 9--9
+Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Member of the design and team for of the next generation
  TCP traffic-processing server. The[] 
  []
 
 
-Overfull \hbox (13.1386pt too wide) in paragraph at lines 9--9
+Overfull \hbox (13.1386pt too wide) in paragraph at lines 13--13
 []    \T1/lmtt/m/n/10.95 application was developed in C for kernel drivers and 
 C++ for the higher layers.[] 
  []
 
 
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 9--9
+Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 ? Implementation of algorithm for traffic classification, 
 supporting XML and SOAP protocols in C++.[] 
  []
 
 
-Overfull \hbox (13.1386pt too wide) in paragraph at lines 9--9
+Overfull \hbox (13.1386pt too wide) in paragraph at lines 13--13
 []\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
  ? zelimir.lucic@gmail.com[] 
  []
 
-[137]) [138]
+[136]) [137]
 
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (147 not 148).
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (146 not 147).
                Rerun to correct this.
 
 (./dissertation.aux (./introduction.aux) (./chapter0.aux) (./chapter0-1.aux)
@@ -3449,38 +3240,39 @@ Package logreq Info: Writing requests to 'dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27686 strings out of 474116
- 515437 string characters out of 5743681
+ 27696 strings out of 474116
+ 515598 string characters out of 5743681
  2010187 words of memory out of 5000000
- 49036 multiletter control sequences out of 15000+600000
- 668899 words of font info for 114 fonts, out of 8000000 for 9000
+ 49046 multiletter control sequences out of 15000+600000
+ 683081 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,17n,93p,1914b,1493s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 82i,17n,93p,1914b,1503s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/tex
 mf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fo
-nts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
-public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/l
-mmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024
-/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/
-fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
-public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lm
-ri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/
-texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/202
-4/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-di
-st/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
-ype1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/
-fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb>
-Output written on dissertation.pdf (148 pages, 11902133 bytes).
+nts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
+public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/
+lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/202
+4/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dis
+t/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
+1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/
+lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/20
+24/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-di
+st/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
+ype1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
+1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/h
+elvetic/uhvr8a.pfb>
+Output written on dissertation.pdf (147 pages, 11909198 bytes).
 PDF statistics:
- 2116 PDF objects out of 2487 (max. 8388607)
+ 2117 PDF objects out of 2487 (max. 8388607)
  1802 compressed objects within 19 object streams
- 496 named destinations out of 1000 (max. 500000)
+ 495 named destinations out of 1000 (max. 500000)
  436 words of extra memory for PDF output out of 10000 (max. 10000000)
 
