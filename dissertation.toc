@@ -1,7 +1,7 @@
 \contentsline {chapter}{Abstract}{iii}{section*.1}%
 \contentsline {chapter}{Acknowledgements}{iv}{section*.3}%
-\contentsline {chapter}{List of Tables}{3}{section*.5}%
-\contentsline {chapter}{List of Figures}{4}{section*.7}%
+\contentsline {chapter}{List of Tables}{vii}{section*.5}%
+\contentsline {chapter}{List of Figures}{viii}{section*.7}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}CT in the Ultra-Cold Regime}{2}{subsection.1.1.1}%

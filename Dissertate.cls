@@ -175,6 +175,6 @@
   \noindent
   \input{thanks}
   \vspace*{\fill} \newpage
-  \setcounter{page}{1}
-  \pagenumbering{arabic}
+  % Keep Roman page numbering throughout the front matter.
+  % Arabic numbering is started in dissertation.tex immediately before Chapter 1.
 }

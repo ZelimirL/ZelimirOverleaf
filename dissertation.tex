@@ -61,9 +61,10 @@
 % Start printed page numbering at the first chapter.
 \clearpage
 \pagestyle{plain}
-\pagenumbering{arabic}
 \setcounter{page}{1}
 \setcounter{chapter}{-1}  % start chapter numbering at 0
+\clearpage
+\pagenumbering{arabic}
 \include{introduction}
 \include{chapter0}
 \include{chapter0-1}
@@ -99,9 +100,6 @@
 % \bibliographystyle{plain}
 
 \clearpage
-\begingroup
-\sloppy
-\include{cv}
-\endgroup
+\input{cv}
 
 \end{document}

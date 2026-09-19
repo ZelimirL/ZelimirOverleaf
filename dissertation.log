@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,7 +971,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 (./introduction.aux) (./chapter0.aux) (./chapter0-1.aux) (./chapter1.aux)
 (./chapter2.aux) (./chapter3.aux) (./chapter5.aux) (./conclusion.aux)
 (./appendixA.aux) (./appendixB.aux) (./appendixC.aux) (./appendixD.aux)
-(./appendixE.aux) (./cv.aux))
+(./appendixE.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1209,13 +1209,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 -lar 
  []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \scan_stop: 
-l.43 ... {5.1}Existing Solutions}{64}{section.5.1}
-                                                  % [1
+[5
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 58--58
@@ -1239,7 +1233,7 @@ for
 \tf@toc=\write4
 \openout4 = `dissertation.toc'.
 
- [2] (./dissertation.lot
+ [6] (./dissertation.lot
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
  [][] [][]\T1/lmr/m/n/12 The sep-a-ra-tion con-stant A, elec-tronic en-ergy E, 
 and to-tal en-ergy $\OML/lmm/m/it/12 E \OT1/lmr/m/n/12 + 1\OML/lmm/m/it/12 =R$ 
@@ -1269,7 +1263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
 \tf@lot=\write5
 \openout5 = `dissertation.lot'.
 
- [3
+ [7
 
 
 ] (./dissertation.lof
@@ -1380,7 +1374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--15
 ent val-ues of the 
  []
 
-[4
+[8
 
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
@@ -1468,7 +1462,7 @@ n/12 (\OML/lmm/m/it/12  \OT1/lmr/m/n/12 = 1\OML/lmm/m/it/12 =\OT1/lmr/m/n/12 2
 \tf@lof=\write6
 \openout6 = `dissertation.lof'.
 
- [5] [6]
+ [9] [10]
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
@@ -1494,39 +1488,11 @@ l.22 \end{itemize}
 
 
 
+
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/tex
 live/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \scan_stop: 
-l.44 
-      [2]
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \scan_stop: 
-l.54 \noindent
-               [3]
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \scan_stop: 
-l.65 
-      [4]
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \scan_stop: 
-l.75 
-      [5]
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \scan_stop: 
-l.85 \end{equation}
-                    [6] [7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/l
-m/lm-mathex.enc}] [8] [9]) [10]
+[2] [3] [4] [5] [6] [7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm
+-mathex.enc}] [8] [9]) [10]
 \openout2 = `chapter0.aux'.
 
  (./chapter0.tex
@@ -1561,7 +1527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
 
 ] [12] [13] [14]
-<RadAssocPotentials-4.png, id=370, 631.60968pt x 374.90062pt>
+<RadAssocPotentials-4.png, id=376, 631.60968pt x 374.90062pt>
 File: RadAssocPotentials-4.png Graphic file (type png)
 <use RadAssocPotentials-4.png>
 Package pdftex.def Info: RadAssocPotentials-4.png  used on input line 107.
@@ -1597,13 +1563,13 @@ Overfull \hbox (11.29553pt too wide) detected at line 166
  []
 
 [17] [18]
-<EnsteinA3D.png, id=421, 361.35pt x 236.885pt>
+<EnsteinA3D.png, id=427, 361.35pt x 236.885pt>
 File: EnsteinA3D.png Graphic file (type png)
 <use EnsteinA3D.png>
 Package pdftex.def Info: EnsteinA3D.png  used on input line 225.
 (pdftex.def)             Requested size: 469.75502pt x 307.95407pt.
  [19] [20 <./EnsteinA3D.png>]
-<ResultsYbCa.png, id=443, 454.69875pt x 264.99pt>
+<ResultsYbCa.png, id=449, 454.69875pt x 264.99pt>
 File: ResultsYbCa.png Graphic file (type png)
 <use ResultsYbCa.png>
 Package pdftex.def Info: ResultsYbCa.png  used on input line 253.
@@ -1627,7 +1593,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--254
  []
 
 [21] [22 <./ResultsYbCa.png>]
-<CrossSection3D.png, id=469, 407.5225pt x 261.97874pt>
+<CrossSection3D.png, id=475, 407.5225pt x 261.97874pt>
 File: CrossSection3D.png Graphic file (type png)
 <use CrossSection3D.png>
 Package pdftex.def Info: CrossSection3D.png  used on input line 274.
@@ -1639,7 +1605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--275
  []
 
 [23]
-<Spectrum3D.png, id=476, 412.54124pt x 275.0275pt>
+<Spectrum3D.png, id=482, 412.54124pt x 275.0275pt>
 File: Spectrum3D.png Graphic file (type png)
 <use Spectrum3D.png>
 Package pdftex.def Info: Spectrum3D.png  used on input line 282.
@@ -1651,7 +1617,7 @@ a-tion pro-cess at a gas tem-per-a-ture
  []
 
 [24 <./CrossSection3D.png>] [25 <./Spectrum3D.png>]
-<IsotopicDependency.jpg, id=496, 983.675pt x 750.805pt>
+<IsotopicDependency.jpg, id=502, 983.675pt x 750.805pt>
 File: IsotopicDependency.jpg Graphic file (type jpg)
 <use IsotopicDependency.jpg>
 Package pdftex.def Info: IsotopicDependency.jpg  used on input line 316.
@@ -1677,7 +1643,7 @@ n 3D|
 [37
 
 ] [38]
-<Vg-Vs-LCAO-good.png, id=692, 361.35pt x 242.9075pt>
+<Vg-Vs-LCAO-good.png, id=698, 361.35pt x 242.9075pt>
 File: Vg-Vs-LCAO-good.png Graphic file (type png)
 <use Vg-Vs-LCAO-good.png>
 Package pdftex.def Info: Vg-Vs-LCAO-good.png  used on input line 185.
@@ -1688,7 +1654,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--186
 ox-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
-<Vg-Vs-LCAO-2.png, id=693, 361.35pt x 227.85126pt>
+<Vg-Vs-LCAO-2.png, id=699, 361.35pt x 227.85126pt>
 File: Vg-Vs-LCAO-2.png Graphic file (type png)
 <use Vg-Vs-LCAO-2.png>
 Package pdftex.def Info: Vg-Vs-LCAO-2.png  used on input line 193.
@@ -1700,7 +1666,7 @@ x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
 [39]
-<Vu-Vs-LCAO-good.png, id=706, 361.35pt x 240.9pt>
+<Vu-Vs-LCAO-good.png, id=712, 361.35pt x 240.9pt>
 File: Vu-Vs-LCAO-good.png Graphic file (type png)
 <use Vu-Vs-LCAO-good.png>
 Package pdftex.def Info: Vu-Vs-LCAO-good.png  used on input line 205.
@@ -1713,7 +1679,7 @@ x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 1st
 
 [40 <./Vg-Vs-LCAO-good.png (PNG copy)>] [41 <./Vg-Vs-LCAO-2.png (PNG copy)> <./
 Vu-Vs-LCAO-good.png (PNG copy)>]
-<Ger-Lcao-Graphs.jpg, id=718, 1715.40875pt x 452.69125pt>
+<Ger-Lcao-Graphs.jpg, id=724, 1715.40875pt x 452.69125pt>
 File: Ger-Lcao-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-Graphs.jpg  used on input line 222.
@@ -1724,7 +1690,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--223
 -i-ma-tion. The graph shows
  []
 
-<Ger-Lcao-3D-Graphs.jpg, id=719, 460.8417pt x 264.2673pt>
+<Ger-Lcao-3D-Graphs.jpg, id=725, 460.8417pt x 264.2673pt>
 File: Ger-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-3D-Graphs.jpg  used on input line 228.
@@ -1735,7 +1701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 x-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-Graphs.jpg, id=720, 1518.67375pt x 406.51875pt>
+<UnGer-Lcao-Graphs.jpg, id=726, 1518.67375pt x 406.51875pt>
 File: UnGer-Lcao-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-Graphs.jpg  used on input line 233.
@@ -1746,7 +1712,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--234
 ox-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-3D-Graphs.jpg, id=721, 454.3374pt x 264.7491pt>
+<UnGer-Lcao-3D-Graphs.jpg, id=727, 454.3374pt x 264.7491pt>
 File: UnGer-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-3D-Graphs.jpg  used on input line 238.
@@ -1775,7 +1741,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] [46] [47]
-<H2Ion3D-2.png, id=787, 495.8525pt x 317.185pt>
+<H2Ion3D-2.png, id=793, 495.8525pt x 317.185pt>
 File: H2Ion3D-2.png Graphic file (type png)
 <use H2Ion3D-2.png>
 Package pdftex.def Info: H2Ion3D-2.png  used on input line 98.
@@ -1809,12 +1775,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 168.
 
 [52] [53] [54] [55] [56] [57] [58] [59]
-<Bates3DEofR-2.png, id=926, 361.35pt x 237.88875pt>
+<Bates3DEofR-2.png, id=932, 361.35pt x 237.88875pt>
 File: Bates3DEofR-2.png Graphic file (type png)
 <use Bates3DEofR-2.png>
 Package pdftex.def Info: Bates3DEofR-2.png  used on input line 352.
 (pdftex.def)             Requested size: 361.34912pt x 237.88815pt.
-<Bates3DEofRPlusVofR-2.png, id=929, 361.35pt x 237.88875pt>
+<Bates3DEofRPlusVofR-2.png, id=935, 361.35pt x 237.88875pt>
 File: Bates3DEofRPlusVofR-2.png Graphic file (type png)
 <use Bates3DEofRPlusVofR-2.png>
 Package pdftex.def Info: Bates3DEofRPlusVofR-2.png  used on input line 360.
@@ -1956,17 +1922,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--227
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<H2_1Sg-Potential.pdf, id=1046, 361.35pt x 221.82875pt>
+<H2_1Sg-Potential.pdf, id=1052, 361.35pt x 221.82875pt>
 File: H2_1Sg-Potential.pdf Graphic file (type pdf)
 <use H2_1Sg-Potential.pdf>
 Package pdftex.def Info: H2_1Sg-Potential.pdf  used on input line 262.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_1Su-Potential.png, id=1047, 361.35pt x 221.82875pt>
+<H2_1Su-Potential.png, id=1053, 361.35pt x 221.82875pt>
 File: H2_1Su-Potential.png Graphic file (type png)
 <use H2_1Su-Potential.png>
 Package pdftex.def Info: H2_1Su-Potential.png  used on input line 267.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_sGpU-Potential.png, id=1048, 361.35pt x 228.35312pt>
+<H2_sGpU-Potential.png, id=1054, 361.35pt x 228.35312pt>
 File: H2_sGpU-Potential.png Graphic file (type png)
 <use H2_sGpU-Potential.png>
 Package pdftex.def Info: H2_sGpU-Potential.png  used on input line 273.
@@ -2098,7 +2064,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2.
 l.251 F
        or fermions $\alpha=1$, and for bosons $\alpha=0.$ For fractional val...
 ]
-<fluxtube.png, id=1162, 3311.37125pt x 2646.88875pt>
+<fluxtube.png, id=1168, 3311.37125pt x 2646.88875pt>
 File: fluxtube.png Graphic file (type png)
 <use fluxtube.png>
 Package pdftex.def Info: fluxtube.png  used on input line 257.
@@ -2116,7 +2082,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--258
  []
 
 [82] [83 <./fluxtube.png>] [84] [85]
-<fig1a.pdf, id=1207, 433.62pt x 286.06876pt>
+<fig1a.pdf, id=1213, 433.62pt x 286.06876pt>
 File: fig1a.pdf Graphic file (type pdf)
 <use fig1a.pdf>
 Package pdftex.def Info: fig1a.pdf  used on input line 363.
@@ -2129,7 +2095,7 @@ sonic base, and red
  []
 
 [86]
-<fig1b.pdf, id=1213, 260.975pt x 171.64125pt>
+<fig1b.pdf, id=1219, 260.975pt x 171.64125pt>
 File: fig1b.pdf Graphic file (type pdf)
 <use fig1b.pdf>
 Package pdftex.def Info: fig1b.pdf  used on input line 370.
@@ -2141,7 +2107,7 @@ T1/lmr/m/n/12 = 1 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bo
 sonic base, and red
  []
 
-<fig2a.pdf, id=1214, 433.62pt x 289.08pt>
+<fig2a.pdf, id=1220, 433.62pt x 289.08pt>
 File: fig2a.pdf Graphic file (type pdf)
 <use fig2a.pdf>
 Package pdftex.def Info: fig2a.pdf  used on input line 377.
@@ -2158,7 +2124,7 @@ osonic base, and red
 pdfTeX warning: pdflatex (file ./fig1b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig2b.pdf, id=1273, 260.975pt x 170.6375pt>
+<fig2b.pdf, id=1279, 260.975pt x 170.6375pt>
 File: fig2b.pdf Graphic file (type pdf)
 <use fig2b.pdf>
 Package pdftex.def Info: fig2b.pdf  used on input line 384.
@@ -2170,7 +2136,7 @@ T1/lmr/m/n/12 = 10 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a b
 osonic base, and red
  []
 
-<fig3a.pdf, id=1274, 433.62pt x 289.08pt>
+<fig3a.pdf, id=1280, 433.62pt x 289.08pt>
 File: fig3a.pdf Graphic file (type pdf)
 <use fig3a.pdf>
 Package pdftex.def Info: fig3a.pdf  used on input line 392.
@@ -2180,12 +2146,12 @@ Package pdftex.def Info: fig3a.pdf  used on input line 392.
 pdfTeX warning: pdflatex (file ./fig2b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig3b.pdf, id=1333, 260.975pt x 170.6375pt>
+<fig3b.pdf, id=1339, 260.975pt x 170.6375pt>
 File: fig3b.pdf Graphic file (type pdf)
 <use fig3b.pdf>
 Package pdftex.def Info: fig3b.pdf  used on input line 399.
 (pdftex.def)             Requested size: 328.82707pt x 215.00436pt.
-<CT.pdf, id=1334, 260.975pt x 171.64125pt>
+<CT.pdf, id=1340, 260.975pt x 171.64125pt>
 File: CT.pdf Graphic file (type pdf)
 <use CT.pdf>
 Package pdftex.def Info: CT.pdf  used on input line 407.
@@ -2348,220 +2314,218 @@ Overfull \hbox (82.1234pt too wide) in paragraph at lines 15--15
 
  (./appendixC.tex
 Appendix C.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 $[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 6364) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [] []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [] []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--56
+Underfull \hbox (badness 10000) in paragraph at lines 12--58
 [][]  
  []
 
@@ -2571,66 +2535,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--56
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 59--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--67
 $[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--67
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--67
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--67
 [][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--67
 [][]  
  []
 
-[105]
-Underfull \hbox (badness 10000) in paragraph at lines 68--72
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
 $[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--82
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
 $[][]  
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 75--82
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
 [][]  
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 75--82
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
 [][]  
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 89--95
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
+[][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
+[][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
 $[][]  
  []
 
 
-Overfull \hbox (8.94115pt too wide) in paragraph at lines 98--103
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
+[][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
+[][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
+[][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
 $[][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
 [][]  
  []
 
-) [106]
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
+[][]  
+ []
+
+[105]) [106]
 \openout2 = `appendixD.aux'.
 
  (./appendixD.tex
@@ -2771,7 +2765,7 @@ Overfull \hbox (7.38986pt too wide) in paragraph at lines 8--8
  []
 
 ) [123]
-Underfull \hbox (badness 1173) in paragraph at lines 97--97
+Underfull \hbox (badness 1173) in paragraph at lines 98--98
 []\T1/lmr/m/n/12 Daniel S. Abrams and Seth Lloyd. ``Non-lin-ear Quan-tum Me-cha
 n-ics Im-plies 
  []
@@ -2782,455 +2776,84 @@ n-ics Im-plies
 
 
 ] [125] [126] [127] [128]
-Underfull \hbox (badness 1552) in paragraph at lines 97--97
+Underfull \hbox (badness 1552) in paragraph at lines 98--98
 []\T1/lmr/m/n/12 R Singh. ``Ex-ci-tons in Semi-con-duc-tor Quan-tum Wells Stud-
 ied Us-ing Two- 
  []
 
-[129] [130] [131]
-\openout2 = `cv.aux'.
-
- (./cv.tex
-File: "cv-accessible.txt"  (verbatim)
-
-Overfull \hbox (41.88226pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Zelimir Lucic                                             
-                ?(206) 384-8528[] 
- []
-
-
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
-         ? zelimir.lucic@gmail.com[] 
- []
-
-
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Software engineer with over 18+ years experience in Softwa
-re Engineering, Business to Business[] 
- []
-
-
-Overfull \hbox (105.11833pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 applications, Object Oriented design and methodologies. Hi
-ghly Proficient in C/C++, Java/Kotlin, C#,[] 
- []
-
-
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Up to date knowledge of distributed systems, Akka, Tempora
-l, Algorithms, Computational Mathematics,[] 
- []
-
-
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 transaction processing, relational database and network en
-gineering. Strong system programming[] 
- []
-
-
-Overfull \hbox (24.63606pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 background, excellent knowledge of mission critical applic
-ations, networks, protocols.[] 
- []
-
-
-Overfull \hbox (30.3848pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Operating Systems: UNIX (Linux, HP_UX, AIX, s), Windows 
-.NET, Win32, Embedded Systems[] 
- []
-
-
-Overfull \hbox (53.37973pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Methodologies and concepts: Object Oriented analysis and
- design, Client/Server and N-tier[] 
- []
-
-
-Overfull \hbox (133.862pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Real life experience of scaling and optimizing large sys
-tems, designing for reliability and scalability[] 
- []
-
-
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Throughout knowledge of C++, STL programming practices a
-nd paradigms. Early adopter of new[] 
- []
-
-
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Excellent knowledge of full range of Microsoft technolog
-ies, and recent expertise in C# ,.NET,[] 
- []
-
-
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
-[]  \T1/lmtt/m/n/10.95 ASP.NET platform and SQL server (complete .NET stack), E
-xcel RTD Server and Excel Extensions[] 
- []
-
-
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Deep knowledge and experience with: distributed systems,
- Web services, concurrent programming,[] 
- []
-
-
-Overfull \hbox (47.631pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Experience with database theory, database programming, O
-RACLE 9i and 10g administration,[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Implemented Classification, Data analytics, Machine Lear
-ning solutions, using NumPY, Tensor[] 
- []
-
-
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Theoretical background: Applied Mathematics, software en
-gineering, digital signal processing[] 
- []
-
-
-Overfull \hbox (122.36453pt too wide) in paragraph at lines 13--13
-[]  \T1/lmtt/m/n/10.95 applications, statistical process analysis, network anal
-ysis, Working experience in writing technical[] 
- []
-
-[132
-
+[129] [130] [131] (./cv.tex
+<cv.pdf, id=1761, 614.295pt x 794.97pt>
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf>
+Package pdftex.def Info: cv.pdf  used on input line 5.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf>
+Package pdftex.def Info: cv.pdf  used on input line 5.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<cv.pdf, id=1764, page=1, 614.295pt x 794.97pt>
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [132
 
 
 ]
-Overfull \hbox (93.62086pt too wide) in paragraph at lines 13--13
-[]  \T1/lmtt/m/n/10.95 design specification, overseeing the development and tes
-ting process, and providing a mentorship[] 
- []
-
-
-Overfull \hbox (93.62086pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Knowledge of practical software engineering techniques, 
-such as basic waterfall and incremental,[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Programming and Development tools: Git, Claude, Devin, M
-S Visual Studio, .NET, ATL, Various[] 
- []
-
-
-Overfull \hbox (1.64113pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Amazon Inc, Seattle, WA                                   
-               2022-2026[] 
- []
-
-
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Lead the implementation of the several ML models and l
-ibraries, using TarsosDsp, OpenCV, Tensor[] 
- []
-
-
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Refactoring of the existing application, following the
- Android design patterns.[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Design and development of the AWS based service to sup
-port continuous monitoring and data[] 
- []
-
-
-Overfull \hbox (41.88226pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Zelimir Lucic                                             
-                ?(206) 384-8528[] 
- []
-
-
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
-         ? zelimir.lucic@gmail.com[] 
- []
-
-
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Tableau Software, Seattle, WA                             
-                2017-2022[] 
- []
-
-
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Participated in the Implemented of classification netw
-ork for error tracking and prediction[] 
- []
-
-[133]
-Overfull \hbox (53.37973pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Microsoft Corp., Redmond, WA                              
-                        2016-2017[] 
- []
-
-
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Rocket Gaming System, Las Vegas, NV                       
-                                2013-2014[] 
- []
-
-
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Analyze and define the game characteristics, define an
-d implement the mathematical model[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Refactoring, Performance and Usability improvements of
- the existing software and software[] 
- []
-
-
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Bloomberg Inc, New York, NY                               
-                           2012-2013[] 
- []
-
-
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Lead the design and implementation of custom Excel funct
-ion handling high frequency sell side[] 
- []
-
-
-Overfull \hbox (47.631pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 trading and data flow. The application consists of C++ 
-RTD server, and C#/.NET Excel UI[] 
- []
-
-
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Designed and implemented the data flow, algorithms and E
-xcel UI for the Bloomberg specific[] 
- []
-
-
-Overfull \hbox (30.3848pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Worked with other teams to implement end to end, high fr
-equency trading and data flow[] 
- []
-
-
-Overfull \hbox (133.862pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 applications. The applications are the real time Excel 
-extensions, passing large data sets to customer[] 
- []
-
-
-Overfull \hbox (87.87213pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Translattice, Santa Clara. CA                             
-                            2010 - 2011[] 
- []
-
-
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Implementation of the Paxos algorithm for distributed DB
- operation on Postgres DB engine in C.[] 
- []
-
-
-Overfull \hbox (105.11833pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Design and Implementation of distributed transactions, d
-istributed table sharding for the Postgres[] 
- []
-
-
-Overfull \hbox (47.631pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Zelimir Lucic                                             
-                 ?(206) 384-8528[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
-          ? zelimir.lucic@gmail.com[] 
- []
-
-[134]
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Design and Implementation of the underlying multithrea
-ded and multi process communication /[] 
- []
-
-
-Overfull \hbox (105.11833pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ?   Performance improvements, refactoring existing code, U
-sing C for the database engine and C++ for[] 
- []
-
-
-Overfull \hbox (116.6158pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 MySpace.com, Seattle, WA                                  
-                                 2007 - 2010[] 
- []
-
-
-Overfull \hbox (41.88226pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Lead the design and implementation of MySpace Messaging 
-system, which included internal[] 
- []
-
-
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 messaging and email server and client. The project inte
-grated new messaging, email, comments,[] 
- []
-
-
-Overfull \hbox (53.37973pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 WebIm into the existing MySpace framework. Project was 
-based on .NET platform, using C#,[] 
- []
-
-
-Overfull \hbox (24.63606pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Designed and developed message passing system supporting
- transaction like operation.[] 
- []
-
-
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Developed Rest based services, using full .NET stack, fr
-om SQL Server as a back end DB to the[] 
- []
-
-
-Overfull \hbox (139.61073pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Significantly refactored and the existing design, to pro
-vide the transition path to the new architecture[] 
- []
-
-
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Engineered and implemented the Web Service interoperabil
-ity solutions between MySpace back end[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Providing the design for the transition to multi level a
-pplication, highly scalable system.[] 
- []
-
-
-Overfull \hbox (110.86707pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 Amazon.com. Seattle, WA                                   
-                                2004 - 2007[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Leading the design of the next generation high performan
-ce, distributed software deployment[] 
- []
-
-
-Overfull \hbox (122.36453pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Designed and developed (as a lead in the team) distribut
-ed and multithread set of C++ applications to[] 
- []
-
-
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 effectively manage, update and monitor over 30,000+ hos
-ts. The whole system consisted of several[] 
- []
-
-
-Overfull \hbox (116.6158pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 server side applications, each on separate server farm,
- set of client apps and daemons, persistence[] 
- []
-
-
-Overfull \hbox (87.87213pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 subsystem (Database) and a data streaming subsystem. Th
-e amount of data stored was second only[] 
- []
-
-
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Used several C++ libraries, multithread, multiprocessing
- methodologies and applications Justified[] 
- []
-
-
-Overfull \hbox (76.37466pt too wide) in paragraph at lines 13--13
-[]   \T1/lmtt/m/n/10.95 and implemented specific solutions, related to scaling,
- performance improvement, operational[] 
- []
-
-
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Developed and programmed on the application server stack
-, from database (Oracle 9i and 10g) to[] 
- []
-
-
-Overfull \hbox (82.1234pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Improved, refactored, and significantly increased functi
-onality of the existing application by[] 
- []
-
-[135]
-Overfull \hbox (87.87213pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 PACKETEER Inc., Kelowna, BC                               
-                            2002 - 2004[] 
- []
-
-
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Implementation of compression algorithms for IP, TCP and
- HTTP based traffic in C.[] 
- []
-
-
-Overfull \hbox (64.8772pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Member of the design and team for of the next generation
- TCP traffic-processing server. The[] 
- []
-
-
-Overfull \hbox (13.1386pt too wide) in paragraph at lines 13--13
-[]    \T1/lmtt/m/n/10.95 application was developed in C for kernel drivers and 
-C++ for the higher layers.[] 
- []
-
-
-Overfull \hbox (99.3696pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 ? Implementation of algorithm for traffic classification, 
-supporting XML and SOAP protocols in C++.[] 
- []
-
-
-Overfull \hbox (13.1386pt too wide) in paragraph at lines 13--13
-[]\T1/lmtt/m/n/10.95 9810 Mercerwood Drive                                     
- ? zelimir.lucic@gmail.com[] 
- []
-
-[136]) [137]
-
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (146 not 147).
-               Rerun to correct this.
-
-(./dissertation.aux (./introduction.aux) (./chapter0.aux) (./chapter0-1.aux)
-(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter5.aux)
-(./conclusion.aux) (./appendixA.aux) (./appendixB.aux) (./appendixC.aux)
-(./appendixD.aux) (./appendixE.aux) (./cv.aux))
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [133
+
+ <./cv.pdf>]
+<cv.pdf, id=1805, page=2, 614.295pt x 794.97pt>
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 2>
+Package pdftex.def Info: cv.pdf , page2 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 2>
+Package pdftex.def Info: cv.pdf , page2 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 2>
+Package pdftex.def Info: cv.pdf , page2 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [134
+
+ <./cv.pdf>]
+<cv.pdf, id=1810, page=3, 614.295pt x 794.97pt>
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 3>
+Package pdftex.def Info: cv.pdf , page3 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 3>
+Package pdftex.def Info: cv.pdf , page3 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 3>
+Package pdftex.def Info: cv.pdf , page3 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [135
+
+ <./cv.pdf>]) (./dissertation.aux (./introduction.aux) (./chapter0.aux)
+(./chapter0-1.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
+(./chapter5.aux) (./conclusion.aux) (./appendixA.aux) (./appendixB.aux)
+(./appendixC.aux) (./appendixD.aux) (./appendixE.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -3240,39 +2863,40 @@ Package logreq Info: Writing requests to 'dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27696 strings out of 474116
- 515598 string characters out of 5743681
- 2010187 words of memory out of 5000000
- 49046 multiletter control sequences out of 15000+600000
- 683081 words of font info for 124 fonts, out of 8000000 for 9000
+ 27689 strings out of 474116
+ 515411 string characters out of 5743681
+ 2009187 words of memory out of 5000000
+ 49040 multiletter control sequences out of 15000+600000
+ 676122 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,17n,93p,1914b,1503s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/tex
 mf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fo
-nts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
-public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/
-lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/
-texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/202
-4/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dis
-t/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
-1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/
-lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/20
-24/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-di
-st/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
-ype1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
-1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/h
-elvetic/uhvr8a.pfb>
-Output written on dissertation.pdf (147 pages, 11909198 bytes).
+nts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
+public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/l
+mmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024
+/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2024/texmf-dist/
+fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
+public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lm
+r8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024
+/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist
+/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
+e1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
+lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helveti
+c/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8
+a.pfb>
+Output written on dissertation.pdf (145 pages, 12028405 bytes).
 PDF statistics:
- 2117 PDF objects out of 2487 (max. 8388607)
- 1802 compressed objects within 19 object streams
- 495 named destinations out of 1000 (max. 500000)
- 436 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2158 PDF objects out of 2487 (max. 8388607)
+ 1825 compressed objects within 19 object streams
+ 499 named destinations out of 1000 (max. 500000)
+ 466 words of extra memory for PDF output out of 10000 (max. 10000000)
 
