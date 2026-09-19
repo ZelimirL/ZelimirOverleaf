@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,21 +1212,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Mathematica Code for Cal-cu-lat-ing the Eig
 en- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Hydrogen Ion in 2 Di-men-sion Equa-tion, Ma
 th-e- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
  [][] []\T1/lmr/m/sc/12 Ap-pendix []Fortran Code for Cal-cu-lat-ing En-er-gies 
-for 
+for the 
  []
 
 )
@@ -2835,7 +2835,7 @@ Package pdftex.def Info: cv.pdf , page2 used on input line 5.
  [134
 
  <./cv.pdf>]
-<cv.pdf, id=1810, page=3, 614.295pt x 794.97pt>
+<cv.pdf, id=1811, page=3, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
 <use cv.pdf, page 3>
 Package pdftex.def Info: cv.pdf , page3 used on input line 5.
@@ -2850,10 +2850,15 @@ Package pdftex.def Info: cv.pdf , page3 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [135
 
- <./cv.pdf>]) (./dissertation.aux (./introduction.aux) (./chapter0.aux)
-(./chapter0-1.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
-(./chapter5.aux) (./conclusion.aux) (./appendixA.aux) (./appendixB.aux)
-(./appendixC.aux) (./appendixD.aux) (./appendixE.aux))
+ <./cv.pdf>])
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (144 not 145).
+               Rerun to correct this.
+
+(./dissertation.aux (./introduction.aux) (./chapter0.aux) (./chapter0-1.aux)
+(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter5.aux)
+(./conclusion.aux) (./appendixA.aux) (./appendixB.aux) (./appendixC.aux)
+(./appendixD.aux) (./appendixE.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2893,7 +2898,7 @@ mbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helveti
 c/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8
 a.pfb>
-Output written on dissertation.pdf (145 pages, 12028405 bytes).
+Output written on dissertation.pdf (145 pages, 12028378 bytes).
 PDF statistics:
  2158 PDF objects out of 2487 (max. 8388607)
  1825 compressed objects within 19 object streams
