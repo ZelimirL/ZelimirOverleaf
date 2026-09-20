@@ -138,6 +138,19 @@
 
 \usepackage{hyperref}
 
+% Accessible heading hierarchy for tagged PDF.
+% Cover title is tagged explicitly as H1 in cover.tex.
+% Book-class chapter headings (including \chapter*) are H2.
+% Sections/subsections/subsubsections are H3/H4/H5.
+\AddToHook{cmd/chapter/before}{\tagstructbegin{tag=H2}}
+\AddToHook{cmd/chapter/after}{\tagstructend}
+\AddToHook{cmd/section/before}{\tagstructbegin{tag=H3}}
+\AddToHook{cmd/section/after}{\tagstructend}
+\AddToHook{cmd/subsection/before}{\tagstructbegin{tag=H4}}
+\AddToHook{cmd/subsection/after}{\tagstructend}
+\AddToHook{cmd/subsubsection/before}{\tagstructbegin{tag=H5}}
+\AddToHook{cmd/subsubsection/after}{\tagstructend}
+
 % Improve bookmark hierarchy for unnumbered front-matter headings.
 \hypersetup{unicode=true,bookmarksnumbered=true,bookmarksopen=true,hidelinks}
 
