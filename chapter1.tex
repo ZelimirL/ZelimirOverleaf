@@ -246,7 +246,7 @@ Start with:
 \left\{ A - p^2\lambda^2 + 2R\lambda  \right\}\Lambda = 0 \Rightarrow \\
 & \left(\lambda^2-1\right)\frac{d^2\,\Lambda}{d\,\lambda^2} + 2\lambda \frac{d\,\Lambda}{d\,\lambda} + \left\{ A - p^2\lambda^2 + 2R\lambda  \right\}\Lambda = 0 
 \end{split}
-\end{equation}\\*
+\end{equation}
 
 For practical reasons we first shift the $ L $ equation b $ x = \lambda - 1 $ to obtain:
 
@@ -255,14 +255,14 @@ For practical reasons we first shift the $ L $ equation b $ x = \lambda - 1 $ to
 & \frac{d}{d\,x}\left\{x(x+2)\frac{d\,\Lambda}{d\,x} \right\} + \left\{ - p^2\,x^2 + (-2p^2 + 2R) x  -p^2 + 2R + A \right\}\Lambda = 0 \\[.8em]
 & x(x+2)\frac{d^2\,\Lambda}{d\,x^2} + (2x+2)\frac{d\,\Lambda}{d\,x} +  \left\{ - p^2\,x^2 + (-2p^2 + 2R) x  -p^2 + 2R + A \right\}\Lambda = 0
 \end{split}
-\end{equation}\\*
+\end{equation}
 
 Now we assume that  the solution exists and that it can be represented as the sum of Laguerre polynomials:
 \begin{equation}\label{L1-2}
 \begin{split}
 \Lambda(x) = e^{-px}\sum_{n=0}^{\infty}{c_n\,L_n(x)}
 \end{split}
-\end{equation}\\*
+\end{equation}
 
 Inserting the ansatz \eqref{L1-2} into \eqref{L1-1}, applying the properties of Laguerre's polynomial some algebra we obtain. 
 
@@ -275,7 +275,7 @@ Inserting the ansatz \eqref{L1-2} into \eqref{L1-1}, applying the properties of 
 & + (-4p + 1)\sum_{n=0}^{\infty}{c_n\,n\,L_n } + (4p+1)\sum_{n=0}^{\infty}{c_{n-1}\,n\,L_{n-1}}  +  \\[.8em]
 & + (-2p - p^2 + 2R + A)\sum_{n=0}^{\infty}{c_n\,L_ n} = 0 
 \end{split} 
-\end{equation}\\*
+\end{equation}
 
 The next step is to multiply the equation \eqref{fL1} with $ e^{-x}L_m(x) $ and integrate from $ 0 $ to $ \infty $ using the orthogonality property of the Laguerre's polynomials: $ \int_0^{\infty}{dx\,e^{-x}L_n(x)L_m(x)} = \delta_{mn} $ to obtain the recurrence equations for the unknown coefficients $ c_n $
 
@@ -286,7 +286,7 @@ The next step is to multiply the equation \eqref{fL1} with $ e^{-x}L_m(x) $ and 
 & - (-2p+2R)(n+1)c_{n+1} - (-2p+2R)n c_{n-1} + (-4p + 1)\,n\,c_n +  \\[.8em]
 &  + (4p+1)\,n\,c_{n-1} + (-2p - p^2 + 2R + A),c_ n = 0 
 \end{split} 
-\end{equation}\\*
+\end{equation}
 
 This expression \eqref{bandL} is  a system of linear equations, where the unknowns are the coefficients $ c_n $. The coefficients multiplying the unknowns $ c_n $ in \eqref{bandL} form the band matrix.
 
@@ -319,7 +319,7 @@ Substituting \eqref{Legendre} into \eqref{M1-2}, multiplying by $ P_m(\mu) $, an
 & \sum_{n=0}^{\infty}\left\{\frac{-2}{2n+1}n(n+1)\delta_{m,n} - A\frac{2}{2n+1}\delta_{m,n} + p^2\int_{1}^{1}{P_m(\mu)\mu^2P_n(\mu)d\mu } \right\}
 = 0
 \end{split}
-\end{equation}\\*
+\end{equation}
 
 Taking advantage of the orthogonality of Legendre Polynomials \eqref{LInt}, we obtain a system of linear equations, where the coefficients form a band matrix.
 
