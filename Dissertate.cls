@@ -129,6 +129,9 @@
 % Improve bookmark hierarchy for unnumbered front-matter headings.
 \hypersetup{unicode=true,bookmarksnumbered=true,bookmarksopen=true,hidelinks}
 
+% Display bibliography URLs as plain text, not clickable hyperlinks.
+\DeclareFieldFormat{url}{\nolinkurl{#1}}
+
 \newcommand{\copyrightpage}{
   \newpage
   \thispagestyle{empty}
