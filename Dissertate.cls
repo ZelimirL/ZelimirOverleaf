@@ -37,8 +37,12 @@
 \providecommand{\mel}[3]{\left\langle #1\middle|#2\middle|#3\right\rangle}
 \DeclareMathOperator{\sech}{sech}
 
-% No ident for new paragraph
-\usepackage[parfill]{parskip}
+% Paragraph spacing.
+% Do not load parskip here: under LaTeX 2026 tagging it fails to patch
+% \@startsection and can unbalance the automatic paragraph tag hooks.
+% These lengths preserve the intended no-indent / separated-paragraph appearance.
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip plus 2pt}
 
 % Fonts.
 % UTF-8 is native in current LaTeX; retained for compatibility with pdfLaTeX.
@@ -57,18 +61,26 @@
 
 % Headings and headers.
 \RequirePackage{fancyhdr}
-\RequirePackage{titlesec}
 
-% UNLV consistency: all major headings (numbered/unnumbered chapters and
-% appendices) use the same font family, size, weight, and centered alignment.
-% Because Abstract, Acknowledgements, TOC, lists, Bibliography, and CV use
-% \chapter* (or a chapter-level heading), they inherit this same format.
-\titleformat{\chapter}[display]
-  {\normalfont\normalsize\bfseries\centering}
-  {\ifnum\value{chapter}>0\relax\chaptername\ \thechapter\fi}
-  {0.5\baselineskip}
-  {\normalfont\normalsize\bfseries\centering}
-\titlespacing*{\chapter}{0pt}{0pt}{1.5\baselineskip}
+% UNLV consistency: preserve the visual chapter/major-heading format without
+% titlesec.  This keeps the standard book-class sectioning commands intact so
+% LaTeX 2026's native PDF tagging can tag chapters and sections correctly.
+\renewcommand{\@makechapterhead}[1]{%
+  \vspace*{0pt}%
+  {\parindent \z@ \centering \normalfont\normalsize\bfseries
+    \ifnum \c@secnumdepth >\m@ne
+      \ifnum\value{chapter}>0\relax
+        \chaptername\space \thechapter\par
+        \vskip .5\baselineskip
+      \fi
+    \fi
+    #1\par\nobreak
+    \vskip 1.5\baselineskip}}
+\renewcommand{\@makeschapterhead}[1]{%
+  \vspace*{0pt}%
+  {\parindent \z@ \centering \normalfont\normalsize\bfseries
+    #1\par\nobreak
+    \vskip 1.5\baselineskip}}
 \setlength{\headheight}{15pt}
 \pagestyle{plain}
 \RequirePackage{titling}
@@ -139,7 +151,6 @@
 \usepackage{hyperref}
 
 % Accessible heading hierarchy for tagged PDF.
-% Cover title is tagged explicitly as H1 in cover.tex.
 % Heading tags are handled by LaTeX 2026 native latex-lab tagging.
 % Do not add cmd/chapter or cmd/section tagstruct hooks here.
 
