@@ -76,11 +76,11 @@
 \include{chapter5}
 \include{conclusion}
 %\renewcommand{\thechapter}{\Roman{chapter}}
-\addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{Appendix\space}}
-\addtocontents{toc}{\protect\setlength{\protect\cftchapnumwidth}{7.0em}}
 \begin{appendices}
     \renewcommand{\chaptername}{Appendix}
 
+    \addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{Appendix\space}}
+    \addtocontents{toc}{\protect\setlength{\protect\cftchapnumwidth}{7.0em}}
     \include{appendixA}
     \include{appendixB}
     \include{appendixC}
