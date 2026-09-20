@@ -24,6 +24,11 @@
 % Prevent long unbreakable text from protruding into the 1-inch margins.
 \setlength{\emergencystretch}{3em}
 
+% For verbatim/listings in the appendices, use the LaTeX kernel's
+% \SuspendTagging / \ResumeTagging interface rather than changing the
+% automatic paragraph hooks with \tagtool{para=...}.  Directly changing
+% paragraph hooks can leave begin/end counters unbalanced.
+
 \begin{document}
 
 % the front matter

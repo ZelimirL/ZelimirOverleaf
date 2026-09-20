@@ -1,8 +1,10 @@
 \chapter{Scattering Cross Section Code}
 \label{AppendixE}
 
-% Accessible text transcript of the Mathematica notebook.  The original PDF
-% remains in the project for visual comparison.
+% listings 1.11b currently conflicts with LaTeX 2026 automatic paragraph
+% tagging in this long external listing.  Suspend only automatic paragraph
+% hooks while listings reads the file; the rest of the document remains tagged.
+\SuspendTagging{appendixE-listing}
 \lstinputlisting[
 basicstyle=\ttfamily\footnotesize,
 breaklines=true,
@@ -11,3 +13,4 @@ columns=fullflexible,
 keepspaces=true,
 showstringspaces=false
 ]{Z_u_g_first-5-v1-accessible.txt}
+\ResumeTagging{appendixE-listing}
