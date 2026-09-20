@@ -45,9 +45,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+% Use one text font family throughout the dissertation.
+\renewcommand{\familydefault}{\rmdefault}
 %\usepackage[english]{babel}
 \usepackage{blindtext}
-\usepackage{helvet}
 \RequirePackage{color}
 \RequirePackage{url}
 \widowpenalty=300
@@ -56,7 +57,18 @@
 
 % Headings and headers.
 \RequirePackage{fancyhdr}
-\RequirePackage[tiny, md, sc]{titlesec}
+\RequirePackage{titlesec}
+
+% UNLV consistency: all major headings (numbered/unnumbered chapters and
+% appendices) use the same font family, size, weight, and centered alignment.
+% Because Abstract, Acknowledgements, TOC, lists, Bibliography, and CV use
+% \chapter* (or a chapter-level heading), they inherit this same format.
+\titleformat{\chapter}[display]
+  {\normalfont\normalsize\bfseries\centering}
+  {\ifnum\value{chapter}>0\relax\chaptername\ \thechapter\fi}
+  {0.5\baselineskip}
+  {\normalfont\normalsize\bfseries\centering}
+\titlespacing*{\chapter}{0pt}{0pt}{1.5\baselineskip}
 \setlength{\headheight}{15pt}
 \pagestyle{plain}
 \RequirePackage{titling}
@@ -103,7 +115,7 @@
 \usepackage[titles]{tocloft}
 \usepackage{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cftchapfont}{\normalsize \scshape}
+\renewcommand{\cftchapfont}{\normalfont\normalsize}
 \renewcommand{\cftchappresnum}{Chapter\space}
 \renewcommand{\cftchapaftersnum}{:}
 \setlength{\cftchapnumwidth}{6.5em}
@@ -136,7 +148,7 @@
   \newpage
   \thispagestyle{empty}
   \vspace*{\fill}
-  \scshape \noindent \small \copyright \small 2023\hspace{3pt}-- \theauthor \\
+  \normalfont\normalsize \noindent \copyright 2023\hspace{3pt}-- \theauthor \\
   \noindent all rights reserved.
   \vspace*{\fill}
   \newpage
@@ -163,8 +175,8 @@
 
 \newcommand{\dedicationpage}{
   \newpage \thispagestyle{fancy} \vspace*{\fill}
-  \scshape \noindent \input{dedication}
-  \vspace*{\fill} \newpage \rm
+  \normalfont\normalsize \noindent \input{dedication}
+  \vspace*{\fill} \newpage \normalfont
 }
 
 \newcommand{\acknowledgments}{
