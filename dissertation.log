@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  18 SEP 2026 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  20 SEP 2026 10:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2634,155 +2634,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |\T1/phv/m/sc/14.4 Fortran Code for Cal-cu-lat-ing En-er-gies for the 2D Prob-
  []
 
-
-Overfull \hbox (13.24358pt too wide) in paragraph at lines 12--12
-[]\T1/lmtt/m/n/10 ! gfortran -O4 -o h2Plus h2plus.f90 hpsort.f90 -L ./ -l lapac
-ke -l lapack -l blas -l install[] 
- []
-
-[107
-
-
-
-
-] [108] [109] [110] [111] [112] [113] [114]) [115]
-\openout2 = `appendixE.aux'.
-
- (./appendixE.tex
-Appendix E.
-File: "Z_u_g_first-5-v1-accessible.txt"  (verbatim)
-
-Overfull \hbox (13.1386pt too wide) in paragraph at lines 8--8
-[]          \T1/lmtt/m/n/10.95 geradePotential = Table[{geradeData?i, 1?, gerad
-eData?i, 3?}, {i, 1, 27}];[] 
- []
-
-
-Overfull \hbox (47.631pt too wide) in paragraph at lines 8--8
-[]          \T1/lmtt/m/n/10.95 ungeradePotential = Table[{ungeradeData?i, 1?, u
-ngeradeData?i, 3?}, {i, 1, 27}];[] 
- []
-
-[116
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 11.
+ [107
 
 
 
 
 ]
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 8--8
-[]             \T1/lmtt/m/n/10.95 {{gshort[R], R <= 0.3}, {geradefun[R], 0.3 < 
-R < 13.0}, {long[R], R >= 13.0}}];[] 
- []
+[108] [109] [110] [111] [112] [113] [114]) [115]
+\openout2 = `appendixE.aux'.
+
+ (./appendixE.tex
+Appendix E.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 13.
+(./Z_u_g_first-5-v1-accessible.txt [116
 
 
-Overfull \hbox (70.62593pt too wide) in paragraph at lines 8--8
-[]             \T1/lmtt/m/n/10.95 {{ushort[R], R <= 0.3}, {ungeradefun[R], 0.3 
-< R < 13.0}, {long[R], R >= 13.0}}];[] 
- []
 
 
-Overfull \hbox (145.35947pt too wide) in paragraph at lines 8--8
-[]             \T1/lmtt/m/n/10.95 equG := yg ''[r] + yg '[r] / r - 2 u (gpot[r]
- + 2) yg[r] - m ^ 2 / r ^ 2 yg[r] + 2 u e yg[r] ;[] 
- []
-
-
-Overfull \hbox (139.61073pt too wide) in paragraph at lines 8--8
-[]             \T1/lmtt/m/n/10.95 equU := yu ''[r] + yu '[r] / r - 2 u (upot[r]
- + 2) yu[r] - m ^ 2 / r ^ 2 yu[r] + 2 u e yu[r];[] 
- []
-
-[117]
-Overfull \hbox (110.86707pt too wide) in paragraph at lines 8--8
-[]                       \T1/lmtt/m/n/10.95 {equG ? 0, yg[r0] ? 0, yg '[r0] ? 1
-}, yg, {r, r0, rend}, MaxSteps ? 200 000]];[] 
- []
-
-
-Overfull \hbox (110.86707pt too wide) in paragraph at lines 8--8
-[]                       \T1/lmtt/m/n/10.95 {equU ? 0, yu[r0] ? 0, yu '[r0] ? 1
-}, yu, {r, r0, rend}, MaxSteps ? 200 000]];[] 
- []
-
-
-Overfull \hbox (156.85693pt too wide) in paragraph at lines 8--8
-[]                     \T1/lmtt/m/n/10.95 (-I) ^ (Abs[n]) ( slp[n, r] - ylogG[r
-] x sl[n, r]) / ( clp[n, r] - ylogG[r] x cl[n, r]);[] 
- []
-
-
-Overfull \hbox (156.85693pt too wide) in paragraph at lines 8--8
-[]                     \T1/lmtt/m/n/10.95 (-I) ^ (Abs[n]) ( slp[n, r] - ylogU[r
-] x sl[n, r]) / ( clp[n, r] - ylogU[r] x cl[n, r]);[] 
- []
-
-
-Overfull \hbox (36.13353pt too wide) in paragraph at lines 8--8
-[]                     \T1/lmtt/m/n/10.95 Return??Abs[N[bG[m, rend]]], Abs[N[bG
-[m, rend] - bU[m, rend]]]2 ??,[] 
- []
-
-
-Overfull \hbox (59.12846pt too wide) in paragraph at lines 8--8
-[]                     \T1/lmtt/m/n/10.95 Return??2 Abs[N[bG[m, rend]]], 2 Abs[
-N[bG[m, rend] - bU[m, rend]]]2 ???[] 
- []
-
-[118]
-Overfull \hbox (53.37973pt too wide) in paragraph at lines 8--8
-[]                                                                    \T1/lmtt/
-m/n/10.95 Z_u_g_first-5-v1.nb   3[] 
- []
-
-[119] [120]
-Overfull \hbox (110.86707pt too wide) in paragraph at lines 8--8
-[]                    \T1/lmtt/m/n/10.95 Interpolation[{crossSection?All, 1?, c
-rossSection?All, 2??All, 1?} // Transpose];[] 
- []
-
-
-Overfull \hbox (110.86707pt too wide) in paragraph at lines 8--8
-[]                    \T1/lmtt/m/n/10.95 Interpolation[{crossSection?All, 1?, c
-rossSection?All, 2??All, 2?} // Transpose];[] 
- []
-
-
-Overfull \hbox (13.1386pt too wide) in paragraph at lines 8--8
-[]                \T1/lmtt/m/n/10.95 PlotLabel ? "Resonant Charge Transfer Cros
-s Section (a0) vs Energy"][] 
- []
-
-[121]
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 8--8
-[]                                                                             
-    \T1/lmtt/m/n/10.95 eV[] 
- []
-
+] [117] [118] [119] [120] [121]))
 [122]
-Overfull \hbox (7.38986pt too wide) in paragraph at lines 8--8
-[]                                                                             
-    \T1/lmtt/m/n/10.95 eV[] 
- []
-
-) [123]
 Underfull \hbox (badness 1173) in paragraph at lines 98--98
 []\T1/lmr/m/n/12 Daniel S. Abrams and Seth Lloyd. ``Non-lin-ear Quan-tum Me-cha
 n-ics Im-plies 
  []
 
-[124
+[123
 
 
 
 
-] [125] [126] [127] [128]
+] [124] [125] [126] [127]
 Underfull \hbox (badness 1552) in paragraph at lines 98--98
 []\T1/lmr/m/n/12 R Singh. ``Ex-ci-tons in Semi-con-duc-tor Quan-tum Wells Stud-
 ied Us-ing Two- 
  []
 
-[129] [130] [131] (./cv.tex
-<cv.pdf, id=1761, 614.295pt x 794.97pt>
+[128] [129] [130] (./cv.tex
+<cv.pdf, id=2231, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
 <use cv.pdf>
 Package pdftex.def Info: cv.pdf  used on input line 5.
@@ -2791,90 +2688,89 @@ File: cv.pdf Graphic file (type pdf)
 <use cv.pdf>
 Package pdftex.def Info: cv.pdf  used on input line 5.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<cv.pdf, id=1764, page=1, 614.295pt x 794.97pt>
+<cv.pdf, id=2234, page=1, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
 <use cv.pdf, page 1>
 Package pdftex.def Info: cv.pdf , page1 used on input line 5.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [131
+
+
+]
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: cv.pdf Graphic file (type pdf)
+<use cv.pdf, page 1>
+Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cv.pdf Graphic file (type pdf)
 <use cv.pdf, page 1>
 Package pdftex.def Info: cv.pdf , page1 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [132
 
-
-]
+ <./cv.pdf>]
+<cv.pdf, id=2275, page=2, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 1>
-Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+<use cv.pdf, page 2>
+Package pdftex.def Info: cv.pdf , page2 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 1>
-Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+<use cv.pdf, page 2>
+Package pdftex.def Info: cv.pdf , page2 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 1>
-Package pdftex.def Info: cv.pdf , page1 used on input line 5.
+<use cv.pdf, page 2>
+Package pdftex.def Info: cv.pdf , page2 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [133
 
  <./cv.pdf>]
-<cv.pdf, id=1805, page=2, 614.295pt x 794.97pt>
+<cv.pdf, id=2280, page=3, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 2>
-Package pdftex.def Info: cv.pdf , page2 used on input line 5.
+<use cv.pdf, page 3>
+Package pdftex.def Info: cv.pdf , page3 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 2>
-Package pdftex.def Info: cv.pdf , page2 used on input line 5.
+<use cv.pdf, page 3>
+Package pdftex.def Info: cv.pdf , page3 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 2>
-Package pdftex.def Info: cv.pdf , page2 used on input line 5.
+<use cv.pdf, page 3>
+Package pdftex.def Info: cv.pdf , page3 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [134
 
- <./cv.pdf>]
-<cv.pdf, id=1811, page=3, 614.295pt x 794.97pt>
-File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 3>
-Package pdftex.def Info: cv.pdf , page3 used on input line 5.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 3>
-Package pdftex.def Info: cv.pdf , page3 used on input line 5.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: cv.pdf Graphic file (type pdf)
-<use cv.pdf, page 3>
-Package pdftex.def Info: cv.pdf , page3 used on input line 5.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [135
-
- <./cv.pdf>])
-
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (144 not 145).
-               Rerun to correct this.
-
-(./dissertation.aux (./introduction.aux) (./chapter0.aux) (./chapter0-1.aux)
-(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter5.aux)
-(./conclusion.aux) (./appendixA.aux) (./appendixB.aux) (./appendixC.aux)
-(./appendixD.aux) (./appendixE.aux))
+ <./cv.pdf>]) [135] (./dissertation.aux (./introduction.aux) (./chapter0.aux)
+(./chapter0-1.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
+(./chapter5.aux) (./conclusion.aux) (./appendixA.aux) (./appendixB.aux)
+(./appendixC.aux) (./appendixD.aux) (./appendixE.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
+
 Package logreq Info: Writing requests to 'dissertation.run.xml'.
 \openout1 = `dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27689 strings out of 474116
- 515411 string characters out of 5743681
- 2009187 words of memory out of 5000000
- 49040 multiletter control sequences out of 15000+600000
- 676122 words of font info for 118 fonts, out of 8000000 for 9000
+ 28926 strings out of 474116
+ 530573 string characters out of 5743681
+ 2323187 words of memory out of 5000000
+ 49802 multiletter control sequences out of 15000+600000
+ 675023 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,17n,93p,1914b,1503s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 82i,17n,93p,1914b,2494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/tex
@@ -2891,17 +2787,18 @@ r8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/t
 exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024
 /texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist
-/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
-e1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
-lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helveti
-c/uhvb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8
-a.pfb>
-Output written on dissertation.pdf (145 pages, 12028378 bytes).
+/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
+e1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
+lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.p
+fb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on dissertation.pdf (145 pages, 12090191 bytes).
 PDF statistics:
- 2158 PDF objects out of 2487 (max. 8388607)
- 1825 compressed objects within 19 object streams
- 499 named destinations out of 1000 (max. 500000)
+ 2731 PDF objects out of 2984 (max. 8388607)
+ 2389 compressed objects within 24 object streams
+ 965 named destinations out of 1000 (max. 500000)
  466 words of extra memory for PDF output out of 10000 (max. 10000000)
 

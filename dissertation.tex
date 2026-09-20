@@ -75,8 +75,8 @@
 \include{chapter5}
 \include{conclusion}
 %\renewcommand{\thechapter}{\Roman{chapter}}
-% The appendix package (loaded with the titletoc option in Dissertate.cls)
-% supplies the Appendix prefix in the TOC. Do not add a second manual prefix here.
+\addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{Appendix\space}}
+\addtocontents{toc}{\protect\setlength{\protect\cftchapnumwidth}{7.0em}}
 \begin{appendices}
     \include{appendixA}
     \include{appendixB}

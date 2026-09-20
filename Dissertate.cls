@@ -101,7 +101,7 @@
 % Front matter.
 \setcounter{tocdepth}{1}
 \usepackage[titles]{tocloft}
-\usepackage[titletoc]{appendix}
+\usepackage{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftchapfont}{\normalsize \scshape}
 \renewcommand{\cftchappresnum}{Chapter\space}
@@ -149,12 +149,9 @@
   \pagestyle{fancy}
   \lhead{Thesis advisor: Professor \@advisor} \rhead{\@author}
   \renewcommand{\headrulewidth}{0.0pt}
-  \vspace*{35pt}
-  \begin{center}
-  \Large {\@title} \normalsize \\
-  \vspace*{20pt}
-  \scshape Abstract \\ \rm
-  \end{center}
+  % Abstract should begin like the other major section/chapter headings.
+  % The dissertation title is intentionally omitted here.
+  \chapter*{Abstract}
   \input{abstract}
   \vspace*{\fill}
   \newpage \lhead{} \rhead{}
