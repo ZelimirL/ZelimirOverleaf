@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  20 SEP 2026 10:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.13)  20 SEP 2026 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1193,8 +1193,10 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr
-/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./thanks.tex) [4
+)) [3
+
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/loca
+l/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./thanks.tex) [4
 
 ]
 (./dissertation.toc
@@ -1212,21 +1214,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
- [][] []\T1/lmr/m/sc/12 Ap-pendix []Mathematica Code for Cal-cu-lat-ing the Eig
-en- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
- [][] []\T1/lmr/m/sc/12 Ap-pendix []Hydrogen Ion in 2 Di-men-sion Equa-tion, Ma
-th-e- 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 58--58
- [][] []\T1/lmr/m/sc/12 Ap-pendix []Fortran Code for Cal-cu-lat-ing En-er-gies 
-for the 
+ [][] [][]\T1/lmr/m/sc/12 Mathematica Code for Cal-cu-lat-ing the Eigen-val-ues
+ for 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+ [][] [][]\T1/lmr/m/sc/12 Fortran Code for Cal-cu-lat-ing En-er-gies for the 2D
+ 
  []
 
 )
@@ -1527,7 +1523,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
 
 ] [12] [13] [14]
-<RadAssocPotentials-4.png, id=376, 631.60968pt x 374.90062pt>
+<RadAssocPotentials-4.png, id=375, 631.60968pt x 374.90062pt>
 File: RadAssocPotentials-4.png Graphic file (type png)
 <use RadAssocPotentials-4.png>
 Package pdftex.def Info: RadAssocPotentials-4.png  used on input line 107.
@@ -1563,13 +1559,13 @@ Overfull \hbox (11.29553pt too wide) detected at line 166
  []
 
 [17] [18]
-<EnsteinA3D.png, id=427, 361.35pt x 236.885pt>
+<EnsteinA3D.png, id=426, 361.35pt x 236.885pt>
 File: EnsteinA3D.png Graphic file (type png)
 <use EnsteinA3D.png>
 Package pdftex.def Info: EnsteinA3D.png  used on input line 225.
 (pdftex.def)             Requested size: 469.75502pt x 307.95407pt.
  [19] [20 <./EnsteinA3D.png>]
-<ResultsYbCa.png, id=449, 454.69875pt x 264.99pt>
+<ResultsYbCa.png, id=448, 454.69875pt x 264.99pt>
 File: ResultsYbCa.png Graphic file (type png)
 <use ResultsYbCa.png>
 Package pdftex.def Info: ResultsYbCa.png  used on input line 253.
@@ -1593,7 +1589,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--254
  []
 
 [21] [22 <./ResultsYbCa.png>]
-<CrossSection3D.png, id=475, 407.5225pt x 261.97874pt>
+<CrossSection3D.png, id=474, 407.5225pt x 261.97874pt>
 File: CrossSection3D.png Graphic file (type png)
 <use CrossSection3D.png>
 Package pdftex.def Info: CrossSection3D.png  used on input line 274.
@@ -1605,7 +1601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--275
  []
 
 [23]
-<Spectrum3D.png, id=482, 412.54124pt x 275.0275pt>
+<Spectrum3D.png, id=481, 412.54124pt x 275.0275pt>
 File: Spectrum3D.png Graphic file (type png)
 <use Spectrum3D.png>
 Package pdftex.def Info: Spectrum3D.png  used on input line 282.
@@ -1617,7 +1613,7 @@ a-tion pro-cess at a gas tem-per-a-ture
  []
 
 [24 <./CrossSection3D.png>] [25 <./Spectrum3D.png>]
-<IsotopicDependency.jpg, id=502, 983.675pt x 750.805pt>
+<IsotopicDependency.jpg, id=501, 983.675pt x 750.805pt>
 File: IsotopicDependency.jpg Graphic file (type jpg)
 <use IsotopicDependency.jpg>
 Package pdftex.def Info: IsotopicDependency.jpg  used on input line 316.
@@ -1643,7 +1639,7 @@ n 3D|
 [37
 
 ] [38]
-<Vg-Vs-LCAO-good.png, id=698, 361.35pt x 242.9075pt>
+<Vg-Vs-LCAO-good.png, id=697, 361.35pt x 242.9075pt>
 File: Vg-Vs-LCAO-good.png Graphic file (type png)
 <use Vg-Vs-LCAO-good.png>
 Package pdftex.def Info: Vg-Vs-LCAO-good.png  used on input line 185.
@@ -1654,7 +1650,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--186
 ox-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
-<Vg-Vs-LCAO-2.png, id=699, 361.35pt x 227.85126pt>
+<Vg-Vs-LCAO-2.png, id=698, 361.35pt x 227.85126pt>
 File: Vg-Vs-LCAO-2.png Graphic file (type png)
 <use Vg-Vs-LCAO-2.png>
 Package pdftex.def Info: Vg-Vs-LCAO-2.png  used on input line 193.
@@ -1666,7 +1662,7 @@ x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$
  []
 
 [39]
-<Vu-Vs-LCAO-good.png, id=712, 361.35pt x 240.9pt>
+<Vu-Vs-LCAO-good.png, id=711, 361.35pt x 240.9pt>
 File: Vu-Vs-LCAO-good.png Graphic file (type png)
 <use Vu-Vs-LCAO-good.png>
 Package pdftex.def Info: Vu-Vs-LCAO-good.png  used on input line 205.
@@ -1679,7 +1675,7 @@ x-i-ma-tion (blue) for the $\OML/lmm/m/it/12 H[]$ \T1/lmr/m/n/12 1st
 
 [40 <./Vg-Vs-LCAO-good.png (PNG copy)>] [41 <./Vg-Vs-LCAO-2.png (PNG copy)> <./
 Vu-Vs-LCAO-good.png (PNG copy)>]
-<Ger-Lcao-Graphs.jpg, id=724, 1715.40875pt x 452.69125pt>
+<Ger-Lcao-Graphs.jpg, id=723, 1715.40875pt x 452.69125pt>
 File: Ger-Lcao-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-Graphs.jpg  used on input line 222.
@@ -1690,7 +1686,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--223
 -i-ma-tion. The graph shows
  []
 
-<Ger-Lcao-3D-Graphs.jpg, id=725, 460.8417pt x 264.2673pt>
+<Ger-Lcao-3D-Graphs.jpg, id=724, 460.8417pt x 264.2673pt>
 File: Ger-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use Ger-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: Ger-Lcao-3D-Graphs.jpg  used on input line 228.
@@ -1701,7 +1697,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 x-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-Graphs.jpg, id=726, 1518.67375pt x 406.51875pt>
+<UnGer-Lcao-Graphs.jpg, id=725, 1518.67375pt x 406.51875pt>
 File: UnGer-Lcao-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-Graphs.jpg  used on input line 233.
@@ -1712,7 +1708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--234
 ox-i-ma-tion. The graph shows
  []
 
-<UnGer-Lcao-3D-Graphs.jpg, id=727, 454.3374pt x 264.7491pt>
+<UnGer-Lcao-3D-Graphs.jpg, id=726, 454.3374pt x 264.7491pt>
 File: UnGer-Lcao-3D-Graphs.jpg Graphic file (type jpg)
 <use UnGer-Lcao-3D-Graphs.jpg>
 Package pdftex.def Info: UnGer-Lcao-3D-Graphs.jpg  used on input line 238.
@@ -1741,7 +1737,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] [46] [47]
-<H2Ion3D-2.png, id=793, 495.8525pt x 317.185pt>
+<H2Ion3D-2.png, id=792, 495.8525pt x 317.185pt>
 File: H2Ion3D-2.png Graphic file (type png)
 <use H2Ion3D-2.png>
 Package pdftex.def Info: H2Ion3D-2.png  used on input line 98.
@@ -1775,12 +1771,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 168.
 
 [52] [53] [54] [55] [56] [57] [58] [59]
-<Bates3DEofR-2.png, id=932, 361.35pt x 237.88875pt>
+<Bates3DEofR-2.png, id=931, 361.35pt x 237.88875pt>
 File: Bates3DEofR-2.png Graphic file (type png)
 <use Bates3DEofR-2.png>
 Package pdftex.def Info: Bates3DEofR-2.png  used on input line 352.
 (pdftex.def)             Requested size: 361.34912pt x 237.88815pt.
-<Bates3DEofRPlusVofR-2.png, id=935, 361.35pt x 237.88875pt>
+<Bates3DEofRPlusVofR-2.png, id=934, 361.35pt x 237.88875pt>
 File: Bates3DEofRPlusVofR-2.png Graphic file (type png)
 <use Bates3DEofRPlusVofR-2.png>
 Package pdftex.def Info: Bates3DEofRPlusVofR-2.png  used on input line 360.
@@ -1922,17 +1918,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--227
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<H2_1Sg-Potential.pdf, id=1052, 361.35pt x 221.82875pt>
+<H2_1Sg-Potential.pdf, id=1051, 361.35pt x 221.82875pt>
 File: H2_1Sg-Potential.pdf Graphic file (type pdf)
 <use H2_1Sg-Potential.pdf>
 Package pdftex.def Info: H2_1Sg-Potential.pdf  used on input line 262.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_1Su-Potential.png, id=1053, 361.35pt x 221.82875pt>
+<H2_1Su-Potential.png, id=1052, 361.35pt x 221.82875pt>
 File: H2_1Su-Potential.png Graphic file (type png)
 <use H2_1Su-Potential.png>
 Package pdftex.def Info: H2_1Su-Potential.png  used on input line 267.
 (pdftex.def)             Requested size: 469.75502pt x 288.38069pt.
-<H2_sGpU-Potential.png, id=1054, 361.35pt x 228.35312pt>
+<H2_sGpU-Potential.png, id=1053, 361.35pt x 228.35312pt>
 File: H2_sGpU-Potential.png Graphic file (type png)
 <use H2_sGpU-Potential.png>
 Package pdftex.def Info: H2_sGpU-Potential.png  used on input line 273.
@@ -1967,11 +1963,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--322
 
 Underfull \hbox (badness 10000) in paragraph at lines 324--325
 []|\T1/lmr/m/n/12 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
-[]|\T1/lmr/m/n/12 -2.61749
  []
 
 
@@ -2064,7 +2055,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2.
 l.251 F
        or fermions $\alpha=1$, and for bosons $\alpha=0.$ For fractional val...
 ]
-<fluxtube.png, id=1168, 3311.37125pt x 2646.88875pt>
+<fluxtube.png, id=1167, 3311.37125pt x 2646.88875pt>
 File: fluxtube.png Graphic file (type png)
 <use fluxtube.png>
 Package pdftex.def Info: fluxtube.png  used on input line 257.
@@ -2082,7 +2073,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--258
  []
 
 [82] [83 <./fluxtube.png>] [84] [85]
-<fig1a.pdf, id=1213, 433.62pt x 286.06876pt>
+<fig1a.pdf, id=1212, 433.62pt x 286.06876pt>
 File: fig1a.pdf Graphic file (type pdf)
 <use fig1a.pdf>
 Package pdftex.def Info: fig1a.pdf  used on input line 363.
@@ -2095,7 +2086,7 @@ sonic base, and red
  []
 
 [86]
-<fig1b.pdf, id=1219, 260.975pt x 171.64125pt>
+<fig1b.pdf, id=1218, 260.975pt x 171.64125pt>
 File: fig1b.pdf Graphic file (type pdf)
 <use fig1b.pdf>
 Package pdftex.def Info: fig1b.pdf  used on input line 370.
@@ -2107,7 +2098,7 @@ T1/lmr/m/n/12 = 1 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a bo
 sonic base, and red
  []
 
-<fig2a.pdf, id=1220, 433.62pt x 289.08pt>
+<fig2a.pdf, id=1219, 433.62pt x 289.08pt>
 File: fig2a.pdf Graphic file (type pdf)
 <use fig2a.pdf>
 Package pdftex.def Info: fig2a.pdf  used on input line 377.
@@ -2124,7 +2115,7 @@ osonic base, and red
 pdfTeX warning: pdflatex (file ./fig1b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig2b.pdf, id=1279, 260.975pt x 170.6375pt>
+<fig2b.pdf, id=1278, 260.975pt x 170.6375pt>
 File: fig2b.pdf Graphic file (type pdf)
 <use fig2b.pdf>
 Package pdftex.def Info: fig2b.pdf  used on input line 384.
@@ -2136,7 +2127,7 @@ T1/lmr/m/n/12 = 10 \OML/lmm/m/it/12 K:$ \T1/lmr/m/n/12 Blue icons re-fer to a b
 osonic base, and red
  []
 
-<fig3a.pdf, id=1280, 433.62pt x 289.08pt>
+<fig3a.pdf, id=1279, 433.62pt x 289.08pt>
 File: fig3a.pdf Graphic file (type pdf)
 <use fig3a.pdf>
 Package pdftex.def Info: fig3a.pdf  used on input line 392.
@@ -2146,12 +2137,12 @@ Package pdftex.def Info: fig3a.pdf  used on input line 392.
 pdfTeX warning: pdflatex (file ./fig2b.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-<fig3b.pdf, id=1339, 260.975pt x 170.6375pt>
+<fig3b.pdf, id=1338, 260.975pt x 170.6375pt>
 File: fig3b.pdf Graphic file (type pdf)
 <use fig3b.pdf>
 Package pdftex.def Info: fig3b.pdf  used on input line 399.
 (pdftex.def)             Requested size: 328.82707pt x 215.00436pt.
-<CT.pdf, id=1340, 260.975pt x 171.64125pt>
+<CT.pdf, id=1339, 260.975pt x 171.64125pt>
 File: CT.pdf Graphic file (type pdf)
 <use CT.pdf>
 Package pdftex.def Info: CT.pdf  used on input line 407.
@@ -2679,7 +2670,7 @@ ied Us-ing Two-
  []
 
 [128] [129] [130] (./cv.tex
-<cv.pdf, id=2231, 614.295pt x 794.97pt>
+<cv.pdf, id=2230, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
 <use cv.pdf>
 Package pdftex.def Info: cv.pdf  used on input line 5.
@@ -2688,7 +2679,7 @@ File: cv.pdf Graphic file (type pdf)
 <use cv.pdf>
 Package pdftex.def Info: cv.pdf  used on input line 5.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<cv.pdf, id=2234, page=1, 614.295pt x 794.97pt>
+<cv.pdf, id=2233, page=1, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
 <use cv.pdf, page 1>
 Package pdftex.def Info: cv.pdf , page1 used on input line 5.
@@ -2716,7 +2707,7 @@ Package pdftex.def Info: cv.pdf , page1 used on input line 5.
  [132
 
  <./cv.pdf>]
-<cv.pdf, id=2275, page=2, 614.295pt x 794.97pt>
+<cv.pdf, id=2274, page=2, 614.295pt x 794.97pt>
 File: cv.pdf Graphic file (type pdf)
 <use cv.pdf, page 2>
 Package pdftex.def Info: cv.pdf , page2 used on input line 5.
@@ -2747,28 +2738,29 @@ Package pdftex.def Info: cv.pdf , page3 used on input line 5.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [134
 
- <./cv.pdf>]) [135] (./dissertation.aux (./introduction.aux) (./chapter0.aux)
-(./chapter0-1.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
-(./chapter5.aux) (./conclusion.aux) (./appendixA.aux) (./appendixB.aux)
-(./appendixC.aux) (./appendixD.aux) (./appendixE.aux))
+ <./cv.pdf>])
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (143 not 144).
+               Rerun to correct this.
+
+(./dissertation.aux (./introduction.aux) (./chapter0.aux) (./chapter0-1.aux)
+(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter5.aux)
+(./conclusion.aux) (./appendixA.aux) (./appendixB.aux) (./appendixC.aux)
+(./appendixD.aux) (./appendixE.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
-
 Package logreq Info: Writing requests to 'dissertation.run.xml'.
 \openout1 = `dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28926 strings out of 474116
- 530573 string characters out of 5743681
+ 28923 strings out of 474116
+ 530538 string characters out of 5743681
  2323187 words of memory out of 5000000
- 49802 multiletter control sequences out of 15000+600000
- 675023 words of font info for 119 fonts, out of 8000000 for 9000
+ 49799 multiletter control sequences out of 15000+600000
+ 672008 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,17n,93p,1914b,2494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
@@ -2779,26 +2771,25 @@ nts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
 public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/l
 mmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024
-/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2024/texmf-dist/
-fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
-public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lm
-r8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024
-/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist
-/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
-e1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
-lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.p
-fb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on dissertation.pdf (145 pages, 12090191 bytes).
+exlive/2024/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2024/
+texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/f
+onts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/p
+ublic/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr
+i12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024
+/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dis
+t/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
+pe1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public
+/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10
+.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
+.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on dissertation.pdf (144 pages, 12061321 bytes).
 PDF statistics:
- 2731 PDF objects out of 2984 (max. 8388607)
- 2389 compressed objects within 24 object streams
- 965 named destinations out of 1000 (max. 500000)
+ 2721 PDF objects out of 2984 (max. 8388607)
+ 2382 compressed objects within 24 object streams
+ 966 named destinations out of 1000 (max. 500000)
  466 words of extra memory for PDF output out of 10000 (max. 10000000)
 
