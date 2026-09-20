@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2024)
+This is BibTeX, Version 0.99e (TeX Live 2026)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
 The style file: biblatex.bst
@@ -15,7 +15,6 @@ A level-1 auxiliary file: appendixB.aux
 A level-1 auxiliary file: appendixC.aux
 A level-1 auxiliary file: appendixD.aux
 A level-1 auxiliary file: appendixE.aux
-A level-1 auxiliary file: cv.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -34,35 +33,35 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated field_info (elt_size=4) to 18300 items from 5000.
 Database file #1: dissertation-blx.bib
 Database file #2: dissertation.bib
-Biblatex version: 3.19
+Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 95 entries,
-            6399 wiz_defined-function locations,
-            1879 strings with 27179 characters,
-and the built_in function-call counts, 731273 in all, are:
+            6402 wiz_defined-function locations,
+            1878 strings with 27180 characters,
+and the built_in function-call counts, 731743 in all, are:
 = -- 58858
 > -- 10627
 < -- 3326
 + -- 19862
 - -- 3855
-* -- 52177
+* -- 52271
 := -- 80273
 add.period$ -- 0
 call.type$ -- 95
 change.case$ -- 1778
 chr.to.int$ -- 86
 cite$ -- 188
-duplicate$ -- 75179
-empty$ -- 64645
+duplicate$ -- 75273
+empty$ -- 64739
 format.name$ -- 6273
-if$ -- 149534
+if$ -- 149628
 int.to.chr$ -- 0
 int.to.str$ -- 235
 missing$ -- 0
 newline$ -- 3080
 num.names$ -- 4868
-pop$ -- 33626
+pop$ -- 33720
 preamble$ -- 1
 purify$ -- 2255
 quote$ -- 0

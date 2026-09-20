@@ -127,7 +127,7 @@
 \usepackage{hyperref}
 
 % Improve bookmark hierarchy for unnumbered front-matter headings.
-\hypersetup{unicode=true,bookmarksnumbered=true,bookmarksopen=true}
+\hypersetup{unicode=true,bookmarksnumbered=true,bookmarksopen=true,hidelinks}
 
 \newcommand{\copyrightpage}{
   \newpage
