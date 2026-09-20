@@ -1,0 +1,4 @@
+lualatex dissertation.tex
+bibtex dissertation
+lualatex dissertation.tex
+lualatex dissertation.tex
