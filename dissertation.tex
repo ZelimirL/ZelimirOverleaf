@@ -76,6 +76,7 @@
 \include{chapter5}
 \include{conclusion}
 %\renewcommand{\thechapter}{\Roman{chapter}}
+% Appendix mode is entered exactly once here. Do NOT put \appendix inside appendixA.tex.
 \begin{appendices}
     \renewcommand{\chaptername}{Appendix}
 
@@ -98,6 +99,10 @@
 %\bibliography{dissertation}
 \begingroup
 \sloppy
+% Graduate College requires bibliography web addresses to be visible but not clickable.
+% Keep this change local to the bibliography so links elsewhere in the dissertation still work.
+\let\url\nolinkurl
+\renewcommand{\href}[2]{#2}
 \printbibliography[heading=bibintoc,title={Bibliography}]
 \endgroup
 % \bibliographystyle{plain}
