@@ -77,17 +77,25 @@
 \include{conclusion}
 %\renewcommand{\thechapter}{\Roman{chapter}}
 % Appendix mode is entered exactly once here. Do NOT put \appendix inside appendixA.tex.
-\begin{appendices}
-    \renewcommand{\chaptername}{Appendix}
 
-    \addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{Appendix\space}}
-    \addtocontents{toc}{\protect\setlength{\protect\cftchapnumwidth}{7.0em}}
-    \include{appendixA}
-    \include{appendixB}
-    \include{appendixC}
-    \include{appendixD}
-    \include{appendixE}
-%    \include{appendixF}
+% ----- Appendices -----
+
+\clearpage
+
+\begin{appendices}
+
+\renewcommand{\chaptername}{Appendix}
+
+\addtocontents{toc}{%
+  \protect\renewcommand{\protect\cftchappresnum}{Appendix\space}%
+}
+
+\include{appendixA}
+\include{appendixB}
+\include{appendixC}
+\include{appendixD}
+\include{appendixE}
+
 \end{appendices}
 
 \setstretch{1.2}

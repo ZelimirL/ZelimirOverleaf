@@ -66,7 +66,7 @@
 % PDF tagging code to create and close section structures correctly.
 \renewcommand{\@makechapterhead}[1]{%
   \vspace*{0pt}%
-  {\parindent\z@\centering\normalfont\normalsize\bfseries
+  {\parindent\z@\raggedright\normalfont\normalsize\bfseries
     \ifnum\c@secnumdepth>\m@ne
       \ifnum\value{chapter}>0\relax
         \chaptername\space\thechapter\par
@@ -77,8 +77,7 @@
     \vskip 1.5\baselineskip}}
 \renewcommand{\@makeschapterhead}[1]{%
   \vspace*{0pt}%
-  {\parindent\z@\normalfont\normalsize\bfseries
-    \ifstrequal{#1}{Abstract}{\raggedright}{\centering}%
+  {\parindent\z@\raggedright\normalfont\normalsize\bfseries
     #1\par\nobreak
     \vskip 1.5\baselineskip}}
 \setlength{\headheight}{15pt}
@@ -151,8 +150,15 @@
 \usepackage{hyperref}
 
 % Accessible heading hierarchy for tagged PDF.
-% Cover title is tagged explicitly as H1 in cover.tex.
-% Heading tags are handled by LaTeX 2026 native latex-lab tagging.
+% The cover title is tagged explicitly as H1 in cover.tex.
+% UNLV requires major sections/chapters as H2, first-level headings as H3, etc.
+% Keep LaTeX's native sectioning structures, but shift the heading roles down one level.
+% sec/0 = chapter (also chapter* front-matter headings), sec/1 = section, etc.
+\AssignStructureRole{sec/0/title}{H2}
+\AssignStructureRole{sec/1/title}{H3}
+\AssignStructureRole{sec/2/title}{H4}
+\AssignStructureRole{sec/3/title}{H5}
+\AssignStructureRole{sec/4/title}{H6}
 % Do not add cmd/chapter or cmd/section tagstruct hooks here.
 
 % Improve bookmark hierarchy for unnumbered front-matter headings.
