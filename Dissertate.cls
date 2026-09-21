@@ -77,7 +77,8 @@
     \vskip 1.5\baselineskip}}
 \renewcommand{\@makeschapterhead}[1]{%
   \vspace*{0pt}%
-  {\parindent\z@\centering\normalfont\normalsize\bfseries
+  {\parindent\z@\normalfont\normalsize\bfseries
+    \ifstrequal{#1}{Abstract}{\raggedright}{\centering}%
     #1\par\nobreak
     \vskip 1.5\baselineskip}}
 \setlength{\headheight}{15pt}

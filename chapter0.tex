@@ -160,9 +160,12 @@ where we have the inequality
 \begin{equation}\label{sigmalessthan}
   \sigma_{CT} < \frac{8}{3}\frac{\pi^2\omega^3(E')_{max}}{c^3k^2}\int_0^{E_{max}^{'}}{dE'\,\left[(J+1)M_{J,J+1}^2(k,E')+J\,M_{J,J-1}^2(k,E')\right]}
 \end{equation}
-Now we can replace the expression for $ M_{J+1,J}^2(k,E') $ in \eqref{sigmalessthan} with the expression in \eqref{mjjz} and squaring it,  we get the integral
+Now we can replace the expression for $ M_{J+1,J}^2(k,E') $ in \eqref{sigmalessthan} with the expression in \eqref{mjjz} and squaring it, we get the integral
 \begin{equation}
-  \int_0^{\infty}{dE'\,JM_{J,J-1}^2(k,E')} = \int_0^{\infty}{dE'\int_{0}^{\infty}{dR\,f_J(kR)D(R)f_{J-1}(k'R}\int_{0}^{\infty}{dR'\,f_J(kR')D(R)f_{J-1}(k'R' }   }
+\begin{split}
+& \int_0^{\infty}{dE'\,JM_{J,J-1}^2(k,E')} = \\[.8em] 
+  & \int_0^{\infty}{dE'\int_{0}^{\infty}{dR\,f_J(kR)D(R)f_{J-1}(k'R)}\int_{0}^{\infty}{dR'\,f_J(kR')D(R)f_{J-1}(k'R')}   }
+\end{split}
 \end{equation}
 so the inequality becomes
 \begin{equation}
@@ -304,7 +307,9 @@ In addition, we have computed and shown the cross section $ \sigma $ as a functi
 
 \subsection{Isotope Dependency}
 
-Different Yb isotopes $ ({}^{170}Yb, {}^{174}Yb, {}^{176}Yb) $ differ only in nuclear mass, not in electronic structure. Thus, isotope dependence arises from nuclear motion. Following \cite{ZygelmanCT} we observe that radiative processes $ Yb^+ + Ca \rightarrow Yb + Ca^+ + \hbar\omega $ and $ Yb^+ + Ca \rightarrow YbCa^+ + \hbar\omega $ are both controlled by the overlap integral
+Different Yb isotopes $ ({}^{170}Yb, {}^{174}Yb, {}^{176}Yb) $ differ only in nuclear mass, not in electronic structure. Thus, isotope dependence arises from nuclear motion. Following \cite{ZygelmanCT} we observe that radiative processes \\
+$ Yb^+ + Ca \rightarrow Yb + Ca^+ + \hbar\omega $ and $ Yb^+ + Ca \rightarrow YbCa^+ + \hbar\omega $ \\
+are both controlled by the overlap integral
 \begin{equation}
   \int_0^{R_0}{dR\,\phi(R)D(R)\phi_{J=1}^{n}(R)}
 \end{equation}
