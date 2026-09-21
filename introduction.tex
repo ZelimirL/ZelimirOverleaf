@@ -1,3 +1,4 @@
+\fontfamily{phv}\selectfont
 \setcounter{chapter}{0}
 \chapter{Introduction}
 
@@ -29,7 +30,7 @@ Charge transfer (CT) refers to the movement of electrons or ions from one specie
 % QM has increasingly found applications in information theory, material, and the life sciences, areas that traditionally used to lie in the domain of classical physics. Within information theory, a new computing paradigm is emerging. It is recognized that the quantum theory allows the processing of information \cite{QIP} not available within the classical framework.
 % The principles of QM have enabled a novel and powerful information processing platform, quantum computing. The latter's basic component is called a qubit \cite{qubits} and is the quantum analog of the bit, the lowest common denominator of classical information. Qubits are fragile in that quantum coherence, which gives the quantum computer its power, requires a noise-free environment that is difficult to establish and maintain in the laboratory. Several platforms for qubit technologies have been explored, including trapped ions and superconducting circuits \cite{qubits2}. At present, it is not known if present-day qubit technologies can be scaled to build a functional and useful quantum computer.
 
-\subsection{CT in the Ultra-Cold Regime}
+\subsection{CT in the ultra-cold regime}
 \noindent
 Over the past several decades, cold and ultracold atom physics has evolved into a cornerstone of atomic, molecular, and optical (AMO) science. Advances in laser cooling, trapping, and coherent control have enabled the preparation of atomic systems at temperatures at which quantum mechanics governs both internal and external degrees of freedom. Within the AMO framework, cold-atom research is distinguished by its exceptional experimental tunability and isolation from environmental noise, enabling quantitative tests of quantum theory and the controlled exploration of interacting many-body systems. These capabilities place cold atoms at the intersection of traditional atomic physics, quantum optics, and modern quantum many-body theory.
 
@@ -76,8 +77,8 @@ In this thesis, we will focus on the \( H-H^{+} \) system as the subject of our 
 
 The outline of this thesis is structured as follows: Below, we provide a brief review of the general theoretical approaches to calculating charge transfer rates in ion-atom processes in 3D. We will then focus, in chapter 2 an review the theory and methodology employed to calculate radiative charge transfer. A detailed discussion is provided in the later chapters, describing the methodologies used and the results obtained. In the last chapter we briefly address the theory behind anyons, which is relevant for the 2 dimensional case.
 
-\section{Overview of CT Theories}
-\subsubsection{Classical Descriptions: COB Model}
+\section{Overview of CT theories}
+\subsection*{Classical descriptions: COB model}
 The classical 'over the barrier model' \cite{BransdenMcDowell1992} treats an electron as being inside a potential well. The well's potential is described by the function
 \begin{equation}
   V(r) = -\frac{q}{r} - \frac{1}{\lvert R - r \rvert}
@@ -100,7 +101,7 @@ Assuming the transfer probability of $ 1/2 $ this model predicts the total charg
 \end{equation}
 where $ n^* $ is the value of $ n $ in equation \eqref{COBRT} where the equality holds. We shall compare this value with the value obtained by our method. But generally speaking this method fails to give the correct values for the very low energy processes \cite{osti_6533174}.
 
-\subsubsection{Quantum Descriptions I: Langevin Orbiting}
+\subsection*{Quantum descriptions I: Langevin Orbiting}
 Since the preceding model fails to give the correct prediction a new, still classical model was suggested by P. Langevin. In this model, the incoming ion introduces the energy shift of the electron's ground state by
 \begin{equation}
   \Delta E = -\frac{1}{2}\alpha|E|^2  
@@ -119,7 +120,7 @@ At the end this model predicts the total charge transfer cross section to be:
   \sigma_{CT} = 2\pi \int_0^{b_c}{db\, b} = \pi b_c^2 = \frac{\pi}{v}\sqrt{\frac{8 C_4}{\mu}} = \frac{2\pi q}{v}\sqrt{\frac{\alpha}{\mu}}
 \end{equation}
 
-\subsubsection{Quantum Descriptions II: Landau–Zener–Rosen Theories}
+\subsection*{Quantum descriptions II: Landau–Zener–Rosen Theories}
 This is a semi-classical method that offers a quick analytic formula, which takes into account the quantum nature of the motion, to estimate CT rates in systems in which the molecular potentials share an avoided crossing.  We shall skip the detailed derivation, just to note that this model predicts the cross section to be:
 \begin{equation}
 \begin{split}
@@ -129,7 +130,7 @@ This is a semi-classical method that offers a quick analytic formula, which take
 w\end{equation}
 where $ R $ is the internuclear distance, $ R_c $ is the value where the energy defect $ \Delta E = E_2(R) - E_1(R) $ has a local minimum. The $ E_{1,2} $ are the energies of the two states, $ b $ is the impact parameter as defined in \cite{ZygelmanCT} and $ v $ is the relative velocity of the collision partners.
 
-\subsection{Quantum Descriptions III, MOCC Approach}
+\subsection{Quantum descriptions III, MOCC Approach}
 
 The Molecular Orbital Approach (MOCC) assumes that the total system amplitude is expressed as a sum of electronic
 eigenstates, whose expansion coefficients describe the motion of the nuclear coordinate R. There are two versions of
@@ -152,7 +153,7 @@ the CT and CT-induced molecular association rates for the
 $ Yb^{+}-Ca$ system.
 % While the problem has not been solved analytically, we will show that it can be solved numerically, to a desired precision. The radiative processes are driven by the interaction of the collision system with the radiation field. The direct change transfer is due to the transition between atomic (molecular) states due to the nuclear motion. Because the collision energy considered is low, typically only molecular states included are those which correspond to the initial $ A \prescript{1}{}\Sigma^+ $  and final $ X \prescript{1}{}\Sigma^+ $ channels.
 
-% \subsection*{Length Gauge}
+% \subsection*{Length gauge}
 
 % This is an interesting approach, which could potentially be used in calculation. In this thesis we would not be using it.
 
@@ -253,7 +254,7 @@ $ Yb^{+}-Ca$ system.
 % The concept of topological quantum computing \cite{Tqc1}
 % depends on the unique properties of 2D materials.  In principle, there are no theoretical objections to building a quantum computer; there are serious technical issues, such as noise and scaling limitations, for current qubit technologies that need to be overcome\cite{QCProblems}. 
 % The topological approach promises a physically realizable quantum computer\cite{Tqc2,Tqc3}. 
-% \subsection{Overview of CT Theory for Low-Energy Collisions in 3D}
+% \subsection{Overview of CT theory for low energy collisions in 3D}
 
 
 
@@ -293,7 +294,7 @@ $ Yb^{+}-Ca$ system.
 
 % The similar system is the trion, a bound state of three charged particles. It consists of either 2 electrons and a hole, or 2 holes and an electron, therefore resembling the hydrogen molecular ion. 
 
-% \section{Ion-Atom Charge Transfer}
+% \section{Ion - Atom Charge Transfer}
 
 % Charge transfer refers to the movement of electrons or ions from one species (atom, molecule or ion) to another. This transfer can occur through various mechanisms, including chemical reactions, electrochemical processes and interactions with electromagnetic fields. The charge transfer can occur through several mechanisms, such as Chemical reactions, Electrochemical processes, Photo induced charge transfer, Ionization processes.
 

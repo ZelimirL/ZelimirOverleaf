@@ -150,7 +150,7 @@
 \usepackage{hyperref}
 
 % Accessible heading hierarchy for tagged PDF.
-% The cover title is tagged explicitly as H1 in cover.tex.
+% The cover title is explicitly tagged as H1 in cover.tex.
 % UNLV requires major sections/chapters as H2, first-level headings as H3, etc.
 % Keep LaTeX's native sectioning structures, but shift the heading roles down one level.
 % sec/0 = chapter (also chapter* front-matter headings), sec/1 = section, etc.

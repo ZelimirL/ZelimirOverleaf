@@ -1,4 +1,4 @@
-% Cover Page -- one page, uniform document font, accessible H1 title
+% Cover Page -- one page, uniform document font
 
 \begin{titlepage}
 \thispagestyle{empty}
@@ -7,15 +7,20 @@
 
 \vspace*{0.45in}
 
-% The dissertation title is the document-level H1 in the tagged PDF.
+% Document-level heading: H1.
+% The structure element and marked-content element are both explicit so
+% the visible title text belongs to the H1 in the PDF structure tree.
+\tagstructbegin{tag=H1,title={Ion-Atom Charge Transfer Reactions at Cold and Ultra-Cold Temperatures}}
+\tagmcbegin{tag=H1}
 \begin{doublespacing}
 ION-ATOM CHARGE TRANSFER REACTIONS \\ AT COLD AND ULTRA-COLD \\ TEMPERATURES\par
 \end{doublespacing}
+\tagmcend
+\tagstructend
 
 \vspace{0.65in}
 
-By\\ 
-Zelimir Lucic
+By Zelimir Lucic
 
 \vspace{0.45in}
 
@@ -48,12 +53,11 @@ Doctor of Philosophy -- Physics
 
 Department of Physics\\
 College of Sciences\\
-The Graduate College
+Graduate College
 
 \vspace{0.15in}
 
-University of Nevada, Las Vegas 
-December 2026
+University of Nevada, Las Vegas, December 2026
 
 \end{center}
 \end{titlepage}
