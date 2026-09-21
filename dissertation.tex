@@ -86,9 +86,17 @@
 
 \renewcommand{\chaptername}{Appendix}
 
-\addtocontents{toc}{%
-  \protect\renewcommand{\protect\cftchappresnum}{Appendix\space}%
+% Write the TOC prefix change to the .aux file immediately.
+% A normal \addtocontents write is delayed until shipout; with \include,
+% Appendix A's TOC entry can therefore be written before the prefix change.
+% This immediate write guarantees that the switch to "Appendix" precedes A.
+\makeatletter
+\immediate\write\@auxout{%
+  \string\@writefile{toc}{%
+    \string\renewcommand{\string\cftchappresnum}{Appendix\string\space}%
+  }%
 }
+\makeatother
 
 \include{appendixA}
 \include{appendixB}
