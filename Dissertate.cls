@@ -190,7 +190,9 @@
   % Abstract should begin like the other major section/chapter headings.
   % The dissertation title is intentionally omitted here.
   \chapter*{Abstract}
+  \begin{doublespacing}
   \input{abstract}
+  \end{doublespacing}
   \vspace*{\fill}
   \newpage \lhead{} \rhead{}
   \cfoot{\thepage}
@@ -207,8 +209,10 @@
   \phantomsection
   \addcontentsline{toc}{chapter}{Acknowledgements}
    \thispagestyle{empty}
-  \noindent
+  \begin{doublespacing}
+  %\noindent
   \input{thanks}
+  \end{doublespacing}
   \vspace*{\fill} \newpage
   % Keep Roman page numbering throughout the front matter.
   % Arabic numbering is started in dissertation.tex immediately before Chapter 1.
