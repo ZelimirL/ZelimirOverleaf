@@ -128,7 +128,7 @@
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftchapfont}{\normalfont\normalsize}
 \renewcommand{\cftchappresnum}{Chapter\space}
-\renewcommand{\cftchapaftersnum}{:}
+\renewcommand{\cftchapaftersnum}{}
 \setlength{\cftchapnumwidth}{6.5em}
 \renewcommand\listfigurename{List of Figures}
 \renewcommand\listtablename{List of Tables}
